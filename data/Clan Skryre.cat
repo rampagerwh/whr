@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="887a-65ec-749f-cd54" name="Clan Skryre" revision="303" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="887a-65ec-749f-cd54" name="Clan Skryre" revision="401" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="e6b4-690d-917e-1a11" name="Guerreros de clan Skryre" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -425,7 +425,7 @@
               <modifiers>
                 <modifier type="set" field="03b2-8f0c-8637-d821" value="1.0">
                   <conditions>
-                    <condition field="selections" scope="72c7-2bde-edb5-29f8" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f8c2-0d75-18b6-73e3" type="equalTo"/>
+                    <condition field="selections" scope="72c7-2bde-edb5-29f8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="f8c2-0d75-18b6-73e3" type="notEqualTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -450,6 +450,7 @@
                       </modifiers>
                     </entryLink>
                     <entryLink id="a87a-f8d0-830b-ce25" name="Armaduras mágicas. Clan Skryre. Armadura de disformidad" hidden="false" collective="false" import="true" targetId="6da0-0c70-c34d-c03a" type="selectionEntryGroup"/>
+                    <entryLink id="3f08-2b79-96df-e655" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="7ffc-31d1-4c6d-cab1" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -1536,7 +1537,7 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="fe85-971f-c783-f966" name="Señor de la guerra skaven Skryre" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="fe85-971f-c783-f966" name="Señor de la guerra Skryre" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
         <infoLink id="b684-1a53-ad11-c604" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule">
           <modifiers>
@@ -1597,6 +1598,7 @@
                       </modifiers>
                     </entryLink>
                     <entryLink id="e833-61fd-c744-6984" name="Armaduras mágicas. Clan Skryre. Armadura de disformidad" hidden="false" collective="false" import="true" targetId="6da0-0c70-c34d-c03a" type="selectionEntryGroup"/>
+                    <entryLink id="67dd-75b1-ee96-a5ef" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="9264-5f32-b8df-61f0" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -1779,7 +1781,7 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2467-1b47-4322-ae92" type="max"/>
           </constraints>
           <profiles>
-            <profile id="c8f7-a2f3-c37d-6d67" name="Señor de la guerra Skaven" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+            <profile id="c8f7-a2f3-c37d-6d67" name="Señor de la guerra Skryre" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
               <modifiers>
                 <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
@@ -3203,7 +3205,7 @@ D6 Tabla de problemas de la Amerratadora
       </constraints>
       <rules>
         <rule id="a824-1ee4-7a01-4a78" name="Cañón de disformidad" hidden="false">
-          <description>El Cañón de Disformidad dispara como un Cañón, salvo que sus disparos tienen un valor de Fuerza igual al resultado obtenido en el segundo dado de artillería (el “rebote”, que no tendrá efecto alguno si se obtiene un resultado de problemas en el dado de artillería). Coloca la plantilla redonda pequeña tras la distancia recorrida en el rebote: todas las miniaturas cubiertas por la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán también un impacto del cañón; obviamente, éste es un ataque de rayos. Si en la primera tirada del dado de artillería se obtiene un resultado de problemas, realiza inmediatamente una tirada en la tabla de problemas del Cañón de Disformidad.
+          <description>El Cañón de Disformidad dispara como un Cañón, salvo que sus disparos tienen un valor de Fuerza igual al resultado obtenido en el segundo dado de artillería (el “rebote”, que no tendrá efecto alguno si se obtiene un resultado de problemas en el dado de artillería). Coloca la plantilla redonda pequeña tras la distancia recorrida en el rebote: todas las miniaturas cubiertas por la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán también un impacto del cañón con las reglas especiales Ataque de rayos y Ataques mágicos. Si en la primera tirada del dado de artillería se obtiene un resultado de problemas, realiza inmediatamente una tirada en la tabla de problemas del Cañón de Disformidad.
 1D6 Tabla de problemas del Cañón de Disformidad
      
 1-2 ¡Ka-Boom!: Retira la miniatura del campo de batalla como baja, y pregúntate el motivo de que instalasen la palanca verde claro.
@@ -3393,18 +3395,18 @@ D6 Tabla de problemas de la Amerratadora
       <rules>
         <rule id="059c-aa4a-83a9-23a8" name="Salvación por armadura 4+" hidden="false"/>
         <rule id="5203-7c77-0226-0cb1" name="Potencia de unidad 6" hidden="false"/>
-        <rule id="8374-8f64-bf96-28b6" name="Machacar al enemigo" hidden="false">
-          <description>La Rueda de la Muerte tiene la regla especial Impactos por carga (1D6+1). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, la Rueda de la Muerte realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F6 distribuídos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva a la Rueda de la Muerte a contacto peana con peana con una unidad amiga, le causará 1D6+1 impactos por carga, tras lo que deberás separar 1&quot; la Rueda de la Muerte de la unidad.</description>
-        </rule>
-        <rule id="5121-c6e8-f2a0-2abe" name="¡¡Zzzzaapp!!" hidden="false">
-          <description>La Rueda de la Muerte lanza tres rayos disformes en cada fase de disparo propia, incluso si se encuentra trabada en combate o huyendo. Puede haber situaciones en las que no sea conveniente realizar esos disparos, por lo que el ingeniero Brujo puede optar por realizar un chequeo de L para intentar evitar que la Rueda dispare. Si se falla este chequeo, la máquina disparará de forma normal. Cada rayo disforme tiene un alcance máximo de 18&quot; e impactará sobrela unidad más cercana (amiga o enemiga), independientemente del terreno o la línea de visión. Tira por cada rayo por separado, tomando la distancia desde la peana de la Rueda de la Muerte. Si la unidad más cercana muere a causa del primer rayo, el segundo rayo impactará a la siguiente unidad más cercana dentro de su alcance, y sucederá lo mismo con el tercer rayo. Si hay dos objetivos a la misma distancia, recibirá el impacto la unidad que tenga una mejor tirada de salvación por armadura (y en caso de empatar, la que tenga mayor Potencia de unidad). Para determinar la potencia del rayo disforme, tira un dado de artillería. El resultado obtenido indicará la F de todos los rayos para este turno. Si obtienes un resultado de problemas, deberás tirar en la tabla de problemas de la Rueda de la Muerte. Los rayos disformes tienen las reglas especiales Heridas múltiples (1D6) y Ataques mágicos; obviamente, éste es un ataque de rayos.</description>
-        </rule>
         <rule id="2cab-990b-b0f5-2950" name="Pérdida de control" hidden="false">
           <description>Al final de cualquier fase (propia o del oponente) en la que una Rueda de la Muerte haya sufrido una o más heridas y no esté trabada en combate cuerpo a cuerpo, deberás tirar 1D6: si obtienes un resultado de 2+, el Ingeniero conseguirá controlar la Rueda de la Muerte y no habrá problemas adicionales. Sin embargo, si obtienes un resultado de 1, la Rueda de la Muerte se moverá tal y como se describe en ¡Fuera de control! (el resultado 3-5 de la tabla de problemas de la Rueda de la Muerte).
 1D6 Tabla de problemas de la Rueda de la Muerte
 1-2 ¡Desastre!: La Rueda de la Muerte sufre inmediatamente 1D6 impactos de F6 y muchas de las ratas que corren en la rueda sucumben ante el escape tóxico. De ahora en adelante tira 1D6 menos para determinar el movimiento de la Rueda de la Muerte. Si se reduce a 0 dados, retira la Rueda de la Muerte del campo de batalla como baja.
 3-5 ¡Fuera de control!: Si la Rueda de la Muerte no está trabada en combate, efectuará inmediatamente un movimiento aleatorio en una dirección aleatoria. Si atropella a cualquier unidad (amiga o enemiga) la Rueda inflige los impactos por carga de forma normal, y si la unidad impactada es enemiga se considerará que ha cargado. Si la Rueda de la Muerte está trabada en combate, en lugar de mover fuera de control sufrirá una herida automática.
 6 Impulso veloz: El movimiento aleatorio de la Rueda de la Muerte se incrementa en 1D6 para el resto de la partida.</description>
+        </rule>
+        <rule id="ad49-949e-27a5-cb23" name="Machacar al enemigo" hidden="false">
+          <description>La Rueda de la Muerte tiene la regla especial Impactos por carga (1D6+1). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, la Rueda de la Muerte realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F6 distribuidos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva a la Rueda de la Muerte a contacto peana con peana con una unidad amiga, le causará 1D6+1 impactos por carga, tras lo que deberás separar 1&quot; la Rueda de la Muerte de la unidad.</description>
+        </rule>
+        <rule id="3efc-d3e8-a2f7-2716" name="¡¡Zzzzaapp!!" hidden="false">
+          <description>La Rueda de la Muerte lanza tres rayos disformes en cada fase de disparo propia, incluso si se encuentra trabada en combate o huyendo. Puede haber situaciones en las que no sea conveniente realizar esos disparos, por lo que el ingeniero Brujo puede optar por realizar un chequeo de L para intentar evitar que la Rueda dispare. Si se falla este chequeo, la máquina disparará de forma normal. Cada rayo disforme tiene un alcance máximo de 18&quot; e impactará sobre la unidad más cercana (amiga o enemiga), independientemente del terreno o la línea de visión. Tira por cada rayo por separado, tomando la distancia desde la peana de la Rueda de la Muerte. Si la unidad más cercana muere a causa del primer rayo, el segundo rayo impactará a la siguiente unidad más cercana dentro de su alcance, y sucederá lo mismo con el tercer rayo. Si hay dos objetivos a la misma distancia, recibirá el impacto la unidad que tenga una mejor tirada de salvación por armadura (y en caso de empatar, la que tenga mayor Potencia de unidad). Para determinar la potencia del rayo disforme, tira un dado de artillería. El resultado obtenido indicará la F de todos los rayos para este turno. Si obtienes un resultado de problemas, deberás tirar en la tabla de problemas de la Rueda de la Muerte. Los rayos disformes tienen las reglas especiales Heridas múltiples (1D6) y Ataques mágicos; obviamente, éste es un ataque de rayos.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3804,8 +3806,8 @@ D6 Tabla de problemas de la Amerratadora
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b08b-1c82-0d4d-9e09" type="max"/>
       </constraints>
       <rules>
-        <rule id="8417-cba9-2a3a-f1e9" name="Catapulta de viento corrosivo" hidden="false">
-          <description>Se trata de una catapulta que utiliza la plantilla redonda grande: sin embargo, es terriblemente imprecisa, por lo que si obtienes un resultado de punto de mira, aún así deberás desviar la plantilla (aunque, en ese caso, tan sólo la mitad de la distancia indicada en la tirada del dado de artillería). Deberás tirar 1D6 por cada miniatura impactada por la plantilla (usa las reglas habituales de impactos parciales): con un resultado de 4+, sufrirá una herida automática sin tirada de salvación por armadura (tiene la regla especial Ataques mágicos). No tiene Impacto central diferenciado. Si al disparar la catapulta obtienes un resultado de problemas en el dado de artillería, realiza una tirada en la tabla de problemas de la Catapulta de viento Corrosivo:
+        <rule id="d28f-b384-d0db-c91c" name="Catapulta de viento corrosivo" hidden="false">
+          <description>Se trata de una catapulta que utiliza la plantilla redonda grande. Deberás tirar 1D6 por cada miniatura impactada por la plantilla (usa las reglas habituales de impactos parciales): con un resultado de 4+, sufrirá una herida automática sin tirada de salvación por armadura (tiene la regla especial Ataques mágicos). No tiene Impacto central diferenciado. Si al disparar la catapulta obtienes un resultado de problemas en el dado de artillería, realiza una tirada en la tabla de problemas de la Catapulta de viento Corrosivo:
 1D6 Tabla de problemas de la Catapulta de viento Corrosivo
       
 1-2 ¡Catacrac! Cada unidad (amiga o enemiga) a 6” o menos de la catapulta sufre inmediatamente 1D6 impactos que siempre hieren con 4+ y no permiten tirada de salvación por armadura (distribuidos como proyectiles). A continuación, retira la catapulta como baja.
@@ -3846,7 +3848,7 @@ D6 Tabla de problemas de la Amerratadora
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="120.0"/>
+            <cost name="pts" typeId="points" value="130.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a1ac-af5e-c9c4-2180" name="Dotación" hidden="false" collective="false" import="true" type="model">
@@ -3996,10 +3998,10 @@ D6 Tabla de problemas de la Amerratadora
           <description>Puedes declarar que vas a pisar el acelerador en el momento de mover el Ratatanque. Tira el dado de artillería además de su movimiento aleatorio y añade el resultado para determinar la distancia que recorre. Si obtienes un resultado de problemas, deberás realizar una tirada en la tabla de problemas del condensador; el Ratatanque se desplazará solamente el resultado obtenido en la tirada de 2D6 (salvo que la tabla de problemas del reactor indique lo contrario). El Ratatanque no podrá hacer uso de sus armas de disparo en el turno en que haga uso de esta regla.</description>
         </rule>
         <rule id="cd0f-e1b1-fc6e-74b5" name="Demolición" hidden="false">
-          <description>Todos los obstáculos de altura igual o menor a 1” son ignorados a efectos de movimiento y combate. Todos los obstáculos de este tipo sobre los que pase el Ratatanque deben retirarse del campo de batalla (si es posible). Cualquier tipo de río, marisma o elemento de terreno acuático es terreno intransitable para el Ratatanque, que es, sencillamente, demasiado pesado como para no hundirse.</description>
+          <description>Todos los obstáculos de altura igual o menor a 1” son ignorados a efectos de movimiento y combate. Todos los obstáculos de este tipo sobre los que pase el Ratatanque deben retirarse del campo de batalla (si es posible). Cualquier tipo de río, marisma o elemento de terreno acuático es terreno intransitable para el Ratatanque, el cual es, sencillamente, demasiado pesado como para no hundirse.</description>
         </rule>
-        <rule id="9175-7da9-7be2-30c9" name="Machacar al enemigo" hidden="false">
-          <description>El Ratatanque tiene la regla especial Impactos por carga (1D6+2). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, el Ratatanque realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F8 distribuídos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva al Ratatanque a contacto peana con peana con una unidad amiga, le causará 1D6+2 impactos por carga, tras lo que deberás separar 1&quot; la Ratatanque de la unidad.</description>
+        <rule id="9175-7da9-7be2-30c9" name="Machacar al enemigo Ratatanque" hidden="false">
+          <description>El Ratatanque tiene la regla especial Impactos por carga (1D6+2). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, el Ratatanque realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F8 distribuidos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva al Ratatanque a contacto peana con peana con una unidad amiga, le causará 1D6+2 impactos por carga, tras lo que deberás separar 1&quot; la Ratatanque de la unidad.</description>
         </rule>
         <rule id="e511-6c62-9d4b-e12c" name="Impactos por carga (1D6+2)" hidden="false">
           <description>Cuando la miniatura cargue al combate (o arrase y llegue al combate), durante su siguiente ronda de combate cuerpo a cuerpo causará los Impactos por carga indicados. Estos impactos son automáticos (no es necesario efectuar tirada alguna para impactar), y se resuelven al inicio de la fase de combate cuerpo a cuerpo, antes de que ninguna miniatura ataque, con la Fuerza básica de la miniatura que los causó (en el caso de los carruajes, utiliza la F del propio carro). En el caso de que se efectúen impactos por carga contra una unidad mixta, los impactos por carga se repartirán como si fuesen impactos por proyectiles. Las bajas causadas por los Impactos por carga se cuentan a la hora de determinar el resultado del combate de esa fase.</description>
@@ -4048,13 +4050,21 @@ D6 Tabla de problemas de la Amerratadora
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="733a-d48b-ed8c-6ba7" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="cbdb-cf77-cee8-2632" name="Lanzallamas de Disformidad" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="cbdb-cf77-cee8-2632" name="Lanzallamas de disformidad" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d09-838a-46f7-7e9e" type="max"/>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="36b6-0005-ec52-1c47" type="min"/>
                   </constraints>
                   <rules>
-                    <rule id="736c-5c8e-60c0-8feb" name="Proyector de fuego disforme" hidden="false"/>
+                    <rule id="736c-5c8e-60c0-8feb" name="Proyector de fuego disforme" hidden="false">
+                      <description>Se trata de un arma instalada en el Ratatanque que dispara como un lanzallamas con un alcance estimado de 0 dados (tira solo el de artillería). Estos disparos se realizan desde el frontal del Ratatanque, se resuelven con F5 y tienen las reglas especiales Ataques solo Flamígeros, Ataques Mágicos y Heridas Múltiples (1D3). El Proyector de Fuego Disforme puede Aguantar y disparar si el Ratatanque es cargado. Cualquier unidad que sufra una o más bajas a causa del fuego del lanzallamas deberá realizar un chequeo de Pánico. Si obtienes un resultado de problemas, realiza inmediatamente una tirada en la tabla de problemas del Condensador de disformidad a reacción.
+1D6+H 	Tabla de problemas del Condensador de Disformidad a Reacción
+1-3 	Bien-bien: No hay efectos adversos.
+4-8 	Petardazo de disformidad: Tira el dado de dispersión y encara el Ratatanque en la dirección indicada. Coloca la plantilla de lanzallamas con el extremo ancho en contacto con la parte trasera de la peana del Ratatanque de forma paralela a éste. Cualquier miniatura tocada por la plantilla sufrirá un impacto de F5 con las reglas especiales Ataques sólo Flamígeros, Ataques Mágicos y Heridas Múltiples (1D3). Tras esto, mueve el Ratatanque 8” en la dirección indicada; añade también el resultado de la tirada de su movimiento aleatorio si este problema surgió durante el movimiento del Ratatanque. Por último, el Ratatanque sufre una herida sin posibilidad de salvación por armadura.
+9-10 	¡Whompfff!: Todas las miniaturas a 8” o menos del frontal del Ratatanque y que estén dentro de su línea de visión deberán superar un chequeo de Iniciativa o sufrirán un impacto del Proyector de Fuego Disforme. Tras esto, el Ratatanque sufrirá una herida sin posibilidad de salvación por armadura.
+11-12 	Cañonazo nuclear: Tira el dado de dispersión y encara el Ratatanque en esa dirección. El Gran Jezzail realiza un disparo en línea recta, desde la boca del arma. Para determinar la distancia que recorre el obús, tira todos los dados (6D6). Coloca la plantilla redonda grande al final de la distancia del alcance y realiza los impactos con un bonificador de +2 a la fuerza habitual. Finalmente, el Ratatanque sufre una herida sin posibilidad de salvación por armadura.
+13+ 	¡Ka-boom!: Todas las unidades a 8” o menos del tanque sufren 2D6 impactos de F6 distribuidos como disparos con la regla especial Ataques mágicos. Retira el Ratatanque del campo de batalla.</description>
+                    </rule>
                   </rules>
                   <infoLinks>
                     <infoLink id="fc9d-7a64-0451-dfc2" name="Lanzallamas" hidden="false" targetId="b67f-988d-ab4b-1806" type="rule"/>
@@ -4072,7 +4082,9 @@ D6 Tabla de problemas de la Amerratadora
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57d9-b98b-855d-b2ce" type="min"/>
                   </constraints>
                   <rules>
-                    <rule id="34f9-a92c-5c92-68b9" name="Gran Jezzail" hidden="false"/>
+                    <rule id="34f9-a92c-5c92-68b9" name="Gran Jezzail" hidden="false">
+                      <description>El Gran Jezzail es un arma que dispara como un cañón desde el frontal del Ratatanque, con la diferencia de que tan solo puede estimar hasta 6D6 dados y utiliza Obuses de Piedra Bruja; estos proyectiles tienen F8 y las reglas especiales Poder de penetración, Ataques mágicos y Heridas múltiples (1D6). Además, coloca la plantilla redonda pequeña tras la distancia recorrida en el rebote: todas las miniaturas cubiertas por la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán también un impacto de F4 con las reglas especiales Ataques mágicos y Poder de penetración. Si en la primera tirada del dado de artillería se obtiene un resultado de problemas, realiza inmediatamente una tirada en la tabla de problemas del Condensador de disformidad a reacción. Si obtienes un resultado de problemas en la segunda tirada, el proyectil no estallará (no coloques la plantilla).</description>
+                    </rule>
                   </rules>
                   <infoLinks>
                     <infoLink id="53e1-ab69-a6c2-e46e" name="Cañón" hidden="false" targetId="9f6a-5d0b-f0a6-dbab" type="rule"/>
@@ -4091,7 +4103,7 @@ D6 Tabla de problemas de la Amerratadora
             </selectionEntry>
           </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="375.0"/>
+            <cost name="pts" typeId="points" value="350.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ac77-c589-c94b-fe69" name="Tripulación" hidden="false" collective="false" import="true" type="model">
@@ -4512,11 +4524,11 @@ D6 Tabla de problemas del Quema-quema-lejos
                   </constraints>
                   <rules>
                     <rule id="0e82-6501-b18b-5836" name="Ristra de amerratadoras" hidden="false">
-                      <description>Se trata de un arma que puede Mover y disparar. Tiene un alcance de 18&quot;, F4 y las reglas especiales Ataques mágicos, Poder de penetración y Disparos múltiples (3D6+3); se considera un arma de Tormenta de proyectiles. En combate, la Ristra de Amerratadoras cuenta como arma de mano adicional. Los disparos efectuados por la ristra de Amerratadoras impactan automáticamente, y puede Aguantar y disparar como reacción a una carga. Si al tirar los dados sacas un resultado triple, tira inmediatamente 1D6 en la tabla de problemas de la Ristra de Amerratadoras.
-D6 Tabla de problemas de la Ristra de Amerratadoras
-1-2 ¡Blam!: No realices ningún disparo. El Diablo de Asalto sufre inmediatamente 1D3+1 Heridas automáticas. Si el Diablo de Asalto sobrevive, tira 1D6+1 menos en las tiradas posteriores para determinar los disparos que realiza la Ristra de Amerratadoras, y el resultado de triples que determina la tirada en la tabla de problemas pasará a ser de dobles.
-3-5 ¡Peonza!: Tira el dado de dispersión. Encara el Diablo de Asalto en la dirección indicada y realiza todos los disparos (incluyendo los del dado que causó la tirada en la tabla de problemas). Tira para impactar contra la primera unidad en su trayectoria, sea amiga o enemiga.
-6 ¡Bbbbrrrrrttt!: El arma realiza todos sus disparos contra el objetivo previsto con las reglas habituales, pero lo hace con F2.</description>
+                      <description>Se trata de un arma de Tormenta de proyectiles que puede Mover y disparar, además de Aguantar y disparar como reacción a una carga. Los disparos tienen un alcance de 18&quot;, F4 y las reglas especiales Ataques mágicos y Poder de penetración. Utiliza el dado de artillería para determinar el número de impactos automáticos que causa. Puedes, si lo deseas, tirar otra vez el dado de artillería y sumar el resultado al número de impactos que realiza. En combate, la Ristra de Amerratadoras cuenta como arma de mano adicional. Los disparos efectuados por la ristra de Amerratadoras impactan automáticamente, y puede Aguantar y disparar como reacción a una carga. Si en cualquiera de las tiradas obtienes un resultado de “Problemas”, tira 1D6 en la siguiente tabla y aplica el resultado inmediatamente.
+D6 	Tabla de problemas de la Ristra de Amerratadoras
+1-2 	¡Blam!: No realices ningún disparo. El Diablo de Asalto sufre inmediatamente 1D3+1 heridas automáticas.
+3-5 	¡Peonza!: Tira el dado de dispersión. Encara el Diablo de Asalto en la dirección indicada. El Diablo de Asalto realizará todos los disparos que haya obtenido en las tiradas del dado de artillería más dos. Tira para impactar contra la primera unidad en su trayectoria, sea amiga o enemiga.
+6 	¡Bbbbrrrrrttt!: El arma realiza todos sus disparos contra el objetivo previsto con las reglas habituales, pero lo hace con F2.</description>
                     </rule>
                     <rule id="6353-678f-6a63-f614" name="Disparos múltiples (3D6+3)" hidden="false">
                       <description>Un arma o miniatura con la regla especial Disparos múltiples efectúa el número de disparos indicado cada vez que dispara (esto incluye la reacción a la carga Aguantar y disparar), aplicando un penalizador adicional de -1 para impactar. No es necesario realizar disparos múltiples con un arma que disponga de esta regla especial: si lo deseas, puedes efectuar un único disparo, y no aplicar el penalizador de -1 para impactar por disparos múltiples. En caso de que la cantidad de disparos múltiples sea aleatoria, se determina el número de disparos cada vez que se dispara.</description>
@@ -4526,6 +4538,7 @@ D6 Tabla de problemas de la Ristra de Amerratadoras
                     <infoLink id="c241-4286-099a-d80d" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
                     <infoLink id="5934-6407-2c29-6736" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
                     <infoLink id="78ad-dba8-a18e-b8e5" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
+                    <infoLink id="e68a-5e8d-02d4-cea0" name="Tormenta de proyectiles" hidden="false" targetId="78ba-a8c1-e999-847c" type="rule"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="60.0"/>
@@ -5368,6 +5381,9 @@ D6 Tabla de problemas del Proyector de fuefo disforme
         <rule id="22fa-63fa-e1bd-9510" name="Inventor meticuloso" hidden="false">
           <description>Si Klawmunkast es el general del ejército Skryre, todas las Máquinas de guerra y los Grupos de apoyo del Clan Skryre sumarán +1 en las tiradas de sus respectivas tablas de problemas (un resultado de 7 se considera 6).</description>
         </rule>
+        <rule id="a406-7f23-63ff-7759" name="Archienemigo Klawmunskast, maestro ingeniero del clan Skryre" hidden="false">
+          <description>Archienemigo: Klawmunkast no piensa permitir que Morbus Sanguis ponga las zarpas sobre su mina de piedra de disformidad. Si tu ejército incluye a Klawmunkast y el ejército enemigo incluye a Morbus Sanguis, obtendrás 100 puntos de victoria adicionales si lo eliminas.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="7c7f-f21e-92a4-9389" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
@@ -5409,14 +5425,14 @@ D6 Tabla de problemas del Proyector de fuefo disforme
               <profiles>
                 <profile id="01c5-65d3-80e3-479b" name="Daga incandescente" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven F6 y tiene las reglas especiales Ataque de rayos y Ataques flamígeros.</characteristic>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga un bonificador de +1 a las tiradas para impactar y +2F, y tiene las reglas especiales Poder de penetración y Ataques flamígeros.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
                 <infoLink id="abe9-9028-be90-042a" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
                 <infoLink id="0998-c18d-ede5-5af1" name="Ataques flamígeros" hidden="false" targetId="6985-722e-1ce4-b838" type="rule"/>
-                <infoLink id="f9e2-65ee-574e-c81f" name="Ataques de rayos" hidden="false" targetId="8628-6531-ed1d-f985" type="rule"/>
+                <infoLink id="f9e2-65ee-574e-c81f" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -5467,7 +5483,7 @@ D6 Tabla de problemas del Proyector de fuefo disforme
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="275.0"/>
+            <cost name="pts" typeId="points" value="295.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="62ad-e77c-723d-4327" name="Nivel de magia 3" hidden="false" collective="false" import="true" type="upgrade">
@@ -5480,9 +5496,6 @@ D6 Tabla de problemas del Proyector de fuefo disforme
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="b37f-4bd0-a967-6880" name="Personaje especial" hidden="false" collective="false" import="true" targetId="c19e-af5e-5daa-ba52" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5648,9 +5661,6 @@ Pistola bruja mejorada.  Alcance: 12&quot;. F: 5. Reglas especiales: Poder de Pe
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="8928-6b33-c50a-aed8" name="Personaje especial" hidden="false" collective="false" import="true" targetId="c19e-af5e-5daa-ba52" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5818,9 +5828,6 @@ Pistola bruja mejorada.  Alcance: 12&quot;. F: 5. Reglas especiales: Poder de Pe
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <entryLinks>
-        <entryLink id="9300-a846-110c-aae6" name="Personaje especial" hidden="false" collective="false" import="true" targetId="c19e-af5e-5daa-ba52" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -5952,6 +5959,94 @@ Pistola bruja mejorada.  Alcance: 12&quot;. F: 5. Reglas especiales: Poder de Pe
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="215a-4171-09d8-d58a" name="Pistola bruja perfeccionada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d70b-cbf4-f39e-fc5b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="071e-a93c-58ad-90bd" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="e37e-3cef-bb0f-710c" name="Pistola bruja perfeccionada" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+                  <characteristics>
+                    <characteristic name="Rango" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+                    <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">6</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Poder de Penetración, Francotirador, Heridas múltiples (1D3), Munición fiable</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="5209-992b-d64c-341d" name="Munición fiable" hidden="false">
+                  <description>Por cada resultado de 1 en la tirada para impactar, tira 1D6: con un resultado de 2-6 el proyectil se encasquilla y el arma no disparará ese turno, de lo contrario resuelve el impacto sobre usuario con las reglas habituales del arma y un bonificador de +1F.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="f032-e6bb-e0e6-0ba5" name="Amerratadora de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2d7f-d33d-15a5-cc0c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a41-b972-af5b-b8a1" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="44ee-6641-61c9-9e35" name="Amerratadora de mano" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+                  <characteristics>
+                    <characteristic name="Rango" typeId="52616e676523232344415441232323">18&quot;</characteristic>
+                    <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">4</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Tormenta de proyectiles, Disparos múltiples (2D6+1), Poder de Penetración</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="59e5-30e8-ceec-a9f4" name="Munición fiable" hidden="false">
+                  <description>Por cada resultado de 1 en la tirada para impactar, tira 1D6: con un resultado de 2-6 el proyectil se encasquilla y el arma no disparará ese turno, de lo contrario resuelve el impacto sobre usuario con las reglas habituales del arma y un bonificador de +1F.</description>
+                </rule>
+              </rules>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="494d-7e1b-217f-07ea" name="Cuchillas brujas" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="acbe-524c-c098-7372" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe8-721b-2709-5e02" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="4984-f62a-d4a3-2c1c" name="Cuchillas brujas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Permiten a Morskittar repetir sus tiradas fallidas para impactar. Cada resultado de 6 para impactar generará un ataque adicional (este ataque extra no genera nuevos ataques). Tiene las reglas especiales Poder de penetración y Golpe letal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="72d3-d3a3-5fee-55bc" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="bffb-5f48-2e46-15c3" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
+                <infoLink id="a6ff-c6a0-eb89-d213" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
+                <infoLink id="06eb-d0e9-4829-7394" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7665-4bac-1e91-f947" name="Diente de rata" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68ef-6acb-b51f-a5c0" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcd9-ed84-8862-c417" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="8db3-5f82-0190-084f" name="Diente de rata" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda Bruja. Los ataques realizados con este arma se realizan con un bonificador de +1F y niegan la tirada de salvación por armadura. Tiene la regla especial Heridas múltiples (2).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="0d5f-c560-03fa-a9b6" name="Alabarda bruja" hidden="false" targetId="f2e6-dbc7-bd8e-c4e8" type="profile"/>
+                <infoLink id="b06e-5bd3-1764-2a30" name="Heridas múltiples (2)" hidden="false" targetId="be26-0d4a-0493-6c52" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -5995,7 +6090,6 @@ Pistola bruja mejorada.  Alcance: 12&quot;. F: 5. Reglas especiales: Poder de Pe
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
-        <entryLink id="e885-0172-1f88-06bc" name="Personaje especial" hidden="false" collective="false" import="true" targetId="c19e-af5e-5daa-ba52" type="selectionEntry"/>
         <entryLink id="f227-1e3e-1beb-603b" name="Lord Morskittar" hidden="false" collective="false" import="true" targetId="138b-0cb4-2334-1f65" type="selectionEntry"/>
       </entryLinks>
       <costs>
@@ -6014,8 +6108,8 @@ Pistola bruja mejorada.  Alcance: 12&quot;. F: 5. Reglas especiales: Poder de Pe
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e29b-15a1-e046-df68" type="max"/>
       </constraints>
       <rules>
-        <rule id="e29b-4bb0-238f-e422" name="Cañón de disformidad" hidden="false">
-          <description>El Cañón de Disformidad dispara como un Cañón, salvo que sus disparos tienen un valor de Fuerza igual al resultado obtenido en el segundo dado de artillería (el “rebote”, que no tendrá efecto alguno si se obtiene un resultado de problemas en el dado de artillería). Coloca la plantilla redonda pequeña tras la distancia recorrida en el rebote: todas las miniaturas cubiertas por la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán también un impacto del cañón; obviamente, éste es un ataque de rayos. Si en la primera tirada del dado de artillería se obtiene un resultado de problemas, realiza inmediatamente una tirada en la tabla de problemas del Cañón de Disformidad.
+        <rule id="4447-cfb1-5295-17fc" name="Cañón de disformidad" hidden="false">
+          <description>El Cañón de Disformidad dispara como un Cañón, salvo que sus disparos tienen un valor de Fuerza igual al resultado obtenido en el segundo dado de artillería (el “rebote”, que no tendrá efecto alguno si se obtiene un resultado de problemas en el dado de artillería). Coloca la plantilla redonda pequeña tras la distancia recorrida en el rebote: todas las miniaturas cubiertas por la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán también un impacto del cañón con las reglas especiales Ataque de rayos y Ataques mágicos. Si en la primera tirada del dado de artillería se obtiene un resultado de problemas, realiza inmediatamente una tirada en la tabla de problemas del Cañón de Disformidad.
 1D6 Tabla de problemas del Cañón de Disformidad
      
 1-2 ¡Ka-Boom!: Retira la miniatura del campo de batalla como baja, y pregúntate el motivo de que instalasen la palanca verde claro.
@@ -6208,18 +6302,18 @@ Pistola bruja mejorada.  Alcance: 12&quot;. F: 5. Reglas especiales: Poder de Pe
       <rules>
         <rule id="8277-df1b-19c0-428c" name="Salvación por armadura 4+" hidden="false"/>
         <rule id="fb86-0d7f-4477-deb7" name="Potencia de unidad 6" hidden="false"/>
-        <rule id="5c08-cbf1-90c4-4125" name="Machacar al enemigo" hidden="false">
-          <description>La Rueda de la Muerte tiene la regla especial Impactos por carga (1D6+1). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, la Rueda de la Muerte realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F6 distribuídos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva a la Rueda de la Muerte a contacto peana con peana con una unidad amiga, le causará 1D6+1 impactos por carga, tras lo que deberás separar 1&quot; la Rueda de la Muerte de la unidad.</description>
-        </rule>
-        <rule id="dd0d-b161-f818-e8d1" name="¡¡Zzzzaapp!!" hidden="false">
-          <description>La Rueda de la Muerte lanza tres rayos disformes en cada fase de disparo propia, incluso si se encuentra trabada en combate o huyendo. Puede haber situaciones en las que no sea conveniente realizar esos disparos, por lo que el ingeniero Brujo puede optar por realizar un chequeo de L para intentar evitar que la Rueda dispare. Si se falla este chequeo, la máquina disparará de forma normal. Cada rayo disforme tiene un alcance máximo de 18&quot; e impactará sobrela unidad más cercana (amiga o enemiga), independientemente del terreno o la línea de visión. Tira por cada rayo por separado, tomando la distancia desde la peana de la Rueda de la Muerte. Si la unidad más cercana muere a causa del primer rayo, el segundo rayo impactará a la siguiente unidad más cercana dentro de su alcance, y sucederá lo mismo con el tercer rayo. Si hay dos objetivos a la misma distancia, recibirá el impacto la unidad que tenga una mejor tirada de salvación por armadura (y en caso de empatar, la que tenga mayor Potencia de unidad). Para determinar la potencia del rayo disforme, tira un dado de artillería. El resultado obtenido indicará la F de todos los rayos para este turno. Si obtienes un resultado de problemas, deberás tirar en la tabla de problemas de la Rueda de la Muerte. Los rayos disformes tienen las reglas especiales Heridas múltiples (1D6) y Ataques mágicos; obviamente, éste es un ataque de rayos.</description>
-        </rule>
         <rule id="64d9-bc44-0a23-03c3" name="Pérdida de control" hidden="false">
           <description>Al final de cualquier fase (propia o del oponente) en la que una Rueda de la Muerte haya sufrido una o más heridas y no esté trabada en combate cuerpo a cuerpo, deberás tirar 1D6: si obtienes un resultado de 2+, el Ingeniero conseguirá controlar la Rueda de la Muerte y no habrá problemas adicionales. Sin embargo, si obtienes un resultado de 1, la Rueda de la Muerte se moverá tal y como se describe en ¡Fuera de control! (el resultado 3-5 de la tabla de problemas de la Rueda de la Muerte).
 1D6 Tabla de problemas de la Rueda de la Muerte
 1-2 ¡Desastre!: La Rueda de la Muerte sufre inmediatamente 1D6 impactos de F6 y muchas de las ratas que corren en la rueda sucumben ante el escape tóxico. De ahora en adelante tira 1D6 menos para determinar el movimiento de la Rueda de la Muerte. Si se reduce a 0 dados, retira la Rueda de la Muerte del campo de batalla como baja.
 3-5 ¡Fuera de control!: Si la Rueda de la Muerte no está trabada en combate, efectuará inmediatamente un movimiento aleatorio en una dirección aleatoria. Si atropella a cualquier unidad (amiga o enemiga) la Rueda inflige los impactos por carga de forma normal, y si la unidad impactada es enemiga se considerará que ha cargado. Si la Rueda de la Muerte está trabada en combate, en lugar de mover fuera de control sufrirá una herida automática.
 6 Impulso veloz: El movimiento aleatorio de la Rueda de la Muerte se incrementa en 1D6 para el resto de la partida.</description>
+        </rule>
+        <rule id="3e26-2e14-bb7a-f242" name="Machacar al enemigo" hidden="false">
+          <description>La Rueda de la Muerte tiene la regla especial Impactos por carga (1D6+1). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, la Rueda de la Muerte realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F6 distribuidos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva a la Rueda de la Muerte a contacto peana con peana con una unidad amiga, le causará 1D6+1 impactos por carga, tras lo que deberás separar 1&quot; la Rueda de la Muerte de la unidad.</description>
+        </rule>
+        <rule id="34a0-1f76-0547-3944" name="¡¡Zzzzaapp!!" hidden="false">
+          <description>La Rueda de la Muerte lanza tres rayos disformes en cada fase de disparo propia, incluso si se encuentra trabada en combate o huyendo. Puede haber situaciones en las que no sea conveniente realizar esos disparos, por lo que el ingeniero Brujo puede optar por realizar un chequeo de L para intentar evitar que la Rueda dispare. Si se falla este chequeo, la máquina disparará de forma normal. Cada rayo disforme tiene un alcance máximo de 18&quot; e impactará sobre la unidad más cercana (amiga o enemiga), independientemente del terreno o la línea de visión. Tira por cada rayo por separado, tomando la distancia desde la peana de la Rueda de la Muerte. Si la unidad más cercana muere a causa del primer rayo, el segundo rayo impactará a la siguiente unidad más cercana dentro de su alcance, y sucederá lo mismo con el tercer rayo. Si hay dos objetivos a la misma distancia, recibirá el impacto la unidad que tenga una mejor tirada de salvación por armadura (y en caso de empatar, la que tenga mayor Potencia de unidad). Para determinar la potencia del rayo disforme, tira un dado de artillería. El resultado obtenido indicará la F de todos los rayos para este turno. Si obtienes un resultado de problemas, deberás tirar en la tabla de problemas de la Rueda de la Muerte. Los rayos disformes tienen las reglas especiales Heridas múltiples (1D6) y Ataques mágicos; obviamente, éste es un ataque de rayos.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -6610,7 +6704,7 @@ D6 Tabla de problemas del Quema-quema-lejos
       </constraints>
       <rules>
         <rule id="5ed7-b985-c9b7-e1df" name="Catapulta de viento corrosivo" hidden="false">
-          <description>Se trata de una catapulta que utiliza la plantilla redonda grande: sin embargo, es terriblemente imprecisa, por lo que si obtienes un resultado de punto de mira, aún así deberás desviar la plantilla (aunque, en ese caso, tan sólo la mitad de la distancia indicada en la tirada del dado de artillería). Deberás tirar 1D6 por cada miniatura impactada por la plantilla (usa las reglas habituales de impactos parciales): con un resultado de 4+, sufrirá una herida automática sin tirada de salvación por armadura (tiene la regla especial Ataques mágicos). No tiene Impacto central diferenciado. Si al disparar la catapulta obtienes un resultado de problemas en el dado de artillería, realiza una tirada en la tabla de problemas de la Catapulta de viento Corrosivo:
+          <description>Se trata de una catapulta que utiliza la plantilla redonda grande. Deberás tirar 1D6 por cada miniatura impactada por la plantilla (usa las reglas habituales de impactos parciales): con un resultado de 4+, sufrirá una herida automática sin tirada de salvación por armadura (tiene la regla especial Ataques mágicos). No tiene Impacto central diferenciado. Si al disparar la catapulta obtienes un resultado de problemas en el dado de artillería, realiza una tirada en la tabla de problemas de la Catapulta de viento Corrosivo:
 1D6 Tabla de problemas de la Catapulta de viento Corrosivo
       
 1-2 ¡Catacrac! Cada unidad (amiga o enemiga) a 6” o menos de la catapulta sufre inmediatamente 1D6 impactos que siempre hieren con 4+ y no permiten tirada de salvación por armadura (distribuidos como proyectiles). A continuación, retira la catapulta como baja.
@@ -6651,7 +6745,7 @@ D6 Tabla de problemas del Quema-quema-lejos
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="120.0"/>
+            <cost name="pts" typeId="points" value="130.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="afa9-8d00-ff6b-1f0f" name="Dotación" hidden="false" collective="false" import="true" type="model">
@@ -6999,6 +7093,130 @@ D6 Tabla de problemas del Quema-quema-lejos
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="d87c-ef26-8cdc-0a18" name="Emisario oscuro" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c366-912c-6e70-1037" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9fbe-25ef-cdd3-4d91" name="Magia Emisario oscuro" hidden="false">
+          <description>Un Emisario oscuro siempre es un hechicero de nivel 4. Los Emisarios oscuros utilizan una mezcla corrupta y degenerada de algunos saberes, por lo que siempre conocen los siguientes conjuros: La niebla de Duthandor (Saber de la Vida), Forma salvaje de Wyssan (Saber de las Bestias), Bestia salvaje de Horros (Saber de las Bestias), Tormenta de espadas (Magia Oscura) y La maldición del Señor Oscuro (ver más abajo). Ten en cuenta que posee las reglas del Saber de Vida, Bestias y Magia Oscura.</description>
+        </rule>
+        <rule id="aa2c-3595-1b38-39b5" name="Halo de oscuridad" hidden="false">
+          <description>Todos los disparos realizados contra un Emisario oscuro tienen un penalizador de -1 en su tirada para impactar. Todos los enemigos que ataquen a un Emisario oscuro en combate cuerpo a cuerpo tendrán un penalizador de -1 en su tirada para impactar. Un Emisario oscuro no puede unirse a unidades ni ser el general del ejército.</description>
+        </rule>
+        <rule id="4a0d-26ba-ef0e-be23" name="Archienemigos (Arúspice)" hidden="false">
+          <description>Si tu ejército incluye un Emisario oscuro y el ejército oponente incluye un Arúspice, obtendrás 100 puntos de victoria adicionales si lo eliminas.</description>
+        </rule>
+        <rule id="b3e5-3555-67de-2923" name="La maldición del señor oscuro" hidden="false">
+          <description>La maldición del Señor Oscuro (Dificultad 14+)
+Una perversa niebla nociva se filtra desde el suelo por todo el campo de batalla, asfixiando a los guerreros.
+Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en el campo de batalla y permanece un turno. Cada unidad enemiga sufre inmediatamente 1D6 impactos de F2 que no permiten tirada de salvación por armadura. Además, cualquier unidad que sufra al menos un a baja a causa de este hechizo tendrá un penalizador de -1 en todas sus tiradas para impactar (tanto con proyectiles como en combate cuerpo a cuerpo) por la duración del conjuro. Las unidades que no sufran bajas no se verán afectadas.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4d5b-ebd3-1f14-abb5" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="46c2-1b79-b7ad-919c" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
+        <infoLink id="9452-8865-7e43-ea3d" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c388-8aa2-ba1c-4ea3" name="New CategoryLink" hidden="false" targetId="4c6f72647323232344415441232323" primary="true"/>
+        <categoryLink id="eb5b-3a16-4fcd-30e8" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="eef3-ad93-6914-8bc6" name="Emisario oscuro" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="75fd-dfc8-87e8-821f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca4f-cdda-dda2-2eb5" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5c28-dce0-e7fe-779c" name="Emisario oscuro" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">5</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">5</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">9</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323">4</characteristic>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="335.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1b98-ec08-3d75-a00e" name="Equipo Arúspice" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a66-3ac0-76b9-c1fa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e4a3-6339-34b7-877c" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1313-ac44-2745-e773" name="La espiral" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b01f-57fb-8925-4ff4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1a0b-f179-f022-51c2" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="ea7a-f0c5-547b-5129" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3771-fbe1-675f-075e" name="Báculo de la oscuridad" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73eb-1c8f-5d90-4b83" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2984-1de9-3722-0070" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="3834-fa45-d8bb-7c2c" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="00a3-8274-62be-e44c" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dfe3-ca17-915c-ef08" name="Nivel de magia 4" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebea-23a8-61d3-204f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e1f-afe8-1fa1-dca8" type="min"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="c6db-909a-f879-09eb" name="Palanquín de alimañas" hidden="false" collective="false" import="true" type="upgrade">
@@ -7037,7 +7255,7 @@ D6 Tabla de problemas del Quema-quema-lejos
         <rule id="3205-ba89-33b4-58b4" name="Picadora de condenación" hidden="false">
           <description>En lugar de atacar con el perfil del grupo de apoyo, la Picadora de Condenación causa un número variable de impactos automáticos en el enemigo; para determinar el número de impactos, tira el dado de artillería. Ese será el número de impactos automáticos (2, 4, 6, 8, 10) que causará la Picadora de Condenación a la unidad objetivo, como si fueran impactos por carga. Los impactos se resuelven con F4, Poder de Penetración. En caso de obtener un resultado de Problemas, tira 1D6 en la tabla de problemas de la Picadora de Condenación y aplica inmediatamente el resultado. La Picadora posee una salvación por armadura de 4+, que se incrementa a 3+ por tratarse de un grupo de apoyo.
 D6 Tabla de problemas de la Picadora de Condenación
-1-2 ¡Ba-Blam!: Coloca la plantilla redonda grande centrada sobre el grupo de apoyo. Todas las miniaturas bajo la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán un impacto de F4 con Poder de Penetración. Retira la Picadora de Condenación como baja.
+1-2 ¡Ba-Blam!: Coloca la plantilla redonda grande centrada sobre el grupo de apoyo. Todas las miniaturas bajo la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán un impacto de F4 con Poder de Penetración. Retira la miniatura como baja.
 3-5 ¡ZZZZzap!: Todas las miniaturas en contacto peana con peana con la Picadora de Condenación (incluyendo a ésta) reciben un único impacto con la regla especial Ataque de rayos de F4.
 6 ¡PFFIIiiiuuprt!: La Picadora de Condenación no podrá realizar ningún ataque este turno, mientras la tripulación tira del estrangulador para volver a poner en marcha el extraño artilugio.</description>
         </rule>
@@ -7114,7 +7332,7 @@ D6 Tabla de problemas de la Picadora de Condenación
         <rule id="74e8-e586-a617-0ffc" name="Salvación por armadura 4+" hidden="false"/>
         <rule id="357c-4a4c-46f6-91d3" name="Potencia de unidad 6" hidden="false"/>
         <rule id="8f8f-202c-dc16-90c1" name="Machacar al enemigo" hidden="false">
-          <description>La Rueda de la Muerte tiene la regla especial Impactos por carga (1D6+1). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, la Rueda de la Muerte realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F6 distribuídos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva a la Rueda de la Muerte a contacto peana con peana con una unidad amiga, le causará 1D6+1 impactos por carga, tras lo que deberás separar 1&quot; la Rueda de la Muerte de la unidad.</description>
+          <description>La Rueda de la Muerte tiene la regla especial Impactos por carga (1D6+1). Además, en todas las fases de combate cuerpo a cuerpo en que no haya cargado, la Rueda de la Muerte realiza un ataque especial que se resuelve con Iniciativa cero, y causa a una unidad enemiga en contacto peana con peana con el Ratatanque 1D6 impactos de F6 distribuidos como disparos; estos impactos cuentan para la resolución del combate. Si su movimiento lleva a la Rueda de la Muerte a contacto peana con peana con una unidad amiga, le causará 1D6+1 impactos por carga, tras lo que deberás separar 1&quot; la Rueda de la Muerte de la unidad.</description>
         </rule>
         <rule id="5956-ea02-b620-ccd0" name="Pérdida de control" hidden="false">
           <description>Al final de cualquier fase (propia o del oponente) en la que una Rueda de la Muerte haya sufrido una o más heridas y no esté trabada en combate cuerpo a cuerpo, deberás tirar 1D6: si obtienes un resultado de 2+, el Ingeniero conseguirá controlar la Rueda de la Muerte y no habrá problemas adicionales. Sin embargo, si obtienes un resultado de 1, la Rueda de la Muerte se moverá tal y como se describe en ¡Fuera de control! (el resultado 3-5 de la tabla de problemas de la Rueda de la Muerte).
@@ -7124,7 +7342,7 @@ D6 Tabla de problemas de la Picadora de Condenación
 6 Impulso veloz: El movimiento aleatorio de la Rueda de la Muerte se incrementa en 1D6 para el resto de la partida.</description>
         </rule>
         <rule id="194c-46a2-ca44-20f4" name="¡¡Zzzzaapp!!" hidden="false">
-          <description>La Rueda de la Muerte lanza tres rayos disformes en cada fase de disparo propia, incluso si se encuentra trabada en combate o huyendo. Puede haber situaciones en las que no sea conveniente realizar esos disparos, por lo que el ingeniero Brujo puede optar por realizar un chequeo de L para intentar evitar que la Rueda dispare. Si se falla este chequeo, la máquina disparará de forma normal. Cada rayo disforme tiene un alcance máximo de 18&quot; e impactará sobrela unidad más cercana (amiga o enemiga), independientemente del terreno o la línea de visión. Tira por cada rayo por separado, tomando la distancia desde la peana de la Rueda de la Muerte. Si la unidad más cercana muere a causa del primer rayo, el segundo rayo impactará a la siguiente unidad más cercana dentro de su alcance, y sucederá lo mismo con el tercer rayo. Si hay dos objetivos a la misma distancia, recibirá el impacto la unidad que tenga una mejor tirada de salvación por armadura (y en caso de empatar, la que tenga mayor Potencia de unidad). Para determinar la potencia del rayo disforme, tira un dado de artillería. El resultado obtenido indicará la F de todos los rayos para este turno. Si obtienes un resultado de problemas, deberás tirar en la tabla de problemas de la Rueda de la Muerte. Los rayos disformes tienen las reglas especiales Heridas múltiples (1D6) y Ataques mágicos; obviamente, éste es un ataque de rayos.</description>
+          <description>La Rueda de la Muerte lanza tres rayos disformes en cada fase de disparo propia, incluso si se encuentra trabada en combate o huyendo. Puede haber situaciones en las que no sea conveniente realizar esos disparos, por lo que el ingeniero Brujo puede optar por realizar un chequeo de L para intentar evitar que la Rueda dispare. Si se falla este chequeo, la máquina disparará de forma normal. Cada rayo disforme tiene un alcance máximo de 18&quot; e impactará sobre la unidad más cercana (amiga o enemiga), independientemente del terreno o la línea de visión. Tira por cada rayo por separado, tomando la distancia desde la peana de la Rueda de la Muerte. Si la unidad más cercana muere a causa del primer rayo, el segundo rayo impactará a la siguiente unidad más cercana dentro de su alcance, y sucederá lo mismo con el tercer rayo. Si hay dos objetivos a la misma distancia, recibirá el impacto la unidad que tenga una mejor tirada de salvación por armadura (y en caso de empatar, la que tenga mayor Potencia de unidad). Para determinar la potencia del rayo disforme, tira un dado de artillería. El resultado obtenido indicará la F de todos los rayos para este turno. Si obtienes un resultado de problemas, deberás tirar en la tabla de problemas de la Rueda de la Muerte. Los rayos disformes tienen las reglas especiales Heridas múltiples (1D6) y Ataques mágicos; obviamente, éste es un ataque de rayos.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -7305,6 +7523,7 @@ D6 Tabla de problemas de la Amerratadora
         <infoLink id="b1c6-65d2-8139-915d" name="La fuerza del número" hidden="false" targetId="51f6-0d39-7e49-618a" type="rule"/>
         <infoLink id="2e99-3e70-1d0a-5014" name="Unidad conjunta" hidden="false" targetId="9307-de93-45af-6348" type="rule"/>
         <infoLink id="0f2a-880e-cdd9-bfd3" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="b874-6b25-4db5-fb9f" name="Grupo de apoyo (2)" hidden="false" targetId="2cc9-1417-eef6-2be4" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="5257-c1bc-b1d6-d13c" name="Dotación" hidden="false" collective="false" import="true" type="upgrade">
@@ -7351,9 +7570,9 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
       </rules>
       <infoLinks>
         <infoLink id="71db-544a-e58a-19c3" name="Grupo de apoyo" hidden="false" targetId="5a28-1499-a356-e2e5" type="rule"/>
-        <infoLink id="a156-bab8-62bf-b7a3" name="La fuerza del número" hidden="false" targetId="51f6-0d39-7e49-618a" type="rule"/>
         <infoLink id="1cf9-6e55-74f1-bf90" name="Unidad conjunta" hidden="false" targetId="9307-de93-45af-6348" type="rule"/>
         <infoLink id="f6a6-a42c-0256-ef6a" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="da7c-a047-cbd8-c98d" name="Grupo de apoyo (2)" hidden="false" targetId="2cc9-1417-eef6-2be4" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="2485-e169-95b0-839c" name="Dotación" hidden="false" collective="false" import="true" type="upgrade">
@@ -7400,9 +7619,9 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
       </rules>
       <infoLinks>
         <infoLink id="4c68-9555-dd50-2997" name="Grupo de apoyo" hidden="false" targetId="5a28-1499-a356-e2e5" type="rule"/>
-        <infoLink id="2dcb-aa77-1871-293e" name="La fuerza del número" hidden="false" targetId="51f6-0d39-7e49-618a" type="rule"/>
         <infoLink id="a6e1-0c05-a6b2-e33a" name="Unidad conjunta" hidden="false" targetId="9307-de93-45af-6348" type="rule"/>
         <infoLink id="1781-25f0-a8ee-47e0" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="571b-c1d6-3011-22d3" name="Grupo de apoyo (2)" hidden="false" targetId="2cc9-1417-eef6-2be4" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="ef51-d462-627e-9dc3" name="Dotación" hidden="false" collective="false" import="true" type="upgrade">
@@ -7443,16 +7662,16 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <description>Se trata de un Carro pilotado por dos Skaven como dotación y compuesto por una gran bola rodante llena de púas y cuchillas giratorias (por lo que causa 1D6+1 impactos por carga). Una Picadora de condenación tiene Tamaño de unidad 1 potencia de unidad 3, Ataques mágicos y Contracarga (Si la unidad madre recibe exitosamente una carga, la Picadora de Condenación puede contracargar a la unidad enemiga. Esto se resuelve como una carga normal, pero fuera de la secuencia habitual del turno. Encara la miniatura y tira la distancia de carga. Tanto el destacamento como la unidad enemiga que carga obtendrán el +1I y el resto de beneficios por carga).
 En lugar de atacar con el perfil del grupo de apoyo, la Picadora de Condenación causa un número variable de impactos automáticos en el enemigo; para determinar el número de impactos, tira el dado de artillería. Ese será el número de impactos automáticos (2, 4, 6, 8, 10) que causará la Picadora de Condenación a la unidad objetivo, como si fueran impactos por carga. Los impactos se resuelven con F4, Poder de Penetración. En caso de obtener un resultado de Problemas, tira 1D6 en la tabla de problemas de la Picadora de Condenación y aplica inmediatamente el resultado. La Picadora posee una salvación por armadura de 4+, que se incrementa a 3+ por tratarse de un grupo de apoyo.
 D6 Tabla de problemas de la Picadora de Condenación
-1-2 ¡Ba-Blam!: Coloca la plantilla redonda grande centrada sobre el grupo de apoyo. Todas las miniaturas bajo la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán un impacto de F4 con Poder de Penetración. Retira la Picadora de Condenación como baja.
+1-2 ¡Ba-Blam!: Coloca la plantilla redonda grande centrada sobre el grupo de apoyo. Todas las miniaturas bajo la plantilla (utiliza las reglas habituales para impactos parciales) sufrirán un impacto de F4 con Poder de Penetración. Retira la miniatura como baja.
 3-5 ¡ZZZZzap!: Todas las miniaturas en contacto peana con peana con la Picadora de Condenación (incluyendo a ésta) reciben un único impacto con la regla especial Ataque de rayos de F4.
 6 ¡PFFIIiiiuuprt!: La Picadora de Condenación no podrá realizar ningún ataque este turno, mientras la tripulación tira del estrangulador para volver a poner en marcha el extraño artilugio.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="94a9-6c5a-ce8a-8cc1" name="Grupo de apoyo" hidden="false" targetId="5a28-1499-a356-e2e5" type="rule"/>
-        <infoLink id="bde7-b062-5dbd-da01" name="La fuerza del número" hidden="false" targetId="51f6-0d39-7e49-618a" type="rule"/>
         <infoLink id="8492-40de-a070-2ae6" name="Unidad conjunta" hidden="false" targetId="9307-de93-45af-6348" type="rule"/>
         <infoLink id="9100-1179-5c0b-9bb5" name="Carro" hidden="false" targetId="c761-ad12-6530-fab7" type="rule"/>
+        <infoLink id="49cf-3969-586c-b85f" name="Grupo de apoyo (2)" hidden="false" targetId="2cc9-1417-eef6-2be4" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="f9a5-9abd-7975-c23e" name="Tripulación" hidden="false" collective="false" import="true" type="upgrade">
@@ -7526,9 +7745,9 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
       </rules>
       <infoLinks>
         <infoLink id="7dc9-e360-e028-c44b" name="Grupo de apoyo" hidden="false" targetId="5a28-1499-a356-e2e5" type="rule"/>
-        <infoLink id="5efb-54f2-5cb5-eb99" name="La fuerza del número" hidden="false" targetId="51f6-0d39-7e49-618a" type="rule"/>
         <infoLink id="4279-f963-828a-9498" name="Unidad conjunta" hidden="false" targetId="9307-de93-45af-6348" type="rule"/>
         <infoLink id="86dd-b4c0-3f98-0178" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="d91e-5330-c618-304b" name="Grupo de apoyo (2)" hidden="false" targetId="2cc9-1417-eef6-2be4" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="f53b-32bc-557e-9ea8" name="Dotación" hidden="false" collective="false" import="true" type="upgrade">
@@ -7571,9 +7790,9 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
       </rules>
       <infoLinks>
         <infoLink id="bca6-78bb-d6d3-3e49" name="Grupo de apoyo" hidden="false" targetId="5a28-1499-a356-e2e5" type="rule"/>
-        <infoLink id="7bf2-829c-aca3-fcbf" name="La fuerza del número" hidden="false" targetId="51f6-0d39-7e49-618a" type="rule"/>
         <infoLink id="4da1-ea10-93d9-3cc9" name="Unidad conjunta" hidden="false" targetId="9307-de93-45af-6348" type="rule"/>
         <infoLink id="52e2-d7c2-ef2f-7abc" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="b4b4-1c76-f385-b9f4" name="Grupo de apoyo (2)" hidden="false" targetId="2cc9-1417-eef6-2be4" type="rule"/>
       </infoLinks>
       <selectionEntries>
         <selectionEntry id="f97a-c64c-c372-09ff" name="Dotación" hidden="false" collective="false" import="true" type="upgrade">
@@ -8003,7 +8222,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="57c1-ffc3-2916-82ab" name="Campo de disformidad personal" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Cada vez que el portador sea impactado, tira 1D6 y resta el resultado al valor de F del ataque. Si la F del ataque es de 0 ó inferior, el ataque no tiene efecto. El Campo no protege contra impactos sin un valor de Fuerza.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Cada vez que el portador reciba un impacto con un valor de Fuerza, tira 1D6 y resta el resultado al valor de F del ataque para herir al portador. Si la F del ataque se ve reducida a 0 ó inferior, el ataque no tiene efecto alguno. El Campo de Disformidad Personal no protege contra impactos sin un valor de Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8032,7 +8251,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
+            <cost name="pts" typeId="points" value="45.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="34bf-c0e7-6a6d-c9fa" name="Talismán de disformidad" hidden="false" collective="false" import="true" type="upgrade">
@@ -8139,7 +8358,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6f26-6383-b99a-f02a" name="Familiar rátido" hidden="false" collective="false" import="true" type="upgrade">
@@ -8494,7 +8713,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="38f1-3432-f82d-5ca9" name="Pendones de precisión" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador de este estandarte y su unidad obtendrán un bonificador de +1 en sus tiradas para impactar con armas de proyectiles.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador de este estandarte y su unidad obtendrán un bonificador de +1 en sus tiradas para impactar con armas de proyectiles (hasta un máximo de 3+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8582,7 +8801,7 @@ D6 Efectos del Potaje Skaven
       <description>Un personaje con esta regla especial no verá sustituidos sus ataques -tanto en cuerpo a cuerpo como con proyectiles- por tener como montura una Picadora de Condenación.</description>
     </rule>
     <rule id="5a28-1499-a356-e2e5" name="Grupo de apoyo" hidden="false">
-      <description>Cada grupo de apoyo consiste en dos Skaven montados en una única base y se consideran una única miniatura a todos los efectos (salvación por armadura 6+, potencia de unidad 2). Una unidad de grupos de apoyo destruida, huyendo o desmoralizada nunca provocará chequeos de pánico. Sin embargo, los equipos de destrucción no tienen la regla especial Unidad conjunta, si no que actúan como una unidad independiente de Hostigadores.</description>
+      <description>Cada grupo de apoyo consiste en dos Skaven montados en una única base y se consideran una única miniatura a todos los efectos (salvación por armadura 6+, 5+ con sus armaduras ligeras; potencia de unidad 2). Una unidad de grupos de apoyo destruida, huyendo o desmoralizada nunca provocará chequeos de pánico. Sin embargo, los equipos de destrucción no tienen la regla especial Unidad conjunta, si no que actúan como una unidad independiente de Hostigadores; pese a esto, un equipo de Picadoras de Condenación nunca podrá marchar, y el resto de Equipos de Destrucción no podrán marchar y efectuar sus disparos.</description>
     </rule>
     <rule id="fa98-0091-619c-5444" name="Coraje mezquino" hidden="false">
       <description>Los personajes Skaven con esta regla especial podrán declinar un desafío sin sufrir ningún tipo de efecto adverso: simplemente desplaza al personaje a la fila posterior como es habitual. Adicionalmente, un personaje Skaven podrá dar su liderazgo a su unidad desde cualquier punto de ésta, no solo desde su fila delantera.</description>
@@ -8592,6 +8811,9 @@ D6 Efectos del Potaje Skaven
     </rule>
     <rule id="9307-de93-45af-6348" name="Unidad conjunta" hidden="false">
       <description>Los grupos de apoyo deben desplegarse a 3&quot; o menos de la unidad que lo ha adquirido, conocida como unidad madre. Después de ese momento, se considerará una unidad en todos los aspectos. Mientras se mantenga a 3&quot; o menos de su unidad madre, contará como si tuviera una tirada de salvación especial de 4+ contra disparos y hechizos del tipo Proyectil Mágico.</description>
+    </rule>
+    <rule id="2cc9-1417-eef6-2be4" name="Grupo de apoyo (2)" hidden="false">
+      <description>Cada grupo de apoyo consiste en dos Skaven de Infantería montados en una única base y se consideran una única miniatura a todos los efectos (salvación por armadura 6+, 5+ con sus armaduras ligeras; potencia de unidad 2). El coste en puntos de los Grupos de Apoyo cuenta para el total de tropas básicas de la lista de ejército. Todos los grupos de apoyo tienen las reglas especiales Unidad Conjunta (los grupos de apoyo deben desplegarse a 3&quot; o menos de la unidad que lo ha adquirido, conocida como unidad madre. Después de ese momento, se considerará una unidad en todos los aspectos. Mientras se mantenga a 3&quot; o menos de su unidad madre, contará como si tuviera una tirada de salvación especial de 4+ contra disparos y hechizos del tipo Proyectil Mágico) y La Fuerza del Número (aplicarán un bonificador de L igual al modificador por filas de su unidad madre). Un grupo de apoyo destruido, huyendo o desmoralizado nunca provocará chequeos de pánico.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

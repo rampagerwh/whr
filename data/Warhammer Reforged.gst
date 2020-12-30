@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="306" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="401" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="3b8f-2f71-171e-ded0" name="Warhammer Reforged. 3 edición"/>
   </publications>
@@ -81,6 +81,7 @@
     <categoryEntry id="adc7-d622-704f-a087" name="Tamaño ejército" hidden="false"/>
     <categoryEntry id="e839-bd6b-7e36-e758" name="Personajes" hidden="false"/>
     <categoryEntry id="f277-3fe2-22c5-0650" name="Portaestandarte de batalla" hidden="false"/>
+    <categoryEntry id="eaf4-2780-219b-851f" name="Dragones" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5374616e6461726423232344415441232323" name="Ejército estándar" hidden="false">
@@ -395,6 +396,86 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="d002-6e40-0798-d1af" name="Demonios del caos. Regalos demoníacos experimentales" hidden="false">
+      <categoryLinks>
+        <categoryLink id="2069-96ed-b1bd-abd4" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="990f-3cd0-e0cf-beba" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4b31-bef0-d059-c3ac" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="40.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="f52f-508d-d14f-8424" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d42f-6b81-3d1e-9ac2" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="07a8-c0b5-5b42-88b0" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="ecb7-86e7-6d0a-1167" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="69a7-704c-4982-0940" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c3f9-f477-7abb-ab75" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="b810-94d8-8b85-ab90" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="123c-1a58-33be-6a10" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="b126-c106-bffe-6d1e" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="6518-e749-ef24-bb1b" name="Caledor" hidden="false">
+      <categoryLinks>
+        <categoryLink id="0c92-cf3b-493d-850f" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="60.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="a278-a2b5-72a4-b729" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="3931-66dc-1e9a-8af3" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="60.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="793f-9b49-65cb-08b1" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e377-32b9-f796-2196" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="61f6-a15d-dba7-31cb" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7b75-0677-b1d3-9347" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="4ff2-2284-1dd7-48ce" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="adf6-0f30-202b-e947" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="bb75-3bc7-7ca1-0a08" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="2eb6-8d37-3742-9a47" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="60.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="20e4-4504-6055-4d6a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="dd80-9569-706c-2ca8" name="Dragones" hidden="true" targetId="eaf4-2780-219b-851f" primary="false">
+          <modifiers>
+            <modifier type="increment" field="cf16-a8bc-00c9-d821" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="cf16-a8bc-00c9-d821" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="cf38-6e04-dc20-f6e1" name="Tamaño ejército" hidden="false" collective="false" import="true" type="upgrade">
@@ -424,6 +505,16 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6314-0201-06db-cf1a" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcb1-e7b4-7db1-33f2" type="min"/>
               </constraints>
+              <selectionEntries>
+                <selectionEntry id="1476-2e4b-e602-3cac" name="3.000 puntos o más" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a9-6c3e-22c7-8c61" type="max"/>
+                  </constraints>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -600,20 +691,6 @@ El General de tu ejército obtendrá inmediatamente la regla especial Presencia 
       <infoLinks>
         <infoLink id="62ea-edca-7164-1fca" name="Presencia inspiradora" hidden="false" targetId="b950-0689-6573-779c" type="rule"/>
       </infoLinks>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
-    <selectionEntry id="c19e-af5e-5daa-ba52" name="Personaje especial" hidden="false" collective="false" import="true" type="upgrade">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1e29-ad8c-bd6c-9f9f" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c390-3c68-700d-454b" type="min"/>
-      </constraints>
-      <rules>
-        <rule id="e462-acfd-eee1-6729" name="Personaje especial" hidden="false">
-          <description>Cada uno de los libros de ejército incluye varios héroes y villanos renombrados, cada uno con su propia historia, perfil de atributos, reglas especiales y objetos mágicos. Los personajes especiales pueden incluirse en un ejército como cualquier otro personaje, salvo que no podrás elegir para ellos equipo u opciones adicionales (a menos que estén descritas en las reglas del propio personaje). Además, algunos personajes especiales tienen también las reglas especiales LEYENDA, ARCHIENEMIGO y/o SAGA.</description>
-        </rule>
-      </rules>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -1484,25 +1561,6 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="fb1d-f894-f068-ee65" name="Escamas brillantes" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="adcf-15e6-998c-a7f9" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e22-dc28-6bb1-7724" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2e30-af9c-3d39-93dd" name="Escamas brillantes" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Las tiradas para impactar al portador en combate cuerpo a cuerpo tendrán un penalizador de -1.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="d84e-ea23-897e-1d49" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e2ff-7993-090e-6865" name="Yelmo de dragón" hidden="false" collective="false" import="true" type="upgrade">
@@ -3089,7 +3147,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a7ed-ffc5-1e7b-1fb5" type="max"/>
           </constraints>
           <profiles>
-            <profile id="8456-8ce9-36ca-473e" name="El lñibro de los secretos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
+            <profile id="8456-8ce9-36ca-473e" name="El libro de los secretos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
                 <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Durante cualquier fase de magia propia, el portador puede usar el libro para lanzar hechizos sin invertir dados de energía. Los hechizos serán lanzados a su dificultad básica, y podrán ser dispersados como es habitual (puedes, si lo deseas, lanzar un hechizo en su versión potenciada). Cada vez que el portador utilice el libro, deberá efectuar un Chequeo de Resistencia: si lo supera, sufrirá una herida sin tirada de salvación por armadura. Si lo falla, sufrirá igualmente una herida sin tirada de salvación por armadura , y verá su atributo de Resistencia reducido en un punto por el resto de la batalla. Un mismo hechizo no puede usarse más de una vez en cada fase de magia utilizando el libro.</characteristic>
               </characteristics>
@@ -3817,6 +3875,33 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="7d6d-6bfd-2572-cd05" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ca91-2e72-74f4-b1d1" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0017-1559-021b-0cee" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2822-3e69-1348-56d6" name="Escamas brillantes" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd6b-a876-197e-a47f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b4cb-40fd-fc45-5266" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="83e4-8b9e-5a4a-4598" name="Escamas brillantes" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Las tiradas para impactar al portador en combate cuerpo a cuerpo tendrán un penalizador de -1.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="3d5a-f8a4-68d6-5ab2" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="0d5d-89a1-813d-6d7d" name="Agotamiento" hidden="false">
@@ -4231,6 +4316,15 @@ Si una de estas armas dispara a una unidad de hostigadores, deberá reducir el n
     </rule>
     <rule id="3510-e99d-a516-84bb" name="Esquivar (3+)" hidden="false">
       <description>El valor indicado es la tirada de salvación especial que tendrá la miniatura. Esquivar es, a todos los efectos, una Tirada de salvación especial (recuerda que si dispones de Esquivar y de otra tirada de salvación especial, tan sólo podrás efectuar una de las dos tiradas). Sin embargo, existen tres salvedades: Una tirada de Esquivar no puede ser anulada u obligada a repetir por objetos mágicos o hechizos, ya que no se trata de una protección mágica. Una tirada de Esquivar puede efectuarse incluso contra efectos que maten autimáticamente (aunque no causen heridas). Por el mismo motivo, no se puede esquivar contra las heridas causadas por hechizos de Mladición.</description>
+    </rule>
+    <rule id="5e2e-d24c-0c35-66d9" name="Piel escamosa (1+)" hidden="false">
+      <description>La regla especial Piel escamosa siempre viene acompañada de un valor entre paréntesis. El valor indicado es la tirada de salvación por armadura de la miniatura con esta regla especial. La Piel escamosa puede combinarse con armaduras, escudos y monturas de la forma habitual; por ejemplo, una criatura con Piel escamosa (5+) y una Armadura pesada tendría una tirada de salvación por armadura de 3+; si le añades un escudo, la tirada de salvación por armadura sería de 2+. Recuerda que una tirada de salvación por armadura no puede ser mejor de 1+.</description>
+    </rule>
+    <rule id="477b-5ffd-646c-e546" name="Disparos múltiples (1D6)" hidden="false">
+      <description>Un arma o miniatura con la regla especial Disparos múltiples efectúa el número de disparos indicado cada vez que dispara (esto incluye la reacción a la carga Aguantar y disparar), aplicando un penalizador adicional de -1 para impactar. No es necesario realizar disparos múltiples con un arma que disponga de esta regla especial: si lo deseas, puedes efectuar un único disparo, y no aplicar el penalizador de -1 para impactar por disparos múltiples. En caso de que la cantidad de disparos múltiples sea aleatoria, se determina el número de disparos cada vez que se dispara.</description>
+    </rule>
+    <rule id="fc7e-40e6-a7aa-4530" name="Disparos múltiples" hidden="false">
+      <description>Un arma o miniatura con la regla especial Disparos múltiples efectúa el número de disparos indicado cada vez que dispara (esto incluye la reacción a la carga Aguantar y disparar), aplicando un penalizador adicional de -1 para impactar. No es necesario realizar disparos múltiples con un arma que disponga de esta regla especial: si lo deseas, puedes efectuar un único disparo, y no aplicar el penalizador de -1 para impactar por disparos múltiples. En caso de que la cantidad de disparos múltiples sea aleatoria, se determina el número de disparos cada vez que se dispara.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>
