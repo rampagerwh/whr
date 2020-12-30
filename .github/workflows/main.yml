@@ -1,0 +1,47 @@
+on:
+  push:
+    tags: 
+      - 'v*' # Tag push events matching v*, e.g.: v1.0, v0.1, v123.45.2
+
+name: Create Release
+
+
+jobs:
+  build:    
+    name: Create Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ github.ref }}
+      - name: Setup Python 3.7
+        uses: actions/setup-python@v2
+        with:
+          python-version: '3.7'
+          architecture: 'x64'
+      - name: Create index files
+        id: create_index_files
+        run: |
+          chmod 777 packager/create_index_files.py
+          rm -rf tmp-output
+          mkdir tmp-output
+          tag_name="${GITHUB_REF##*/}"
+          tag_message="$(git tag -l --format='%(contents)' $tag_name)"
+          host="${{ github.repository }}"
+          python packager/create_index_files.py "$tag_name" "$tag_message" "$host" "main"
+      - name: Package files
+        id: package_files
+        run: |
+          chmod 777 packager/package.sh
+          ./packager/package.sh
+          set -x
+          assets=()
+          for asset in ./tmp-output/*; do
+            assets+=("-a" "$asset")
+          done
+          tag_name="${GITHUB_REF##*/}"
+          tag_message="$(git tag -l --format='%(contents)' $tag_name)"
+          hub release create "${assets[@]}" -m "$tag_message" "$tag_name"
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
