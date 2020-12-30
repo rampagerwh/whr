@@ -143,7 +143,12 @@ def create_repository(xml_file,
             GITHUB_LATEST_RELEASE_DOWNLOAD,
             INDEX_FILE
         ),
-        'repositoryUrl': join_url(GITHUB_RAW_URL, host_repository, host_branch, REPO_FILE),
+        'repositoryUrl': join_url(
+            GITHUB_URL,
+            host_repository,
+            GITHUB_LATEST_RELEASE_DOWNLOAD,
+            REPO_FILE
+        ),
         'githubUrl': join_url(GITHUB_URL, host_repository),
         'feedUrl': '',
         'bugTrackerUrl': join_url(GITHUB_URL, host_repository, "issues"),
