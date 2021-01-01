@@ -37,7 +37,9 @@ jobs:
           ./packager/package.sh
           set -x
           assets=()
+          ls ./tmp-output/
           for asset in ./tmp-output/*; do
+            echo "Listing asset ""$asset"
             assets+=("-a" "$asset")
           done
           tag_name="${GITHUB_REF##*/}"
