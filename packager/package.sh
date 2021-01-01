@@ -5,21 +5,20 @@ packageGameSystem() {
 	echo "Packaging GameSystem: $file"
 	name=$(echo "$file" | cut -f 1 -d '.')".gstz"
 	zip "$name" "$file"
-	mv "$name" "../tmp-output/$name"
+	mv "$name" "../tmp-output/""$name"
 }
 
 packageCatalogue() {
 	echo "Packaging Catalogue: $file"
 	name=$(echo "$file" | cut -f 1 -d '.')".catz"
 	zip "$name" "$file"
-	mv "$name" "../tmp-output/$name"
+	mv "$name" "../tmp-output/""$name"
 }
 
 packageIndex() {
     echo "Packaging Index file: $file"
     name=$(echo "$file" | cut -f 1 -d '.')".bsi"
 	zip "$name" "$file"
-	mv "$name" "$name"
 	rm -rfv "$file"
 }
 
