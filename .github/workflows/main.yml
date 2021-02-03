@@ -2,6 +2,16 @@ on:
   push:
     tags: 
       - 'v*' # Tag push events matching v*, e.g.: v1.0, v0.1, v123.45.2
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: "Tag version"
+        required: true
+        default: "v0.0.0"
+      message:
+        description: "Tag message"
+        required: true
+        default: "New release"
 
 name: Create Release
 
