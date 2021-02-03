@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4bff-f57e-cbdd-cdbc" name="Caledor" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="400" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4bff-f57e-cbdd-cdbc" name="Caledor" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="400" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="d5f3-8d72-7f36-e06c" name="Senda">
       <characteristicTypes>
@@ -9,6 +9,13 @@
   </profileTypes>
   <selectionEntries>
     <selectionEntry id="a229-b59b-de8e-6471" name="Arqueros elfos" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="414f-29de-d3fb-83bc" name="Disciplina de Ulthuan" hidden="false">
           <description>Los arqueros élficos pueden disparar en 3 filas, en lugar de las 2 habituales.</description>
@@ -189,6 +196,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="447b-0ea6-153f-5241" name="Lanceros elfos" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <infoLinks>
         <infoLink id="4c66-044f-4671-cdb4" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
         <infoLink id="f5d9-0715-0804-536a" name="Destreza marcial" hidden="false" targetId="819b-edec-3e97-1ca6" type="rule"/>
@@ -385,6 +399,11 @@
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="447b-0ea6-153f-5241" repeats="1" roundUp="false"/>
           </repeats>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60e8-a402-e712-3a90" type="max"/>
@@ -508,7 +527,7 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="52b7-a972-c6d9-88c8" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="3151-3644-6080-7286" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="3151-3644-6080-7286" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="733a-c7b8-8629-5c7a" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="953c-62f2-7d07-a709" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="2622-e2da-5c22-c1c9" name="Armas mágicas. Arma a dos manos" hidden="false" collective="false" import="true" targetId="fce8-e8d3-eae9-d17a" type="selectionEntryGroup"/>
@@ -521,6 +540,8 @@
                     <entryLink id="49c2-072b-9502-b10d" name="Objetos hechizados. Caledor" hidden="false" collective="false" import="true" targetId="07f9-563e-2c2f-0c0c" type="selectionEntryGroup"/>
                     <entryLink id="8fe4-0dfc-f172-18e8" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="ecac-718f-664c-ce18" name="Talismas mágicos. Caledor" hidden="false" collective="false" import="true" targetId="13f9-db62-911a-077e" type="selectionEntryGroup"/>
+                    <entryLink id="21ca-205e-dd9f-10d7" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="3131-4fc8-ccb5-b861" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -582,6 +603,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="563b-2707-ce83-9174" name="Iniciados" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="8882-8eff-eb86-180b" name="Carga devastadora (Sólo iniciados)" hidden="false"/>
         <rule id="8bbc-7e39-d8a0-511d" name="Impetusos" hidden="false">
@@ -801,6 +829,11 @@
         <modifier type="set" field="a08d-d467-bba6-f21c" value="3.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1023,7 +1056,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="e65d-80c0-5e04-6248" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
-                    <entryLink id="9ed6-05e9-7fa2-90f6" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="9ed6-05e9-7fa2-90f6" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="d8ec-4e6b-8a74-218f" name="Armaduras mágicas. Caledor. Miniaturas con Armadura dragón" hidden="false" collective="false" import="true" targetId="029a-b74a-5445-e489" type="selectionEntryGroup"/>
                     <entryLink id="09c3-10c7-ffc7-bafe" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="1724-15cc-b24d-6dfa" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
@@ -1034,6 +1067,8 @@
                     <entryLink id="13c6-c6e6-dea6-8678" name="Objetos hechizados. Caledor" hidden="false" collective="false" import="true" targetId="07f9-563e-2c2f-0c0c" type="selectionEntryGroup"/>
                     <entryLink id="216b-039f-3624-57aa" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="e102-0041-26b9-ca9e" name="Talismas mágicos. Caledor" hidden="false" collective="false" import="true" targetId="13f9-db62-911a-077e" type="selectionEntryGroup"/>
+                    <entryLink id="6747-eb25-5bfd-933d" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="b6d6-ca87-2498-4077" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1115,6 +1150,11 @@
         <modifier type="set" field="382d-9188-efb6-27f9" value="3.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1301,6 +1341,11 @@
         <modifier type="set" field="c56d-7f8b-ce07-1f5d" value="3.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1524,7 +1569,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="c806-8e34-3135-b2e7" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
-                    <entryLink id="b445-e79f-8a60-378c" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="b445-e79f-8a60-378c" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="3628-e3ca-8835-56d9" name="Armaduras mágicas. Caledor. Miniaturas con Armadura dragón" hidden="false" collective="false" import="true" targetId="029a-b74a-5445-e489" type="selectionEntryGroup"/>
                     <entryLink id="8462-e1b8-6509-d56c" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="5ffd-ba3f-47ef-14d1" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
@@ -1535,6 +1580,8 @@
                     <entryLink id="3694-0c12-aece-e9b6" name="Objetos hechizados. Caledor" hidden="false" collective="false" import="true" targetId="07f9-563e-2c2f-0c0c" type="selectionEntryGroup"/>
                     <entryLink id="2965-6246-a6a7-af5f" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="242d-9207-5532-4527" name="Talismas mágicos. Caledor" hidden="false" collective="false" import="true" targetId="13f9-db62-911a-077e" type="selectionEntryGroup"/>
+                    <entryLink id="b982-1ef6-3f4d-d415" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="81f1-f29f-c1ed-8889" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1575,6 +1622,11 @@
         <modifier type="set" field="a22f-cd44-03dc-bcf2" value="3.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -1769,7 +1821,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="efbc-1431-ec87-8c84" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
-                    <entryLink id="6948-12c7-bb21-327d" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="6948-12c7-bb21-327d" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="ead1-d993-03f8-07ea" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="9b41-6e3f-4d8d-0ab2" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="e176-26a8-4017-854f" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
@@ -1778,6 +1830,8 @@
                     <entryLink id="9dba-5df7-c981-e9e5" name="Objetos hechizados. Caledor" hidden="false" collective="false" import="true" targetId="07f9-563e-2c2f-0c0c" type="selectionEntryGroup"/>
                     <entryLink id="5f9b-c07b-a3ec-a9b7" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="8195-a0f0-6763-0635" name="Talismas mágicos. Caledor" hidden="false" collective="false" import="true" targetId="13f9-db62-911a-077e" type="selectionEntryGroup"/>
+                    <entryLink id="2f8c-c88d-66e6-a67c" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="b9a6-af69-3b7a-7818" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1793,6 +1847,13 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="f96b-e09d-9385-fb0d" name="Sacerdote de Vaul" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="51e6-8505-5851-bad2" name="Nivel de magia Sacerdote de Vaul" hidden="false">
           <description>Nivel de magia 2. Puede elegir hechizos del Saber del Metal</description>
@@ -2128,6 +2189,11 @@
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f96b-e09d-9385-fb0d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fb9-9650-909e-17f4" type="max"/>
@@ -2280,7 +2346,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="4e3d-fe7b-c9c7-4909" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
-                    <entryLink id="4855-dea0-8139-847b" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="4855-dea0-8139-847b" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="bd05-61e5-1b37-d383" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="9072-848c-4a56-14ad" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="4404-15a0-2b08-6e9f" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
@@ -2289,6 +2355,8 @@
                     <entryLink id="2d08-fca9-a28f-b11f" name="Objetos hechizados. Caledor" hidden="false" collective="false" import="true" targetId="07f9-563e-2c2f-0c0c" type="selectionEntryGroup"/>
                     <entryLink id="6cf3-8789-3706-9f23" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="386e-0ddd-7033-c17a" name="Talismas mágicos. Caledor" hidden="false" collective="false" import="true" targetId="13f9-db62-911a-077e" type="selectionEntryGroup"/>
+                    <entryLink id="5c4b-0853-3d7c-1058" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="aaeb-740a-9c51-2217" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2308,6 +2376,11 @@
         <modifier type="set" field="d8cd-9ff8-1b12-984e" value="4.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2429,6 +2502,11 @@
         <modifier type="set" field="6405-17ec-faf0-453a" value="2.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2576,7 +2654,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="38aa-dadb-9422-607c" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
-                    <entryLink id="49a6-4ad1-cae8-8f82" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="49a6-4ad1-cae8-8f82" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="11f0-c126-7e16-a952" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="acca-8c43-e020-29e7" name="Armas mágicas. Caledor. Reliquias. Filo de Caledor" hidden="false" collective="false" import="true" targetId="6f5f-f146-620a-aedb" type="selectionEntryGroup"/>
                     <entryLink id="d89a-cc66-75c7-2e57" name="Objetos hechizados. Caledor. Reliquias" hidden="false" collective="false" import="true" targetId="05dd-7a64-f61a-8ffa" type="selectionEntryGroup"/>
@@ -2587,11 +2665,16 @@
                     <entryLink id="7e12-b3f3-12a3-856a" name="Talismas mágicos. Caledor" hidden="false" collective="false" import="true" targetId="13f9-db62-911a-077e" type="selectionEntryGroup"/>
                     <entryLink id="416a-c4e0-c05d-2401" name="Armaduras mágicas. Caledor. Miniaturas con Armadura dragón" hidden="false" collective="false" import="true" targetId="029a-b74a-5445-e489" type="selectionEntryGroup"/>
                     <entryLink id="7182-6f39-e602-89eb" name="Armaduras mágicas. Caledor. Reliquias" hidden="false" collective="false" import="true" targetId="5c5d-65d3-6a1e-855e" type="selectionEntryGroup"/>
-                    <entryLink id="387d-2a9e-57a2-7a6e" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="387d-2a9e-57a2-7a6e" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
                     <entryLink id="04d7-ca13-7741-b884" name="Talismanes mágicos. Reliquias. Personajes del orden" hidden="false" collective="false" import="true" targetId="cb93-ae32-c6be-0104" type="selectionEntryGroup"/>
                     <entryLink id="e69f-3a81-ff17-dcac" name="Talismanes mágicos. Reliquias" hidden="false" collective="false" import="true" targetId="5fd8-9a42-ce90-d88f" type="selectionEntryGroup"/>
                     <entryLink id="743c-5176-3848-7e6e" name="Talismas mágicos. Caledor. Reliquias" hidden="false" collective="false" import="true" targetId="0748-1666-11e6-531e" type="selectionEntryGroup"/>
                     <entryLink id="a8d8-af62-6664-c579" name="Talismas mágicos. Caledor. Reliquias. Infantería" hidden="false" collective="false" import="true" targetId="c2c6-d254-f053-4c99" type="selectionEntryGroup"/>
+                    <entryLink id="c7cc-5107-31d2-f78d" name="Armas mágicas. Caledor. Garra de dragón" hidden="false" collective="false" import="true" targetId="3891-fdcb-fb02-a746" type="selectionEntryGroup"/>
+                    <entryLink id="fe7c-f27c-35c0-dcb2" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="1426-7cfc-c68d-c04a" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
+                    <entryLink id="4234-3a7d-292a-4efb" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="2ecb-2094-82fe-8b60" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2646,6 +2729,11 @@
         <modifier type="increment" field="e7a0-63e6-51f5-ef32" value="1.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f96b-e09d-9385-fb0d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -2741,6 +2829,11 @@
         <modifier type="set" field="a9e0-2589-b621-8659" value="2.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -3139,7 +3232,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2355-586b-2d36-3559" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="4520-2205-ce4c-32f3" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="4520-2205-ce4c-32f3" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="1800-af75-08fe-a8a7" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="69c1-2550-eb11-dd02" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="ecb4-6f6f-167a-10d6" name="Armaduras mágicas. Caledor. Miniaturas con Armadura dragón" hidden="false" collective="false" import="true" targetId="029a-b74a-5445-e489" type="selectionEntryGroup"/>
@@ -3152,6 +3245,8 @@
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="b91b-ce9d-c525-097e" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="2e14-ca3e-a1c0-d6ef" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="c891-7f7e-c9a6-5553" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -3209,8 +3304,10 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="00d5-6beb-8b57-b6b3" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ca4b-c9dd-ef28-8807" name="Armaduras Mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="ca4b-c9dd-ef28-8807" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
                     <entryLink id="042b-ceb2-deea-8f11" name="Armaduras mágicas. Caledor. Reliquias" hidden="false" collective="false" import="true" targetId="5c5d-65d3-6a1e-855e" type="selectionEntryGroup"/>
+                    <entryLink id="9507-af94-3aea-71f4" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="b8dc-e0cf-87a6-330e" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="9bb2-cf35-7791-74ee" name="Armas mágicas. Reliquias" hidden="false" collective="false" import="true">
@@ -3397,11 +3494,26 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="2aa9-0c16-9bab-e7c2" name="Montura" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="ccb9-0e82-dead-c16f" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a830-1830-2a91-cb11" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ccb9-0e82-dead-c16f" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="c37c-a7d8-33f2-82fd" name="Corcel élfico" hidden="false" collective="false" import="true" targetId="8f69-5dbf-7227-bd1c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5889-d5a7-bf8f-aed6" type="max"/>
               </constraints>
@@ -3906,11 +4018,26 @@
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="92c7-0512-0bd4-753c" name="Montura" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="ea35-1837-d694-bbc6" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="49ce-13da-de91-1799" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49ce-13da-de91-1799" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ea35-1837-d694-bbc6" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="22e7-06b5-4f38-c59f" name="Corcel élfico" hidden="false" collective="false" import="true" targetId="8f69-5dbf-7227-bd1c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9595-9ea2-9286-4824" type="max"/>
               </constraints>
@@ -3965,6 +4092,13 @@
               </costs>
             </entryLink>
             <entryLink id="0bb5-f98b-91ea-c9d7" name="Águila gigante" hidden="false" collective="false" import="true" targetId="667d-69f8-6172-d839" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="915c-fb95-6c86-748a" type="max"/>
               </constraints>
@@ -3973,6 +4107,13 @@
               </costs>
             </entryLink>
             <entryLink id="5826-5eb8-7fab-4af3" name="Pegaso" hidden="false" collective="false" import="true" targetId="6bb1-b9b3-d0be-d3f1" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3a8b-eb27-03f6-9e69" type="max"/>
               </constraints>
@@ -4152,6 +4293,7 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
                     <entryLink id="523d-d240-2655-d20c" name="Armas mágicas. Caledor. Lanza de caballería" hidden="false" collective="false" import="true" targetId="1fc2-da5d-6aa7-1bd2" type="selectionEntryGroup"/>
                     <entryLink id="428e-39b8-f081-d58d" name="Armas mágicas. Caledor. Montado en dragón. Lanza de caballería" hidden="false" collective="false" import="true" targetId="cced-da56-21e0-a259" type="selectionEntryGroup"/>
                     <entryLink id="aba2-9314-8bc8-26ff" name="Armas mágicas. Lanza de caballería" hidden="false" collective="false" import="true" targetId="5328-bc17-759c-bb2f" type="selectionEntryGroup"/>
+                    <entryLink id="6fc4-d0bf-58fa-a10a" name="Armas mágicas. Caledor. Garra de dragón" hidden="false" collective="false" import="true" targetId="3891-fdcb-fb02-a746" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="cc35-6380-931d-447d" name="Objetos hechizados" hidden="false" collective="false" import="true">
@@ -4419,7 +4561,7 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
             </selectionEntryGroup>
           </selectionEntryGroups>
         </selectionEntryGroup>
-        <selectionEntryGroup id="e31e-5b3a-237a-db35" name="Nivel de magia" hidden="false" collective="false" import="true">
+        <selectionEntryGroup id="e31e-5b3a-237a-db35" name="Nivel de magia" hidden="false" collective="false" import="true" defaultSelectionEntryId="a379-e072-002f-1c3d">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e20-9c2d-dfda-18e2" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7515-5d72-0d0e-a58c" type="min"/>
@@ -4713,7 +4855,7 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ac72-c862-5246-05de" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="296f-e758-0d2a-7e2f" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="296f-e758-0d2a-7e2f" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="abc8-7357-51ad-716f" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="94ff-0ba0-7826-b539" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="2643-a9bd-bf73-614b" name="Armaduras mágicas. Caledor. Miniaturas con Armadura dragón" hidden="false" collective="false" import="true" targetId="029a-b74a-5445-e489" type="selectionEntryGroup"/>
@@ -4726,6 +4868,8 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="0399-ef76-1fea-9930" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="f597-a094-195c-037e" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="e508-645f-0332-f097" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -4928,11 +5072,26 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
           </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="ed71-6468-93cd-a308" name="Montura" hidden="false" collective="false" import="true">
+          <modifiers>
+            <modifier type="set" field="5699-61d6-5268-56ba" value="1.0">
+              <conditions>
+                <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c760-daed-4802-df0d" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5699-61d6-5268-56ba" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="b7f0-ed1f-fa5a-6566" name="Corcel élfico" hidden="false" collective="false" import="true" targetId="8f69-5dbf-7227-bd1c" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6375-ad6d-dae7-c11d" type="max"/>
               </constraints>
@@ -4987,6 +5146,13 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
               </costs>
             </entryLink>
             <entryLink id="7e30-1b9b-adb7-2a05" name="Águila gigante" hidden="false" collective="false" import="true" targetId="667d-69f8-6172-d839" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f42-be27-4701-97eb" type="max"/>
               </constraints>
@@ -4995,6 +5161,13 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
               </costs>
             </entryLink>
             <entryLink id="a526-ee29-99b7-9d68" name="Pegaso" hidden="false" collective="false" import="true" targetId="6bb1-b9b3-d0be-d3f1" type="selectionEntry">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fdea-3250-96d4-452c" type="max"/>
               </constraints>
@@ -5010,6 +5183,13 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
       </costs>
     </selectionEntry>
     <selectionEntry id="b75f-40c9-06b6-36a9" name="Mago de Caledor" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
       <rules>
         <rule id="5eb8-fe61-7bc9-ea19" name="Nivel de magia Mago de Caledor" hidden="false">
           <description>Nivel de magia 1, puede aumentarse a 2 por +35 puntos. Puede elegir hechizos de Alta Magia y de cualquiera de los 8 saberes de la magia básicos.</description>
@@ -5839,11 +6019,13 @@ tanto al jinete como al dragón.</characteristic>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b09-38ad-6cca-9735" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f83d-b310-b1ec-5853" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="f83d-b310-b1ec-5853" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="f99e-364c-8290-9a13" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="5f8f-1c76-4277-52a9" name="Armaduras mágicas. Caledor" hidden="false" collective="false" import="true" targetId="feae-772e-ce41-afb8" type="selectionEntryGroup"/>
                     <entryLink id="d0cf-49c2-3edb-6b09" name="Armaduras mágicas. Caledor. Miniaturas con Armadura dragón" hidden="false" collective="false" import="true" targetId="029a-b74a-5445-e489" type="selectionEntryGroup"/>
                     <entryLink id="c92a-b526-dd51-f449" name="Armaduras mágicas. Caledor. Montado en dragón" hidden="false" collective="false" import="true" targetId="f856-b5f0-d26c-3e1f" type="selectionEntryGroup"/>
+                    <entryLink id="4b7d-f8e7-6de2-4f93" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="6800-8d66-67ac-acb0" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="6a1f-7b61-c565-05c1" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -6479,9 +6661,15 @@ tanto al jinete como al dragón.</characteristic>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="046a-1c36-705e-1c0e" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="b0dc-418b-a60e-2259" value="1.0">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0a16-0297-d996-2ab9" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0dc-418b-a60e-2259" type="min"/>
       </constraints>
       <rules>
         <rule id="e27f-677a-74f1-f0eb" name="Nivel de magia Rathiel, señor de Tor Morvel" hidden="false">
@@ -6909,14 +7097,19 @@ tanto al jinete como al dragón.</characteristic>
     </selectionEntry>
     <selectionEntry id="137e-c54f-5f03-3cdc" name="Capitán Bellaeir" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="f48d-507f-ab48-2d95" value="1.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="494b-745f-cdd7-38aa" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7095,12 +7288,17 @@ tanto al jinete como al dragón.</characteristic>
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a7d-3fb3-c770-c744" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a7d-3fb3-c770-c744" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="f079-bdd0-0ff6-3902" name="Caballería" hidden="false" targetId="276f-0034-6534-f691" type="rule"/>
@@ -7166,11 +7364,14 @@ tanto al jinete como al dragón.</characteristic>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="2262-cf07-1be4-6b1a" name="Hoja de Caledor" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="2262-cf07-1be4-6b1a" name="Filo de Caledor" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aaa4-9277-2381-e111" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1fb-a523-d412-4234" type="min"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="7bb0-6778-7f77-f830" name="Filo de Caledor" hidden="false" targetId="6b5c-97cb-193f-3263" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -7304,7 +7505,12 @@ tanto al jinete como al dragón.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7493,6 +7699,11 @@ tanto al jinete como al dragón.</characteristic>
             <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a49f-380f-9e6a-e6c2" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="460a-cd84-c15e-6dc2" type="max"/>
@@ -7616,7 +7827,7 @@ tanto al jinete como al dragón.</characteristic>
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="180c-16bd-5313-951b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="02ae-51e6-d0e9-dd0e" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="02ae-51e6-d0e9-dd0e" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="a927-38b6-0dfa-b759" name="Objetos Hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
                     <entryLink id="0ed6-f328-2a9d-76ba" name="Talismanes Mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="f9c2-b5fd-db78-f0d9" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
@@ -7625,6 +7836,8 @@ tanto al jinete como al dragón.</characteristic>
                     <entryLink id="dfbe-8cfa-19af-0d2e" name="Armas mágicas. Altos elfos. Infantería. Espada de la torre blanca" hidden="false" collective="false" import="true" targetId="4cde-aaa6-2f55-1acc" type="selectionEntryGroup"/>
                     <entryLink id="bfbb-8162-6ca1-79e7" name="Objetos hechizados. Altos elfos" hidden="false" collective="false" import="true" targetId="671d-3495-4624-5735" type="selectionEntryGroup"/>
                     <entryLink id="2e01-e546-1183-e9df" name="Talismanes mágicos. Altos elfos" hidden="false" collective="false" import="true" targetId="be2c-08d2-c203-e31d" type="selectionEntryGroup"/>
+                    <entryLink id="134d-6f50-ebb3-88bf" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="1a03-0216-6a29-a540" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -7664,12 +7877,17 @@ tanto al jinete como al dragón.</characteristic>
       <modifiers>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="046a-1c36-705e-1c0e" type="equalTo"/>
           </conditions>
         </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="046a-1c36-705e-1c0e" type="equalTo"/>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -7922,6 +8140,11 @@ tanto al jinete como al dragón.</characteristic>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f22a-3351-fd17-0e42" type="max"/>
@@ -8004,6 +8227,11 @@ tanto al jinete como al dragón.</characteristic>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8153,6 +8381,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="dab0-1115-bb79-6e86" value="1.0">
           <conditions>
             <condition field="selections" scope="5370656369616c23232344415441232323" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="524e-f5cb-b234-ad00" type="atLeast"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8334,6 +8567,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e9a8-49c6-3443-12bd" type="max"/>
@@ -8509,6 +8747,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3e7b-ba81-427f-a7fb" type="max"/>
@@ -8670,6 +8913,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -8898,6 +9146,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5d6f-e915-a387-1a17" type="max"/>
@@ -9084,6 +9337,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9293,6 +9551,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -9662,6 +9925,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fceb-1113-5f07-3f46" type="max"/>
@@ -9973,6 +10241,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7c59-a260-96fc-eeca" type="max"/>
@@ -10128,6 +10401,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10437,6 +10715,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="84e5-dd95-54a7-41f9" type="max"/>
@@ -10574,6 +10857,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10809,6 +11097,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11073,6 +11366,11 @@ Artillería a caballo. Alcance: Est. 0-6. Fuerza: 7. Reglas Especiales: Heridas 
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cf28-7cc3-780d-0e82" type="max"/>
@@ -11312,6 +11610,11 @@ D6	Resultado (Agarrar y...)
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="be2c-cf2d-8cc4-ddc5" type="max"/>
@@ -11541,6 +11844,11 @@ D6	Resultado (Agarrar y...)
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9bec-c173-1c08-c986" type="max"/>
@@ -11743,6 +12051,11 @@ D6	Resultado (Agarrar y...)
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12301,6 +12614,11 @@ D6	Resultado (Agarrar y...)
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="71ed-fec9-6b17-fbc4" type="max"/>
@@ -12541,6 +12859,11 @@ D6	Resultado (Agarrar y...)
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a929-e7c1-af78-ea34" type="max"/>
@@ -12768,6 +13091,106 @@ D6	Resultado (Agarrar y...)
       <entryLinks>
         <entryLink id="a34d-c21a-61e4-7636" name="Regimientos de renombre" hidden="false" collective="false" import="true" targetId="cbe6-b40a-eb61-0c1c" type="selectionEntry"/>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="044a-4fbf-aab1-71ac" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a027-f713-67f9-da22" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="force" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="c87e-01bb-bc76-5bdb" type="instanceOf"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="37ea-09c2-53b0-5e15" name="Cruzar (pantanos y ciénagas)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="51fb-4f10-f452-e7d9" name="Masa de cieno" hidden="false">
+          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
+        </rule>
+        <rule id="f912-a164-4833-2108" name="Controlada magicamente" hidden="false">
+          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
+        </rule>
+        <rule id="2e84-f31d-1c81-9e76" name="Energía elemental" hidden="false">
+          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
+Energía elemental (Dificultad 6+)
+El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
+Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="fbf0-24aa-b13b-765d" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="329f-701b-fba5-9d4f" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
+        <infoLink id="b3b3-50bf-f467-132a" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="e7c6-ea21-42ab-c009" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="381a-489f-c0b2-9d31" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
+        <infoLink id="5416-13df-419c-7707" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+        <infoLink id="8acb-890d-ebd7-1615" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="5b04-3e46-6c73-3e01" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="d3cb-4a3c-44f5-b47c" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5522-c8dd-cc4a-5f8d" name="New CategoryLink" hidden="false" targetId="6645-bf03-34e3-e081" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="7ba6-4070-fbcd-ad12" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6bb2-5fb7-5f67-7c3c" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9802-be38-1424-0082" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="76dd-594b-86c9-d2f6" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="110.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="35a1-341e-fd20-1ee3" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57ae-d3a0-0436-77b8" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a90e-eae2-ccaa-1439" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="093b-e58f-b7f2-7cf5" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3588-9ea2-cf3a-fcef" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ee95-5610-4192-931e" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="07d9-5276-1482-b48a" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -13382,7 +13805,7 @@ D6	Resultado (Agarrar y...)
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
-    <selectionEntryGroup id="3891-fdcb-fb02-a746" name="Armas mágicas. Caledor. Alabarda" hidden="false" collective="false" import="true">
+    <selectionEntryGroup id="3891-fdcb-fb02-a746" name="Armas mágicas. Caledor. Garra de dragón" hidden="false" collective="false" import="true">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d591-74e5-7b9a-1e82" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="030e-140c-3f49-df17" type="min"/>
@@ -13401,7 +13824,7 @@ D6	Resultado (Agarrar y...)
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="2f19-ef66-dfb9-05a2" name="Alabarda" hidden="false" targetId="8dd0-8d9d-2436-cbf1" type="profile"/>
+            <infoLink id="2f19-ef66-dfb9-05a2" name="Garra de dragón" hidden="false" targetId="f8d8-e8a0-43b8-5949" type="profile"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>

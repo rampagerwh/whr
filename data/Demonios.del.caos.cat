@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ca36-41ae-f114-eeeb" name="Demonios del caos" revision="400" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ca36-41ae-f114-eeeb" name="Demonios del caos" revision="401" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9aa0-a435-0f3a-053a" name="Regalo demoníaco">
       <characteristicTypes>
@@ -573,7 +573,7 @@
         <categoryLink id="d463-8666-6a22-6f5e" name="New CategoryLink" hidden="false" targetId="436f726523232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="6308-075f-5095-494d" name="Horrores de Tzeentch" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="6308-075f-5095-494d" name="Horrores de rosas de Tzeentch" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="30.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0304-92be-3f42-f13b" type="max"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5df4-c0fe-8ded-c508" type="min"/>
@@ -2045,6 +2045,20 @@ miniaturas de la unidad. Resuelve este efecto en el momento de tirar los Regalos
         <modifier type="set" field="10a3-6085-4e8b-eb28" value="3.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ab6-077f-c0ea-14bf" type="equalTo"/>
+          </conditions>
+          <conditionGroups>
+            <conditionGroup type="and"/>
+          </conditionGroups>
+        </modifier>
+        <modifier type="set-primary" field="category" value="436f726523232344415441232323">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ab6-077f-c0ea-14bf" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="10a3-6085-4e8b-eb28" value="-1.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1ab6-077f-c0ea-14bf" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -6024,7 +6038,7 @@ En total, el Carruaje de guerra causa 1D6+2 impactos por carga.</description>
         <categoryLink id="5307-7ab3-0e6a-8683" name="New CategoryLink" hidden="false" targetId="436f726523232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="5f8f-f1ed-1484-e0ce" name="Horrores de Tzeentch" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="5f8f-f1ed-1484-e0ce" name="Horrores de azules de Tzeentch" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="40.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2df1-9b89-5246-c22f" type="max"/>
             <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f167-f2b9-5c1a-ea2f" type="min"/>
@@ -6048,7 +6062,7 @@ En total, el Carruaje de guerra causa 1D6+2 impactos por carga.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="12.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="789e-44d1-bf55-d2b6" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
@@ -10771,6 +10785,9 @@ D6	Efecto
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="77d2-43d9-b8cc-8979" name="Aura demoníaca (5+)" hidden="false" targetId="e5ed-5149-3d72-6aa4" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -11553,106 +11570,6 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="ee39-0ba2-d6bc-499a" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f36-9f3c-b0f3-0c9a" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="abff-9ea4-77ce-9a84" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f36-9f3c-b0f3-0c9a" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="abff-9ea4-77ce-9a84" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="a3a3-93e9-1122-2828" name="Cruzar (pantanos y ciénagas)" hidden="false">
-          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
-        </rule>
-        <rule id="1031-1a7b-d66c-f274" name="Masa de cieno" hidden="false">
-          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
-        </rule>
-        <rule id="9605-2d6e-1332-af8a" name="Controlada magicamente" hidden="false">
-          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
-        </rule>
-        <rule id="4e2b-fa01-c73c-f736" name="Energía elemental" hidden="false">
-          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
-Energía elemental (Dificultad 6+)
-El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
-Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="7992-28c0-e3c6-cf95" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
-        <infoLink id="bed7-ea9e-232a-b08d" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
-        <infoLink id="717c-0494-caf9-6c21" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
-        <infoLink id="1677-7852-7569-a02d" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
-        <infoLink id="60dd-b6f1-3e6e-e48f" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
-        <infoLink id="c800-27c7-d17f-ada9" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
-        <infoLink id="bf14-e1ce-fa82-58df" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
-        <infoLink id="7368-ad67-9dc2-74f2" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-        <infoLink id="d1e6-2f66-a364-9dec" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="cce6-b0f8-31f0-2129" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6104-8add-fc38-a4b5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7051-4960-d09a-b3cc" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0fcb-2a0c-9da8-f2da" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
-                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
-                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
-                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
-                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
-                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
-                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
-                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="110.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8124-6093-d167-d67a" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8b52-6575-189c-aca5" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ccda-7bd2-c990-1bcb" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="a437-2bc6-9cec-9b4f" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="629f-f8aa-1f05-e212" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ca5-766d-8f52-8c50" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3892-ab76-ba1a-e0ef" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="1057-9e9e-9039-4afa" name="Demonio mayor" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -11994,10 +11911,13 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                   <profiles>
                     <profile id="ca07-5911-16ed-0e93" name="Pastor del rebaño maldito" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="a0ac-d89f-70e8-096e">La horda del demonio puede incluir unidades de Engendros del Caos como unidades principales. Todas las unidades de Engendros del Caos a 12” o menos del demonio podrán repetir sus tiradas de movimiento aleatorio.</characteristic>
+                        <characteristic name="Propiedades mágicas" typeId="a0ac-d89f-70e8-096e">La horda del demonio puede incluir unidades de Engendros del Caos como unidades básicas. Todas las unidades de Engendros del Caos a 12” o menos del demonio podrán repetir sus tiradas de movimiento aleatorio.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <entryLinks>
+                    <entryLink id="583a-63f0-8e2b-bc2c" name="Pastor del rebaño maldito" hidden="false" collective="false" import="true" targetId="1ab6-077f-c0ea-14bf" type="selectionEntry"/>
+                  </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
@@ -15084,6 +15004,24 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ac57-08a9-592a-b2b4" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="5d2c-bbb5-c3d1-0261" name="Oficial" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+                  <characteristics>
+                    <characteristic name="M" typeId="4d23232344415441232323">7</characteristic>
+                    <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                    <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                    <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                    <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">5</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                    <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                    <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                    <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería monstruosa</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="10.0"/>
               </costs>
@@ -15491,6 +15429,101 @@ D6 	Dones demoníacos
           </infoLinks>
         </entryLink>
       </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="06c3-03d9-b327-330a" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4f36-9f3c-b0f3-0c9a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="c98f-a0b4-d3b5-65cf" name="Cruzar (pantanos y ciénagas)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="2a5c-bd66-02cc-fbd7" name="Masa de cieno" hidden="false">
+          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
+        </rule>
+        <rule id="264c-f703-4269-81cf" name="Controlada magicamente" hidden="false">
+          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
+        </rule>
+        <rule id="38c6-679b-f6b7-9a24" name="Energía elemental" hidden="false">
+          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
+Energía elemental (Dificultad 6+)
+El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
+Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3413-bada-2e26-b8bd" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="58f6-4c65-be4e-6014" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
+        <infoLink id="f8b5-ac23-50f0-da82" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="0ace-e2c3-c468-e66b" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="a420-db0e-0c4e-699f" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
+        <infoLink id="6e88-d3cc-59de-ab55" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+        <infoLink id="8882-6f7e-d470-eba2" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="6230-2c6c-a8d5-4649" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="b2b5-ed69-0f7e-6d00" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d429-fbb0-fca8-e580" name="New CategoryLink" hidden="false" targetId="6645-bf03-34e3-e081" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3011-19bc-1fff-896a" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c805-fec5-527c-2c9d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d107-d86d-7d8d-a0e1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="312c-44fe-d6d2-1776" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="110.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="022b-f9b6-3348-e122" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f51c-e778-6ca7-3725" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2785-f1ba-d7b7-721a" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1d3c-093c-9af0-7ad2" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c05a-e30c-160d-6387" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7e8d-55f4-4596-b8d5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7bbf-39c9-2d02-f0fd" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -16891,6 +16924,15 @@ En total, el Carruaje de guerra causa 1D6+2 impactos por carga.</description>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="1ab6-077f-c0ea-14bf" name="Pastor del rebaño maldito" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dbe-6a13-9c78-6fd1" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ef9-b60a-f306-d03d" type="min"/>
+      </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="0c0c-945b-b208-766b" name="Íconos demoníacos mayores" hidden="false" collective="false" import="true">
@@ -17934,6 +17976,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="f341-c6d5-acca-5d3f" name="Manto del caos" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="da22-ab88-43fd-0ef1" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1117-0c35-55e6-6d3f" type="max"/>
           </constraints>
           <profiles>
             <profile id="c2a7-72a2-2899-822f" name="Manto del caos" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -17949,6 +17992,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="db4e-b0a4-bdfc-0695" name="Hacha del pánico" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="96fc-ed22-3360-2d4b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="95f3-abac-70dd-b8c7" type="max"/>
           </constraints>
           <profiles>
             <profile id="8cd5-b90b-2edb-2391" name="Hacha del pánico" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -17972,6 +18016,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="fe30-3010-ea56-cfae" name="Armadura del caos" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dc84-53f9-ce1c-de73" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="560a-4f01-46a5-0757" type="max"/>
           </constraints>
           <profiles>
             <profile id="5246-a43e-879f-8a35" name="Armadura del caos" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -17987,6 +18032,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="1419-10e4-51c4-a049" name="Aura de energía" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9633-3bf2-b4dc-631b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8486-f9a0-8311-9335" type="max"/>
           </constraints>
           <profiles>
             <profile id="80cc-f2c5-0342-e058" name="Aura de energía" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18002,6 +18048,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="bb68-b3a8-1cfa-5721" name="Esencia maldita" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9071-7c81-1e3a-f7d7" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c51d-28f2-91a4-3343" type="max"/>
           </constraints>
           <profiles>
             <profile id="ca7a-9f69-d596-c586" name="Esencia maldita" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18017,6 +18064,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="a813-a90e-08be-e37b" name="Descarga disforme" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ce60-c250-1820-9203" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e5fd-8760-a641-8160" type="max"/>
           </constraints>
           <profiles>
             <profile id="b5d1-55d7-8cfe-d027" name="Descarga disforme" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18032,6 +18080,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="640b-0a88-8077-5fad" name="Furia del caos" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2202-7038-af3f-70db" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="df0c-e4ea-d0cb-4370" type="max"/>
           </constraints>
           <profiles>
             <profile id="8231-9bce-f33d-c6c3" name="Furia del caos" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18050,6 +18099,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="c0a2-a6b1-e48d-c79f" name="Extremidad adicional" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d99c-c9b8-9466-d0d0" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="16b6-3f0b-a13f-4b21" type="max"/>
           </constraints>
           <profiles>
             <profile id="b472-09ca-d8b6-c85e" name="Extremidad adicional" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18065,6 +18115,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="4251-0255-04c2-57b2" name="Mirada perturbadora" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d41-dbc2-6485-61f7" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4fc5-59cc-9635-b801" type="max"/>
           </constraints>
           <profiles>
             <profile id="065b-70ea-7389-1d6c" name="Mirada perturbadora" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18080,6 +18131,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="cb46-c979-cf50-06ef" name="Espada negra" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7f16-8fd9-ef22-93d0" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="523c-f26c-9f9d-8431" type="max"/>
           </constraints>
           <profiles>
             <profile id="9994-ea47-f93a-c486" name="Espada negra" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18106,6 +18158,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="7fff-5927-5289-24ce" name="Hacha descuartizadora" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="91dd-9488-d53f-45b9" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9842-aeb3-dcde-020c" type="max"/>
           </constraints>
           <profiles>
             <profile id="d6eb-06d0-b52b-00fc" name="Hacha descuartizadora" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18121,6 +18174,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="6b83-23c4-9885-3324" name="Superioridad marcial" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="60e1-89fe-3517-de45" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d034-b32a-329f-cd7f" type="max"/>
           </constraints>
           <profiles>
             <profile id="a6e4-12e0-4898-2351" name="Superioridad marcial" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18136,6 +18190,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="d756-f406-c504-cf4f" name="Ira de Khorne" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8ca2-c054-992b-f6ce" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ec38-7ebd-dabe-9a81" type="max"/>
           </constraints>
           <profiles>
             <profile id="a120-56de-795f-6968" name="Ira de Khorne" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18151,6 +18206,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="468c-ffd7-0dfb-a718" name="Cuerpo acorazado" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe47-3e07-782b-66d6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7f29-c259-7ff4-9251" type="max"/>
           </constraints>
           <profiles>
             <profile id="078d-4db5-96b6-b2e6" name="Cuerpo acorazado" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18166,6 +18222,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="48d9-339a-6745-8057" name="Poderío infernal" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="415e-5e73-3a7a-6609" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b42-179b-c958-0d40" type="max"/>
           </constraints>
           <profiles>
             <profile id="674b-a795-c4fa-7906" name="Poderío infernal" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18189,6 +18246,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="65c6-2aa9-3cdb-8ce3" name="Poder de la masacre" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="683b-bc59-3a7f-6500" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2207-b20e-f824-d192" type="max"/>
           </constraints>
           <profiles>
             <profile id="7c3e-5204-3def-7bfa" name="Poder de la masacre" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18207,6 +18265,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="3182-5ed2-47ee-9371" name="Fuerza demoníaca" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff28-3f43-5204-4d6e" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0420-a389-40db-ba1e" type="max"/>
           </constraints>
           <profiles>
             <profile id="0642-04ed-8fbb-fc0d" name="Fuerza demoníaca" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18222,6 +18281,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="e0c7-a467-6b6e-bcbd" name="Astado" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="bc64-8132-dbe8-700c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="234f-4460-51fb-44a9" type="max"/>
           </constraints>
           <profiles>
             <profile id="866a-34ce-d233-a111" name="Astado" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18240,6 +18300,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="6844-cd3d-dee8-8834" name="Armadura demoníaca" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fe16-430a-821f-1e21" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e89d-b293-d519-36b3" type="max"/>
           </constraints>
           <profiles>
             <profile id="cc02-6b40-bae9-19ce" name="Armadura demoníaca" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18255,6 +18316,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="cbd7-6a48-b5fb-2efa" name="Hacha de Khorne" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4cf8-b6cd-38b6-5d8c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="690f-82e1-707f-d8c6" type="max"/>
           </constraints>
           <profiles>
             <profile id="bebc-6706-9fc0-876e" name="Hacha de Khorne" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18270,6 +18332,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="236b-8f52-ba6c-6501" name="Collar de Khorne" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4b00-766d-9f82-8bd3" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0038-dd11-9e36-6501" type="max"/>
           </constraints>
           <profiles>
             <profile id="f85a-4a4c-4fae-c25e" name="Collar de Khorne" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18288,6 +18351,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="1e8d-a26a-5bcc-eb3a" name="Bramido infernal" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5883-5ee5-98ef-38de" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3488-1124-6eee-d8eb" type="max"/>
           </constraints>
           <profiles>
             <profile id="3afe-8480-aeef-cf61" name="Bramido infernal" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18308,6 +18372,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="bdd2-9518-6613-b1c4" name="Mandoble decapitador" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d69-338e-81eb-0440" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3693-be83-de46-b561" type="max"/>
           </constraints>
           <profiles>
             <profile id="054e-f9c8-dab4-60bb" name="Mandoble decapitador" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18358,6 +18423,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="487b-9852-edcd-8028" name="Pinzas descomunales" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e8c7-c06c-55bc-0d6c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b910-decc-1ac5-5f9e" type="max"/>
           </constraints>
           <profiles>
             <profile id="3e88-ab7c-5fa6-a673" name="Pinzas descomunales" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18373,6 +18439,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="655f-b88f-80e2-2cb2" name="Látigo flagelador de almas" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5147-ead9-6eff-1e94" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="480e-5db3-2b0c-5d90" type="max"/>
           </constraints>
           <profiles>
             <profile id="1c5a-620b-801e-717e" name="Látigo flagelador de almas" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18388,11 +18455,12 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="269c-d05f-054c-b354" name="Indiferecia sádica" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bb2-0179-c233-1ab3" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7d51-1d59-4b82-07ab" type="max"/>
           </constraints>
           <profiles>
             <profile id="19e9-115f-fc3b-0825" name="Indiferencia sádica" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a0ac-d89f-70e8-096e">El Demonio y cualquier unidad a la que se una obtiene la regla especial Indesmoralizable. Esto sustituye su regla habitual de Inestabilidad.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="a0ac-d89f-70e8-096e">El Demonio obtiene la regla especial Indesmoralizable. Pese a ser Indesmoralizable puede unirse a una unidad de infantería y esta obtendrá la regla especial Indesmoralizable.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -18406,6 +18474,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="8801-55e9-af66-0778" name="VIsiones lascivas" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="037b-3250-c3d4-2cf0" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d0c6-21f5-cc90-18f5" type="max"/>
           </constraints>
           <profiles>
             <profile id="fc8c-8335-81cb-d6c4" name="Visiones lascivas" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18421,6 +18490,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="f6dc-2d16-7da7-5e51" name="Ladrón de esencia vital" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0bda-ae4f-2f9a-2626" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ceca-36d3-1029-22e6" type="max"/>
           </constraints>
           <profiles>
             <profile id="2467-b4a3-eea8-103b" name="Ladrón de esencia vital" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18436,6 +18506,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="7046-5b21-0166-b37c" name="Brazos adicionales" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82ae-5423-7b91-664a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="020f-2f13-2f1c-9d6f" type="max"/>
           </constraints>
           <profiles>
             <profile id="b845-42c3-241c-3e57" name="Brazos adicionales" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18459,6 +18530,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="a2b9-e203-fb79-c91a" name="Extremidad adicional" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="99da-7678-fb71-2e92" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e0f8-e04c-adaa-153f" type="max"/>
           </constraints>
           <profiles>
             <profile id="45ef-1231-553c-1f3a" name="Extremidad adicional" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18474,6 +18546,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="9079-5a2a-5fe6-780e" name="Rapidez sobrenatural" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a7e9-6b7b-a0da-5acf" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c58-f8ac-1ffa-7549" type="max"/>
           </constraints>
           <profiles>
             <profile id="91a7-0592-9cdd-3f42" name="Rapidez sobrenatural" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18492,6 +18565,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="fa37-91c8-3047-d356" name="Fusta de la vejación" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="44dd-8366-c726-485a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="19e3-91c3-d9bd-a713" type="max"/>
           </constraints>
           <profiles>
             <profile id="08e4-c92a-9272-a91f" name="Fusta de la vejación" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18507,6 +18581,7 @@ Latigazo de Slaanesh, para los de Slaanesh.</characteristic>
         <selectionEntry id="d3c5-c038-70d3-6403" name="Apariencia sobrecogedora" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="01bb-e956-45d8-d7a8" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b062-dc73-0211-4938" type="max"/>
           </constraints>
           <profiles>
             <profile id="978d-318c-3916-4eb0" name="Apariencia sobrecogedora" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18523,6 +18598,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="5650-86ae-3f6a-8468" name="Macabra fascinación" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89eb-d6d4-b2d0-2067" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e339-bca7-1a45-acaa" type="max"/>
           </constraints>
           <profiles>
             <profile id="b17f-4f30-f23c-fadb" name="Macabra fascinación" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18538,6 +18614,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="29a7-999e-e7e7-0cae" name="Celeridad de Slaanesh" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4629-42a9-cd18-0756" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4cc8-96da-e26e-d3fb" type="max"/>
           </constraints>
           <profiles>
             <profile id="8895-854d-f520-20d6" name="Celeridad de Slaanesh" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18553,6 +18630,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="8c80-ee22-c83f-0922" name="Almizcle soporífero" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3f44-c10c-339c-8c8b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="69e5-997a-db1c-e8e4" type="max"/>
           </constraints>
           <profiles>
             <profile id="41ea-9f83-c5bf-4f2c" name="Almizcle soporífero" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18568,6 +18646,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="0f7c-6629-2cec-fc72" name="Canto de sirena" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="438f-aa0b-a545-5b2a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e864-aa21-94d9-0d82" type="max"/>
           </constraints>
           <profiles>
             <profile id="547c-21f3-82ae-47e2" name="Canto de sirena" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18615,6 +18694,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="7db1-986a-f235-fb22" name="Vigor de Nurgle" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="41bf-70cb-806e-b0b6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b2b-89d5-6d4a-cbdf" type="max"/>
           </constraints>
           <profiles>
             <profile id="c902-e159-b312-cf2d" name="Vigor de Nurgle" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18633,6 +18713,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="f9cf-d5bd-caf2-3b79" name="Flagelo pestilente" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cbc5-89ec-b78d-0813" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0263-1354-ecb1-c348" type="max"/>
           </constraints>
           <profiles>
             <profile id="19da-0dca-5fb8-4853" name="Flagelo pestilente" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18648,6 +18729,7 @@ deberán superar previamente un chequeo de Liderazgo o verán reducido su atribu
         <selectionEntry id="9b70-8375-8ae1-a6c9" name="Torrente de bilis" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="271f-2441-729c-4192" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0635-7eb9-136e-195e" type="max"/>
           </constraints>
           <profiles>
             <profile id="74a3-99be-13f1-beb6" name="Torrente de bilis" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18669,6 +18751,7 @@ salvación por armadura.</characteristic>
         <selectionEntry id="c3e0-197a-df84-4290" name="Infestación de nurgletes" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7a02-ba19-bcf8-2c58" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="578b-59e3-c909-5fea" type="max"/>
           </constraints>
           <profiles>
             <profile id="cb12-a2ba-f394-c62d" name="Infestación de nurgletes" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18684,6 +18767,7 @@ salvación por armadura.</characteristic>
         <selectionEntry id="8a9b-716b-4e00-9014" name="Abotargamiento mórbido" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e932-a5ce-3bab-6cf1" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7fa0-bff3-7eec-2f27" type="max"/>
           </constraints>
           <profiles>
             <profile id="2322-1979-2db0-c791" name="Abotargamiento mórbido" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18699,6 +18783,7 @@ salvación por armadura.</characteristic>
         <selectionEntry id="669c-e34e-81d6-20de" name="Corpulento" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b165-2cfb-ea30-512e" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="675f-f890-8140-a761" type="max"/>
           </constraints>
           <profiles>
             <profile id="4fef-f59e-f581-e22b" name="Corpulento" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18722,6 +18807,7 @@ salvación por armadura.</characteristic>
         <selectionEntry id="8b02-9e32-40b7-e22a" name="Putrefacción de Nurgle" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1767-d33d-1829-a9ee" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2749-94b8-12b7-be90" type="max"/>
           </constraints>
           <profiles>
             <profile id="f626-cd9f-693d-b3b2" name="Putrefacción de Nurgle" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18737,6 +18823,7 @@ salvación por armadura.</characteristic>
         <selectionEntry id="2e4c-092b-92e3-71de" name="Vitalidad necrótica" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ba44-2fe3-530c-4981" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fbea-d6ce-91d9-a176" type="max"/>
           </constraints>
           <profiles>
             <profile id="fbf6-e96d-5745-4125" name="Vitalidad necrótica" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18753,6 +18840,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="f74f-9991-2f0e-bc89" name="Bendición del padre de las plagas" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="84b5-e053-0c15-1bed" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e838-f8f5-5f45-1344" type="max"/>
           </constraints>
           <profiles>
             <profile id="6956-629b-b0a7-c45d" name="Bendición del padre de las plagas" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18768,6 +18856,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="5108-0f4d-b051-0952" name="Espada de plaga" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6db3-a676-1fb8-6215" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="62da-4263-dd4d-4c25" type="max"/>
           </constraints>
           <profiles>
             <profile id="52dc-5637-c2be-5a77" name="Espada de plaga" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18783,6 +18872,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="8c18-8aaa-7b91-b166" name="Rastro legamoso" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c611-0227-821c-0bb6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6269-30ff-8ede-0584" type="max"/>
           </constraints>
           <profiles>
             <profile id="4966-1869-d580-575b" name="Rastro legamoso" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18798,6 +18888,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="1acc-3ae9-2c0d-2ac7" name="Caparazón de Nurgle" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1baa-14b3-6b41-566e" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8bc8-634f-16dc-62e1" type="max"/>
           </constraints>
           <profiles>
             <profile id="3dfc-5a8f-274b-eed7" name="Caparazón de Nurgle" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18816,6 +18907,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="45f1-a45c-a238-a802" name="Tamaño colosal" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9448-b4cc-a56d-c877" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9c94-c058-d4aa-c3d7" type="max"/>
           </constraints>
           <profiles>
             <profile id="5eee-098d-a1e7-3cef" name="Tamaño colosal" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18831,6 +18923,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="e307-a789-8757-f62f" name="Sangre emponzoñada" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c68e-f9a6-a293-69ab" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a30e-ee35-8081-a187" type="max"/>
           </constraints>
           <profiles>
             <profile id="c521-d253-46e4-f034" name="Sangre emponzoñada" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18878,6 +18971,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="68a2-7cea-2197-59b3" name="Esencia inmortal" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="14c6-319b-c8b9-21aa" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7aab-5d69-9b2b-90d8" type="max"/>
           </constraints>
           <profiles>
             <profile id="2ba8-64de-0803-7eb3" name="Esencia inmortal" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18893,6 +18987,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="9e0a-8abb-4182-1bcc" name="Cetro de la mutación" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ff98-8adc-166e-17ab" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="406c-653c-df00-df99" type="max"/>
           </constraints>
           <profiles>
             <profile id="bb6f-d9c7-331f-9b3b" name="Cetro de la mutación" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18908,6 +19003,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="647b-fa1d-984e-b158" name="Robar poder" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="18fb-fc23-f989-26c1" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dc37-952b-b7b3-39d3" type="max"/>
           </constraints>
           <profiles>
             <profile id="07b1-17e3-8666-d658" name="Robar poder" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18923,6 +19019,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="582d-9493-9393-a59d" name="Sabiduría milenaria" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7921-5c71-c3c6-c053" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9195-e0f9-99de-2193" type="max"/>
           </constraints>
           <profiles>
             <profile id="b178-ff50-e9c3-04b3" name="Sabiduría milenaria" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18938,6 +19035,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="fb4a-4c65-d8b1-6beb" name="Fortuna de Tzeentch" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fed-cf6d-5b61-6f2d" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0fae-fc1e-63fa-b8c1" type="max"/>
           </constraints>
           <profiles>
             <profile id="0681-b26a-54c1-cee0" name="Fortuna de Tzeench" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18961,6 +19059,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="9510-8c85-d79b-d0a8" name="Bendecido por el arquitecto del destino" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="e23c-651e-d434-e946" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2bb9-edfa-b351-043a" type="max"/>
           </constraints>
           <profiles>
             <profile id="fa08-cfa7-92c6-015e" name="Bendecido por el arquitecto del destino" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18976,6 +19075,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="f65e-eba3-f265-70e4" name="Conocimientos prohibidos" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="deec-1393-1d7a-08c6" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="517d-4f1f-0177-185d" type="max"/>
           </constraints>
           <profiles>
             <profile id="3799-1a7c-2891-7fc4" name="Conocimientos prohibidos" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -18991,6 +19091,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="1df0-1f30-b3cf-09e7" name="Aureloa ígnea" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb51-401a-87a3-97d9" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="19bc-4c0e-17d7-d8a8" type="max"/>
           </constraints>
           <profiles>
             <profile id="327a-395d-2afe-3405" name="Aureloa ígnea" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -19006,6 +19107,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="3ad1-c3e7-c133-756e" name="Bastón de la calcinación" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3dd-004e-6be0-c6a4" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="86dc-dec5-1151-3ad3" type="max"/>
           </constraints>
           <profiles>
             <profile id="ecb3-b17b-e1dc-0e9d" name="Bastón de la calcinación" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -19021,6 +19123,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="a2db-74de-0e3f-e47b" name="Maestría de lo arcano" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8898-d06e-35bd-d6fb" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0f5d-ddd0-71d6-7a66" type="max"/>
           </constraints>
           <profiles>
             <profile id="e270-5573-94f2-2f1e" name="Maestría de lo arcano" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -19036,6 +19139,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="8606-42d7-267b-bcda" name="Maestro de la mutación" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b156-7913-2771-b8fa" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8d25-924a-bd83-cd67" type="max"/>
           </constraints>
           <profiles>
             <profile id="269e-84df-8779-1773" name="Maestro de la mutación" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -19051,6 +19155,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="61df-f133-9470-a30f" name="Foco de energía" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7160-c144-73e4-2979" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a141-8eb0-22cd-b03f" type="max"/>
           </constraints>
           <profiles>
             <profile id="27d0-eafc-7c23-28ab" name="Foco de energía" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -19066,6 +19171,7 @@ heridas que hubiese sufrido previamente durante la batalla.</characteristic>
         <selectionEntry id="ccf9-b3d6-3c09-e3bc" name="Llamas de Tzeench" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fb50-9de4-72aa-c393" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8cb8-a6ba-38ce-c7a5" type="max"/>
           </constraints>
           <profiles>
             <profile id="8e6b-7b96-a7e1-b1db" name="Llamas de Tzeench" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">
@@ -19114,6 +19220,7 @@ especiales Disparos múltiples (1D3+1), Disparo rápido, Arrojadiza, Ataques fla
         <selectionEntry id="6e41-029e-4241-f197" name="Pozo de poder" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3104-f075-11cc-a898" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b74-5808-1acd-9709" type="max"/>
           </constraints>
           <profiles>
             <profile id="ac51-60ed-d6f6-78f5" name="Pozo de poder" hidden="false" typeId="9aa0-a435-0f3a-053a" typeName="Regalo demoníaco">

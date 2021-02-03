@@ -997,7 +997,7 @@
     </selectionEntry>
     <selectionEntry id="029c-56f8-2ed8-471b" name="Tumularios" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="fcec-4942-ef4c-5c03" value="3">
+        <modifier type="set" field="fcec-4942-ef4c-5c03" value="3.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
           </conditions>
@@ -2368,9 +2368,10 @@
                     <entryLink id="fd99-3f76-c314-33f1" name="Objetos hechizados. No muertos" hidden="false" collective="false" import="true" targetId="9738-8fa9-4207-1242" type="selectionEntryGroup"/>
                     <entryLink id="da1d-fff7-2311-ad5a" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
                     <entryLink id="7beb-3e81-2556-cfde" name="Armaduras Mágicas - No muertos" hidden="false" collective="false" import="true" targetId="22f4-0f5c-3a8f-f08e" type="selectionEntryGroup"/>
-                    <entryLink id="ac44-68f6-e68d-26b8" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="ac44-68f6-e68d-26b8" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="64f8-89d9-9e6f-0502" name="Talismanes mágicos. No muertos" hidden="false" collective="false" import="true" targetId="6c60-4d1b-9437-3ab0" type="selectionEntryGroup"/>
                     <entryLink id="a716-76ab-f7e2-4487" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="3afb-857d-efe9-5e91" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2902,9 +2903,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c488-e16e-bb3a-b865" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="3480-9ed6-9e4d-e301" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="3480-9ed6-9e4d-e301" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="b5e2-ca2f-6895-2894" name="Armaduras mágicas. No muertos" hidden="false" collective="false" import="true" targetId="22f4-0f5c-3a8f-f08e" type="selectionEntryGroup"/>
                     <entryLink id="3bee-fc54-0f08-f520" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="9d61-55a3-70f8-0b4f" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="9575-ca7d-881b-a186" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2976,11 +2979,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e529-4cba-7c10-c383" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a971-89b0-f498-1409" type="min"/>
               </constraints>
-              <rules>
-                <rule id="049f-4546-0684-725b" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="bcb5-f36c-547d-feac" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -3221,8 +3222,10 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="71e3-2d13-f681-41fb" name="Armaduras mágicas. No muertos" hidden="false" collective="false" import="true" targetId="22f4-0f5c-3a8f-f08e" type="selectionEntryGroup"/>
-                    <entryLink id="910f-179a-6ac7-caee" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="910f-179a-6ac7-caee" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="2040-4737-ee47-a65d" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="355c-6c3f-426d-34bf" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="6dae-5e10-793c-f0f0" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3275,7 +3278,9 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="bc2a-e1e3-8a6f-d8aa" name="Armaduras mágicas. Reliquias. No muertos" hidden="false" collective="false" import="true" targetId="4393-f2db-9dbe-cce1" type="selectionEntryGroup"/>
-                    <entryLink id="36de-14bb-795c-6584" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="36de-14bb-795c-6584" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
+                    <entryLink id="1002-94c7-38c7-9c1a" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="93cd-538a-12c9-b379" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3659,9 +3664,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4071-862d-3ffa-0c7c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="8760-ff3c-b2fe-da59" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="8760-ff3c-b2fe-da59" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="3017-846d-3e30-501b" name="Armaduras mágicas. No muertos" hidden="false" collective="false" import="true" targetId="22f4-0f5c-3a8f-f08e" type="selectionEntryGroup"/>
                     <entryLink id="c4bf-b1d3-b317-3ee8" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="0e6f-d732-3044-c953" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="715b-866d-3f41-a8ff" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3735,11 +3742,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d371-7627-0bfd-c104" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c41-a864-888a-d2db" type="min"/>
               </constraints>
-              <rules>
-                <rule id="161c-0aa3-43b4-3a9a" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="073b-de77-8c3f-4eb2" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -4087,9 +4092,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="20de-1d88-941d-3fc4" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="c35b-f524-c989-14f4" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="c35b-f524-c989-14f4" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="6b82-8b71-47f9-8c2b" name="Armaduras mágicas. No muertos" hidden="false" collective="false" import="true" targetId="22f4-0f5c-3a8f-f08e" type="selectionEntryGroup"/>
                     <entryLink id="6c12-017a-378a-8850" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="2131-2a96-5dae-893d" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="d709-d6d0-4da0-8642" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4109,11 +4116,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5300-fae1-19df-d448" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d411-9e2a-feec-4527" type="min"/>
               </constraints>
-              <rules>
-                <rule id="e4d8-8ee1-431c-dfe5" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="95ac-5b9b-61ca-929e" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -4783,8 +4788,10 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="e64a-d45d-195e-f573" name="Armaduras mágicas. No muertos" hidden="false" collective="false" import="true" targetId="22f4-0f5c-3a8f-f08e" type="selectionEntryGroup"/>
-                    <entryLink id="fad0-5a00-3305-290a" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="fad0-5a00-3305-290a" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="a47b-5f0d-7a01-adf0" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="bc79-a093-7530-0c02" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="a0e4-06b3-7935-9114" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5195,7 +5202,17 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="95e5-e3f6-3338-054b" name="Wraitjs Malditos Espectros en conrcel)" hidden="false" collective="false" import="true" type="unit">
+    <selectionEntry id="95e5-e3f6-3338-054b" name="Wraitjs malditos (Espectros en corcel)" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="f20c-f01b-7530-2732" value="2.0">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f20c-f01b-7530-2732" type="max"/>
+      </constraints>
       <rules>
         <rule id="e224-bc3f-d8d8-d57d" name="Impactos por carga (1) (F5, Ataques mágicos y Ataques flamígeros)" hidden="false">
           <description>Cuando la miniatura cargue al combate (o arrase y llegue al combate), durante su siguiente ronda de combate cuerpo a cuerpo causará los Impactos por carga indicados. Estos impactos son automáticos (no es necesario efectuar tirada alguna para impactar), y se resuelven al inicio de la fase de combate cuerpo a cuerpo, antes de que ninguna miniatura ataque, con la Fuerza básica de la miniatura que los causó (en el caso de los carruajes, utiliza la F del propio carro). En el caso de que se efectúen impactos por carga contra una unidad mixta, los impactos por carga se repartirán como si fuesen impactos por proyectiles. Las bajas causadas por los Impactos por carga se cuentan a la hora de determinar el resultado del combate de esa fase.</description>
@@ -5213,7 +5230,7 @@
         <categoryLink id="b499-6028-c7be-09ce" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
-        <selectionEntry id="997b-a019-7308-052f" name="Wraith Malditos (Espectros en corcel)" hidden="false" collective="false" import="true" type="model">
+        <selectionEntry id="997b-a019-7308-052f" name="Wraith malditos (Espectros en corcel)" hidden="false" collective="false" import="true" type="model">
           <constraints>
             <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0fe0-3873-d767-006a" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6595-3540-64f9-c2ec" type="min"/>
@@ -6184,11 +6201,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b50-9a22-a528-ffc6" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b26-7ee2-31a4-afb6" type="min"/>
               </constraints>
-              <rules>
-                <rule id="8f57-b82c-5cd0-cd37" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="7e41-8260-e5e8-5332" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -6451,11 +6466,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e293-f775-64a8-84d0" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="659b-bf4a-c5a7-0e59" type="min"/>
               </constraints>
-              <rules>
-                <rule id="27f2-3b54-7c29-4855" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="1ce0-2fee-f088-a952" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -6958,11 +6971,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c8b7-0af3-f1e0-af3b" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f17-db9b-e58e-e143" type="min"/>
               </constraints>
-              <rules>
-                <rule id="9506-2c3f-8c75-c063" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="25e6-2878-8197-6d44" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -7353,11 +7364,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c13-f3b8-c0bd-0388" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a95-a4ce-6ca7-4b9c" type="min"/>
               </constraints>
-              <rules>
-                <rule id="4099-5ea7-8fca-7444" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="82f5-dd00-895b-1b31" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -7604,11 +7613,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b871-924f-77f2-2633" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="197f-9cf6-9547-63ba" type="min"/>
               </constraints>
-              <rules>
-                <rule id="df39-23ef-efe8-c822" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="88d7-a464-c0ca-5360" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -7825,11 +7832,9 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd23-7717-a821-4362" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4dd9-f2b1-bd0b-24a9" type="min"/>
               </constraints>
-              <rules>
-                <rule id="5fb6-7870-7d29-cb1e" name="General del ejército no muerto" hidden="false">
-                  <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
-                </rule>
-              </rules>
+              <infoLinks>
+                <infoLink id="254a-5467-e8f1-fa3b" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
+              </infoLinks>
             </entryLink>
           </entryLinks>
           <costs>
@@ -10770,106 +10775,6 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="2c31-6cb6-a1b9-a408" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="477d-a1c4-81ef-aebd" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="b97a-be33-3d71-13b8" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="477d-a1c4-81ef-aebd" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b97a-be33-3d71-13b8" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="d48f-1fa5-8d9f-45fb" name="Cruzar (pantanos y ciénagas)" hidden="false">
-          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
-        </rule>
-        <rule id="d7e2-e145-f255-daec" name="Masa de cieno" hidden="false">
-          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
-        </rule>
-        <rule id="fff9-5448-8ca7-f4e5" name="Controlada magicamente" hidden="false">
-          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
-        </rule>
-        <rule id="f73b-cb10-072b-f673" name="Energía elemental" hidden="false">
-          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
-Energía elemental (Dificultad 6+)
-El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
-Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="f35e-b77a-dc39-74da" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
-        <infoLink id="faef-10bf-ff58-c83b" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
-        <infoLink id="388f-ee69-e3a8-af89" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
-        <infoLink id="d213-52d1-0114-0c1b" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
-        <infoLink id="cc9e-bd58-787c-e8b7" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
-        <infoLink id="31e5-d7aa-83c8-d93a" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
-        <infoLink id="1693-7a0d-645c-6c11" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
-        <infoLink id="cc39-2d12-60b7-7465" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-        <infoLink id="8302-136a-abd4-9530" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="ce15-e14c-4dd2-c06a" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="da6c-d818-1052-8cfc" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fff5-08b4-39aa-f7b3" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="8979-ce4b-6b03-99bf" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
-                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
-                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
-                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
-                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
-                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
-                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
-                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="110.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d673-311b-16da-c0a1" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1b66-def1-c98b-6996" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f4d-9850-6471-9c71" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="184d-4ee1-a8af-5129" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bbf9-f78b-2817-26a2" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5213-00de-4464-12b3" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="0854-f9a7-1e12-9922" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="25fc-4204-8a5b-bb23" name="Mourngul" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -12010,6 +11915,101 @@ Se trata de un hechizo de potenciación que no hace ningún objetivo. Si se resu
           <entryLinks>
             <entryLink id="6551-d6f5-c9cf-18b3" name="Corcel esquelético con barda" hidden="false" collective="false" import="true" targetId="baf3-311e-4516-cb8b" type="selectionEntry"/>
           </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="07ac-5e6e-38f7-a6fb" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="477d-a1c4-81ef-aebd" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="7033-6ad1-c8d7-c652" name="Cruzar (pantanos y ciénagas)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="ffe7-4576-5aab-0dc0" name="Masa de cieno" hidden="false">
+          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
+        </rule>
+        <rule id="bde7-dcc9-16f6-4bc3" name="Controlada magicamente" hidden="false">
+          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
+        </rule>
+        <rule id="007f-8894-d02e-84ae" name="Energía elemental" hidden="false">
+          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
+Energía elemental (Dificultad 6+)
+El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
+Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="18d5-79c3-a407-1e7b" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="a885-71d0-a1f8-7645" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
+        <infoLink id="5dad-94e0-cb0b-446f" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="fb9c-4340-52c6-6ff7" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="0c25-c340-3f65-9287" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
+        <infoLink id="75c5-85d4-491b-d887" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+        <infoLink id="3f8f-2b49-50c5-7207" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="ab98-6b79-a6cd-fe52" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="4d76-436b-16dd-3b26" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="0a95-7a2c-bd34-7db7" name="New CategoryLink" hidden="false" targetId="6645-bf03-34e3-e081" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d814-b59e-ca97-bd7d" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="43a4-0edb-ccc2-1afd" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3cc2-ca07-d6bf-1e72" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="67f9-882c-072c-6e6b" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="110.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="68d2-d093-b651-6cd9" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c6e3-127c-db55-2c76" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="496a-7e6e-8ad9-2857" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="294d-1fc0-6ab4-6733" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d42-199b-71a0-825e" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1de4-8f18-a7e5-e172" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="296b-9a25-028f-4db1" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -14191,6 +14191,9 @@ muerto). Van Hal no puede unirse a unidades.</description>
   <sharedRules>
     <rule id="00b5-068f-c878-f5d3" name="Armas funerarias" hidden="false">
       <description>Las armas que portan tienen las reglas especiales ataques mágicos y golpe letal.</description>
+    </rule>
+    <rule id="2943-1431-bafd-f651" name="General del ejército no muerto" hidden="false">
+      <description>El ejército de No muertos debe incluir al menos un lanzador de conjuros, que será el maligno general que ha levantado la horda. El general del ejército debe ser el hechicero con mayor nivel de magia del ejército; si dispones de dos o más miniaturas con el mismo nivel de magia, decide cuál de ellas será el general, y comunícaselo a tu oponente. Si tu general muere, todo tu ejército (en la vieja tradición de los No Muertos) comenzará a deshacerse en polvo. Los esqueletos se romperán en pedazos, privados de la magia negra que los animaba; los zombis se tambalearán y caerán y los espíritus se disolverán en la nada. Al final de la fase en la que el general haya muerto, y al inicio de cada turno posterior de los no muertos, cada unidad no muerta debe efectuar un chequeo de liderazgo, sufriendo una herida sin tirada de salvación por cada punto por el que fallen dicho chequeo. Puede utilizarse el liderazgo de un personaje al mando de la unidad para este chequeo, y los monstruos pueden usar el liderazgo de su jinete. Los personajes, así como las unidades con la regla especial “¡Están vivos!”, no resultan afectados por la muerte del general.</description>
     </rule>
   </sharedRules>
 </catalogue>

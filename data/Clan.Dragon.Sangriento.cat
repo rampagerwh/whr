@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="3d03-3105-00ed-9739" name="Dragón sangriento" revision="401" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="3d03-3105-00ed-9739" name="Dragón sangriento" revision="402" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="f71e-06e9-0083-adc2" name="Poder vampírico">
       <characteristicTypes>
@@ -495,6 +495,13 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="550c-3f7f-1c06-aa56" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="89f4-83a8-3db3-5d9c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6d26-d7f9-2857-e52b" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d265-9bb1-77f4-b977" type="max"/>
               </constraints>
@@ -1830,7 +1837,7 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da6b-2cb5-d8db-f61b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="50e0-1d3f-c4cb-9505" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="50e0-1d3f-c4cb-9505" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="d535-1c0a-8344-de97" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
                     <entryLink id="a7c3-40c6-aad5-47c8" name="Armaduras mágicas. Clan Dragón Sangriento. Vampiros" hidden="false" collective="false" import="true" targetId="effe-d656-35ca-52e6" type="selectionEntryGroup"/>
                     <entryLink id="fc67-3193-d91d-7761" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
@@ -1853,6 +1860,8 @@
                       </modifiers>
                     </entryLink>
                     <entryLink id="6f77-f18d-8754-7d11" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="cf79-9cf1-c44b-d608" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="4fca-8dfc-1bc4-953a" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1906,6 +1915,7 @@
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="6290-1242-e5d9-ee54" name="Estandartes mágicos. Sólo clan dragón sangriento" hidden="false" collective="false" import="true" targetId="0f57-7f82-9dc3-12b0" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2455,6 +2465,17 @@
                     <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
+                <selectionEntry id="800d-555f-5078-9b5e" name="Arma a dos manos" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="743a-d13f-3a0e-0494" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="77ac-a781-32b6-0f3d" name="Arma a dos manos" hidden="false" targetId="b737-28ed-1002-5531" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
             <selectionEntryGroup id="3900-a788-ea8c-ae62" name="Armaduras" hidden="false" collective="false" import="true" defaultSelectionEntryId="66b4-7d04-20ea-932b">
@@ -2550,7 +2571,7 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="84f7-9c23-f11f-5212" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="923c-aafb-a6a0-e606" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="923c-aafb-a6a0-e606" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="312a-5123-a57c-b89e" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
                     <entryLink id="dc8f-ab53-206c-6746" name="Armaduras mágicas. Clan Dragón Sangriento. Vampiros" hidden="false" collective="false" import="true" targetId="effe-d656-35ca-52e6" type="selectionEntryGroup"/>
                     <entryLink id="bdf2-7bcc-e817-c801" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
@@ -2573,6 +2594,8 @@
                       </modifiers>
                     </entryLink>
                     <entryLink id="92e7-5a43-68e0-9749" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="8082-1f0a-6617-2f63" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="5584-958d-8535-5991" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -2626,6 +2649,7 @@
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="3556-0072-6fc5-edd1" name="Estandartes mágicos. Sólo clan dragón sangriento" hidden="false" collective="false" import="true" targetId="0f57-7f82-9dc3-12b0" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2874,6 +2898,29 @@ Poder TABLA DEL CARRUAJE NEGRO
                   </constraints>
                   <infoLinks>
                     <infoLink id="ff2e-2e51-662f-fa89" name="Arma a dos manos" hidden="false" targetId="b737-28ed-1002-5531" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e75d-6e40-6442-1a2f" name="Equipo vampiro resucitado" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="320f-63cb-35c6-e0fe" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="96ab-e88b-f5d1-e91c" type="max"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1146-5022-6fa2-2a3b" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b7c5-6721-5460-9cc0" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b16d-6027-ba93-67a2" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="9c66-37a1-82fc-fcfa" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3172,7 +3219,7 @@ Poder TABLA DEL CARRUAJE NEGRO
                     <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85de-092b-4841-f03c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="4674-a768-06d3-7fa1" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="4674-a768-06d3-7fa1" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="c27c-48ae-b9eb-f13b" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
                     <entryLink id="9bc8-25d9-6a3f-c68a" name="Armaduras mágicas. Clan Dragón Sangriento. Vampiros" hidden="false" collective="false" import="true" targetId="effe-d656-35ca-52e6" type="selectionEntryGroup"/>
                     <entryLink id="ff42-9d2a-cd85-76d1" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
@@ -3195,6 +3242,8 @@ Poder TABLA DEL CARRUAJE NEGRO
                       </modifiers>
                     </entryLink>
                     <entryLink id="d721-811e-95d1-107f" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="86bd-dfa4-a409-7506" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="19dd-8a56-a107-3d66" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -3248,6 +3297,7 @@ Poder TABLA DEL CARRUAJE NEGRO
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="096e-2996-a305-3221" name="Estandartes mágicos. Sólo clan dragón sangriento" hidden="false" collective="false" import="true" targetId="0f57-7f82-9dc3-12b0" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3733,8 +3783,10 @@ Poder TABLA DEL CARRUAJE NEGRO
                     <entryLink id="0455-f4df-139e-cc43" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
                     <entryLink id="c425-8891-f399-546f" name="Armaduras mágicas. Clan Dragón Sangriento. Vampiros" hidden="false" collective="false" import="true" targetId="effe-d656-35ca-52e6" type="selectionEntryGroup"/>
                     <entryLink id="777d-7d4b-9016-ae42" name="Armaduras mágicas. Sólo clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="9318-876f-cb10-a101" type="selectionEntryGroup"/>
-                    <entryLink id="ad3b-8fe0-fb7c-42b5" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="ad3b-8fe0-fb7c-42b5" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="9e5a-3611-654f-9497" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="83a8-46fb-6e23-f2ae" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="c528-99e9-b3d6-ac70" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="1fc8-1186-fa24-ce91" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -3802,7 +3854,9 @@ Poder TABLA DEL CARRUAJE NEGRO
                 </selectionEntryGroup>
                 <selectionEntryGroup id="e126-7b64-3dc3-d479" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="5fe3-a8d0-4489-f434" name="Armaduras Mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="5fe3-a8d0-4489-f434" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
+                    <entryLink id="21d5-bef4-9780-d77c" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="6ef9-6902-b860-6b3b" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="6f50-0235-a2b9-ec6e" name="Armas mágicas. Reliquias" hidden="false" collective="false" import="true">
@@ -3830,7 +3884,6 @@ Poder TABLA DEL CARRUAJE NEGRO
                 </selectionEntryGroup>
                 <selectionEntryGroup id="cf67-b48c-a2d6-9c3d" name="Artefactos arcanos. Reliquias" hidden="false" collective="false" import="true">
                   <entryLinks>
-                    <entryLink id="772e-9563-b638-1b06" name="Armaduras Mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
                     <entryLink id="29a0-48c8-3538-6f98" name="Artefactos arcanos. Reliquias. Personajes de la destrucción" hidden="false" collective="false" import="true" targetId="4b82-1f62-073f-aefa" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
@@ -3840,6 +3893,7 @@ Poder TABLA DEL CARRUAJE NEGRO
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="17e7-c595-a9d9-4ce1" name="Artefactos arcanos. Reliquias" hidden="false" collective="false" import="true" targetId="8c61-ba9b-87c0-eef1" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4337,8 +4391,10 @@ Poder TABLA DEL CARRUAJE NEGRO
                     <entryLink id="d01c-6934-8157-9245" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
                     <entryLink id="6a79-9f05-f3ff-6c49" name="Armaduras mágicas. Clan Dragón Sangriento. Vampiros" hidden="false" collective="false" import="true" targetId="effe-d656-35ca-52e6" type="selectionEntryGroup"/>
                     <entryLink id="0c18-2a62-6446-f68d" name="Armaduras mágicas. Sólo clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="9318-876f-cb10-a101" type="selectionEntryGroup"/>
-                    <entryLink id="172a-fa55-7f10-8b4c" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="172a-fa55-7f10-8b4c" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="6ee5-e38b-aa15-3fad" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="ef57-7b8a-5c3a-cb5b" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="0a98-1e13-1a12-c5f4" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="dc23-3de1-97c2-a9cb" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -5096,8 +5152,10 @@ Poder TABLA DEL CARRUAJE NEGRO
                   </constraints>
                   <entryLinks>
                     <entryLink id="95e8-52b6-50e6-6aed" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
-                    <entryLink id="5aa5-489c-9c97-d140" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="5aa5-489c-9c97-d140" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="e426-aef4-d2a7-b9a9" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="2516-f62f-35d2-5ff5" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="0dfc-315c-5cb9-b973" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="4053-02b4-7c8a-f2e2" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -5525,8 +5583,10 @@ Poder TABLA DEL CARRUAJE NEGRO
                   </constraints>
                   <entryLinks>
                     <entryLink id="1799-f878-f088-58d6" name="Armaduras mágicas. Clan Dragón Sangriento" hidden="false" collective="false" import="true" targetId="701e-7293-f580-e3b7" type="selectionEntryGroup"/>
-                    <entryLink id="2ad4-b9db-93c9-8baf" name="Armaduras Mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="2ad4-b9db-93c9-8baf" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="19cd-fe24-5733-d953" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="31a6-22b4-5414-3d8e" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="f6e6-e3bd-091e-f8bc" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="0c30-f0e7-3617-fe9d" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -11103,7 +11163,7 @@ Ten en cuenta que aunque pueda tener efectos diferentes se sigue tratando del mi
           <infoLinks>
             <infoLink id="247f-ca20-aa1b-4183" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
             <infoLink id="2411-f1ac-37bf-84b8" name="Orgullo marcial" hidden="false" targetId="2707-4d2a-ddbd-e301" type="rule"/>
-            <infoLink id="0b38-9a89-977e-78c5" name="Odio" hidden="false" targetId="a187-f92e-2178-84ff" type="rule"/>
+            <infoLink id="0b38-9a89-977e-78c5" name="Odio (todos los enemigos)" hidden="false" targetId="69e8-bae0-e71a-64f6" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="90.0"/>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="49dd-6404-b794-06e7" name="Hombres lagarto" revision="402" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="49dd-6404-b794-06e7" name="Hombres lagarto" revision="403" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="4" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="c3cd-7cee-1922-2f07" name="Guerreros saurios" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -1001,15 +1001,6 @@
                 </modifier>
               </modifiers>
             </entryLink>
-            <entryLink id="2694-ed50-625b-577f" name="Desove sagrado de Tepok" hidden="false" collective="false" import="true" targetId="5681-b394-8110-b8e5" type="selectionEntry">
-              <modifiers>
-                <modifier type="increment" field="points" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-            </entryLink>
             <entryLink id="d7d4-2cb0-d319-3a25" name="Desove sagrado de Chotek" hidden="false" collective="false" import="true" targetId="b4e9-7811-2f5f-e2b0" type="selectionEntry">
               <modifiers>
                 <modifier type="increment" field="points" value="1.0">
@@ -1279,13 +1270,15 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9861-f8c7-a26a-428d" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="2159-6282-c840-ab67" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="2159-6282-c840-ab67" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="48cd-01b2-0db9-f5db" name="Armaduras mágicas. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="f0fb-a21d-37da-ada3" type="selectionEntryGroup"/>
                     <entryLink id="d27f-5d83-2171-4938" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
                     <entryLink id="b002-826d-916d-0238" name="Objetos hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
                     <entryLink id="b941-caa1-a845-d53d" name="Talismanes mágicos. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="16c6-aa5c-b8a7-f77e" type="selectionEntryGroup"/>
                     <entryLink id="68da-04cf-546a-be98" name="Objetos hechizados. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="e103-2f22-0afd-4f9b" type="selectionEntryGroup"/>
                     <entryLink id="f61b-ecbd-ccab-c224" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="904b-aab9-84d9-0ca5" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="a29f-d5dd-93b3-8c18" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1654,7 +1647,7 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7bb6-8e83-6e71-9fb2" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="6a55-124a-0641-17d3" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="6a55-124a-0641-17d3" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="d83f-fb09-7f55-9845" name="Armaduras mágicas. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="f0fb-a21d-37da-ada3" type="selectionEntryGroup"/>
                     <entryLink id="1566-f5e1-e29d-cd32" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="7e89-7a6c-391c-f0ea" name="Armas mágicas. Hombres Lagarto. Arma de mano" hidden="false" collective="false" import="true" targetId="d9d1-6c99-756c-d71e" type="selectionEntryGroup"/>
@@ -1674,6 +1667,8 @@
                     </entryLink>
                     <entryLink id="0ad8-26f3-55ef-7316" name="Armas mágicas. Personajes del orden. Arma de mano" hidden="false" collective="false" import="true" targetId="ac8b-722e-e9df-5345" type="selectionEntryGroup"/>
                     <entryLink id="afd6-ea14-ed42-a507" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="9ac9-4e57-d4e8-ed3a" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="4487-cada-c3ae-a9c5" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3801,11 +3796,6 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                     <condition field="selections" scope="be36-352e-7920-3e60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="734a-ecdf-01e1-427f" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="decrement" field="a1f2-799f-fb61-40ae" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="4d55-bde7-cd56-aa30" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b028-6a8b-bf38-381d" type="notEqualTo"/>
-                  </conditions>
-                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1f2-799f-fb61-40ae" type="max"/>
@@ -4091,9 +4081,11 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7841-2c11-0156-6d5d" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="2048-120f-9bb1-77b3" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="2048-120f-9bb1-77b3" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="8a54-8a7e-3c2b-d2a9" name="Armaduras mágicas. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="f0fb-a21d-37da-ada3" type="selectionEntryGroup"/>
                     <entryLink id="4f10-0ee5-9b52-ed38" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="8d77-202a-583f-8972" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="564e-c0a4-b042-bb5a" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="9b65-3e40-ad31-f7d8" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -4188,9 +4180,11 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5207-f3f8-39b4-6066" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="31da-78b0-6c92-6121" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="31da-78b0-6c92-6121" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
                     <entryLink id="c3dc-5bee-b7db-319c" name="Armaduras mágicas. Reliquias. Hombres Lagarto. Saurios" hidden="false" collective="false" import="true" targetId="ccf0-7c3b-fff4-f4ec" type="selectionEntryGroup"/>
                     <entryLink id="fa6f-f81b-8bcc-4483" name="Armaduras mágicas. Reliquias. Hombres Lagarto. Escudo" hidden="false" collective="false" import="true" targetId="e9a5-fdc4-56e5-c425" type="selectionEntryGroup"/>
+                    <entryLink id="15c6-86e4-ccec-7c91" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="b0e8-67f3-caea-db78" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="97f8-8c7f-900f-162e" name="Armas mágicas. Reliquias" hidden="false" collective="false" import="true">
@@ -4601,10 +4595,12 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="28bc-0a13-dc92-2f42" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="2d9e-cbb1-6cab-20c3" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="2d9e-cbb1-6cab-20c3" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="4ccc-db51-f94c-668c" name="Armaduras mágicas. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="f0fb-a21d-37da-ada3" type="selectionEntryGroup"/>
                     <entryLink id="d634-9d7e-4686-8643" name="Armaduras mágicas. Hombres Lagarto. Eslizones. Casco" hidden="false" collective="false" import="true" targetId="322e-2f33-3832-867e" type="selectionEntryGroup"/>
                     <entryLink id="f371-6946-f529-18de" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="dd52-445f-09bf-eff0" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="571b-e826-eafd-3b50" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="8c9b-8576-80e3-f907" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -4719,8 +4715,10 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f03c-d03c-c2e2-b6d7" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="95d5-891d-291b-d416" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="95d5-891d-291b-d416" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
                     <entryLink id="adb9-cb44-a697-d463" name="Armaduras mágicas. Reliquias. Hombres Lagarto. Escudo" hidden="false" collective="false" import="true" targetId="e9a5-fdc4-56e5-c425" type="selectionEntryGroup"/>
+                    <entryLink id="c8b5-841a-49b1-b68d" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="9813-8e9b-861f-0492" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="7f04-bd0b-ae68-eb08" name="Armas mágicas. Reliquias" hidden="false" collective="false" import="true">
@@ -5184,13 +5182,6 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="ac8e-121e-5bb0-19b5" name="Objetos mágicos" hidden="false" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="1d55-d1b5-0be0-1823" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="0360-6370-6e3d-e58d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b7b7-833c-9e29-3700" type="notEqualTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d55-d1b5-0be0-1823" type="max"/>
               </constraints>
@@ -5201,8 +5192,10 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink id="35d1-c6fa-feb9-b666" name="Armaduras mágicas. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="f0fb-a21d-37da-ada3" type="selectionEntryGroup"/>
-                    <entryLink id="d79b-7e8b-2514-dee5" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="d79b-7e8b-2514-dee5" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="d0e4-6d2c-14d3-7a32" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="faa1-b4d0-45b5-0c8b" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="52eb-dee4-0e48-233b" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="cfbc-59ee-cf4e-8d03" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -6098,13 +6091,6 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="888b-1d8f-36f1-5cab" name="Objetos mágicos" hidden="false" collective="false" import="true">
-              <modifiers>
-                <modifier type="set" field="09f6-3663-56c7-82ba" value="1.0">
-                  <conditions>
-                    <condition field="selections" scope="6450-fade-376d-56e8" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d81f-42bd-0e25-7232" type="notEqualTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09f6-3663-56c7-82ba" type="max"/>
               </constraints>
@@ -6114,10 +6100,12 @@ hacer una tirada en la tabla de reacción de Monstruos.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c560-24a0-5801-d544" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="c366-5776-54fe-d538" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="c366-5776-54fe-d538" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="c289-d4c6-5e85-c55d" name="Armaduras mágicas. Hombres Lagarto" hidden="false" collective="false" import="true" targetId="f0fb-a21d-37da-ada3" type="selectionEntryGroup"/>
                     <entryLink id="8223-8c71-343d-5c95" name="Armaduras mágicas. Hombres Lagarto. Eslizones. Casco" hidden="false" collective="false" import="true" targetId="322e-2f33-3832-867e" type="selectionEntryGroup"/>
                     <entryLink id="7813-52c1-9900-ab8a" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="05d2-8e17-fbf3-684b" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="4201-55a8-560c-6490" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="ae3b-75ae-719e-e84d" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -13029,106 +13017,6 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5410-73c7-7dbe-91ee" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba8-76e8-c7e4-2f4a" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="2a8f-5468-cf96-b0c9" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba8-76e8-c7e4-2f4a" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2a8f-5468-cf96-b0c9" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="364f-4a94-f33f-c342" name="Cruzar (pantanos y ciénagas)" hidden="false">
-          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
-        </rule>
-        <rule id="4890-65dc-2f74-e097" name="Masa de cieno" hidden="false">
-          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
-        </rule>
-        <rule id="3e33-ee72-255d-9821" name="Controlada magicamente" hidden="false">
-          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
-        </rule>
-        <rule id="fe45-af95-75ac-fea9" name="Energía elemental" hidden="false">
-          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
-Energía elemental (Dificultad 6+)
-El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
-Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="aa5d-82e2-77db-9e8b" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
-        <infoLink id="3031-eab5-0db3-5a23" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
-        <infoLink id="b907-da80-867e-3e5a" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
-        <infoLink id="d335-62c1-3a80-7720" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
-        <infoLink id="f4f9-eae3-dc91-8323" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
-        <infoLink id="43f4-5232-3bca-bd63" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
-        <infoLink id="9a98-9a8f-4d73-d4ed" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
-        <infoLink id="222f-47b1-4732-b2d6" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-        <infoLink id="a61f-0d15-75dc-1f3a" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="f8cf-a712-6dbd-9567" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="655e-41b2-78c4-b000" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="98a4-cd95-850f-55ea" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="989c-50f9-be11-ea60" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
-                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
-                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
-                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
-                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
-                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
-                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
-                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="110.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="10ff-1d11-d349-ac20" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4774-d65e-5476-c35f" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9eba-3609-8b78-3a0e" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="6fca-1abb-9b39-e0e7" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf4c-f4cc-2000-7b2c" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e2a-6511-03b7-1db8" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="d2fb-5a21-0f73-8a3e" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="775c-d783-3f87-6631" name="Conqualtza" hidden="false" collective="false" import="true" type="upgrade">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -13707,6 +13595,101 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="85d2-269a-ac10-60b7" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7ba8-76e8-c7e4-2f4a" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="327d-20bf-2002-c8e2" name="Cruzar (pantanos y ciénagas)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="d23d-5530-2ade-e4bf" name="Masa de cieno" hidden="false">
+          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
+        </rule>
+        <rule id="d21a-a232-557d-611c" name="Controlada magicamente" hidden="false">
+          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
+        </rule>
+        <rule id="1cc1-39cf-ae99-6aeb" name="Energía elemental" hidden="false">
+          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
+Energía elemental (Dificultad 6+)
+El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
+Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="d7d2-2221-cbf6-08e4" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="d079-65bd-345f-41fb" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
+        <infoLink id="81eb-dd48-3095-2427" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="ce8d-b3a1-60fc-0ae3" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="9a30-c064-0bb3-cd57" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
+        <infoLink id="3e94-e2e1-fa37-9420" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+        <infoLink id="c5e3-ce60-4bc2-c5dd" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="474a-71d3-b9f4-bae2" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="2a5b-dd31-148e-2b3d" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="54c9-5fdf-d740-b1a3" name="New CategoryLink" hidden="false" targetId="6645-bf03-34e3-e081" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="ddaa-8a2e-9e0a-6143" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="37e2-c9e0-51a0-9726" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="64ee-e3cb-6222-a0b7" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9844-8471-8326-fbf7" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="110.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="542f-4c05-952e-416b" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e978-f0ee-be2e-cfea" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fdf1-83e5-e91a-25ab" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="50fb-4b4d-c3cf-3428" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="02d0-a5e1-e74f-a451" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b1ef-9826-b049-d9d8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7bd5-1211-c1f4-ee19" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="d24e-4874-9d47-0f28" name="Carnosaurio alfa" hidden="false" collective="false" import="true" type="upgrade">
@@ -14256,7 +14239,6 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
     <selectionEntry id="7ccf-fdb0-15af-e513" name="Desove Sagrado de T&apos;agoqlas" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b189-8eed-ae78-e410" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a9fb-c9bf-9e3c-5a8c" type="min"/>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2eff-94dd-0025-a178" type="max"/>
       </constraints>
       <rules>

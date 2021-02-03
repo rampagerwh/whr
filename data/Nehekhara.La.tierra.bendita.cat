@@ -1552,7 +1552,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="2063-2334-74be-4be6" name="Armaduras mágicas. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="a0d3-bcaa-dabd-ba67" type="selectionEntryGroup"/>
-                    <entryLink id="2229-3569-a9e6-e251" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="2229-3569-a9e6-e251" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="8eeb-2750-1a31-6c06" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="cb75-60cd-b1fc-114d" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
                     <entryLink id="3e37-8a96-7cf9-a894" name="Armas mágicas. Arma a dos manos" hidden="false" collective="false" import="true" targetId="fce8-e8d3-eae9-d17a" type="selectionEntryGroup"/>
@@ -1564,6 +1564,8 @@
                     <entryLink id="4ff9-ee12-9c67-391f" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="cecf-d80a-92e4-2d60" name="Talismanes mágicos. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="5c6e-f6c2-195c-c5f9" type="selectionEntryGroup"/>
                     <entryLink id="1acb-84f7-09f9-eaf1" name="Talismanes mágicos. Nehekhara. La tierra bendita. No artefactos arcanos u objetos hechizados" hidden="false" collective="false" import="true" targetId="dc25-7f3b-647e-12b8" type="selectionEntryGroup"/>
+                    <entryLink id="b567-d4f3-8f2d-98ca" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="60b4-37e1-7422-dbd5" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1854,7 +1856,7 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="f72a-22e9-d29c-02ec" name="Armaduras mágicas. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="a0d3-bcaa-dabd-ba67" type="selectionEntryGroup"/>
-                    <entryLink id="74a8-267a-ee59-3156" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="74a8-267a-ee59-3156" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="0172-b249-d603-7258" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="f31d-1abd-f23a-5713" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="df57-a16e-7baa-b492" name="Armas mágicas. Nehekhara. La tierra bendita. Arma de mano" hidden="false" collective="false" import="true" targetId="7522-54de-aec6-2e29" type="selectionEntryGroup"/>
@@ -1864,6 +1866,8 @@
                     <entryLink id="35dc-2b6f-d0f5-1bc3" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="5bd1-afa7-d61e-79bf" name="Talismanes mágicos. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="5c6e-f6c2-195c-c5f9" type="selectionEntryGroup"/>
                     <entryLink id="177d-37ff-7966-c507" name="Talismanes mágicos. Nehekhara. La tierra bendita. No artefactos arcanos u objetos hechizados" hidden="false" collective="false" import="true" targetId="dc25-7f3b-647e-12b8" type="selectionEntryGroup"/>
+                    <entryLink id="e175-1f85-baf6-2802" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="c83d-6775-a565-d480" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -2651,6 +2655,9 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -4064,9 +4071,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6548-81da-34fd-e52c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="47cd-bd03-b5d5-0612" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="47cd-bd03-b5d5-0612" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="d13a-c5cd-40ed-38b7" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="3304-e842-2501-2813" name="Armaduras mágicas. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="a0d3-bcaa-dabd-ba67" type="selectionEntryGroup"/>
+                    <entryLink id="40f7-20a0-2805-e63e" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="64c4-4cb5-6940-517d" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="da7c-b6f8-c4b1-5e47" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -4241,8 +4250,10 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6846-59d3-4c51-b441" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="0aaf-357e-0486-d2c4" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="0aaf-357e-0486-d2c4" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
                     <entryLink id="fcc1-5ba3-677c-97b0" name="Armaduras mágicas. Reliquias. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="3e28-4d67-ea7c-0f41" type="selectionEntryGroup"/>
+                    <entryLink id="5c3a-7fd6-4616-11ba" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="1705-3675-e307-a3fc" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="f571-af63-eb5b-461f" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -5352,9 +5363,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a602-d355-e78a-dbce" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="4a2f-0c23-ac7f-2dc2" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="4a2f-0c23-ac7f-2dc2" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="6892-7628-c2c4-c89c" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="06f8-d623-db79-d7f1" name="Armaduras mágicas. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="a0d3-bcaa-dabd-ba67" type="selectionEntryGroup"/>
+                    <entryLink id="8675-5f1a-1c82-895e" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="c322-25c1-780e-132b" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="6496-7e1f-9802-49c5" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -6019,9 +6032,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7de7-1324-52dd-bca7" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="7af3-5f40-35a0-5f84" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="7af3-5f40-35a0-5f84" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="be4b-6220-7142-0004" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="4c7f-0e7a-57c5-332c" name="Armaduras mágicas. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="a0d3-bcaa-dabd-ba67" type="selectionEntryGroup"/>
+                    <entryLink id="4bae-acf5-d878-a1ee" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="511b-effe-b013-dc00" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="1555-313c-d7aa-bf30" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -6912,9 +6927,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e164-5bf9-b360-6a74" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="560d-8654-10b9-7679" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="560d-8654-10b9-7679" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="0525-6dc1-6e80-3f01" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
                     <entryLink id="2e88-dd31-f33d-1517" name="Armaduras mágicas. Nehekhara. La tierra bendita" hidden="false" collective="false" import="true" targetId="a0d3-bcaa-dabd-ba67" type="selectionEntryGroup"/>
+                    <entryLink id="76e1-0285-8682-86a7" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="ca34-b575-f58e-4f2f" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="0599-7edd-b4ec-d149" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -7263,12 +7280,15 @@
                         <characteristic name="I" typeId="4923232344415441232323">5</characteristic>
                         <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
                         <characteristic name="L" typeId="4c4423232344415441232323">9</characteristic>
-                        <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"></characteristic>
-                        <characteristic name="TSE" typeId="576172645361766523232344415441232323"></characteristic>
-                        <characteristic name="Tipo" typeId="5479706523232344415441232323"></characteristic>
+                        <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                        <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                        <characteristic name="Tipo" typeId="5479706523232344415441232323"/>
                       </characteristics>
                     </profile>
                   </profiles>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="03e6-7c50-ab26-26a4" name="Tirado por" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -7314,6 +7334,9 @@
                       </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="997c-8040-64f4-1de9" name="Equipo tripulación" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -7329,6 +7352,9 @@
                       <infoLinks>
                         <infoLink id="ae70-8a61-5300-ea40" name="Lanza (caballería)" hidden="false" targetId="e9f6-2800-5d9c-a7c4" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                     <selectionEntry id="f228-c9e4-64db-9081" name="Arco con flechas aspid" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
@@ -7339,8 +7365,14 @@
                         <infoLink id="e688-487b-146c-95ce" name="Arco" hidden="false" targetId="4ae0-7ed2-3e77-b13d" type="profile"/>
                         <infoLink id="ca9b-4ebb-7b1d-d9a5" name="Flechas aspid" hidden="false" targetId="9aaa-1c28-32bb-3dfd" type="rule"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
                 <selectionEntry id="e1dd-80d7-8199-f387" name="Equipo carro real de Khemri" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
@@ -7356,8 +7388,14 @@
                       <infoLinks>
                         <infoLink id="089d-5d10-df0a-aa5e" name="Cuchillas" hidden="false" targetId="927d-92ce-5209-5d7c" type="profile"/>
                       </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="0.0"/>
+                      </costs>
                     </selectionEntry>
                   </selectionEntries>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
               <costs>
@@ -7597,8 +7635,8 @@
                 <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
                 <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"></characteristic>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"></characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                 <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
               </characteristics>
             </profile>
@@ -7882,8 +7920,8 @@
                 <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
                 <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">10</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"></characteristic>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"></characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                 <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
               </characteristics>
             </profile>

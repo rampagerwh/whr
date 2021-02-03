@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="74c4-5959-85e8-14bd" name="Imperio" revision="402" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="74c4-5959-85e8-14bd" name="Imperio" revision="403" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="10" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="208e-cf58-eefc-06d2" name="Orden de caballería">
       <characteristicTypes>
@@ -1241,8 +1241,12 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="4945-a238-5f6e-bd65" name="Compañías libres" hidden="false" collective="false" import="true" type="unit">
+      <rules>
+        <rule id="c7c1-ff80-2bce-9edf" name="Destacamentos (no unidad principal)" hidden="false"/>
+      </rules>
       <infoLinks>
         <infoLink id="7186-dc2c-c3bb-18a5" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="fc6a-7571-fe26-0470" name="Destacamentos" hidden="false" targetId="c13a-a248-1eee-ba7c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d931-e83f-63e4-eb19" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="true"/>
@@ -1790,42 +1794,42 @@
           <profiles>
             <profile id="b789-a10b-8af1-a751" name="Caballero imperial" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
               <modifiers>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35fe-da1c-a7fe-3cad" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6588-86f4-ff70-4dd3" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d24-784f-991f-78c0" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27ac-2c3e-b82f-ea72" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="79d0-7db2-246b-e1a3" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f654-63d9-dd1b-a4fa" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa0a-1c5d-9679-0d3c" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1200-4715-1d28-28bf" type="equalTo"/>
                   </conditions>
@@ -1887,42 +1891,42 @@
               <profiles>
                 <profile id="f332-5572-b31d-6a41" name="Oficial" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
                   <modifiers>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa0a-1c5d-9679-0d3c" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5d24-784f-991f-78c0" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6588-86f4-ff70-4dd3" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f654-63d9-dd1b-a4fa" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="35fe-da1c-a7fe-3cad" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="27ac-2c3e-b82f-ea72" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="79d0-7db2-246b-e1a3" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="1995-93ae-3fa9-a5a4" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1200-4715-1d28-28bf" type="equalTo"/>
                       </conditions>
@@ -1938,7 +1942,7 @@
                     <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
                     <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
                     <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
-                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">1</characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">2</characteristic>
                     <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                     <characteristic name="Tipo" typeId="5479706523232344415441232323">Caballería</characteristic>
                   </characteristics>
@@ -2649,42 +2653,42 @@
           <profiles>
             <profile id="a903-6bcb-4725-45ce" name="Caballero del círculo interior" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
               <modifiers>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0602-c5fd-65ed-4c49" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c230-c867-b61f-653c" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a29-2943-7784-8392" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cb3-8de2-e688-45f0" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="672a-8478-b2d8-fa45" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0aa-f993-4943-3891" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4e7-536f-f799-2ef8" type="equalTo"/>
                   </conditions>
                 </modifier>
-                <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c517-708a-37d6-9631" type="equalTo"/>
                   </conditions>
@@ -2700,7 +2704,7 @@
                 <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
                 <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">1</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">2</characteristic>
                 <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                 <characteristic name="Tipo" typeId="5479706523232344415441232323">Caballería</characteristic>
               </characteristics>
@@ -2746,42 +2750,42 @@
               <profiles>
                 <profile id="3ab9-b957-6edd-e351" name="Oficial" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
                   <modifiers>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9cb3-8de2-e688-45f0" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0602-c5fd-65ed-4c49" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c517-708a-37d6-9631" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d0aa-f993-4943-3891" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="672a-8478-b2d8-fa45" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b4e7-536f-f799-2ef8" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c230-c867-b61f-653c" type="equalTo"/>
                       </conditions>
                     </modifier>
-                    <modifier type="increment" field="41726d6f75725361766523232344415441232323" value="1">
+                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="c49f-b073-c080-512d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5a29-2943-7784-8392" type="equalTo"/>
                       </conditions>
@@ -2797,7 +2801,7 @@
                     <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
                     <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
                     <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
-                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">1</characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">2</characteristic>
                     <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                     <characteristic name="Tipo" typeId="5479706523232344415441232323">Caballería</characteristic>
                   </characteristics>
@@ -2810,7 +2814,7 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f164-90af-6fb9-ef91" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ac59-6443-9bf1-f494" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="ac59-6443-9bf1-f494" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="992f-05a2-0f46-92e6" name="Armas mágicas. Lanza de caballería" hidden="false" collective="false" import="true" targetId="5328-bc17-759c-bb2f" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
@@ -2890,6 +2894,8 @@
                     <entryLink id="aa73-c092-dec9-7457" name="Objetos hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
                     <entryLink id="3b60-6ae0-ab77-1bcc" name="Armas mágicas. Personajes del orden. Arma de mano" hidden="false" collective="false" import="true" targetId="ac8b-722e-e9df-5345" type="selectionEntryGroup"/>
                     <entryLink id="1683-9f38-aeea-11fc" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="3082-553d-39e6-ba01" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="060f-1a5f-9de6-7080" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3594,15 +3600,14 @@
         <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a9e8-1f40-6874-e016" type="max"/>
       </constraints>
       <rules>
-        <rule id="bc34-00f4-f3d9-189e" name="Destacamentos" hidden="false">
-          <description>Sólo pueden ser Unidad principal.</description>
-        </rule>
         <rule id="781b-37c2-9cf9-bea5" name="Veteranos" hidden="false">
           <description>Los Grandes espaderos son inmunes a los efectos del Pánico.</description>
         </rule>
+        <rule id="e45e-8a2e-672f-62f3" name="Destacamentos (sólo unidad principal)" hidden="false"/>
       </rules>
       <infoLinks>
         <infoLink id="dff5-77f0-fa31-e840" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="b5df-616b-ae49-c086" name="Destacamentos" hidden="false" targetId="c13a-a248-1eee-ba7c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e3ff-07e9-1724-402d" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -3866,7 +3871,7 @@
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa12-cb20-d9ac-fb5c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="56a8-4189-8248-c765" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="56a8-4189-8248-c765" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="2faa-bf0b-89a4-4917" name="Armas mágicas. Mangual" hidden="false" collective="false" import="true" targetId="a1a5-7361-b444-3054" type="selectionEntryGroup">
                       <modifiers>
                         <modifier type="set" field="hidden" value="true">
@@ -3932,6 +3937,8 @@
                     <entryLink id="0dfc-a4bc-8ec3-f781" name="Objetos hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
                     <entryLink id="b914-7320-2089-08e3" name="Armas mágicas. Personajes del orden. Arma de mano" hidden="false" collective="false" import="true" targetId="ac8b-722e-e9df-5345" type="selectionEntryGroup"/>
                     <entryLink id="4bbc-70cd-2f0e-7354" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="2dc8-b786-e936-0058" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="e132-fb64-70fd-0bcc" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -5018,6 +5025,17 @@
                       </constraints>
                       <infoLinks>
                         <infoLink id="2f0b-b3b9-3ac1-f03c" name="Rifle largo Hochland" hidden="false" targetId="9edb-2276-5181-2540" type="profile"/>
+                      </infoLinks>
+                      <costs>
+                        <cost name="pts" typeId="points" value="10.0"/>
+                      </costs>
+                    </selectionEntry>
+                    <selectionEntry id="4dcf-a181-4ec5-2a79" name="Lanzagranadas" hidden="false" collective="false" import="true" type="upgrade">
+                      <constraints>
+                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b659-9673-b81e-4c29" type="max"/>
+                      </constraints>
+                      <infoLinks>
+                        <infoLink id="f729-a6c4-1b2a-8553" name="Lanzagranadas" hidden="false" targetId="6095-1134-06aa-d695" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="10.0"/>
@@ -6406,7 +6424,6 @@ Total 	TABLA DE LA CALDERA DE VAPOR
           <selectionEntries>
             <selectionEntry id="a9c9-6cb3-8974-7fd0" name="Tanque a vapor" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86a1-8d36-ed97-66bc" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8ff-ed09-ce83-d9e7" type="max"/>
               </constraints>
               <profiles>
@@ -6494,7 +6511,6 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5813-d860-7b0c-78df" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ef9-0774-6927-ede7" type="max"/>
               </constraints>
               <selectionEntryGroups>
@@ -7010,12 +7026,12 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                         <cost name="pts" typeId="points" value="25.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="3ef3-42fa-1517-7b02" name="Estructura mejorada" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="3ef3-42fa-1517-7b02" name="Estructura mejorada anterior" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2a3-38e8-40db-eeb8" type="max"/>
                       </constraints>
                       <rules>
-                        <rule id="90df-a3db-f68e-ed58" name="Estructura mejorada" hidden="false">
+                        <rule id="90df-a3db-f68e-ed58" name="Estructura mejorada anterior" hidden="false">
                           <description>El tanque obtiene +1R y +1H.</description>
                         </rule>
                       </rules>
@@ -7117,12 +7133,12 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                         <cost name="pts" typeId="points" value="45.0"/>
                       </costs>
                     </selectionEntry>
-                    <selectionEntry id="f30f-78dc-55d2-358a" name="Estructura mejorada" hidden="false" collective="false" import="true" type="upgrade">
+                    <selectionEntry id="f30f-78dc-55d2-358a" name="Estructura mejorada lateral" hidden="false" collective="false" import="true" type="upgrade">
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="508a-8bb1-506d-dad6" type="max"/>
                       </constraints>
                       <rules>
-                        <rule id="2250-0b16-bc62-cd92" name="Estructura mejorada" hidden="false">
+                        <rule id="2250-0b16-bc62-cd92" name="Estructura mejorada lateral" hidden="false">
                           <description>El tanque obtiene +1R y +1H.</description>
                         </rule>
                       </rules>
@@ -7915,8 +7931,10 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                   </constraints>
                   <entryLinks>
                     <entryLink id="3bd9-30d4-4277-90b6" name="Armaduras Mágicas - Imperio" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
-                    <entryLink id="0ce8-2a98-f81f-94c0" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="0ce8-2a98-f81f-94c0" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="cd63-ae07-3e1f-b9b2" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="b124-1caa-81a2-7900" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="a6d1-0c21-f133-e7ae" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="7098-4529-2c99-d8ad" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -8027,7 +8045,9 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                   </constraints>
                   <entryLinks>
                     <entryLink id="9141-5746-e4d6-1695" name="Armaduras Mágicas - Reliquias - Imperio" hidden="false" collective="false" import="true" targetId="2b38-e40a-240c-5d73" type="selectionEntryGroup"/>
-                    <entryLink id="c9a7-ba70-2989-46ff" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="c9a7-ba70-2989-46ff" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
+                    <entryLink id="8148-a2f6-73f3-b703" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="f8b6-58b8-f4bb-bbab" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="054b-a7cb-0991-ab44" name="Objetos hechizados. Reliquias" hidden="false" collective="false" import="true">
@@ -8468,9 +8488,11 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2b9b-ede0-31e2-a268" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="76ae-e7a9-ea82-2a21" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="76ae-e7a9-ea82-2a21" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="0071-90e9-9784-dc67" name="Armaduras Mágicas - Imperio" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
                     <entryLink id="2ed9-dad0-f99f-6711" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="581a-3d05-98ce-b39c" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="17d7-5a3d-e5f3-da1c" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="037a-39c9-397d-bcea" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -8561,7 +8583,9 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                   </constraints>
                   <entryLinks>
                     <entryLink id="91df-a890-14f4-5ac8" name="Armaduras Mágicas - Reliquias - Imperio" hidden="false" collective="false" import="true" targetId="2b38-e40a-240c-5d73" type="selectionEntryGroup"/>
-                    <entryLink id="ab95-a4eb-f415-687d" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="ab95-a4eb-f415-687d" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
+                    <entryLink id="9fa7-85b8-b582-8e88" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="1e83-a2f5-9131-4eb0" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="779a-10b8-8dce-0439" name="Objetos hechizados. Reliquias" hidden="false" collective="false" import="true">
@@ -8603,6 +8627,18 @@ Total 	TABLA DE LA CALDERA DE VAPOR
           </constraints>
           <profiles>
             <profile id="2fa5-33f2-0736-32d6" name="Maestre templario" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <modifiers>
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="8410-5047-ed3e-fd99" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7006-dbe4-b9ba-86fe" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="8410-5047-ed3e-fd99" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a957-ba51-97e7-02ef" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
                 <characteristic name="HA" typeId="575323232344415441232323">6</characteristic>
@@ -8613,7 +8649,7 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                 <characteristic name="I" typeId="4923232344415441232323">6</characteristic>
                 <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">9</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">1</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">2</characteristic>
                 <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                 <characteristic name="Tipo" typeId="5479706523232344415441232323">Caballería</characteristic>
               </characteristics>
@@ -9370,9 +9406,11 @@ Nivel de energía 4.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="aff0-42d3-66c8-f40b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="d62e-e498-2713-7229" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="d62e-e498-2713-7229" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="90c1-ea73-5aa1-a688" name="Armaduras mágicas. Imperio. Casco" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
                     <entryLink id="9231-ca24-323b-37ef" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="a05a-fa23-3a78-5f5c" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="eea8-1576-f4f6-24db" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="2921-9232-e6ce-21eb" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -9470,7 +9508,9 @@ Nivel de energía 4.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink id="fa22-cb76-8594-3cad" name="Armaduras Mágicas - Reliquias - Imperio" hidden="false" collective="false" import="true" targetId="2b38-e40a-240c-5d73" type="selectionEntryGroup"/>
-                    <entryLink id="ef8e-8de9-7429-c913" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="ef8e-8de9-7429-c913" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
+                    <entryLink id="07fe-540b-4c19-9592" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="e2f3-14bb-9c60-4026" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="2923-2e4d-0922-5627" name="Objetos hechizados. Reliquias" hidden="false" collective="false" import="true">
@@ -9780,8 +9820,10 @@ Nivel de energía 4.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink id="f195-c02e-2baf-7bc2" name="Armaduras Mágicas - Imperio" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
-                    <entryLink id="08db-e6c8-95bf-d11e" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="08db-e6c8-95bf-d11e" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="bbae-d514-2e8d-14ba" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="85e6-f9f9-cc28-f003" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="26c3-23a2-7a0f-8645" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="b37b-e650-1b95-f709" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -10274,9 +10316,11 @@ Nivel de energía 4.</description>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b907-6018-1cc2-025c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="f0bd-58c2-04e4-6d54" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="f0bd-58c2-04e4-6d54" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="1ba4-00a6-c79f-9248" name="Armaduras mágicas. Imperio. Casco" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
                     <entryLink id="4f75-d63b-05e2-2f26" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="bc45-e915-6025-d5b1" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="0897-1ed9-f091-a622" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="b8dc-0df2-dad3-c8db" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -11182,8 +11226,10 @@ Nivel de energía 4.</description>
                   </constraints>
                   <entryLinks>
                     <entryLink id="4250-759d-4fb6-77e6" name="Armaduras Mágicas - Imperio" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
-                    <entryLink id="4c55-b121-a8dd-3563" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="4c55-b121-a8dd-3563" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="9785-c08d-f18f-105b" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="94b1-5749-e342-95b2" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="5958-55b0-2ac2-97b3" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="faaa-4021-9760-72e5" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -21857,7 +21903,7 @@ D6	Resultado (Agarrar y...)
                   </constraints>
                   <entryLinks>
                     <entryLink id="74ae-6bc4-a0b5-c3f5" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
-                    <entryLink id="be74-b18a-613e-3c95" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="be74-b18a-613e-3c95" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="047f-cbdd-726b-fa99" name="Armaduras mágicas. Imperio" hidden="false" collective="false" import="true" targetId="c142-0415-fb35-0a7d" type="selectionEntryGroup"/>
                     <entryLink id="086b-f04e-69fb-b57c" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="bcc3-5f90-679e-b941" name="Armas mágicas. Imperio. Arma de mano" hidden="false" collective="false" import="true" targetId="f046-5b0e-4496-19cd" type="selectionEntryGroup"/>
@@ -21870,6 +21916,8 @@ D6	Resultado (Agarrar y...)
                     <entryLink id="86d2-c6cc-0f22-1343" name="Armas mágicas. Arma a dos manos" hidden="false" collective="false" import="true" targetId="fce8-e8d3-eae9-d17a" type="selectionEntryGroup"/>
                     <entryLink id="3e07-ae82-068c-2fe1" name="Armas mágicas. Imperio. Arma a dos manos" hidden="false" collective="false" import="true" targetId="74b9-f879-7b7d-b7e8" type="selectionEntryGroup"/>
                     <entryLink id="fca1-c510-2834-7c1a" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="6ba2-6772-43ff-3122" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="d8de-473f-8b33-ef01" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -23546,106 +23594,6 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="5e5b-642b-17a1-9ebb" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb47-b9df-25c9-ee86" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="bae4-5bcb-1e0d-e432" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb47-b9df-25c9-ee86" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bae4-5bcb-1e0d-e432" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="0891-0072-a9ff-8121" name="Cruzar (pantanos y ciénagas)" hidden="false">
-          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
-        </rule>
-        <rule id="2ff0-b4da-6dd7-55f7" name="Masa de cieno" hidden="false">
-          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
-        </rule>
-        <rule id="e91e-ac4e-1396-1ba4" name="Controlada magicamente" hidden="false">
-          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
-        </rule>
-        <rule id="e656-e745-24e9-af73" name="Energía elemental" hidden="false">
-          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
-Energía elemental (Dificultad 6+)
-El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
-Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="951f-0d1f-0a11-bb08" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
-        <infoLink id="5bfb-6bc0-99e1-7021" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
-        <infoLink id="a14c-c601-36b6-899a" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
-        <infoLink id="df09-4ae5-d6bc-6b04" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
-        <infoLink id="fb21-14f5-e748-4c97" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
-        <infoLink id="0f35-f3cb-bf69-c3fb" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
-        <infoLink id="90f6-4dae-442d-727e" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
-        <infoLink id="503f-6c83-a47a-181a" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-        <infoLink id="3df2-1c77-4a54-0f0c" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="3856-bbf3-9f15-37ed" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d42c-97d9-4ea5-77e4" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fe23-0cea-ce8f-14c0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="6c53-8c04-0016-d32f" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
-                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
-                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
-                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
-                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
-                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
-                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
-                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="110.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="cbab-7282-735d-c449" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d7b7-171d-b496-0fa9" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a450-661d-ee4a-c86d" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="2e93-a1f0-4c6e-6be4" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3da0-0f94-de0f-1ae5" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f9e5-7cae-1ed3-e8c1" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c3ad-2862-f0c1-d6f8" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="3421-4517-164a-2635" name="Kaleb Daark, paladín del dios renegado Malal" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="hidden" value="true">
@@ -25107,6 +25055,249 @@ D6 	Resultado
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="83c9-76f9-ae31-7976" name="Ulrika Straghov" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="466f-1772-e040-e4e3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcd7-961f-8c24-ed57" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="41fa-0a6b-65f4-951e" name="Nacida en la marca" hidden="false">
+          <description>Ulrika puede repetir todas sus tiradas para herir fallidas, tanto al disparar como en combate cuerpo a cuerpo; además, tiene la regla especial Esquivar (4+).</description>
+        </rule>
+        <rule id="d3b6-3ddc-8308-f612" name="Respetada" hidden="false">
+          <description>Ulrika hará todo lo posible por no decepcionar a sus hombres. Ulrika (y cualquier unidad kislevita a la que se una) tiene la regla especial Sangre fría.</description>
+        </rule>
+        <rule id="2019-ae5c-5176-adb9" name="Arquera inigualable" hidden="false">
+          <description>Ulrika tiene las reglas especiales Disparo rápido y Francotirador con su arco.</description>
+        </rule>
+        <rule id="f98d-bb09-b972-c862" name="Odio (Caos)" hidden="false"/>
+      </rules>
+      <infoLinks>
+        <infoLink id="4002-a4bc-e115-9806" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="b113-7a8f-ab89-dbf4" name="Esquivar (4+)" hidden="false" targetId="89b2-357c-6f88-920c" type="rule"/>
+        <infoLink id="967e-1caa-e6c9-97ae" name="Sangre fría" hidden="false" targetId="fae6-f2eb-1a70-1084" type="rule"/>
+        <infoLink id="a191-d348-6241-6dbd" name="Odio" hidden="false" targetId="a187-f92e-2178-84ff" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d46c-f651-3f71-bc70" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
+        <categoryLink id="3148-e913-a824-9674" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b2bc-edd6-ac69-3284" name="General del ejército" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2056-94b4-993f-bc20" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="df23-602f-602c-e5ab" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4031-9709-2c21-0aab" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c5de-9e01-8916-9980" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c635-f34a-5e1b-56d8" name="Ulrika Straghov" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb04-69e0-b5a1-850d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="61c0-4947-0136-2e15" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="141b-d081-45aa-92b9" name="Ulrika Straghov" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">5</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">6</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">6</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">6</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="125.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f0e7-6ded-c698-dd07" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5901-02ca-3c85-a109" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="68c8-4d80-043b-e5c6" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d167-3ac1-b008-83cd" name="Armas emparejadas" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48e5-5843-e132-b61e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da59-fdd4-c0cb-10ba" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="bb33-5792-07f0-6d60" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="9da3-3fef-803b-3582" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="54aa-8e9f-ba3a-2884" name="Arco reliquia de los Straghov" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b01-045f-694f-f0e6" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4493-7754-26be-9ab4" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="b175-1a7f-18ea-0b63" name="Arco reliquia de los Straghov" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Los impactos del Arco Reliquia se resuelven con la F de su usuaria (4), y tienen la regla especial Poder de penetración.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a2da-4106-2c7e-af77" name="Arco largo" hidden="false" targetId="d3d4-59fe-a13d-65a3" type="profile"/>
+                <infoLink id="5d2b-7d99-c349-976b" name="Disparo rápido" hidden="false" targetId="e198-cb4f-6dfc-1dcc" type="rule"/>
+                <infoLink id="781d-7409-4c7f-931d" name="Francotirador" hidden="false" targetId="8fa0-a4f6-e454-dbfe" type="rule"/>
+                <infoLink id="2cc2-b08b-7c03-944b" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="0c4d-c244-6673-c51d" name="Armadura ligera" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06f1-271a-c678-8a2d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0306-1a5c-0149-c789" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="37cb-6ff7-0cb3-98e5" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="cf00-8814-4cdf-95c9" name="Saga (Ulrika)" hidden="false" collective="false" import="true" targetId="a327-5be2-8b20-3e6b" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="6c61-f476-5918-31eb" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="cb47-b9df-25c9-ee86" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="da97-7a4e-4848-e1f2" name="Cruzar (pantanos y ciénagas)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="22cb-1abf-54cf-b32e" name="Masa de cieno" hidden="false">
+          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
+        </rule>
+        <rule id="2f5f-8998-51a3-9f85" name="Controlada magicamente" hidden="false">
+          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
+        </rule>
+        <rule id="311f-445d-a16b-9c74" name="Energía elemental" hidden="false">
+          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
+Energía elemental (Dificultad 6+)
+El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
+Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="c9fd-d7c8-5d2a-49ec" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="b18c-f4cc-4f3b-97fc" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
+        <infoLink id="945f-0da5-e055-2778" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="9c80-1553-d395-1ee2" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="81df-1dd7-ae50-31fa" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
+        <infoLink id="1077-60b3-ed09-fef5" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+        <infoLink id="fd68-bb11-b890-abb3" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="8def-a887-f900-ce96" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="c243-363f-38f5-5516" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="5421-8140-5d28-e510" name="New CategoryLink" hidden="false" targetId="6645-bf03-34e3-e081" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="3451-e746-5d14-788f" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3d60-c704-c370-f541" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="62b5-3c3b-2a79-bcb5" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="b43c-bae5-4b7b-97a5" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="110.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7e30-6c2a-bbfc-9095" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9cd3-2d27-80be-e7f5" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b2a7-93c0-2864-10f5" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="57ec-469a-d8bd-d9ff" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="01ad-b374-5b0a-78ca" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="57ba-0830-b91a-1071" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f1f3-a017-e72f-8a3a" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="c3d7-71ff-be9c-6d4a" name="Tropas condales" hidden="false" collective="false" import="true" type="upgrade">
@@ -25399,7 +25590,7 @@ D6 	Resultado
           <modifiers>
             <modifier type="decrement" field="4d23232344415441232323" value="1">
               <conditions>
-                <condition field="selections" scope="7006-dbe4-b9ba-86fe" value="-1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c397-8722-26d8-592f" type="equalTo"/>
+                <condition field="selections" scope="7006-dbe4-b9ba-86fe" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c397-8722-26d8-592f" type="equalTo"/>
               </conditions>
             </modifier>
           </modifiers>
@@ -25620,7 +25811,7 @@ D6 	Resultado
         <infoLink id="9aff-0fe0-1872-261a" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
       </infoLinks>
       <selectionEntries>
-        <selectionEntry id="a957-ba51-97e7-02ef" name="Semigrifo" hidden="false" collective="false" import="true" type="upgrade">
+        <selectionEntry id="a957-ba51-97e7-02ef" name="Pectoral de placas" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fcc-17ea-3596-2535" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="010f-3908-8ff9-3f1c" type="max"/>
@@ -25634,7 +25825,7 @@ D6 	Resultado
         </selectionEntry>
       </selectionEntries>
       <costs>
-        <cost name="pts" typeId="points" value="10.0"/>
+        <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="ffcc-ceed-71dc-2206" name="Enemigo público" hidden="false" collective="false" import="true" type="upgrade">
@@ -25691,6 +25882,16 @@ D6 	Resultado
           <description>No puedes incluir a Theodoric en el mismo ejército en que se encuentre Aldebrand Ludenhof y viceversa, salvo que el ejército lo comande el mismo Karl Franz.</description>
         </rule>
       </rules>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a327-5be2-8b20-3e6b" name="Saga (Ulrika)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1040-49f5-be3d-4c3c" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e7ee-cf7a-f79d-0d28" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82e4-c962-2411-5179" type="min"/>
+      </constraints>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -26707,7 +26908,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8ddf-b292-8ef9-eb35" name="Broche del gran desierto" hidden="false" collective="false" import="true" type="upgrade">
@@ -26723,7 +26924,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="af38-8f72-b92a-bb50" name="Máscara mortuoria de Kharnut" hidden="false" collective="false" import="true" type="upgrade">
@@ -26742,7 +26943,7 @@ D6 	Resultado
             <infoLink id="3ba4-64cd-80a3-3305" name="Terror" hidden="false" targetId="ca57-1f1f-8bc0-d9ab" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="51f7-3c5d-f942-bb6b" name="El farol de Dazh" hidden="false" collective="false" import="true" type="upgrade">
@@ -26761,7 +26962,7 @@ D6 	Resultado
             <infoLink id="7402-0b81-79f3-23f3" name="Ataques flamígeros" hidden="false" targetId="6985-722e-1ce4-b838" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b6fa-ec68-ed91-ac95" name="Pócima gélida ungol" hidden="false" collective="false" import="true" type="upgrade">
@@ -26782,7 +26983,7 @@ D6 	Resultado
             </rule>
           </rules>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="97a3-1e0e-c4aa-207f" name="Cesto de la hechicería de Aldred" hidden="false" collective="false" import="true" type="upgrade">
@@ -26798,7 +26999,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a322-02f5-4e91-4b8f" name="Espejo de Van Horstmann" hidden="false" collective="false" import="true" type="upgrade">
@@ -26814,7 +27015,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c445-1ede-f028-0962" name="Broche de Elynett " hidden="false" collective="false" import="true" type="upgrade">
@@ -26830,7 +27031,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d9a3-99fc-bfb5-e94a" name="Guantelete del desafío" hidden="false" collective="false" import="true" type="upgrade">
@@ -26846,7 +27047,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="75e7-65e9-e40c-4ceb" name="Capa de las barbas" hidden="false" collective="false" import="true" type="upgrade">
@@ -26862,7 +27063,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1b49-a7d4-c60b-9d4b" name="El libro del valor y la gloria" hidden="false" collective="false" import="true" type="upgrade">
@@ -26878,7 +27079,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8b5e-426d-e08c-2f4b" name="Gema del fuego solar" hidden="false" collective="false" import="true" type="upgrade">
@@ -26894,7 +27095,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="e83a-f89d-b3cf-7889" name="Gema radiante de Hoeth" hidden="false" collective="false" import="true" type="upgrade">
@@ -26910,7 +27111,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -27057,7 +27258,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="d35b-ac9e-c34a-8789" name="Sello de invocación de Djedra" hidden="false" collective="false" import="true" type="upgrade">
@@ -27073,7 +27274,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="da33-864c-9780-a440" name="Collar de dientes de oso" hidden="false" collective="false" import="true" type="upgrade">
@@ -27092,7 +27293,7 @@ D6 	Resultado
             <infoLink id="3a30-4b93-0833-e3b3" name="Piel escamosa (5+)" hidden="false" targetId="b1c5-6add-797c-2d07" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="126c-50a8-11ee-e030" name="Amuleto carmesí" hidden="false" collective="false" import="true" type="upgrade">
@@ -27108,7 +27309,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="92d5-b1b8-cfd9-3e0f" name="Amuleto de jade" hidden="false" collective="false" import="true" type="upgrade">
@@ -27124,7 +27325,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="a256-11c1-b225-1e1e" name="Sello de Sigmar" hidden="false" collective="false" import="true" type="upgrade">
@@ -27143,7 +27344,7 @@ D6 	Resultado
             <infoLink id="444b-17d3-dad3-32a1" name="Resistencia a la magia (1)" hidden="false" targetId="eae7-760e-1a1e-47d7" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6357-586a-ff81-355c" name="Gema de Merciw " hidden="false" collective="false" import="true" type="upgrade">
@@ -27159,7 +27360,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="8554-5f77-a58f-f285" name="Piedra del retoñar " hidden="false" collective="false" import="true" type="upgrade">
@@ -27175,7 +27376,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b8e6-7bd5-c9b3-54ba" name="Urdimbre de encantamientos " hidden="false" collective="false" import="true" type="upgrade">
@@ -27191,7 +27392,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="c652-5c6b-1803-293a" name="Garra del dragón" hidden="false" collective="false" import="true" type="upgrade">
@@ -27210,7 +27411,7 @@ D6 	Resultado
             <infoLink id="5d9a-a95d-b1f3-6711" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="1a17-2dd5-4b54-8c7a" name="Obsequio de la damisela" hidden="false" collective="false" import="true" type="upgrade">
@@ -27226,7 +27427,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="02a8-8228-6139-beea" name="Incienso sagrado" hidden="false" collective="false" import="true" type="upgrade">
@@ -27242,7 +27443,7 @@ D6 	Resultado
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

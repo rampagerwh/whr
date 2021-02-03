@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="18e6-a0ad-d123-70a6" name="Culto de matadores" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="18e6-a0ad-d123-70a6" name="Culto de matadores" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1811-12ee-8ca2-f9ec" name="Habilidad de matador">
       <characteristicTypes>
@@ -135,19 +135,16 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry id="48bc-770f-7fa8-fc98" name="Objetos rúnicos" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="7f4c-3ee0-0126-4955" name="Objetos rúnicos" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4d0-de46-2a80-2649" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d45-cc93-91ee-d480" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="65c9-4522-ede8-a088" name="Runas de armas (Hachas de matador" hidden="false" collective="false" import="true" targetId="0b9d-0e1d-d14a-b679" type="selectionEntryGroup"/>
+                    <entryLink id="a2e2-7766-af35-bcaa" name="Runas de armas (Hachas de matador" hidden="false" collective="false" import="true" targetId="0b9d-0e1d-d14a-b679" type="selectionEntryGroup"/>
                   </entryLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="8.0"/>
               </costs>
@@ -165,7 +162,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a343-c8b4-9d89-6a07" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="9b75-8bbe-1ccc-62da" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="9b75-8bbe-1ccc-62da" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f948-7623-0979-c7b4" type="max"/>
                   </constraints>
@@ -958,7 +955,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a06-de54-00b7-930b" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="f6db-29df-4261-2032" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="f6db-29df-4261-2032" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b6f7-9c73-bf67-d285" type="max"/>
                   </constraints>
@@ -1166,7 +1163,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a99-ba02-e6c1-f2ef" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="6215-c178-96f2-664d" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="6215-c178-96f2-664d" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc2c-982c-75f8-5958" type="max"/>
                   </constraints>
@@ -1332,7 +1329,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="23aa-20b8-c27e-ede1" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="ae31-726d-8b85-ceb4" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="ae31-726d-8b85-ceb4" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="75.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f938-6aff-895c-118e" type="max"/>
                   </constraints>
@@ -2670,7 +2667,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25f2-7f7f-98c4-b871" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="d810-79ed-899b-c7b7" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="d810-79ed-899b-c7b7" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="90ff-6872-7446-18c8" type="max"/>
                   </constraints>
@@ -3323,7 +3320,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="095b-d1ce-cc98-be8a" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="fba3-619a-16b5-21d6" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="fba3-619a-16b5-21d6" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6932-5416-19b1-2d66" type="max"/>
                   </constraints>
@@ -4570,7 +4567,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d596-d651-0944-123e" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="cdd5-fa3d-dbc1-03c4" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="cdd5-fa3d-dbc1-03c4" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="75.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8e85-f72d-dcb4-7702" type="max"/>
                   </constraints>
@@ -4756,44 +4753,16 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntries>
-                <selectionEntry id="17cb-e6f7-90a1-ec75" name="Objetos rúnicos" hidden="false" collective="false" import="true" type="upgrade">
+              <selectionEntryGroups>
+                <selectionEntryGroup id="d358-d330-82ba-0d8e" name="Objetos rúnicos" hidden="false" collective="false" import="true">
                   <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5d61-769a-cb62-2e0d" type="max"/>
+                    <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d605-d32c-8038-24a7" type="max"/>
                   </constraints>
-                  <selectionEntryGroups>
-                    <selectionEntryGroup id="86a2-826a-8c96-1d50" name="Objetos rúnicos" hidden="false" collective="false" import="true">
-                      <constraints>
-                        <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c3ec-1b85-b258-332f" type="max"/>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5163-0b1e-ea41-986e" type="max"/>
-                      </constraints>
-                      <selectionEntries>
-                        <selectionEntry id="5231-3aa8-6625-aa51" name="Runas de armas" hidden="false" collective="false" import="true" type="upgrade">
-                          <costs>
-                            <cost name="pts" typeId="points" value="0.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="f0d7-1d43-83b2-ae01" name="Runas de defensa" hidden="false" collective="false" import="true" type="upgrade">
-                          <costs>
-                            <cost name="pts" typeId="points" value="0.0"/>
-                          </costs>
-                        </selectionEntry>
-                        <selectionEntry id="0feb-cbcc-b19d-235d" name="Runas talismánicas" hidden="false" collective="false" import="true" type="upgrade">
-                          <entryLinks>
-                            <entryLink id="e224-0b4b-0dfa-a429" name="Runas talismánicas (Amuletos y talismanes)" hidden="false" collective="false" import="true" targetId="832a-3a45-e84c-4f7c" type="selectionEntryGroup"/>
-                          </entryLinks>
-                          <costs>
-                            <cost name="pts" typeId="points" value="0.0"/>
-                          </costs>
-                        </selectionEntry>
-                      </selectionEntries>
-                    </selectionEntryGroup>
-                  </selectionEntryGroups>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+                  <entryLinks>
+                    <entryLink id="caa6-0db1-9011-4d06" name="Runas talismánicas (Amuletos y talismanes)" hidden="false" collective="false" import="true" targetId="832a-3a45-e84c-4f7c" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
               </costs>
@@ -4811,7 +4780,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4442-c57a-34e1-d7b9" type="max"/>
               </constraints>
               <selectionEntryGroups>
-                <selectionEntryGroup id="0c68-7359-b3d3-65d3" name="Estandarte magico" hidden="false" collective="false" import="true">
+                <selectionEntryGroup id="0c68-7359-b3d3-65d3" name="Estandarte rúnico" hidden="false" collective="false" import="true">
                   <constraints>
                     <constraint field="points" scope="parent" value="50.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa32-bb01-f1d8-0086" type="max"/>
                   </constraints>
@@ -4994,6 +4963,154 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="edd3-c1d3-5668-0941" name="Ulrika Straghov" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="abfd-0e7a-17e1-72d4" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="965b-8f3d-57b0-7323" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="d20f-02f8-68d3-a99d" name="Nacida en la marca" hidden="false">
+          <description>Ulrika puede repetir todas sus tiradas para herir fallidas, tanto al disparar como en combate cuerpo a cuerpo; además, tiene la regla especial Esquivar (4+).</description>
+        </rule>
+        <rule id="ae94-52e6-df03-2591" name="Respetada" hidden="false">
+          <description>Ulrika hará todo lo posible por no decepcionar a sus hombres. Ulrika (y cualquier unidad kislevita a la que se una) tiene la regla especial Sangre fría.</description>
+        </rule>
+        <rule id="6916-124b-a6e8-de2a" name="Arquera inigualable" hidden="false">
+          <description>Ulrika tiene las reglas especiales Disparo rápido y Francotirador con su arco.</description>
+        </rule>
+        <rule id="3091-521f-ae82-e44e" name="Odio (Caos)" hidden="false"/>
+      </rules>
+      <infoLinks>
+        <infoLink id="1b8c-e0e0-6917-1809" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="f707-34a6-cdd9-c047" name="Esquivar (4+)" hidden="false" targetId="89b2-357c-6f88-920c" type="rule"/>
+        <infoLink id="26e1-f07f-ee38-752b" name="Sangre fría" hidden="false" targetId="fae6-f2eb-1a70-1084" type="rule"/>
+        <infoLink id="1ebe-9d99-ed56-9b8f" name="Odio" hidden="false" targetId="a187-f92e-2178-84ff" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="a44f-0b70-9d93-512d" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
+        <categoryLink id="4960-5e49-0c80-8502" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b100-fcc9-9557-f38a" name="General del ejército" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6c89-859a-449d-a92b" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="7016-21d9-c971-e54a" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ee8e-9bda-3c4d-8e59" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6510-a8af-53aa-ffbc" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="8050-93df-a805-6814" name="Ulrika Straghov" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af59-5df2-972a-b51c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc5a-0e59-326f-5383" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="c851-4cc2-b84a-cc88" name="Ulrika Straghov" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">5</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">6</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">6</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">6</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="125.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="aefc-36c3-3808-b398" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="109a-11ba-baba-0306" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1463-bf69-3e56-4bbe" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="db87-6355-d4ad-3f4c" name="Armas emparejadas" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="278f-2863-aea8-9967" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1d8-9f24-ea00-356f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="bb84-5e9d-c456-d041" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="471b-e0a1-ce8e-2ea9" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7e2c-8947-cedc-e7da" name="Arco reliquia de los Straghov" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a75a-4381-e31c-28d3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="72a6-8d47-e072-5cfc" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="f4fc-78d5-dca5-a852" name="Arco reliquia de los Straghov" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Los impactos del Arco Reliquia se resuelven con la F de su usuaria (4), y tienen la regla especial Poder de penetración.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e718-6783-c1d3-a411" name="Arco largo" hidden="false" targetId="d3d4-59fe-a13d-65a3" type="profile"/>
+                <infoLink id="48e9-c36f-09d0-6686" name="Disparo rápido" hidden="false" targetId="e198-cb4f-6dfc-1dcc" type="rule"/>
+                <infoLink id="c831-0021-8c69-cd52" name="Francotirador" hidden="false" targetId="8fa0-a4f6-e454-dbfe" type="rule"/>
+                <infoLink id="296c-c533-36f3-7e06" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="7ae6-821d-9c0b-868c" name="Armadura ligera" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3664-446e-64e9-d52c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="332e-93bf-a206-79c9" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9ba7-354a-e38a-4ec6" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="14bd-05d9-831e-032a" name="Saga (Ulrika)" hidden="false" collective="false" import="true" targetId="24c2-e0f9-04ac-b7e9" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="7f5f-0ac2-fcde-945f" name="Saga (Félix)" hidden="false" collective="false" import="true" type="upgrade">
@@ -5043,6 +5160,19 @@
       </constraints>
       <infoLinks>
         <infoLink id="d4b1-3237-0126-d016" name="Saga" hidden="false" targetId="23b2-1ca0-547d-7bdf" type="rule"/>
+      </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="24c2-e0f9-04ac-b7e9" name="Saga (Ulrika)" hidden="false" collective="false" import="true" type="upgrade">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="48fd-b0e3-52b4-5ba8" type="min"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f72-f93c-88db-813c" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9bcc-404b-2d58-a1ab" type="max"/>
+      </constraints>
+      <infoLinks>
+        <infoLink id="4472-c440-1b44-113c" name="Saga" hidden="false" targetId="23b2-1ca0-547d-7bdf" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>

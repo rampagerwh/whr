@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="401" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="402" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="3b8f-2f71-171e-ded0" name="Warhammer Reforged. 3 edición"/>
   </publications>
@@ -82,6 +82,10 @@
     <categoryEntry id="e839-bd6b-7e36-e758" name="Personajes" hidden="false"/>
     <categoryEntry id="f277-3fe2-22c5-0650" name="Portaestandarte de batalla" hidden="false"/>
     <categoryEntry id="eaf4-2780-219b-851f" name="Dragones" hidden="false"/>
+    <categoryEntry id="6645-bf03-34e3-e081" name="Bestia del cieno" hidden="false"/>
+    <categoryEntry id="6ac5-4cd8-e378-fe13" name="Coatl" hidden="false"/>
+    <categoryEntry id="f2fe-dc98-ce1d-76e2" name="Maestro ingeniero de Nuln" hidden="false"/>
+    <categoryEntry id="b463-65a6-c5b2-1c17" name="Fusileros" hidden="false"/>
   </categoryEntries>
   <forceEntries>
     <forceEntry id="5374616e6461726423232344415441232323" name="Ejército estándar" hidden="false">
@@ -114,6 +118,18 @@
         <categoryLink id="fbd7-0bbd-5dbc-8eb6" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
           <constraints>
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="448d-4a70-f042-8562" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="8959-27ee-bbd0-0965" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="5385-d51f-e855-7fb6" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="5385-d51f-e855-7fb6" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -150,6 +166,18 @@
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="736e-4a09-a480-e7c2" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="f2d3-d1e5-5edf-5aac" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="cc55-dab4-fba3-41c3" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="cc55-dab4-fba3-41c3" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="3e10-2d2c-db9a-46ac" name="Orcos y goblins. Goblins, ejército principal" hidden="false">
@@ -182,6 +210,18 @@
         <categoryLink id="6c1e-03f3-92a4-d1cf" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
           <constraints>
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="5e62-7443-30aa-caa4" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d5a1-9051-244b-9f61" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="6d49-d1c7-840f-5538" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="6d49-d1c7-840f-5538" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -218,6 +258,18 @@
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="d280-3842-c52c-52a5" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="9f59-17be-b229-16ae" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="89d0-b28a-1f93-049c" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="89d0-b28a-1f93-049c" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="7d6c-7d59-9f2e-776d" name="Orcos y goblins. Orcos, ejército principal" hidden="false">
@@ -252,6 +304,18 @@
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="4d9c-73e0-00de-9e7c" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="ee1f-8aa9-2494-f5aa" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="53c6-9dfd-9fcd-bf33" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="53c6-9dfd-9fcd-bf33" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="2ef1-5c48-7fc2-aafc" name="Orcos y goblins. Gran Waaagh!" hidden="false">
@@ -284,6 +348,18 @@
         <categoryLink id="5cdc-5176-db9b-1d60" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
           <constraints>
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="2227-df7c-8485-7239" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1f7d-4464-f2c7-a838" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="82de-e77a-499f-9af1" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="82de-e77a-499f-9af1" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -326,6 +402,18 @@
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="3d5e-8ff4-c967-54e4" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="4574-1c9c-ed62-6ff0" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="f317-cc16-8a25-8a2c" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="f317-cc16-8a25-8a2c" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="42e6-7033-811b-c480" name="Enanos del caos. Post revuelta de los esclavos" hidden="false">
@@ -358,6 +446,18 @@
         <categoryLink id="4592-1d62-6229-d7c7" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
           <constraints>
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="fd7d-fc34-67e2-46f7" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="6717-2c85-bf83-5a96" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="dbc8-9305-06dc-d2ac" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="dbc8-9305-06dc-d2ac" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -394,6 +494,18 @@
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="3e59-9e75-1d71-08cc" type="max"/>
           </constraints>
         </categoryLink>
+        <categoryLink id="dde0-259b-0219-b20a" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="06db-9a86-5b76-24b5" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="06db-9a86-5b76-24b5" type="max"/>
+          </constraints>
+        </categoryLink>
       </categoryLinks>
     </forceEntry>
     <forceEntry id="d002-6e40-0798-d1af" name="Demonios del caos. Regalos demoníacos experimentales" hidden="false">
@@ -426,6 +538,18 @@
         <categoryLink id="123c-1a58-33be-6a10" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
           <constraints>
             <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="b126-c106-bffe-6d1e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7f73-7c73-8e12-e80c" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="4be3-b33c-7bc4-578d" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="4be3-b33c-7bc4-578d" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -472,6 +596,169 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="cf16-a8bc-00c9-d821" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="091a-5583-4c64-4c28" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="833c-edc2-f4b6-7a74" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="833c-edc2-f4b6-7a74" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="a472-310c-fe16-11bc" name="El valle de los dinosaurios" hidden="false">
+      <categoryLinks>
+        <categoryLink id="88c8-a9ee-486c-756a" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="7748-912f-c2ec-5e8d" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="fb88-7278-b1b1-8964" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="9fff-70b7-59b3-00e3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="37c8-3332-ba05-f141" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="35.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="7a04-594a-b69c-c3b3" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="7a4b-f940-0f8b-ef39" name="Coatl" hidden="false" targetId="6ac5-4cd8-e378-fe13" primary="false">
+          <modifiers>
+            <modifier type="set" field="46cf-53c3-53c9-757f" value="2.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="46cf-53c3-53c9-757f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="5dd0-8f17-0447-332c" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="cc74-7e6e-03c6-e47e" name="Tren de artillería de Nuln" hidden="false">
+      <categoryLinks>
+        <categoryLink id="a746-ec8f-8813-2e1e" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="60.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="7816-2553-1fa7-2d1a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="1abd-2603-c115-4ef4" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="60.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="eefd-b6a2-1bb0-2322" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e545-1b77-35f5-2819" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="d638-e7b6-c2a8-410d" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d06b-15b4-065b-45d3" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="4332-fd0f-92eb-3a6e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="4648-9158-c172-a806" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="5c22-3964-c602-8de6" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="cadf-6361-e8cd-72b2" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="60.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="5567-fa27-df1d-4c9a" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="beab-ef1c-4135-8f1e" name="Maestro ingeniero de Nuln" hidden="true" targetId="f2fe-dc98-ce1d-76e2" primary="false">
+          <modifiers>
+            <modifier type="increment" field="0b24-efe6-99d6-7e85" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="0b24-efe6-99d6-7e85" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="d299-6ca1-7206-da0f" name="Fusileros" hidden="true" targetId="b463-65a6-c5b2-1c17" primary="false">
+          <modifiers>
+            <modifier type="increment" field="7310-a695-a35b-3921" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="7310-a695-a35b-3921" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="c87e-01bb-bc76-5bdb" name="Caledor comandado por Rathiel, señor de Tor Morvel" hidden="false">
+      <categoryLinks>
+        <categoryLink id="fe87-7ae8-f7b1-cc4f" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false"/>
+        <categoryLink id="0de4-a4f3-2e0d-5773" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="false"/>
+        <categoryLink id="aa45-a6a5-a4bf-4418" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+        <categoryLink id="0d56-e033-bfc2-f925" name="Dragones" hidden="true" targetId="eaf4-2780-219b-851f" primary="false"/>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="907b-9209-9378-d220" name="Ejército a la antigua usanza" hidden="false">
+      <categoryLinks>
+        <categoryLink id="6ebb-e6e7-b653-4b5e" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="548b-ea56-349f-bcd9" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="0ffd-5171-9c7f-e853" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="40.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="13d1-3d04-a11a-de94" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="f35b-2ead-0edd-8f27" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="136a-40c2-dcb7-ccd5" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9ab8-82ec-d466-8b9d" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="85a6-48be-305f-ed2f" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="246f-1bee-10eb-cb76" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="false">
+          <modifiers>
+            <modifier type="set" field="ce69-ed72-82fc-5c5d" value="2.0">
+              <conditions>
+                <condition field="selections" scope="force" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" childId="907b-9209-9378-d220" type="instanceOf"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="ce69-ed72-82fc-5c5d" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="e17c-9fcf-edab-f0d2" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="37a0-6df8-75d8-c0f8" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="a6b0-5cca-55cf-e364" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="460c-6e95-5040-8ad4" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="460c-6e95-5040-8ad4" type="max"/>
           </constraints>
         </categoryLink>
       </categoryLinks>
@@ -1438,325 +1725,6 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="20.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="4941-cde5-a80e-1553" name="Armaduras mágicas" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a508-8283-b710-f928" type="max"/>
-        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf9e-826e-0616-6b42" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="a829-fff4-c609-6fe6" name="Armadura de hierro meteórico" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d697-0b85-3e2b-5021" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af51-8ec6-17f6-31c0" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9e93-a8f9-5a44-e8fe" name="Armadura de hierro meteórico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 1+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="8231-c294-75a2-e0e1" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ad23-9a33-fe18-010c" name="Armadura de la robustez" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d62d-db52-df24-3a80" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f7b2-85dd-2c32-f059" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7e56-fbd4-1377-54b0" name="Armadura de la robustez" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere al portador una tirada de salvación especial de 6+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="1831-90ed-ec85-bc63" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="8a22-36e3-7dbf-08b9" name="Armadura de la suerte" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7069-2168-934e-14d9" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="52ce-21d9-bfc6-b2fc" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="daed-c8e7-eda0-939c" name="Armadura de la suerte" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="023c-33c0-de72-5629" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4eba-e000-79c8-42ab" name="Armadura de los héroes" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="66a1-c028-465f-9c1a" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4475-a063-5c74-f0d2" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0864-d93b-1566-ab1a" name="Armadura de los héroes" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +1R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="df6d-8368-9b41-8ec1" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0a92-3a51-0406-5ade" name="Armadura de sombras" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d9b6-ca60-57b3-64ca" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="81b9-0bf3-0509-f6b8" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0c8c-be26-0c80-36f7" name="Armadura de sombras" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial cruzar (todo el terreno). Los impactos no mágicos contra el portador tendrán un penalizador de -1 a su fuerza. </characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="4479-1ffa-dbc6-169b" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-            <infoLink id="3672-5b64-3721-c0d6" name="Cruzar (todos los terrenos)" hidden="false" targetId="747f-5236-492e-b132" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="573f-9f96-61a6-f7a2" name="Coraza inquebrantable" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2196-4f93-a9fb-7921" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8ac1-c212-1ed8-7088" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="0b4a-2422-f5ba-2dcd" name="Coraza inquebrantable" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune al efecto de las reglas especiales Golpe letal y Golpe letal heroico.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="1f9a-512b-9c4e-8904" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e2ff-7993-090e-6865" name="Yelmo de dragón" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4e90-683a-585d-0a21" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d818-de29-db7e-5539" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e40d-48ee-e24d-4ae7" name="Yelmo de dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, su portador será Inmune al fuego.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="f81b-f8e7-0d98-5342" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="477f-127a-8867-d274" name="Escudo antihechizos" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1c71-f819-b488-636c" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1ca5-06b8-e29b-7421" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="f0e9-6745-6859-aa18" name="Escudo antihechizos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador Resistencia mágica (2). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, el mago que lanzó el hechizo sufrirá un impacto de F6. No tiene efectos adicionales si el hechizo fue lanzado por un objeto mágico.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="da1e-59de-b660-3518" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-            <infoLink id="1db2-c0a2-1322-97b1" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="40.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="56e3-0493-5a58-6aec" name="Escudo de hierro negro" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="dd72-0322-1290-164b" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c2d8-55aa-de3e-c74a" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="2d7b-6935-649d-58ec" name="Escudo de hierro negro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="253e-b713-9d7e-08df" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="35.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="c55d-00ce-3e22-fc01" name="Escudo de Ptolos" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8a06-eff3-867b-c9ae" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d4c6-4a19-eae5-1281" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="12dc-4bb5-95c5-a022" name="Escudo de Ptolos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 4+ contra todas las armas de proyectiles, como arcos, ballestas, etc. Esto incluye las heridas causadas por máquinas de guerra, pero no por hechizos del tipo Proyectil mágico.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="e095-01f3-d447-a367" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="15.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="e2c9-4b64-f57f-0d2c" name="Escudo encantado" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2208-66b1-9286-5ca3" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="cd6d-0f1c-c160-6319" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="9c0d-a667-43da-5b5d" name="Escudo encantado" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="13bb-de62-e18a-ef6b" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="5.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="d6b8-28ef-ca3b-e836" name="Escudo rúnico" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a34b-c515-df19-8113" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c591-d2e6-db7b-e771" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4d91-4b69-c301-bba7" name="Escudo rúnico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Cada tirada de salvación por armadura superada exitosamente en combate cuerpo a cuerpo por el portador, el escudo causará un impacto de F4 en el que causó la herida.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="99b7-9a69-6c66-32eb" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="10.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-    </selectionEntryGroup>
-    <selectionEntryGroup id="7db2-ddd8-2435-b68e" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true">
-      <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0b73-4a82-736b-5a43" type="max"/>
-        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="29bd-44f3-aed5-7767" type="min"/>
-      </constraints>
-      <selectionEntries>
-        <selectionEntry id="ada8-45fc-d665-73f6" name="Armadura del defensor" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="89d2-7c4f-98dc-0226" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="49cd-aa42-7270-c6a6" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="e2ac-b6a8-b8ae-56ef" name="Armadura del defensor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 4+.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="fb22-f6ec-3547-10bf" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="0a68-cf98-26a6-3fc7" name="Armadura del destino" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="671c-6f1b-4786-d493" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6d52-bc90-72b5-5ad3" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="1c29-a970-f42b-21e0" name="Armadura del destino" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +2R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="5d66-a9ca-1ae6-7c2e" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="100.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="66f5-5624-ad06-104a" name="Yelmo del engaño" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b0b7-829c-391f-9513" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="23dc-098a-d49a-9457" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="4ea6-1c13-3d1c-967b" name="Yelmo del engaño" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, las tiradas exitosas para herir contra el portador deberán repetirse.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="60.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="ef3c-51fd-cb92-7eb2" name="Escudo comehechizos" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fd3e-9164-3563-47e2" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ef8-d8cc-61da-471c" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="7188-0c97-894e-55e8" name="Escudo comehechizos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona al portador Resistencia mágica (3). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, tira 1D6: con un resultado de 4+, el hechizo (o el objeto portahechizos/plegaria) resultará destruido, y no podrá usarse más durante la batalla.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="b2dc-d1bf-9fa3-6c14" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="55.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -3898,6 +3866,357 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="0b7a-5e32-07ba-f425" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa79-12d2-dd64-a50d" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4ca3-83df-9876-b174" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="0841-4370-1562-2392" name="Escudo antihechizos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="73f8-40cd-13dc-d1a7" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c2e-28e0-bacb-3769" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8b2d-dbcc-7e41-6b82" name="Escudo antihechizos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador Resistencia mágica (2). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, el mago que lanzó el hechizo sufrirá un impacto de F6. No tiene efectos adicionales si el hechizo fue lanzado por un objeto mágico.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="8e45-7ea0-3dd1-44fd" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+            <infoLink id="f4d5-5607-696e-ccc4" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="eb32-7b49-1fa0-2005" name="Escudo de hierro negro" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb1d-3ef9-5ae2-e734" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25ba-36e9-4612-cc57" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="72cd-35a2-0211-4746" name="Escudo de hierro negro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4cda-dab5-c98d-82c0" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4ba4-7944-7791-58b3" name="Escudo de Ptolos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="04d4-bf26-09e8-7295" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1f93-a78b-166e-72d0" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="819e-c1cb-21a4-d9d0" name="Escudo de Ptolos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 4+ contra todas las armas de proyectiles, como arcos, ballestas, etc. Esto incluye las heridas causadas por máquinas de guerra, pero no por hechizos del tipo Proyectil mágico.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b577-ed1d-ea0d-bb28" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="4f87-2d82-a70d-a0f6" name="Escudo encantado" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1e42-d2c6-c75c-7426" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2d05-88d6-4b18-632b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0da4-1eb9-8c3e-7cd6" name="Escudo encantado" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d6f2-7fb5-4dfe-ae12" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d19e-f6aa-ac5b-9e09" name="Escudo rúnico" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="cec4-e6ca-f209-5078" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6a5-8cb2-26d6-c069" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d06f-8814-0cfd-c1e1" name="Escudo rúnico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Cada tirada de salvación por armadura superada exitosamente en combate cuerpo a cuerpo por el portador, el escudo causará un impacto de F4 en el que causó la herida.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="7831-2632-3c92-4e3e" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="e407-01a1-990d-086c" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="77d6-3943-c2f4-d2fb" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b550-8075-ae61-05b4" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="9a69-1b43-a348-5233" name="Yelmo de dragón" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="a859-b713-bc24-1121" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8060-aa3a-b674-77ad" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9702-b1c8-4b8c-42c4" name="Yelmo de dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, su portador será Inmune al fuego.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5166-4997-b879-4966" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="216d-6fd9-5cbc-59a8" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5167-a595-84fe-6795" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="873f-7013-56aa-8959" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="475b-a34d-6694-5514" name="Armadura de hierro meteórico" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9c9f-d8c9-9bfe-c929" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8fce-a4ff-45f7-a2ee" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d441-96c7-9b9b-1e80" name="Armadura de hierro meteórico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 1+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e366-ac31-e0ff-76e6" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="31c6-da40-c86d-f021" name="Armadura de la robustez" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3be3-33b2-88af-0802" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="21b6-db83-3144-75c2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8aa7-0b6a-3528-eeb0" name="Armadura de la robustez" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere al portador una tirada de salvación especial de 6+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="e457-2a99-e866-b728" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6a34-ee67-bc1b-0d6b" name="Armadura de la suerte" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1542-4af0-9c78-9f8c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d0c1-2e28-b48d-d938" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="73d5-8995-88c2-b944" name="Armadura de la suerte" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="c805-8f21-5b02-8cbf" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b2ed-91c5-eef0-dd17" name="Armadura de los héroes" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4dd-1be1-5958-bbce" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c07b-40b1-a0cd-7fac" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c777-4576-ade8-d08c" name="Armadura de los héroes" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +1R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a7e3-9ed0-bca7-4ee9" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c307-20e0-0dc8-36a7" name="Armadura de sombras" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="ec45-b21b-a345-804b" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6a5a-f2ae-062c-5c4a" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="fa0c-120b-5ab6-8886" name="Armadura de sombras" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial cruzar (todo el terreno). Los impactos no mágicos contra el portador tendrán un penalizador de -1 a su fuerza. </characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="84ab-832e-d153-3ba3" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+            <infoLink id="1968-c333-0553-f3ea" name="Cruzar (todos los terrenos)" hidden="false" targetId="747f-5236-492e-b132" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9c9c-e6b0-4b72-d33f" name="Coraza inquebrantable" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="1d97-e5ce-d0b6-be62" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="513a-7ecf-b492-ce91" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e721-2fa3-c494-d918" name="Coraza inquebrantable" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune al efecto de las reglas especiales Golpe letal y Golpe letal heroico.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="4f60-fac9-f44f-a35b" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="5120-2f9f-febc-dcce" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5770-d12e-f3e1-690f" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9dc-510a-4875-2a05" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="bafe-2fcd-ad1e-587d" name="Escudo comehechizos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="2fc1-1f9c-0ddd-2663" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4834-986f-8307-3abb" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ee26-1380-a926-c0d0" name="Escudo comehechizos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona al portador Resistencia mágica (3). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, tira 1D6: con un resultado de 4+, el hechizo (o el objeto portahechizos/plegaria) resultará destruido, y no podrá usarse más durante la batalla.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="32a8-afe2-1ffe-7341" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="55.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="4644-a77e-94cc-121d" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="800d-bdc3-a917-4ad2" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a9f-d6a2-5ebb-852a" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="6696-d360-d24b-3d71" name="Yelmo del engaño" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="0682-4578-f8f9-18cb" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="1722-3ed8-2eb6-05fc" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="8354-c909-ba80-3576" name="Yelmo del engaño" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, las tiradas exitosas para herir contra el portador deberán repetirse.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="60.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="97fd-297c-e754-4afc" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5106-02e2-95eb-6ea2" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0484-b76e-cd0b-99f8" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="5e97-ae2c-3506-9c09" name="Armadura del defensor" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c83-d767-07e6-ad32" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="129a-faa2-109c-3f91" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e394-8cfb-3e1e-b293" name="Armadura del defensor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 4+.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5c18-3f97-3fcc-84b9" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2724-0ebd-b36c-b9c6" name="Armadura del destino" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4979-1c46-19af-0d9f" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="399b-441b-edd8-3079" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="797e-acbc-832e-1ea5" name="Armadura del destino" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +2R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1ce2-b9e1-5836-d0cc" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="100.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

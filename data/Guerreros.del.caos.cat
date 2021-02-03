@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="399a-efe8-a7c4-3104" name="Guerreros del caos" revision="400" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="399a-efe8-a7c4-3104" name="Guerreros del caos" revision="401" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="399a-efe8-pubN65537" name="Guerreros del Caos Reforged"/>
   </publications>
@@ -332,6 +332,7 @@
         <selectionEntryGroup id="d116-19cd-be04-65d3" name="Consagraciones del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3b82-fb79-e0eb-0217" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="21d9-317c-32c4-7b0d" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="6a2e-71e8-1fe1-97d7" name="Marca de Tzeentch. Unidades" hidden="false" collective="false" import="true" targetId="96fb-d019-8c83-aea3" type="selectionEntry">
@@ -574,6 +575,7 @@
         <selectionEntryGroup id="4128-2e57-ad46-88b9" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a4bc-71d5-8fd4-32bc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e17f-1ac6-8405-5550" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="2cea-a8e8-68a1-0032" name="Marca de Tzeentch. Unidades" hidden="false" collective="false" import="true" targetId="96fb-d019-8c83-aea3" type="selectionEntry">
@@ -998,8 +1000,10 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="d43f-a349-2c61-2bfd" name="Armaduras Mágicas - Bestias del Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                    <entryLink id="4976-ad0a-92fe-52fc" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="4976-ad0a-92fe-52fc" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="5e8e-f295-cfd2-6ae6" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="afd2-5f8a-edc8-2214" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="5c06-636f-7387-1b95" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -1015,7 +1019,9 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="a140-7f12-f47b-c5f4" name="Armaduras Mágicas - Reliquias - Caos" hidden="false" collective="false" import="true" targetId="1dbe-26a4-2d0a-ae4e" type="selectionEntryGroup"/>
-                    <entryLink id="8d4c-92b7-118f-66a2" name="Armaduras mágicas. Reliquias" hidden="false" collective="false" import="true" targetId="7db2-ddd8-2435-b68e" type="selectionEntryGroup"/>
+                    <entryLink id="8d4c-92b7-118f-66a2" name="Armaduras mágicas. Reliquias. Armadura pesada" hidden="false" collective="false" import="true" targetId="97fd-297c-e754-4afc" type="selectionEntryGroup"/>
+                    <entryLink id="bd9a-16f2-6468-edfc" name="Armaduras mágicas. Reliquias. Escudo" hidden="false" collective="false" import="true" targetId="5120-2f9f-febc-dcce" type="selectionEntryGroup"/>
+                    <entryLink id="c371-ea05-0135-5f8d" name="Armaduras mágicas. Reliquias. Yelmo" hidden="false" collective="false" import="true" targetId="4644-a77e-94cc-121d" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="706a-c504-d1df-d932" name="Talismanes mágicos. Reliquias" hidden="false" collective="false" import="true">
@@ -1301,6 +1307,7 @@
         <selectionEntryGroup id="4ae2-90fc-86f0-6d1b" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7022-c204-cd72-020f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d731-1841-126d-911e" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="c662-18a6-4e15-805f" name="Marca de Tzeentch. Personajes" hidden="false" collective="false" import="true" targetId="0227-474e-a38a-e11c" type="selectionEntry">
@@ -1428,7 +1435,7 @@
                 <cost name="pts" typeId="points" value="110.0"/>
               </costs>
             </entryLink>
-            <entryLink id="e83d-8491-9c1b-f57c" name="Bestia demoníaca" hidden="false" collective="false" import="true" targetId="38da-d9f0-9a23-a123" type="selectionEntry">
+            <entryLink id="e83d-8491-9c1b-f57c" name="Bestia demoníaca con barda" hidden="false" collective="false" import="true" targetId="39c2-c337-ef41-667c" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cd7-c7a2-d1f2-5fa3" type="max"/>
               </constraints>
@@ -2021,6 +2028,7 @@
         <selectionEntryGroup id="cd47-3cda-9ae8-de11" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5f4-bf01-f4c5-f71e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8ac-7166-15e3-e1cb" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="8eca-d46a-f4b7-992d" name="Marca de Slaanesh. Personajes" hidden="false" collective="false" import="true" targetId="d333-8c87-9c04-4d3b" type="selectionEntry">
@@ -2537,6 +2545,7 @@
         <selectionEntryGroup id="2384-91ee-503d-5cad" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b91-4c0f-99f0-e084" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b0cd-d2a0-dccb-6dd8" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="43b5-8cda-2c77-f9b7" name="Marca de Tzeentch. Unidades" hidden="false" collective="false" import="true" targetId="96fb-d019-8c83-aea3" type="selectionEntry">
@@ -3655,7 +3664,7 @@
                     <entryLink id="ff8a-aa9e-9f7c-68e6" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
                     <entryLink id="fc07-f129-0b16-7a41" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="134b-19e7-ce5c-de64" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                    <entryLink id="1dab-3b46-1e21-b328" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="1dab-3b46-1e21-b328" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="0ba5-34b8-3ef8-4fa0" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="6ddd-21af-3246-8d5b" name="Talismanes mágicos. Guerreros del Caos" hidden="false" collective="false" import="true" targetId="c87e-2ff5-a8cf-f075" type="selectionEntryGroup"/>
                     <entryLink id="d331-81f5-a973-d079" name="Talismanes mágicos. Guerreros del Caos. Tzeentch" hidden="false" collective="false" import="true" targetId="49d8-d26f-cbaf-5337" type="selectionEntryGroup">
@@ -3704,6 +3713,8 @@
                       </modifiers>
                     </entryLink>
                     <entryLink id="a4b0-4307-01a1-4d61" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="3734-ab4d-bf14-74ba" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="f88b-9d91-8670-f9d0" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3802,6 +3813,7 @@
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2222-1726-3647-ba20" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="02fe-d860-bd23-ee64" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="b132-d723-1d15-9029" name="Marca del Caos Absoluto. Unidades" hidden="false" collective="false" import="true" targetId="bc49-6882-c66c-bc26" type="selectionEntry">
@@ -4188,7 +4200,7 @@
                     <entryLink id="3de1-ee5a-ecb2-1e8c" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
                     <entryLink id="fdba-7d05-5a87-12ee" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                     <entryLink id="123a-d94f-df7c-fa59" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                    <entryLink id="5572-8ed0-ae8f-1454" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="5572-8ed0-ae8f-1454" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="6c58-570e-0b8e-bd84" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="ab9a-c915-f669-d457" name="Talismanes mágicos. Guerreros del Caos" hidden="false" collective="false" import="true" targetId="c87e-2ff5-a8cf-f075" type="selectionEntryGroup"/>
                     <entryLink id="04f4-07d1-94cf-3eef" name="Talismanes mágicos. Guerreros del Caos. Tzeentch" hidden="false" collective="false" import="true" targetId="49d8-d26f-cbaf-5337" type="selectionEntryGroup">
@@ -4236,6 +4248,8 @@
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="fecc-12ce-4adb-5f86" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="4d32-d179-55e8-bcda" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -4305,6 +4319,7 @@
         <selectionEntryGroup id="1ffa-ce81-8c54-b799" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07c7-e849-7186-2efa" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="153c-0523-c896-d913" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="08d0-7c63-bde4-a02e" name="Marca del Caos Absoluto. Unidades" hidden="false" collective="false" import="true" targetId="bc49-6882-c66c-bc26" type="selectionEntry">
@@ -4498,6 +4513,7 @@
         <selectionEntryGroup id="e403-39d1-43f8-a994" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6aa4-f4bd-e618-5496" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="71c1-fed8-ee67-c0ee" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="27da-2993-30d9-3b36" name="Marca de Tzeentch. Unidades" hidden="false" collective="false" import="true" targetId="96fb-d019-8c83-aea3" type="selectionEntry">
@@ -4925,7 +4941,7 @@
                         <entryLink id="d6d4-4ba7-0493-235c" name="Armas mágicas. Arma a dos manos" hidden="false" collective="false" import="true" targetId="fce8-e8d3-eae9-d17a" type="selectionEntryGroup"/>
                         <entryLink id="a39d-5c6c-b11a-4655" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
                         <entryLink id="cf26-15f6-1f89-6b08" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                        <entryLink id="2d42-4ca9-54de-3320" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                        <entryLink id="2d42-4ca9-54de-3320" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                         <entryLink id="e97a-f850-d97c-2e78" name="Talismanes mágicos. Guerreros del Caos. Slaanesh" hidden="false" collective="false" import="true" targetId="c7dd-4d0e-1117-6a37" type="selectionEntryGroup">
                           <modifiers>
                             <modifier type="set" field="hidden" value="true">
@@ -4965,6 +4981,8 @@
                           </modifiers>
                         </entryLink>
                         <entryLink id="f46d-c57e-209f-5a48" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                        <entryLink id="5340-feb6-e6ce-ee01" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                        <entryLink id="3274-1ea4-5a8d-f3bd" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -5031,6 +5049,7 @@
         <selectionEntryGroup id="d627-441f-0ff2-5b3f" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af71-915c-3e90-b418" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="59bb-9b31-4b8b-8a9f" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="2c03-f079-c5a6-660f" name="Marca de Tzeentch. Unidades" hidden="false" collective="false" import="true" targetId="96fb-d019-8c83-aea3" type="selectionEntry">
@@ -5236,6 +5255,7 @@
         <selectionEntryGroup id="1893-cc80-de02-68e9" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6926-2b2c-b705-e0b5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d84a-4ccf-81b3-4aae" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="2306-1bda-0d1d-538b" name="Marca del Caos Absoluto. Unidades" hidden="false" collective="false" import="true" targetId="bc49-6882-c66c-bc26" type="selectionEntry">
@@ -5736,6 +5756,7 @@
         <selectionEntryGroup id="cc09-b43a-93cc-6335" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b88-fd83-dfa2-06ac" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2c57-558e-b801-fb0c" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="d585-11df-d65b-df46" name="Marca de Slaanesh. Unidades" hidden="false" collective="false" import="true" targetId="011d-ecac-f652-9fd9" type="selectionEntry">
@@ -6007,7 +6028,7 @@
                         <entryLink id="9daf-ce26-80f1-f7eb" name="Objetos hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
                         <entryLink id="aa3a-e446-e115-b03f" name="Armas mágicas. Lanza de caballería" hidden="false" collective="false" import="true" targetId="5328-bc17-759c-bb2f" type="selectionEntryGroup"/>
                         <entryLink id="07a7-240c-cd58-27d8" name="Armas mágicas. Guerreros del Caos. Khorne. Arma de mano" hidden="false" collective="false" import="true" targetId="277a-e3b2-e9a6-eec7" type="selectionEntryGroup"/>
-                        <entryLink id="dd38-0ef4-570e-4495" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                        <entryLink id="dd38-0ef4-570e-4495" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                         <entryLink id="38fb-4469-1fd7-6dfe" name="Armas mágicas. Guerreros del Caos. Arma de mano" hidden="false" collective="false" import="true" targetId="81f3-02b3-7cc2-8a11" type="selectionEntryGroup"/>
                         <entryLink id="6892-d398-f1bf-eab2" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
                         <entryLink id="8a15-7d0a-a26e-0725" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
@@ -6015,6 +6036,8 @@
                         <entryLink id="39c3-5dd2-3e91-a369" name="Talismanes mágicos. Guerreros del Caos. Khorne" hidden="false" collective="false" import="true" targetId="7526-d20c-6728-2bd0" type="selectionEntryGroup"/>
                         <entryLink id="f387-6e42-52cc-78f5" name="Talismanes mágicos. Guerreros del Caos" hidden="false" collective="false" import="true" targetId="c87e-2ff5-a8cf-f075" type="selectionEntryGroup"/>
                         <entryLink id="fe7a-2b44-439b-97f4" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                        <entryLink id="6d48-b990-639f-1e88" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                        <entryLink id="17b9-1c80-d509-ebf9" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -6579,6 +6602,7 @@
         <selectionEntryGroup id="e9f5-89aa-9aba-40b4" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="09fc-9e71-8b96-0711" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0cdb-1380-51dd-835c" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="a79d-b65e-e8aa-0ecd" name="Marca de Slaanesh. Personajes" hidden="false" collective="false" import="true" targetId="d333-8c87-9c04-4d3b" type="selectionEntry">
@@ -6771,8 +6795,10 @@
                   </constraints>
                   <entryLinks>
                     <entryLink id="6ae9-5a3a-ab6f-3b82" name="Armaduras Mágicas - Bestias del Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                    <entryLink id="219f-ea7a-82cf-ffb1" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="219f-ea7a-82cf-ffb1" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="dd59-a426-4ea4-f6de" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="24f5-48e1-e4ef-656e" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="8e33-694a-6cb8-350b" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="8649-63bf-9f9e-1b69" name="Armas mágicas" hidden="false" collective="false" import="true">
@@ -7106,6 +7132,7 @@
         <selectionEntryGroup id="cf31-1ede-0321-51dd" name="Consagraciones del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4c92-4d6c-cf5e-18f5" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="08cf-c71a-a354-b830" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="80ed-9d2a-fe82-28fb" name="Marca de Slaanesh. Personajes" hidden="false" collective="false" import="true" targetId="d333-8c87-9c04-4d3b" type="selectionEntry">
@@ -7209,7 +7236,7 @@
                 <cost name="pts" typeId="points" value="100.0"/>
               </costs>
             </entryLink>
-            <entryLink id="eb2c-4ffc-ffed-3a95" name="Bestia demoníaca" hidden="false" collective="false" import="true" targetId="38da-d9f0-9a23-a123" type="selectionEntry">
+            <entryLink id="eb2c-4ffc-ffed-3a95" name="Bestia demoníaca con barda" hidden="false" collective="false" import="true" targetId="39c2-c337-ef41-667c" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e782-d027-3c2d-9f2f" type="max"/>
               </constraints>
@@ -7729,6 +7756,7 @@
         <selectionEntryGroup id="2cc3-85ce-574a-d9ba" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e780-05ce-a6ef-18b7" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13d8-6162-cecc-0b45" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="ac9f-b17f-fecc-a403" name="Marca de Nurgle. Personjes" hidden="false" collective="false" import="true" targetId="964b-8236-6668-ab84" type="selectionEntry">
@@ -11291,7 +11319,7 @@ Baile del Acero 	Con el rápido movimiento de sus espadas, Dechala crea un muro 
         <infoLink id="1f79-85c0-cebd-18d9" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="f8b4-ed32-e25b-12a1" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
+        <categoryLink id="a5dd-ec68-6f24-4e5c" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d735-206e-accc-caf8" name="Los espadas del caos" hidden="false" collective="false" import="true" type="model">
@@ -13978,6 +14006,9 @@ D6	Efecto
                   </characteristics>
                 </profile>
               </profiles>
+              <infoLinks>
+                <infoLink id="af62-4d45-804d-2208" name="Aura demoníaca (5+)" hidden="false" targetId="e5ed-5149-3d72-6aa4" type="rule"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -15033,106 +15064,6 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="0784-d145-9740-1148" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="set" field="hidden" value="true">
-          <conditions>
-            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9781-7c2d-eef8-8f13" type="equalTo"/>
-          </conditions>
-        </modifier>
-        <modifier type="increment" field="5617-399d-a9ce-a491" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9781-7c2d-eef8-8f13" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5617-399d-a9ce-a491" type="max"/>
-      </constraints>
-      <rules>
-        <rule id="bf25-95d6-445b-0e15" name="Cruzar (pantanos y ciénagas)" hidden="false">
-          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
-        </rule>
-        <rule id="58b6-a420-99b3-443d" name="Masa de cieno" hidden="false">
-          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
-        </rule>
-        <rule id="7fef-a0a0-b582-6ec7" name="Controlada magicamente" hidden="false">
-          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
-        </rule>
-        <rule id="cdb4-4a47-4f27-11a8" name="Energía elemental" hidden="false">
-          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
-Energía elemental (Dificultad 6+)
-El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
-Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
-        </rule>
-      </rules>
-      <infoLinks>
-        <infoLink id="fcdb-6a93-6aa0-ba97" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
-        <infoLink id="28df-bc98-8326-a5f5" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
-        <infoLink id="6acd-7b63-c840-071d" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
-        <infoLink id="81a7-ea79-100f-3865" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
-        <infoLink id="58b3-413a-1f84-f5ed" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
-        <infoLink id="6a94-736d-9639-f67b" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
-        <infoLink id="10a3-127d-6748-252b" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
-        <infoLink id="344b-ac3b-45b8-7fd5" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-        <infoLink id="d94c-9973-b140-270d" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
-      </infoLinks>
-      <selectionEntries>
-        <selectionEntry id="ecdb-a0e0-7ab1-97d6" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5c1e-6d9d-350b-d2a1" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ed96-e44a-5cee-817d" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="c9f1-6b0c-42a2-0646" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
-                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
-                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
-                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
-                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
-                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
-                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
-                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="110.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="32a5-4f3e-5e98-e414" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="151f-6c1a-8c8d-c29e" type="min"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0913-e7f0-4945-8990" type="max"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bd4d-663e-01bf-db0d" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d914-0c2d-83c0-c1ca" type="min"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="365b-8ee3-de17-56e6" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="f3ad-a014-5e37-b7f5" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-      </selectionEntries>
-      <costs>
-        <cost name="pts" typeId="points" value="0.0"/>
-      </costs>
-    </selectionEntry>
     <selectionEntry id="6a63-44af-d10d-797f" name="Elegidos del caos en bestia demoníaca" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
         <modifier type="set" field="1f64-2fb4-db33-fa9b" value="2.0">
@@ -15537,7 +15468,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                         <entryLink id="75f0-35d8-1be3-dd5c" name="Armas mágicas. Lanza de caballería" hidden="false" collective="false" import="true" targetId="5328-bc17-759c-bb2f" type="selectionEntryGroup"/>
                         <entryLink id="90b1-e80a-1811-57fb" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                         <entryLink id="ce1b-9276-38dc-b6f4" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                        <entryLink id="792a-ff3a-d4d4-2fdb" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                        <entryLink id="792a-ff3a-d4d4-2fdb" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                         <entryLink id="d8a8-d5ea-e726-f237" name="Talismanes mágicos. Guerreros del Caos. Slaanesh" hidden="false" collective="false" import="true" targetId="c7dd-4d0e-1117-6a37" type="selectionEntryGroup">
                           <modifiers>
                             <modifier type="set" field="hidden" value="true">
@@ -15577,6 +15508,8 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                           </modifiers>
                         </entryLink>
                         <entryLink id="10d9-07ca-4cfe-165f" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                        <entryLink id="362c-c5c7-a473-a898" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                        <entryLink id="6987-8a5e-3cd2-4bdf" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -15643,6 +15576,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         <selectionEntryGroup id="27c6-6135-0dd0-fb82" name="Marca del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f32-6e64-a94c-d1a9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="46c2-51b6-fa40-26f2" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="7358-76fa-ca89-e4a0" name="Marca de Tzeentch. Unidades" hidden="false" collective="false" import="true" targetId="96fb-d019-8c83-aea3" type="selectionEntry">
@@ -15948,11 +15882,13 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                         <entryLink id="e167-5b1b-d8ba-2087" name="Armas mágicas. Guerreros del Caos. Arma de mano" hidden="false" collective="false" import="true" targetId="81f3-02b3-7cc2-8a11" type="selectionEntryGroup"/>
                         <entryLink id="fd6f-8e50-67d8-bd13" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                         <entryLink id="09ec-2557-8675-f581" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                        <entryLink id="9f4a-d841-472f-c331" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                        <entryLink id="9f4a-d841-472f-c331" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                         <entryLink id="99f5-6632-0477-a923" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                         <entryLink id="8cc6-a584-c16c-6cc1" name="Talismanes mágicos. Guerreros del Caos. Nurgle" hidden="false" collective="false" import="true" targetId="672a-3c16-807e-9ac2" type="selectionEntryGroup"/>
                         <entryLink id="3591-9b27-7516-7bdb" name="Talismanes mágicos. Guerreros del Caos" hidden="false" collective="false" import="true" targetId="c87e-2ff5-a8cf-f075" type="selectionEntryGroup"/>
                         <entryLink id="e370-9ee1-8f50-81d0" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                        <entryLink id="211b-e354-eafc-6d3e" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                        <entryLink id="0d3b-35dd-53f3-ba87" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -16266,11 +16202,13 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                         <entryLink id="db34-455a-202a-8655" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
                         <entryLink id="2bff-2954-2230-3314" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                         <entryLink id="d91c-37ba-7696-6f21" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                        <entryLink id="4d5f-5ee3-a0fc-eeb3" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                        <entryLink id="4d5f-5ee3-a0fc-eeb3" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                         <entryLink id="2d0e-cd53-a8fd-4274" name="Talismanes mágicos. Guerreros del Caos. Slaanesh" hidden="false" collective="false" import="true" targetId="c7dd-4d0e-1117-6a37" type="selectionEntryGroup"/>
                         <entryLink id="6cd3-13c4-5b15-3ad1" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                         <entryLink id="b9bb-570e-5541-012e" name="Talismanes mágicos. Guerreros del Caos" hidden="false" collective="false" import="true" targetId="c87e-2ff5-a8cf-f075" type="selectionEntryGroup"/>
                         <entryLink id="6ba4-bafb-851b-25c1" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                        <entryLink id="6bda-1e28-6e62-a0e0" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                        <entryLink id="9c3f-7ec1-9210-5bea" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -16558,7 +16496,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                         <entryLink id="aa86-9a73-205d-dabb" name="Armas mágicas. Lanza de caballería" hidden="false" collective="false" import="true" targetId="5328-bc17-759c-bb2f" type="selectionEntryGroup"/>
                         <entryLink id="3cde-d1a7-80dd-b4cd" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
                         <entryLink id="a296-4fcb-b25b-a380" name="Armaduras Mágicas - Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                        <entryLink id="9dbe-c08d-4a45-01e7" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                        <entryLink id="9dbe-c08d-4a45-01e7" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                         <entryLink id="af08-b8b3-29c1-3879" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                         <entryLink id="4634-980c-b474-8bb5" name="Talismanes mágicos. Guerreros del Caos" hidden="false" collective="false" import="true" targetId="c87e-2ff5-a8cf-f075" type="selectionEntryGroup"/>
                         <entryLink id="aa1c-2dbf-859a-f9c5" name="Talismanes mágicos. Guerreros del Caos. Tzeentch" hidden="false" collective="false" import="true" targetId="49d8-d26f-cbaf-5337" type="selectionEntryGroup"/>
@@ -16599,6 +16537,8 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
                           </modifiers>
                         </entryLink>
                         <entryLink id="814e-655d-3ee7-b12e" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                        <entryLink id="cc93-45f3-6f73-bdcb" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                        <entryLink id="6603-a5b6-8121-fe56" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                       </entryLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="0.0"/>
@@ -18198,7 +18138,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
     </selectionEntry>
     <selectionEntry id="ab35-6145-a6ff-20dd" name="Malditos de la plaga pútrida" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="increment" field="840f-e794-0500-41a5" value="1.0">
+        <modifier type="increment" field="c023-051e-2ac3-1932" value="1.0">
           <repeats>
             <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6c43-e6bf-1757-4b72" repeats="1" roundUp="false"/>
           </repeats>
@@ -18210,7 +18150,8 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="840f-e794-0500-41a5" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="840f-e794-0500-41a5" type="max"/>
+        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c023-051e-2ac3-1932" type="max"/>
       </constraints>
       <rules>
         <rule id="63b8-2109-abca-7392" name="Malditos de la plaga pútrida" hidden="false">
@@ -18503,8 +18444,10 @@ Contadores 	Beneficios
                   </constraints>
                   <entryLinks>
                     <entryLink id="5d6d-3655-7669-8714" name="Armaduras Mágicas - Bestias del Caos" hidden="false" collective="false" import="true" targetId="db18-b9da-be54-350c" type="selectionEntryGroup"/>
-                    <entryLink id="2cb3-486b-03aa-0e63" name="Armaduras mágicas" hidden="false" collective="false" import="true" targetId="4941-cde5-a80e-1553" type="selectionEntryGroup"/>
+                    <entryLink id="2cb3-486b-03aa-0e63" name="Armaduras mágicas. Armadura pesada" hidden="false" collective="false" import="true" targetId="216d-6fd9-5cbc-59a8" type="selectionEntryGroup"/>
                     <entryLink id="d4ca-b495-d70f-5cdb" name="Armaduras mágicas. Armadura ligera" hidden="false" collective="false" import="true" targetId="7d6d-6bfd-2572-cd05" type="selectionEntryGroup"/>
+                    <entryLink id="8ddb-aeec-6764-0aa0" name="Armaduras mágicas. Escudo" hidden="false" collective="false" import="true" targetId="0b7a-5e32-07ba-f425" type="selectionEntryGroup"/>
+                    <entryLink id="1ae5-8258-3d25-5312" name="Armaduras mágicas. Yelmo" hidden="false" collective="false" import="true" targetId="e407-01a1-990d-086c" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="a060-fa04-6138-6233" name="Objetos hechizados" hidden="false" collective="false" import="true">
@@ -19049,6 +18992,7 @@ Contadores 	Beneficios
         <selectionEntryGroup id="c2aa-da5b-eee8-531f" name="Consagraciones del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="34e8-6805-335d-2147" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f007-d091-0c2c-b609" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="886b-629c-c2c5-8ca1" name="Marca de Nurgle. Unidades" hidden="false" collective="false" import="true" targetId="f223-1aa7-0d30-eabd" type="selectionEntry">
@@ -19359,6 +19303,7 @@ Contadores 	Beneficios
         <selectionEntryGroup id="06cc-c3cb-e981-84c4" name="Consagraciones del caos" hidden="false" collective="false" import="true">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4191-d36a-2acd-ed30" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bca2-0236-7f58-b287" type="min"/>
           </constraints>
           <entryLinks>
             <entryLink id="98f3-a45a-4b62-25c1" name="Marca de Nurgle. Unidades" hidden="false" collective="false" import="true" targetId="f223-1aa7-0d30-eabd" type="selectionEntry">
@@ -20703,6 +20648,101 @@ Contadores 	Beneficios
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="bca5-ca20-3b05-ac5d" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9781-7c2d-eef8-8f13" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <rules>
+        <rule id="5c26-0edb-c1d6-f0e9" name="Cruzar (pantanos y ciénagas)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="66ff-fe56-dd21-494a" name="Masa de cieno" hidden="false">
+          <description>Una Bestia de cieno es inmune a los efectos de la regla especial Heridas múltiples, y tiene la regla especial Regeneración (4+), que se incrementa a 2+ si al menos una parte de la peana de la bestia se encuentra en un pantano o ciénaga. Pese a ser una Bestia monstruosa, una Bestia del cieno no es Veloz.</description>
+        </rule>
+        <rule id="2078-ab78-c874-d788" name="Controlada magicamente" hidden="false">
+          <description>Al inicio de la batalla designa a qué Arúspice/Emisario oscuro está vinculada cada una de tus Bestias de cieno (un mismo Arúspice o Emisario oscuro puede controlar más de una bestia). Si el controlador de la bestia muere, deberás retirar inmediatamente como baja a todas las bestias del cieno que controla.</description>
+        </rule>
+        <rule id="0bec-ed8d-6ee7-774a" name="Energía elemental" hidden="false">
+          <description>Cualquier Arúspice/Emisario oscuro que controle una o más bestias de cieno conocerá también el hechizo Energía elemental (ver a continuación), además de sus hechizos normales.
+Energía elemental (Dificultad 6+)
+El hechicero restaura a una de sus bestias del cieno a partir de la basura y los desperdicios del campo de batalla.
+Se trata de un hechizo de potenciación que toma como objetivo a una bestia del cieno a 36” o menos del lanzador. La bestia de cieno recupera inmediatamente 1D3 heridas que hubiese sufrido con anterioridad durante la batalla. Esto no puede aumentar las heridas de una bestia de cieno por encima de su número inicial (4).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="19bb-0a1f-7da9-998c" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="4db9-38ac-e65e-db05" name="Inestable" hidden="false" targetId="2db9-1492-c047-1e08" type="rule"/>
+        <infoLink id="478a-8e59-dceb-c263" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="4918-6f60-fdae-430b" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="4a53-ee0c-b84e-84f5" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
+        <infoLink id="a9d3-54d3-f074-5ddf" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
+        <infoLink id="09d6-1f61-dd21-22b1" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="bf32-9716-e952-7ca8" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="dd9c-2f54-d951-ac33" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="c14c-3e53-e7c7-be41" name="New CategoryLink" hidden="false" targetId="6645-bf03-34e3-e081" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fae9-3d8d-58ad-47cf" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9ecf-e22d-16a3-097b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="35a9-f783-0591-a983" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="58fc-64e0-83ae-70d7" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="110.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7456-722f-149a-8f24" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="29d4-8cf7-e94d-f50b" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="90e7-2eb5-2763-e2cd" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="6ec8-57c2-c33c-1f07" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c338-6bcc-fe6e-9cd8" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9859-47ce-37ac-9564" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="1b79-a2e0-86ba-9de6" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="d361-cac4-f387-cb73" name="Dragón del caos" hidden="false" collective="false" import="true" type="upgrade">
@@ -21744,6 +21784,54 @@ Contadores 	Beneficios
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cfa-e9c9-623e-7bc3" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4d7e-73c3-1284-586f" type="max"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="39c2-c337-ef41-667c" name="Bestia demoníaca con barda" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="4bab-bbb5-348a-1bce" name="Bestia demoníaca" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+          <modifiers>
+            <modifier type="decrement" field="4d23232344415441232323" value="1">
+              <conditions>
+                <condition field="selections" scope="39c2-c337-ef41-667c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="10e7-e5fb-9217-bc99" type="equalTo"/>
+              </conditions>
+            </modifier>
+          </modifiers>
+          <characteristics>
+            <characteristic name="M" typeId="4d23232344415441232323">8</characteristic>
+            <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+            <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+            <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+            <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+            <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+            <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+            <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+            <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+            <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+            <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia monstruosa</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <infoLinks>
+        <infoLink id="440d-41c0-09c2-04c4" name="Bestia monstruosa" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
+        <infoLink id="f661-d7e0-5a66-69c0" name="Caballería monstruosa" hidden="false" targetId="a7be-2cd9-f3c6-b091" type="rule"/>
+        <infoLink id="4f9e-0d08-71b8-9f64" name="Demonio (montura demoníaca)" hidden="false" targetId="8884-aa78-66b4-8e25" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="10e7-e5fb-9217-bc99" name="Barda" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b913-0cc3-39fd-cd03" type="max"/>
+          </constraints>
+          <infoLinks>
+            <infoLink id="4337-fa2c-bd58-0824" name="Barda" hidden="false" targetId="db28-fd76-b1b6-f251" type="profile"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
