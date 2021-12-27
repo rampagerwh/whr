@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="fa9d-c3b9-2c09-c978" name="Goblins nocturnos" revision="402" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="fa9d-c3b9-2c09-c978" name="Goblins nocturnos" revision="411" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="f553-cb9b-b37d-4333" name="Goblins nocturnos" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -46,7 +46,7 @@
             <categoryLink id="3d02-bffe-14db-690d" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false"/>
           </categoryLinks>
           <costs>
-            <cost name="pts" typeId="points" value="3.5"/>
+            <cost name="pts" typeId="points" value="3.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="f4b6-3ecf-409b-5610" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
@@ -416,6 +416,7 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
                     <entryLink id="cb2b-01f8-cd8c-f4e2" name="Estandartes mágicos. Ejércitos de la destrucción" hidden="false" collective="false" import="true" targetId="3806-7d3b-e71e-2927" type="selectionEntryGroup"/>
                     <entryLink id="22c3-c6ba-8d05-9dfd" name="Estandartes mágicos" hidden="false" collective="false" import="true" targetId="ff0c-4043-c416-35bc" type="selectionEntryGroup"/>
                     <entryLink id="e750-3fa3-5c6d-f44a" name="Estandartes mágicos. Goblins nocturnos" hidden="false" collective="false" import="true" targetId="8c92-440a-8f30-c33a" type="selectionEntryGroup"/>
+                    <entryLink id="52f9-bcfd-83fa-b8cc" name="Estandartes mágicos. Goblins nocturnos. Unidades con redes" hidden="false" collective="false" import="true" targetId="207f-19c6-d374-c4c7" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -655,6 +656,7 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
                     <entryLink id="ec63-8fc0-52ca-07cf" name="Estandartes mágicos. Ejércitos de la destrucción" hidden="false" collective="false" import="true" targetId="3806-7d3b-e71e-2927" type="selectionEntryGroup"/>
                     <entryLink id="aade-2d58-265c-0b77" name="Estandartes mágicos" hidden="false" collective="false" import="true" targetId="ff0c-4043-c416-35bc" type="selectionEntryGroup"/>
                     <entryLink id="64dc-6605-8a91-f1d8" name="Estandartes mágicos. Goblins nocturnos" hidden="false" collective="false" import="true" targetId="8c92-440a-8f30-c33a" type="selectionEntryGroup"/>
+                    <entryLink id="2574-9b05-e000-8e69" name="Estandartes mágicos. Goblins nocturnos. Unidades con redes" hidden="false" collective="false" import="true" targetId="207f-19c6-d374-c4c7" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -814,14 +816,14 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
     </selectionEntry>
     <selectionEntry id="07b2-2ff9-3caf-a3a4" name="Lanzapinchoz goblin nocturno" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="73d5-1b06-ccbb-ea68" value="3.0">
+        <modifier type="set" field="73d5-1b06-ccbb-ea68" value="6.0">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73d5-1b06-ccbb-ea68" type="max"/>
+        <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="73d5-1b06-ccbb-ea68" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="3458-3737-e481-d2b1" name="Máquina de guerra" hidden="false" targetId="48ca-c3bc-f385-15fc" type="rule"/>
@@ -835,7 +837,7 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
       <selectionEntries>
         <selectionEntry id="4365-5963-af4b-9355" name="Lanzapinchoz" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb2-3fe6-b03a-8076" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7fb2-3fe6-b03a-8076" type="max"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c86c-34fb-3cae-312e" type="min"/>
           </constraints>
           <profiles>
@@ -959,7 +961,7 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dda9-8914-be43-0d0d" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dda9-8914-be43-0d0d" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="41ed-6806-7589-377d" name="Máquina de guerra" hidden="false" targetId="48ca-c3bc-f385-15fc" type="rule"/>
@@ -1110,7 +1112,7 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="498e-b482-979b-dad2" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="498e-b482-979b-dad2" type="max"/>
       </constraints>
       <infoLinks>
         <infoLink id="9f94-3030-6c8f-e29c" name="Enjambre" hidden="false" targetId="d477-174e-9843-a1b7" type="rule"/>
@@ -1207,7 +1209,7 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9276-6804-414a-8037" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9276-6804-414a-8037" type="max"/>
       </constraints>
       <rules>
         <rule id="03e8-1d49-fd3b-0e40" name="Vómito de troll" hidden="false">
@@ -1335,20 +1337,20 @@ fanático como baja, y la unidad puede continuar con su movimiento. Los fanátic
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66f4-f3a4-2c64-5175" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="66f4-f3a4-2c64-5175" type="max"/>
       </constraints>
       <rules>
         <rule id="26dd-4032-19d2-e7a7" name="Ataque rápido (sólo los garrapatos)" hidden="false">
           <description>+2I en el turno en el que realizan una carga exitosa.</description>
         </rule>
         <rule id="c3a3-71de-fc14-4e57" name="Detestables paztorez de garrapatoz goblins nocturnos" hidden="false">
-          <description>Ningún personaje puede unirse a una unidad de Paztorez de garrapatos.</description>
+          <description>Ningún personaje que no sea un Kriador puede unirse a una unidad de Paztorez de garrapatos.</description>
         </rule>
         <rule id="e65e-f12e-cf61-33c8" name="Rebaños de garrapatos" hidden="false">
           <description>Los rebaños de garrapatos están compuestos de dos tipos de miniaturas: los Paztorez y los Garrapatos. Cuando sean objetivo de disparos, asigna los impactos aleatoriamente entre ambos (1-4: garrapatos. 5-6: paztorez). En cuerpo a cuerpo, el enemigo atacará a las miniaturas con las que esté en contacto -pudiendo elegir si se encuentra en contacto con ambos tipos-. Rellena los huecos inmediatamente después de retirar las bajas.</description>
         </rule>
         <rule id="5142-54f0-ec6e-25f0" name="Korrer kon la manada" hidden="false">
-          <description>Los Paztorez de garrapatos están entrenados para correr al mismo paso que los garrapatos. Por ello, se consideran Veloces.</description>
+          <description>Mientras queden garrapatos en la unidad, los Paztorez y cualquier Kriador unido a ellos se consideran Veloces.</description>
         </rule>
         <rule id="9e7b-be89-d7b0-0db6" name="Garrapatos descontrolados" hidden="false">
           <description>Si en algún momento la unidad huye o no quedan paztorez, los garrapatos se descontrolarán. Todas las unidades -amigas o enemigas- a 2D6&quot; o menos de la unidad sufrirán 1D6 impactos de F5 debido a los mordiscos de los garrapatos. Suma +1 al número de impactos por cada grupo completo de cinco garrapatos en la unidad. Tras esto, retira el rebaño al completo como bajas.</description>
@@ -1716,7 +1718,7 @@ D6 Tabla de problemas de la Bombarda
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3790-fe17-fad0-8eb8" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3790-fe17-fad0-8eb8" type="max"/>
       </constraints>
       <rules>
         <rule id="c4df-706c-6313-b071" name="Potencia de unidad 3" hidden="false"/>
@@ -1878,7 +1880,7 @@ D6 Tabla de problemas de la Bombarda
     </selectionEntry>
     <selectionEntry id="37bf-98e9-cd54-4baf" name="Ogros" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="078b-f152-bdc2-bf9d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="078b-f152-bdc2-bf9d" type="max"/>
       </constraints>
       <rules>
         <rule id="7bc9-b8f6-9013-807d" name="Miedo" hidden="false">
@@ -2129,7 +2131,7 @@ D6 Tabla de problemas de la Bombarda
       </constraints>
       <rules>
         <rule id="9150-9b2f-2abc-6399" name="Detestables jinetez de garrapato saltarín goblins nocturnos" hidden="false">
-          <description>Ningún personaje puede unirse a una unidad de garrapatos saltarines, excepto si monta un garrapato cavernícola gigante.</description>
+          <description>Ningún personaje puede unirse a una unidad de garrapatos saltarines, excepto si monta un garrapato saltarín gigante.</description>
         </rule>
         <rule id="3768-68b0-146d-570a" name="Ataque rápido (sólo los garrapatos)" hidden="false">
           <description>+2I en el turno en el que realizan una carga exitosa.</description>
@@ -2358,7 +2360,7 @@ D6 Tabla de problemas de la Bombarda
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad41-affe-125d-ab89" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad41-affe-125d-ab89" type="max"/>
       </constraints>
       <rules>
         <rule id="9ab5-5753-5313-18c8" name="Dotación del castillo" hidden="false">
@@ -2383,7 +2385,7 @@ D6 Ataque del garrapato gargantúa
         <infoLink id="f4b2-2364-94dd-6404" name="Monstruo" hidden="false" targetId="0518-1c98-54e1-371d" type="rule"/>
         <infoLink id="23e2-89f4-2250-5c88" name="Indesmoralizable" hidden="false" targetId="4362-3d7f-a24a-3309" type="rule"/>
         <infoLink id="8ab1-6388-bc0c-0ad4" name="Impactos por carga (1D3)" hidden="false" targetId="97de-652c-df54-f43b" type="rule"/>
-        <infoLink id="1a46-8212-880a-d751" name="Odio (Enanos)" hidden="false" targetId="1bf6-d120-99cd-9a64" type="rule"/>
+        <infoLink id="1a46-8212-880a-d751" name="Odio" hidden="false" targetId="a187-f92e-2178-84ff" type="rule"/>
         <infoLink id="7b00-ce7b-f2e4-0544" name="Piel escamosa (5+)" hidden="false" targetId="b1c5-6add-797c-2d07" type="rule"/>
       </infoLinks>
       <categoryLinks>
@@ -2520,13 +2522,13 @@ D6 Ataque del garrapato gargantúa
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6c5-7c0d-7fa2-c684" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6c5-7c0d-7fa2-c684" type="max"/>
       </constraints>
       <rules>
         <rule id="c31f-21af-d8f3-27e4" name="Caídas" hidden="false">
           <description>Los gigantes son seres muy torpes, y son propensos a caerse. Un gigante deberá efectuar un chequeo para determinar si se cae al suelo si es derrotado en combate cuerpo a cuerpo (se hace antes que el chequeo de desmoralización), si está huyendo al inicio de tu fase de movimiento, cuando cruce un obstáculo (debe realizarse el chequeo al llegar a contacto con el obstáculo) o si el gigante decide Saltar arriba y abajo (debe efectuarse antes de comenzar a saltar). Para ver si el gigante se cae, deberás tirar 1D6. Con un resultado de 1, el gigante se caerá. Al morir, un gigante se cae automáticamente. Para determinar en qué dirección se cae el gigante, usa el dado de dispersión, y coloca la plantilla de gigante caído con los pies en contacto con la peana del gigante y la cabeza apuntando en la dirección de la caída. Cualquier miniatura total o parcialmente cubierta por la plantilla sufrirá un único impacto de F6 con la regla especial Heridas múltiples (1D3). Si el gigante se encontraba trabado e combate, esas heridas contarán para la resolución. Cuando un gigante se cae, sufre automáticamente una herida (que también deberá tenerse en cuenta para la resolución si el gigante está trabado en combate). Una vez en el suelo, el gigante puede levantarse en su próxima fase de movimiento (lo cual consumirá todo su movimiento). Un gigante en el suelo no podrá atacar. Si el gigante es obligado a huir mientras está en el suelo, retíralo como baja. Si el gigante tiene la oportunidad de perseguir estando en el suelo, en lugar de eso se pondrá en pie. Un gigante puede atacar normalmente el turno en que se levanta.</description>
         </rule>
-        <rule id="4afe-6308-1416-b97a" name="Ataques especiales del gigante" hidden="false">
+        <rule id="7e83-e8d9-227f-acf2" name="Ataques especiales del gigante" hidden="false">
           <description>Cuando un gigante ataque, determina cuál de las dos siguientes tablas utilizará (dependiendo del tipo de tropa al que ataque) y tira 1D6. Al atacar a un personaje sobre una montura, decide antes de tirar si el gigante va a atacar al jinete o a la montura. Usa la tabla de cosas grandes contra infantería monstruosa, caballería monstruosa, bestias monstruosas, monstruos, carros y máquinas de guerra; y la tabla de cosas pequeñas contra infantería, bestias, caballería y enjambres:
 
 D6 Tabla de cosas grandes 	
@@ -2538,7 +2540,21 @@ D6 Tabla de cosas pequeñas
 1    Gritar y vocear
 2    Saltar arriba y abajo
 3    Agarrar y...
-4-6 Barrido con el garrote</description>
+4-6 Barrido con el garrote
+
+Gritar y vocear: Ni el gigante ni ninguna miniatura enemiga en contacto peana con peana con él atacan este turno (a no ser que ya lo hayan hecho). El bando del gigante gana el combate automáticamente por dos puntos.
+Golpear con el garrote: El gigante elige una única miniatura enemiga con la que esté en contacto peana con peana y la golpea con su garrote. La víctima debe superar un chequeo de iniciativa o sufrirá 2D6 heridas sin tirada de salvación por armadura. Si el gigante obtiene un doble, el garrote se habrá quedado atascado en el suelo, y el gigante no podrá atacar durante la siguiente fase de combate cuerpo a cuerpo del mismo combate mientras recupera su garrote.
+Cabezazo: El gigante golpea con su dura cabeza a una única miniatura de la unidad enemiga, causándola una herida automática sin tirada de salvación por armadura. Si la víctima resulta herida pero no muere, quedará tan aturdida que perderá sus ataques de esa fase de combate cuerpo a cuerpo (si ya había atacado, perderá los ataques durante su próxima fase de combate cuerpo a cuerpo).
+Saltar arriba y abajo: El gigante comienza a saltar sobre sus enemigos, Antes de efectuar el ataque, el gigante deberá chequear para ver si se cae (como se describe más arriba). Causa a la unidad pisoteada 2D6 impactos de F6 distribuidos como si fueran proyectiles. Una vez un gigante ha empezado a saltar arriba y abajo es muy difícil que pare, por lo que en las subsiguientes rondas del mismo combate cuerpo a cuerpo no será necesario tirar en la tabla para determinar el ataque del gigante, sino que continuará saltando arriba y abajo hasta que el combate finalice.
+Barrido con el garrote: El gigante causa a su unidad objetivo 1D6 impactos de F7 distribuidos como si fueran proyectiles.
+Agarrar y...: El gigante selecciona una única miniatura de la unidad enemiga que esté en contacto peana con peana con el gigante o con una miniatura en contacto peana con peana con el gigante. La miniatura agarrada puede efectuar un único ataque contra el gigante (fuera de la secuencia habitual). Si consigue causar una herida no salvada, el gigante lo soltará con un alarido y este ataque no tendrá efecto. Si no lo logra, tira 1D6 para ver qué hace el gigante con su infortunada víctima:
+D6 	Resultado (Agarrar y...)
+1 	Metida en el saco: la miniatura se retira como baja. Sin embargo, si el gigante muere, todas las miniaturas Metidas en el saco quedarán libres.
+2 	Arrojada contra la unidad: el gigante arroja a la infortunada víctima contra la unidad. Esta se retira como baja, y la unidad sufre 1D6 impactos de F3.
+3 	Arrojada contra otra unidad: igual que el anterior, solo que el gigante arroja a la víctima contra otra unidad enemiga a 12&quot; o menos de su posición. Las heridas causadas cuentan para la resolución del combate a favor del gigante. Si no hay otras unidades enemigas, considera este resultado como un 2.
+4 	Despedazada: La miniatura se retira como baja. Si la miniatura despedazada estaba en una unidad, esa unidad queda apabullada ese turno.
+5 	Devorada: La miniatura se retira como baja. Si la miniatura devorada estaba en una unidad, esa unidad queda apabullada ese turno.
+6 	Trincar a otro: considera este resultado como un 1, sólo que tras meter en el saco a su víctima, el gigante elige otra víctima (que puede hacer su ataque de gracia), y vuelve a tirar e esta tabla.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2712,6 +2728,13 @@ D6 Tabla de cosas pequeñas
           </constraints>
           <selectionEntryGroups>
             <selectionEntryGroup id="5e59-f5e5-c7d2-e35b" name="Objetos mágicos" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="4490-0277-3593-adfb" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="8e62-c856-6282-73c6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4490-0277-3593-adfb" type="max"/>
               </constraints>
@@ -3059,7 +3082,7 @@ D6 Tabla de cosas pequeñas
                     <infoLink id="3adb-9092-66be-3b1b" name="Garrote" hidden="false" targetId="8ef2-ac00-39be-1872" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="4.0"/>
+                    <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="725b-7f07-7ce2-49b5" name="Pinchagarrapatos" hidden="false" collective="false" import="true" type="upgrade">
@@ -3120,6 +3143,16 @@ D6 Tabla de cosas pequeñas
                     <condition field="selections" scope="5624-a5c9-a786-db8b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="162d-fb41-d796-9840" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="41726d6f75725361766523232344415441232323" value="4">
+                  <conditions>
+                    <condition field="selections" scope="5624-a5c9-a786-db8b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a478-6d7b-b00c-8806" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="576172645361766523232344415441232323" value="4">
+                  <conditions>
+                    <condition field="selections" scope="5624-a5c9-a786-db8b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a478-6d7b-b00c-8806" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
@@ -3151,6 +3184,11 @@ D6 Tabla de cosas pequeñas
                 <modifier type="set" field="b8df-aaf5-4094-894c" value="2.0">
                   <conditions>
                     <condition field="selections" scope="149a-86fa-dfb9-7a22" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="95fb-37d5-63df-0cd4" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="b8df-aaf5-4094-894c" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="5624-a5c9-a786-db8b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -3349,6 +3387,14 @@ D6 Tabla de cosas pequeñas
               </constraints>
               <costs>
                 <cost name="pts" typeId="points" value="40.0"/>
+              </costs>
+            </entryLink>
+            <entryLink id="d8b9-0055-f368-ca25" name="El kaldero de laz zetaz" hidden="false" collective="false" import="true" targetId="a478-6d7b-b00c-8806" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c4ce-d235-8377-a7fd" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="205.0"/>
               </costs>
             </entryLink>
           </entryLinks>
@@ -3768,7 +3814,7 @@ D6 Tabla de cosas pequeñas
                     <infoLink id="dcaa-a29f-7dc9-ebf4" name="Garrote" hidden="false" targetId="8ef2-ac00-39be-1872" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="932d-7f99-1df9-2ee2" name="Pinchagarrapatos" hidden="false" collective="false" import="true" type="upgrade">
@@ -3857,6 +3903,16 @@ D6 Tabla de cosas pequeñas
                 <modifier type="set" field="41726d6f75725361766523232344415441232323" value="6">
                   <conditions>
                     <condition field="selections" scope="bdbd-94dd-81fd-eadf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="76c2-3153-7c7f-01f2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="41726d6f75725361766523232344415441232323" value="4">
+                  <conditions>
+                    <condition field="selections" scope="bdbd-94dd-81fd-eadf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a478-6d7b-b00c-8806" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="576172645361766523232344415441232323" value="4">
+                  <conditions>
+                    <condition field="selections" scope="bdbd-94dd-81fd-eadf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a478-6d7b-b00c-8806" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -4014,6 +4070,14 @@ D6 Tabla de cosas pequeñas
                 <cost name="pts" typeId="points" value="50.0"/>
               </costs>
             </entryLink>
+            <entryLink id="a600-52d7-afb3-7d46" name="El kaldero de laz zetaz" hidden="false" collective="false" import="true" targetId="a478-6d7b-b00c-8806" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="526f-d5ca-e257-7174" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="205.0"/>
+              </costs>
+            </entryLink>
           </entryLinks>
         </selectionEntryGroup>
         <selectionEntryGroup id="c15e-4782-132f-af68" name="Nivel de magia" hidden="false" collective="false" import="true" defaultSelectionEntryId="a5fd-1a0c-8077-84d3">
@@ -4109,7 +4173,7 @@ D6 Tabla de cosas pequeñas
       </constraints>
       <rules>
         <rule id="6db6-8080-a638-5f0c" name="Detestables zapadorez" hidden="false">
-          <description>Ningún personaje puede unirse a un a unidad de Zapadores.</description>
+          <description>Ningún personaje que no sea Kriador puede unirse a un a unidad de Zapadores</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4242,9 +4306,6 @@ D6 Tabla de cosas pequeñas
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="d662-d07c-e354-5e96" name="Opciones" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b5e-6b10-29a4-a272" type="max"/>
-          </constraints>
           <selectionEntries>
             <selectionEntry id="19ec-e3a7-18bf-82ab" name="Avance subterráneo" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -4331,7 +4392,7 @@ D6 Tabla de cosas pequeñas
               <selectionEntries>
                 <selectionEntry id="2455-8e99-bcfd-c3c6" name="Arco corto" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="increment" field="points" value="1.0">
+                    <modifier type="increment" field="points" value="0.5">
                       <repeats>
                         <repeat field="selections" scope="1d68-586f-9891-f795" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7045-5adc-2317-123c" repeats="1" roundUp="false"/>
                       </repeats>
@@ -4359,7 +4420,7 @@ D6 Tabla de cosas pequeñas
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="403f-8d98-2313-a072" type="max"/>
                   </constraints>
                   <infoLinks>
-                    <infoLink id="9b29-f70b-2cbb-7ba8" name="Lanza (infantería)" hidden="false" targetId="ea63-f860-d8f5-b7db" type="profile"/>
+                    <infoLink id="9b29-f70b-2cbb-7ba8" name="Cuchillos/estrellas arrojadizas" hidden="false" targetId="2d13-b3f6-f40b-23fc" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -4426,7 +4487,7 @@ D6 Tabla de cosas pequeñas
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eef5-ba3c-9d56-3809" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eef5-ba3c-9d56-3809" type="max"/>
       </constraints>
       <rules>
         <rule id="b4bf-6bc1-084f-9f43" name="Torbellino de dientes" hidden="false">
@@ -4514,7 +4575,7 @@ D6 Tabla de cosas pequeñas
     </selectionEntry>
     <selectionEntry id="0e74-a7e2-b376-86f2" name="Zúper karraka" hidden="false" collective="false" import="true" type="unit">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b964-47dd-5119-793a" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="b964-47dd-5119-793a" type="max"/>
       </constraints>
       <rules>
         <rule id="ce8b-484a-4a61-2a8b" name="Tirada de salvación 4+" hidden="false"/>
@@ -4523,9 +4584,6 @@ D6 Tabla de cosas pequeñas
         </rule>
         <rule id="95d8-71c0-831e-0c95" name="Aplaztar al enemigo" hidden="false">
           <description>En cualquier fase de combate cuerpo a cuerpo en la que la Karraka se encuentre trabada en combate y no haya movido ese turno, causará 1D6 impactos de F6 (repartidos como proyectiles) a una unidad enemiga con la que se encuentre trabada en combate. Este ataque especial se realiza a Iniciativa 1, y las bajas causadas cuentan para el resultado del combate.</description>
-        </rule>
-        <rule id="1575-948f-b68f-49f0" name="Trakzión de garrapatos" hidden="false">
-          <description>Los dos garrapatos que sirven a la Zúper Karraka para mover tan sólo pueden atacar por el flanco o la retaguardia de la Zúper karraka, nunca por el lado frontal de la peana de la Karraka.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -4775,7 +4833,7 @@ D6 Tabla de cosas pequeñas
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="65.0"/>
+            <cost name="pts" typeId="points" value="70.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b87c-76fd-2c5c-9c94" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
@@ -4828,7 +4886,7 @@ D6 Tabla de cosas pequeñas
                 <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
                 <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
                 <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">3</characteristic>
                 <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
                 <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
@@ -4911,7 +4969,7 @@ D6 Tabla de cosas pequeñas
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fe04-23ff-ada5-efbe" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fe04-23ff-ada5-efbe" type="max"/>
       </constraints>
       <rules>
         <rule id="be35-7a9c-e37d-2a87" name="Atado al suelo" hidden="false">
@@ -4921,7 +4979,7 @@ D6 Tabla de cosas pequeñas
           <description>En cada una de tus fases de disparo en las que no esté trabado en combate cuerpo a cuerpo, un garrapato escupidor que siga encadenado puede ser cebado por sus cuidadores goblin. Elige entre uno y tres dados de cebo, tira los dados elegidos, suma los resultados para determinar el valor de Cebo de ese turno y consulta en la siguiente tabla para determinar el efecto:
 Cebo Efecto
 1-4 Eructo ácido: Tira 3D6: todas las unidades (amigas o enemigas) a esa distancia o menos del garrapato escupidor sufren 1D6 impactos de F1 que no permiten tirada de salvación por armadura (distribuidos como proyectiles, aunque si la unidad se encuentra trabada en combate, no repartas los impactos con otras unidades). Cada uno de los cuidadores sufre un impacto de F1 que no permite tirada de salvación por armadura.
-5-9 Chorro de babas: Efectúa un chequeo de Liderazgo con los cuidadores: si lo falla, sufrirán cada uno un impacto de F2 que no permite tirada de salvación por armadura. Sin embargo, si lo superan, el garrapato escupidor puede disparar esa fase como un lanzallamas (puede estimar hasta 3 dados); resuelve los impactos con F2, y no permiten tirada de salvación por armadura ni regeneración (ten en cuenta que aunque dispare como un lanzallamas no es fuego, si no ácido, y no tiene ataques flamígeros). Si obtienes un resultado de problemas, el disparo no tiene efecto y el garrapato escupidor sufre una herida sin tirada de salvación por armadura.
+5-9 Chorro de babas: Efectúa un chequeo de Liderazgo con los cuidadores: si lo falla, sufrirán cada uno un impacto de F2 que no permite tirada de salvación por armadura. Superen o no el chequeo, el garrapato escupidor puede disparar esa fase como un  lanzallamas (puede estimar hasta 3 dados); resuelve los impactos con F2, y no permiten tirada de salvación por armadura ni regeneración (ten en cuenta que aunque dispare como un lanzallamas no es fuego, si no  ácido, y no tiene ataques flamígeros). Si obtienes un resultado de problemas, el disparo no tiene efecto y  el garrapato escupidor sufre una herida sin tirada de salvación por armadura.
 10-16 Torrente de garrapatos: Efectúa un chequeo de Liderazgo con los cuidadores: si lo superan, el garrapato escupidor puede disparar esa fase como una catapulta; si lo falla, también disparará como una catapulta, aunque se desviará siempre (aunque saques punto de mira), y el doble de la distancia indicada en el dado de artillería. El disparo de catapulta tiene un alcance de 0-36”, utiliza la plantilla redonda grande, y se resuelve con F5; cualquier unidad que sufra al menos una baja deberá efectuar inmediatamente un chequeo de pánico. Si obtienes un resultado de problemas, el disparo no tiene efecto y el garrapato escupidor sufre una herida sin tirada de salvación por armadura.
 17-18 Ardor estomacal: El garrapato escupidor sufre 1D3 heridas automáticas sin tirada de salvación por armadura. Los cuidadores deben superar un chequeo de Iniciativa o sufrir un impacto de F5. Cualquier unidad (amiga o enemiga) a 3” o menos del garrapato escupidor sufre 1D6 impactos de F5.</description>
         </rule>
@@ -5184,6 +5242,7 @@ Cebo Efecto
                         </modifier>
                       </modifiers>
                     </entryLink>
+                    <entryLink id="82a7-740d-119f-251c" name="Objetos hechizados. Goblins nocturnos. Kriador goblin nocturno" hidden="false" collective="false" import="true" targetId="bef2-dfa1-2c61-cac9" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="180f-794c-fcdf-aaf5" name="Talismanes mágicos" hidden="false" collective="false" import="true">
@@ -5414,7 +5473,7 @@ Cebo Efecto
                     <infoLink id="3a1f-c0d8-fe19-ebad" name="Garrote" hidden="false" targetId="8ef2-ac00-39be-1872" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="3.0"/>
+                    <cost name="pts" typeId="points" value="2.0"/>
                   </costs>
                 </selectionEntry>
                 <selectionEntry id="c618-6941-492f-a0e5" name="Pinchagarrapatos" hidden="false" collective="false" import="true" type="upgrade">
@@ -5476,7 +5535,7 @@ Cebo Efecto
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e59c-2ef7-f78a-40d3" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e59c-2ef7-f78a-40d3" type="max"/>
       </constraints>
       <rules>
         <rule id="4566-7f19-faf5-67d9" name="Realmente odia a los enanos" hidden="false">
@@ -5651,7 +5710,7 @@ Cebo Efecto
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25e3-f63a-084c-3e94" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="25e3-f63a-084c-3e94" type="max"/>
       </constraints>
       <rules>
         <rule id="a54f-527f-4213-fb3c" name="Magia Oddgit, el zabio de loz hongoz" hidden="false">
@@ -5811,7 +5870,7 @@ Cebo Efecto
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="67ae-76b1-2b1b-b75e" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="67ae-76b1-2b1b-b75e" type="max"/>
       </constraints>
       <rules>
         <rule id="690d-52bf-1d93-0440" name="Magia Zhulgin, el de loz frazkoz" hidden="false">
@@ -6049,24 +6108,38 @@ D6 Garrapato dopado
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f42-d9fc-7a99-66d9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f42-d9fc-7a99-66d9" type="max"/>
       </constraints>
       <rules>
-        <rule id="9388-9acc-54f9-ed70" name="Kompañeroz inzeparablez" hidden="false">
-          <description>Gubbinz y Growler conforman ambos una unidad, a la que ningún otro personaje puede unirse. Ni Gubbinz ni Growler pueden ser el General del ejército.</description>
+        <rule id="6f65-2a34-2a24-0cf4" name="Inmune a la psicología (Gubbinz) (mientras Growler permanezca con vida)" hidden="false"/>
+        <rule id="5c1d-7a84-cced-63c6" name="Esquivar (2+) (Gubbinz)" hidden="false">
+          <description>El valor indicado es la tirada de salvación especial que tendrá la miniatura. Esquivar es, a todos los efectos, una Tirada de salvación especial (recuerda que si dispones de Esquivar y de otra tirada de salvación especial, tan sólo podrás efectuar una de las dos tiradas). Sin embargo, existen tres salvedades: Una tirada de Esquivar no puede ser anulada u obligada a repetir por objetos mágicos o hechizos, ya que no se trata de una protección mágica. Una tirada de Esquivar puede efectuarse incluso contra efectos que maten autimáticamente (aunque no causen heridas). Por el mismo motivo, no se puede esquivar contra las heridas causadas por hechizos de Mladición.</description>
         </rule>
-        <rule id="8e82-901a-31ca-75e6" name="Kabriolaz errantez" hidden="false">
+        <rule id="9ddd-91bd-ca50-e83e" name="Piel escamosa (5+) (Growler)" hidden="false"/>
+        <rule id="ec21-55dd-fb6d-aab7" name="Odio (Enanos) (Growler)" hidden="false"/>
+        <rule id="c900-c46f-4a35-8b3d" name="Esquivar (4+) (Gorwler)" hidden="false">
+          <description>El valor indicado es la tirada de salvación especial que tendrá la miniatura. Esquivar es, a todos los efectos, una Tirada de salvación especial (recuerda que si dispones de Esquivar y de otra tirada de salvación especial, tan sólo podrás efectuar una de las dos tiradas). Sin embargo, existen tres salvedades: Una tirada de Esquivar no puede ser anulada u obligada a repetir por objetos mágicos o hechizos, ya que no se trata de una protección mágica. Una tirada de Esquivar puede efectuarse incluso contra efectos que maten autimáticamente (aunque no causen heridas). Por el mismo motivo, no se puede esquivar contra las heridas causadas por hechizos de Mladición.</description>
+        </rule>
+        <rule id="d2e4-d683-50fa-7013" name="Kompañeroz inzeparablez" hidden="false">
+          <description>Gubbinz y Growler conforman ambos una unidad, a la que ningún otro personaje puede unirse. Ni Gubbinz ni Growler pueden ser el General del ejército. </description>
+        </rule>
+        <rule id="ade4-89e2-4b7b-11f1" name="Kabriolaz errantez" hidden="false">
           <description>Gubbinz y Growler tienen Movimiento aleatorio (3D6). Sin embargo, cuando vayas a moverlos, tira el dado de dispersión. Si obtienes un resultado de punto de mira, puedes decidir hacia dónde moverán Gubbinz y Growler; sin embargo, si obtienes un resultado de flecha, debes moverlos en la dirección indicada. Si su movimiento los fuese a llevar a contacto peana con peana con una unidad (amiga o enemiga), déjalos a 1” de la unidad, sin llegar a tocarla.</description>
         </rule>
-        <rule id="8b1e-4694-bca2-46bc" name="Muy dezagradable" hidden="false">
+        <rule id="8a2d-9d41-5295-d49a" name="Muy dezagradable" hidden="false">
           <description>Cualquier unidad de pielesverdes (orcos, goblins y hobgoblins) a 8” o menos de Gubbinz fallarán sus chequeos de Animosidad con un resultado de 1 ó 2 (en lugar de sólo con resultados de 1, como es habitual). Todas las unidades enemigas a 8” o menos de Gubbinz no podrán usar las reglas especiales Presencia inspiradora o ¡Ni un paso atrás! Además, cualquier unidad que pueda cargar a Gubbinz durante su fase de declaración de cargas deberá superar un chequeo de Liderazgo o verse obligada a cargar contra Gubbinz. Los elfos (altos elfos, elfos oscuros y elfos silvanos) a 8” o menos de Gubbinz tendrán, además, un penalizador de -1 a su Liderazgo.</description>
         </rule>
-        <rule id="a6b8-be5d-d879-8c7d" name="Gubbinz y Growler en combate" hidden="false">
+        <rule id="51d1-5b72-9480-0c32" name="Gubbinz y Growler en combate" hidden="false">
           <description>Gubbinz y Growler no pueden cargar voluntariamente al combate, pero pueden ser cargados. Al finalizar el combate, Gubbinz siempre pierde los combates (da igual los modificadores), y siempre huye. Ninguna unidad puede perseguirlo (tan sólo reformar).</description>
         </rule>
       </rules>
       <infoLinks>
-        <infoLink id="b685-cf80-f947-446b" name="Movimiento aleatorio (3D6)" hidden="false" targetId="a87e-08dc-36ec-ff50" type="rule"/>
+        <infoLink id="7f9b-53e4-a1a7-c5b3" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="7853-8cf7-5b13-88a3" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
+        <infoLink id="e801-49ec-1d96-3f2c" name="Piel escamosa (5+)" hidden="false" targetId="b1c5-6add-797c-2d07" type="rule"/>
+        <infoLink id="e2e1-9201-0a64-07d7" name="Odio (Enanos)" hidden="false" targetId="1bf6-d120-99cd-9a64" type="rule"/>
+        <infoLink id="aa7d-f458-2aba-42a4" name="Esquivar (4+)" hidden="false" targetId="89b2-357c-6f88-920c" type="rule"/>
+        <infoLink id="a581-375f-c951-628f" name="Movimiento aleatorio (3D6)" hidden="false" targetId="a87e-08dc-36ec-ff50" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="0660-5a40-2bc5-f0ff" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
@@ -6096,44 +6169,8 @@ D6 Garrapato dopado
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="9c98-df6e-b214-ed3c" name="Inmune a la psicología (mientras Growler permancezca con vida)" hidden="false">
-              <description>Las unidades Inmunes a la psicología no se verán afectadas por el Miedo, el Terror o el Pánico: superarán automáticamente todos los chequeos de miedo, terror y pánico que deban efectuar, y no se verán afectados por efectos derivados de estos. Una unidad Inmune a la psicología no puede declarar Huir o Disparar y huir como reacción a una carga.</description>
-            </rule>
-            <rule id="3594-eabd-21bc-ac6a" name="Esquivar (3+)" hidden="false">
-              <description>El valor indicado es la tirada de salvación especial que tendrá la miniatura. Esquivar es, a todos los efectos, una Tirada de salvación especial (recuerda que si dispones de Esquivar y de otra tirada de salvación especial, tan sólo podrás efectuar una de las dos tiradas). Sin embargo, existen tres salvedades: Una tirada de Esquivar no puede ser anulada u obligada a repetir por objetos mágicos o hechizos, ya que no se trata de una protección mágica. Una tirada de Esquivar puede efectuarse incluso contra efectos que maten autimáticamente (aunque no causen heridas). Por el mismo motivo, no se puede esquivar contra las heridas causadas por hechizos de Mladición.</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="3a28-a667-5db7-ea93" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
-          </infoLinks>
-          <selectionEntries>
-            <selectionEntry id="b93c-ec9c-6b83-0681" name="Equipo Gubbinz el bufón" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76ce-526b-1811-143a" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a76-aed2-5f13-c336" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="236b-1cc7-cfb3-5f30" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5582-c176-8cef-4f43" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79d0-647a-ab7f-ddcf" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="0855-160b-494f-b703" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
-            <cost name="pts" typeId="points" value="80.0"/>
+            <cost name="pts" typeId="points" value="40.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="ebb5-ef11-7dbf-da71" name="Growler" hidden="false" collective="false" import="true" type="upgrade">
@@ -6159,32 +6196,47 @@ D6 Garrapato dopado
               </characteristics>
             </profile>
           </profiles>
-          <infoLinks>
-            <infoLink id="01ae-3063-09ae-d0f7" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
-            <infoLink id="b8b4-a499-d3a0-8e8f" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
-            <infoLink id="140d-2f8c-232c-f910" name="Piel escamosa (5+)" hidden="false" targetId="b1c5-6add-797c-2d07" type="rule"/>
-            <infoLink id="eba3-a67c-1873-2f61" name="Odio (Enanos)" hidden="false" targetId="1bf6-d120-99cd-9a64" type="rule"/>
-          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ba66-4414-25d9-d983" name="Equipo Growler" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eaa-1744-f796-dd72" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="407e-7488-bfbf-2f96" type="min"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="d771-4d85-cea6-1c59" name="Equipo Growler" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="5bff-7d61-6fea-d9c3" name="Afilados dientes" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ee0-eae7-2220-1f63" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4eae-84a2-4622-7234" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d295-3d2a-c52c-4fc4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="85c9-f944-668b-0abb" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="afe8-ce03-4fae-4911" name="Afilados dientes" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f81b-626e-bbf4-39ab" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bbab-79ef-0c72-2906" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="171c-f101-6d91-c277" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <infoLinks>
+                <infoLink id="646b-651a-98a2-a125" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="af69-03fb-0dc1-420c" name="Equipo Gubbinz el bufón" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3cfc-0527-efbf-2b83" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1b26-6787-818c-65e1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="7225-e992-2807-67bb" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fca4-2200-f66c-4754" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2a37-76ce-10c6-56b2" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="61ba-9439-0882-dcaf" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -6208,7 +6260,7 @@ D6 Garrapato dopado
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc1d-0216-513d-b8af" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fc1d-0216-513d-b8af" type="max"/>
       </constraints>
       <rules>
         <rule id="b75e-cf24-e1fa-9c60" name="Ziempre kon el kacharro" hidden="false">
@@ -6449,13 +6501,25 @@ D6 Problemas del Kacharro
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b15-6b4e-0619-d7e9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b15-6b4e-0619-d7e9" type="max"/>
       </constraints>
+      <rules>
+        <rule id="14b6-5a68-c054-1d5f" name="Zeñor de loz ocho picoz" hidden="false">
+          <description>La regla especial Presencia inspiradora de Skarsnik (por ser el general del ejército) tiene un alcance de 18” en lugar de las 12” habituales. </description>
+        </rule>
+        <rule id="6572-fcad-01da-8a34" name="Makonazionez de Skarsnik" hidden="false">
+          <description>Todas las unidades de un ejército comandado por Skarsnik podrán actuar durante el turno en el que se reagrupan.</description>
+        </rule>
+        <rule id="7cb8-c984-acbf-e5c6" name="Gobbla" hidden="false">
+          <description>Gobbla siempre deberá situarse en contacto peana con peana con Skarsnik. Gobbla se considera un personaje (puede luchar en desafíos), aunque no puede dar su Liderazgo a ninguna unidad (ni su Inmunidad a la psicología); tiene las reglas especiales Piel escamosa (5+), Golpe letal, Inmune a la psicología, Odio (enanos), Ataque veloz e Impactos por carga (1D3). Además, para representar el voraz hambre de Gobbla, al inicio de cada turno propio, si Skarsnik y Gobbla se encuentran unidos a una unidad, tira 1D6. Si obtienes un resultado de 1, Gobbla se tragará a un infortunado goblin (que no sea Skarsnik) de la unidad en la que se encuentre (de tu elección; retíralo como baja). </description>
+        </rule>
+      </rules>
       <infoLinks>
         <infoLink id="1408-2b75-77c8-c5c9" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
         <infoLink id="360b-daf4-0c9b-e8b8" name="Miedo a loz orejotaz" hidden="false" targetId="1b6f-a609-d3c4-b91f" type="rule"/>
         <infoLink id="3757-6de0-e001-1492" name="Odio (Enanos)" hidden="false" targetId="1bf6-d120-99cd-9a64" type="rule"/>
         <infoLink id="0723-de92-ba89-ccc7" name="Leyenda" hidden="false" targetId="d331-afa2-533e-c273" type="rule"/>
+        <infoLink id="6ae4-532c-18db-58e6" name="Presencia inspiradora" hidden="false" targetId="b950-0689-6573-779c" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="1b60-114e-0b7e-cbab" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="true"/>
@@ -6485,86 +6549,6 @@ D6 Problemas del Kacharro
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="7f1a-9c07-5db3-7b3c" name="Zeñor de loz ocho picoz" hidden="false">
-              <description>La regla especial Presencia inspiradora de Skarsnik (por ser el general del ejército) tiene un alcance de 18” en lugar de las 12” habituales.</description>
-            </rule>
-            <rule id="719c-504d-9a80-3ca2" name="Makinaciones de Skarsnik" hidden="false">
-              <description>Todas las unidades de un ejército comandado por Skarsnik podrán actuar durante el turno en el que se reagrupan.</description>
-            </rule>
-          </rules>
-          <selectionEntries>
-            <selectionEntry id="006e-1fb7-0d35-480c" name="Equipo Skarsnik" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f03-3a6e-62e3-4234" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9fec-597b-65dd-b16f" type="min"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="1e25-68c3-39e2-53c6" name="Pincho de Skarsnik" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aa65-be68-d652-f656" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ae0-aa11-e7c8-0716" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="1a18-94db-ec79-9cb4" name="Pincho de Skarsnik" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
-                      <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Pinchagarrapatoz (requiere ambas manos, +1F, Atacar con 2 filas adicionales). Los impactos del Pincho no permiten tirada de salvación por armadura. Además, el Pincho es un Objeto portahechizos con nivel de energía 1D6+1 que contiene un hechizo de proyectil mágico que toma como objetivo a una unidad enemiga a 24” o menos de Skarsnik: la unidad sufre un impacto, más un impacto adicional por cada unidad de goblins con potencia de unidad 20+ a 12” o menos de Skarsnik, más un impacto por cada una de esas unidades que se encuentre trabada en combate cuerpo a cuerpo. Todos los impactos se resuelven con F6 y no permiten tirada de salvación por armadura (se trata de un ataque de rayos).</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="68a6-f0a0-8cef-6740" name="Pinchagarrapatoz" hidden="false" targetId="8ad2-8e67-a7c4-47df" type="profile"/>
-                    <infoLink id="d138-ed75-9225-2c3a" name="Ataques de rayos" hidden="false" targetId="8628-6531-ed1d-f985" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="2cf2-d4e6-ac33-6175" name="Armadura de laz barbaz" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="abf3-2574-967c-b841" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6939-1d2b-316f-061b" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="8de0-7930-6316-c55d" name="Armadura de laz barbaz" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
-                      <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a Skarsnik una tirada de salvación por armadura de 3+ (en lugar del habitual 5+ por ser armadura pesada), una tirada de salvación especial de 5+ y Resistencia mágica (1).</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="4cfb-58ea-08a9-3fe3" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
-                    <infoLink id="61fc-9f87-e106-734d" name="Resistencia mágica (1)" hidden="false" targetId="eae7-760e-1a1e-47d7" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="7faf-f4f1-13b6-82a5" name="Korona amarilla" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffa6-e15d-1f4b-782c" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5194-0b80-6d8a-9c18" type="min"/>
-                  </constraints>
-                  <profiles>
-                    <profile id="0a3c-a29c-416a-6624" name="Korona amarilla" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
-                      <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Skarsnik y la unidad en la que se encuentre serán Tozudos.</characteristic>
-                      </characteristics>
-                    </profile>
-                  </profiles>
-                  <infoLinks>
-                    <infoLink id="d9b9-99ef-f374-40bf" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <costs>
             <cost name="pts" typeId="points" value="355.0"/>
           </costs>
@@ -6609,39 +6593,94 @@ D6 Problemas del Kacharro
               </characteristics>
             </profile>
           </profiles>
-          <rules>
-            <rule id="e545-efa9-b905-20d7" name="Gobbla" hidden="false">
-              <description>Gobbla siempre deberá situarse en contacto peana con peana con Skarsnik. Gobbla se considera un personaje (puede luchar en desafíos), aunque no puede dar su Liderazgo a ninguna unidad (ni su Inmunidad a la psicología); tiene las reglas especiales Piel escamosa (5+), Golpe letal, Inmune a la psicología, Odio (enanos), Ataque veloz e Impactos por carga (1D3). Además, para representar el voraz hambre de Gobbla, al inicio de cada turno propio, si Skarsnik y Gobbla se encuentran unidos a una unidad, tira 1D6. Si obtienes un resultado de 1, Gobbla se tragará a un infortunado goblin (que no sea Skarsnik) de la unidad en la que se encuentre (de tu elección; retíralo como baja).</description>
-            </rule>
-          </rules>
-          <infoLinks>
-            <infoLink id="ad02-f9bf-4dd5-b5ba" name="Piel escamosa (5+)" hidden="false" targetId="b1c5-6add-797c-2d07" type="rule"/>
-            <infoLink id="3518-bc4b-c7fc-dd1e" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
-            <infoLink id="eb17-c78f-bbd8-5397" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
-            <infoLink id="3916-ee22-8be0-84cc" name="Odio (Enanos)" hidden="false" targetId="1bf6-d120-99cd-9a64" type="rule"/>
-            <infoLink id="f22e-f4ee-b397-4d7e" name="Ataque rápido" hidden="false" targetId="0107-ab2b-9c74-dade" type="rule"/>
-            <infoLink id="ef41-3470-bd88-4e2e" name="Impactos por carga (1D3)" hidden="false" targetId="97de-652c-df54-f43b" type="rule"/>
-          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b91d-d6ed-88a3-b691" name="Equipo Skarsnik" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d401-efb7-4c97-760e" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b932-c579-e2f9-03d6" type="min"/>
+          </constraints>
           <selectionEntries>
-            <selectionEntry id="438b-7be2-4f08-50cd" name="Equipo Gobbla" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="edb2-ebf7-9096-d42e" name="Pincho de Skarsnik" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9958-4d75-0d16-12f1" type="max"/>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="70d2-f169-623a-118d" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9db-b47b-03ad-89a4" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1599-d406-5dc3-c8e8" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="c0f1-7e6e-8b7d-7f8a" name="Fauces" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ebca-cebd-8ae3-25f0" type="max"/>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d7a8-0d21-465e-96f4" type="min"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="0458-99ae-dbaa-6d4e" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
+              <profiles>
+                <profile id="75d7-a24f-a495-cf0f" name="Pincho de Skarsnik" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Pinchagarrapatoz (requiere ambas manos, +1F, Atacar con 2 filas adicionales). Los impactos del Pincho no permiten tirada de salvación por armadura. Además, el Pincho es un Objeto portahechizos con nivel de energía 1D6+1 que contiene un hechizo de proyectil mágico que toma como objetivo a una unidad enemiga a 24” o menos de Skarsnik: la unidad sufre un impacto, más un impacto adicional por cada unidad de goblins con potencia de unidad 20+ a 12” o menos de Skarsnik, más un impacto por cada una de esas unidades que se encuentre trabada en combate cuerpo a cuerpo. Todos los impactos se resuelven con F6 y no permiten tirada de salvación por armadura (se trata de un ataque de rayos).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="75b5-5abf-02bc-e03e" name="Pinchagarrapatoz" hidden="false" targetId="8ad2-8e67-a7c4-47df" type="profile"/>
+                <infoLink id="5b16-4a2a-b6d7-ea17" name="Ataques de rayos" hidden="false" targetId="8628-6531-ed1d-f985" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9405-38b9-1678-cd7d" name="Armadura de laz barbaz" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8931-eb2c-c366-c301" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dee-8010-23ca-5e65" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="bfc0-2055-8315-54db" name="Armadura de laz barbaz" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a Skarsnik una tirada de salvación por armadura de 3+ (en lugar del habitual 5+ por ser armadura pesada), una tirada de salvación especial de 5+ y Resistencia mágica (1).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="e2d0-d5ba-881e-6881" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+                <infoLink id="6e31-f097-171f-9f75" name="Resistencia mágica (1)" hidden="false" targetId="eae7-760e-1a1e-47d7" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2666-c040-5a75-2e77" name="Korona amarilla" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76dc-3956-c548-8c42" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="97fd-aadd-0de2-dc86" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="df7b-b918-9cf4-fcd2" name="Korona amarilla" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Skarsnik y la unidad en la que se encuentre serán Tozudos.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="87a1-5355-e905-c46a" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f94f-4b41-f4df-96f6" name="Equipo Gobbla" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a6b6-1801-5a55-f260" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c37c-590a-434f-a7b2" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ddb7-02e8-a725-8e08" name="Fauces" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4a81-1f18-6ce2-a37f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0500-7de5-71b7-3b57" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8fc8-2a67-4868-5f9c" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -6670,7 +6709,7 @@ D6 Problemas del Kacharro
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9543-bb61-b604-bc23" type="max"/>
+        <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9543-bb61-b604-bc23" type="max"/>
       </constraints>
       <rules>
         <rule id="e9ef-4272-592e-4ad0" name="Vómito de troll" hidden="false">
@@ -6756,7 +6795,7 @@ D6 Problemas del Kacharro
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2539-b8e3-3fa3-e224" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2539-b8e3-3fa3-e224" type="max"/>
       </constraints>
       <rules>
         <rule id="b132-fbf4-a2dd-7b36" name="Magia Emisario oscuro" hidden="false">
@@ -6880,7 +6919,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad7c-7651-a235-fbd9" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ad7c-7651-a235-fbd9" type="max"/>
       </constraints>
       <rules>
         <rule id="97cd-952e-7c58-6c99" name="Bienvenidos a la maldición" hidden="false">
@@ -7138,7 +7177,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcc1-8e6e-e9c4-c390" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bcc1-8e6e-e9c4-c390" type="max"/>
       </constraints>
       <rules>
         <rule id="ecbf-0447-56d3-c424" name="Luchar sucio (sólo Edvard Van Der Kraal)" hidden="false">
@@ -7373,7 +7412,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b99-467f-e729-da61" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9b99-467f-e729-da61" type="max"/>
       </constraints>
       <rules>
         <rule id="94a3-73f5-a5ca-9612" name="Odio (Skavens)" hidden="false">
@@ -7478,7 +7517,7 @@ afectados por la regla especial No Muerto.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="69.0"/>
+            <cost name="pts" typeId="points" value="154.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="cfa3-9cdd-343b-aa01" name="Equipo Rodrigo Delmonte" hidden="false" collective="false" import="true" type="upgrade">
@@ -7601,7 +7640,7 @@ afectados por la regla especial No Muerto.</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="70b2-145d-51a7-3766" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="70b2-145d-51a7-3766" type="max"/>
       </constraints>
       <rules>
         <rule id="17df-3245-4abd-7e32" name="Odio (Enanos del caos)" hidden="false">
@@ -7893,7 +7932,7 @@ afectados por la regla especial No Muerto.</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3403-3a01-c05e-47fe" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3403-3a01-c05e-47fe" type="max"/>
       </constraints>
       <rules>
         <rule id="cd5f-eec4-ce62-7164" name="Artillería orca de Notlob" hidden="false">
@@ -8097,7 +8136,7 @@ afectados por la regla especial No Muerto.</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5681-abf3-f6d5-9f47" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5681-abf3-f6d5-9f47" type="max"/>
       </constraints>
       <rules>
         <rule id="20a9-e5cd-0290-39f0" name="Arremetida" hidden="false">
@@ -8316,7 +8355,7 @@ afectados por la regla especial No Muerto.</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="627f-d327-371a-2110" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="627f-d327-371a-2110" type="max"/>
       </constraints>
       <rules>
         <rule id="65fa-f8d2-78a8-52bb" name="Astados Los sátiros siniestros" hidden="false">
@@ -8555,7 +8594,7 @@ afectados por la regla especial No Muerto.</description>
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ddd-f382-44f4-59e7" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3ddd-f382-44f4-59e7" type="max"/>
       </constraints>
       <rules>
         <rule id="a533-f3f5-e725-a412" name="Guted el músico" hidden="false">
@@ -8878,6 +8917,158 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="95a3-f8a6-4823-48b5" name="Dagskar Kortaorejaz" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c4e8-fd54-4826-6c3d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="4ef5-20f8-32ab-338a" name="Mordedor" hidden="false">
+          <description>Dagskar realiza también los ataques de Mordedor (indicados en el perfil más arriba). Mordedor tiene las reglas especiales Odio (Enanos) y Ataque rápido, y proporciona a Dagskar una Herida adicional (para un total de 3).</description>
+        </rule>
+        <rule id="d66b-9c05-be91-58ee" name="Ezzperto envenenador" hidden="false">
+          <description>Dagskar y cualquier unidad de Goblins nocturnos a la que se una obtendrán la regla especial Ataques envenenados (esto no se aplica a los ataques de Mordedor).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="fb6f-4ba5-c89a-03e2" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="aa5b-52a8-9fcf-5b06" name="Odio (Enanos)" hidden="false" targetId="1bf6-d120-99cd-9a64" type="rule"/>
+        <infoLink id="41e6-393d-bbd2-6be9" name="Miedo a loz orejotaz" hidden="false" targetId="1b6f-a609-d3c4-b91f" type="rule"/>
+        <infoLink id="f8d1-6c8d-f976-6a8a" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="91f1-3ca1-56ad-a7d7" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
+        <categoryLink id="e8eb-bab1-2fc4-181f" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="cc61-1c46-b875-d60f" name="General del ejército" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="38bb-14b1-4f7e-ee3e" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="0556-a71d-06c5-0ea8" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b068-2424-7a91-584d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd3e-3401-02c6-291b" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7cb7-a9e7-b041-d13a" name="Dagskar Kortaorejaz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdbe-e3b4-43cd-a0a3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec30-bdc8-64cf-3055" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d190-287e-ac20-295f" name="Dagskar Kortaorejaz" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">6</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">5</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323">5</characteristic>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+            <profile id="ecb0-1a08-66e1-1d49" name="Mordedor" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">-</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">-</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">+1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">2</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="115.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="993e-97e1-547e-b2cc" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f04c-de66-5012-049c" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3e1c-6b3c-fdc3-bfbc" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="cdec-9663-3ff8-9963" name="Hoz de la luna torcida" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5457-5975-19a4-7d1f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54de-b72a-bd9c-d8de" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="af95-b3c0-de11-f9cb" name="Hoz de la luna torcida" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. La Hoz no tiene la regla especial Lenta habitual de las Armas a dos manos.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="8f97-541e-c608-32fc" name="Arma a dos manos" hidden="false" targetId="b737-28ed-1002-5531" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="25fa-4482-5805-28f3" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3c31-aba0-70bc-4ec3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b1dc-8668-c79a-3934" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="16df-5909-430b-f883" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="364c-ac27-4481-f369" name="Talizmán de loz taponez" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="af55-77ac-43d1-04ca" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="da65-22de-ab60-e62b" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="f1ce-22fe-ada8-0cac" name="Talizmán de loz taponez" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Dagskar una tirada de salvación especial de 5+. Además, lleva grabada una Runa de la suerte (un solo uso, puede utilizarse para repetir una única tirada para impactar, herir, tirada de salvación por armadura o especial, o un chequeo de atributo).</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="df7d-d845-1116-15f9" name="Garrapato cavernícola gigante" hidden="false" collective="false" import="true" type="upgrade">
@@ -8943,7 +9134,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
       </profiles>
       <rules>
         <rule id="158d-b05f-5d2d-5a7d" name="Palankín de guerra" hidden="false">
-          <description>No cambia el tipo del jinete. Portado por cuatro chikoz duroz goblin nocturnos equipados con armas de mano, que combaten también en los desafíos. Proporciona un +2 a la tirada de salvación por armadura del jinete, y una herida adicional a este.</description>
+          <description>No cambia el tipo del jinete. Portado por cuatro chikoz duroz goblin nocturnos que combaten también en los desafíos. Proporciona un +2 a la tirada de salvación por armadura del jinete, y una herida adicional a éste, además de aumentar en +4 su Potencia de unidad.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -8980,6 +9171,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         <rule id="ab46-a574-a6db-4ecc" name="Troll de piedra" hidden="false">
           <description>Los Trolls de piedra proporcionan un +1 adicional a la tirada de salvación por armadura del jinete y Resistencia mágica 2.</description>
         </rule>
+        <rule id="35f5-ce4b-02f4-45d6" name="Regeneración (5+) (se la otorga a su jinete)" hidden="false"/>
       </rules>
       <infoLinks>
         <infoLink id="ca8a-54cf-3449-f80f" name="Bestias monstruosas" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
@@ -8988,6 +9180,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         <infoLink id="cad9-70db-ad0f-0d99" name="Estupidez" hidden="false" targetId="eff6-2d64-db5e-d51e" type="rule"/>
         <infoLink id="673a-c8ff-f71e-529c" name="Esquivar (5+)" hidden="false" targetId="053b-3b96-b53b-6944" type="rule"/>
         <infoLink id="6f42-6425-5fc1-5ac7" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
+        <infoLink id="d201-b23c-2499-2fb4" name="Regeneración (5+)" hidden="false" targetId="515b-514f-7ee3-6cc3" type="rule"/>
       </infoLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -9174,6 +9367,173 @@ D6 Ataque del garrapato gargantúa
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="a478-6d7b-b00c-8806" name="El kaldero de laz zetaz" hidden="false" collective="false" import="true" type="upgrade">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c265-ac5a-c826-6b68" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="f8f7-4671-5d32-9d93" name="Potencia de unidad 4" hidden="false"/>
+        <rule id="78d4-4ef4-801b-1020" name="Salvación por armadura (4+)" hidden="false"/>
+        <rule id="4082-560a-85f2-7f50" name="Acarreado al combate" hidden="false">
+          <description>El Kaldero se trata como un carro, aunque puede marchar y no es veloz. Las “bestias de tiro” son los chikoz duroz (y el Garrapato guardián, si lo tiene). Si el chamán muere, retira el Kaldero como baja. Puede unirse a una unidad de Goblins nocturnos, Kazadorez de garrapatos o Chikoz duroz; coloca el Kaldero en la fila frontal, lo más centrado posible. El Kaldero se trata como un objetivo distinto de su unidad a efectos de disparo. El Kaldero proporciona al chamán un bonificador de +3 a su tirada de salvación por armadura en lugar del +1 habitual (para un total de 4+), que se incrementa en +2 adicional contra proyectiles (¡ya que puede esconderse tras el Kaldero!).</description>
+        </rule>
+        <rule id="021a-10b7-3db4-8d88" name="¡Komo kema!" hidden="false">
+          <description>En lugar de realizar sus ataques normales en combate cuerpo a cuerpo, el chamán puede inclinar el Kaldero para derramar parte de su hirviente contenido sobre el enemigo. Esto se resuelve a la propia Iniciativa del chamán, y causa un impacto automático a cada miniatura enemiga en contacto peana con peana con el Kaldero; los impactos se resuelven con F4 y no permiten tirada de salvación por armadura. Las bajas causadas por este ataque cuentan para el resultado del combate, como es habitual.</description>
+        </rule>
+        <rule id="2b22-2f50-e3dc-9cad" name="Bendición de la luna malvada" hidden="false">
+          <description>Tanto el Kaldero como el chamán que lo monta obtienen una tirada de salvación especial de 4+ y un bonificador de +1 a sus tiradas de Canalizar; además, tanto el Kaldero como el chamán y la unidad que lo acarree obtienen las reglas especiales Tozudez, Inmunes a miedo y Resistencia mágica (2).</description>
+        </rule>
+        <rule id="7dce-ffec-1868-c8f5" name="¡Zetaz!" hidden="false">
+          <description>Una vez por cada fase de magia propia, el chamán puede beber del Kaldero; esto tiene el mismo efecto que una Zeta mágika. Además, todos los fanáticos que salgan de la unidad que acarrea el Kaldero pueden tirar 2D6 y escoger el resultado mayor para determinar el número de impactos que causan durante el turno en que son revelados.</description>
+        </rule>
+        <rule id="c5bc-4728-7347-4f99" name="Artefakto de poder" hidden="false">
+          <description>Al inicio de cada una de tus fases de magia (tras determinar los Vientos de la Magia y las canalizaciones) el chamán utiliza el poder del Kaldero: tira 2D6 en la siguiente tabla. Si el Kaldero está montado por un Gran chamán, puede sumar o restar 1 al resultado de la tirada (los resultados superiores a 12 se consideran 12)
+2D6 	Artefakto de poder (Kaldero de laz Zetaz)
+2-3 	¡Katáztrofe! Tanto el Kaldero como la unidad a la que esté unido sufren (cada uno) 1D6 impactos de F3 que no permiten tirada de salvación por armadura.
+4-5 	Nieblaz Zinieztraz: Este poder afecta a todas las unidades amigas a 12” o menos del Kaldero, y dura hasta el inicio de tu siguiente fase de magia. Por la duración del efecto, las unidades afectadas se considerarán a cubierto tras cobertura ligera a efectos de disparos, y los enemigos tendrán un penalizador de -1 para impactar en combate cuerpo a cuerpo contra las unidades afectadas.
+6-7 	Dezatar loz rayoz: Elige una unidad enemiga a 30” o menos del Kaldero: esta sufre inmediatamente 2D6 impactos de F6 con la regla especial Ataques de rayos (se distribuyen como si fuese un Proyectil mágico, aunque nunca se reparten con otras unidades en combate).
+8 	Furia zalvaje: Este poder afecta a todas las unidades amigas a 12” o menos del Kaldero, y dura hasta el inicio de tu siguiente fase de magia. Por la duración del efecto, las unidades afectadas obtienen la regla especial Furia asesina.
+9 	Valor demenzial: Este poder afecta a todas las unidades amigas a 12” o menos del Kaldero, y dura hasta el inicio de tu siguiente fase de magia. Por la duración del efecto, las unidades afectadas obtienen la regla especial Tozudez e Inmunidad a la psicología.
+10-12 	Elige el resultado que desees de esta tabla.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="0ab1-f771-5151-8503" name="Carro" hidden="false" targetId="c761-ad12-6530-fab7" type="rule"/>
+        <infoLink id="74d3-fbd8-1d55-77c6" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="a21b-af45-e4fb-d82a" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+        <infoLink id="9d6d-fbd5-11a6-91ee" name="Inmune al miedo" hidden="false" targetId="9dea-6e2e-9d06-f5f7" type="rule"/>
+        <infoLink id="0d8c-9d9b-6cc6-333c" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="d1f9-2392-beed-8476" name="El kaldero de laz zetaz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f515-0e0d-514a-0ccd" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f0ab-4de8-5fa1-ab08" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="4cce-5e8d-f27b-fbb1" name="El kaldero de laz zetaz" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">-</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">-</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">-</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">5</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">-</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">-</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">-</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Carro</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0d65-ed7d-ee67-ae72" name="Tirado por" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fb63-4d62-5ee8-e213" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="41a9-b1d1-bf4a-605d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="1743-2aeb-759d-3c58" name="Guardián del kaldero (4)" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">-</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">-</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">5</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323"/>
+              </characteristics>
+            </profile>
+          </profiles>
+          <selectionEntries>
+            <selectionEntry id="24bf-e475-5dcb-fe80" name="Equipo Guardián del kaldero" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e8b1-e8d3-03ba-784e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4311-6d69-cb0b-5898" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="3662-78d8-11b3-2f1c" name="Garrote" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="191d-d54c-35a7-8713" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bf00-2234-8220-04f5" type="min"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="7361-84fc-b985-3f41" name="Garrote" hidden="false" targetId="8ef2-ac00-39be-1872" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="5bf2-754d-ff39-3cfc" name="Opciones" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="2cee-1ff2-0f1d-5887" name="Garrapato guardián" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="af13-d51d-64f6-060e" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="5057-d1b3-7ab8-6b3c" name="Garrapato guardián" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+                  <characteristics>
+                    <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                    <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                    <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                    <characteristic name="R" typeId="5423232344415441232323">-</characteristic>
+                    <characteristic name="H" typeId="5723232344415441232323">-</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                    <characteristic name="L" typeId="4c4423232344415441232323">2</characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                    <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                    <characteristic name="Tipo" typeId="5479706523232344415441232323"/>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="72b0-a9b3-5ce0-4823" name="Ataque rápido (Garrapato guardián)" hidden="false"/>
+              </rules>
+              <infoLinks>
+                <infoLink id="c9db-86a2-3296-ad49" name="Ataque rápido" hidden="false" targetId="0107-ab2b-9c74-dade" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="10.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="ce89-ad77-124f-5196" name="Armas mágicas. Reliquias. Goblins nocturnos. Arma de mano" hidden="false" collective="false" import="true">
@@ -9190,7 +9550,7 @@ D6 Ataque del garrapato gargantúa
           <profiles>
             <profile id="1770-9daa-7f61-d44d" name="Hacha de chafar taponez" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga al portador la regla especial Poder de penetración, así como +1 a su fuerza y +1 ataque. Si se encuentra luchando contra enanos, suma un +1 fuerza y +1 ataque adicional.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga al portador la regla especial Poder de penetración, así como +1 Fuerza y +1 Ataque. Si se encuentra luchando contra enanos, suma un +1 Fuerza y +1 Ataque adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9292,7 +9652,7 @@ D6 Ataque del garrapato gargantúa
           <profiles>
             <profile id="310b-23cb-4466-283d" name="Hacha zertera de Ulag" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona +1 a fuerza, y permite repetir las tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona +1 a Fuerza, y permite repetir las tiradas para impactar en combate cuerpo a cuerpo. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9348,7 +9708,7 @@ D6 Ataque del garrapato gargantúa
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="312f-5a2c-2ec8-f671" type="max"/>
           </constraints>
           <profiles>
-            <profile id="3580-3bdc-4089-9d90" name="Ezpada traizionera" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+            <profile id="3580-3bdc-4089-9d90" name="Zuperhacha de Martog" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
                 <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al portador +1HA, +1F y +1I.</characteristic>
               </characteristics>
@@ -9378,6 +9738,26 @@ D6 Ataque del garrapato gargantúa
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="5.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e6ef-146e-4c74-17b3" name="Kuchillo matarratas" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3d68-f55e-7146-fc5c" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3da9-658e-e1a4-f452" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="3c6c-3cd0-da3b-9ad4" name="Kuchillo matarrataz" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma tienen la regla especial Golpe letal. Al atacar a miniaturas del ejército Skaven (o de cualquiera de sus listas alternativas) en lugar de Golpe letal tendrá la regla especial Golpe letal heroico.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="90e5-7ede-3c7a-aeca" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+            <infoLink id="ffcc-c66b-4ea1-d59d" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9656,7 +10036,7 @@ D6 Ataque del garrapato gargantúa
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="30.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -9954,6 +10334,60 @@ D6 Pózima de Hongoz
             <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
+        <selectionEntry id="bd05-5d44-4102-7ddb" name="Libro kon runaz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c025-e8e5-4195-148a" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="775b-0b2c-bb0b-d7b1" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6c97-ae18-bb2e-07e5" name="Libro kon runaz" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Cualquier unidad enemiga que declare una carga contra el portador o su unidad deberá elegir el resultado más bajo en su tirada de carga, en lugar del más alto como es habitual. Las tropas Veloces elegirán el resultado más alto en lugar de sumar ambos dados como es habitual.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f1b3-86f3-b627-1a95" name="Kráneo de troll" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="6c1b-ae47-15b1-f161" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3a50-1867-1d58-9189" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2d19-ee7b-a1d9-a08f" name="Kráneo de troll" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtiene la regla especial Presencia inspiradora, que solo afecta a las unidades de Trolls amigas a 12” o menos de él.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="07fc-7fad-d829-35ec" name="Zako de ezporaz venenozaz" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="48c7-888b-e7b8-2ca3" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e92c-0f92-5760-dce2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0c77-6761-7326-e8a6" name="Zako de ezporaz venenozaz" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Proporciona a su portador la regla especial Arma de aliento (F2, no permite tirada de salvación por armadura), que solo puede utilizarse un máximo de tres veces durante el trascurso de la batalla.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <rules>
+            <rule id="64eb-e5c4-222e-8f4d" name="Arma de aliento (F2, no permite tirada de salvación por armadura)" hidden="false"/>
+          </rules>
+          <infoLinks>
+            <infoLink id="8379-53b1-1de7-fcb5" name="Arma de aliento" hidden="false" targetId="3438-0c27-972c-d418" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
     <selectionEntryGroup id="bef2-dfa1-2c61-cac9" name="Objetos hechizados. Goblins nocturnos. Kriador goblin nocturno" hidden="false" collective="false" import="true">
@@ -10122,10 +10556,34 @@ D6 Pózima de Hongoz
         </selectionEntry>
       </selectionEntries>
     </selectionEntryGroup>
+    <selectionEntryGroup id="207f-19c6-d374-c4c7" name="Estandartes mágicos. Goblins nocturnos. Unidades con redes" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2b33-38b9-62b2-d141" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec2a-5c8f-892a-daa9" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="32a6-c345-1986-1dd4" name="Eztandarte pegajozo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f7c3-3de9-5400-6e30" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e991-4b67-b933-0593" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="49dc-b718-11b1-6786" name="Eztandarte pegajozo" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
+              <characteristics>
+                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo unidades equipadas con Redes. Cada vez que la unidadlance de manera exitosa sus Redes contra una unidad enemiga, éste tendrá un penalizador de -2 a su Fuerza en lugar del -1 habitual.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
   </sharedSelectionEntryGroups>
   <sharedRules>
     <rule id="f19d-7995-9f5b-a8f5" name="Kanalización verde" hidden="false">
-      <description>En lugar de canalizar de la forma habitual, los chamanes pielesverdes tiran un dado por cada unidad de orcos con Potencia de unidad 10+ ó de Goblins con Potencia de unidad 20+ a 12” o menos del chamán y que no se encuentre huyendo. Si no hay ninguna unidad de estas características en el alcance, el chamán no solo no podrá canalizar sino que tampoco podrá lanzar hechizos esa fase.</description>
+      <description>En lugar de canalizar de la forma habitual, los chamanes pielesverdes tiran un dado por cada unidad de Orcos y/o Goblins con Potencia de unidad 10+ a 12” o menos del chamán y que no se encuentre huyendo. Si no hay ninguna unidad de estas características en el alcance, el chamán no solo no podrá canalizar sino que tampoco podrá lanzar hechizos esa fase.</description>
     </rule>
     <rule id="c6df-0fb7-4778-9f13" name="Animosidad" hidden="false">
       <description>Toda unidad que tenga la regla especial Animosidad (se indica en la lista de ejército) deberá realizar un chequeo de Animosidad en la subfase de Inicio del turno (antes de los chequeos de Terror y Estupidez, pero después de las Reservas), tal y como se indica a continuación. Las unidades no deberán realizar su chequeo de animosidad en los siguientes casos:

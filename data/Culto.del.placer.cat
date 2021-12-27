@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a5d3-0db8-9903-f390" name="Culto del placer" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a5d3-0db8-9903-f390" name="Culto del placer" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9846-934f-6342-2762" name="Senda">
       <characteristicTypes>
@@ -1832,6 +1832,9 @@
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>
@@ -3621,6 +3624,11 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
                 <modifier type="set" field="0205-2f5b-d93a-adec" value="2.0">
                   <conditions>
                     <condition field="selections" scope="f07e-78ec-87e5-94a5" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="946d-876c-2c4c-0b00" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="0205-2f5b-d93a-adec" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="d1ff-58a0-1947-fd69" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6706,6 +6714,11 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
                     <condition field="selections" scope="7f54-b5b3-bf32-48a7" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ccab-48b3-b5c3-60c8" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="2ab0-5a42-d52b-f682" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="77ac-fdba-908c-9b94" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2ab0-5a42-d52b-f682" type="max"/>
@@ -7455,6 +7468,9 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
                   </costs>
                 </selectionEntry>
               </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
           <costs>

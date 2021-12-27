@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="ee14-7e65-a3af-c099" name="Clan Lahmia" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="ee14-7e65-a3af-c099" name="Clan Lahmia" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9680-f788-862f-a30d" name="Poder vampírico">
       <characteristicTypes>
@@ -2185,6 +2185,11 @@ Poder TABLA DEL CARRUAJE NEGRO
                     <condition field="selections" scope="11a6-bab6-befb-b39b" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57d4-131d-5329-cb4b" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="1bc7-1f1a-f350-2edb" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="6370-4134-8b82-8932" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1bc7-1f1a-f350-2edb" type="max"/>
@@ -2486,7 +2491,12 @@ Poder TABLA DEL CARRUAJE NEGRO
             <infoLink id="04c8-2ca8-2f8e-0b61" name="General del ejército vampiro" hidden="false" targetId="2dac-ee9a-407f-52cd" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="8688-bb9a-074b-e116" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry"/>
+            <entryLink id="fc1e-e87b-6da3-25de" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf61-54bf-62b0-ce65" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="80cc-513b-04dc-a209" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3076,7 +3086,12 @@ Poder TABLA DEL CARRUAJE NEGRO
             <infoLink id="6995-80ec-00a3-3997" name="General del ejército vampiro" hidden="false" targetId="2dac-ee9a-407f-52cd" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="2f54-6d15-8b58-d7fb" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry"/>
+            <entryLink id="3c21-a7de-15b9-07fe" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f53-741c-2f2a-8032" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b5d-e947-252f-acc7" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -3299,7 +3314,12 @@ Poder TABLA DEL CARRUAJE NEGRO
             <infoLink id="9a5f-b6d9-41fe-c09c" name="General del ejército vampiro" hidden="false" targetId="2dac-ee9a-407f-52cd" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="8213-10d2-acba-d789" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry"/>
+            <entryLink id="5135-7548-d641-fb71" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a525-efe2-9677-b24e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9829-9c8f-a4d3-8ab6" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -4280,7 +4300,12 @@ Cántico del apremio de Mankara: Se trata de un hechizo de potenciación que tom
             <infoLink id="9e4b-688a-d614-5559" name="General del ejército vampiro" hidden="false" targetId="2dac-ee9a-407f-52cd" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="0c5e-d900-6f90-bdb3" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry"/>
+            <entryLink id="a35d-217a-859e-0e6c" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ab4-7b40-80cd-e93b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bac-0dc1-2a98-1732" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -18388,7 +18413,7 @@ afectados por la regla especial No Muerto.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="69.0"/>
+            <cost name="pts" typeId="points" value="154.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="9613-5a41-9a90-bd0d" name="Equipo Rodrigo Delmonte" hidden="false" collective="false" import="true" type="upgrade">
@@ -19868,7 +19893,12 @@ D6	Efecto
             <infoLink id="6759-f459-e6c7-8368" name="General del ejército vampiro" hidden="false" targetId="2dac-ee9a-407f-52cd" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="0fcb-e450-d4e7-ec8d" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry"/>
+            <entryLink id="cf6f-0dcc-f848-0bb4" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="548b-f2ef-1877-f19f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a45-6ff8-1c31-e382" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -20097,7 +20127,12 @@ D6	Efecto
             <infoLink id="37c1-44fe-791a-b9d8" name="General del ejército vampiro" hidden="false" targetId="2dac-ee9a-407f-52cd" type="rule"/>
           </infoLinks>
           <entryLinks>
-            <entryLink id="b67d-97a2-893b-185b" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry"/>
+            <entryLink id="c25e-74a5-3a6f-e5ef" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82de-5fec-3d65-d87a" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="25ae-9212-643e-a7e0" type="min"/>
+              </constraints>
+            </entryLink>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -20229,7 +20264,7 @@ D6	Efecto
   <sharedSelectionEntries>
     <selectionEntry id="3286-f155-b7b9-50d3" name="Lobos espectrales" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2ee1-ad9b-28c1-556a" type="max"/>
+        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2ee1-ad9b-28c1-556a" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="8561-8775-8e54-a9a3" type="max"/>
       </constraints>
       <costs>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d2ea-a0b8-8a9f-e3a5" name="Grey infernal" revision="400" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d2ea-a0b8-8a9f-e3a5" name="Grey infernal" revision="409" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="d2ea-a0b8-pubN65537" name="Grey Infernal Reforged"/>
   </publications>
@@ -607,7 +607,7 @@
         <infoLink id="40af-ce15-de89-a56c" name="Indesmoralizable" hidden="false" targetId="4362-3d7f-a24a-3309" type="rule"/>
         <infoLink id="728c-6f6a-6953-61e5" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
         <infoLink id="6225-6da2-6d0b-ced6" name="Ataques aleatorios" hidden="false" targetId="f4cc-528c-a54e-8e28" type="rule"/>
-        <infoLink id="f144-2a47-e95c-90b1" name="Aura demoníaca" hidden="false" targetId="edf2-e5c3-4580-3083" type="rule"/>
+        <infoLink id="f144-2a47-e95c-90b1" name="Aura demoníaca (5+)" hidden="false" targetId="e5ed-5149-3d72-6aa4" type="rule"/>
         <infoLink id="1fa0-5c2f-0110-0d55" name="Hostigadores" hidden="false" targetId="999c-d422-6c91-46dd" type="rule"/>
         <infoLink id="2c35-21cc-021d-c08d" name="Bestias monstruosas" hidden="false" targetId="2e1e-da3a-8081-991c" type="rule"/>
       </infoLinks>
@@ -622,6 +622,13 @@
           </constraints>
           <profiles>
             <profile id="be45-6aba-e207-58a4" name="Engendro del caos" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <modifiers>
+                <modifier type="set" field="41726d6f75725361766523232344415441232323" value="5">
+                  <conditions>
+                    <condition field="selections" scope="8d4d-42a6-0412-5439" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0b5b-ba9a-9413-09a2" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="4d23232344415441232323">2D6</characteristic>
                 <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
@@ -828,6 +835,11 @@
                 <modifier type="set" field="c291-e098-6b22-765f" value="2.0">
                   <conditions>
                     <condition field="selections" scope="5bac-fef8-0396-3bbc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0e81-bda4-c4fb-4489" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="c291-e098-6b22-765f" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="170a-3d37-2b1a-d911" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1098,7 +1110,7 @@
 2 Horror primigenio:La visión del Shaggoth es tan antinatural y sobrecogedora que recuerda a los mortales el tiempo en el que sus ancestros se arrastraban por el fango, y empequeñece sus espíritus. Todos los chequeos de Miedo y Terror provocados por el Shaggoth deben realizarse tirando 3D6 y descartando el resultado más bajo (esto se anula mutuamente con Sangre fría).
 3 Coloso ancestral: El despertar de esta criatura será recordado por los supervivientes de su ataque durante generaciones como el día en el que la misma montaña se despertó y comenzó a caminar. El Shaggoth obtiene la regla especial Impactos por carga (1D6). Si causa con sus impactos por carga a una unidad durante una fase de combate más bajas que filas tiene esa unidad, la unidad quedará Apabullada el resto de ese turno de jugador.
 4 Anatema aethírica: El Shaggoth proviene de un tiempo anterior a la irrupción de los vientos de la magia en el mundo, y éstos esquivan su presencia de forma natural. El Shaggoth obtiene las reglas especiales Ataques mágicos y Resistencia mágica (3).
-5 Fortaleza inquebrantable: Las armas de los mortales apenas pueden morder la piel del Shaggoth. Todos los impactos que reciba el Shaggoth de Fuerza superior a 6 se consideran de F6 
+5 Fortaleza inquebrantable: Todas las tiradas para herir contra el portador fallarán si se obtiene un resultado de 1, 2 ó 3 en la tirada; esto no afecta a ataques sin valor de Fuerza o que hieran automáticamente.
 6 Eterno: El batir de los milenios han acumulado un poder indescriptible en el cuerpo del Shaggoth, y la misma muerte no puede alcanzarlo. Si el Shaggoth fuera a ser retirado como baja, tira 1D6: si obtienes un resultado de 1-3, retíralo como baja. Sin embargo, con un resultado de 4+, deja al Shaggoth en el campo de batalla, con sólo una herida restante.</description>
         </rule>
       </rules>
@@ -1164,6 +1176,11 @@
                 <modifier type="set" field="f1dd-52cc-8e3a-efc9" value="2.0">
                   <conditions>
                     <condition field="selections" scope="8b53-9c93-c426-3e79" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7745-a446-c73f-699a" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="f1dd-52cc-8e3a-efc9" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="6b21-45e0-cd72-3f20" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -1418,7 +1435,7 @@
       <selectionEntries>
         <selectionEntry id="3179-73c9-854b-10fa" name="Trolls del caos" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f02-d167-2096-b5cf" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1f02-d167-2096-b5cf" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="434c-105d-97e3-813a" type="min"/>
           </constraints>
           <profiles>
@@ -1534,7 +1551,7 @@
       <selectionEntries>
         <selectionEntry id="b029-e0b3-66e9-c7c9" name="Trolls" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="6.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f104-bc15-91b7-5e13" type="max"/>
+            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f104-bc15-91b7-5e13" type="max"/>
             <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6f88-271f-e426-f082" type="min"/>
           </constraints>
           <profiles>
@@ -1807,7 +1824,7 @@
                     <entryLink id="79a5-5f2c-7943-5be6" name="Objetos hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
                     <entryLink id="7524-a43d-a8d0-2a11" name="Talismanes mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
                     <entryLink id="46e6-7c33-ec24-ee20" name="Armas mágicas. Grey Infernal. Armas emparejadas" hidden="false" collective="false" import="true" targetId="70cc-6ef6-fe85-4b03" type="selectionEntryGroup"/>
-                    <entryLink id="d4c3-d6ae-a4b8-7b20" name="Estandartes mágicos. Grey Infernal" hidden="false" collective="false" import="true" targetId="c941-b40a-eeee-e120" type="selectionEntryGroup"/>
+                    <entryLink id="d4c3-d6ae-a4b8-7b20" name="Objetos hechizados. Grey infernal" hidden="false" collective="false" import="true" targetId="e5c2-7b23-9998-606a" type="selectionEntryGroup"/>
                     <entryLink id="f562-0157-b9a2-214b" name="Armas mágicas. Grey Infernal. Arma de mano" hidden="false" collective="false" import="true" targetId="3744-4cbc-c928-950a" type="selectionEntryGroup"/>
                     <entryLink id="660d-2c37-15a4-7242" name="Armas mágicas. Grey Infernal. Arma a dos manos" hidden="false" collective="false" import="true" targetId="81f3-02b3-7cc2-8a11" type="selectionEntryGroup"/>
                     <entryLink id="5198-23a6-bcc0-ac11" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
@@ -1907,7 +1924,7 @@
                     <infoLink id="c19e-e674-0e0c-f20d" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="5.0"/>
+                    <cost name="pts" typeId="points" value="0.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -1936,7 +1953,7 @@
       <selectionEntries>
         <selectionEntry id="21be-80f5-17e1-3908" name="Ogros del caos" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="8.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee4-1928-f84c-9474" type="max"/>
+            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fee4-1928-f84c-9474" type="max"/>
             <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="13f6-3da6-1634-2981" type="min"/>
           </constraints>
           <profiles>
@@ -2705,20 +2722,33 @@
         <rule id="838a-9f5f-72da-2ede" name="Caídas" hidden="false">
           <description>Los gigantes son seres muy torpes, y son propensos a caerse. Un gigante deberá efectuar un chequeo para determinar si se cae al suelo si es derrotado en combate cuerpo a cuerpo (se hace antes del chequeo de desmoralización), si está huyendo al inicio de tu fase de movimiento, cuando cruce un obstáculo (debe realizarse el chequeo al llegar a contacto con el obstáculo) o si el gigante decide Saltar arriba y abajo (debe efectuarse antes de comenzar a saltar). Para ver si el gigante se cae, deberás tirar 1D6. Con un resultado de 1, el gigante se caerá. Al morir, un gigante se cae automáticamente. Para determinar en qué dirección se cae el gigante, usa el dado de dispersión, y coloca la plantilla de gigante caído con los pies en contacto con la peana del gigante y la cabeza apuntando en la dirección de la caída. Cualquier miniatura total o parcialmente cubierta por la plantilla sufrirá un único impacto de F6 con la regla especial Heridas múltiples (1D3). Si el gigante se encontraba trabado e combate, esas heridas contarán para la resolución. Cuando un gigante se cae, sufre automáticamente una herida (que también deberá tenerse en cuenta para la resolución si el gigante está trabado en combate). Una vez en el suelo, el gigante puede levantarse en su próxima fase de movimiento (lo cual consumirá todo su movimiento). Un gigante en el suelo no podrá atacar. Si el gigante es obligado a huir mientras está en el suelo, retíralo como baja. Si el gigante tiene la oportunidad de perseguir estando en el suelo, en lugar de eso se pondrá en pie. Un gigante puede atacar normalmente el turno en que se levanta.</description>
         </rule>
-        <rule id="1306-f6a1-49bc-5c06" name="Ataques especiales del gigante" hidden="false">
-          <description>Cuando un gigante ataque, determina cuál de las dos siguientes tablas utilizará (dependiendo del tipo de tropa al que ataque) y tira 1D6. Al atacar a un personaje sobre una montura, decide antes de tirar si el gigante va a atacar al jinete o a la montura. 
-Usa la tabla de cosas grandes contra infantería monstruosa, caballería monstruosa, bestias monstruosas, monstruos, carros y máquinas de guerra; y la tabla de cosas pequeñas contra infantería, bestias, caballería y enjambres.
+        <rule id="034c-9980-03b2-ba14" name="Ataques especiales del gigante" hidden="false">
+          <description>Cuando un gigante ataque, determina cuál de las dos siguientes tablas utilizará (dependiendo del tipo de tropa al que ataque) y tira 1D6. Al atacar a un personaje sobre una montura, decide antes de tirar si el gigante va a atacar al jinete o a la montura. Usa la tabla de cosas grandes contra infantería monstruosa, caballería monstruosa, bestias monstruosas, monstruos, carros y máquinas de guerra; y la tabla de cosas pequeñas contra infantería, bestias, caballería y enjambres:
 
-D6 Tabla de cosas grandes 
-1 Gritar y vocear
-2-4 Golpear con el garrote
+D6 Tabla de cosas grandes 	
+1    Gritar y vocear 		
+2-4 Golpear con el garrote 	
 5-6 Cabezazo
-
+ 		
 D6 Tabla de cosas pequeñas
-1 Gritar y vocear
-2 Saltar arriba y abajo
-3 Agarrar y...
-4-6 Barrido con el garrote</description>
+1    Gritar y vocear
+2    Saltar arriba y abajo
+3    Agarrar y...
+4-6 Barrido con el garrote
+
+Gritar y vocear: Ni el gigante ni ninguna miniatura enemiga en contacto peana con peana con él atacan este turno (a no ser que ya lo hayan hecho). El bando del gigante gana el combate automáticamente por dos puntos.
+Golpear con el garrote: El gigante elige una única miniatura enemiga con la que esté en contacto peana con peana y la golpea con su garrote. La víctima debe superar un chequeo de iniciativa o sufrirá 2D6 heridas sin tirada de salvación por armadura. Si el gigante obtiene un doble, el garrote se habrá quedado atascado en el suelo, y el gigante no podrá atacar durante la siguiente fase de combate cuerpo a cuerpo del mismo combate mientras recupera su garrote.
+Cabezazo: El gigante golpea con su dura cabeza a una única miniatura de la unidad enemiga, causándola una herida automática sin tirada de salvación por armadura. Si la víctima resulta herida pero no muere, quedará tan aturdida que perderá sus ataques de esa fase de combate cuerpo a cuerpo (si ya había atacado, perderá los ataques durante su próxima fase de combate cuerpo a cuerpo).
+Saltar arriba y abajo: El gigante comienza a saltar sobre sus enemigos, Antes de efectuar el ataque, el gigante deberá chequear para ver si se cae (como se describe más arriba). Causa a la unidad pisoteada 2D6 impactos de F6 distribuidos como si fueran proyectiles. Una vez un gigante ha empezado a saltar arriba y abajo es muy difícil que pare, por lo que en las subsiguientes rondas del mismo combate cuerpo a cuerpo no será necesario tirar en la tabla para determinar el ataque del gigante, sino que continuará saltando arriba y abajo hasta que el combate finalice.
+Barrido con el garrote: El gigante causa a su unidad objetivo 1D6 impactos de F7 distribuidos como si fueran proyectiles.
+Agarrar y...: El gigante selecciona una única miniatura de la unidad enemiga que esté en contacto peana con peana con el gigante o con una miniatura en contacto peana con peana con el gigante. La miniatura agarrada puede efectuar un único ataque contra el gigante (fuera de la secuencia habitual). Si consigue causar una herida no salvada, el gigante lo soltará con un alarido y este ataque no tendrá efecto. Si no lo logra, tira 1D6 para ver qué hace el gigante con su infortunada víctima:
+D6 	Resultado (Agarrar y...)
+1 	Metida en el saco: la miniatura se retira como baja. Sin embargo, si el gigante muere, todas las miniaturas Metidas en el saco quedarán libres.
+2 	Arrojada contra la unidad: el gigante arroja a la infortunada víctima contra la unidad. Esta se retira como baja, y la unidad sufre 1D6 impactos de F3.
+3 	Arrojada contra otra unidad: igual que el anterior, solo que el gigante arroja a la víctima contra otra unidad enemiga a 12&quot; o menos de su posición. Las heridas causadas cuentan para la resolución del combate a favor del gigante. Si no hay otras unidades enemigas, considera este resultado como un 2.
+4 	Despedazada: La miniatura se retira como baja. Si la miniatura despedazada estaba en una unidad, esa unidad queda apabullada ese turno.
+5 	Devorada: La miniatura se retira como baja. Si la miniatura devorada estaba en una unidad, esa unidad queda apabullada ese turno.
+6 	Trincar a otro: considera este resultado como un 1, sólo que tras meter en el saco a su víctima, el gigante elige otra víctima (que puede hacer su ataque de gracia), y vuelve a tirar e esta tabla.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3270,6 +3300,11 @@ ejército de, al menos, 3000 puntos).</description>
                     <condition field="selections" scope="aecf-c7f6-8927-4ee9" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7418-4248-ee46-83a2" type="notEqualTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="8902-764f-2698-254b" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="aecf-c7f6-8927-4ee9" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8902-764f-2698-254b" type="max"/>
@@ -3446,7 +3481,7 @@ ejército de, al menos, 3000 puntos).</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="190.0"/>
+            <cost name="pts" typeId="points" value="175.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -5033,6 +5068,11 @@ ejército de, al menos, 3000 puntos).</description>
                 <modifier type="set" field="5beb-15d6-c6b0-d345" value="2.0">
                   <conditions>
                     <condition field="selections" scope="6259-f169-e7cd-1d28" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="1fb3-893e-ce06-3c3b" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="5beb-15d6-c6b0-d345" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="4cd6-7310-8633-94ad" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -6829,7 +6869,7 @@ afectados por la regla especial No Muerto.</description>
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="69.0"/>
+            <cost name="pts" typeId="points" value="154.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="0525-5687-1fef-268e" name="Equipo Rodrigo Delmonte" hidden="false" collective="false" import="true" type="upgrade">
@@ -8082,7 +8122,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
           <description>Las unidades en contacto pena con peana con el basilisco no podrán efectuar tiradas de Regeneración. Además, al inicio de cada ronda de combate, tira 1D6 por cada miniatura en contacto peana con peana con el basilisco: si obtienes un resultado de 6, esa miniatura sufrirá una herida sin tirada de salvación; suma +1 a esta tirada por cada fase de combate cuerpo a cuerpo que la unidad de la miniatura haya estado trabada en combate con el basilisco.</description>
         </rule>
         <rule id="d756-18d9-a5d3-62ce" name="MIrada maléfica" hidden="false">
-          <description>Se trata de un ataque de disparo con las reglas especiales Disparo rápido y Francotirador. Este disparo siempre hiere con un resultado de 4+, sin importar la Resistencia del objetivo, no permite tiradas de salvación por armadura y tiene la regla especial Golpe letal Heroico.</description>
+          <description>Se trata de un ataque de disparo, de alcance 12&quot;, con las reglas especiales Disparo rápido y Francotirador. Este disparo siempre hiere con un resultado de 4+, sin importar la Resistencia del objetivo, no permite tiradas de salvación por armadura y tiene la regla especial Golpe letal Heroico.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -8945,6 +8985,449 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           </costs>
         </selectionEntry>
       </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="41fa-3f83-16fc-7550" name="Fimm murdaich" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3bf8-b9f9-fa18-c6d7" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="a888-57b4-ff58-c7ca" name="Magia Fimm murdaich" hidden="false">
+          <description>Murdaich es un hechicero de nivel 2 que puede elegir sus hechizos de entre los saberes de las Sombras, la Muerte o Magia Oscura.</description>
+        </rule>
+        <rule id="18a8-9348-5446-d9ed" name="Emboscada" hidden="false">
+          <description>Al inicio de a batalla, antes del despliegue, puedes seleccionar una de tus unidades de Guerreros Fimir o Fimir Shear de tu ejército para que no despliegue con normalidad y entre como Refuerzos. Cuando la unidad entre al campo de batalla (siguiendo las reglas habituales de Refuerzos), podrá hacerlo por cualquier borde del tablero (salvo que sea intransitable, como los bordes largos en el escenario “Batalla por el paso”).</description>
+        </rule>
+        <rule id="894b-ecd0-5404-7913" name="Odio (humanos)" hidden="false">
+          <description>Murdaich y cualquier unidad a la que se una obtienen Odio (humanos). Esto incluye las tropas humanas de los ejércitos del Imperio, Bretonia, Kislev y Mercenarios, así como a los Bárbaros del Caos, los Kurgan y a los nigromantes de los ejércitos de No muertos y Condes vampiro.</description>
+        </rule>
+        <rule id="cde1-83b2-6005-33ab" name="Cruzar (pantanos)" hidden="false">
+          <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
+        </rule>
+        <rule id="bdb1-cdd9-39a5-2abe" name="Envueltos en niebla" hidden="false">
+          <description>Todos los disparos de proyectiles contra una unidad de Fimir tendrán un penalizador de -1 para impactar.</description>
+        </rule>
+        <rule id="e49d-f787-a749-7261" name="Ataque de cola" hidden="false">
+          <description>El ataque adicional se resuelve con la F básica del Fimir.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3bfd-c94d-fb9a-2ec3" name="Infantería monstruosa" hidden="false" targetId="4958-70de-0b69-9825" type="rule"/>
+        <infoLink id="7243-92ab-9015-ce31" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="3710-8099-413a-59a2" name="Piel escamosa (4+)" hidden="false" targetId="478f-4519-03d3-5004" type="rule"/>
+        <infoLink id="a2e7-8d92-9aee-299c" name="Sangre fría" hidden="false" targetId="fae6-f2eb-1a70-1084" type="rule"/>
+        <infoLink id="0ac1-e921-e142-c1f2" name="Inmune al pánico" hidden="false" targetId="06f4-bd6a-c34d-baed" type="rule"/>
+        <infoLink id="2297-9ecf-1302-5a53" name="Odio" hidden="false" targetId="a187-f92e-2178-84ff" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d832-f6af-1b5d-3783" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
+        <categoryLink id="b5fb-85dd-508f-e76e" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="fbc6-1526-21f9-cd82" name="General del ejército" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9de-13d7-1722-bfb8" type="max"/>
+          </constraints>
+          <entryLinks>
+            <entryLink id="a3bf-807d-84e4-66eb" name="General del ejército" hidden="false" collective="false" import="true" targetId="e9b5-f798-8a8a-903b" type="selectionEntry">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9b4f-4a7e-7434-0553" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2be3-d025-ae33-97f5" type="min"/>
+              </constraints>
+            </entryLink>
+          </entryLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3725-0422-5e1c-54b5" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5764-4889-082f-c58d" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="392b-95a8-0474-dd46" type="max"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="d371-cd9a-51f0-7ab4" name="Aguijones negros" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c0a8-7b88-8a7e-b755" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7d4c-d49c-5d69-dd8f" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="512c-d9a1-1f6c-f3e0" name="Aguijones negros" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas (Murdaich realiza con ellas un total de 6 Ataques, más uno adicional con la cola). Por cada herida causada por el portador con las mazas, éste puede curarse una de las heridas que hubiese sufrido previamente durante la batalla, o puede añadir un dado de energía para su siguiente fase de magia.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a101-80a4-55c9-dd2c" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="34f2-f6f5-508b-45cb" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2832-4a8a-d967-084a" name="Coraza bruja" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c53-27b5-21af-af82" type="min"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7a88-324d-a6b0-fcb6" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="f411-c920-f06a-5318" name="Coraza bruja" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial Aura demoníaca (4+). Esta armadura no impide a Murdaich lanzar hechizos.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="a3ac-7d16-57c6-05f0" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+                <infoLink id="a26d-0c2f-66ec-5e5f" name="Aura demoníaca (4+)" hidden="false" targetId="79f2-17bc-18d1-75e3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2cfd-7061-acb7-d140" name="Fimm murdaich" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="996a-4d09-cb8c-0fa3" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb4a-4ffa-3096-146d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f294-9eab-ca60-fae5" name="Fimm murdaich" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <modifiers>
+                <modifier type="increment" field="4c4423232344415441232323" value="1">
+                  <conditions>
+                    <condition field="selections" scope="41fa-3f83-16fc-7550" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fbc6-1526-21f9-cd82" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">5</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">2</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">5+1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería monstruosa</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="280.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6b4b-21d8-99d1-a3a7" name="Nivel de magia 2" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1736-0358-6e61-0acb" type="min"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a6-5ffa-2281-ba7a" type="max"/>
+          </constraints>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="a446-7dfb-41f1-4c97" name="Loz jabalíez audacez de Snagga" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="907c-0654-8df9-55be" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="44b7-6c88-9eb4-04f7" name="Azaltantez" hidden="false">
+          <description>Snagga y su unidad obtienen la regla Vanguardia.</description>
+        </rule>
+        <rule id="ead6-d58c-b610-f3ab" name="Aztutoz" hidden="false">
+          <description>Una unidad que haya recibido una carga de Snagga y su unidad resultará Apabullada durante la ronda de combate en la que recibió la carga. Adicionalmente, si la unidad ya estaba en un combate, Snagga obtendrá un bonificador excepcional de +1 al Resultado del combate durante cualquier turno en el que haya realizado una carga exitosa.</description>
+        </rule>
+        <rule id="1af4-fbf8-58e8-73ef" name="Audacez" hidden="false">
+          <description>Snagga y su unidad serán inmunes a psicología el turno en el que hayan realizado una carga con éxito.</description>
+        </rule>
+        <rule id="8641-8180-3270-de7a" name="Animosidad" hidden="false">
+          <description>Toda unidad que tenga la regla especial Animosidad (se indica en la lista de ejército) deberá realizar un chequeo de Animosidad en la subfase de Inicio del turno, tal y como se indica a continuación. Las unidades no deberán realizar su chequeo de animosidad en los siguientes casos:
+-La unidad está compuesta por menos de cinco miniaturas.
+-La unidad se encuentra trabada en combate cuerpo a cuerpo.
+-La unidad se encuentra guarecida en un edificio.
+-La unidad está huyendo o se encuentra fuera del campo de batalla.
+Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obtienes un resultado de 2 o más, entonces todo habrá ido bien y la unidad puede actuar con normalidad este turno. Pero si obtienes un resultado de 1, deberás tirar 1D6 en la siguiente tabla y aplicar el resultado inmediatamente:
+1D6 Tabla de animosidad
+1: ¡Ze van a enterar! Algún orco o goblin de la unidad hace notar a los demás que los de una peña más cercana “lez eztán haziendo muekaz”, lo que provoca una lluvia de pedradas. La unidad causa 1D6 impactos de F3 (distribuídos como proyectiles) en la unidad amiga más cercana con la regla especial Animosidad que contenga al menos cinco miniaturas y se encuentre a 12” o menos. La unidad que reciba los impactos (si la hay) los devolverá, causando a su vez 1D6 impactos de F3 en la unidad que les atacó. Ninguna de las dos unidades podrá cargar, mover, disparar o lanzar hechizos ese turno. Si la unidad víctima no había chequeado animosidad ese turno, no tendrá que hacerlo. Si no hay ninguna víctima posible, la unidad tendrá una ¡Trifulka! (ver más abajo). En ningún caso estos impactos provocarán chequeos de pánico (¡a los pielesverdes les encanta!)
+2-5:¡Trifulka! Las ansias de violencia de los goblins o de los orcos los llevan a un estado de ira, que el jefe tratará de canalizar hacia el enemigo... La unidad deberá declarar una carga sobre la unidad enemiga más cercana en la subfase de Declaración de cargas. Si no puede declarar una carga, la unidad no podrá mover, disparar o lanzar hechizo durante este turno.
+6:¡¡A por elloz!! Poseídos por la energía del Waaaagh, los orcos o los goblins se lanzan a por sus enemigos, con la creencia (probablemente errónea) de que podrán vencerlos. Gira inmediatamente la unidad para encararla contra la unidad enemiga visible más cercana y efectúa un movimiento completo (no una marcha) en línea recta hacia esta. Si no hay ninguna unidad enemiga a la vista, entonces la unidad tendrá que mover directamente hacia el frente. Si no es posible girar la unidad para encararla con el enemigo visible más cercano, pivota hacia ella tanto como puedas y avanza hacia el frente tanto como sea posible, manteniendo a la unidad enemiga siempre en su arco frontal. En la subfase de cargas, la unidad deberá declarar una carga contra la unidad enemiga, siempre que le sea posible. Si no puede declarar una carga, podrá actuar con normalidad el resto del turno, sin contar como si hubiese movido.</description>
+        </rule>
+        <rule id="d850-0119-f5dc-28c6" name="Loz mejorez" hidden="false">
+          <description>Ninguna unidad o miniatura de orcos debe realizar chequeos de pánico cuando una unidad amiga huye o es destruida en su cercanía, o cuando una unidad amiga atraviesa una unidad de orcos en su huída, a no ser que la unidad causante del chequeo fuese también de orcos.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="fb61-986f-d597-7e05" name="Caballería" hidden="false" targetId="276f-0034-6534-f691" type="rule"/>
+        <infoLink id="0e70-8717-a79c-8393" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="d1ff-94fe-3974-ed29" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="b960-115e-145e-f12b" name="Jabalíez audacez" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="14.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b78-1ce3-af49-e19d" type="max"/>
+            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7633-5e6f-f926-b5b0" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="9554-56ae-368a-2994" name="Jabalí audaz" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">6</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Caballería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="dddc-f54d-5a20-79d2" name="Equipo Jabalíez audacez" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b5d1-5fec-844d-cbdc" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f25a-a04e-f38e-6a33" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1e94-1a12-e95d-e696" name="Rebanadoras emparejadas" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a62-b978-665c-7b9d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b3d2-19fd-f0ff-1fc0" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="2e1b-d5b6-2ba6-51ed" name="Rebanadora" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+                  <characteristics>
+                    <characteristic name="Rango" typeId="52616e676523232344415441232323">Combate</characteristic>
+                    <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">Usuario</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">+1F en el turno en el que se realiza la carga.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="c0ad-82eb-e6fa-da29" name="Rebanadora adicional" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+                  <characteristics>
+                    <characteristic name="Rango" typeId="52616e676523232344415441232323">Combate</characteristic>
+                    <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">Usuario</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">+1F en el turno en el que se realiza la carga.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e5a4-ed91-b2c3-5adf" name="Armadura ligera" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8384-fb3e-0f86-6898" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1065-9b31-2daf-e92a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b778-b66c-400c-2820" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7a78-66d1-77dc-7f8e" name="Snagga" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2274-c4ea-b3f9-c202" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b9b-63f9-33c0-06c0" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f966-77fb-6d15-d497" name="Snagga" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">5</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">2</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Caballería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="105.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9985-931d-b3b3-5c66" name="Equipo Snagga" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be7c-acb3-2af9-ea0f" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d7d-9470-82f0-8486" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="179a-3e89-09ba-f318" name="Rebanadora de Snagga" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb9e-3a14-6bc4-ca08" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd60-b750-23da-72a6" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="502a-70f3-a845-4651" name="Rebanadora de Snagga" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Rebanadora. Otorga a Snagga +1A y +1F y poder de penetración.</characteristic>
+                  </characteristics>
+                </profile>
+                <profile id="8d5e-8f7f-2806-2776" name="Rebanadora" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+                  <characteristics>
+                    <characteristic name="Rango" typeId="52616e676523232344415441232323">Combate</characteristic>
+                    <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">Usuario</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">+1F en el turno en el que se realiza la carga.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="c5bb-c8e5-8326-9b01" name="Poder de penetración" hidden="false" targetId="29d3-6624-40c6-885f" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bc62-f709-af4c-4711" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd55-9df8-0e66-2455" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2001-2c3c-44b6-4d54" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="8f95-85f8-be07-8dcd" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="08ad-db65-7b88-faca" name="Ezcudo mataliztilloz" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d48b-2e88-a50f-7e02" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3018-df2c-2589-5b69" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="cdeb-4974-cb62-01d1" name="Ezcudo mataliztilloz" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
+                  <characteristics>
+                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a Snagga una tirada de salvación especial de 4+ contra ataques mágicos. Cualquier herida salvada cuerpo a cuerpo debido a este efecto causará un impacto de F5 en el atacante.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="51a6-fee9-b705-966f" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="25b0-7e09-9353-7a54" name="Grupo de mando" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1d26-f56c-2a93-d774" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6163-9793-6df8-143e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1629-1fe7-42a8-d7f5" name="Músico" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b08f-525c-2d92-3a96" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ca1-b208-db96-6fe3" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="cb1c-39c7-1d97-09f0" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8d9f-3165-1c81-1b06" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9a9e-0353-a840-8497" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2560-47cb-ba5c-9031" name="Montura" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="07d4-b3bb-b998-2b44" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0dff-b116-2c08-5e9d" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="6bd7-a472-406d-a95c" name="Jabalí" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">7</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">3</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="d06f-26a1-a317-04f3" name="Regimientos de renombre" hidden="false" collective="false" import="true" targetId="cbe6-b40a-eb61-0c1c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -10289,9 +10772,6 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
     </rule>
     <rule id="3539-74a1-2dee-394f" name="Marca de Nurgle" hidden="false">
       <description>Los enemigos tienen un penalizador de -1 para impactar con proyectiles al dispararlos, -1HA al enemigo en cuerpo a cuerpo (no afecta a tropas de Nurgle, demonios de Nurgle o tropas Pestilens skaven). Inmune a veneno.</description>
-    </rule>
-    <rule id="edf2-e5c3-4580-3083" name="Aura demoníaca" hidden="false">
-      <description>Confiere una tirada de salvación especial de 5+, la cual se verá anulada por ataques mágicos.</description>
     </rule>
     <rule id="5142-c656-d359-6863" name="Marca del caos absoluto" hidden="false">
       <description>Inmune a psicología. Además, podrá repetir las tiradas en la tabla del Ojo de los Dioses.</description>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c6d1-0def-81bb-7942" name="Tren de artillería de Nuln" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c6d1-0def-81bb-7942" name="Tren de artillería de Nuln" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="7089-1618-a1e5-9253" name="Orden de caballería">
       <characteristicTypes>
@@ -5186,6 +5186,11 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                     <condition field="selections" scope="2099-4ca1-8b6a-1b8d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ecdd-928b-9247-b470" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="bcec-c73b-5d33-ffd2" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="3253-9986-8fbc-4d96" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcec-c73b-5d33-ffd2" type="max"/>
@@ -5587,6 +5592,11 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                     <condition field="selections" scope="5bc6-54fc-755f-22bb" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="3973-1f29-ca5f-abed" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="fa4d-baec-cc10-7ced" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="54f3-93bd-3660-5129" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa4d-baec-cc10-7ced" type="max"/>
@@ -5924,6 +5934,11 @@ Total 	TABLA DE LA CALDERA DE VAPOR
                 <modifier type="set" field="db00-9fe7-bbef-85c8" value="2.0">
                   <conditions>
                     <condition field="selections" scope="3296-26aa-7aa9-c582" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c3db-e7d8-118f-ffc9" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="db00-9fe7-bbef-85c8" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="c444-8f4d-9147-a363" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
@@ -8956,7 +8971,7 @@ Nombre: Arcabuz con Bayoneta (disparo). Alcance: 24”. Fuerza: 4. Reglas Especi
       <rules>
         <rule id="3546-63d3-c73a-245d" name="Salvación por armadura 4+" hidden="false"/>
         <rule id="492f-016f-7660-63b0" name="Artefacto volador" hidden="false">
-          <description>El Globo volador no puede cargar; además, las miniaturas que no vuelen o floten tan solo podrán impactar al globo volador en combate cuerpo a cuerpo con un resultado de 6 a su tirada para impactar. Durante su fase de movimiento, el Globo Volador puede destrabarse del combate durante la fase de Resto de movimientos, como si no se encontrase trabado, y mover con normalidad (esto no podrá hacerse si el Globo está trabado con enemigos que Vuelen, Floten o sean Etéreos). Si el globo volador no puede volar, se estrellará (ver más abajo) y deberá ser retirado como baja.</description>
+          <description>El Globo volador no puede cargar; además, las miniaturas que no vuelen o floten tan solo podrán impactar al globo volador en combate cuerpo a cuerpo con un resultado de 6 a su tirada para impactar. Durante su fase de movimiento, el Globo Volador puede destrabarse del combate durante la fase de Resto de movimientos, como si no se encontrase trabado, y mover con normalidad (esto no podrá hacerse si el Globo está trabado con enemigos que Vuelen o Floten). Si el globo volador no puede volar, se estrellará (ver más abajo) y deberá ser retirado como baja.</description>
         </rule>
         <rule id="2014-a65c-47d7-efcf" name="Estrellarse" hidden="false">
           <description>Un Globo Volador se estrellará cuando la máquina sea destruida por disparo o magia o destruida en combate. Cuando el Globo se estrelle tira el dado de dispersión para determinar aleatoriamente la dirección en la que se moverá (si obtienes un punto de mira, se moverá en la dirección de la flecha pequeña). A continuación, tira 4D6. El resultado de esta tirada indica la distancia que el Globo se moverá antes de estrellarse. Cuando choca contra el suelo explota. Para representar la explosión coloca la plantilla redonda pequeña centrada en el punto donde el Globo se haya estrellado contra el suelo. Todas las miniaturas bajo la plantilla (utiliza las reglas habituales de impactos parciales) sufren un impacto de fuerza 4 con Ataques flamígeros a causa de los restos de la máquina que han salido volando; la miniatura bajo el agujero central de la plantilla sufre un impacto de F6 con la regla especial Heridas múltiples (1D3). ¡Los ingenieros no pueden estrellarse deliberadamente!</description>
@@ -9589,14 +9604,20 @@ Nombre: Arcabuz con Bayoneta (disparo). Alcance: 24”. Fuerza: 4. Reglas Especi
                     <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
                     <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
                     <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
-                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"></characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
                     <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                     <characteristic name="Tipo" typeId="5479706523232344415441232323">Carro</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
         <selectionEntry id="3af8-73e4-0c34-5c93" name="Tirado por" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
@@ -9674,7 +9695,7 @@ Nombre: Arcabuz con Bayoneta (disparo). Alcance: 24”. Fuerza: 4. Reglas Especi
                 <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">9</characteristic>
                 <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">2</characteristic>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"></characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
                 <characteristic name="Tipo" typeId="5479706523232344415441232323">infantería</characteristic>
               </characteristics>
             </profile>
@@ -9740,6 +9761,114 @@ Nombre: Arcabuz con Bayoneta (disparo). Alcance: 24”. Fuerza: 4. Reglas Especi
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="5af8-ec8b-4384-8ce2" name="Sacerdotisa de Shallya" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f6ff-49b2-28dd-9125" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="9893-9604-1356-4378" name="Plegarias Sacerdotisa de Shallya" hidden="false">
+          <description>Una Sacerdotisa conoce todas las Plegarias de Shallya y puede lanzar una por fase de Magia con nivel de energía 3 como si se tratase de un Objeto Portahechizo.
+	Martirio: Selecciona un personaje amigo a 12” de la Sacerdotisa. Cualquier herida que el personaje sufra será ignorada. En su lugar, la Sacerdotisa sufrirá un impacto de F3 que no podrá evitar ni con salvación por armadura ni con Regeneración. Si dispone de alguna salvación especial, sí que podrá utilizarla. El efecto dura hasta el inicio de la siguiente fase de magia del jugador.
+ 	Protección de Shallya: Hasta el inicio de la siguiente fase de magia del jugador, cualquier resultado de 6 para herir causado a la unidad en la que se encuentra la sacerdotisa deberá ser repetido.
+	Purificación: Selecciona una unidad amiga a 12”. Cualquier hechizo de Maldición activo sobre esa unidad será dispersado automáticamente.
+	Sanación: Restaura inmediatamente 1D3 heridas a la unidad en la que se incluya la sacerdotisa (1H si se trata de cualquier unidad distinta a Infantería). Se pueden repartir entre ella misma, la unidad o cualquier otro personaje que esté incluido. Puede utilizarse para restaurar miniaturas muertas de la unidad (que no sean personajes ni un portaestandarte), pero nunca por encima de su número inicial.</description>
+        </rule>
+        <rule id="6683-63a2-d53a-db53" name="Bendición de Shallya" hidden="false">
+          <description>La Sacerdotisa obtiene la regla Regeneración (4+), que no puede ser mejorada de ninguna forma. Adicionalmente, la unidad en la que se incluya obtendrá la regla especial Regeneración (6+).</description>
+        </rule>
+        <rule id="a86c-b76c-945b-357b" name="Icono de pureza" hidden="false">
+          <description>La Sacerdotisa obtiene la regla especial Resistencia Mágica (1) contra hechizos de Magia Oscura, Nigromancia, los saberes del Caos (incluido el saber de Hashut), los saberes del Gran y Pequeño Waaagh y los saberes de Plaga y Ruina skaven.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3f96-1b3c-343e-eb6c" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="09c9-6894-8851-8bcc" name="Regeneración (4+)" hidden="false" targetId="6605-7689-3444-dccd" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="15d2-2a96-704d-d6dd" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
+        <categoryLink id="f737-9b6e-6494-60f4" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="d395-2b46-d2b1-f10b" name="Sacerdotisa de Shallya" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7c11-8f29-5038-26f1" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f04-d3ac-859b-bb72" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="44fb-43ad-7feb-196e" name="Sacerdotisa de Shallya" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">2</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">2</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">0</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="55.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1fab-ed3b-29d4-3990" name="Objetos mágicos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8481-a060-25d4-ef2e" type="max"/>
+          </constraints>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="4699-c2d9-6006-1463" name="Objetos mágicos" hidden="false" collective="false" import="true">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8045-bb4d-f8e8-e18a" type="max"/>
+              </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="69e3-e491-c6b2-e198" name="Objetos hechizados" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="be5f-7019-8c76-4d3c" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="9bfe-c412-3729-92af" name="Objetos Hechizados" hidden="false" collective="false" import="true" targetId="2063-e117-e6be-2f4d" type="selectionEntryGroup"/>
+                    <entryLink id="55dc-4067-4ddd-a3eb" name="Objetos hechizados. Tren de artillería de Nuln" hidden="false" collective="false" import="true" targetId="467e-7ee1-b8f9-6eea" type="selectionEntryGroup"/>
+                    <entryLink id="2653-dbc5-3d30-88b9" name="Objetos hechizados. Infantería o Infantería monstruosa" hidden="false" collective="false" import="true" targetId="f818-5ec9-65a5-1318" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+                <selectionEntryGroup id="988c-497b-03a5-2225" name="Talismanes mágicos" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="35f7-c877-de12-0969" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="277e-f562-1681-c1b8" name="Talismanes Mágicos" hidden="false" collective="false" import="true" targetId="a22a-cc4c-c65f-f12e" type="selectionEntryGroup"/>
+                    <entryLink id="187f-fbe5-c553-daaa" name="Talismanes mágicos. Tren de artillería de Nuln" hidden="false" collective="false" import="true" targetId="f757-8578-8a82-2276" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>

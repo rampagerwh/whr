@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b72f-af94-e96d-d55b" name="La horda troll" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b72f-af94-e96d-d55b" name="La horda troll" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="5b53-d7de-f8d0-87ed" name="Recompensa del caos">
       <characteristicTypes>
@@ -88,9 +88,9 @@
                 <selectionEntry id="9fe3-bbce-700f-2b6e" name="Troll de piedra" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -107,9 +107,9 @@
                 <selectionEntry id="45c2-2eb9-9bf5-721e" name="Troll de río" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -119,7 +119,7 @@
                     <rule id="5a93-1641-8db6-1ec6" name="Troll de río" hidden="false">
                       <description>-1 para impactarles en cuerpo a cuerpo.</description>
                     </rule>
-                    <rule id="7d50-829d-0f66-7264" name="Cruzar (ríos, pantanos)" hidden="false"/>
+                    <rule id="7d50-829d-0f66-7264" name="Cruzar (elementos acuáticos)" hidden="false"/>
                   </rules>
                   <infoLinks>
                     <infoLink id="4d90-d92c-3a31-dec5" name="Cruzar" hidden="false" targetId="7ea4-f7e1-7e21-9266" type="rule"/>
@@ -138,9 +138,9 @@
                 <selectionEntry id="3c23-5caf-7230-98fa" name="Arma de mano adicional" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -156,9 +156,9 @@
                 <selectionEntry id="a734-353f-6e45-289c" name="Arma a dos manos" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="1a91-99fd-c335-03be" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7434-d109-6a41-dce6" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -320,9 +320,9 @@
                 <selectionEntry id="fad6-d19a-11a6-1128" name="Arma de mano adicional" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="ed0f-f82a-494a-9bae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2c2-6792-3c18-0a2b" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="ed0f-f82a-494a-9bae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2c2-6792-3c18-0a2b" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -338,9 +338,9 @@
                 <selectionEntry id="54ac-c84a-06ae-29f3" name="Arma a dos manos" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="ed0f-f82a-494a-9bae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2c2-6792-3c18-0a2b" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="ed0f-f82a-494a-9bae" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="d2c2-6792-3c18-0a2b" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -480,9 +480,9 @@
             <selectionEntry id="50f5-eb6c-19de-628c" name="Hostigadores" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="points" value="3.0">
-                  <conditions>
-                    <condition field="selections" scope="66b1-8dd6-4960-3a53" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="075b-b01b-df21-e2a6" type="equalTo"/>
-                  </conditions>
+                  <repeats>
+                    <repeat field="selections" scope="66b1-8dd6-4960-3a53" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="075b-b01b-df21-e2a6" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
               <constraints>
@@ -1123,9 +1123,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                 <selectionEntry id="61db-ae96-0a33-da75" name="Exploradores" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -1141,9 +1141,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                 <selectionEntry id="20ac-aa2c-a4ab-070d" name="Vanguardia" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -1166,9 +1166,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                 <selectionEntry id="1e3f-5340-32d4-7514" name="Arma de mano adicional" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -1184,9 +1184,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                 <selectionEntry id="b741-fdec-e3cb-f2f9" name="Arma a dos manos" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="05be-b9b8-bc20-d338" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8abc-a523-d57f-74ab" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -1365,9 +1365,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
             <selectionEntry id="0c22-da11-1e69-dcc2" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="points" value="5.0">
-                  <conditions>
-                    <condition field="selections" scope="ceff-74a7-0790-b663" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="0c22-da11-1e69-dcc2" type="equalTo"/>
-                  </conditions>
+                  <repeats>
+                    <repeat field="selections" scope="ceff-74a7-0790-b663" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="716b-7462-e530-3253" repeats="1" roundUp="false"/>
+                  </repeats>
                 </modifier>
               </modifiers>
               <constraints>
@@ -1390,9 +1390,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                 <selectionEntry id="50d0-12a5-e0d6-95dc" name="Arma de mano adicional" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="ceff-74a7-0790-b663" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="716b-7462-e530-3253" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="ceff-74a7-0790-b663" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="716b-7462-e530-3253" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -1408,9 +1408,9 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                 <selectionEntry id="67ef-cb56-8e34-6a6e" name="Arma a dos manos" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
                     <modifier type="increment" field="points" value="5.0">
-                      <conditions>
-                        <condition field="selections" scope="ceff-74a7-0790-b663" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="716b-7462-e530-3253" type="equalTo"/>
-                      </conditions>
+                      <repeats>
+                        <repeat field="selections" scope="ceff-74a7-0790-b663" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="716b-7462-e530-3253" repeats="1" roundUp="false"/>
+                      </repeats>
                     </modifier>
                   </modifiers>
                   <constraints>
@@ -1738,7 +1738,7 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
                     <infoLink id="77a5-b2cc-35d5-5563" name="Regeneración mutante (3+)" hidden="false" targetId="89e8-0768-6c94-7dba" type="rule"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="10.0"/>
+                    <cost name="pts" typeId="points" value="30.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -3006,7 +3006,7 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6a8-0c30-bb22-451b" type="max"/>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a6a8-0c30-bb22-451b" type="max"/>
       </constraints>
       <rules>
         <rule id="c6c9-dc05-8030-4f42" name="Regeneración mutante" hidden="false">
@@ -3166,7 +3166,7 @@ a cuerpo, todas las miniaturas en contacto con uno o más trolls de la Cábala (
         <rule id="3625-2f57-6088-f732" name="Magia Utiunja, matrona troll" hidden="false">
           <description>Utiunja tiene nivel de magia 3. Siempre escogerá sus hechizos de entre el Saber de la Muerte o las Bestias.</description>
         </rule>
-        <rule id="1075-1471-664e-f829" name="Cruzar (terreno acuático)" hidden="false">
+        <rule id="1075-1471-664e-f829" name="Cruzar (elementos acuáticos)" hidden="false">
           <description>Una unidad con la regla Cruzar ignorará las penalizaciones al movimiento que le pudiese imponer el terreno indicado, tanto en terreno difícil como en terreno muy difícil.</description>
         </rule>
         <rule id="b602-e879-9652-6cfb" name="Madre de la estulta prole" hidden="false">
@@ -3297,7 +3297,7 @@ Vomitona. Cogiendo un fuerte impulso, Utiuja descargan su vientre sobre la criat
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="121d-f5aa-4cc2-9626" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="121d-f5aa-4cc2-9626" type="max"/>
       </constraints>
       <rules>
         <rule id="c457-8eb0-ebf9-2151" name="Magia Emisario oscuro" hidden="false">
@@ -3421,7 +3421,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c66-356c-ec63-93e7" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6c66-356c-ec63-93e7" type="max"/>
       </constraints>
       <rules>
         <rule id="abd9-9f60-05e5-bad0" name="Odio (Enanos del caos)" hidden="false">
@@ -3713,7 +3713,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cce-0309-a0cd-4a2d" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7cce-0309-a0cd-4a2d" type="max"/>
       </constraints>
       <rules>
         <rule id="e0af-a45e-ad40-3fce" name="Artillería orca de Notlob" hidden="false">
@@ -3917,7 +3917,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ca4-3df0-d82e-095b" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ca4-3df0-d82e-095b" type="max"/>
       </constraints>
       <rules>
         <rule id="47f3-41d2-48e4-07dd" name="Arremetida" hidden="false">
@@ -4136,7 +4136,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab23-3f61-b042-78de" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ab23-3f61-b042-78de" type="max"/>
       </constraints>
       <rules>
         <rule id="51af-1314-e974-a58f" name="Astados Los sátiros siniestros" hidden="false">
@@ -4375,7 +4375,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="910f-156a-0e54-91e6" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="910f-156a-0e54-91e6" type="max"/>
       </constraints>
       <rules>
         <rule id="7b60-74be-ea25-f0ff" name="Guted el músico" hidden="false">
@@ -4612,7 +4612,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         </modifier>
       </modifiers>
       <constraints>
-        <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cab-bdb4-f72d-2ace" type="max"/>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="0cab-bdb4-f72d-2ace" type="max"/>
       </constraints>
       <rules>
         <rule id="42c9-c556-f99a-88a2" name="Herejes" hidden="false">
@@ -4870,8 +4870,8 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
       <selectionEntries>
         <selectionEntry id="02b9-6024-5b58-3be6" name="Bestia del cieno" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b7f-0e7b-e41b-0be8" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d605-9bb3-14ea-0d52" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a712-5b13-148e-79ea" type="min"/>
           </constraints>
           <profiles>
             <profile id="dda7-11c5-728f-d0c2" name="Bestia del cieno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
@@ -4897,14 +4897,14 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         </selectionEntry>
         <selectionEntry id="e894-43b7-4183-308c" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="eeff-b075-7fe2-0a4c" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="dab5-931d-d2c8-a290" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="32db-3d4a-0578-815a" type="min"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="84de-ecec-06b6-6a28" name="Garras" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="5b4f-c1e4-b0e7-d46e" type="min"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7eeb-1e2e-9e4c-2629" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ecb3-3285-1c7a-fe4c" type="min"/>
               </constraints>
               <infoLinks>
                 <infoLink id="f234-346c-1080-ec3e" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
@@ -4949,7 +4949,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="295e-6b08-3ee9-0a32" name="Recompensas" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e804-5be3-0f0a-01e3" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e804-5be3-0f0a-01e3" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a7b3-6612-9365-820c" type="min"/>
       </constraints>
       <selectionEntries>
@@ -5028,15 +5028,15 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="d227-df8d-c7d7-a323" name="Regeneración" hidden="false" typeId="5b53-d7de-f8d0-87ed" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="b24f-55da-4501-7de5">El personaje obtiene la regla especial Regeneración (5+). Si ya disponía de Regeneración o Regeneración mutante, ésta aumenta en un punto.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="b24f-55da-4501-7de5">El personaje aumenta en +1 su valor de Regeneración o Regeneración mutante (hasta un máximo de 3+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="79ec-6dd6-cf61-e4b8" name="Regeneración (5+)" hidden="false" targetId="515b-514f-7ee3-6cc3" type="rule"/>
+            <infoLink id="79ec-6dd6-cf61-e4b8" name="Regeneración (6+)" hidden="false" targetId="4aee-7485-a141-cd20" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="4ca6-d5b0-6702-d8a8" name="Sudor fangoso" hidden="false" collective="false" import="true" type="upgrade">
@@ -5286,7 +5286,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
     </selectionEntryGroup>
     <selectionEntryGroup id="26cf-710a-de73-6b18" name="Recompensas. Hechiceros" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f530-3f42-398f-c0e7" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f530-3f42-398f-c0e7" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bf66-20a0-a46b-57c0" type="min"/>
       </constraints>
       <selectionEntries>
@@ -5404,7 +5404,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
     </selectionEntryGroup>
     <selectionEntryGroup id="b047-30b3-0296-31af" name="Recompensas. No armas ni escudo" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb15-f175-f758-aa36" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb15-f175-f758-aa36" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1830-6609-0bb8-d95b" type="min"/>
       </constraints>
       <selectionEntries>
@@ -5552,7 +5552,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
             <infoLink id="220c-2d5f-d323-3be0" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="176f-728a-b7c5-6cbf" name="La corona del norte" hidden="false" collective="false" import="true" type="upgrade">
@@ -5883,10 +5883,10 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
       <description>Al inicio de la batalla, antes del despliegue, realiza una tirada de 1D6 en la tabla de Cataclismos, y aplica el resultado.
 1D6 	Cataclismos (Horda troll)
 1 	Vendaval: Durante toda la batalla, al inicio de cada turno de jugador, tira 1D6: si obtienes un resultado de 1-3, el viento sopla pero no hay efectos adversos. Sin embargo, si obtienes un resultado de 4+, durante todo ese turno de jugador, las unidades con la regla especial Volar o Flotar no podrán hacer uso de esa regla y deberán utilizar su valor de Movimiento para desplazarse por tierra. Adicionalmente, todas las tiradas para impactar con proyectiles sufrirán un penalizador de -1 en su tirada para impactar, y todas las máquinas de guerra que deseen disparar deberán tirar 1D6: con un resultado de 1-3 no podrán disparar ese turno.
-2 	Lluvias torrenciales: Todas las tiradas de carga, huida y persecución se realizan eligiendo el resultado más bajo de los dos dados (en lugar del más alto como es habitual); las tropas veloces sólo eligen el resultado más alto en lugar de sumar los resultados de ambos dados. Esto no afecta a unidades con las reglas especiales Cruzar (elementos acuáticos) o cruzar (pantanos).
+2 	Lluvias torrenciales: Todas las tiradas de carga, huida y persecución se realizan eligiendo el resultado más bajo de los dos dados (en lugar del más alto como es habitual); las tropas veloces sólo eligen el resultado más alto en lugar de sumar los resultados de ambos dados. Esto no afecta a unidades con las reglas especiales Cruzar (elementos acuáticos).
 3 	Corrupción del Caos: Estos siniestros cambios aterrorizan a los soldados. Al inicio de cada turno de jugador, ese jugador deberá realizar un chequeo de pánico con todas sus unidades que se encuentren en el interior o a 6” o menos de un elemento de escenografía (excepto edificios). Las unidades trabadas deberán superar un chequeo de Liderazgo o quedar Apabulladas hasta el final del turno. Esto no afecta a unidades Inmunes a la psicología.
 4 	Brumas del Caos: Todos los disparos aplicarán un penalizador adicional a su tirada para impactar de -1. Ningún disparo de proyectiles, máquinas de guerra o hechizos del tipo Proyectil mágico podrán designar a ningún objetivo a más de 24” de ellos.
-5 	Eclipse: Aplica las reglas de Combate nocturno (Apéndice del reglamento) al escenario. Además, todas las miniaturas de las categorías de tropa Bestia, Bestia monstruosa, Infantería monstruosa y Enjambres causarán Miedo; y si ya lo causaban, causarán Terror. Ten en cuenta que todos los tipos de troll tienen visión nocturna.
+5 	Eclipse: Aplica las reglas de Combate nocturno (Apéndice del reglamento) al escenario. Además, todas las miniaturas de las categorías de tropa Bestia, Bestia monstruosa, Infantería monstruosa y Enjambres causarán Miedo; y si ya lo causaban, causarán Terror. Ten en cuenta que todos los tipos de troll tienen la regla especial Visión nocturna.
 6 	Morrslieb brilla en el cielo: Al inicio de cada turno de jugador, éste debe superar un chequeo de Liderazgo con cada una de sus unidades; si lo supera no sucederá nada, pero si lo falla obtendrá la regla especial Furia asesina hasta el inicio de su siguiente turno de jugador.</description>
     </rule>
     <rule id="e49b-f23c-a5b8-7247" name="Regeneración mutante (4+)" hidden="false">

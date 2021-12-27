@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="402" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="412" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="3b8f-2f71-171e-ded0" name="Warhammer Reforged. 3 edición"/>
   </publications>
@@ -590,7 +590,7 @@
           <modifiers>
             <modifier type="increment" field="cf16-a8bc-00c9-d821" value="1.0">
               <repeats>
-                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+                <repeat field="limit::points" scope="roster" value="1500.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
               </repeats>
             </modifier>
           </modifiers>
@@ -612,7 +612,7 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="a472-310c-fe16-11bc" name="El valle de los dinosaurios" hidden="false">
+    <forceEntry id="a472-310c-fe16-11bc" name="Valle de los dinosaurios" hidden="false">
       <categoryLinks>
         <categoryLink id="88c8-a9ee-486c-756a" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
           <constraints>
@@ -710,7 +710,7 @@
         <categoryLink id="0d56-e033-bfc2-f925" name="Dragones" hidden="true" targetId="eaf4-2780-219b-851f" primary="false"/>
       </categoryLinks>
     </forceEntry>
-    <forceEntry id="907b-9209-9378-d220" name="Ejército a la antigua usanza" hidden="false">
+    <forceEntry id="907b-9209-9378-d220" name="Ejército enano a la antigua usanza" hidden="false">
       <categoryLinks>
         <categoryLink id="6ebb-e6e7-b653-4b5e" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false">
           <constraints>
@@ -763,6 +763,62 @@
         </categoryLink>
       </categoryLinks>
     </forceEntry>
+    <forceEntry id="90fb-c263-6173-c777" name="Mariemburgo" hidden="false">
+      <categoryLinks>
+        <categoryLink id="5e25-8030-e380-8fcc" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="15.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="1880-34f3-29c4-1088" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="364c-482c-2ec6-e644" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="15.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="2cb7-6dbf-8d21-c9c2" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="c62d-58d4-c078-9798" name="Unidades Básicas" hidden="false" targetId="436f726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="false" id="cd58-0b48-8c44-3717" type="min"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="9faa-953b-3e7d-c526" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="b8ce-9454-d783-c79e" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="13b0-d3a5-e576-7aa0" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="25.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="c038-d0a4-2be3-a2e5" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="14cd-f0be-1945-890f" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="50.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="e222-0317-eedc-a230" type="max"/>
+          </constraints>
+        </categoryLink>
+        <categoryLink id="5d3e-7bf5-3ca9-ebf3" name="Bestia del cieno" hidden="false" targetId="6645-bf03-34e3-e081" primary="false">
+          <modifiers>
+            <modifier type="increment" field="892f-38d5-8fba-96b3" value="1.0">
+              <repeats>
+                <repeat field="limit::points" scope="roster" value="1000.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" childId="model" repeats="1" roundUp="false"/>
+              </repeats>
+            </modifier>
+          </modifiers>
+          <constraints>
+            <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="false" includeChildSelections="true" includeChildForces="true" id="892f-38d5-8fba-96b3" type="max"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
+    <forceEntry id="2e8c-68d4-5394-76e1" name="Las aventuras de Gotrek y Félix" hidden="false">
+      <categoryLinks>
+        <categoryLink id="4afc-c2b0-fc96-5fca" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false">
+          <constraints>
+            <constraint field="limit::points" scope="roster" value="100.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="eace-5892-097a-1860" type="max"/>
+            <constraint field="limit::points" scope="roster" value="100.0" percentValue="true" shared="false" includeChildSelections="true" includeChildForces="true" id="96cc-685a-98e7-ef78" type="min"/>
+          </constraints>
+        </categoryLink>
+      </categoryLinks>
+    </forceEntry>
   </forceEntries>
   <selectionEntries>
     <selectionEntry id="cf38-6e04-dc20-f6e1" name="Tamaño ejército" hidden="false" collective="false" import="true" type="upgrade">
@@ -792,16 +848,6 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6314-0201-06db-cf1a" type="max"/>
                 <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bcb1-e7b4-7db1-33f2" type="min"/>
               </constraints>
-              <selectionEntries>
-                <selectionEntry id="1476-2e4b-e602-3cac" name="3.000 puntos o más" hidden="false" collective="false" import="true" type="upgrade">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9a9-6c3e-22c7-8c61" type="max"/>
-                  </constraints>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -2809,7 +2855,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="1f2b-4950-40ac-85e3" name="Espada de destrucción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Todos los objetos mágicos o rúnicos cuyo portador esté en contacto peana con peana con el portador de la Espada de Destrucción quedarán anulados y no funcionarán mientras se encuentren en contacto (pasarán a considerarse objetos mundanos de su mismo tipo). Por cada impacto causado con esta espada a un enemigo en combate cuerpo a cuerpo, destruye permanentemente uno de sus objetos mágicos o rúnicos determinado aleatoriamente.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador no podrá portar ningún otro objeto mágico. Todos los objetos mágicos o rúnicos cuyo portador esté en contacto peana con peana con el portador de la espada de destrucción quedarán anulados y no funcionarán mientras se encuentren en contacto (pasarán a considerarse objetos mundanos de su mismo tipo). Por cada impacto causado con esta espada a un enemigo en combate cuerpo a cuerpo, destruye permanentemente uno de sus objetos mágicos o rúnicos determinado aleatoriamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3117,7 +3163,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8456-8ce9-36ca-473e" name="El libro de los secretos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Durante cualquier fase de magia propia, el portador puede usar el libro para lanzar hechizos sin invertir dados de energía. Los hechizos serán lanzados a su dificultad básica, y podrán ser dispersados como es habitual (puedes, si lo deseas, lanzar un hechizo en su versión potenciada). Cada vez que el portador utilice el libro, deberá efectuar un Chequeo de Resistencia: si lo supera, sufrirá una herida sin tirada de salvación por armadura. Si lo falla, sufrirá igualmente una herida sin tirada de salvación por armadura , y verá su atributo de Resistencia reducido en un punto por el resto de la batalla. Un mismo hechizo no puede usarse más de una vez en cada fase de magia utilizando el libro.</characteristic>
+                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Durante cualquier fase de magia propia, el portador puede usar el libro para lanzar hechizos sin invertir dados de energía. Los hechizos serán lanzados a su dificultad básica, y podrán ser dispersados como es habitual (no puedes lanzar un hechizo en su versión potenciada utilizando el Libro). Cada vez que el portador utilice el libro, deberá efectuar un Chequeo de Resistencia: si lo supera, sufrirá una herida sin tirada de salvación de ningún tipo, que tampoco podrá ser Regenerada. Si lo falla, sufrirá igualmente una herida sin tirada de salvación de ningún tipo, que tampoco podrá ser Regenerada, y verá su atributo de Resistencia reducido en un punto por el resto de la batalla. Un mismo hechizo no puede usarse más de una vez en cada fase de magia utilizando el libro.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4291,13 +4337,13 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
       <description>Puedes elegir no desplegar tus unidades con la regla especial Exploradores durante el despliegue. Si lo haces, una vez ambos ejércitos estén desplegados, llegará el momento de desplegar a los exploradores. Las unidades de Exploradores pueden desplegar en cualquier punto del campo de batalla (fuera del área de despliegue del enemigo) y a una distancia de 10&quot; o más de cualquier unidad enemiga. Además, deben desplegar en cobertura, tras algún elemento de escenografía. Si no queda ningún lugar en el que puedan ser colocados, deberás resituarlos en tu zona de despliegue como es habitual. Si ambos ejércitos cuentan con tropas con la regla especial Exploradores, deberán tirar 1D6 cada uno antes de desplegarlas: el que obtenga el resultado menor desplegará primero una de sus unidades de Exploradores. A continuación, el oponente hará lo mismo; y se continuarán desplegando de forma alterna todas las unidades de exploradores.</description>
     </rule>
     <rule id="bfb1-ac97-7d3e-9593" name="Flotar" hidden="false">
-      <description>Las criaturas que flotan son Veloces (mientras puedan flotar). Las criaturas que flotan pueden mover como si su atributo de M fuese de 10, reformando todas las veces que deseen durante su movimiento sin restricción alguna. Además, ignoran el terreno y las unidades al moverse. Sin embargo, las criaturas que flotan no pueden marchar (ni siquiera si tienen la relga especial Hostigadores). El atributo de M incrementado de 10 también se tiene en cuenta al cargar, perseguir o huir. Además, las unidades de criaturas que floten siempre son Hostigadoras. Sin embargo, las criaturas que flotan pueden ser vistas con facilidad por el enemigo (ver &quot;Línea de visión&quot;), por lo que al inicio de tu turno puedes decidir que algunas de tus criaturas o unidades que flotan no vuelen ese turno; utilizarán su movimiento por tierra (el valor de M de su perfil) y no se considerará que flotan a ningún efecto, hasta el inicio de tu siguiente turno, cuando podrás decidir si siguen por tierra o vuelven a flotar (recuperando todos los efectos de la regla Flotar).</description>
+      <description>Las miniaturas que flotan son Veloces (mientras puedan flotar). Las miniaturas que flotan pueden mover como si su atributo de M fuese de 10, reformando todas las veces que deseen durante su movimiento sin restricción alguna. Además, ignoran el terreno y las unidades al moverse. Sin embargo, las miniaturas que flotan no pueden marchar (ni siquiera si tienen la relga especial Hostigadores). El atributo de M incrementado de 10 también se tiene en cuenta al cargar, perseguir o huir. Además, las unidades de miniaturas que floten siempre son Hostigadoras. Sin embargo, las miniaturas que flotan pueden ser vistas con facilidad por el enemigo (ver &quot;Línea de visión&quot;), por lo que al inicio de tu turno puedes decidir que algunas de tus miniaturas o unidades que flotan no vuelen ese turno; utilizarán su movimiento por tierra (el valor de M de su perfil) y no se considerará que flotan a ningún efecto, hasta el inicio de tu siguiente turno, cuando podrás decidir si siguen por tierra o vuelven a flotar (recuperando todos los efectos de la regla Flotar).</description>
     </rule>
     <rule id="8fa0-a4f6-e454-dbfe" name="Francotirador" hidden="false">
       <description>Una miniatura que desee utilizar la regla especial Francotirador (o equipada con un arma con esta regla especial) ignora las reglas habituales de selección de objetivos al disparar: puede disparar contra cualquier miniatura dentro de su alcance y línea de visión. Puede seleccionar, incluso, un personaje (u oficial) dentro de una unidad, o al jinete de un monstruo o carruaje sin tener que tirar aleatoriamente sobre quién impacta su disparo. Una miniatura utilizando la regla especial Francotirador tendrá un penalizador adicional de -1 a su tirada para impactar.</description>
     </rule>
     <rule id="145c-6914-de8b-e9cc" name="Furia asesina" hidden="false">
-      <description>Las unidades con Furia Asesina son Inmunes a Psicología. Además, esas unidades (incluso aquellas en las que sólo uno de sus miembros tenga Furia Asesina) que no hayan declarado carga ese turno o se encuentren trabadas en combate deberán cargar contra la unidad enemiga más cercana durante la sub-fase de movimientos obligatorios, a menos que superen un chequeo de L para contener sus impulsos. Ten en cuenta que sólo deberán cargar si la carga es posible (si la unidad enemiga más cercana se encuentra demasiado lejos, no se verá obligada a cargar). Las miniaturas con Furia Asesina obtienen un ataque adicional en combate cuerpo a cuerpo. Una unidad con Furia Asesina siempre debe perseguir a un enemigo que huye del combate (no puede reformar tras el combate si el enemigo huye). Además, si aniquilan a un enemigo en combate en el turno en que cargan, siempre deben arrasar. Una unidad con Furia Asesina no puede responder a una carga huyendo. Una unidad con Furia Asesina que pierda una ronda de combate cuerpo a cuerpo perderá inmediatamente su Furia Asesina (incluso aunque supere su chequeo de desmoralización).</description>
+      <description>Las unidades con Furia Asesina son Inmunes a Psicología. Además, esas unidades (incluso aquellas en las que sólo uno de sus miembros tenga Furia Asesina) que no hayan declarado carga ese turno o se encuentren trabadas en combate deberán declarar una carga contra la unidad enemiga más cercana al final de la sub-fase de declaración de cargas, a menos que superen un chequeo de L para contener sus impulsos. Ten en cuenta que sólo deberán declarar una carga si la carga es posible (si la unidad enemiga más cercana se encuentra demasiado lejos, no se verá obligada a declarar una carga). Las miniaturas con Furia Asesina obtienen un ataque adicional en combate cuerpo a cuerpo. Una unidad con Furia Asesina siempre debe perseguir a un enemigo que huye del combate (no puede reformar tras el combate si el enemigo huye). Además, si aniquilan a un enemigo en combate en el turno en que cargan, siempre deben arrasar. Una unidad con Furia Asesina no puede responder a una carga huyendo. Una unidad con Furia Asesina que pierda una ronda de combate cuerpo a cuerpo perderá inmediatamente su Furia Asesina (incluso aunque supere su chequeo de desmoralización).</description>
     </rule>
     <rule id="9f1c-d301-bd0e-af81" name="Golpe letal" hidden="false">
       <description>Los resultados naturales de 6 en una tirada para herir en ataques causados por miniaturas con la regla especial Golpe Letal negarán la tirada de salvación armadura. Además si esta herida no es salvada matará a esa miniatura, sin importar las heridas que le quedasen, si pertecene a las categorías Infantería, Caballería o Bestias (o a un personaje sobre un carro o monstruo). Si no pertenece a esta categoría sólo anula la tirada de salvación por armadura. Un Golpe letal que acabe con su enemigo contará como tantas heridas que le quedasen a la víctima a efectos de resolución del combate.</description>
@@ -4407,7 +4453,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
       <description>La regla especial Veloz es inherente a algunas categorías de tropa (caballería, bestias, caballería monstruosa, bestias monstruosas y carros), aunque hay otros regimientos o monstruos que también poseen esta regla especial. Las unidades Veloces suman los resultados de los dos D6 al cargar, huir o perseguir, en lugar de escoger el dado más alto de los dos. Además, si realizan una carga fallida, mueven la suma de los dos dados en lugar de sólo el dado más alto.</description>
     </rule>
     <rule id="670e-1a23-b1e1-6e6f" name="Volar" hidden="false">
-      <description>Las criaturas voladoras son Veloces (mientras puedan volar). Las criaturas voladoras pueden mover como si su atributo de M fuese de 10, reformando todas las veces que deseen durante su movimiento sin restricción alguna. Además, ignoran el terreno y las unidades al moverse. Por supuesto, las criaturas voladoras pueden marchar siguiendo las reglas habituales (y mover hasta 20&quot;). El atributo de M incrementado de 10 también se tiene en cuenta al cargar, perseguir o huir. Además, las unidades de criaturas voladoras siempre son Hostigadoras. Sin embargo, las criaturas voladoras pueden ser vistas con facilidad por el enemigo (ver &quot;Línea de visión), por lo que al inicio de tu turno puedes decidir que  algunas de tus criaturas o unidades voladoras no vuelen en ese turno; utilizarán su movimiento por tierra (el valor de M de su perfil) y no se considerará que vuelan a ningún efecto, hasta el inicio de tu siguiente turno, cuando podrás decidir si siguen por tierra o alzan elvuelo (recuperando todos los efctos de la regla Volar)</description>
+      <description>Las miniaturas voladoras son Veloces (mientras puedan volar). Las miniaturas voladoras pueden mover como si su atributo de M fuese de 10, reformando todas las veces que deseen durante su movimiento sin restricción alguna. Además, ignoran el terreno y las unidades al moverse. Por supuesto, las miniaturas voladoras pueden marchar siguiendo las reglas habituales (y mover hasta 20&quot;). El atributo de M incrementado de 10 también se tiene en cuenta al cargar, perseguir o huir. Además, las unidades de miniaturas voladoras siempre son Hostigadoras. Sin embargo, las miniaturas voladoras pueden ser vistas con facilidad por el enemigo (ver &quot;Línea de visión), por lo que al inicio de tu turno puedes decidir que  algunas de tus miniaturas o unidades voladoras no vuelen en ese turno; utilizarán su movimiento por tierra (el valor de M de su perfil) y no se considerará que vuelan a ningún efecto, hasta el inicio de tu siguiente turno, cuando podrás decidir si siguen por tierra o alzan elvuelo (recuperando todos los efctos de la regla Volar)</description>
     </rule>
     <rule id="5b75-bd6b-d17a-6b7d" name="Infantería" hidden="false">
       <description>Mínimo de 5 miniaturas para formar una fila completa. Cargan, huyen y persiguen la suma de M y el resultado más alto en 2D6. Potencia de unidad de 1.</description>
@@ -4435,10 +4481,10 @@ Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 4.</descript
       <description>Terror y Objetivo grande. Cargan, huyen y persiguen la suma de M y el resultado más alto en 2D6. Impasible. Impactos por carga (1). No pueden unirse a unidades. Potencia de unidad igual a su número de heridas inicial.</description>
     </rule>
     <rule id="c761-ad12-6530-fab7" name="Carro" hidden="false">
-      <description>Carro, dotación y bestias de tiro comparten la Resistencia del carro y su número de heridas, así como su tirada de salvación. No pueden marchar, aunque tienen la regla especial Veloz. Tienen la regla especial Impactos por Carga (1D6), +1 si cuentan con cuchillas en las ruedas. Sufren 1D6 impactos de F5 si mueven por terreno difícil o chocan contra un edificio. Bestias y tripulación utilizarán sus respectivas Habilidad de Armas, Fuerza e Iniciativa para realizar sus ataques. Se utilizará el valor del atributo de Liderazgo de la tripulación para realizar los chequeos pertinentes, salvo que se especifique lo contrario. Si un carro causa con sus impactos por carga a una unidad durante una fase de combate más bajas que filas tiene esa unidad, la unidad quedará Apabullada el resto de ese turno de jugador.</description>
+      <description>Carro, dotación y bestias de tiro comparten la Resistencia del carro y su número de heridas, así como su tirada de salvación. No pueden marchar, aunque tienen la regla especial Veloz. Tienen la regla especial Impactos por Carga (1D6), +1 si cuentan con cuchillas en las ruedas. Sufren 1D6 impactos de F5 si mueven por terreno difícil o chocan contra un edificio. Bestias y tripulación utilizarán sus respectivas Habilidad de Armas, Fuerza e Iniciativa para realizar sus ataques. Se utilizará el valor del atributo de Liderazgo de la tripulación para realizar los chequeos pertinentes, salvo que se especifique lo contrario. Si un carro causa con sus impactos por carga a una unidad durante una fase de combate tantas bajas o más que filas tiene esa unidad, la unidad quedará Apabullada el resto de ese turno de jugador.</description>
     </rule>
     <rule id="e1b7-26dc-52c2-c3a7" name="Miedo" hidden="false">
-      <description>Una unidad debe de superar un chequeo de Liderazgo si quiere cargar contra un objetivo que causa miedo. Además si se es cargado por una unidad que causa miedo se deberá de superar un chequeo de Liderazgo para poder establecer una reacción a la carga. Además si no se supera se han de comparar las potencia de unidad: si la de la unidad que carga es mayor la otra ha de huir. Si la potencia de unidad es mayor el combate sigue su curso pero tan solo se podrá impactar con resultados naturales de 6.</description>
+      <description>Una unidad debe de superar un chequeo de Liderazgo si quiere cargar contra un objetivo que causa miedo. Una unidad contra la que sea declarada carga por parte de una unidad enemiga que cause Miedo deberá realizar un Chequeo de Miedo antes de declarar su reacción a la carga. SI supera el chequeo no ocyurre nada especial, y podéis continuar resolviendo la carga con normalidad. Sin embargo, si se falla el chequeo de Miedo, la unidad no podrá declarar ninguna reacción a la carga, y además deberán compararse las respectivas potencias de unidad (de la unidad que carga y causa Miedo y de la unidad que recibe la carga y ha fallado el chequeo)</description>
     </rule>
     <rule id="ca57-1f1f-8bc0-d9ab" name="Terror" hidden="false">
       <description>Se aplican todas las reglas del miedo. Se han de superar chequeos de Terror si: Recibes una carga de una unidad que causa terror. Si se falla se ha de declarar huida. Si se pretende cargar contra una unidad que causa terror se ha de superar el chequeo para poder cargar. De lo contrario la unidad hará un movimiento de huida. También se ha de realizar el chequeo si hay una unidad que causa terror a 8&quot; o menos al unicio de mi fase de movimiento. Si lo superan continúa el turno, si no han de declarar huida.</description>
@@ -4645,6 +4691,9 @@ Si una de estas armas dispara a una unidad de hostigadores, deberá reducir el n
     <rule id="fc7e-40e6-a7aa-4530" name="Disparos múltiples" hidden="false">
       <description>Un arma o miniatura con la regla especial Disparos múltiples efectúa el número de disparos indicado cada vez que dispara (esto incluye la reacción a la carga Aguantar y disparar), aplicando un penalizador adicional de -1 para impactar. No es necesario realizar disparos múltiples con un arma que disponga de esta regla especial: si lo deseas, puedes efectuar un único disparo, y no aplicar el penalizador de -1 para impactar por disparos múltiples. En caso de que la cantidad de disparos múltiples sea aleatoria, se determina el número de disparos cada vez que se dispara.</description>
     </rule>
+    <rule id="592b-c850-fd09-cce5" name="Impasible" hidden="false">
+      <description>Una miniatura con la regla especial Impasible no podrá aplicar en sus chequeos de Desmoralización un penalizador superior al número de heridas que haya sufrido esa fase de combate cuerpo a cuerpo. Por ejemplo, un gigante pierde un combate por 6 puntos, pero como sólo ha sufrido dos heridas esa fase de combate, el gigante realiza el chequeo con un penalizador de -2, en lugar del -6 que le correspondería. Si un personaje unido a una unidad es Impasible, entonces toda la unidad se considera Impasible.</description>
+    </rule>
   </sharedRules>
   <sharedProfiles>
     <profile id="b737-28ed-1002-5531" name="Arma a dos manos" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
@@ -4707,7 +4756,7 @@ Si una de estas armas dispara a una unidad de hostigadores, deberá reducir el n
       <characteristics>
         <characteristic name="Rango" typeId="52616e676523232344415441232323">Combate</characteristic>
         <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">Usuario</characteristic>
-        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Luchar con filas adicionales (1, excepto turno de carga), Muro de acero</characteristic>
+        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Luchar con filas adicionales (1), Muro de acero</characteristic>
       </characteristics>
     </profile>
     <profile id="e9f6-2800-5d9c-a7c4" name="Lanza (caballería)" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">

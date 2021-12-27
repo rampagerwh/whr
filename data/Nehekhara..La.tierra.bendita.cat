@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="9cd5-1cbb-a09f-032e" name="Nehekhara. La tierra bendita" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="coroctta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="9cd5-1cbb-a09f-032e" name="Nehekhara. La tierra bendita" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="coroctta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4525-b294-003e-3ce5" name="Pergamino arcano">
       <characteristicTypes>
@@ -4054,6 +4054,11 @@
                     <condition field="selections" scope="6ddd-7d33-4824-df13" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="6588-4b24-1835-f610" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="dec8-bd8f-8152-125f" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="8ea1-2421-86e2-2058" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dec8-bd8f-8152-125f" type="max"/>
@@ -4630,6 +4635,11 @@
                     <condition field="selections" scope="b5e3-fd66-6b34-d2d6" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="b27d-c464-60f0-b636" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="set" field="b565-50be-17e1-5e9b" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="c17c-f5ec-8d9c-8c60" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
+                  </conditions>
+                </modifier>
               </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="3.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b565-50be-17e1-5e9b" type="max"/>
@@ -4981,6 +4991,11 @@
                 <modifier type="decrement" field="cd49-cc25-eaf2-90fc" value="1.0">
                   <conditions>
                     <condition field="selections" scope="ca7c-ade7-9952-11fa" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c365-2ccf-ab36-e230" type="equalTo"/>
+                  </conditions>
+                </modifier>
+                <modifier type="set" field="cd49-cc25-eaf2-90fc" value="0.0">
+                  <conditions>
+                    <condition field="selections" scope="357c-9b40-e37f-7cbf" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="16fe-5bba-8442-7dca" type="equalTo"/>
                   </conditions>
                 </modifier>
               </modifiers>
