@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b0dc-1942-508d-2b7e" name="La costa del vampiro" revision="5" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="407" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b0dc-1942-508d-2b7e" name="La costa del vampiro" revision="7" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="407" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="a48c-3978-0259-0488" name="Sobrenombre de alta mar">
       <characteristicTypes>
@@ -83,6 +83,20 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2bda-e386-d4f0-ace2" type="max"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="e330-704f-5526-ca66" name="Estandartes mágicos" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="4ebc-e984-23a3-2681" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="81f5-52f8-fa64-83fd" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47e1-1505-469f-4481" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="c1d6-651c-dffd-428e" name="Estandartes Mágicos" hidden="false" collective="false" import="true" targetId="ff0c-4043-c416-35bc" type="selectionEntryGroup"/>
+                    <entryLink id="eb9e-e639-be2b-825a" name="Estandartes mágicos. Ejércitos de la destrucción" hidden="false" collective="false" import="true" targetId="3806-7d3b-e71e-2927" type="selectionEntryGroup"/>
+                    <entryLink id="8db0-c5d0-3da4-da97" name="Estandartes mágicos. La costa del vampiro" hidden="false" collective="false" import="true" targetId="1b5f-8ba0-fe05-ab77" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
@@ -190,6 +204,30 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
+            <selectionEntry id="7d71-4997-fca1-f502" name="Alabarda" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="points" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="c4ff-b2ce-1ead-473c" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8dde-cfc8-142a-c005" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+                <modifier type="set" field="a278-202d-c29e-fb62" value="2.0">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="170b-06ad-215f-f891" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="a278-202d-c29e-fb62" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aac4-b70e-b217-47bf" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="a47f-3d60-34af-0cb2" name="Alabarda" hidden="false" targetId="8dd0-8d9d-2436-cbf1" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
@@ -269,6 +307,20 @@
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9d69-4beb-a25d-07a6" type="max"/>
               </constraints>
+              <selectionEntryGroups>
+                <selectionEntryGroup id="ff35-9870-000f-8972" name="Estandartes mágicos" hidden="false" collective="false" import="true">
+                  <constraints>
+                    <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3c1c-25e4-ba3d-51c5" type="max"/>
+                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7f47-d778-0d7d-d88b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cfef-6773-4da6-ab46" type="max"/>
+                  </constraints>
+                  <entryLinks>
+                    <entryLink id="dba6-ce26-dc61-3630" name="Estandartes Mágicos" hidden="false" collective="false" import="true" targetId="ff0c-4043-c416-35bc" type="selectionEntryGroup"/>
+                    <entryLink id="d388-b635-9a63-fa34" name="Estandartes mágicos. Ejércitos de la destrucción" hidden="false" collective="false" import="true" targetId="3806-7d3b-e71e-2927" type="selectionEntryGroup"/>
+                    <entryLink id="a8f6-3cdb-d7b4-8adc" name="Estandartes mágicos. La costa del vampiro" hidden="false" collective="false" import="true" targetId="1b5f-8ba0-fe05-ab77" type="selectionEntryGroup"/>
+                  </entryLinks>
+                </selectionEntryGroup>
+              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="4.0"/>
               </costs>
@@ -351,13 +403,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="a6ec-0095-9285-335b" name="Arcabuz" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="points" value="1.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="19f2-84c2-fa6b-14ea" type="max"/>
               </constraints>
@@ -601,7 +646,7 @@
           <profiles>
             <profile id="f05f-d074-0a3e-8b0d" name="Perro sarnoso" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
               <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">9</characteristic>
+                <characteristic name="M" typeId="4d23232344415441232323">8</characteristic>
                 <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
                 <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
                 <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
@@ -617,7 +662,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="7.0"/>
+            <cost name="pts" typeId="points" value="6.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="b966-e535-4830-2cb4" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
@@ -654,7 +699,7 @@
               <profiles>
                 <profile id="7e07-e1a6-a4d5-4294" name="Perro maligno" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
                   <characteristics>
-                    <characteristic name="M" typeId="4d23232344415441232323">9</characteristic>
+                    <characteristic name="M" typeId="4d23232344415441232323">8</characteristic>
                     <characteristic name="HA" typeId="575323232344415441232323">3</characteristic>
                     <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
                     <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
@@ -671,6 +716,28 @@
               </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="4d9c-1d71-7000-0d9b" name="Opciones" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="532c-310b-dfa8-31db" name="Ataques envenenados" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="points" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="1ea5-f9d6-4262-2648" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="084e-13aa-f007-abe7" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="677a-9ffd-db24-17a6" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="25c2-424d-7a7b-8ade" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -833,7 +900,7 @@
       </constraints>
       <rules>
         <rule id="bc06-7f3b-4ed5-ce9c" name="Carronada" hidden="false">
-          <description>Se trata de un arma que dispara como un Cañón con la diferencia de que estima entre 0 y 6 dados, tiene F7 y Heridas Múltiples (1D3).</description>
+          <description>Se trata de un arma que dispara como un Cañón con la diferencia de que estima entre 0 y 6 dados, tiene F7 y Heridas Múltiples (1D3). Además, una Carronada puede Mover y disparar, pese a ser una máquina de guerra.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -869,6 +936,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="14d7-81fe-0889-f322" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
           </costs>
@@ -977,6 +1047,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="3732-9e82-f1f6-06d4" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
           </costs>
@@ -1251,7 +1324,7 @@
                 <infoLink id="0bd8-5959-52a8-b698" name="Hostigadores" hidden="false" targetId="999c-d422-6c91-46dd" type="rule"/>
               </infoLinks>
               <costs>
-                <cost name="pts" typeId="points" value="18.0"/>
+                <cost name="pts" typeId="points" value="16.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -1345,48 +1418,12 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="2687-bdac-f89f-6514" name="Grupo de mando" hidden="false" collective="false" import="true">
           <selectionEntries>
-            <selectionEntry id="9bf8-07b0-b03b-7159" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="624d-d875-bc4e-3956" type="max"/>
-              </constraints>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="4813-cc17-4a63-a3ad" name="Estandartes mágicos" hidden="false" collective="false" import="true">
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e7e-30b9-ae5f-7660" type="max"/>
-                    <constraint field="points" scope="parent" value="25.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ce13-f517-bbea-3272" type="max"/>
-                  </constraints>
-                  <entryLinks>
-                    <entryLink id="c5f8-b366-e847-94c4" name="Estandartes Mágicos" hidden="false" collective="false" import="true" targetId="ff0c-4043-c416-35bc" type="selectionEntryGroup"/>
-                    <entryLink id="7978-b997-1c69-68a5" name="Estandartes mágicos. Ejércitos de la destrucción" hidden="false" collective="false" import="true" targetId="3806-7d3b-e71e-2927" type="selectionEntryGroup"/>
-                    <entryLink id="3555-f2b2-2ef7-caf7" name="Estandartes mágicos. La costa del vampiro" hidden="false" collective="false" import="true" targetId="1b5f-8ba0-fe05-ab77" type="selectionEntryGroup"/>
-                  </entryLinks>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
-              <costs>
-                <cost name="pts" typeId="points" value="8.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="a37d-73dd-9008-cac4" name="Músico" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f2a2-6b2f-aec1-5738" type="max"/>
-              </constraints>
-              <costs>
-                <cost name="pts" typeId="points" value="8.0"/>
-              </costs>
-            </selectionEntry>
             <selectionEntry id="affb-5252-1ea4-1296" name="Mole oficial" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8405-ec21-8cf7-175f" type="max"/>
               </constraints>
               <profiles>
                 <profile id="2bb2-d083-41ac-6663" name="Mole oficial" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-                  <modifiers>
-                    <modifier type="increment" field="4c4423232344415441232323" value="1">
-                      <conditions>
-                        <condition field="selections" scope="affb-5252-1ea4-1296" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f4ad-26d5-7d7a-099f" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                  </modifiers>
                   <characteristics>
                     <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
                     <characteristic name="HA" typeId="575323232344415441232323">2</characteristic>
@@ -1403,23 +1440,6 @@
                   </characteristics>
                 </profile>
               </profiles>
-              <selectionEntryGroups>
-                <selectionEntryGroup id="5416-8005-239b-2fad" name="Opciones" hidden="false" collective="false" import="true">
-                  <selectionEntries>
-                    <selectionEntry id="f4ad-26d5-7d7a-099f" name="Sombrero pirata" hidden="false" collective="false" import="true" type="upgrade">
-                      <constraints>
-                        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a131-8e57-ec82-8b82" type="max"/>
-                      </constraints>
-                      <infoLinks>
-                        <infoLink id="2d36-c370-d0d4-b76c" name="Sombrero pirata" hidden="false" targetId="41bb-29f0-48d8-94aa" type="profile"/>
-                      </infoLinks>
-                      <costs>
-                        <cost name="pts" typeId="points" value="2.0"/>
-                      </costs>
-                    </selectionEntry>
-                  </selectionEntries>
-                </selectionEntryGroup>
-              </selectionEntryGroups>
               <costs>
                 <cost name="pts" typeId="points" value="8.0"/>
               </costs>
@@ -1444,7 +1464,10 @@
       </constraints>
       <rules>
         <rule id="c4ec-1e9d-1726-ff72" name="Soltad bombas" hidden="false">
-          <description>Si la unidad está equipada con Bombas de mano y se mueve durante la sub-fase “Resto de movimientos” por encima de una o más unidades enemigas no trabadas en combate, elige una de ellas; la unidad elegida sufrirá un impacto de F3 con la regla especial Poder de penetración por cada Revientacobiertas que forme parte de la unidad que efectuó el movimiento.</description>
+          <description>Si la unidad está equipada con Bombas de mano y se mueve durante la sub-fase “Resto de movimientos” por encima de una o más unidades enemigas no trabadas en combate, elige una de ellas; la unidad elegida sufrirá un impacto de F3 con la regla especial Poder de penetración por cada Revientacobiertas que forme parte de la unidad que efectuó el movimiento). Ten en cuenta que esto es adicional a los disparos que puedan hacer con sus bombas de mano en la fase de disparo.</description>
+        </rule>
+        <rule id="7273-46e6-ba91-f12e" name="Llevados por el aire" hidden="false">
+          <description>Los revientacubiertas ignoran la regla “Mover o disparar” de sus armas de proyectiles.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -1612,24 +1635,6 @@
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
-            <selectionEntry id="9750-d944-4fb1-2bfa" name="Ristra de pistolas" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="increment" field="points" value="3.0">
-                  <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                  </repeats>
-                </modifier>
-              </modifiers>
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec5f-c07d-331b-85aa" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="e0e1-5ad9-6d43-a676" name="Ristra de pistolas" hidden="false" targetId="4bdd-2d56-6b82-91a4" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
           </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="5d28-d89e-51ac-7bb6" name="Armas de proyectiles" hidden="false" collective="false" import="true">
@@ -1651,9 +1656,9 @@
                 </selectionEntry>
                 <selectionEntry id="c24b-2539-9a86-c1fb" name="Trabuco abisal" hidden="false" collective="false" import="true" type="upgrade">
                   <modifiers>
-                    <modifier type="increment" field="points" value="2.0">
+                    <modifier type="increment" field="points" value="3.0">
                       <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                        <repeat field="selections" scope="c640-6137-a599-8296" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94c2-4b09-ad22-4ab8" repeats="1" roundUp="false"/>
                       </repeats>
                     </modifier>
                   </modifiers>
@@ -1662,6 +1667,24 @@
                   </constraints>
                   <infoLinks>
                     <infoLink id="57bc-95b1-7788-1194" name="Trabuco abisal" hidden="false" targetId="5799-acd6-0a08-7592" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+                <selectionEntry id="ae7e-e240-48d5-a050" name="Ristra de pistolas" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="increment" field="points" value="3.0">
+                      <repeats>
+                        <repeat field="selections" scope="c640-6137-a599-8296" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94c2-4b09-ad22-4ab8" repeats="1" roundUp="false"/>
+                      </repeats>
+                    </modifier>
+                  </modifiers>
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cbf4-ef28-4883-b6af" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="341a-1212-546a-5c7b" name="Ristra de pistolas" hidden="false" targetId="4bdd-2d56-6b82-91a4" type="profile"/>
                   </infoLinks>
                   <costs>
                     <cost name="pts" typeId="points" value="0.0"/>
@@ -1692,7 +1715,7 @@
           <description>Los ataques de los Prometeos podridos tienen la regla especial Poder de penetración y Golpe letal.</description>
         </rule>
         <rule id="e414-a534-90a3-c63e" name="Jinetes de los mares" hidden="false">
-          <description>Se trata a todos los efectos como Caballería monstruosa. Ambos jinetes pueden combatir y disparar sus armas de proyectiles de forma normal. Además, ignoran la regla Mover o disparar de sus armas de proyectiles.</description>
+          <description>Se trata a todos los efectos como Caballería monstruosa (potencia de unidad 5 por miniatura). Ambos jinetes pueden combatir y disparar sus armas de proyectiles de forma normal. Además, ignoran la regla Mover o disparar de sus armas de proyectiles.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -2025,6 +2048,7 @@
         <infoLink id="95eb-39ce-b06e-680d" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="c282-9730-2b9e-6a94" name="Etéreo" hidden="false" targetId="34c4-9e60-1a62-eda5" type="rule"/>
         <infoLink id="ab66-87bb-743d-2ff5" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+        <infoLink id="48dc-ce2e-3d56-2e0b" name="Hostigadores" hidden="false" targetId="999c-d422-6c91-46dd" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="4719-f724-3d94-d439" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -2158,13 +2182,6 @@
           </constraints>
           <profiles>
             <profile id="06fc-dadb-79c4-f129" name="Guardia de las profundidades" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <modifiers>
-                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
-                  <conditions>
-                    <condition field="selections" scope="7ada-a958-94b8-5490" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57b8-5bf1-2020-f28f" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <characteristics>
                 <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
                 <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
@@ -2227,70 +2244,43 @@
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="515f-e172-3f79-09c7" type="max"/>
           </constraints>
           <selectionEntries>
-            <selectionEntry id="57b8-5bf1-2020-f28f" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+            <selectionEntry id="e3d8-b461-1bf8-a719" name="Alabarda" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="increment" field="points" value="1.0">
+                <modifier type="increment" field="points" value="4.0">
                   <repeats>
-                    <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="7ada-a958-94b8-5490" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66f7-8127-a53a-70cf" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
               </modifiers>
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4291-44ba-fb8e-df7f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6906-e522-d4a5-66a8" type="max"/>
               </constraints>
               <infoLinks>
-                <infoLink id="9cee-7d93-f21f-9f72" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+                <infoLink id="f72f-f318-3102-7d64" name="Alabarda" hidden="false" targetId="8dd0-8d9d-2436-cbf1" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="bf3b-7756-82fb-310c" name="Arma de mano adicional" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="increment" field="points" value="2.0">
+                  <repeats>
+                    <repeat field="selections" scope="7ada-a958-94b8-5490" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="66f7-8127-a53a-70cf" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5ac5-957a-1442-9ce8" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4d33-92c0-0532-5221" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
-          <selectionEntryGroups>
-            <selectionEntryGroup id="ee44-9cbc-52d9-7ac3" name="Armas" hidden="false" collective="false" import="true">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="39dc-03d1-14c0-7792" type="max"/>
-              </constraints>
-              <selectionEntries>
-                <selectionEntry id="3c17-4a07-d0a5-161e" name="Alabarda" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="increment" field="points" value="4.0">
-                      <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82ba-e160-f0ae-b3a2" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="70e9-9639-efea-1977" name="Alabarda" hidden="false" targetId="8dd0-8d9d-2436-cbf1" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-                <selectionEntry id="9566-25f2-b888-d3e7" name="Arma de mano adicional" hidden="false" collective="false" import="true" type="upgrade">
-                  <modifiers>
-                    <modifier type="increment" field="points" value="2.0">
-                      <repeats>
-                        <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
-                      </repeats>
-                    </modifier>
-                  </modifiers>
-                  <constraints>
-                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8032-1b7a-b680-e74a" type="max"/>
-                  </constraints>
-                  <infoLinks>
-                    <infoLink id="3ea8-7414-6cf9-46f6" name="Arma de mano adicional" hidden="false" targetId="45d0-c304-d4fd-5b8f" type="profile"/>
-                  </infoLinks>
-                  <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
-                  </costs>
-                </selectionEntry>
-              </selectionEntries>
-            </selectionEntryGroup>
-          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="bfd0-1148-0e83-c6a7" name="Grupo de mando" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -2333,11 +2323,6 @@
                     <modifier type="increment" field="4c4423232344415441232323" value="1">
                       <conditions>
                         <condition field="selections" scope="783d-0bc2-b20c-067d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="61bd-2964-d1d8-d775" type="equalTo"/>
-                      </conditions>
-                    </modifier>
-                    <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
-                      <conditions>
-                        <condition field="selections" scope="7ada-a958-94b8-5490" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="57b8-5bf1-2020-f28f" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -2400,7 +2385,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="8.0"/>
+                <cost name="pts" typeId="points" value="10.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -2627,19 +2612,21 @@
       </constraints>
       <rules>
         <rule id="e296-c7a0-7f85-9392" name="Reina Bess" hidden="false">
-          <description>Alcance 0-8. Fuerza 5 (10). Reglas especiales Plantilla redonda grande, Poder de penetración, Heridas múltiples (1D6+1, solo el impacto central), Mover o disparar.
+          <description>Alcance 12&quot;-60&quot;. Fuerza 4 (10). Reglas especiales Plantilla redonda grande, Poder de penetración, Ataques flamígeros, Heridas múltiples (1D6+1, solo el impacto central), Mover o disparar.
 En el caso de obtener un resultado de ¡Problemas!, deberás realizar inmediatamente una tirada en la tabla de problemas de la Reina Bess:
 1D6	Tabla de problemas de la Reina Bess
-1-3	¡Catástrofe!: Todas las unidades situadas a 8” o menos de la Reina Bess sufrirán 1D6 impactos automáticos de F8 con la regla especial Ataques flamígeros. Tras esto, retira la miniatura como baja.
-4-5 Fallo de cálculo: Repite la tirada en el dado de artillería (repitiendo cualquier resultado de problemas posterior) y calcula la distancia recorrida por el proyectil. Antes de calcular la distancia del rebote, el oponente podrá elegir hasta dos dados de la tirada de estimación (incluyendo el propio dado de artillería) y quitarlos del resultado.
-6 ¡Imparable!: Para determinar la distancia que recorre el proyectil, tira todos los dados (8D6, repitiendo cualquier resultado de problemas posterior). Cualquier miniatura bajo la plantilla (siguiendo las reglas habituales de impactos parciales) o en la trayectoria del proyectil desde el propio cañón será impactada.</description>
+1D6
+Tabla de problemas de la Reina Bess
+1-2 ¡Catástrofe!: La Reina Bess explota. Todas las unidades situadas a 8” o menos de la Reina Bess sufrirán 1D6 impactos automáticos de F8 con la regla especial Ataques flamígeros. Tras esto, retira la miniatura como baja.
+3-5 Fallo de cálculo: Repite la tirada en el dado de artillería (repitiendo cualquier resultado de problemas posterior) y calcula el desvío del proyectil; si obtuviste un resultado de punto de mira, el oponente puede decidir la dirección en la que se desvía la plantilla. La Reina Bess sufre una herida sin tirada de salvación por armadura.
+6 ¡Por muy poco!: No hay efectos negativos adicionales.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="fefc-70c9-12f3-d440" name="Máquina de guerra" hidden="false" targetId="48ca-c3bc-f385-15fc" type="rule"/>
         <infoLink id="9ba9-bd30-52d4-2d11" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="4490-13aa-25b3-6c11" name="Cruzar (elementos acuáticos)" hidden="false" targetId="a3ee-8338-d33d-7fe5" type="rule"/>
-        <infoLink id="46b0-a751-6ba3-d7fb" name="Cañón" hidden="false" targetId="9f6a-5d0b-f0a6-dbab" type="rule"/>
+        <infoLink id="46b0-a751-6ba3-d7fb" name="Catapulta" hidden="false" targetId="7168-c1ae-bc9c-15df" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="41ad-ef49-027f-d3db" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
@@ -2668,8 +2655,11 @@ En el caso de obtener un resultado de ¡Problemas!, deberás realizar inmediatam
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="694d-f0ce-18e7-acfb" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="175.0"/>
+            <cost name="pts" typeId="points" value="240.0"/>
           </costs>
         </selectionEntry>
         <selectionEntry id="6830-3233-f51b-5f28" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
@@ -2858,8 +2848,7 @@ En el caso de obtener un resultado de ¡Problemas!, deberás realizar inmediatam
     <selectionEntry id="43ba-710f-433c-153a" name="Almirante de la flota vampiro" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="4206-a490-d51f-cd4c" name="Magia Almirante de la flota vampiro" hidden="false">
-          <description>Es un hechicero de nivel 1 que puede aumentar a nivel 2 por +35 puntos o nivel 3 por +70 puntos. Puede elegir sus
-hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</description>
+          <description>Es un hechicero de nivel 1 que puede aumentar a nivel 2 por +35 puntos o nivel 3 por +70 puntos. Puede elegir sus hechizos de los saberes de la Muerte, las Sombras o el Saber de las Profundidades.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3087,6 +3076,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                   </modifiers>
                 </entryLink>
                 <entryLink id="e724-71c2-93a0-6c80" name="Sobrenombres de alta mar. Vampiro" hidden="false" collective="false" import="true" targetId="3023-67e0-e6fc-27f2" type="selectionEntryGroup"/>
+                <entryLink id="ae81-773a-a1ff-6dcb" name="Sobrenombres de alta mar. Hechiceros" hidden="false" collective="false" import="true" targetId="7ed3-05c2-effe-f17b" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3110,11 +3100,6 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                 <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
                   <conditions>
                     <condition field="selections" scope="43ba-710f-433c-153a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c697-1df0-58d1-f3e1" type="equalTo"/>
-                  </conditions>
-                </modifier>
-                <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="1">
-                  <conditions>
-                    <condition field="selections" scope="43ba-710f-433c-153a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="244d-70c3-9e98-6ee3" type="equalTo"/>
                   </conditions>
                 </modifier>
                 <modifier type="decrement" field="41726d6f75725361766523232344415441232323" value="2">
@@ -3249,19 +3234,6 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
           </selectionEntries>
         </selectionEntryGroup>
         <selectionEntryGroup id="b3bf-c4a1-a2ec-6dc2" name="Opciones" hidden="false" collective="false" import="true">
-          <selectionEntries>
-            <selectionEntry id="244d-70c3-9e98-6ee3" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="787d-28d7-1998-12aa" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="6056-455b-e035-84d6" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="3.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
           <selectionEntryGroups>
             <selectionEntryGroup id="6aac-9ec7-e05f-5550" name="Armas de combate" hidden="false" collective="false" import="true">
               <constraints>
@@ -3393,7 +3365,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
     <selectionEntry id="4255-3ca3-48ca-d41b" name="Capitán de la flota vampiro" hidden="false" collective="false" import="true" type="unit">
       <rules>
         <rule id="05b0-bb9d-41af-a065" name="Magia Capitán de la flota vampiro" hidden="false">
-          <description>Es un hechicero de nivel 1. Puede elegir sus hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</description>
+          <description>Es un hechicero de nivel 1. Puede elegir sus hechizos del Saber de las Profundidades. Un único Capitán vampiro del ejército puede aumentarse a nivel de magia 2 por +35 puntos.</description>
         </rule>
       </rules>
       <infoLinks>
@@ -3542,6 +3514,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="4d47-cac9-527b-a622" name="Sobrenombres de alta mar. Hechiceros" hidden="false" collective="false" import="true" targetId="7ed3-05c2-effe-f17b" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -3633,15 +3606,6 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               </constraints>
             </entryLink>
           </entryLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="4a7e-b878-001f-7fbe" name="Nivel de magia 1" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cd72-89ef-c0ae-5e48" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8ae7-2d04-962f-bfb3" type="min"/>
-          </constraints>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
           </costs>
@@ -3836,6 +3800,31 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+        <selectionEntryGroup id="8e5d-8190-aa60-606a" name="Nivel de magia" hidden="false" collective="false" import="true" defaultSelectionEntryId="bf55-37cc-c114-4a7e">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d472-1597-3294-61c2" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="466a-dc75-f8ac-1e08" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="bf55-37cc-c114-4a7e" name="Nivel de magia 1" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e1d0-3f9b-1475-ba8e" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a9b9-9dbd-1a55-d540" name="Nivel de magia 2" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="676d-2f28-c9ca-8835" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="480e-6187-3fa1-bbc1" type="max"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="35.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -4137,7 +4126,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="172f-7c99-9867-33e4" type="max"/>
               </constraints>
               <selectionEntries>
-                <selectionEntry id="0f22-d5ac-85fc-c7cc" name="Pistola" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="0f22-d5ac-85fc-c7cc" name="Pistola funeraria" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f7a-bb2b-c8b0-9e3a" type="max"/>
                   </constraints>
@@ -4148,7 +4137,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                     <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9aa1-c18f-9a25-9c55" name="Ristra de pistolas" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9aa1-c18f-9a25-9c55" name="Ristra de pistolas funerarias" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dba9-bd36-1872-fb25" type="max"/>
                   </constraints>
@@ -4159,7 +4148,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                     <cost name="pts" typeId="points" value="10.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="78a6-2782-bf37-589d" name="Mosquete de cubierta" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="78a6-2782-bf37-589d" name="Mosquete de cubierta funerario" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a3e7-0605-e0c1-30ba" type="max"/>
                   </constraints>
@@ -4170,7 +4159,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
                     <cost name="pts" typeId="points" value="3.0"/>
                   </costs>
                 </selectionEntry>
-                <selectionEntry id="9421-9956-c751-bb3b" name="Trabuco abisal" hidden="false" collective="false" import="true" type="upgrade">
+                <selectionEntry id="9421-9956-c751-bb3b" name="Trabuco abisal funerario" hidden="false" collective="false" import="true" type="upgrade">
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b252-0fc5-a4cd-197a" type="max"/>
                   </constraints>
@@ -4336,7 +4325,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
       </constraints>
       <rules>
         <rule id="0144-22fa-429d-eb60" name="Nivel de magia Luthor Harkor almirante de la costa del vampiro" hidden="false">
-          <description>Luthor Harkon es un hechicero de nivel 2. Conoce los hechizos Invocación de Nehek (Nigromancia), Danza Macabra de Vanhel (Nigromancia), Asolar el Alma (Muerte), Corcel de Sombras (Sombras) y Oscura Mano de Destrucción (Magia Oscura).</description>
+          <description>Luthor Harkon es un hechicero de nivel 2 que conoce tres hechizos del Saber de las Profundidades.</description>
         </rule>
         <rule id="a1a8-a39f-4138-503a" name="Vacío mágico" hidden="false">
           <description>Luthor obtiene la regla especial Resistencia a la magia (2) pero no podrá canalizar dados de energía o dispersión.</description>
@@ -4439,7 +4428,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="81d9-e23e-0d85-eb6c" name="Azote del mar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Poder de penetración. Además, le permite realizar Parada.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Poder de penetración. Además, le permite realizar Parada.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4459,7 +4448,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="be6d-116e-21e4-212f" name="Zanjadisputas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Se trata de una Pistola con un alcance de 18&quot; con la regla especial Francotirador. Las heridas causadas por los disparos de esta arma niegan la tirada de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Se trata de una Pistola con un alcance de 18&quot; con la regla especial Francotirador. Las heridas causadas por los disparos de esta arma niegan la tirada de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4491,7 +4480,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="ffef-92fc-d6d4-6d92" name="Oro maldito de los Slaan" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Cualquier hechicero -amigo o enemigo- a 12” o menos de Luthor Harkon que deba realizar una tirada en la tabla de disfunción mágica lo hará utilizando 3D6 y descartando el dado que elija el oponente. Todas las unidades del libro de ejército de Hombres Lagarto obtienen la regla especial Odio (Luthor Harkon).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Cualquier hechicero -amigo o enemigo- a 12” o menos de Luthor Harkon que deba realizar una tirada en la tabla de disfunción mágica lo hará utilizando 3D6 y descartando el dado que elija el oponente. Todas las unidades del libro de ejército de Hombres Lagarto obtienen la regla especial Odio (Luthor Harkon).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4553,7 +4542,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
       </constraints>
       <rules>
         <rule id="0586-70cb-2a8b-f862" name="Magia Contramaestre Drekla, mano derecha de Luthor" hidden="false">
-          <description>El Capitán Drekla es un hechicero de nivel 1. Puede elegir hechizos del Saber de Nigromancia.</description>
+          <description>El Capitán Drekla es un hechicero de nivel 1. Puede elegir hechizos del Saber de las Profundidades.</description>
         </rule>
         <rule id="34f9-71e5-9798-34e5" name="Manco" hidden="false">
           <description>No puede utilizar su Pistola en combate cuerpo a cuerpo.</description>
@@ -4668,7 +4657,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="c628-c901-5b81-eaa5" name="La vieja Nancy" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Drekla puede hacer un ataque adicional (ya indicado en su perfil) que se resuelve con la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Drekla puede hacer un ataque adicional (ya indicado en su perfil) que se resuelve con la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4699,7 +4688,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="df83-5981-966e-959d" name="Capa de los mares" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Otorga a Drekla una tirada de salvación especial de 5+. Además, todos los disparos que no sean mágicos dirigidos contra Drekla tendrán un penalizador de -1 para impactar, y aquellos enemigos que ataquen a Drekla en combate cuerpo a cuerpo con armas mundanas realizarán esos ataques con un penalizador de -1HA.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Otorga a Drekla una tirada de salvación especial de 5+. Además, todos los disparos que no sean mágicos dirigidos contra Drekla tendrán un penalizador de -1 para impactar, y aquellos enemigos que ataquen a Drekla en combate cuerpo a cuerpo con armas mundanas realizarán esos ataques con un penalizador de -1HA.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4746,7 +4735,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
       </constraints>
       <rules>
         <rule id="b78a-0db9-4747-935e" name="Magia Conde Noctilus, capitán de la parca sangrienta" hidden="false">
-          <description>Noctilus es un hechicero de nivel 3 que toma sus hechizos del Saber de las Sombras. Además, conoce los hechizos Invocación de Nehek (Nigromancia) y Danza Macabra de Vanhel (Nigromancia).</description>
+          <description>Noctilus es un hechicero de nivel 3 que toma sus hechizos del Saber de las Profundidades.</description>
         </rule>
         <rule id="228d-5204-096e-e5c2" name="Señor supremo de la flota del terror" hidden="false">
           <description>Si el Conde Noctilus es el general del ejército, el rango de su Presencia Inspiradora aumenta en 3” (para un total de 15”). Adicionalmente, al inicio de cada turno propio Noctilus podrá lanzar una Orden de batalla a una unidad amiga de Infantería dentro de su radio de Presencia inspiradora (o de la unidad que lo acompañe si no es el general del ejército); el efecto durará un turno completo, y no podrá realizarse la misma orden dos veces consecutivas
@@ -4839,7 +4828,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="16e7-397e-8522-206b" name="Púa del terror" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Confiere a su portador la regla especial Golpe Letal. Cada vez que Noctilus elimine en combate cuerpo a cuerpo a una miniatura a consecuencia de un Golpe letal, aumentará permanentemente en 1 sus Ataques durante el resto de la partida.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Confiere a su portador la regla especial Golpe Letal. Cada vez que Noctilus elimine en combate cuerpo a cuerpo a una miniatura a consecuencia de un Golpe letal, aumentará permanentemente en 1 sus Ataques durante el resto de la partida.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4871,7 +4860,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="8fff-2df7-2057-6c3a" name="Placa de la parca" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga a su portador una tirada de salvación por armadura de 1+ (en lugar del 5+ por Armadura pesada como es habitual). Además, todos los impactos contra el portador tendrán un penalizador de -1 a su valor de Fuerza.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga a su portador una tirada de salvación por armadura de 1+ (en lugar del 5+ por Armadura pesada como es habitual). Además, todos los impactos contra el portador tendrán un penalizador de -1 a su valor de Fuerza.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4890,7 +4879,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
               <profiles>
                 <profile id="73c9-8d32-b061-a168" name="Reloj lunar del capitán Roth" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo tres usos. Cada uso permite al Conde Noctilus repetir una tirada para impactar, herir, salvación por armadura, tirada de regeneración o chequeo de atributo (incluyendo de Liderazgo).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo tres usos. Cada uso permite al Conde Noctilus repetir una tirada para impactar, herir, salvación por armadura, tirada de regeneración o chequeo de atributo (incluyendo de Liderazgo).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5140,8 +5129,7 @@ hechizos de los saberes de la Muerte, Sombras, Nigromancia o Magia Oscura.</desc
       </constraints>
       <rules>
         <rule id="1263-1103-07ba-d8b4" name="Magia Cylostra Aleta Nefasta" hidden="false">
-          <description>Es una hechicera de nivel 4. Puede elegir sus hechizos de los saberes de la Muerte, Sombras y/o Nigromancia (ver Cetro
-aullante, más abajo).</description>
+          <description>Es una hechicera de nivel 4. Puede elegir sus hechizos de los saberes de la Muerte, Sombras y/o el Saber de las Profundidades (ver Cetro aullante, más abajo).</description>
         </rule>
         <rule id="712b-f251-533e-e55f" name="No puede unirse a unidades no etéreas" hidden="false"/>
         <rule id="346b-20f0-4191-6d8b" name="Canción del cautiverio" hidden="false">
@@ -5227,7 +5215,7 @@ aullante, más abajo).</description>
               <profiles>
                 <profile id="09cb-0261-9a29-c738" name="Cetro aullante" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Cylostra conoce 1D3+1 hechizos adicionales.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Cylostra conoce 1D3+1 hechizos adicionales.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5243,7 +5231,7 @@ aullante, más abajo).</description>
               <profiles>
                 <profile id="178d-b736-f481-0eaf" name="Flabelo de Bordeleaux" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Flabelo no permiten tirada de salvación por armadura. Además, Cylostra genera un dado de energía adicional en cada una de sus fases de magia propias, y puede sumar +1 en todas las tiradas que haga en la tabla de disfunciones mágicas (los resultados superiores a 12 se considerarán de 12).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Flabelo no permiten tirada de salvación por armadura. Además, Cylostra genera un dado de energía adicional en cada una de sus fases de magia propias, y puede sumar +1 en todas las tiradas que haga en la tabla de disfunciones mágicas (los resultados superiores a 12 se considerarán de 12).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5704,7 +5692,7 @@ aullante, más abajo).</description>
               <profiles>
                 <profile id="bf2a-3ea0-91f6-ee1d" name="Perdición del kraken" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza. Los ataques con esta arma pueden repetir las tiradas fallidas para herir contra enemigos que no sean del tipo Infantería o Enjambre. Las heridas causadas por esta arma niegan las tiradas de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza. Los ataques con esta arma pueden repetir las tiradas fallidas para herir contra enemigos que no sean del tipo Infantería o Enjambre. Las heridas causadas por esta arma niegan las tiradas de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6906,7 +6894,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="6415-007a-c829-2823" name="Espada de los trece mares" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con la espada se resuelven con F6 y tienen la regla especial Ataque de rayos. Además, los resultados de 6 en sus tiradas para impactar se resolverán con la regla especial Impactos múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con la espada se resuelven con F6 y tienen la regla especial Ataque de rayos. Además, los resultados de 6 en sus tiradas para impactar se resolverán con la regla especial Impactos múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6934,7 +6922,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="a8d4-a798-4dcd-24b0" name="Castigo viviente" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Otorga a su portador la regla especial regla especial Odio (¡todos los enemigos!). Los impactos realizados con este arma tienen la regla especial Golpe letal. Adicionalmente, obtendrá un bonificador de +1 en sus tiradas para impactar en los turnos en que haya realizado una carga exitosa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Otorga a su portador la regla especial regla especial Odio (¡todos los enemigos!). Los impactos realizados con este arma tienen la regla especial Golpe letal. Adicionalmente, obtendrá un bonificador de +1 en sus tiradas para impactar en los turnos en que haya realizado una carga exitosa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6963,7 +6951,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="4b2d-b1ce-e82a-221d" name="El alfanje maldito de Cruickshank “el Descuidado”" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada se resuelven con la regla Golpe Letal. Además, podrá repetir los resultados de 1 en sus tiradas para herir en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada se resuelven con la regla Golpe Letal. Además, podrá repetir los resultados de 1 en sus tiradas para herir en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6983,7 +6971,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="e6a8-b8aa-6cbc-73fa" name="La serpiente sucia" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven con las reglas especiales Heridas Múltiples (2) y Poder de Penetración.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven con las reglas especiales Heridas Múltiples (2) y Poder de Penetración.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7012,7 +7000,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="267a-136f-9e65-e2d9" name="El garfio de Levi “el Afortunado”" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los ataques realizados en combate cuerpo a cuerpo por el portador con esta arma se resuelven con un bonificador de +1F y tienen la regla especial Poder de penetración. Además, el portador podrá obligar a repetir todas las tiradas de salvación por armadura exitosas contra los ataques de este arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los ataques realizados en combate cuerpo a cuerpo por el portador con esta arma se resuelven con un bonificador de +1F y tienen la regla especial Poder de penetración. Además, el portador podrá obligar a repetir todas las tiradas de salvación por armadura exitosas contra los ataques de este arma.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7041,7 +7029,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="8276-6724-de15-16bc" name="Segadoras" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Ristra de pistolas. Tienen un bonificador de +1 en su tirada para impactar si está efectuando disparos a corta distancia. Además, tiene la regla especial Francotirador al Aguantar y disparar o Disparar y huir.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Ristra de pistolas. Sus impactos se resuelven con la regla especial Golpe letal. Además, tiene la regla especial Francotirador al Aguantar y disparar o Disparar y huir.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7050,7 +7038,7 @@ aullante, más abajo).</description>
             <infoLink id="076e-480e-257a-f6f7" name="Ristra de pistolas" hidden="false" targetId="4bdd-2d56-6b82-91a4" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="25.0"/>
+            <cost name="pts" typeId="points" value="35.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7069,7 +7057,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="344d-339b-a1bd-a25f" name="El rifle maldito" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mosquete de cubierta. Los disparos realizados con este arma se resuelven con un bonificador de +1F y un alcance de 24”.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mosquete de cubierta. Los disparos realizados con este arma se resuelven con la regla especial Disparos múltiples (1D3), un bonificador de +1F y un alcance de 24”.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7077,7 +7065,7 @@ aullante, más abajo).</description>
             <infoLink id="d0f8-2778-40a2-ec3b" name="Mosquete de cubierta" hidden="false" targetId="6abe-37b2-111f-c313" type="profile"/>
           </infoLinks>
           <costs>
-            <cost name="pts" typeId="points" value="20.0"/>
+            <cost name="pts" typeId="points" value="25.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7096,7 +7084,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="fb87-4531-4ef5-57d5" name="Coraza de los mares" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 3+ (en lugar de 5+ como es habitual) y una tirada de salvación especial de 5+. Además, siempre que el portador realice con éxito una tirada de salvación por armadura en combate cuerpo a cuerpo, la miniatura que realizó el ataque recibirá un impacto de Fuerza igual a la del ataque que generó el impacto, con la regla especial Poder de penetración.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 3+ (en lugar de 5+ como es habitual) y una tirada de salvación especial de 5+. Además, siempre que el portador realice con éxito una tirada de salvación por armadura en combate cuerpo a cuerpo, la miniatura que realizó el ataque recibirá un impacto de Fuerza igual a la del ataque que generó el impacto, con la regla especial Poder de penetración.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7123,7 +7111,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="f3cd-43f5-a24b-0764" name="Cota de escamas" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. El portador tiene las reglas especiales Inmune al fuego y Regeneración (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. El portador tiene las reglas especiales Inmune al fuego y Regeneración (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7152,7 +7140,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="9e80-0438-0b19-1318" name="Brazales del hombre muerto" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Las miniaturas que ataquen al portador en combate cuerpo a cuerpo realizarán un Ataque menos (con un mínimo de 1 Ataque).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Las miniaturas que ataquen al portador en combate cuerpo a cuerpo realizarán un Ataque menos (con un mínimo de 1 Ataque).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7171,7 +7159,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="51f2-4300-4f7f-6f88" name="Piel de anguila" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga a su portador la regla especial Esquivar (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga a su portador la regla especial Esquivar (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7199,7 +7187,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="ac3b-dd4e-2b50-6685" name="La rodela sangrienta de Bill el sanguinario" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 6+, que aumenta a 4+ contra ataques con que tengan la regla especial Ataques flamígeros o Ataques solo flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 6+, que aumenta a 4+ contra ataques con que tengan la regla especial Ataques flamígeros o Ataques solo flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7226,7 +7214,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="d813-6de6-417f-8b56" name="El cráneo dorado" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Otorga a su portador un bonificador de +1 a su tirada de salvación por armadura (por ser yelmo) y una tirada de salvación especial de 5+. Adicionalmente, se trata de un objeto portahechizos de nivel de energía 5 que contiene un hechizo de potenciación que toma como objetivo su propia unidad y permanece un turno. Por la duración del conjuro, la unidad obtendrá una tirada de salvación especial de 5+ (o +1 a su tirada de salvación especial si ya disponía de una).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Otorga a su portador un bonificador de +1 a su tirada de salvación por armadura (por ser yelmo) y una tirada de salvación especial de 5+. Adicionalmente, se trata de un objeto portahechizos de nivel de energía 5 que contiene un hechizo de potenciación que toma como objetivo su propia unidad y permanece un turno. Por la duración del conjuro, la unidad obtendrá una tirada de salvación especial de 5+ (o +1 a su tirada de salvación especial si ya disponía de una).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7253,7 +7241,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="c550-48eb-3ea9-01cc" name="Real de a ocho" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Solo personajes con la regla especial Vampiro del tipo Infantería. Un solo uso. Puedes desatar el poder del Real de a Ocho después de fallar un chequeo de Liderazgo -tras comprobar el número de heridas que sufrirán él o su unidad por su regla Inestable- para restar 1D3 al número de bajas. Mientras tanto, el personaje verá su atributo de Liderazgo aumentado en un punto (hasta un máximo de 10).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Solo personajes con la regla especial Vampiro del tipo Infantería. Un solo uso. Puedes desatar el poder del Real de a Ocho después de fallar un chequeo de Liderazgo -tras comprobar el número de heridas que sufrirán él o su unidad por su regla Inestable- para restar 1D3 al número de bajas. Mientras tanto, el personaje verá su atributo de Liderazgo aumentado en un punto (hasta un máximo de 10).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7277,7 +7265,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="0b39-4eaa-2f4e-519c" name="Diario arcanum" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene un nivel de magia adicional y la regla especial Señor del conocimiento (Nigromancia).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene un nivel de magia adicional y la regla especial Señor del conocimiento (Nigromancia).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7307,7 +7295,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="4c09-963b-a4e6-24b3" name="Perla del vórtice" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechicero conocerá un hechizo adicional a su nivel, el cual siempre será el hechizo identificativo del saber que elija. Además, obtendrá un bonificador de +1 en sus tiradas para canalizar dados de energía o dispersión. Adicionalmente, podrá guardar un dado de energía o dispersión que no haya utilizado en cualquier fase de magia para utilizarlo en una fase posterior.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechicero conocerá un hechizo adicional a su nivel, el cual siempre será el hechizo identificativo del saber que elija. Además, obtendrá un bonificador de +1 en sus tiradas para canalizar dados de energía o dispersión. Adicionalmente, podrá guardar un dado de energía o dispersión que no haya utilizado en cualquier fase de magia para utilizarlo en una fase posterior.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7323,7 +7311,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="622e-3753-3e80-d867" name="Colgante del cántico de ensueño" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene un bonificador de +1 en sus tiradas de intento de dispersión de hechizos. Además, se trata de un Objeto portahechizo con nivel de energía 3. Contiene un hechizo de Maldición que toma como objetivo una única unidad enemiga a 18&quot; o menos del portador y Permanece un turno. Por la duración del hechizo, la unidad objetivo obtendrá la regla especial Estupidez y tendrá un penalizador de -1 a su HA y HP.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene un bonificador de +1 en sus tiradas de intento de dispersión de hechizos. Además, se trata de un Objeto portahechizo con nivel de energía 3. Contiene un hechizo de Maldición que toma como objetivo una única unidad enemiga a 18&quot; o menos del portador y Permanece un turno. Por la duración del hechizo, la unidad objetivo obtendrá la regla especial Estupidez y tendrá un penalizador de -1 a su HA y HP.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7339,7 +7327,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="14ac-95a9-b9c0-7f3b" name="Ojo de kraken" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. El portador puede utilizar el poder del Ojo de Kraken al inicio de cualquier fase de magia propia para añadir 1D3 dados de energía; estos dados adicionales solo pueden ser utilizados por la miniatura que utilizó este objeto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. El portador puede utilizar el poder del Ojo de Kraken al inicio de cualquier fase de magia propia para añadir 1D3 dados de energía; estos dados adicionales solo pueden ser utilizados por la miniatura que utilizó este objeto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7355,7 +7343,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="31ac-8e6b-58a9-3a7a" name="Hígados de tritón" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puedes utilizar los Hígados de Tritón antes de que el hechicero deba realizar una tirada en la tabla de disfunciones mágicas, tras resolver el hechizo que provocó la disfunción; el jugador podrá tirar 3D6 y descartar el dado que elija para verificar el resultado de esa tirada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puedes utilizar los Hígados de Tritón antes de que el hechicero deba realizar una tirada en la tabla de disfunciones mágicas, tras resolver el hechizo que provocó la disfunción; el jugador podrá tirar 3D6 y descartar el dado que elija para verificar el resultado de esa tirada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7371,7 +7359,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="a8df-79f7-0226-47dd" name="Familiar loro zombi" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Una vez por fase de magia, el portador podrá repetir un dado de energía durante su propia fase de magia o de dispersión en la fase de magia del oponente.
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Una vez por fase de magia, el portador podrá repetir un dado de energía durante su propia fase de magia o de dispersión en la fase de magia del oponente.
 </characteristic>
               </characteristics>
             </profile>
@@ -7388,7 +7376,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="2e1c-9c88-3cfd-00a7" name="Tablilla de los tiempos pasados" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Resistencia a la magia (2). Adicionalmente, una vez por batalla podrá dispersar automáticamente un hechizo enemigo cuando sea lanzado; no puede dispersar hechizos lanzados con Fuerza irresistible (este efecto es equivalente al del Pergamino de dispersión de magia).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Resistencia a la magia (2). Adicionalmente, una vez por batalla podrá dispersar automáticamente un hechizo enemigo cuando sea lanzado; no puede dispersar hechizos lanzados con Fuerza irresistible (este efecto es equivalente al del Pergamino de dispersión de magia).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7415,7 +7403,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="d9b2-20fa-0b24-3dc4" name="El cráneo de Murray" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El personaje causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El personaje causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7434,7 +7422,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="5de3-1414-f0a3-9f27" name="El catalejo de Mullet el chiflado" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Otorga a su portador la regla especial Francotirador. Además, al inicio de la fase de disparo, puede seleccionar una unidad o un personaje a 24” o menos y dentro de su línea de visión: el oponente deberá revelar todos sus objetos mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Otorga a su portador la regla especial Francotirador. Además, al inicio de la fase de disparo, puede seleccionar una unidad o un personaje a 24” o menos y dentro de su línea de visión: el oponente deberá revelar todos sus objetos mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7453,7 +7441,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="623e-a42d-0c54-7328" name="El medallón maldito" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El personaje obtiene las reglas especiales No muerto y Regeneración (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El personaje obtiene las reglas especiales No muerto y Regeneración (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7473,7 +7461,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="61bd-90e6-7cb1-d67d" name="Orbe de las profundidades" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse en la fase de disparo: designa un punto a una distancia máxima de 8” del lanzador. En ese punto aparece una unidad que consta de un Oficial Pirata Zombi equipado con Arma de mano, Armadura ligera y Sombrero Pirata, junto a 1D6+8 Piratas Zombi equipados con Arma de mano y Armadura ligera. Realiza este efecto del mismo modo que si hubiesen sido invocados por el hechizo Invocación de Nehek. Recuerda que no pueden aparecer trabados en combate cuerpo a cuerpo. La unidad convocada por el Orbe no cuenta dentro del límite de unidades invocadas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse en la fase de disparo: designa un punto a una distancia máxima de 8” del lanzador. En ese punto aparece una unidad que consta de un Oficial Pirata Zombi equipado con Arma de mano, Armadura ligera y Sombrero Pirata, junto a 1D6+8 Piratas Zombi equipados con Arma de mano y Armadura ligera. Realiza este efecto del mismo modo que si hubiesen sido invocados por el hechizo Invocación de Nehek. Recuerda que no pueden aparecer trabados en combate cuerpo a cuerpo. La unidad convocada por el Orbe no cuenta dentro del límite de unidades invocadas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7489,7 +7477,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="039b-3cd1-b1a9-aca0" name="Maletín del alquimista" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El maletín contiene tres pócimas. La miniatura equipada puede utilizar cualquiera de ellas al inicio de cualquier turno propio, y aplicará sus efectos hasta el inicio de su próximo turno:
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El maletín contiene tres pócimas. La miniatura equipada puede utilizar cualquiera de ellas al inicio de cualquier turno propio, y aplicará sus efectos hasta el inicio de su próximo turno:
 -Grog: el personaje obtiene un arma de aliento de F4 con la regla especial Ataques solo flamígeros.
 -Ron Ponzoñoso: el personaje obtiene un bonificador de +1F y la regla especial Ataques envenenados (solo en cuerpo a cuerpo). -Luz de Luna: el personaje podrá recuperar una herida sufrida previamente durante la batalla, y obtendrá un bonificador de +2 en sus tiradas para canalizar dados de energía o dispersión.</characteristic>
               </characteristics>
@@ -7515,7 +7503,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="adac-1ba0-7482-8c17" name="Bandera del abordaje" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad causan Terror y tienen la regla especial Odio (¡todos los enemigos!). Además, todas las unidades amigas a 12” o menos del portador podrán repetir sus tiradas fallidas para cargar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad causan Terror y tienen la regla especial Odio (¡todos los enemigos!). Además, todas las unidades amigas a 12” o menos del portador podrán repetir sus tiradas fallidas para cargar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7543,7 +7531,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="bfb5-64c4-7d39-445e" name="Calavera perdida" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Cada vez que un hechicero (tanto amigo como enemigo) a 18&quot; o menos del portador canalice con éxito un dado de energía o dispersión, puedes restaurar un Pirata Zombi que hubiese sido retirado previamente como baja en la unidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Cada vez que un hechicero (tanto amigo como enemigo) a 18&quot; o menos del portador canalice con éxito un dado de energía o dispersión, puedes restaurar un Pirata Zombi que hubiese sido retirado previamente como baja en la unidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7559,7 +7547,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="8773-8f29-d433-5998" name="El muerto colgado" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Si el portador o su unidad pierden un combate, sufrirán una herida menos si fallan su chequeo de desmoralización por la regla especial Inestables.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Si el portador o su unidad pierden un combate, sufrirán una herida menos si fallan su chequeo de desmoralización por la regla especial Inestables.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7575,7 +7563,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="92fd-f4b5-b954-69a4" name="El cofre del muerto" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Puede utilizarse al inicio de cualquier fase de combate cuerpo a cuerpo. Hasta el final de dicha fase, tanto el portador como todas las miniaturas de su unidad obtienen +1A y la regla especial Regeneración (6+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Puede utilizarse al inicio de cualquier fase de combate cuerpo a cuerpo. Hasta el final de dicha fase, tanto el portador como todas las miniaturas de su unidad obtienen +1A y la regla especial Regeneración (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7591,7 +7579,7 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="1c8a-2b6a-0212-76c0" name="La bandera del navío" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Las unidades enemigas en contacto peana con peana con el portador o su unidad no podrán aplicar bonificadores al resultado del combate por contar con Portaestandarte o Portaestandarte de batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Las unidades enemigas en contacto peana con peana con el portador o su unidad no podrán aplicar bonificadores al resultado del combate por contar con Portaestandarte o Portaestandarte de batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7607,12 +7595,36 @@ aullante, más abajo).</description>
           <profiles>
             <profile id="6f93-0a4c-9bd2-91a1" name="Banderola de salvas" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El personaje y su unidad obtienen un bonificador de +1 en sus tiradas para impactar con armas de proyectiles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El personaje y su unidad obtienen un bonificador de +1 en sus tiradas para impactar con armas de proyectiles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="7ed3-05c2-effe-f17b" name="Sobrenombres de alta mar. Hechiceros" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="54b4-950d-d4cb-df1b" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a0e6-bfb9-ab1a-d87c" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="43a7-5ca0-84dc-2b4b" name="El brujo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f93e-1e83-d56b-2396" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="bc7d-dea3-a63d-a2d3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="ff78-aef3-3bff-6148" name="El brujo" hidden="false" typeId="a48c-3978-0259-0488" typeName="Sobrenombre de alta mar">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="d7ba-55a9-6067-677f">Sólo hechiceros. El personaje conoce un hechizo adicional; además, obtiene un bonificador de +2 en sus tiradas para Canalizar dados de energía y dispersión.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -7642,7 +7654,7 @@ aullante, más abajo).</description>
       <characteristics>
         <characteristic name="Rango" typeId="52616e676523232344415441232323">8&quot;</characteristic>
         <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">3</characteristic>
-        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Disparo rápido, Arrojadiza, Poder de penetración.</characteristic>
+        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Disparo rápido, Arrojadiza, Poder de penetración, Explosión (Un impacto de Bomba de mano en una unidad con Potencia de unidad superior a 2 causa 1D3 impactos en dicha unidad; ten en cuenta que no se trata de impactos múltiples, los impactos son causados a la unidad y no a una misma miniatura).</characteristic>
       </characteristics>
     </profile>
     <profile id="9729-f0fb-f979-c874" name="Falconete" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
@@ -7663,7 +7675,7 @@ aullante, más abajo).</description>
       <characteristics>
         <characteristic name="Rango" typeId="52616e676523232344415441232323">24&quot;</characteristic>
         <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">4</characteristic>
-        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Mover o disparar, Poder de penetración, Disparos múltiples (2), Metralla (ignoran el penalizador por Disparos múltiples cuando disparan a corta distancia y cuando aguantan y disparan.</characteristic>
+        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Mover o disparar, Poder de penetración, Disparos múltiples (2), Metralla (Los trabucos abisales ignoran los penalizadores por Cobertura ligera cuando disparan, y tan sólo aplican un penalizador de -1 para impactar por Cobertura pesada en lugar del -2 habitual).</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="619e-e9da-a8e8-4f6f" name="Kurgan" revision="408" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="619e-e9da-a8e8-4f6f" name="Kurgan" revision="413" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="1902-3bc7-65bd-b65b" name="Recompensa del caos">
       <characteristicTypes>
-        <characteristicType id="6cc9-3fc9-1077-bea6" name="Propiedades mágicas"/>
+        <characteristicType id="6cc9-3fc9-1077-bea6" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -671,8 +671,8 @@
       <selectionEntries>
         <selectionEntry id="db8f-b4e8-679f-1d1d" name="Exploradores kurgan" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="40.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5e6-9c8c-82a6-c3d0" type="max"/>
-            <constraint field="selections" scope="parent" value="10.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af3-37a8-cced-0354" type="min"/>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d5e6-9c8c-82a6-c3d0" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2af3-37a8-cced-0354" type="min"/>
           </constraints>
           <profiles>
             <profile id="7623-e52d-05e3-4be4" name="Explorador kurgan" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
@@ -5704,6 +5704,7 @@ D6 	Resultado (Agarrar y...)
                     </modifier>
                   </modifiers>
                 </entryLink>
+                <entryLink id="aa2f-79cd-dc3b-9262" name="Estandartes mágicos. Kurgan" hidden="false" collective="false" import="true" targetId="d252-98a2-1212-6e48" type="selectionEntryGroup"/>
               </entryLinks>
             </selectionEntryGroup>
           </selectionEntryGroups>
@@ -6712,7 +6713,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="5544-abf4-a1e0-4623" name="Bastón negro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Talenchar conoce 1D3+1 hechizos adicionales. Además, puede guardar en el bastón un dado de energía o dispersión al final de cada fase de magia para utilizarlo en una fase de magia posterior.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Talenchar conoce 1D3+1 hechizos adicionales. Además, puede guardar en el bastón un dado de energía o dispersión al final de cada fase de magia para utilizarlo en una fase de magia posterior.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6791,7 +6792,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="18bf-60e8-f20b-6a43" name="Ojo siniestro de Tzeentch" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Esta recompensa es única, y sólo Talenchar puede poseerla. El Ojo proporciona a Talenchar una tirada de salvación especial de 5+ (que combinada con su Marca de Tzeentch aumenta a 4+), y la regla especial Resistencia mágica (2). Además, Talenchar es Inmune a veneno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Esta recompensa es única, y sólo Talenchar puede poseerla. El Ojo proporciona a Talenchar una tirada de salvación especial de 5+ (que combinada con su Marca de Tzeentch aumenta a 4+), y la regla especial Resistencia mágica (2). Además, Talenchar es Inmune a veneno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6874,7 +6875,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="22b8-c961-e1c9-2eb7" name="Decapitadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los golpes realizados con esta espada obtendrán la regla especial Golpe letal. Los impactos que obtengan un resultado natural de 5 también se considerarán Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los golpes realizados con esta espada obtendrán la regla especial Golpe letal. Los impactos que obtengan un resultado natural de 5 también se considerarán Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6974,7 +6975,7 @@ D6 	Resultado (Agarrar y...)
               </rules>
               <infoLinks>
                 <infoLink id="aa94-bfdd-74c8-962e" name="Inmune al veneno" hidden="false" targetId="0338-1cb0-0dc1-2892" type="rule"/>
-                <infoLink id="8e5e-1b08-1cf0-9bbf" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+                <infoLink id="8e5e-1b08-1cf0-9bbf" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
                 <infoLink id="1b6b-038f-7a73-1e5c" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
                 <infoLink id="67e4-29be-5a77-b4ea" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
               </infoLinks>
@@ -7119,7 +7120,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="85aa-1e80-dbdc-4604" name="Maza del cuervo" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos con la Maza del Cuervo siempre hieren con un resultado de 4+ (sin importar la Resistencia del objetivo), y tienen la regla especial Poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos con la Maza del Cuervo siempre hieren con un resultado de 4+ (sin importar la Resistencia del objetivo), y tienen la regla especial Poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7189,7 +7190,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="bf85-4d05-3ae7-8c29" name="Garra del cuervo" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El ataque adicional indicado en el perfil de Volrik es su ataque con la garra: esta se resuelve con un bonificador de +1 a sus tiradas para impactar y herir, y tiene la regla especial Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El ataque adicional indicado en el perfil de Volrik es su ataque con la garra: esta se resuelve con un bonificador de +1 a sus tiradas para impactar y herir, y tiene la regla especial Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7208,7 +7209,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="f4c1-1f11-ea24-355e" name="Llamas del destino" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Al inicio de cada ronda de combate cuerpo a cuerpo, todas las miniaturas (amigas y enemiga) en contacto con Volrik sufren un impacto de F4 con la regla especial Ataques sólo flamígeros; estas bajas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Al inicio de cada ronda de combate cuerpo a cuerpo, todas las miniaturas (amigas y enemiga) en contacto con Volrik sufren un impacto de F4 con la regla especial Ataques sólo flamígeros; estas bajas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7333,7 +7334,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="93e3-3689-0bcb-908b" name="Cosechador de almas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mayal. Valnir tiene siempre un bonificador de +2 a la fuerza (no sólo en el primer turno de combate como el resto de mayales). Además, por cada 4 heridas causadas por Valnir durante la batalla con el Cosechador, podrá tirar inmediatamente en la tabla del Ojo de los dioses para representar la energía drenada por el Cosechador de almas y transmitida a Valnir (repite los resultados de 11, 12, 13, 14 y 15). Estas tiradas son adicionales a las provocadas por la regla El Ojo de los Dioses.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mayal. Valnir tiene siempre un bonificador de +2 a la fuerza (no sólo en el primer turno de combate como el resto de mayales). Además, por cada 4 heridas causadas por Valnir durante la batalla con el Cosechador, podrá tirar inmediatamente en la tabla del Ojo de los dioses para representar la energía drenada por el Cosechador de almas y transmitida a Valnir (repite los resultados de 11, 12, 13, 14 y 15). Estas tiradas son adicionales a las provocadas por la regla El Ojo de los Dioses.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7402,7 +7403,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="e2b5-6c5d-dca5-54ba" name="Carne eterna" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Valnir tiene la regla especial Regeneración (4+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Valnir tiene la regla especial Regeneración (4+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7500,7 +7501,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="f2b9-e1db-6553-50f7" name="Cazacampeones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cazacampeones proporciona a Wulfrik un bonificador de +2F en combate cuerpo a cuerpo. Además, si se encuentra combatiendo en un desafío, Wulfrik podrá repetir todas sus tiradas para impactar fallidas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cazacampeones proporciona a Wulfrik un bonificador de +2F en combate cuerpo a cuerpo. Además, si se encuentra combatiendo en un desafío, Wulfrik podrá repetir todas sus tiradas para impactar fallidas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7581,7 +7582,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="afbe-1e5a-f70e-1907" name="Don de lenguas" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Los Desafíos que lance Wulfrik no podrán ser rechazados: el oponente debe elegir uno de sus personajes u oficiales y combatir en desafío con Wulfrik.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Los Desafíos que lance Wulfrik no podrán ser rechazados: el oponente debe elegir uno de sus personajes u oficiales y combatir en desafío con Wulfrik.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7672,7 +7673,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="49ac-4754-ca37-3f04" name="Bastón de la víbora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga la regla especial Golpe letal, y una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga la regla especial Golpe letal, y una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7704,7 +7705,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="402b-5eab-3676-ed01" name="Dientes de Schalkain" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puede usarse al sufrir Sayl una disfunción mágica, antes de tirar los dados en la tabla de disfunciones. El efecto de la disfunción lo sufrirá un hechicero de tu elección (amigo o enemigo) a 24&quot; o menos de Sayl.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puede usarse al sufrir Sayl una disfunción mágica, antes de tirar los dados en la tabla de disfunciones. El efecto de la disfunción lo sufrirá un hechicero de tu elección (amigo o enemigo) a 24&quot; o menos de Sayl.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7928,7 +7929,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="189d-b5cf-ddbd-f86f" name="Espada del olvido" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura que sufra heridas a causa de la Espada del Olvido deberá realizar inmediatamente un chequeo de Resistencia por cada herida sufrida (si sobrevive a las heridas). Si falla un chequeo, se transformará en un Engendro del Caos (retira la miniatura como baja y reemplázala por un engendro del Caos bajo tu control. Si la miniatura estaba unida a una unidad, abandonará la unidad inmediatamente y pasará a estar trabado en combate cuerpo a cuerpo con su antigua unidad).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura que sufra heridas a causa de la Espada del Olvido deberá realizar inmediatamente un chequeo de Resistencia por cada herida sufrida (si sobrevive a las heridas). Si falla un chequeo, se transformará en un Engendro del Caos (retira la miniatura como baja y reemplázala por un engendro del Caos bajo tu control. Si la miniatura estaba unida a una unidad, abandonará la unidad inmediatamente y pasará a estar trabado en combate cuerpo a cuerpo con su antigua unidad).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7959,7 +7960,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="2ee8-2f45-ed49-6baf" name="Escudo rúnico del caos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Todas las armas mágicas y rúnicas de todos los enemigos en contacto peana con peana con el portador se considerarán armas mundanas de su mismo tipo mientras permanezcan en contacto peana con peana con el portador.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Todas las armas mágicas y rúnicas de todos los enemigos en contacto peana con peana con el portador se considerarán armas mundanas de su mismo tipo mientras permanezcan en contacto peana con peana con el portador.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8028,7 +8029,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="7998-a496-0931-aa40" name="Condenación eterna" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Antes del inicio de la batalla deberá generarse aleatoriamente el perfil de atributos de Mordrek (los atributos de HA, F, R e I), en presencia del oponente. Deberán efectuarse las tiradas correspondientes y modificar los atributos tal y como se indica en su perfil. Además, debe repetirse la tirada de uno de estos atributos al inicio de cada uno de tus turnos (determinada aleatoriamente). El jugador debe aceptar el resultado de la nueva tirada. No es posible repetir esta tirada. Cualquier bonificador a esos atributos obtenido por las tiradas en la tabla del Ojo de los Dioses permanecen aunque el atributo cambie. Esta recompensa del Caos no puede ser anulada, destruida o afectada por ninguna regla especial, objeto mágico o hechizo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Antes del inicio de la batalla deberá generarse aleatoriamente el perfil de atributos de Mordrek (los atributos de HA, F, R e I), en presencia del oponente. Deberán efectuarse las tiradas correspondientes y modificar los atributos tal y como se indica en su perfil. Además, debe repetirse la tirada de uno de estos atributos al inicio de cada uno de tus turnos (determinada aleatoriamente). El jugador debe aceptar el resultado de la nueva tirada. No es posible repetir esta tirada. Cualquier bonificador a esos atributos obtenido por las tiradas en la tabla del Ojo de los Dioses permanecen aunque el atributo cambie. Esta recompensa del Caos no puede ser anulada, destruida o afectada por ninguna regla especial, objeto mágico o hechizo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8195,7 +8196,7 @@ Terror.
               <profiles>
                 <profile id="94d6-08ee-ab60-eaf6" name="Carne corrupta" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Todos los impactos contra Kayzk se resuelven con un penalizador de -1 en su tirada para herir, a menos que tengan Ataques flamígeros o Ataques sólo flamígeros. Esta recompensa es única, y sólo Kayzk puede poseerla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Todos los impactos contra Kayzk se resuelven con un penalizador de -1 en su tirada para herir, a menos que tengan Ataques flamígeros o Ataques sólo flamígeros. Esta recompensa es única, y sólo Kayzk puede poseerla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8267,7 +8268,7 @@ Terror.
               <profiles>
                 <profile id="3385-df33-df15-7167" name="Espada del limo negro" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques con esta espada se resuelven con +1F y son Ataques envenenados; además, los resultados de 6 para impactar se resuelven con heridas múltiples (2). Esto no afecta a miniaturas Inmunes al veneno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques con esta espada se resuelven con +1F y son Ataques envenenados; además, los resultados de 6 para impactar se resuelven con heridas múltiples (2). Esto no afecta a miniaturas Inmunes al veneno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9365,7 +9366,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="68cb-f303-4a12-e070" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9381,7 +9382,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="a4f8-e390-c7fb-6441" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9554,7 +9555,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="50d2-5c62-0baf-d620" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9598,7 +9599,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="3879-724f-9c0c-7216" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9640,7 +9641,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                   <profiles>
                     <profile id="ed3f-5f3d-2960-4316" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9844,7 +9845,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="bf8f-adf4-3508-b947" name="Daga del desollamiento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada por esta daga Darkhoth recuperará una de las heridas que hubiese perdido previamente durante la batalla. En combate Darkhoth combinará varios golpes de sus Daga con uno de su Mangual, efectuando un total de 3 ataques con su Daga (4 incluyendo el ataque adicional de furia asesina) y uno con su mangual.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada por esta daga Darkhoth recuperará una de las heridas que hubiese perdido previamente durante la batalla. En combate Darkhoth combinará varios golpes de sus Daga con uno de su Mangual, efectuando un total de 3 ataques con su Daga (4 incluyendo el ataque adicional de furia asesina) y uno con su mangual.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9863,7 +9864,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="de29-55e8-8378-561d" name="La fortaleza roja" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Mientras Darkhoth viva, él y los Discípulos no perderán la Furia asesina al ser derrotados en combate cuerpo a cuerpo y sus armas perderán la regla especial Agotamiento.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Mientras Darkhoth viva, él y los Discípulos no perderán la Furia asesina al ser derrotados en combate cuerpo a cuerpo y sus armas perderán la regla especial Agotamiento.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10315,6 +10316,9 @@ D6	Efecto
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="0251-89a4-4b17-9c5d" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -10688,7 +10692,7 @@ D6	Efecto
                   <profiles>
                     <profile id="c368-feb3-7bd5-5811" name="Pellejo de Wulfag" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10956,7 +10960,7 @@ D6	Efecto
                   <profiles>
                     <profile id="3910-564e-fec0-5664" name="Estandarte de Karad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11178,7 +11182,7 @@ D6	Efecto
                   <profiles>
                     <profile id="d8ed-62b3-6f9c-1283" name="Estandarte de la tribu del oso" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11751,7 +11755,7 @@ D6	Efecto
               <profiles>
                 <profile id="26ce-f388-c02d-1e38" name="Sello de Uzkulak" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12099,7 +12103,7 @@ D6	Efecto
               <profiles>
                 <profile id="96b4-1809-8f8c-978c" name="Cuerno de la tempestad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene el hechizo Tormenta de Ceniza del Saber de Hashut.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene el hechizo Tormenta de Ceniza del Saber de Hashut.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12281,7 +12285,7 @@ D6	Efecto
               <profiles>
                 <profile id="9fbb-59ad-2a5d-b2d8" name="Mordisco del dios águila" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12548,7 +12552,7 @@ D6	Efecto
               <profiles>
                 <profile id="5d18-44e6-f7a8-ce49" name="Macana de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12630,7 +12634,7 @@ D6	Efecto
                   <profiles>
                     <profile id="f593-d61a-688f-217a" name="Estandarte emplumado de Skeggi" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12959,7 +12963,7 @@ D6 Tabla de animosidad hobgoblin
               <profiles>
                 <profile id="2f9e-22ac-4b20-788b" name="Capa del gran lobo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13191,6 +13195,9 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="9031-88ac-77e7-f9f9" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="95.0"/>
           </costs>
@@ -13999,7 +14006,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="53a7-5b99-2083-9856" name="Corona del caos" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Todas las unidades amigas a 12” o menos del personaje se considerarán Tozudas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Todas las unidades amigas a 12” o menos del personaje se considerarán Tozudas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14018,7 +14025,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="a601-192e-e142-b706" name="Manto del caos" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Todas las tiradas para herir contra el portador fallarán si se obtiene un resultado de 1, 2 ó 3 en la tirada; esto no afecta a ataques sin valor de Fuerza o que hieran automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Todas las tiradas para herir contra el portador fallarán si se obtiene un resultado de 1, 2 ó 3 en la tirada; esto no afecta a ataques sin valor de Fuerza o que hieran automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14034,7 +14041,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="88a2-bc14-1cf9-82c4" name="Esplendor diabólico" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Todos los enemigos a 6” o menos del Paladín tendrán un penalizador de -1 a su Liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Todos los enemigos a 6” o menos del Paladín tendrán un penalizador de -1 a su Liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14050,7 +14057,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4c0c-7aa8-f326-15d8" name="Fuerza mortífera" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Aumenta el atributo de Fuerza del paladín en +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Aumenta el atributo de Fuerza del paladín en +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14066,7 +14073,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="c033-fc64-5760-0f04" name="Muchos brazos" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El atributo de Ataques del Paladín aumenta en +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El atributo de Ataques del Paladín aumenta en +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14082,7 +14089,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="7dd3-294f-9014-27c4" name="Apariencia horripilante" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El personaje causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El personaje causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14101,7 +14108,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="7631-9e4e-7458-225f" name="Cola maza" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El guerrero obtiene un ataque adicional en combate cuerpo a cuerpo, que se resolverá siempre con su propia HA e I y Fuerza 5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El guerrero obtiene un ataque adicional en combate cuerpo a cuerpo, que se resolverá siempre con su propia HA e I y Fuerza 5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14117,7 +14124,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="6e61-512d-71ed-0b69" name="Chillido infernal" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El Chillido infernal se considera un ataque de disparo que su portador puede utilizar cada fase de disparo propia. Tiene un alcance de 8”, e impacta siempre automáticamente, causando 2D6 impactos de Fuerza 1 sin tirada de salvación por armadura. El Chillido infernal puede utilizarse para Aguantar y disparar (no ha de tirarse para impactar, pero sigue el resto de reglas habituales para Aguantar y disparar), e incluso puede utilizarse si el Paladín está trabado en combate cuerpo a cuerpo, aunque en este caso sólo podrá utilizarse contra una unidad trabada en combate con el Paladín.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El Chillido infernal se considera un ataque de disparo que su portador puede utilizar cada fase de disparo propia. Tiene un alcance de 8”, e impacta siempre automáticamente, causando 2D6 impactos de Fuerza 1 sin tirada de salvación por armadura. El Chillido infernal puede utilizarse para Aguantar y disparar (no ha de tirarse para impactar, pero sigue el resto de reglas habituales para Aguantar y disparar), e incluso puede utilizarse si el Paladín está trabado en combate cuerpo a cuerpo, aunque en este caso sólo podrá utilizarse contra una unidad trabada en combate con el Paladín.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14133,7 +14140,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="924d-26dc-6497-880a" name="Exhudación brumosa" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Todos los disparos contra el portador y su unidad tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Todos los disparos contra el portador y su unidad tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14149,7 +14156,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4756-afb4-095a-3890" name="Pinchos de hierro" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Cualquier enemigo que ataque al personaje perderá todos los bonos por carga de sus armas, objetos mágicos y/o reglas especiales (incluyendo el +1 I).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Cualquier enemigo que ataque al personaje perderá todos los bonos por carga de sus armas, objetos mágicos y/o reglas especiales (incluyendo el +1 I).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14165,7 +14172,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="0353-b8e2-6da2-b21d" name="Aliento de fuego" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene un Arma de aliento de Fuerza 3 con la regla especial Ataques sólo flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene un Arma de aliento de Fuerza 3 con la regla especial Ataques sólo flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14189,7 +14196,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="a529-8c6b-c500-ba9d" name="Cuerpo ardiente" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene las reglas especiales Ataques flamígeros e Inmune a fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene las reglas especiales Ataques flamígeros e Inmune a fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14209,7 +14216,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="6f16-afe8-1678-31e8" name="Esencia demoníaca" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene una tirada de salvación especial por aura demoníaca de 5+ (o +1 a su Aura demoníaca si ya disponía de una) contra ataques no mágicos, y se verá afectado por todos aquellos hechizos o efectos que afecten a demonios.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene una tirada de salvación especial por aura demoníaca de 5+ (o +1 a su Aura demoníaca si ya disponía de una) contra ataques no mágicos, y se verá afectado por todos aquellos hechizos o efectos que afecten a demonios.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14228,7 +14235,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="d413-3f75-ba13-9cc4" name="Grandes cuernos" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene la regla especial Impactos por carga (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene la regla especial Impactos por carga (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14247,7 +14254,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="ff2c-99a4-90e7-3095" name="Mordisco venenoso" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene un ataque adicional que se resolverá con su F básica, Ataques envenenados y Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene un ataque adicional que se resolverá con su F básica, Ataques envenenados y Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14267,7 +14274,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="44d6-5a75-aee0-f3c7" name="Piel de hierro" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene la regla especial Piel escamosa (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene la regla especial Piel escamosa (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14286,7 +14293,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="39d6-9850-9830-8629" name="Regeneración" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene la regla especial Regeneración (5+), o +1 a su tirada de Regeneración si ya disponía de una.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El Paladín obtiene la regla especial Regeneración (5+), o +1 a su tirada de Regeneración si ya disponía de una.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14305,7 +14312,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="7a83-644c-80a1-3777" name="Resistencia de Aetyr" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene Resistencia mágica (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene Resistencia mágica (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14324,7 +14331,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="2020-98a8-d138-3cb6" name="Augurio divino" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Al inicio de la batalla, tras el despliegue, tira 1D3: ese será el número de tiradas que pueda repetir el personaje durante la partida. Puede tratarse de tiradas para impactar, para herir, salvaciones por armadura o especiales, chequeos de atributo (incluyendo de Liderazgo), tiradas de regeneración o dados de energía o dispersión.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Al inicio de la batalla, tras el despliegue, tira 1D3: ese será el número de tiradas que pueda repetir el personaje durante la partida. Puede tratarse de tiradas para impactar, para herir, salvaciones por armadura o especiales, chequeos de atributo (incluyendo de Liderazgo), tiradas de regeneración o dados de energía o dispersión.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14348,7 +14355,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="0cf8-a2ae-a962-7bb7" name="Garras afiladas" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene +1F y Poder de penetración en sus ataques en combate cuerpo a cuerpo; las garras cuentan como armas emparejadas (lo que le proporciona también +1A) pero el personaje no puede llevar armas mundanas o mágicas ni escudos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">El paladín obtiene +1F y Poder de penetración en sus ataques en combate cuerpo a cuerpo; las garras cuentan como armas emparejadas (lo que le proporciona también +1A) pero el personaje no puede llevar armas mundanas o mágicas ni escudos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14375,7 +14382,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="765c-3560-49e0-e14a" name="Hemónculo" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros. Una vez por fase de magia, tras haber lanzado los dados para lanzar un hechizo, el hechicero puede declarar que lo utiliza para aumentar el valor de su tirada de lanzamiento en +1D3. Si lo hace, sufrirá Estupidez durante su siguiente turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros. Una vez por fase de magia, tras haber lanzado los dados para lanzar un hechizo, el hechicero puede declarar que lo utiliza para aumentar el valor de su tirada de lanzamiento en +1D3. Si lo hace, sufrirá Estupidez durante su siguiente turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14394,7 +14401,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4af9-2d53-398e-9f03" name="Visión del Caos" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros. El personaje obtiene un bonificador de +2 a todas sus tiradas de Canalizar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros. El personaje obtiene un bonificador de +2 a todas sus tiradas de Canalizar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14418,7 +14425,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="b02a-5062-89a0-30cd" name="Almizcle soporífero" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba) Esto no afecta a demonios, no muertos o miniaturas con la marca de Slaanesh.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba) Esto no afecta a demonios, no muertos o miniaturas con la marca de Slaanesh.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14434,7 +14441,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="0aa1-d303-b1d5-21ee" name="Fascinación de Slaanesh" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. Todos los oponentes en combate contra el Paladín tendrán un penalizador de -1 para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. Todos los oponentes en combate contra el Paladín tendrán un penalizador de -1 para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14450,7 +14457,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="0981-201a-f173-f1de" name="Alabanza de Khorne" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. El paladín puede realizar dos ataques adicionales en combate cuerpo a cuerpo, que se resolverán con su valor de F y la regla especial Poder de penetración.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. El paladín puede realizar dos ataques adicionales en combate cuerpo a cuerpo, que se resolverán con su valor de F y la regla especial Poder de penetración.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14469,7 +14476,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="8e95-4543-3960-5f7c" name="Rapidez de Slaanesh" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. El Paladín duplica su atributo de Iniciativa, hasta un máximo de 10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. El Paladín duplica su atributo de Iniciativa, hasta un máximo de 10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14485,7 +14492,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="f691-b75d-3dd2-28c2" name="Mirada de Slaanesh" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. Al inicio de cada ronda de combate cuerpo a cuerpo, elige una miniatura enemiga en contacto peana con peana con el Paladín; tendrá -1 Ataque en esa ronda de cuerpo a cuerpo (con un mínimo de 1 Ataque).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Slaanesh. Al inicio de cada ronda de combate cuerpo a cuerpo, elige una miniatura enemiga en contacto peana con peana con el Paladín; tendrá -1 Ataque en esa ronda de cuerpo a cuerpo (con un mínimo de 1 Ataque).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14509,7 +14516,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="c0e1-5332-28ec-50ef" name="Collar de Khorne" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene Resistencia mágica (3) y una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene Resistencia mágica (3) y una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14528,7 +14535,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="0838-2dca-b1f9-b91a" name="Furia de batalla de Khorne" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El paladín obtiene +1 Ataque y la regla especial Carga devastadora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El paladín obtiene +1 Ataque y la regla especial Carga devastadora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14547,7 +14554,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="7d10-1ea3-ed3a-d583" name="Alabanza de Khorne" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El paladín puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El paladín puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14563,7 +14570,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="2cd2-9874-8ea7-65cd" name="Hacha de Khorne" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene la regla especial Golpe letal en sus ataques cuerpo a cuerpo, aunque no podrá utilizar otras armas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene la regla especial Golpe letal en sus ataques cuerpo a cuerpo, aunque no podrá utilizar otras armas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14582,7 +14589,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="0a54-7a65-4e6e-76f6" name="Piel de bronce" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene la regla especial Piel escamosa (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene la regla especial Piel escamosa (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14609,7 +14616,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="b81a-bd99-7783-21ac" name="Tamaño descomunal" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Resistencia, pero también un -1 a su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Resistencia, pero también un -1 a su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14625,7 +14632,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="98ae-d93d-b55e-9e45" name="Vigor de Nurgle" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Herida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Herida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14641,7 +14648,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="5622-5cc6-67ea-2551" name="Florecimiento mórbido" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene la regla especial Regeneración (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene la regla especial Regeneración (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14660,7 +14667,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="539b-d38e-0adf-734c" name="Vómito de corrupción" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene un Arma de aliento de F3 que no permite tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene un Arma de aliento de F3 que no permite tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14681,7 +14688,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="9da7-ac8d-f4b8-773a" name="Putrefacción de Nurgle" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. Al inicio de cada ronda de combate cuerpo a cuerpo, todas las miniaturas (amigas y enemigas) que no tengan la Marca de Nurgle (o sean demonios de Nurgle o skaven del clan Pestilens) sufrirán una herida sin tirada de salvación con armadura con un resultado de 6 en 1D6 (tira por cada miniatura en contacto).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Nurgle. Al inicio de cada ronda de combate cuerpo a cuerpo, todas las miniaturas (amigas y enemigas) que no tengan la Marca de Nurgle (o sean demonios de Nurgle o skaven del clan Pestilens) sufrirán una herida sin tirada de salvación con armadura con un resultado de 6 en 1D6 (tira por cada miniatura en contacto).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14705,7 +14712,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4f5f-78c3-7f45-1b3a" name="Ojo de Tzeentch" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Tzeentch. El paladín podrá repetir todas sus tiradas fallidas para impactar, tanto en combate cuerpo a cuerpo como con proyectiles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Tzeentch. El paladín podrá repetir todas sus tiradas fallidas para impactar, tanto en combate cuerpo a cuerpo como con proyectiles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14721,7 +14728,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="2699-4188-9dbe-ab75" name="Voluntad de Tzeentch" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Tzeentch. El Paladín genera un dado de energía adicional en cada fase de magia propia, que puede ser utilizado por cualquier personaje con la Marca de Tzeentch.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Tzeentch. El Paladín genera un dado de energía adicional en cada fase de magia propia, que puede ser utilizado por cualquier personaje con la Marca de Tzeentch.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14737,7 +14744,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="fbcb-4144-b1f3-2aa0" name="Fortuna de Tzeentch" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Tzeentch. Una vez por turno de jugador, el Paladín puede repetir una tirada de 1D6. Puede ser una tirada para impactar, herir, salvación (por armadura o especial) o un chequeo de atributo (excepto de Liderazgo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo miniaturas con la Marca de Tzeentch. Una vez por turno de jugador, el Paladín puede repetir una tirada de 1D6. Puede ser una tirada para impactar, herir, salvación (por armadura o especial) o un chequeo de atributo (excepto de Liderazgo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14761,7 +14768,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="c4d1-0d2d-e874-33fb" name="Maestro de la hechicería" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros con la Marca de Tzeentch. El hechicero conoce un hechizo adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros con la Marca de Tzeentch. El hechicero conoce un hechizo adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14777,7 +14784,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="3e95-33cb-1838-1b98" name="Destino de Tzeentch" hidden="false" typeId="1902-3bc7-65bd-b65b" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros con la Marca de Tzeentch. El hechicero puede ignorar la primera Disfunción mágica que sufra durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6cc9-3fc9-1077-bea6">Sólo hechiceros con la Marca de Tzeentch. El hechicero puede ignorar la primera Disfunción mágica que sufra durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14801,7 +14808,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="f5f7-ecd3-a673-84bb" name="Mandoble berserker" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Cada vez que el portador ataque en combate cuerpo a cuerpo, puede efectuar 1D6 ataques adicionales (tira cada vez).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Cada vez que el portador ataque en combate cuerpo a cuerpo, puede efectuar 1D6 ataques adicionales (tira cada vez).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14820,7 +14827,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="d14f-39a9-7164-bcff" name="Hacha de la destrucción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Las heridas causadas por este arma no permiten tirada de salvación por armadura. Además, contra miniaturas de los ejércitos de las Fuerzas del Orden (Imperio, Bretonia, Kislev, Enanos, Altos elfos, Elfos silvanos, Nehekhara y Hombres lagarto) tiene la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Las heridas causadas por este arma no permiten tirada de salvación por armadura. Además, contra miniaturas de los ejércitos de las Fuerzas del Orden (Imperio, Bretonia, Kislev, Enanos, Altos elfos, Elfos silvanos, Nehekhara y Hombres lagarto) tiene la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14848,7 +14855,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="25a2-05ad-d8e5-3a8f" name="Espada rúnica del caos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene +1 a su Habilidad de Armas, +1 a su Fuerza y +1 Ataque.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene +1 a su Habilidad de Armas, +1 a su Fuerza y +1 Ataque.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14867,7 +14874,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="9426-ca21-1da2-999e" name="Espada de la llama infernal" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con la Espada de la llama infernal  tienen la regla especial Ataques flamígeros y niegan la tirada de salvación por armadura del oponente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con la Espada de la llama infernal  tienen la regla especial Ataques flamígeros y niegan la tirada de salvación por armadura del oponente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14887,7 +14894,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="f8b3-bc75-8f6c-4401" name="Espada de la condenación" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador puede repetir sus tiradas para herir en cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador puede repetir sus tiradas para herir en cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14914,7 +14921,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="77b4-3d8a-fc00-c83c" name="Hacha de Khorne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Khorne. Arma de mano. Proporciona +1 Fuerza y Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Khorne. Arma de mano. Proporciona +1 Fuerza y Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14942,7 +14949,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="2454-03ce-808d-c265" name="Maza de la inmundicia" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Nurgle. Arma de mano. Los ataques realizados con este arma tienen las reglas especiales Ataques envenenados y Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Nurgle. Arma de mano. Los ataques realizados con este arma tienen las reglas especiales Ataques envenenados y Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14971,7 +14978,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4812-9b11-6bfb-fe14" name="Látigo del tormento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la marca de Slaanesh. Arma de mano. Los impactos causados por este arma se resuelven con la regla especial Poder de Penetración. Además, el portador realiza un Ataque adicional por cada fila completa (incluyendo la primera) que tenga la unidad enemiga a la que esté atacando (si se encuentra trabado con dos o más unidades enemigas, utiliza el número de filas más alto de entre ellas).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la marca de Slaanesh. Arma de mano. Los impactos causados por este arma se resuelven con la regla especial Poder de Penetración. Además, el portador realiza un Ataque adicional por cada fila completa (incluyendo la primera) que tenga la unidad enemiga a la que esté atacando (si se encuentra trabado con dos o más unidades enemigas, utiliza el número de filas más alto de entre ellas).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14999,7 +15006,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="d41c-5254-39a7-2813" name="Espada llameante del cambio" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la marca de Tzeentch. Arma de mano. Proporciona un bonificador de +1 a las tiradas para impactar en combate cuerpo a cuerpo. Además, los enemigos que ataquen en combate cuerpo a cuerpo al portador tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la marca de Tzeentch. Arma de mano. Proporciona un bonificador de +1 a las tiradas para impactar en combate cuerpo a cuerpo. Además, los enemigos que ataquen en combate cuerpo a cuerpo al portador tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15027,7 +15034,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="089d-6f18-c09b-befd" name="Venablo siniestro" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza. Los impactos causados por el Venablo tienen la regla especial Golpe letal. Además, el venablo puede utilizarse para disparar como si fuese una jabalina con las reglas especiales Ataques mágicos y Golpe letal (el venablo vuelve a la mano del portador tras cada disparo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza. Los impactos causados por el Venablo tienen la regla especial Golpe letal. Además, el venablo puede utilizarse para disparar como si fuese una jabalina con las reglas especiales Ataques mágicos y Golpe letal (el venablo vuelve a la mano del portador tras cada disparo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15058,7 +15065,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4381-4789-d79e-f941" name="Hachas de la muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Hachas arrojadizas. Sus disparos tienen las reglas especiales Poder de penetración y Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Hachas arrojadizas. Sus disparos tienen las reglas especiales Poder de penetración y Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15087,7 +15094,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="97a9-3375-7f8a-f3af" name="Pellejos de Utiunja" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Proporciona a su portador la regla especial Piel escamosa (5+) y Regeneración (4+) Además, cada vez que el portador regenere exitosamente una herida, deberá realizar inmediatamente una tirada en la tabla del Ojo de los Dioses y aplicar el resultado sobre él inmediatamente (repite los resultados de 11, 12 y 13).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Proporciona a su portador la regla especial Piel escamosa (5+) y Regeneración (4+) Además, cada vez que el portador regenere exitosamente una herida, deberá realizar inmediatamente una tirada en la tabla del Ojo de los Dioses y aplicar el resultado sobre él inmediatamente (repite los resultados de 11, 12 y 13).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15115,7 +15122,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="8bc9-2c72-a7a5-114e" name="Armadura del caos. Armadura mágica" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (proporciona una tirada de salvación por armadura de 4+). Un hechicero puede tener una armadura del Caos y seguir lanzando hechizos. Puede elegirse para un brujo o gran brujo pese a que normalmente no puedan equiparse con armaduras mágicas. Tu ejército puede incluir varias copias de este objeto mágico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (proporciona una tirada de salvación por armadura de 4+). Un hechicero puede tener una armadura del Caos y seguir lanzando hechizos. Puede elegirse para un brujo o gran brujo pese a que normalmente no puedan equiparse con armaduras mágicas. Tu ejército puede incluir varias copias de este objeto mágico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15142,7 +15149,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="bc29-9641-f5a9-1184" name="Yelmo de los Aeslings" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (incrementa en +1 la tirada de salvación por armadura del portador). El portador tendrá una tirada de salvación especial de 4+ contra todos los Ataques mágicos y las heridas causadas por hechizos, así como Resistencia mágica (1). </characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (incrementa en +1 la tirada de salvación por armadura del portador). El portador tendrá una tirada de salvación especial de 4+ contra todos los Ataques mágicos y las heridas causadas por hechizos, así como Resistencia mágica (1). </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15161,7 +15168,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="bb87-7963-bbfe-252a" name="Pellejos de licántropo" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Proporciona a su portador las reglas especiales Regeneración (5+) y Furia asesina. Además, no perderá su furia asesina aunque sea derrotado en combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Proporciona a su portador las reglas especiales Regeneración (5+) y Furia asesina. Además, no perderá su furia asesina aunque sea derrotado en combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15182,7 +15189,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="80b2-eb4e-3417-5f56" name="Escudo del viento" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15201,7 +15208,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="4292-3b98-4430-ee9a" name="Coraza sangrienta" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Todos los impactos contra el portador tendrán un penalizador de -1 en su tirada para herir. No afecta a impactos sin un valor de F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Todos los impactos contra el portador tendrán un penalizador de -1 en su tirada para herir. No afecta a impactos sin un valor de F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15228,7 +15235,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="c444-eebf-2609-546c" name="Gema de la gran serpiente" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la marca de Slaanesh. Todos los enemigos que ataquen contra el portador en combate cuerpo a cuerpo verán su HA reducida a la mitad (redondeando fracciones hacia arriba) para esos ataques.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la marca de Slaanesh. Todos los enemigos que ataquen contra el portador en combate cuerpo a cuerpo verán su HA reducida a la mitad (redondeando fracciones hacia arriba) para esos ataques.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15252,7 +15259,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="aa94-bb2c-6c61-554c" name="Collar de Khorne" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la Marca de Khorne. Proporciona una tirada de salvación especial de 5+ y Resistencia mágica (3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la Marca de Khorne. Proporciona una tirada de salvación especial de 5+ y Resistencia mágica (3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15279,7 +15286,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="8a7d-ed7e-a643-d065" name="Pluma del gran águila" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la marca de Tzeentch. Al inicio de la batalla, tras el despliegue, tira 1D6 para determinar el efecto de la Pluma durante la batalla. Con un resultado de 1, la Pluma no tiene ningún efecto; con un resultado de 2- 3, proporciona una tirada de salvación especial de 6+; con un resultado de 4-5, proporciona una tirada de salvación especial de 5+; y con un resultado de 6, proporciona una tirada de salvación especial de 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la marca de Tzeentch. Al inicio de la batalla, tras el despliegue, tira 1D6 para determinar el efecto de la Pluma durante la batalla. Con un resultado de 1, la Pluma no tiene ningún efecto; con un resultado de 2- 3, proporciona una tirada de salvación especial de 6+; con un resultado de 4-5, proporciona una tirada de salvación especial de 5+; y con un resultado de 6, proporciona una tirada de salvación especial de 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15303,7 +15310,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="7694-c9a6-b620-01fe" name="Filacteria necrótica" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la Marca de Nurgle. El portador supera automáticamente todos sus chequeos de atributo (excepto los de Liderazgo). También es inmune a los efectos de los hechizos del Saber de Nurgle, el Saber de la Muerte y el Saber de plaga Skaven: no puede ser herido o afectado de ningún modo por hechizos de esos saberes (aunque eso no significa que disperse el hechizo: simplemente no se verá afectado).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la Marca de Nurgle. El portador supera automáticamente todos sus chequeos de atributo (excepto los de Liderazgo). También es inmune a los efectos de los hechizos del Saber de Nurgle, el Saber de la Muerte y el Saber de plaga Skaven: no puede ser herido o afectado de ningún modo por hechizos de esos saberes (aunque eso no significa que disperse el hechizo: simplemente no se verá afectado).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15327,7 +15334,7 @@ de problemas). Recuerda que puedes elegir que no entren al campo de batalla y es
           <profiles>
             <profile id="faa1-0d9b-62e0-5bbf" name="Tatuajes impíos" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Aura demoníaca (4+). Sin embargo, se
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Aura demoníaca (4+). Sin embargo, se
 verá afectado por aquellos objetos mágicos, hechizos o reglas especiales que
 afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
               </characteristics>
@@ -15356,7 +15363,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="556c-d4f3-ce4e-13d6" name="Familiar del Caos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechicero genera un dado adicional de energía o dispersión en cada fase de magia (según corresponda). Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechicero genera un dado adicional de energía o dispersión en cada fase de magia (según corresponda). Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15372,7 +15379,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="721d-c4ac-291a-7d9e" name="Cetro de la gran bestia del norte" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 3. Contiene el hechizo Forma salvaje de Wyssan, del Saber de las Bestias.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 3. Contiene el hechizo Forma salvaje de Wyssan, del Saber de las Bestias.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15388,7 +15395,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="4f70-bb1f-b9ff-4763" name="Vara demoníaca" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador conoce un hechizo adicional; además, le proporciona un bonificador de +1 en sus tiradas de lanzamiento de hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador conoce un hechizo adicional; además, le proporciona un bonificador de +1 en sus tiradas de lanzamiento de hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15404,7 +15411,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="5540-c7c5-a3ee-b336" name="Orbe de piedra divina" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Cada vez que el portador vaya a lanzar un hechizo, puede elegir generar un dado de energía adicional (usa un dado de color diferente) y tirarlo junto a los dados que desee para lanzar ese hechizo (debe gastar por lo menos un dado). Sin embargo, si en el dado adicional obtiene un resultado de 1, el portador sufre una herida automática sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Cada vez que el portador vaya a lanzar un hechizo, puede elegir generar un dado de energía adicional (usa un dado de color diferente) y tirarlo junto a los dados que desee para lanzar ese hechizo (debe gastar por lo menos un dado). Sin embargo, si en el dado adicional obtiene un resultado de 1, el portador sufre una herida automática sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15428,7 +15435,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="0c37-c931-208c-94b3" name="Máscara de la tribu del águila" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la marca de Tzeentch. El portador causa Terror. Además, la máscara es un Objeto portahechizos con nivel de energía 1D6+1; contiene un hechizo de maldición que puede lanzarse sobre una unidad enemiga a 18” o menos del lanzador y permanece un turno. Por la duración del conjuro, el valor de Liderazgo de todos los miembros de la unidad se verá reducido a la mitad (redondeando hacia arriba), y no pueden hacer uso de Presencia inspiradora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la marca de Tzeentch. El portador causa Terror. Además, la máscara es un Objeto portahechizos con nivel de energía 1D6+1; contiene un hechizo de maldición que puede lanzarse sobre una unidad enemiga a 18” o menos del lanzador y permanece un turno. Por la duración del conjuro, el valor de Liderazgo de todos los miembros de la unidad se verá reducido a la mitad (redondeando hacia arriba), y no pueden hacer uso de Presencia inspiradora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15452,7 +15459,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="c060-a522-5838-4bfb" name="Brebaje berserker" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al comienzo de cualquier fase de combate cuerpo a cuerpo. Hasta el final de la fase, el portador obtiene 1D6 Ataques adicionales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al comienzo de cualquier fase de combate cuerpo a cuerpo. Hasta el final de la fase, el portador obtiene 1D6 Ataques adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15468,7 +15475,7 @@ afecten especialmente a demonios o lo hagan de forma aumentada.</characteristic>
           <profiles>
             <profile id="ca91-d198-3e30-c6ed" name="Poción del Caos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El personaje puede beberla al inicio de la batalla, tras el despliegue. Tira 1D6 en la siguiente tabla:
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El personaje puede beberla al inicio de la batalla, tras el despliegue. Tira 1D6 en la siguiente tabla:
 D6 Poción del Caos
 1 Engendro del Caos: El personaje se transforma en un engendro del Caos con la marca apropiada. Si tu ejército incluye una unidad de engendros con la misma marca, puedes unirlo a ella.
 2 Fuerza demencial: obtiene +1 F y Estupidez.
@@ -15501,7 +15508,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="4ae0-9cba-2718-d803" name="Brazaletes de la brutalidad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 1D6. Contiene un hechizo de potenciación que puede lanzarse sobre una unidad amiga a 12” o menos del portador, y permanece un turno. Por la duración del conjuro, la unidad tendrá un bonificador de +1F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 1D6. Contiene un hechizo de potenciación que puede lanzarse sobre una unidad amiga a 12” o menos del portador, y permanece un turno. Por la duración del conjuro, la unidad tendrá un bonificador de +1F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15517,7 +15524,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="87a4-57a7-fcd6-28b2" name="Amuleto de piedra de disformidad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede repetir una tirada para impactar, herir, salvaciones, chequeos de atributo, canalizar, un único dado de energía o dispersión, o una tirada en la tabla de disfunciones mágicas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede repetir una tirada para impactar, herir, salvaciones, chequeos de atributo, canalizar, un único dado de energía o dispersión, o una tirada en la tabla de disfunciones mágicas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15533,7 +15540,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="7c72-6c35-c76b-5eaa" name="Favor de los Dioses" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador puede repetir las tiradas (suyas y de su unidad) en la tabla de El Ojo de los Dioses.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador puede repetir las tiradas (suyas y de su unidad) en la tabla de El Ojo de los Dioses.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15557,7 +15564,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="d1d8-2ce5-af08-89a1" name="Cuenco de Chron" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Khorne. Si el portador se une a una unidad de bárbaros del Caos o Jinetes bárbaros con el Tótem de Khorne, éstos obtendrán la regla especial Furia asesina (y no podrán perderla) mientras el personaje esté unido a ellos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Khorne. Si el portador se une a una unidad de bárbaros del Caos o Jinetes bárbaros con el Tótem de Khorne, éstos obtendrán la regla especial Furia asesina (y no podrán perderla) mientras el personaje esté unido a ellos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15584,7 +15591,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="7bf5-8b52-9908-73ab" name="Cráneos de muerte" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Nurgle. El portador puede utilizar los cráneos en cada fase de disparo si no está trabado en combate, aunque no para aguantar y disparar. Tiene un alcance máximo de 8”, y utiliza la plantilla redonda pequeña. Coloca la plantilla redonda pequeña a 8” o menos del portador, y tira los dados de artillería y dispersión como si estuvieses disparando una catapulta, aunque si se dispersa, lo hará la mitad de la distancia indicada en el dado de artillería. Cualquier miniatura bajo la plantilla deberá efectuar un chequeo de Resistencia o sufrir una herida sin tirada de salvación por armadura. Si obtienes un resultado de problemas, retira la plantilla sin causar ningún efecto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Nurgle. El portador puede utilizar los cráneos en cada fase de disparo si no está trabado en combate, aunque no para aguantar y disparar. Tiene un alcance máximo de 8”, y utiliza la plantilla redonda pequeña. Coloca la plantilla redonda pequeña a 8” o menos del portador, y tira los dados de artillería y dispersión como si estuvieses disparando una catapulta, aunque si se dispersa, lo hará la mitad de la distancia indicada en el dado de artillería. Cualquier miniatura bajo la plantilla deberá efectuar un chequeo de Resistencia o sufrir una herida sin tirada de salvación por armadura. Si obtienes un resultado de problemas, retira la plantilla sin causar ningún efecto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15611,7 +15618,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="a46e-eb70-e0ec-5e53" name="Colgante de Slaanesh" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Slaanesh. Por cada herida que sufra el portador, su atributo de ataques aumenta en un punto (hasta un máximo de 10).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Slaanesh. Por cada herida que sufra el portador, su atributo de ataques aumenta en un punto (hasta un máximo de 10).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15638,7 +15645,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="7982-9831-af12-85ee" name="Estandarte de los Dioses" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador causa Terror. Todas las unidades del Caos (Kurgan, Demonios del Caos, Bestias del Caos, Guerreros del Caos y Grey Infernal) a 12” o menos del estandarte serán Tozudas. </characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador causa Terror. Todas las unidades del Caos (Kurgan, Demonios del Caos, Bestias del Caos, Guerreros del Caos y Grey Infernal) a 12” o menos del estandarte serán Tozudas. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15658,7 +15665,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="5ef6-d252-8fd0-e5d1" name="Estandarte de la gran bestia del Caos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los miembros de la unidad verán aumentado en 1 su atributo de Ataques (no afecta a las monturas).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los miembros de la unidad verán aumentado en 1 su atributo de Ataques (no afecta a las monturas).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15682,7 +15689,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="2f13-3d84-4820-0ebe" name="Pabellón del norte" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los impactos contra el portador y la unidad en la que se encuentre tendrán un penalizador de -1 en su tirada para herir; esto no se aplica contra Ataques mágicos o heridas causadas por hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los impactos contra el portador y la unidad en la que se encuentre tendrán un penalizador de -1 en su tirada para herir; esto no se aplica contra Ataques mágicos o heridas causadas por hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15698,7 +15705,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="88e2-eedf-f10a-4a94" name="Tótem maldito" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas a 8” o menos del estandarte tendrán un penalizdor de -1 a su Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas a 8” o menos del estandarte tendrán un penalizdor de -1 a su Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15714,7 +15721,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="28a9-8f54-080b-53c6" name="Pabellón del odio" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtendrán la regla especial Odio (todos los enemigos). Los resultados de 1 para impactar (después de repetir) se resolverán para herir contra la propia unidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtendrán la regla especial Odio (todos los enemigos). Los resultados de 1 para impactar (después de repetir) se resolverán para herir contra la propia unidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15741,7 +15748,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="c634-7505-cc80-4a84" name="El estandarte maldito" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Tzeentch. El portador (y la unidad en la que se encuentre) obtendrán una tirada de salvación especial de 5+ contra proyectiles normales y mágicos, así como Ataques flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Tzeentch. El portador (y la unidad en la que se encuentre) obtendrán una tirada de salvación especial de 5+ contra proyectiles normales y mágicos, así como Ataques flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15768,7 +15775,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="e205-b37a-50a4-a376" name="Estandarte del éxtasis" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Slaanesh. Si el portador (y la unidad en la que se encuentre) obtiene un resultado de dobles o al menos un resultado de 1 al efectuar un chequeo de desmoralización, se considerará que ha obtenido un resultado de doble uno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Slaanesh. Si el portador (y la unidad en la que se encuentre) obtiene un resultado de dobles o al menos un resultado de 1 al efectuar un chequeo de desmoralización, se considerará que ha obtenido un resultado de doble uno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15792,7 +15799,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="ef36-0978-43a6-cb8c" name="Mortaja ulcerosa" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Nurgle. El portador (y la unidad en la que se encuentre) obtendrán la regla especial Ataques envenenados, que tendrán éxito con 5+ en lugar del habitual 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Nurgle. El portador (y la unidad en la que se encuentre) obtendrán la regla especial Ataques envenenados, que tendrán éxito con 5+ en lugar del habitual 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15819,7 +15826,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="2e20-b33e-32fc-f162" name="Pabellón de la ira" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Khorne. El portador (y la unidad en la que se encuentre) no perderá la Furia asesina como resultado de perder un combate cuerpo a cuerpo. Todos los hechiceros en contacto con el portador (o su unidad) tirarán 1D6 adicional cada vez que sufran una disfunción, y tú eliges qué dado descartan.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Khorne. El portador (y la unidad en la que se encuentre) no perderá la Furia asesina como resultado de perder un combate cuerpo a cuerpo. Todos los hechiceros en contacto con el portador (o su unidad) tirarán 1D6 adicional cada vez que sufran una disfunción, y tú eliges qué dado descartan.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15843,7 +15850,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="6c9a-3862-bfb4-fd0a" name="Tótem de los vientos del caos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas amigas a 12” o menos de este tótem obtienen un bonificador de +1 en sus tiradas de Canalizar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas amigas a 12” o menos de este tótem obtienen un bonificador de +1 en sus tiradas de Canalizar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15859,7 +15866,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="1426-fea9-fa73-44c6" name="Tótem de los kul" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15875,7 +15882,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="32fb-3e13-2978-798d" name="Tótem del poder" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad puede repetir los resultados de 1 en sus tiradas para impactar, tanto con proyectiles como en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad puede repetir los resultados de 1 en sus tiradas para impactar, tanto con proyectiles como en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15891,7 +15898,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="7aae-5c55-d70e-1656" name="Tótem berserker" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Carga devastadora; además, una vez por batalla, podrá repetir una tirada de carga que haya fallado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Carga devastadora; además, una vez por batalla, podrá repetir una tirada de carga que haya fallado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15910,7 +15917,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="8862-8342-7dcb-cead" name="Tótem venenoso" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Ataques envenenados (tanto en combate cuerpo a cuerpo como con proyectiles).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Ataques envenenados (tanto en combate cuerpo a cuerpo como con proyectiles).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15929,7 +15936,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="5130-e62a-5a5d-8f42" name="Tótem de las estepas" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a su Movimiento; si se trata de una unidad de Caballería, serán las monturas las que obtengan el +1M.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a su Movimiento; si se trata de una unidad de Caballería, serán las monturas las que obtengan el +1M.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15945,7 +15952,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="c178-74aa-8a0e-a4f2" name="Tótem de la gran bestia" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a su Fuerza al atacar el combate cuerpo a cuerpo o con proyectiles que utilicen el valor de F del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a su Fuerza al atacar el combate cuerpo a cuerpo o con proyectiles que utilicen el valor de F del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15961,7 +15968,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="14ad-987b-cc19-42e0" name="Tótem de la desesperación" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas a 6” o menos del Tótem tendrán un penalizador de -1 a su Liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas a 6” o menos del Tótem tendrán un penalizador de -1 a su Liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15977,7 +15984,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="f884-8c40-f583-b951" name="Tótem bendito" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los impactos causados contra la unidad tendrán un penalizador de -1 en sus tiradas para herir (recuerda que un resultado de 6 siempre hiere).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los impactos causados contra la unidad tendrán un penalizador de -1 en sus tiradas para herir (recuerda que un resultado de 6 siempre hiere).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16008,7 +16015,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="793f-8086-76fd-464d" name="Tótem de la poderosa serpiente" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Slaanesh o unidad con la Marca de Slaanesh. La unidad obtiene las reglas especiales Sangre fría e Inmune a miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Slaanesh o unidad con la Marca de Slaanesh. La unidad obtiene las reglas especiales Sangre fría e Inmune a miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16043,7 +16050,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="4c5a-480f-6a3d-d9c6" name="Tótem del gran cuervo carroñero" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Nurgle o unidad con la Marca de Nurgle. La unidad obtiene la regla especial Regeneración (6+), o +1 si ya disponían de ella.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Nurgle o unidad con la Marca de Nurgle. La unidad obtiene la regla especial Regeneración (6+), o +1 si ya disponían de ella.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16070,7 +16077,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="6527-ae6f-c88f-fa9b" name="Tötem del gran hacha" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo unidades equipadas con Hachas arrojadizas o Jabalinas. La unidad obtiene la regla especial Disparos múltiples (2) e incrementa el alcance en 2” con dichas armas de proyectiles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo unidades equipadas con Hachas arrojadizas o Jabalinas. La unidad obtiene la regla especial Disparos múltiples (2) e incrementa el alcance en 2” con dichas armas de proyectiles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16104,7 +16111,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="9ef8-ca79-30e2-5b08" name="Tótem del gran águila" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Tzeentch o unidad con la Marca de Tzeentch. La unidad obtiene una tirada de salvación especial de 6+, o +1 si ya disponían de ella.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Tzeentch o unidad con la Marca de Tzeentch. La unidad obtiene una tirada de salvación especial de 6+, o +1 si ya disponían de ella.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16135,7 +16142,7 @@ D6 Poción del Caos
           <profiles>
             <profile id="6722-7540-dc77-c2ed" name="Tótem del mastín de guerra" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Khorne o unidad con la Marca de Khorne. La unidad obtiene la regla especial Furia asesina.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Tótem de Khorne o unidad con la Marca de Khorne. La unidad obtiene la regla especial Furia asesina.</characteristic>
               </characteristics>
             </profile>
           </profiles>

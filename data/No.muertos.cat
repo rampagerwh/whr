@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="79c7-cc45-fd7a-618d" name="No muertos" revision="418" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="79c7-cc45-fd7a-618d" name="No muertos" revision="427" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4d35-4e46-308c-cb63" name="Arcanos nigrománticos">
       <characteristicTypes>
-        <characteristicType id="5725-5aa8-cbe0-bdbf" name="Poder"/>
+        <characteristicType id="5725-5aa8-cbe0-bdbf" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -238,7 +238,7 @@
                       <modifiers>
                         <modifier type="increment" field="points" value="2.0">
                           <repeats>
-                            <repeat field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="model" repeats="1" roundUp="false"/>
+                            <repeat field="selections" scope="dea3-1c39-e406-dc30" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="920c-28bc-2619-3c19" repeats="1" roundUp="false"/>
                           </repeats>
                         </modifier>
                       </modifiers>
@@ -2380,6 +2380,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="32a0-9dc4-f151-88c7" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="90.0"/>
           </costs>
@@ -3786,11 +3789,6 @@
     </selectionEntry>
     <selectionEntry id="03eb-6034-750b-9243" name="Nigromante" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
-        <modifier type="set" field="7de7-8ab7-7d0e-1fcd" value="0.0">
-          <conditions>
-            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="8e3e-e759-2e07-48e9" type="equalTo"/>
-          </conditions>
-        </modifier>
         <modifier type="set" field="7de7-8ab7-7d0e-1fcd" value="1.0">
           <conditions>
             <condition field="selections" scope="03eb-6034-750b-9243" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="7766-8913-1c29-7bd6" type="equalTo"/>
@@ -3962,10 +3960,16 @@
                 <condition field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="959f-fb7b-91bf-9fa2" type="equalTo"/>
               </conditions>
             </modifier>
+            <modifier type="set" field="2b0c-c136-826f-2b83" value="1.0">
+              <conditions>
+                <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="97be-baba-ee1c-6d5c" type="equalTo"/>
+              </conditions>
+            </modifier>
           </modifiers>
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d3ec-e0f0-acd2-e5ef" type="max"/>
             <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="3053-1378-a856-6421" type="max"/>
+            <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="2b0c-c136-826f-2b83" type="min"/>
           </constraints>
           <infoLinks>
             <infoLink id="cb3e-ab27-3fd1-6d86" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
@@ -4286,16 +4290,63 @@
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d9cc-5fc6-c8b5-ad1e" type="max"/>
           </constraints>
-          <entryLinks>
-            <entryLink id="f81f-8604-9aaa-6e1d" name="Corcel esquelético" hidden="false" collective="false" import="true" targetId="b6c9-3110-52a0-5491" type="selectionEntry">
+          <selectionEntries>
+            <selectionEntry id="6813-6388-f51b-f05a" name="Corcel esquelético" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8754-2695-d2df-0f72" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d101-ae30-ac4f-8e43" type="max"/>
               </constraints>
+              <profiles>
+                <profile id="9689-617b-c541-18e4" name="Corcel esquelético" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+                  <modifiers>
+                    <modifier type="decrement" field="4d23232344415441232323" value="1">
+                      <conditions>
+                        <condition field="selections" scope="6813-6388-f51b-f05a" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9f77-7765-2704-4039" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
+                  <characteristics>
+                    <characteristic name="M" typeId="4d23232344415441232323">8</characteristic>
+                    <characteristic name="HA" typeId="575323232344415441232323">2</characteristic>
+                    <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
+                    <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                    <characteristic name="R" typeId="5423232344415441232323">3</characteristic>
+                    <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">1</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                    <characteristic name="L" typeId="4c4423232344415441232323">3</characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                    <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                    <characteristic name="Tipo" typeId="5479706523232344415441232323">Bestia</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <rules>
+                <rule id="00be-0e2d-93f3-67c0" name="Corceles insustanciales" hidden="false">
+                  <description>Son etéreos cuando están moviendo.</description>
+                </rule>
+              </rules>
+              <infoLinks>
+                <infoLink id="91d5-5b83-0307-f77a" name="Bestia" hidden="false" targetId="0300-ed31-06b9-0c49" type="rule"/>
+                <infoLink id="5c22-8509-62b5-7cd1" name="Caballería" hidden="false" targetId="276f-0034-6534-f691" type="rule"/>
+              </infoLinks>
+              <selectionEntries>
+                <selectionEntry id="9f77-7765-2704-4039" name="Barda" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff23-b9d1-22f0-ae9e" type="max"/>
+                  </constraints>
+                  <infoLinks>
+                    <infoLink id="325e-43c5-a018-7ea0" name="Barda" hidden="false" targetId="db28-fd76-b1b6-f251" type="profile"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="4.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
               <costs>
                 <cost name="pts" typeId="points" value="20.0"/>
               </costs>
-            </entryLink>
-          </entryLinks>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -5337,7 +5388,7 @@
                     <infoLink id="333d-02e8-c1a6-cbb4" name="Cuchillas" hidden="false" targetId="927d-92ce-5209-5d7c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -5757,7 +5808,7 @@
               <profiles>
                 <profile id="f3c3-92f8-be5f-bfd1" name="Hacha de Krell" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por el Hacha Negra no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 5+, en lugar de sólo con 6.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por el Hacha Negra no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 5+, en lugar de sólo con 6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5777,7 +5828,7 @@
               <profiles>
                 <profile id="9845-7e9c-8ddc-5834" name="Armadura de los condenados" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (proporciona una tirada de salvación por armadura de 4+). Proporciona a Krell una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (proporciona una tirada de salvación por armadura de 4+). Proporciona a Krell una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="fd5b-8722-e42f-3e33" name="Armadura del caos" hidden="false" typeId="41726d6f757223232344415441232323" typeName="Armadura">
@@ -5852,7 +5903,7 @@
               <profiles>
                 <profile id="665b-fb63-682b-a6cd" name="Espada funeraria del caos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida que cause Kemmler con esta espada a un enemigo en combate cuerpo a cuerpo (que no tenga la regla especial Demonio o No muerto), obtiene un dado de energía adicional en su próxima fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida que cause Kemmler con esta espada a un enemigo en combate cuerpo a cuerpo (que no tenga la regla especial Demonio o No muerto), obtiene un dado de energía adicional en su próxima fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5871,7 +5922,7 @@
               <profiles>
                 <profile id="3fb4-89e4-4da8-11a1" name="Báculo del señor de nigromantes" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El báculo permite a Kemmler repetir sus tiradas fallidas de dispersión de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El báculo permite a Kemmler repetir sus tiradas fallidas de dispersión de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5887,7 +5938,7 @@
               <profiles>
                 <profile id="2670-9817-24d2-717d" name="Capa de nieblas y sombras" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">La capa otorga a Kemmler las reglas especiales Volar y Etéreo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">La capa otorga a Kemmler las reglas especiales Volar y Etéreo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5918,7 +5969,7 @@
               <profiles>
                 <profile id="9973-bad4-eaa5-93a9" name="El guardián de las antiguas tradiciones" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5934,7 +5985,7 @@
               <profiles>
                 <profile id="9654-3e64-6964-8b2d" name="Bibliotecario oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene la regla especial Señor del Conocimiento (Saber de la Muerte, de las Sombras, Magia Oscura o Nigromancia, a su elección). Esto sustituye sus hechizos normales. Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene la regla especial Señor del Conocimiento (Saber de la Muerte, de las Sombras, Magia Oscura o Nigromancia, a su elección). Esto sustituye sus hechizos normales. Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5953,7 +6004,7 @@
               <profiles>
                 <profile id="8dc9-b98b-19fc-393b" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6006,6 +6057,11 @@
     </selectionEntry>
     <selectionEntry id="9d9f-6b2d-6c6f-65e4" name="Dieter Helsnitch, señor de la muerte" hidden="false" collective="false" import="true" type="unit">
       <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
@@ -6096,7 +6152,7 @@
               <profiles>
                 <profile id="21ea-a8bc-20ae-afed" name="Filo rúnico funerario" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Arma funeraria (tiene la regla especial Golpe letal). Proporciona a Dieter un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo y un bonificador de +1 F.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Arma funeraria (tiene la regla especial Golpe letal). Proporciona a Dieter un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo y un bonificador de +1 F.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6116,7 +6172,7 @@
               <profiles>
                 <profile id="7779-eb49-9751-2971" name="Bastón de cráneos llameantes" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 5. Contiene un hechizo de Proyectil mágico con un alcance de 24” que causa 2D6 impactos de F4 con la regla especial Ataques sólo flamígeros. Cualquier unidad que sufra al menos una baja a causa de este hechizo debe realizar inmediatamente un chequeo de pánico.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 5. Contiene un hechizo de Proyectil mágico con un alcance de 24” que causa 2D6 impactos de F4 con la regla especial Ataques sólo flamígeros. Cualquier unidad que sufra al menos una baja a causa de este hechizo debe realizar inmediatamente un chequeo de pánico.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6135,7 +6191,7 @@
               <profiles>
                 <profile id="ac1c-2ec0-199b-c726" name="Pergamino maldito" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 2D6, un solo uso. Contiene un hechizo de potenciación (invocación; ver el Saber de Nigromancia) que puede usarse durante cualquier fase de magia propia para crear inmediatamente a 12” o menos de Dieter una unidad de zombis, tirando 5 dados de invocación. No puede usarse para reforzar una unidad ya existente. Esta unidad no cuenta para el máximo de una unidad invocada en el campo de batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 2D6, un solo uso. Contiene un hechizo de potenciación (invocación; ver el Saber de Nigromancia) que puede usarse durante cualquier fase de magia propia para crear inmediatamente a 12” o menos de Dieter una unidad de zombis, tirando 5 dados de invocación. No puede usarse para reforzar una unidad ya existente. Esta unidad no cuenta para el máximo de una unidad invocada en el campo de batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6208,7 +6264,7 @@
               <profiles>
                 <profile id="b1db-e884-2781-63b0" name="El guardián de las antiguas tradiciones" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6224,7 +6280,7 @@
               <profiles>
                 <profile id="e989-a1b5-3d30-1663" name="Caminante del sendero oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6240,7 +6296,7 @@
               <profiles>
                 <profile id="4c0b-d8ea-e1af-0c39" name="El escriba del gran nigromante" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6457,7 +6513,7 @@
               <profiles>
                 <profile id="2428-aaec-57ea-2c2a" name="Espada maldita de Reces" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Esta espada es un arma funeraria (tiene la regla especial Golpe letal). Los impactos de la espada tienen la regla especial Ataques flamígeros y no permiten tirada de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Esta espada es un arma funeraria (tiene la regla especial Golpe letal). Los impactos de la espada tienen la regla especial Ataques flamígeros y no permiten tirada de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6514,7 +6570,7 @@
               <profiles>
                 <profile id="732f-ae26-760b-2a5c" name="Amuleta de la fleur de lys" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Falk obtiene Resistencia mágica (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Falk obtiene Resistencia mágica (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6839,7 +6895,7 @@
               <profiles>
                 <profile id="f6f8-16e1-2a2d-d2f0" name="Espada funeraria de Arkham" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Se trata de un arma funeraria (tiene la regla especial Golpe letal), y las heridas causadas por esta espada no permiten tirada de salvación por armadura. Cada vez que Arkhan elimina a un enemigo con un Golpe letal, él (o su montura, o su unidad) pueden recuperar una herida que hubiesen sufrido con anterioridad durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Se trata de un arma funeraria (tiene la regla especial Golpe letal), y las heridas causadas por esta espada no permiten tirada de salvación por armadura. Cada vez que Arkhan elimina a un enemigo con un Golpe letal, él (o su montura, o su unidad) pueden recuperar una herida que hubiesen sufrido con anterioridad durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6871,7 +6927,7 @@
               <profiles>
                 <profile id="81a7-ef98-900c-99d5" name="Báculo de condenación" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 2D6. Contiene un hechizo de Potenciación que afecta a todas las unidades amigas con la regla especial No muerto a 24” o menos de Arkhan. El efecto del hechizo es igual al efecto de la Danza macabra de Vanhel (Nigromancia). Ten en cuenta que una unidad no puede recibir exitosamente el efecto de este báculo y el del hechizo Danza macabra de Vanhel en una misma fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 2D6. Contiene un hechizo de Potenciación que afecta a todas las unidades amigas con la regla especial No muerto a 24” o menos de Arkhan. El efecto del hechizo es igual al efecto de la Danza macabra de Vanhel (Nigromancia). Ten en cuenta que una unidad no puede recibir exitosamente el efecto de este báculo y el del hechizo Danza macabra de Vanhel en una misma fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6887,7 +6943,7 @@
               <profiles>
                 <profile id="0866-ea6e-c8b4-3769" name="Liber execrabilis" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todos los disparos y ataques dirigidos contra Arkhan tienen un penalizador de -1 en su tirada para impactar. Además, el libro otorga a Arkhan y a su montura una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todos los disparos y ataques dirigidos contra Arkhan tienen un penalizador de -1 en su tirada para impactar. Además, el libro otorga a Arkhan y a su montura una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6923,7 +6979,7 @@
               <profiles>
                 <profile id="ddb3-67eb-efd6-d9cc" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6939,7 +6995,7 @@
               <profiles>
                 <profile id="a4dd-03b5-f723-8ef3" name="Caminante del sendero oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6955,7 +7011,7 @@
               <profiles>
                 <profile id="3f62-b06e-00fa-fb91" name="Voluntad nigromántica" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6971,7 +7027,7 @@
               <profiles>
                 <profile id="fe29-67cb-4ae0-bb1e" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7259,7 +7315,7 @@
               <profiles>
                 <profile id="8f16-2e5d-d2eb-2791" name="Bastón de polvo y ceniza" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Drachenfels tan sólo podrá efectuar un único ataque en cuerpo a cuerpo (es decir, no puede obtener ataques adicionales por ninguna circunstancia). Si este ataque impacta a una miniatura enemiga, esta será destruida automáticamente sin que ninguna tirada de salvación por armadura o Regeneración pueda evitarlo, y deberá retirarse como baja. El enemigo puede efectuar una tirada de salvación especial si dispone de ella para evitar el efecto; pero, si no evita la herida, será destruida.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Drachenfels tan sólo podrá efectuar un único ataque en cuerpo a cuerpo (es decir, no puede obtener ataques adicionales por ninguna circunstancia). Si este ataque impacta a una miniatura enemiga, esta será destruida automáticamente sin que ninguna tirada de salvación por armadura o Regeneración pueda evitarlo, y deberá retirarse como baja. El enemigo puede efectuar una tirada de salvación especial si dispone de ella para evitar el efecto; pero, si no evita la herida, será destruida.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7278,7 +7334,7 @@
               <profiles>
                 <profile id="2fa9-04c2-2997-3159" name="Armadura de Drachenfels" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga a Drachenfels una tirada de salvación especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga a Drachenfels una tirada de salvación especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7297,7 +7353,7 @@
               <profiles>
                 <profile id="8025-2a5c-1e1f-190b" name="Máscara de hierro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Talismán. La máscara de Hierro otorga a Drachenfels Resistencia Mágica (1). Adicionalmente, una vez por batalla, en la fase de disparo de los No muertos, Drachenfels puede quitarse la máscara y mostrar su rostro. Todas las unidades enemigas a 12” o menos de Drachenfels deberán superar un chequeo de Liderazgo con un penalizador de -2 o huir, del mismo modo que si hubiesen fallado un chequeo de Terror. Esto no afecta a miniaturas inmunes a psicología.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Talismán. La máscara de Hierro otorga a Drachenfels Resistencia Mágica (1). Adicionalmente, una vez por batalla, en la fase de disparo de los No muertos, Drachenfels puede quitarse la máscara y mostrar su rostro. Todas las unidades enemigas a 12” o menos de Drachenfels deberán superar un chequeo de Liderazgo con un penalizador de -2 o huir, del mismo modo que si hubiesen fallado un chequeo de Terror. Esto no afecta a miniaturas inmunes a psicología.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7336,7 +7392,7 @@
               <profiles>
                 <profile id="8e34-56a8-adb3-e53f" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7352,7 +7408,7 @@
               <profiles>
                 <profile id="bbed-4d90-ac50-9ccf" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7368,7 +7424,7 @@
               <profiles>
                 <profile id="3f97-f75e-63f1-28c7" name="Salvaguarda oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7384,7 +7440,7 @@
               <profiles>
                 <profile id="ae1c-4432-339f-17b1" name="Presencia oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7508,7 +7564,7 @@
               <profiles>
                 <profile id="bdb6-6c1f-ecc6-5ca9" name="Mortis, la gran espada de la muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Incrementa en +1 la Fuerza de Nagash (de 6 a 7). Por cada herida causada por la espada, Nagash puede restaurar una de las que hubiese sufrido previamente durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Incrementa en +1 la Fuerza de Nagash (de 6 a 7). Por cada herida causada por la espada, Nagash puede restaurar una de las que hubiese sufrido previamente durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7527,7 +7583,7 @@
               <profiles>
                 <profile id="5853-71ea-ff28-cd1b" name="Armadura negra de Nagash" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona una tirada de salvación por armadura de 4+, una tirada de salvación especial de 4+ y Resistencia mágica (2). El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona una tirada de salvación por armadura de 4+, una tirada de salvación especial de 4+ y Resistencia mágica (2). El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7547,7 +7603,7 @@
               <profiles>
                 <profile id="4eeb-249b-c004-18db" name="Báculo del poder" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Nagash puede guardar hasta cuatro dados de energía o dispersión no utilizados para usarlos en una fase de magia posterior. Comienza la partida con un dado almacenado.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Nagash puede guardar hasta cuatro dados de energía o dispersión no utilizados para usarlos en una fase de magia posterior. Comienza la partida con un dado almacenado.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7563,7 +7619,7 @@
               <profiles>
                 <profile id="3ee4-f05e-cdb9-f846" name="Libro de Nagash" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Nagash Canaliza automáticamente; no es necesario tirar el dado.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Nagash Canaliza automáticamente; no es necesario tirar el dado.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7599,7 +7655,7 @@
               <profiles>
                 <profile id="051c-f193-ff7a-568f" name="Manipulador de energía oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7727,7 +7783,7 @@
               <profiles>
                 <profile id="1807-b117-aba8-2276" name="Mortis, la gran espada de la muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Incrementa en +1 la Fuerza de Nagash (de 7 a 8). Por cada herida causada por la espada, Nagash puede restaurar una de las que hubiese sufrido previamente durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Incrementa en +1 la Fuerza de Nagash (de 7 a 8). Por cada herida causada por la espada, Nagash puede restaurar una de las que hubiese sufrido previamente durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7746,7 +7802,7 @@
               <profiles>
                 <profile id="b8ba-5917-e7fe-dc48" name="Armadura negra de Nagash" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona una tirada de salvación por armadura de 4+, una tirada de salvación especial de 4+ y Resistencia mágica (2). El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona una tirada de salvación por armadura de 4+, una tirada de salvación especial de 4+ y Resistencia mágica (2). El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7766,7 +7822,7 @@
               <profiles>
                 <profile id="3ad3-534d-ff62-b2b9" name="Báculo del poder" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Nagash puede guardar hasta cuatro dados de energía o dispersión no utilizados para usarlos en una fase de magia posterior. Comienza la partida con 1D3 dados almacenados.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Nagash puede guardar hasta cuatro dados de energía o dispersión no utilizados para usarlos en una fase de magia posterior. Comienza la partida con 1D3 dados almacenados.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7782,7 +7838,7 @@
               <profiles>
                 <profile id="d986-b71e-6214-4d21" name="9 Libros de Nagash" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Nagash Canaliza automáticamente; no es necesario tirar el dado. Además, los Libros proporcionan a Nagash un bonificador de +2 a la hora de lanzar y dispersar hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Nagash Canaliza automáticamente; no es necesario tirar el dado. Además, los Libros proporcionan a Nagash un bonificador de +2 a la hora de lanzar y dispersar hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7798,7 +7854,7 @@
               <profiles>
                 <profile id="cde7-5e5f-0992-f64b" name="Corona de la hechicería" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">La Corona proporciona a Nagash dos dados de energía adicionales cada vez que lanza un hechizo (no cuentan para el límite de 7 dados por hechizo que tiene Nagash). El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">La Corona proporciona a Nagash dos dados de energía adicionales cada vez que lanza un hechizo (no cuentan para el límite de 7 dados por hechizo que tiene Nagash). El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7834,7 +7890,7 @@
               <profiles>
                 <profile id="a80e-87e7-b5a4-7a41" name="Manipulador de energía oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7998,7 +8054,7 @@
               <profiles>
                 <profile id="fa81-dc24-677d-04a5" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8042,7 +8098,7 @@
               <profiles>
                 <profile id="c41d-4d67-1062-e4ae" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8084,7 +8140,7 @@
                   <profiles>
                     <profile id="deef-392a-5102-7455" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8244,7 +8300,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="21d3-82c0-e190-8b32" name="Skabscrath" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8315,7 +8371,7 @@ afectados por la regla especial No Muerto.</description>
                   <profiles>
                     <profile id="1aa4-a2b8-b977-08b2" name="Pabellón de pesadilla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8941,6 +8997,9 @@ D6	Efecto
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="2d7f-b319-d52a-9c53" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -9314,7 +9373,7 @@ D6	Efecto
                   <profiles>
                     <profile id="8879-be66-d905-753a" name="Pellejo de Wulfag" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9582,7 +9641,7 @@ D6	Efecto
                   <profiles>
                     <profile id="757b-5ce2-6236-305f" name="Estandarte de Karad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10153,7 +10212,7 @@ D6	Efecto
               <profiles>
                 <profile id="7d16-b8bc-343f-48a1" name="Mordisco del dios águila" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10348,7 +10407,7 @@ D6	Efecto
               <profiles>
                 <profile id="a374-67f3-676a-ee5e" name="Dezkuajadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Proporciona a Eeza un bonificador de +1I y tiene la regla especial Heridas múltiples (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Proporciona a Eeza un bonificador de +1I y tiene la regla especial Heridas múltiples (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10574,7 +10633,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="e5e8-9801-5f3f-9088" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10590,7 +10649,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="db3d-722a-d115-4f0c" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10714,6 +10773,11 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10848,7 +10912,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="30a8-57ea-17ab-a945" name="Cráneo de Morath" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Todos los disparos dirigidos contra Gunther Laranscheld (y la unidad en la que se encuentre) tienen un penalizador de -1 en su tirada para impactar. Todos los ataques dirigidos contra Laranscheld en combate cuerpo a cuerpo tienen un penalizador de -1 en su tirada para impactar. Además, proporciona a Laranscheld un bonificador de +1 a sus tiradas de lanzamiento de hechizos del saber de Nigromancia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Todos los disparos dirigidos contra Gunther Laranscheld (y la unidad en la que se encuentre) tienen un penalizador de -1 en su tirada para impactar. Todos los ataques dirigidos contra Laranscheld en combate cuerpo a cuerpo tienen un penalizador de -1 en su tirada para impactar. Además, proporciona a Laranscheld un bonificador de +1 a sus tiradas de lanzamiento de hechizos del saber de Nigromancia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10911,7 +10975,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="a638-5e0e-1b6c-13ca" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Genera un dado adicional de energía.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Genera un dado adicional de energía.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10927,7 +10991,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="11dd-c2a9-4e66-840b" name="Salvaguarda oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Genera un dado adicional de dispersión.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Genera un dado adicional de dispersión.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10943,7 +11007,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="860b-e5ac-bd1f-ccf5" name="Escriba del gran nigromante" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Conoce un hechizo adicional, que siempre será la Danza Macabra de Vanhel.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Conoce un hechizo adicional, que siempre será la Danza Macabra de Vanhel.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10985,6 +11049,11 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11047,7 +11116,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="ea24-e7c5-6b2f-62a2" name="Cetro de perdición" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Cetro no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 4+ en lugar del habitual de 6+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Cetro no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 4+ en lugar del habitual de 6+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11066,7 +11135,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="4249-0c7a-f7f3-46e6" name="Grimorium necris" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El Grimorium Necris proporciona a Van Damneg cuatro hechizos adicionales (para un total de 8). Debe generar 4 de ellos del saber de Nigromancia, y los otros 4 del saber de Magia Oscura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El Grimorium Necris proporciona a Van Damneg cuatro hechizos adicionales (para un total de 8). Debe generar 4 de ellos del saber de Nigromancia, y los otros 4 del saber de Magia Oscura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11082,7 +11151,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="3f29-cbd1-c573-e80f" name="Corona del terror" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El radio del Terror de Van Damneg es de 16” en lugar de las 8” habituales.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El radio del Terror de Van Damneg es de 16” en lugar de las 8” habituales.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11200,7 +11269,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="a633-44cb-955c-1dd4" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Puede repetir sus tiradas en la tabla de disfunciones mágicas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Puede repetir sus tiradas en la tabla de disfunciones mágicas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11216,7 +11285,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="8de3-a581-1448-251c" name="Caminante del sendero oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">+1 a sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">+1 a sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11232,7 +11301,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="7438-d269-24ed-9b3e" name="Guardián de las antiguas tradiciones" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Genera dos dados de energía adicionales en cada una de sus fases de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Genera dos dados de energía adicionales en cada una de sus fases de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11259,6 +11328,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                 <infoLink id="9f3e-493b-4c83-e499" name="General del ejército no muerto" hidden="false" targetId="2943-1431-bafd-f651" type="rule"/>
               </infoLinks>
             </entryLink>
+            <entryLink id="afba-d3cf-c2c1-3d7b" name="Liche no muerto" hidden="false" collective="false" import="true" targetId="959f-fb7b-91bf-9fa2" type="selectionEntry"/>
           </entryLinks>
           <costs>
             <cost name="pts" typeId="points" value="0.0"/>
@@ -11274,6 +11344,11 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11296,7 +11371,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <infoLink id="4ff9-ff84-836d-517c" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="6884-18ec-4fb1-1ae8" name="Terror" hidden="false" targetId="ca57-1f1f-8bc0-d9ab" type="rule"/>
         <infoLink id="4f6b-158a-e0f2-c061" name="Etéreo" hidden="false" targetId="34c4-9e60-1a62-eda5" type="rule"/>
-        <infoLink id="dc75-80d2-9bff-5bbf" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="dc75-80d2-9bff-5bbf" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c782-29c5-a728-f3ea" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="true"/>
@@ -11342,14 +11417,16 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7257-ac98-896c-ad42" type="min"/>
               </constraints>
               <profiles>
-                <profile id="0a64-7a9c-24f6-86d4" name="Cetro de perdición" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                <profile id="0a64-7a9c-24f6-86d4" name="Cosechadora de almas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Cetro no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 4+ en lugar del habitual de 6+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por la Cosechadora tienen la regla especial Golpe letal. Van Hal puede sustituir todos sus ataques por un único ataque que impacta automáticamente, no permite tirada de salvación por armadura y tiene la regla especial Golpe letal heroico.
+</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="669d-232e-c641-65d1" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="669d-232e-c641-65d1" name="Arma a dos manos" hidden="false" targetId="b737-28ed-1002-5531" type="profile"/>
+                <infoLink id="632a-5127-43cf-b8cf" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
@@ -11361,9 +11438,9 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d4-90f3-91a7-5449" type="min"/>
               </constraints>
               <profiles>
-                <profile id="9b21-5e04-5fa7-9f4e" name="Grimorium necris" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
+                <profile id="9b21-5e04-5fa7-9f4e" name="Liber mortis espectral" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El Grimorium Necris proporciona a Van Damneg cuatro hechizos adicionales (para un total de 8). Debe generar 4 de ellos del saber de Nigromancia, y los otros 4 del saber de Magia Oscura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Cada vez que Van Hal lance un hechizo nigromántico, puede lanzar un dado adicional (proporcionado por el libro).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11399,7 +11476,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="f1f6-5b93-1dbd-8942" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Puede repetir sus tiradas en la tabla de disfunciones mágicas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Puede repetir sus tiradas en la tabla de disfunciones mágicas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11415,7 +11492,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="fef8-f30b-2167-6608" name="Bibliotecario oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Tiene la regla especial Señor del conocimiento para el saber de Nigromancia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Tiene la regla especial Señor del conocimiento para el saber de Nigromancia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11431,7 +11508,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="b3cc-a70f-653c-fcdf" name="Guardián de las antiguas tradiciones" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Genera dos dados de energía adicionales en cada una de sus fases de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Genera dos dados de energía adicionales en cada una de sus fases de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11645,7 +11722,7 @@ Se trata de un hechizo de potenciación que no hace ningún objetivo. Si se resu
               <profiles>
                 <profile id="be56-6358-135d-394d" name="Hacha de Krell" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por el Hacha Negra no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 5+, en lugar de sólo con 6.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por el Hacha Negra no permiten tirada de salvación por armadura, y tienen la regla especial Golpe letal, que surtirá efecto con un resultado de 5+, en lugar de sólo con 6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11664,7 +11741,7 @@ Se trata de un hechizo de potenciación que no hace ningún objetivo. Si se resu
               <profiles>
                 <profile id="64f4-5c14-ab4f-a1a5" name="Armadura de los condenados" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (proporciona una tirada de salvación por armadura de 4+). Proporciona a Krell una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (proporciona una tirada de salvación por armadura de 4+). Proporciona a Krell una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="19db-0374-fbc3-fa7f" name="Armadura del caos" hidden="false" typeId="41726d6f757223232344415441232323" typeName="Armadura">
@@ -11798,7 +11875,7 @@ Se trata de un hechizo de potenciación que no hace ningún objetivo. Si se resu
               <profiles>
                 <profile id="e04e-74bb-af6b-2fe7" name="Ojo nigromántico" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Gracias al amuleto, Vrax es un hechicero de nivel 2 que siempre conoce los hechizos Invocación de Nehek y Danza macabra de Vanhel (Saber de Nigromancia).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Gracias al amuleto, Vrax es un hechicero de nivel 2 que siempre conoce los hechizos Invocación de Nehek y Danza macabra de Vanhel (Saber de Nigromancia).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12103,7 +12180,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="085c-ff17-15f6-f650" name="Rebanadora de Snagga" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Rebanadora. Otorga a Snagga +1A y +1F y poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Rebanadora. Otorga a Snagga +1A y +1F y poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="8200-56e7-42a8-ae22" name="Rebanadora" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
@@ -12141,7 +12218,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="a663-64e4-e39e-1bf3" name="Ezcudo mataliztilloz" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a Snagga una tirada de salvación especial de 4+ contra ataques mágicos. Cualquier herida salvada cuerpo a cuerpo debido a este efecto causará un impacto de F5 en el atacante.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a Snagga una tirada de salvación especial de 4+ contra ataques mágicos. Cualquier herida salvada cuerpo a cuerpo debido a este efecto causará un impacto de F5 en el atacante.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12335,7 +12412,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="b4a0-37c5-0229-70fc" name="Cráneo de Nahak" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El Cráneo de Nahak le otorga a Huskk una tirada de salvación especial de 4+. Además, Huskk conoce dos hechizos adicionales.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El Cráneo de Nahak le otorga a Huskk una tirada de salvación especial de 4+. Además, Huskk conoce dos hechizos adicionales.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12387,7 +12464,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="7cef-f624-e157-bc0a" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
                   <characteristics>
-                    <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13109,7 +13186,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
                     <infoLink id="a8d7-c67a-eb1e-fa02" name="Cuchillas" hidden="false" targetId="927d-92ce-5209-5d7c" type="profile"/>
                   </infoLinks>
                   <costs>
-                    <cost name="pts" typeId="points" value="0.0"/>
+                    <cost name="pts" typeId="points" value="5.0"/>
                   </costs>
                 </selectionEntry>
               </selectionEntries>
@@ -13537,7 +13614,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
       </constraints>
       <rules>
         <rule id="f92d-f8ea-5eb5-9b94" name="Leyenda negra" hidden="false">
-          <description>Un ejército que incluya a Van Hal no puede incluir miniaturas con la regla especial ¡Están vivos!, salvo necrófagos (sin embargo, Van Hal se considera un Lich a la hora de transformar un nigromante en No
+          <description>Un ejército que incluya a Van Hal no puede incluir miniaturas con la regla especial ¡Están vivos!, salvo necrófagos (sin embargo, Van Hal se considera un Liche a la hora de transformar un nigromante en No
 muerto). Van Hal no puede unirse a unidades.</description>
         </rule>
       </rules>
@@ -13699,7 +13776,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="05ec-f575-abaa-12f0" name="Manipulador de energía oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13715,7 +13792,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="1bb9-1ba2-7557-4c9a" name="El guardián de las antiguas tradiciones" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13730,7 +13807,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="03a5-8c1d-e1ac-7845" name="Bibliotecario oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene la regla especial Señor del Conocimiento (Saber de la Muerte, de las Sombras, Magia Oscura o Nigromancia, a su elección). Esto sustituye sus hechizos normales. Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene la regla especial Señor del Conocimiento (Saber de la Muerte, de las Sombras, Magia Oscura o Nigromancia, a su elección). Esto sustituye sus hechizos normales. Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13748,7 +13825,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="fab3-b2b3-292b-a561" name="Caminante del sendero oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13763,7 +13840,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="1580-ed5c-ac0f-8cb4" name="Salvaguarda oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13778,7 +13855,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="a9ec-78a3-9804-affb" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13793,7 +13870,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="76a7-7acc-79e4-1616" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13808,7 +13885,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="67c3-5b60-dcb5-8e50" name="Vigor nigromántico" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero (o la unidad en la que se incluya este) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero (o la unidad en la que se incluya este) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13823,7 +13900,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="1254-d1d8-7e49-c8bb" name="El escriba del gran nigromante" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13838,7 +13915,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="62d4-2272-2bdf-0bcb" name="Coleccionista de artefactos oscuros" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede portar hasta dos objetos arcanos. Sólo Liches y Maestros nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede portar hasta dos objetos arcanos. Sólo Liches y Maestros nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13853,7 +13930,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="9843-6759-3c79-e68e" name="Presencia oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13868,7 +13945,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="2a28-5055-a319-7cee" name="Despertar a los muertos" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Sólo Maestro nigromante o Liche. Cada vez que el personaje lance exitosamente Invocación de Nehek o Animar muertos, restaurará un dado de invocación adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Sólo Maestro nigromante o Liche. Cada vez que el personaje lance exitosamente Invocación de Nehek o Animar muertos, restaurará un dado de invocación adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13883,7 +13960,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="25a2-5b42-fb70-8a14" name="Voluntad nigromántica" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13907,7 +13984,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="dbdc-2d09-08e4-8d0e" name="Mandoble de muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador golpea siempre con Fuerza 10 en combate cuerpo a cuerpo y con la regla especial Golpe letal Heroico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador golpea siempre con Fuerza 10 en combate cuerpo a cuerpo y con la regla especial Golpe letal Heroico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13935,7 +14012,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="5efb-8dab-e874-36b3" name="Segadora de almas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Espectro al mando de una unidad de espíritus. Arma a dos manos. Golpe letal. Si el espectro mata a un oponente con un Golpe letal, podrá añadir inmediatamente un espíritu a la unidad .</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Espectro al mando de una unidad de espíritus. Arma a dos manos. Golpe letal. Si el espectro mata a un oponente con un Golpe letal, podrá añadir inmediatamente un espíritu a la unidad .</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13963,7 +14040,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="9ee3-e21d-aed3-9b83" name="Armadura de los eones" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de placas (proporciona una tirada de salvación por armadura de 4+). El portador obtiene +1 Resistencia y una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de placas (proporciona una tirada de salvación por armadura de 4+). El portador obtiene +1 Resistencia y una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
             <profile id="773f-e995-770f-991a" name="Armadura de placas" hidden="false" typeId="41726d6f757223232344415441232323" typeName="Armadura">
@@ -13993,7 +14070,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="6095-fdb6-40a0-e0a0" name="Armadura de huesos de quimera" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Puede elegirse para un nigromante, maestro nigromante o Liche, pese a que normalmente no puedan usar armaduras. Armadura ligera. Proporciona la regla especial Piel escamosa 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Puede elegirse para un nigromante, maestro nigromante o Liche, pese a que normalmente no puedan usar armaduras. Armadura ligera. Proporciona la regla especial Piel escamosa 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14013,7 +14090,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="52b5-a286-a879-de1a" name="Armadura de sombras" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Su portador tendrá un bonificador adicional de +2 a su tirada de salvación por armadura en combate cuerpo a cuerpo, y un bonificador de +3 contra disparos y proyectiles mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Su portador tendrá un bonificador adicional de +2 a su tirada de salvación por armadura en combate cuerpo a cuerpo, y un bonificador de +3 contra disparos y proyectiles mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14032,7 +14109,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="69f5-6608-0763-1388" name="Escudo maldito" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Las tiradas que impacten con éxito a su portador deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Las tiradas que impacten con éxito a su portador deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14059,7 +14136,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="3028-db35-09b3-af12" name="Manto de la larga noche" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador no puede atacar en combate cuerpo a cuerpo. En cuerpo a cuerpo y con proyectiles sólo podrá ser impactado con un resultado de 6+, sin tener en cuenta otros modificadores.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador no puede atacar en combate cuerpo a cuerpo. En cuerpo a cuerpo y con proyectiles sólo podrá ser impactado con un resultado de 6+, sin tener en cuenta otros modificadores.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14083,7 +14160,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="b0e7-e279-f6cc-3cc8" name="Corona de las sombras" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Resta 1 a la fuerza de todos los impactos contra el portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Resta 1 a la fuerza de todos los impactos contra el portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14099,7 +14176,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="9dbe-9b2a-70a1-fc17" name="Talismán del vigor mortis" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador (o la unidad en la que se encuentre) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador (o la unidad en la que se encuentre) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14115,7 +14192,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="67a9-5a6a-beeb-ab51" name="Anillo de las tinieblas" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona una tirada de salvación especial de 5+ y Resistencia mágica (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona una tirada de salvación especial de 5+ y Resistencia mágica (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14142,7 +14219,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="bea1-107e-b4ea-a9be" name="La garra de Nagash" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 1D6+2. Contiene un potente hechizo de daño directo que puede ser lanzado contra una única miniatura (puedes seleccionar si lo deseas un personaje dentro de una unidad) a una distancia máxima de 8” del portador. Si el hechizo se resuelve con éxito, causa 2D6 menos el atributo de Resistencia del objetivo en heridas automáticas sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 1D6+2. Contiene un potente hechizo de daño directo que puede ser lanzado contra una única miniatura (puedes seleccionar si lo deseas un personaje dentro de una unidad) a una distancia máxima de 8” del portador. Si el hechizo se resuelve con éxito, causa 2D6 menos el atributo de Resistencia del objetivo en heridas automáticas sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14166,7 +14243,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="1a46-1ac9-06d7-347b" name="El libro maldito" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todos las tiradas para impactar contra el portador y la unidad en la que se encuentre aplicarán un penalizador de -1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todos las tiradas para impactar contra el portador y la unidad en la que se encuentre aplicarán un penalizador de -1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14182,7 +14259,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="590b-dc61-e9c4-bdff" name="Máscara azabache" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador (y la unidad en la que se encuentre) obtienen las reglas especiales Resistencia mágica (2 ) y Regeneración (6+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador (y la unidad en la que se encuentre) obtienen las reglas especiales Resistencia mágica (2 ) y Regeneración (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14202,7 +14279,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="ef1b-0223-df4b-418a" name="Ánfora de huesos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse en la fase de disparo: designa un punto a una distancia máxima de 8” del lanzador. En ese punto aparece una unidad de 1D6+9 esqueletos con arma de mano, armadura ligera y escudo, del mismo modo que si hubiesen sido invocados por el hechizo Invocación de Nehek. Recuerda que no pueden aparecer trabados en combate cuerpo a cuerpo. La unidad convocada por el ánfora no cuenta dentro del límita de unidades invocadas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse en la fase de disparo: designa un punto a una distancia máxima de 8” del lanzador. En ese punto aparece una unidad de 1D6+9 esqueletos con arma de mano, armadura ligera y escudo, del mismo modo que si hubiesen sido invocados por el hechizo Invocación de Nehek. Recuerda que no pueden aparecer trabados en combate cuerpo a cuerpo. La unidad convocada por el ánfora no cuenta dentro del límita de unidades invocadas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14218,7 +14295,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="be44-6c71-f2a2-5fbf" name="Relicario de condenación" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador causa Terror . Además, todos los chequeos de Terror provocados por el portador se realizarán tirando 3D6 y descartando el resultado más bajo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador causa Terror . Además, todos los chequeos de Terror provocados por el portador se realizarán tirando 3D6 y descartando el resultado más bajo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14237,7 +14314,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="91af-25f4-d469-9fde" name="Brazales de la larga noche" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Una miniatura en contacto peana con peana con el portador pierde un ataque (hasta un mínimo de 1) .</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Una miniatura en contacto peana con peana con el portador pierde un ataque (hasta un mínimo de 1) .</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14253,7 +14330,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="693a-2284-9474-8a5a" name="Amuleto de huesos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Invocación de Nehek (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Invocación de Nehek (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14269,7 +14346,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="bb58-162e-2319-4653" name="Dedo siniestro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Danza macabra de Vanhel (en su versión no potenciada) del Saber de Nigromancia. </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Danza macabra de Vanhel (en su versión no potenciada) del Saber de Nigromancia. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14281,7 +14358,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
     </selectionEntryGroup>
     <selectionEntryGroup id="4adc-5f8b-c103-753e" name="Artefactos arcanos. Reliquias. No muertos" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56f2-6ad8-af36-f9f0" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="56f2-6ad8-af36-f9f0" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="419a-ab2a-8720-1fdd" type="min"/>
       </constraints>
       <selectionEntries>
@@ -14293,7 +14370,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="b662-38d7-feee-a30b" name="Liber mortis" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Cada vez que el portador lance un hechizo nigromántico, puede lanzar un dado adicional (proporcionado por el libro). Si el resultado del dado adicional es un 1, el hechizo fallará automáticamente (a menos que se obtenga también una Fuerza irresistible)</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Cada vez que el portador lance un hechizo nigromántico, puede lanzar un dado adicional (proporcionado por el libro). Si el resultado del dado adicional es un 1, el hechizo fallará automáticamente (a menos que se obtenga también una Fuerza irresistible)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14305,7 +14382,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
     </selectionEntryGroup>
     <selectionEntryGroup id="ff1d-d192-4f60-de81" name="Artefactos arcanos. No muertos" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f173-f5a4-6d9f-c8a1" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f173-f5a4-6d9f-c8a1" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="667d-ca5d-206d-d9e7" type="min"/>
       </constraints>
       <selectionEntries>
@@ -14317,7 +14394,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="aeda-2c5c-ee5a-9b96" name="Familiar necrótico" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El familiar necrótico permite a su portador repetir las tiradas de los dados de invocación de los hechizos Invocación de Nehek y Animar muertos que lance. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El familiar necrótico permite a su portador repetir las tiradas de los dados de invocación de los hechizos Invocación de Nehek y Animar muertos que lance. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14333,7 +14410,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="31f2-dcd3-55e7-3f57" name="Libro de Arkhan" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El libro de Arkhan es un Objeto portahechizos (nivel de energía 4) que contiene un hechizo de Potenciación que puede lanzarse sobre una unidad amiga de no muertos a 6” o menos del portador y permanece un turno. La unidad tendrá un bonificador de +1 a sus tiradas para herir en combate cuerpo a cuerpo por la duración del conjuro.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El libro de Arkhan es un Objeto portahechizos (nivel de energía 4) que contiene un hechizo de Potenciación que puede lanzarse sobre una unidad amiga de no muertos a 6” o menos del portador y permanece un turno. La unidad tendrá un bonificador de +1 a sus tiradas para herir en combate cuerpo a cuerpo por la duración del conjuro.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14349,7 +14426,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="5f58-00ae-55e2-f4f7" name="Báculo del cráneo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del portador, el enemigo debe revelar todos sus objetos mágicos en un radio de 12” del portador. Además, podrás repetir la tirada en la tabla de disfunciones si el portador sufre una Disfunción mágica.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del portador, el enemigo debe revelar todos sus objetos mágicos en un radio de 12” del portador. Además, podrás repetir la tirada en la tabla de disfunciones si el portador sufre una Disfunción mágica.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14365,7 +14442,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="8743-b99f-7267-0074" name="Sombrero de la hechicería" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador puede elegir sus hechizos de entre los saberes del Fuego, el Metal, los Cielos o las Bestias. Además, el portador conoce un hechizo adicinoal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador puede elegir sus hechizos de entre los saberes del Fuego, el Metal, los Cielos o las Bestias. Además, el portador conoce un hechizo adicinoal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14381,7 +14458,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="c1ce-035d-eafb-79dd" name="Talismán negro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Permite a su portador guardar un dado de energía o dispersión al final de cualquier fase de magia para transformarlo en un dado del tipo que corresponda en la siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Permite a su portador guardar un dado de energía o dispersión al final de cualquier fase de magia para transformarlo en un dado del tipo que corresponda en la siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14405,7 +14482,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="d6a4-70e2-6130-3686" name="Estandarte de guerra de Drachenfels" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas enemigas a 12” o menos del portador del estandarte aplicarán un penalizador de -2 al liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas enemigas a 12” o menos del portador del estandarte aplicarán un penalizador de -2 al liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14421,7 +14498,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="9306-3e6b-44da-1e1d" name="Pabellón del gran nigromante" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Si el hechizo de Invocación de Nehek o Animar Muertos es lanzado con éxito a 12” o menos del estandarte, se tirará un dado de invocación adicional a los indicados.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Si el hechizo de Invocación de Nehek o Animar Muertos es lanzado con éxito a 12” o menos del estandarte, se tirará un dado de invocación adicional a los indicados.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14445,7 +14522,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="6f76-25b5-bc2d-7197" name="Estandarte funerario" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen la regla especial Golpe letal. Si ya disponían de esa regla, realizarán Golpes letales con un resultado de 5+ en lugar del habitual de 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen la regla especial Golpe letal. Si ya disponían de esa regla, realizarán Golpes letales con un resultado de 5+ en lugar del habitual de 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14464,7 +14541,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="6c93-47bf-44df-8d75" name="Pabellón impío" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad podrá marchar siempre, como si se encontrase a 12” o menos del general.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad podrá marchar siempre, como si se encontrase a 12” o menos del general.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14480,7 +14557,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="7e32-3648-9b33-28e8" name="Estandarte de la carne eterna" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Regeneración (6+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Regeneración (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14499,7 +14576,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="1d10-75e8-af8b-ee2d" name="Estandarte de los lamentos" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 descartando el resultado más bajo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 descartando el resultado más bajo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14515,7 +14592,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="638a-46d3-a1ba-4c18" name="Estandarte de la legión eterna" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Cada vez que la unidad reciba un hechizo de Potenciación, restaura inmediatamente un dado de invocación en la unidad, como si se hubiese lanzado el hechizo Invocación de Nehek sobre ella.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Cada vez que la unidad reciba un hechizo de Potenciación, restaura inmediatamente un dado de invocación en la unidad, como si se hubiese lanzado el hechizo Invocación de Nehek sobre ella.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14538,7 +14615,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="a6b5-4f99-b4a4-475d" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14553,7 +14630,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="fb06-3d42-0a77-82ce" name="Bibliotecario oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene la regla especial Señor del Conocimiento (Saber de la Muerte, de las Sombras, Magia Oscura o Nigromancia, a su elección). Esto sustituye sus hechizos normales. Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene la regla especial Señor del Conocimiento (Saber de la Muerte, de las Sombras, Magia Oscura o Nigromancia, a su elección). Esto sustituye sus hechizos normales. Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14571,7 +14648,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="c57a-240d-9f95-a6cf" name="Caminante del sendero oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14586,7 +14663,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="7be4-cf28-103a-ea12" name="Coleccionista de artefactos oscuros" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede portar hasta dos objetos arcanos. Sólo Liches y Maestros nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede portar hasta dos objetos arcanos. Sólo Liches y Maestros nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14601,7 +14678,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="778e-99dd-66a3-8caa" name="Despertar a los muertos" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Sólo Maestro nigromante o Liche. Cada vez que el personaje lance exitosamente Invocación de Nehek o Animar muertos, restaurará un dado de invocación adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Sólo Maestro nigromante o Liche. Cada vez que el personaje lance exitosamente Invocación de Nehek o Animar muertos, restaurará un dado de invocación adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14616,7 +14693,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="a9b5-b862-8361-6c35" name="El escriba del gran nigromante" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14631,7 +14708,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="9fb2-f182-8e47-cddb" name="El guardián de las antiguas tradiciones" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera dos dados de energía adicionales (no afecta a los dados de dispersión). Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14646,7 +14723,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="4af5-1fa5-fd01-4fd5" name="Maestro de la magia negra" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Permite repetir las tiradas en la tabla de disfunciones mágicas, aunque deberá aceptarse el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14661,7 +14738,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="dee3-5b0d-ff4e-d3ed" name="Manipulador de energía oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Al lanzar un hechizo, el mago puede repetir los dados. Si decide repetir, deberá repetir todos los dados, y debe aceptar el segundo resultado. Sólo Liches y Grandes nigromantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14676,7 +14753,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="dd41-40e4-f864-4e4b" name="Presencia oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14691,7 +14768,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="ba8b-803f-47e2-9ddd" name="Salvaguarda oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14706,7 +14783,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="b123-3b84-2da1-ec92" name="Vigor nigromántico" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero (o la unidad en la que se incluya este) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero (o la unidad en la que se incluya este) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14721,7 +14798,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="7e4d-8e8b-4dc6-1c9b" name="Voluntad nigromántica" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14743,7 +14820,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="6baa-25db-49f8-e1ee" name="Caminante del sendero oscuro" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero obtiene un +1 al lanzamiento de todos los hechizos nigrománticos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14758,7 +14835,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="e050-625c-d700-b7a4" name="Salvaguarda oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">La presencia del hechicero añade un dado de dispersión extra (no afecta a los dados de energía).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14773,7 +14850,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="f6ed-a740-9f23-15af" name="Portador del corazón de la noche" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero genera un dado de energía adicional (no afecta a los dados de dispersión)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14788,7 +14865,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="2707-302e-feb9-632d" name="Vigor nigromántico" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero (o la unidad en la que se incluya este) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero (o la unidad en la que se incluya este) sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14804,7 +14881,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="030a-d225-944e-40ae" name="El escriba del gran nigromante" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero conoce un hechizo adicional (esto no afecta a su nivel de magia)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14819,7 +14896,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="5f8e-d875-81a9-f734" name="Presencia oscura" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">Suma +2 a todos los intentos de canalizar del hechicero.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14834,7 +14911,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="6df9-8b4d-b761-21e3" name="Voluntad nigromántica" hidden="false" typeId="4d35-4e46-308c-cb63" typeName="Arcanos nigrománticos">
               <characteristics>
-                <characteristic name="Poder" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5725-5aa8-cbe0-bdbf">El hechicero puede sobreponerse automáticamente a la primera pérdida de contrentración qeu tenga en cada una de sus fases de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14858,7 +14935,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="0635-955f-8b9c-8735" name="Garfios de Vorag" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los ataques realizados con los Garfios de Vorag tienen la regla especial Ataques envenenados. Éstos herirán automáticamente con un resultado de 5+ en sus tiradas para impactar en lugar del habitual 6+ .</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los ataques realizados con los Garfios de Vorag tienen la regla especial Ataques envenenados. Éstos herirán automáticamente con un resultado de 5+ en sus tiradas para impactar en lugar del habitual 6+ .</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14887,7 +14964,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="8197-1e7f-2b9e-b415" name="Espada de los reyes" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Señores tumularios y Reyes tumularios. Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal). Causa Golpe letal con 5+ .</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Señores tumularios y Reyes tumularios. Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal). Causa Golpe letal con 5+ .</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14916,7 +14993,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="246b-3d9a-10ae-a1d6" name="Espada de energía maldita" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal).Por cada herida causada por el portador en combate cuerpo a cuerpo, se añade un dado de energía a la próxima fase de magia de los no muertos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal).Por cada herida causada por el portador en combate cuerpo a cuerpo, se añade un dado de energía a la próxima fase de magia de los no muertos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14937,7 +15014,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="2328-e005-302d-9a93" name="Espada del mal supurante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal). El portador tiene la regla especial Odio (todos sus enemigos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal). El portador tiene la regla especial Odio (todos sus enemigos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14967,7 +15044,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="c870-7d01-42d0-b37c" name="Espada de cristal oscuro" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo hechiceros. Arma de mano. Al final de cada fase de magia, el portador puede guardar en la espada un dado de energía o dispersión que no haya utilizado. Al inicio de cualquier fase de magia el portador puede extraer el dado, convirtiéndolo en un dado de energía o dispersión según le correspondan en esa fase. Mientras tenga un dado guardado, la espada suma +2 a la fuerza del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo hechiceros. Arma de mano. Al final de cada fase de magia, el portador puede guardar en la espada un dado de energía o dispersión que no haya utilizado. Al inicio de cualquier fase de magia el portador puede extraer el dado, convirtiéndolo en un dado de energía o dispersión según le correspondan en esa fase. Mientras tenga un dado guardado, la espada suma +2 a la fuerza del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14994,7 +15071,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="207e-f277-b243-6c2c" name="Espada negra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo puede ser portada por un personaje de infantería al mando de una unidad de esqueletos o zombis. Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal). Si el personaje abandona la unidad, la siguiente regla deja de tener efecto y la espada pasará a contar como un arma de mano funeraria: por cada herida causada por el personaje, añade una miniatura de esqueleto o zombi a la unidad, armado y equipado exactamente igual que el resto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo puede ser portada por un personaje de infantería al mando de una unidad de esqueletos o zombis. Arma de mano. Se considera un Arma funeraria (tiene la regla especial Golpe letal). Si el personaje abandona la unidad, la siguiente regla deja de tener efecto y la espada pasará a contar como un arma de mano funeraria: por cada herida causada por el personaje, añade una miniatura de esqueleto o zombi a la unidad, armado y equipado exactamente igual que el resto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15023,7 +15100,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="b655-7a4f-41f6-e9a5" name="Pabellón de los condenados" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo caballería esquelética (no tumularios). La caballería esquelética impacta automáticamente en el turno en que carga.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo caballería esquelética (no tumularios). La caballería esquelética impacta automáticamente en el turno en que carga.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15047,7 +15124,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="77ae-445c-dbc6-ff73" name="Estandarte de los túmulos" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo tumularios y caballería tumularia. Todos los tumularios de la unidad (incluye señores tumularios y reyes tumularios) obtienen un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo tumularios y caballería tumularia. Todos los tumularios de la unidad (incluye señores tumularios y reyes tumularios) obtienen un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15071,7 +15148,7 @@ muerto). Van Hal no puede unirse a unidades.</description>
           <profiles>
             <profile id="23bb-f565-b99d-6fd9" name="Capa de nieblas y sombras" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo hechiceros. El portador es etéreo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo hechiceros. El portador es etéreo.</characteristic>
               </characteristics>
             </profile>
           </profiles>

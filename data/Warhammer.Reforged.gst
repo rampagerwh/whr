@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="412" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
+<gameSystem id="be4eb679-97dc-4876-b582-19ff87fae0fd" name="Warhammer Reforged" revision="418" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" xmlns="http://www.battlescribe.net/schema/gameSystemSchema">
   <publications>
     <publication id="3b8f-2f71-171e-ded0" name="Warhammer Reforged. 3 edición"/>
   </publications>
@@ -43,32 +43,32 @@
     </profileType>
     <profileType id="219b-aed3-c65c-d46d" name="Armadura mágica">
       <characteristicTypes>
-        <characteristicType id="e0ed-7366-4856-8f3d" name="Propiedades mágicas"/>
+        <characteristicType id="e0ed-7366-4856-8f3d" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="ce18-64ea-b98c-dc9d" name="Arma mágica">
       <characteristicTypes>
-        <characteristicType id="28f4-dde2-505a-99d6" name="Propiedades mágicas"/>
+        <characteristicType id="28f4-dde2-505a-99d6" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="e4ac-4b4d-a272-410e" name="Artefacto arcano">
       <characteristicTypes>
-        <characteristicType id="2cab-b0ef-2a60-b01b" name="Propiedades mágicas"/>
+        <characteristicType id="2cab-b0ef-2a60-b01b" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="5d17-3511-0c13-e904" name="Objeto hechizado">
       <characteristicTypes>
-        <characteristicType id="0ef8-5055-c22e-455a" name="Propiedades mágicas"/>
+        <characteristicType id="0ef8-5055-c22e-455a" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="5441-5d99-9a3f-dce8" name="Estandarte mágico">
       <characteristicTypes>
-        <characteristicType id="eb3c-0420-d3ad-ee60" name="Propiedades mágicas"/>
+        <characteristicType id="eb3c-0420-d3ad-ee60" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="2cee-fb80-f7af-6efc" name="Talismán mágico">
       <characteristicTypes>
-        <characteristicType id="bb94-e12a-aef4-ebc0" name="Propiedades mágicas"/>
+        <characteristicType id="bb94-e12a-aef4-ebc0" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -1073,7 +1073,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3ae1-206a-6ee1-67ed" name="Pabellón de batalla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el Pabellón de Batalla podrá sumar 1D3 a su resultado del combate (adicionalmente al +1 por llevar estandarte).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el Pabellón de Batalla podrá sumar 1D3 a su resultado del combate (adicionalmente al +1 por llevar estandarte).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1089,7 +1089,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7b2b-7237-3af6-2c9d" name="Pabellón de salvaguarda arcana" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Resistencia mágica (3). Si un hechizo es dispersado usando los dados extra que proporciona el Pabellón, el portador podrá elegir una unidad enemiga a 6&quot; o menos de él (puede ser una unidad con la que el portar del estandarte se encuentra trabada en combate cuerpo a cuerpo). Esa unidad sufrirá inmediatamente 1D6 impactos de F4, distribuidos como si fuesen proyectiles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Resistencia mágica (3). Si un hechizo es dispersado usando los dados extra que proporciona el Pabellón, el portador podrá elegir una unidad enemiga a 6&quot; o menos de él (puede ser una unidad con la que el portar del estandarte se encuentra trabada en combate cuerpo a cuerpo). Esa unidad sufrirá inmediatamente 1D6 impactos de F4, distribuidos como si fuesen proyectiles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1116,7 +1116,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="b9e0-325d-10a0-08ba" name="Amuleto de la suerte" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. El portador puede usar el amuleto para repetir una tirada para impactar, para herir, una tirada de salvación por armadura o especial o un chequeo de atributo. Una vez usado, su poder se agota y no podrá utilizarse de nuevo en el transcurso de la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. El portador puede usar el amuleto para repetir una tirada para impactar, para herir, una tirada de salvación por armadura o especial o un chequeo de atributo. Una vez usado, su poder se agota y no podrá utilizarse de nuevo en el transcurso de la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1132,7 +1132,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d196-97cc-19f5-cde7" name="Amuleto del fuego" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Puedes declarar que usas el Amuleto del Fuego cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. El portador obtendrá la regla especial Resistencia mágica (3), pero sólo contra ese hechizo. Tras ello, el amuleto habrá agotado su poder y quedará inservible.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Puedes declarar que usas el Amuleto del Fuego cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. El portador obtendrá la regla especial Resistencia mágica (3), pero sólo contra ese hechizo. Tras ello, el amuleto habrá agotado su poder y quedará inservible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1151,7 +1151,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="87f4-5622-a74c-267c" name="Gema del fuego" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador es Inmune al fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador es Inmune al fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1170,7 +1170,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="4d5c-d073-b261-1206" name="Piedra de obsidiana" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene Resistencia mágica (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene Resistencia mágica (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1189,7 +1189,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="eae8-a10a-753e-a209" name="Talismán de protección" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1205,7 +1205,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="f21e-b819-4a4a-7a8d" name="Amuleto jade" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Puedes declarar que vas a utilizar el Amuleto Jade al sufrir una herida tras fallar la tirada de salvación (si corresponde). Proporciona una tirada de salvación especial de 2+ contra esa única herida. Tras utilizarse, su poder queda agotado, y no podrá usarse de nuevo en el transcurso de la batalla. </characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Puedes declarar que vas a utilizar el Amuleto Jade al sufrir una herida tras fallar la tirada de salvación (si corresponde). Proporciona una tirada de salvación especial de 2+ contra esa única herida. Tras utilizarse, su poder queda agotado, y no podrá usarse de nuevo en el transcurso de la batalla. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1221,7 +1221,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d817-16e8-4e1f-7978" name="Corazón de obsidiana" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene Resistencia mágica (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene Resistencia mágica (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1240,7 +1240,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="66d6-f72a-64b6-20a1" name="Amuleto ámbar" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada turno propio, si el portador está herido, recupera una de las heridas perdidas con anterioridad durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada turno propio, si el portador está herido, recupera una de las heridas perdidas con anterioridad durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1256,7 +1256,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="08ae-1199-6013-5d73" name="Pintura de guerra mágica" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1). El portador no puede lelvar ningún tipo de armadura, salvo escudo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1). El portador no puede lelvar ningún tipo de armadura, salvo escudo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1275,7 +1275,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="f4ba-e6cb-f4d5-d2a2" name="Talismán de resistencia" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1291,7 +1291,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="21a7-5120-32d4-d55a" name="La piedra del amanecer" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador podrá repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador podrá repetir sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1307,7 +1307,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7679-f39b-3582-863a" name="Brazales del rayo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporcionan a su portador una tirada de salvación especial de 4+ contra proyectiles (arcos, ballestas, máquinas de guerra) y contra las heridas causadas por hechizos de tipo Proyectil Mágico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporcionan a su portador una tirada de salvación especial de 4+ contra proyectiles (arcos, ballestas, máquinas de guerra) y contra las heridas causadas por hechizos de tipo Proyectil Mágico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1323,7 +1323,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="c146-7223-e711-a725" name="Semilla de renacimiento" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Regeneración (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Regeneración (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1342,7 +1342,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="4934-0a0e-fabb-1028" name="Gema de la vida" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la reglas especial Regeneración (6+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la reglas especial Regeneración (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1369,7 +1369,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="5b6b-176c-6505-1bab" name="Poción de temeridad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede tomarse al inicio de cualquier turno, propio o del oponente. El personaje obtiene las reglas especiales Carga devastadora e Inmune a la psicología hasta el inicio del siguiente turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede tomarse al inicio de cualquier turno, propio o del oponente. El personaje obtiene las reglas especiales Carga devastadora e Inmune a la psicología hasta el inicio del siguiente turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1389,7 +1389,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="e40b-ab21-6247-ae97" name="Poción de velocidad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de cualquier fase de disparo o combate cuerpo a cuerpo, propia o del oponente. Hasta el final de esa fase, tendrá un bonificador de +3I.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de cualquier fase de disparo o combate cuerpo a cuerpo, propia o del oponente. Hasta el final de esa fase, tendrá un bonificador de +3I.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1405,7 +1405,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8622-1e2f-6f68-0958" name="Icono de grandeza" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El personaje duplica su potencia de unidad (ten en cuenta que en caso de ir montado, duplicará su propia potencia, no la de su montura).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El personaje duplica su potencia de unidad (ten en cuenta que en caso de ir montado, duplicará su propia potencia, no la de su montura).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1421,7 +1421,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="c919-7130-8963-dd38" name="Icono de hierro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre obtienen una tirada de salvación especial de 6+ contra las heridas causadas en la fase de disparo enemigo por Máquinas de Guerra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre obtienen una tirada de salvación especial de 6+ contra las heridas causadas en la fase de disparo enemigo por Máquinas de Guerra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1437,7 +1437,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="6893-323d-193f-2a3f" name="Amuleto de Ravensdark" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">En combate cuerpo a cuerpo, el portador tan sólo podrá ser impactado por miniaturas con las reglas especiales Volar o Flotar con resultados naturales de 6 en los dados.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">En combate cuerpo a cuerpo, el portador tan sólo podrá ser impactado por miniaturas con las reglas especiales Volar o Flotar con resultados naturales de 6 en los dados.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1453,7 +1453,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="4398-12a4-1bf0-d21c" name="Poción de resistencia" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de cualquier fase de disparo o combate cuerpo a cuerpo, propia o del oponente. Hasta el final de esa fase, tendrá un bonificador de +3R.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de cualquier fase de disparo o combate cuerpo a cuerpo, propia o del oponente. Hasta el final de esa fase, tendrá un bonificador de +3R.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1469,7 +1469,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ab03-543a-1e23-abf8" name="Anillo de oscuridad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Potenciación que puede lanzarse sólo sobre el portador, y que permanece un turno. Por la duración del hechizo, el portador tan sólo podrá ser impactado en combate cuerpo a cuerpo con resultados naturales de 6, sin tener en cuenta otros modificadores.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Potenciación que puede lanzarse sólo sobre el portador, y que permanece un turno. Por la duración del hechizo, el portador tan sólo podrá ser impactado en combate cuerpo a cuerpo con resultados naturales de 6, sin tener en cuenta otros modificadores.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1485,7 +1485,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="13be-b2f0-afff-249b" name="Corona de poder" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtiene la regla especial Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtiene la regla especial Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1504,7 +1504,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="dc99-c726-61d5-9f8d" name="Poción de curación" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede tomarse al inicio de cualquier turno, propio o del oponente. El personaje restablece inmediatamente todas las heridas que hubiese sufrido con anterioridad durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede tomarse al inicio de cualquier turno, propio o del oponente. El personaje restablece inmediatamente todas las heridas que hubiese sufrido con anterioridad durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1520,7 +1520,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="88a8-adf3-321c-a741" name="Flauta de la muerte" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. La flauta contiene un potente hechizo de Maldición que afecta a todas las unidades enemigas de caballería, caballería monstruosa, bestias, bestias monstruosas, monstruos, enjambres y carros a 18” o menos del portador, y dura hasta el inicio de tu siguiente fase de magia. Las unidades afectadas perderán la regla especial Veloces (si la tenían) y obtendrán la regla especial Estupidez. En el caso de Carros, Caballería y Caballería monstruosa, deberá chequearse Estupidez usando el liderazgo de la montura/bestias de tiro en lugar del de la tripulación.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. La flauta contiene un potente hechizo de Maldición que afecta a todas las unidades enemigas de caballería, caballería monstruosa, bestias, bestias monstruosas, monstruos, enjambres y carros a 18” o menos del portador, y dura hasta el inicio de tu siguiente fase de magia. Las unidades afectadas perderán la regla especial Veloces (si la tenían) y obtendrán la regla especial Estupidez. En el caso de Carros, Caballería y Caballería monstruosa, deberá chequearse Estupidez usando el liderazgo de la montura/bestias de tiro en lugar del de la tripulación.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1539,7 +1539,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="74de-f0b8-86bf-4d6e" name="El cáliz de rubíes" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todos los disparos efectuados contra el portador o la unidad en la que se encuentre tendrán un penalizador de -1 a su tirada para impactar. Todos los ataques cuerpo a cuerpo dirigidos contra el portador tendrán un penalizador de -1 en su tirada para impactar. </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todos los disparos efectuados contra el portador o la unidad en la que se encuentre tendrán un penalizador de -1 a su tirada para impactar. Todos los ataques cuerpo a cuerpo dirigidos contra el portador tendrán un penalizador de -1 en su tirada para impactar. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1555,7 +1555,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7082-ff70-76a9-c015" name="Orbe de tormenta" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. El hechizo contenido en el Orbe es un hechizo de Maldición que dura hasta el inicio de tu siguiente fase de magia y toma como objetivo a todas las miniaturas con las reglas especiales Volar y Flotar (amigas y enemigas) en el campo de batalla. Estas miniaturas no podrán efectuar movimientos volando o flotando por la duración del conjuro: deberán usar el valor de M indicado en su perfil de atributos, y perderán la regla especial Veloces (a menos que también se la confiera su tipo de tropa). </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. El hechizo contenido en el Orbe es un hechizo de Maldición que dura hasta el inicio de tu siguiente fase de magia y toma como objetivo a todas las miniaturas con las reglas especiales Volar y Flotar (amigas y enemigas) en el campo de batalla. Estas miniaturas no podrán efectuar movimientos volando o flotando por la duración del conjuro: deberán usar el valor de M indicado en su perfil de atributos, y perderán la regla especial Veloces (a menos que también se la confiera su tipo de tropa). </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1571,7 +1571,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="0f6b-f585-7cd8-f40a" name="El corazón del infortunio" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Si el portador muere, antes de retirarlo como baja, coloca la plantilla redonda pequeña centrada en él: todas las miniaturas bajo la plantilla sufrirán un impacto de Fuerza igual a la Resistencia del difunto+1D3 (tira una única vez para la F de todos los impactos) y la regla especial Heridas múltiples (1D3). </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Si el portador muere, antes de retirarlo como baja, coloca la plantilla redonda pequeña centrada en él: todas las miniaturas bajo la plantilla sufrirán un impacto de Fuerza igual a la Resistencia del difunto+1D3 (tira una única vez para la F de todos los impactos) y la regla especial Heridas múltiples (1D3). </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1590,7 +1590,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d7e3-0a4f-466e-cf39" name="El cuerno de Urgok" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. El cuerno contiene un hechizo de Maldición, que afecta a todas las unidades enemigas a 18” o menos del portador. Si se encuentran trabadas en combate cuerpo a cuerpo, deberán efectuar inmediatamente un chequeo de Liderazgo o quedarán Apabulladas ese turno. Si no se encuentran trabadas en combate, deberán efectuar inmediatamente un chequeo de Pánico. Adicionalmente, las unidades amigas que estén huyendo dentro del radio de 18”se reagruparán automáticamente si el hechizo contenido en el cuerno es lanzado exitosamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. El cuerno contiene un hechizo de Maldición, que afecta a todas las unidades enemigas a 18” o menos del portador. Si se encuentran trabadas en combate cuerpo a cuerpo, deberán efectuar inmediatamente un chequeo de Liderazgo o quedarán Apabulladas ese turno. Si no se encuentran trabadas en combate, deberán efectuar inmediatamente un chequeo de Pánico. Adicionalmente, las unidades amigas que estén huyendo dentro del radio de 18”se reagruparán automáticamente si el hechizo contenido en el cuerno es lanzado exitosamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1609,7 +1609,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="0a1f-dde9-f73f-9d18" name="Gema negra de Gnar" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. La Gema negra de Gnar puede emplearse cuando su portador inicia un desafío (ya sea lanzándolo o aceptándolo). Retira del campo de batalla al portador y a su adversario (así como sus monturas), y coloca un marcador en el lugar en el que se encontraban. Al inicio de cada fase de magia posterior (amiga o enemiga), tira 1D6: si obtienes un resultado de 6, el poder de la gema se habrá agotado; en la siguiente fase de magia el poder se agotará con 5+; con 4+ en la siguente, y así hasta llegar a 2+. Devuelve a las miniaturas retiradas al campo de batalla, a sus respectivas unidades si formaban parte de una, o al lugar en el que se encuentra el marcador si no se encontraban en una unidad o si su unidad ha sido destruida o ha huido del campo de batalla. </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. La Gema negra de Gnar puede emplearse cuando su portador inicia un desafío (ya sea lanzándolo o aceptándolo). Retira del campo de batalla al portador y a su adversario (así como sus monturas), y coloca un marcador en el lugar en el que se encontraban. Al inicio de cada fase de magia posterior (amiga o enemiga), tira 1D6: si obtienes un resultado de 6, el poder de la gema se habrá agotado; en la siguiente fase de magia el poder se agotará con 5+; con 4+ en la siguente, y así hasta llegar a 2+. Devuelve a las miniaturas retiradas al campo de batalla, a sus respectivas unidades si formaban parte de una, o al lugar en el que se encuentra el marcador si no se encontraban en una unidad o si su unidad ha sido destruida o ha huido del campo de batalla. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1625,7 +1625,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="cda8-92fc-2683-3c53" name="Poción de fuerza" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de cualquier fase de disparo o combate cuerpo a cuerpo, propia o del oponente. Hasta el final de esa fase, tendrá un bonificador de +3F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de cualquier fase de disparo o combate cuerpo a cuerpo, propia o del oponente. Hasta el final de esa fase, tendrá un bonificador de +3F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1641,7 +1641,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="004e-bfe3-5e61-770d" name="Anillo del fuego infernal" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene un hechizo de proyectil mágico con un alcance de 24”, que causa 2D6 impactos de F3 con Ataques sólo flamígeros. </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene un hechizo de proyectil mágico con un alcance de 24”, que causa 2D6 impactos de F3 con Ataques sólo flamígeros. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1660,7 +1660,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="eec3-32a6-d7c5-1c04" name="Poción de invisibilidad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de  cualquiera de sus fases de movimiento, si está trabado en combate. El personaje podrá mover ese turno como si no se encontrase trabado en combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede beber la poción al inicio de  cualquiera de sus fases de movimiento, si está trabado en combate. El personaje podrá mover ese turno como si no se encontrase trabado en combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1676,7 +1676,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="60d1-a3ab-db69-44e1" name="Emplasto curativo" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al inicio de cualquier de tus turnos. El portador recupera una herida que hubiese sufrido con anterioridad durante la batalla. </characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al inicio de cualquier de tus turnos. El portador recupera una herida que hubiese sufrido con anterioridad durante la batalla. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1700,7 +1700,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ada1-4970-aed8-3694" name="Corona de hechicería" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtiene nivel de magia 3, y puede elegir hechizos de los saberes de Magia Oscura o el Saber de la Muerte. Si el portador ya es un hechicero, aumenta su nivel de magia en 1 (hasta un máximo de 4), y le permite elegir hechizos de entre Magia Oscura y el Saber de la Muerte, además de sus propios saberes. Sin embargo, debido a las voces en su cabeza, se verá afectado por la regla especial Estupidez. El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtiene nivel de magia 3, y puede elegir hechizos de los saberes de Magia Oscura o el Saber de la Muerte. Si el portador ya es un hechicero, aumenta su nivel de magia en 1 (hasta un máximo de 4), y le permite elegir hechizos de entre Magia Oscura y el Saber de la Muerte, además de sus propios saberes. Sin embargo, debido a las voces en su cabeza, se verá afectado por la regla especial Estupidez. El poder de esta reliquia es tal que no puede ser anulada, destruida o afectada por reglas especiales, objetos mágicos o hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1719,7 +1719,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d2b4-a25f-6566-9ebd" name="Anillo de Corin" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Daño directo que toma como objetivo a un único personaje enemigo a 12” o menos del portador (puede, si lo desea, seleccionar un personaje dentro de una unidad). El objetivo sufrirá un impacto de F4, y deberá revelar todos sus objetos mágicos y rúnicos. Selecciona aleatoriamente uno de ellos, el cual quedará destruido y no podrá emplearse más durante la batalla (pasará a considerarse un objeto mundano de su mismo tipo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Daño directo que toma como objetivo a un único personaje enemigo a 12” o menos del portador (puede, si lo desea, seleccionar un personaje dentro de una unidad). El objetivo sufrirá un impacto de F4, y deberá revelar todos sus objetos mágicos y rúnicos. Selecciona aleatoriamente uno de ellos, el cual quedará destruido y no podrá emplearse más durante la batalla (pasará a considerarse un objeto mundano de su mismo tipo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1735,7 +1735,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3ab4-34d6-7ea2-477f" name="Amuleto de la venganza" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Si el portador es selecionado exclusivamente como objetivo de un hechizo de daño directo o meidnate la regla especial Francotirador, el efecto del hechizo o disparo deberá resolverse contra el hechicero o tirador que lo efectuó.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Si el portador es selecionado exclusivamente como objetivo de un hechizo de daño directo o meidnate la regla especial Francotirador, el efecto del hechizo o disparo deberá resolverse contra el hechicero o tirador que lo efectuó.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1762,7 +1762,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="b4f9-8d18-88d7-c662" name="Mayal danzante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mayal. Si en la primera ronda de un combate el portador causa al menos una herida con el Mayal Danzante, no se verá sometido a agotamiento en las subsiguientes rondas del combate (es decir, podrá seguir aplicando el bonificador de +2F del mayal).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mayal. Si en la primera ronda de un combate el portador causa al menos una herida con el Mayal Danzante, no se verá sometido a agotamiento en las subsiguientes rondas del combate (es decir, podrá seguir aplicando el bonificador de +2F del mayal).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1789,7 +1789,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ac86-9adc-38f7-8c9e" name="Mangual aplastador" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mangual. Impactos múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mangual. Impactos múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1817,7 +1817,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="352c-90f8-48cb-cd51" name="Ensartadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Poder de penetración. Por cada herida causada en cuerpo a cuerpo por la Ensartadora en un turno en el que su portador cargó, éste obtiene un ataque adicional. Estos ataques adicionales no generan nuevos ataques.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Poder de penetración. Por cada herida causada en cuerpo a cuerpo por la Ensartadora en un turno en el que su portador cargó, éste obtiene un ataque adicional. Estos ataques adicionales no generan nuevos ataques.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1845,7 +1845,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="a187-4a32-64b5-ba2d" name="Lanza infalible" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza. Repite las tiradas para impactar fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza. Repite las tiradas para impactar fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1866,7 +1866,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="1ad4-a14d-c571-2bc4" name="Lanza punzante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza. Tiene la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza. Tiene la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1894,7 +1894,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="cade-4224-27e5-6a37" name="Dagas mortales" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Sus ataques tienen la regla especial Ataques envenenados.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Sus ataques tienen la regla especial Ataques envenenados.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1923,7 +1923,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="881c-0f2c-7c02-b364" name="Espada berseker" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador obtiene la regla especial Furia asesina, y no perderá su furia asesina aunque sea derrotado en un combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador obtiene la regla especial Furia asesina, y no perderá su furia asesina aunque sea derrotado en un combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1943,7 +1943,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="bcec-4b5a-443e-ac2f" name="Espada drenadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Al final de cada fase de combate cuerpo a cuerpo en la que el portador haya causado al menos una herida con esta espada, éste podrá restablecer una de las heridas que hubiera sufrido con anterioridad durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Al final de cada fase de combate cuerpo a cuerpo en la que el portador haya causado al menos una herida con esta espada, éste podrá restablecer una de las heridas que hubiera sufrido con anterioridad durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1962,7 +1962,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="678b-8f82-0930-cb9a" name="Hacha veloz" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. No aplica el penalizador habitual de reducir la iniciativa a la mitad (por la regla especial Lenta), al contrario que otras armas a dos manos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. No aplica el penalizador habitual de reducir la iniciativa a la mitad (por la regla especial Lenta), al contrario que otras armas a dos manos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -1989,7 +1989,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="6164-4ed4-2fbe-0c88" name="Quiebracorazas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Poder de penetración. Los oponentes deberán repetir las tiradas de salvación por armadura exitosas que realicen contra las heridas causadas por Quiebracorazas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Poder de penetración. Los oponentes deberán repetir las tiradas de salvación por armadura exitosas que realicen contra las heridas causadas por Quiebracorazas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2017,7 +2017,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="da33-060d-bda0-1611" name="Aflicción del guerrero" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por Aflicción del Guerrero verá su atributo de Ataques reducido en un punto por cada herida que sufra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por Aflicción del Guerrero verá su atributo de Ataques reducido en un punto por cada herida que sufra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2036,7 +2036,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="f796-0d0b-44d3-6296" name="Bebedora de sangre" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por la Bebedora de Sangre verá su atributo de Fuerza reducido en un punto por cada herida que sufra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por la Bebedora de Sangre verá su atributo de Fuerza reducido en un punto por cada herida que sufra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2055,7 +2055,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="08e4-3346-4637-d04d" name="Buscacorazones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Repite las tiradas para impactar fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Repite las tiradas para impactar fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2074,7 +2074,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="bd39-2eef-8e92-b8e0" name="Cuchilla mortal" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por la Cuchilla Mortal no permiten tiradas de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por la Cuchilla Mortal no permiten tiradas de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2093,7 +2093,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="45cd-a7df-76b4-9584" name="Espada bendita" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Confiere a su portador HA10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Confiere a su portador HA10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2112,7 +2112,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="0438-3fa0-c22f-88b3" name="Espada cabalistica de cobre" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +1 a su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +1 a su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2131,7 +2131,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8c77-62e3-6fff-cdfe" name="Espada cabalistica de bronce" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +2 a su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +2 a su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2150,7 +2150,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="21de-5d57-d9ea-873d" name="Espada cabalistica de plata" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +3 a su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +3 a su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2169,7 +2169,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ebe1-4f11-a8bb-5fcd" name="Espada cabalistica dorada" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Duplica el valor de Iniciativa del portador en cuerpo a cuerpo, hasta un máximo de 10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Duplica el valor de Iniciativa del portador en cuerpo a cuerpo, hasta un máximo de 10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2188,7 +2188,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="667b-fd2a-7f3d-c970" name="Espada de acero punzante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Impacta automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Impacta automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2207,7 +2207,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="756d-4062-a6c4-03a6" name="Espada de bronce fulgurante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene +2 ataques.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene +2 ataques.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2226,7 +2226,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d45a-7e7d-a300-0af3" name="Espada de cobre fulgurante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Confiere a su portador +1 ataque.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Confiere a su portador +1 ataque.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2245,7 +2245,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="77c8-8c0b-69af-68e3" name="Espada de hierro encantado" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2264,7 +2264,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="6ef0-26a0-39e1-6cf2" name="Espada de la fuerza" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. +1F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. +1F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2283,7 +2283,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="53a7-f975-4813-f0ef" name="Espada de la muerte súbita" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá Iniciativa 10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá Iniciativa 10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2302,7 +2302,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="b7cc-921d-dcfc-9e77" name="Espada de oro marino" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por este arma tendrán un modificador a la tirada de salvación por armadura adicional de -3.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por este arma tendrán un modificador a la tirada de salvación por armadura adicional de -3.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2321,7 +2321,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ed6b-86c0-3609-f5d8" name="Espada debilitadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por la Espada Debilitadora verá su atributo de Iniciativa reducido en un punto por cada herida que sufra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por la Espada Debilitadora verá su atributo de Iniciativa reducido en un punto por cada herida que sufra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2340,7 +2340,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="2bea-3d91-ad90-ae17" name="Espada defensora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Al inicio de cada ronda de combate cuerpo a cuerpo, elige una miniatura enemiga en contacto peana con peana con el portador. Ésta perderá un Ataque esa fase de cuerpo a cuerpo (con un mínimo de 1 ataque; no puede reducirlos a cero).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Al inicio de cada ronda de combate cuerpo a cuerpo, elige una miniatura enemiga en contacto peana con peana con el portador. Ésta perderá un Ataque esa fase de cuerpo a cuerpo (con un mínimo de 1 ataque; no puede reducirlos a cero).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2359,7 +2359,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="6004-a3c8-0e89-9204" name="Espada ogro" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. +2F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. +2F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2378,7 +2378,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d962-c409-c210-bb16" name="Espada rebanadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por este arma tendrán un penalizador de -2 a la tirada de salvación por armadura (adicional al penalizador por la fuerza del que la empuña).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por este arma tendrán un penalizador de -2 a la tirada de salvación por armadura (adicional al penalizador por la fuerza del que la empuña).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2397,7 +2397,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="be9d-96cd-e470-093e" name="Espada reliquia" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Confiere a su portador +1 HA.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Confiere a su portador +1 HA.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2416,7 +2416,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="72a3-d530-921b-5a5e" name="Lengua de dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma tienen la regla especial Ataques flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma tienen la regla especial Ataques flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2436,7 +2436,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="32ce-256e-0be2-f2f5" name="Espada del torturador" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por la Espada del Torturador se verá afectada por la regla especial Estupidez por el resto de la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura herida por la Espada del Torturador se verá afectada por la regla especial Estupidez por el resto de la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2456,7 +2456,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="aa3a-bdb3-1f9f-98c8" name="Decapitadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2476,7 +2476,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d4c3-10d9-497d-eb98" name="Espada de hueso" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2496,7 +2496,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3548-f206-cd47-1447" name="Espada desgarradora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2516,7 +2516,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="a634-ebc0-1d48-e2c6" name="Espada del dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Impactos múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Impactos múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2536,7 +2536,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="bb52-9bf4-947d-695b" name="Espada del valor" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador y la unidad en la que se encuentre serán Inmunes a la psicología.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador y la unidad en la que se encuentre serán Inmunes a la psicología.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2556,7 +2556,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="918c-65ab-d81f-c4e1" name="Espada aullante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador causa Miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador causa Miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2576,7 +2576,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="2866-368c-a9a7-04d8" name="Espada mordedora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada tienen la regla especial Poder de Penetración.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada tienen la regla especial Poder de Penetración.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2596,7 +2596,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d042-afdc-35c6-ca46" name="Espada cazabrujas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador Resistencia mágica (2). Además, cada vez que el portador cause una herida con esta espada a un enemigo con niveles de magia, éste perderá un nivel de magia (y un hechizo, determinado al azar) por cada herida que sufra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador Resistencia mágica (2). Además, cada vez que el portador cause una herida con esta espada a un enemigo con niveles de magia, éste perderá un nivel de magia (y un hechizo, determinado al azar) por cada herida que sufra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2616,7 +2616,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8412-f5ce-d577-df5f" name="Espada exorcista" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Heridas múltiples (1D3), pero sólo contra miniaturas con la regla especial No muerto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Heridas múltiples (1D3), pero sólo contra miniaturas con la regla especial No muerto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2644,7 +2644,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="9ba8-13a2-c33a-ef93" name="Espadón de muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Confiere a su portador F10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Confiere a su portador F10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2671,7 +2671,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="e6c2-f629-fa7d-de46" name="Matadragones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. F+2, Heridas múltiples (1D3). Contra dragones (de cualquier tipo, incluyendo dragones del Caos, dragones zombi, etc), tendrá también la regla especial Golpe letal heroico. El portador será inmune al Terror causado por los dragones. </characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. F+2, Heridas múltiples (1D3). Contra dragones (de cualquier tipo, incluyendo dragones del Caos, dragones zombi, etc), tendrá también la regla especial Golpe letal heroico. El portador será inmune al Terror causado por los dragones. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2697,7 +2697,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="78b7-8063-37df-645b" name="Matademonios" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Contra miniaturas con la regla especial Demonio, F+3 y Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Contra miniaturas con la regla especial Demonio, F+3 y Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2717,7 +2717,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="a809-3398-fde6-51a5" name="Espada venenosa" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Heridas múltiples (1D6).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Heridas múltiples (1D6).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2737,7 +2737,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="bb94-cc0c-8ce0-2ccd" name="Espada del fuego infernal" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Ataques flamígeros. Mata si causa una herida. Cualquier miniatura muerta por esta espada estallará en llamas, causando a todas las miniaturas en contacto peana con peana un impacto de F2 con Ataques sólo flamígeros (estos impactos no se consideran causados por al espada, por lo qu eno se benefician de sus reglas especiales). El portador de la espada es Inmune al fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Ataques flamígeros. Mata si causa una herida. Cualquier miniatura muerta por esta espada estallará en llamas, causando a todas las miniaturas en contacto peana con peana un impacto de F2 con Ataques sólo flamígeros (estos impactos no se consideran causados por al espada, por lo qu eno se benefician de sus reglas especiales). El portador de la espada es Inmune al fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2759,7 +2759,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3e52-3d2c-3298-01a2" name="Espada del frío" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Niega la tirada de salvación por armadura. Mata si causa una herida (esto no afecta a miniaturas con la regla especial Demonio o No muerto).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Niega la tirada de salvación por armadura. Mata si causa una herida (esto no afecta a miniaturas con la regla especial Demonio o No muerto).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2778,7 +2778,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="40c7-d0c0-3d7a-e4c1" name="Espada de oro fulgurante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene +3 ataques.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene +3 ataques.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2797,7 +2797,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="91f7-3d75-7ae7-a0f8" name="Espada de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Niega la tirada de salvación por armadura. Si hiere a un oponente, y este lleva alguna pieza de armadura mundana o mágica, éstas quedarán destruidas y no podrán utilizarse más durante la batalla. </characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Niega la tirada de salvación por armadura. Si hiere a un oponente, y este lleva alguna pieza de armadura mundana o mágica, éstas quedarán destruidas y no podrán utilizarse más durante la batalla. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2816,7 +2816,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="c297-86e7-7d92-b54e" name="Espada de hidra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Impactos múltiples (1D6).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Impactos múltiples (1D6).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2836,7 +2836,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="11c7-5c4e-1774-ac82" name="Espada de gigante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. F+3.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. F+3.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2855,7 +2855,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="1f2b-4950-40ac-85e3" name="Espada de destrucción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador no podrá portar ningún otro objeto mágico. Todos los objetos mágicos o rúnicos cuyo portador esté en contacto peana con peana con el portador de la espada de destrucción quedarán anulados y no funcionarán mientras se encuentren en contacto (pasarán a considerarse objetos mundanos de su mismo tipo). Por cada impacto causado con esta espada a un enemigo en combate cuerpo a cuerpo, destruye permanentemente uno de sus objetos mágicos o rúnicos determinado aleatoriamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador no podrá portar ningún otro objeto mágico. Todos los objetos mágicos o rúnicos cuyo portador esté en contacto peana con peana con el portador de la espada de destrucción quedarán anulados y no funcionarán mientras se encuentren en contacto (pasarán a considerarse objetos mundanos de su mismo tipo). Por cada impacto causado con esta espada a un enemigo en combate cuerpo a cuerpo, destruye permanentemente uno de sus objetos mágicos o rúnicos determinado aleatoriamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2870,7 +2870,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     </selectionEntryGroup>
     <selectionEntryGroup id="325e-df44-d279-1ddb" name="Artefactos arcanos" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd8e-7556-6ab5-ec2f" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd8e-7556-6ab5-ec2f" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dad2-65b9-c486-ce18" type="min"/>
       </constraints>
       <selectionEntries>
@@ -2882,7 +2882,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="47df-33bc-2b18-bede" name="Bastón negro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador tendrá un bonificador de +1 a todas sus tiradas para canalizar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador tendrá un bonificador de +1 a todas sus tiradas para canalizar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2898,7 +2898,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="5f45-3043-beac-689d" name="Familiar guerrero" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un Familiar Guerrero tiene 2 ataques que se resuelven con HA5, F5 e I10, y Ataques mágicos, y lucha junto a su amo (incluso en desafíos). Estos atauqes no se benefician de ningún arma mágica o regla especial de su propietario. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un Familiar Guerrero tiene 2 ataques que se resuelven con HA5, F5 e I10, y Ataques mágicos, y lucha junto a su amo (incluso en desafíos). Estos atauqes no se benefician de ningún arma mágica o regla especial de su propietario. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2917,7 +2917,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="e539-c1d4-5edd-b114" name="Cáliz de hechicería" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador Canaliza siempre con un resultado de 2+ en 1D6. Sin embargo, si obtiene un resultado natural de 1, sufrirá una herida sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador Canaliza siempre con un resultado de 2+ en 1D6. Sin embargo, si obtiene un resultado natural de 1, sufrirá una herida sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2933,7 +2933,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="55eb-59c9-5474-ea59" name="Familiar hechicero" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador conoce un hechizo adicional. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador conoce un hechizo adicional. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2949,7 +2949,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="70b7-343e-3833-5586" name="Varita de poder" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al final de cada fase de magia, el portador puede tomar hasta dos de sus dados de energía o dispersión no utilizados y guardarlos en la varita del poder. Durante cualquier fase de magia posterior, el hechicero puede extraer dados de la varita, que pasarán a ser dados de energía (si es una fase de magia propia) o de dispersión (si es una fase de magia enemiga).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al final de cada fase de magia, el portador puede tomar hasta dos de sus dados de energía o dispersión no utilizados y guardarlos en la varita del poder. Durante cualquier fase de magia posterior, el hechicero puede extraer dados de la varita, que pasarán a ser dados de energía (si es una fase de magia propia) o de dispersión (si es una fase de magia enemiga).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2965,7 +2965,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="086e-a1f8-7695-0bfb" name="Familiar energético" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador genera un dado de energía en cada fase de magia propia, que sólo podrá utilizar él. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador genera un dado de energía en cada fase de magia propia, que sólo podrá utilizar él. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2981,7 +2981,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="15b3-7d18-2bc5-7b3d" name="Báculo de cráneo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador tendrá un bonificador de +1 en todas sus tiradas para dispersar hechizos. Además, al inicio de cada fase de magia propia, puedes designar un personaje enemigo a 24” o menos del portador, el cual deberá revelar todos sus objetos mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador tendrá un bonificador de +1 en todas sus tiradas para dispersar hechizos. Además, al inicio de cada fase de magia propia, puedes designar un personaje enemigo a 24” o menos del portador, el cual deberá revelar todos sus objetos mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -2997,7 +2997,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d097-9a24-cf72-74cf" name="Pergamino de dispersión" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes declarar que usas el Pergamino cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo, no es necesario que lances dados. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes declarar que usas el Pergamino cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo, no es necesario que lances dados. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3013,7 +3013,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ad50-e0a0-cbe1-1b27" name="Báculo del rayo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Proyectil mágico con un alcance de 24” que causa 1D6 impactos de F6 que no permiten tirada de salvación por armadura. Se trata de un ataque de rayos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Proyectil mágico con un alcance de 24” que causa 1D6 impactos de F6 que no permiten tirada de salvación por armadura. Se trata de un ataque de rayos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3032,7 +3032,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="0ef6-66f7-4957-5353" name="Báculo llameante de la muerte" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Proyectil mágico con un alcance de 24” que causa 2D6 impactos de F4 con Ataques sólo flamígeros. Cualquier unidad que sufra al menos una baja por efecto del báculo deberá efectuar un chequeo de Pánico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Proyectil mágico con un alcance de 24” que causa 2D6 impactos de F4 con Ataques sólo flamígeros. Cualquier unidad que sufra al menos una baja por efecto del báculo deberá efectuar un chequeo de Pánico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3051,7 +3051,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="5538-e410-285e-2e90" name="Pergamino de destrucción de magia" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes declarar que usas el Pergamino cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo. Además, tira 1D6: si obtienes un resultado de 4+, el hechizo resultará destruido, y no podrá usarse más durante la batalla. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible. </characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes declarar que usas el Pergamino cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo. Además, tira 1D6: si obtienes un resultado de 4+, el hechizo resultará destruido, y no podrá usarse más durante la batalla. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3067,7 +3067,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7547-d46c-cee7-cfe6" name="Pergamino de energía" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Un hechicero puede utilizar un pergamino de energía para lanzar un hechizo sin invertir dados de energía. El hechizo será lanzado con su dificultad básica, y podrá ser dispersado como es habitual. No puede lanzarse un hechizo potenciado con el pergamino.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Un hechicero puede utilizar un pergamino de energía para lanzar un hechizo sin invertir dados de energía. El hechizo será lanzado con su dificultad básica, y podrá ser dispersado como es habitual. No puede lanzarse un hechizo potenciado con el pergamino.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3083,7 +3083,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="1730-08db-dd8e-2ebe" name="Poción de sabiduría" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. El portador puede decidir beber la Poción de Sabiduría al inicio de cualquier fase de magia propia, lo cual le proporcionará inmediatamente 1D3 dados de energía adicionales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. El portador puede decidir beber la Poción de Sabiduría al inicio de cualquier fase de magia propia, lo cual le proporcionará inmediatamente 1D3 dados de energía adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3099,7 +3099,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8cd4-124c-9939-83f1" name="Vara terrenal" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. El portador podrá ignorar una disfunción mágica que sufra durante la batalla: debes declarar que usas la vara antes de tirar en la tabla de disfunciones.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. El portador podrá ignorar una disfunción mágica que sufra durante la batalla: debes declarar que usas la vara antes de tirar en la tabla de disfunciones.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3115,7 +3115,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="f915-58b7-d823-4b76" name="Anillo de poder arcano" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al final de cada fase de magia, el portador puede tomar uno de sus dados de energía o dispersión no utilizados y guardarlo en el Anillo. Durante cualquier fase de magia posterior, el hechicero puede extraer el dado guardado en el Anillo, que pasará a ser un dado de energía (si es una fase de magia propia) o de disperisón (si es una fase de magia enemiga).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al final de cada fase de magia, el portador puede tomar uno de sus dados de energía o dispersión no utilizados y guardarlo en el Anillo. Durante cualquier fase de magia posterior, el hechicero puede extraer el dado guardado en el Anillo, que pasará a ser un dado de energía (si es una fase de magia propia) o de disperisón (si es una fase de magia enemiga).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3127,7 +3127,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     </selectionEntryGroup>
     <selectionEntryGroup id="a315-670d-923c-fddf" name="Artefactos arcanos. Personajes del Orden" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74b-751c-d3cb-ce8d" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e74b-751c-d3cb-ce8d" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3dde-9d3b-6b0c-fc99" type="min"/>
       </constraints>
       <selectionEntries>
@@ -3139,7 +3139,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="fd0f-4983-9ed3-7513" name="Báculo de azabache" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Sólo personajes del Orden. Cada vez que el portador lance un hechizo, antes de tirar los dados, puede, si lo desea, añadir un dado adicional (proporcionado por el báculo) a los que tire para lanzar el hechizo. Puede, incluso, decidir usar cero dados para lanzar un hechizo, usando sólo el dado proporcionado por el báculo. Sin embargo, si en el dado adicional (usa un dado de otro color para diferenciarlo) se obtiene un resultado de 1, el báculo se habrá agotado, y no podrá utilizarse de nuevo durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Sólo personajes del Orden. Cada vez que el portador lance un hechizo, antes de tirar los dados, puede, si lo desea, añadir un dado adicional (proporcionado por el báculo) a los que tire para lanzar el hechizo. Puede, incluso, decidir usar cero dados para lanzar un hechizo, usando sólo el dado proporcionado por el báculo. Sin embargo, si en el dado adicional (usa un dado de otro color para diferenciarlo) se obtiene un resultado de 1, el báculo se habrá agotado, y no podrá utilizarse de nuevo durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3151,7 +3151,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     </selectionEntryGroup>
     <selectionEntryGroup id="8c61-ba9b-87c0-eef1" name="Artefactos arcanos. Reliquias" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a489-5261-a21f-6c05" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a489-5261-a21f-6c05" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d133-d2d6-43de-0e15" type="min"/>
       </constraints>
       <selectionEntries>
@@ -3163,7 +3163,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8456-8ce9-36ca-473e" name="El libro de los secretos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Durante cualquier fase de magia propia, el portador puede usar el libro para lanzar hechizos sin invertir dados de energía. Los hechizos serán lanzados a su dificultad básica, y podrán ser dispersados como es habitual (no puedes lanzar un hechizo en su versión potenciada utilizando el Libro). Cada vez que el portador utilice el libro, deberá efectuar un Chequeo de Resistencia: si lo supera, sufrirá una herida sin tirada de salvación de ningún tipo, que tampoco podrá ser Regenerada. Si lo falla, sufrirá igualmente una herida sin tirada de salvación de ningún tipo, que tampoco podrá ser Regenerada, y verá su atributo de Resistencia reducido en un punto por el resto de la batalla. Un mismo hechizo no puede usarse más de una vez en cada fase de magia utilizando el libro.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Durante cualquier fase de magia propia, el portador puede usar el libro para lanzar hechizos sin invertir dados de energía. Los hechizos serán lanzados a su dificultad básica, y podrán ser dispersados como es habitual (no puedes lanzar un hechizo en su versión potenciada utilizando el Libro). Cada vez que el portador utilice el libro, deberá efectuar un Chequeo de Resistencia: si lo supera, sufrirá una herida sin tirada de salvación de ningún tipo, que tampoco podrá ser Regenerada. Si lo falla, sufrirá igualmente una herida sin tirada de salvación de ningún tipo, que tampoco podrá ser Regenerada, y verá su atributo de Resistencia reducido en un punto por el resto de la batalla. Un mismo hechizo no puede usarse más de una vez en cada fase de magia utilizando el libro.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3179,7 +3179,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="6f13-35f1-0504-213a" name="El libro de Ashur" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador puede elegir uno de los ocho saberes de la magia, Magia Oscura o Alta Magia, y obtiene la regla especial Señor del Conocimiento de ese saber.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador puede elegir uno de los ocho saberes de la magia, Magia Oscura o Alta Magia, y obtiene la regla especial Señor del Conocimiento de ese saber.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3194,7 +3194,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     </selectionEntryGroup>
     <selectionEntryGroup id="4b82-1f62-073f-aefa" name="Artefactos arcanos. Reliquias. Personajes de la destrucción" hidden="false" collective="false" import="true">
       <constraints>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b76-3753-332b-f256" type="max"/>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5b76-3753-332b-f256" type="max"/>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="26ce-639f-4512-11bb" type="min"/>
       </constraints>
       <selectionEntries>
@@ -3206,7 +3206,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8533-e929-3a46-7acb" name="El báculo prohibido" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Sólo personajes de la Destrucción. Una vez por fase de magia propia, el portador puede gastar dos dados de energía para lanzar un hechizo con Fuerza Irresistible (no es necesario que tires los dados). Puede, si lo desea, lanzar una versión potenciada de un hechizo. Tras resolver el hechizo, resuelve la disfunción, como es habitual.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Sólo personajes de la Destrucción. Una vez por fase de magia propia, el portador puede gastar dos dados de energía para lanzar un hechizo con Fuerza Irresistible (no es necesario que tires los dados). Puede, si lo desea, lanzar una versión potenciada de un hechizo. Tras resolver el hechizo, resuelve la disfunción, como es habitual.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3230,7 +3230,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="320e-ee6c-e23b-a3ca" name="Pabellón del poder" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a sus tiradas para impactar en combate cuerpo a cuerpo. El Pabellón del Poder no puede mejorar la tirada para impactar por encima de 3+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene un bonificador de +1 a sus tiradas para impactar en combate cuerpo a cuerpo. El Pabellón del Poder no puede mejorar la tirada para impactar por encima de 3+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3246,7 +3246,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="a2cc-ba43-a9b2-5e9c" name="Pabellón del odio" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos, nivel de energía 3. El hechizo contenido en el estandarte es un hechizo de proyectil mágico con un alcance de 24&quot;. Causa 1D6 impactos de F5 que niegan la tirada de salvación por armadura. Se trata de un hechizo de rayos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos, nivel de energía 3. El hechizo contenido en el estandarte es un hechizo de proyectil mágico con un alcance de 24&quot;. Causa 1D6 impactos de F5 que niegan la tirada de salvación por armadura. Se trata de un hechizo de rayos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3265,7 +3265,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7684-924e-4cc2-3632" name="Estandarte del valor" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el Estandarte del Valor obtiene la regla especial Sangre fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el Estandarte del Valor obtiene la regla especial Sangre fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3284,7 +3284,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8a9a-d6ec-778c-d76b" name="Estandarte de destrucción" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte obtendrá la regla especial Poder de penetración en sus ataques cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte obtendrá la regla especial Poder de penetración en sus ataques cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3303,7 +3303,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="c247-868d-989e-27de" name="Pabellón del temor" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte causará Miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte causará Miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3322,7 +3322,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="07da-49d5-e69e-0318" name="Pabellón de vitalidad" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte obtiene la regla especial Regeneración (6+); si la unidad ya tenía la regla Regeneración, esta aumenta en +1 (hasta un máximo de 3+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte obtiene la regla especial Regeneración (6+); si la unidad ya tenía la regla Regeneración, esta aumenta en +1 (hasta un máximo de 3+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3341,7 +3341,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="0c0a-058f-ded3-46b1" name="Estandarte de guerra" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el Estandarte de Guerra podrá sumar +1 a su resultado del combate (adicionalmente al +1 por llevar estandarte).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el Estandarte de Guerra podrá sumar +1 a su resultado del combate (adicionalmente al +1 por llevar estandarte).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3357,7 +3357,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="b66d-8807-e2eb-7cfc" name="Estandarte de la rapidez" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el Estandarte de la Rapidez verá su atributo de Movimiento incrementado en un punto (en caso de tratarse de una unidad de Caballería, Caballería monstruosa o Carros, serán las monturas quienes obtengan el +1 Movimiento).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el Estandarte de la Rapidez verá su atributo de Movimiento incrementado en un punto (en caso de tratarse de una unidad de Caballería, Caballería monstruosa o Carros, serán las monturas quienes obtengan el +1 Movimiento).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3373,7 +3373,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="59fc-fc9f-f474-d315" name="Estandarte de disciplina" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte este estandarte tendrá un bonificador de +1 a su Liderazgo, pero no podrá utilizar la regla especial Presencia inspiradora del general, a menos que el general se encuentre también en la misma unidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte este estandarte tendrá un bonificador de +1 a su Liderazgo, pero no podrá utilizar la regla especial Presencia inspiradora del general, a menos que el general se encuentre también en la misma unidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3392,7 +3392,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3f69-367d-e8fe-ba87" name="Estandarte de defensa" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el estandarte obtendrá un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el estandarte obtendrá un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3408,7 +3408,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="4876-f738-7047-6734" name="Estandarte del coraje" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad podrá repetir sus chequeos de desmoralización fallidos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad podrá repetir sus chequeos de desmoralización fallidos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3424,7 +3424,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="44e2-28e2-2fe9-bfd5" name="Estandarte espantapájaros" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el estandarte causará Terror a los enemigos con las reglas espciales Volar o Flotar. Cualquier miniatura que Vuele o Flote que trate de atacar en combate cuerpo a cuerpo a la unidad tendrá un penalizador de -1 para impactar (eso incluye a los jinetes de las criaturas voladoras, en caso de haberlos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte el estandarte causará Terror a los enemigos con las reglas espciales Volar o Flotar. Cualquier miniatura que Vuele o Flote que trate de atacar en combate cuerpo a cuerpo a la unidad tendrá un penalizador de -1 para impactar (eso incluye a los jinetes de las criaturas voladoras, en caso de haberlos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3443,7 +3443,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="6a34-0ff4-043e-3f4c" name="Estandarte de protección arcana" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Resistencia mágica (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Resistencia mágica (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3462,7 +3462,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="5029-ec41-9b9e-9c04" name="Icono de la venganza" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte puede repetir sus tiradas de carga fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que lo porte puede repetir sus tiradas de carga fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3478,7 +3478,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="11c8-a431-5684-e46c" name="Estandarte de hechicería" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte podrá canalizar (como si fuesen hechiceros) en cada fase de magia, con un bonificador de +2 a su tirada de Canalizar (es decir, que obtendrán un dado adicinal con un resultado de 4+ en 1D6).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte podrá canalizar (como si fuesen hechiceros) en cada fase de magia, con un bonificador de +2 a su tirada de Canalizar (es decir, que obtendrán un dado adicinal con un resultado de 4+ en 1D6).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3494,7 +3494,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="05ee-efa6-4f6b-d172" name="Estandarte de la llama perpetua" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene Ataques flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene Ataques flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3513,7 +3513,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="4069-bfb0-23c4-d790" name="Bandera del veterano" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre serán Inmunes a pánico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre serán Inmunes a pánico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3532,7 +3532,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ba08-dbb2-ff3b-9446" name="Estandarte aetírico" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3551,7 +3551,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ac88-cd2f-ec51-585f" name="Estandarte del libre paso" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen la regla especial Cruzar (todo tipo de terreno salvo edificios y elementos intransitables).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen la regla especial Cruzar (todo tipo de terreno salvo edificios y elementos intransitables).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3572,7 +3572,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="906e-83e8-5c81-7d44" name="Estandarte talismánico" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen una tirada de salvación especial de 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen una tirada de salvación especial de 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3588,7 +3588,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7a97-4818-429b-5787" name="Pabellón de la tormenta" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad serán Inmunes a miedo, y no pueden ser heridos por Ataques de rayos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad serán Inmunes a miedo, y no pueden ser heridos por Ataques de rayos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3615,7 +3615,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="c590-09c9-c916-f259" name="Bandera venenosa" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo ejércitos de la destrucción. El portador y la unidad en la que se encuentre obtienen Ataques envenenados (tanto con proyectiles como en combate cuerpo a cuerpo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo ejércitos de la destrucción. El portador y la unidad en la que se encuentre obtienen Ataques envenenados (tanto con proyectiles como en combate cuerpo a cuerpo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3642,7 +3642,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="920c-5c76-c5c2-7ed2" name="El amuleto negro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al portador una tirada de salvación especial de 4+. Cada vez que el portador salve una herida en combate cuerpo a cuerpo con esa tirada de salvación especial, el causante de la herida sufrirá una herida sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al portador una tirada de salvación especial de 4+. Cada vez que el portador salve una herida en combate cuerpo a cuerpo con esa tirada de salvación especial, el causante de la herida sufrirá una herida sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3658,7 +3658,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="7fbf-4df4-c2e2-30ca" name="Talismán de obsidiana" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Ni el portador ni ninguna miniatura en contacto peana con peana con este podrán lanzar hechizos (ni siquiera hechizos de objetos portahechizos). El portador será inmune a los efectos de los hechizos, aunque no los dispersará: simplemente no se verá afectado por ellos. Además, el portador tendrá una tirada de salvación especial de 5+ contra ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Ni el portador ni ninguna miniatura en contacto peana con peana con este podrán lanzar hechizos (ni siquiera hechizos de objetos portahechizos). El portador será inmune a los efectos de los hechizos, aunque no los dispersará: simplemente no se verá afectado por ellos. Además, el portador tendrá una tirada de salvación especial de 5+ contra ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3674,7 +3674,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="4cbf-68e4-b4f9-a9ff" name="Talismán del destino" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3698,7 +3698,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8216-2bfc-e6c4-2b3f" name="Corona dorada de Atrazar" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo personajes del Orden. Proporciona a su portador una tirada de salvación especial de 3+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo personajes del Orden. Proporciona a su portador una tirada de salvación especial de 3+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3722,7 +3722,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3886-d838-71dc-2754" name="Espada de los héroes" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo personajes del Orden. Arma de mano. Los impactos causados por este arma contra miniaturas con Resistencia 5 ó superior tendrán un bonificador de +3F y la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo personajes del Orden. Arma de mano. Los impactos causados por este arma contra miniaturas con Resistencia 5 ó superior tendrán un bonificador de +3F y la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3750,7 +3750,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="2cda-9251-0ef1-197d" name="Báculo del cráneo de Kaloth" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo puede ser usada por personajes con niveles de magia. Proporciona un bonificador de +1 F a su portador. Cada vez que el báculo causa una herida  a una miniatura enemiga, si ésta no muere como consecuencia de la herida, deberá realizar inmediatamente un  chequeo de Liderazgo. Si lo falla, deberá retirarse como baja inmediatamente, sin ningún tipo de tirada de salvación posible.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo puede ser usada por personajes con niveles de magia. Proporciona un bonificador de +1 F a su portador. Cada vez que el báculo causa una herida  a una miniatura enemiga, si ésta no muere como consecuencia de la herida, deberá realizar inmediatamente un  chequeo de Liderazgo. Si lo falla, deberá retirarse como baja inmediatamente, sin ningún tipo de tirada de salvación posible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3777,7 +3777,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="a8cb-14d4-a09e-aebd" name="Espadas brujas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Sólo hechiceros. El portador obtiene un bonificador de +1 a su Fuerza por cada hechizo diferente que lance con éxito en su fase de magia (los hechizos cuentan aunque sean dispersados). Los bonificadores duran hasta el inicio de tu siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Sólo hechiceros. El portador obtiene un bonificador de +1 a su Fuerza por cada hechizo diferente que lance con éxito en su fase de magia (los hechizos cuentan aunque sean dispersados). Los bonificadores duran hasta el inicio de tu siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3805,7 +3805,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="3baf-5857-0537-9adf" name="Icono de pureza" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo ejércitos del Orden. El portador y su unidad obtienen la regla especial Inmune a Veneno; además, pierden la regla especial Ataques envenenados (si la tuvieran), y no pueden obtener esta regla especial.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo ejércitos del Orden. El portador y su unidad obtienen la regla especial Inmune a Veneno; además, pierden la regla especial Ataques envenenados (si la tuvieran), y no pueden obtener esta regla especial.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3832,7 +3832,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="1a00-b07e-73b4-cd47" name="Botas de celeridad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo personajes de Infantería o Infantería monstruosa. Duplica el valor del atributo de movimiento del personaje.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo personajes de Infantería o Infantería monstruosa. Duplica el valor del atributo de movimiento del personaje.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3848,7 +3848,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="846e-d747-eaa4-4335" name="Alfombra de Arabya" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtiene la regla especial Volar. Tan sólo puede ser usado por un personaje de Infantería o Infantería monstruosa, y no podrá unirse a unidades.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtiene la regla especial Volar. Tan sólo puede ser usado por un personaje de Infantería o Infantería monstruosa, y no podrá unirse a unidades.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3875,7 +3875,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="544d-2c9e-7d9c-ca31" name="Capa de nieblas y sombras" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo puede utilizarse por personajes de Infantería o Infantería monstruosa. El portador obtiene las reglas especiales Etéreo y Flotar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo puede utilizarse por personajes de Infantería o Infantería monstruosa. El portador obtiene las reglas especiales Etéreo y Flotar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3903,7 +3903,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="83e4-8b9e-5a4a-4598" name="Escamas brillantes" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Las tiradas para impactar al portador en combate cuerpo a cuerpo tendrán un penalizador de -1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Las tiradas para impactar al portador en combate cuerpo a cuerpo tendrán un penalizador de -1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3930,7 +3930,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8b2d-dbcc-7e41-6b82" name="Escudo antihechizos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador Resistencia mágica (2). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, el mago que lanzó el hechizo sufrirá un impacto de F6. No tiene efectos adicionales si el hechizo fue lanzado por un objeto mágico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador Resistencia mágica (2). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, el mago que lanzó el hechizo sufrirá un impacto de F6. No tiene efectos adicionales si el hechizo fue lanzado por un objeto mágico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3950,7 +3950,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="72cd-35a2-0211-4746" name="Escudo de hierro negro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3969,7 +3969,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="819e-c1cb-21a4-d9d0" name="Escudo de Ptolos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 4+ contra todas las armas de proyectiles, como arcos, ballestas, etc. Esto incluye las heridas causadas por máquinas de guerra, pero no por hechizos del tipo Proyectil mágico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a su portador una tirada de salvación especial de 4+ contra todas las armas de proyectiles, como arcos, ballestas, etc. Esto incluye las heridas causadas por máquinas de guerra, pero no por hechizos del tipo Proyectil mágico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -3988,7 +3988,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="0da4-1eb9-8c3e-7cd6" name="Escudo encantado" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4007,7 +4007,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d06f-8814-0cfd-c1e1" name="Escudo rúnico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Cada tirada de salvación por armadura superada exitosamente en combate cuerpo a cuerpo por el portador, el escudo causará un impacto de F4 en el que causó la herida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Cada tirada de salvación por armadura superada exitosamente en combate cuerpo a cuerpo por el portador, el escudo causará un impacto de F4 en el que causó la herida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4034,7 +4034,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="9702-b1c8-4b8c-42c4" name="Yelmo de dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, su portador será Inmune al fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, su portador será Inmune al fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4061,7 +4061,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="d441-96c7-9b9b-1e80" name="Armadura de hierro meteórico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 1+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 1+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4080,7 +4080,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8aa7-0b6a-3528-eeb0" name="Armadura de la robustez" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere al portador una tirada de salvación especial de 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere al portador una tirada de salvación especial de 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4099,7 +4099,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="73d5-8995-88c2-b944" name="Armadura de la suerte" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4118,7 +4118,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="c777-4576-ade8-d08c" name="Armadura de los héroes" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +1R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +1R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4137,7 +4137,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="fa0c-120b-5ab6-8886" name="Armadura de sombras" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial cruzar (todo el terreno). Los impactos no mágicos contra el portador tendrán un penalizador de -1 a su fuerza. </characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial cruzar (todo el terreno). Los impactos no mágicos contra el portador tendrán un penalizador de -1 a su fuerza. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4157,7 +4157,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="e721-2fa3-c494-d918" name="Coraza inquebrantable" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune al efecto de las reglas especiales Golpe letal y Golpe letal heroico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune al efecto de las reglas especiales Golpe letal y Golpe letal heroico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4184,7 +4184,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="ee26-1380-a926-c0d0" name="Escudo comehechizos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona al portador Resistencia mágica (3). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, tira 1D6: con un resultado de 4+, el hechizo (o el objeto portahechizos/plegaria) resultará destruido, y no podrá usarse más durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona al portador Resistencia mágica (3). Si se dispersa exitosamente un hechizo usando los dados de dispersión adicionales proporcionados por el escudo, tira 1D6: con un resultado de 4+, el hechizo (o el objeto portahechizos/plegaria) resultará destruido, y no podrá usarse más durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4211,7 +4211,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="8354-c909-ba80-3576" name="Yelmo del engaño" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, las tiradas exitosas para herir contra el portador deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, las tiradas exitosas para herir contra el portador deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4235,7 +4235,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="e394-8cfb-3e1e-b293" name="Armadura del defensor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Confiere a su portador una tirada de salvación especial de 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4254,7 +4254,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
           <profiles>
             <profile id="797e-acbc-832e-1ea5" name="Armadura del destino" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +2R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador +2R y un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4307,7 +4307,8 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
 5-6: Mala suerte: Los soldados se desvían y salen exactamente donde no debían. El oponente puede colocar tu unidad (con el centro de la unidad en cualquier punto a 4&quot; o menos del lugar donde pusiste el marcador) y encarada en la dirección que desee.</description>
     </rule>
     <rule id="0b7e-2a08-2b5a-51d7" name="Caballería rápida" hidden="false">
-      <description>La caballería rápida siempre puede marchar, sin importar si hay enemigos en las cercanías. Además, durante su movimiento, puede reorganizarse tantas veces como desee sin penalizador alguno a su movimiento. Cuando dispara, la caballería rápida tiene un ángulo de disparo de 360º (es decir, puede disparar incluso contra tropas situadas en su retaguardia). La caballería rápida puede disparar incluso si ha marchado. Además, la caballería rápida puede efectuar la reacción a la carga Disparar y Huir, pues están entrenados para ello. La caballería rápida puede mover y actuar en el mismo turno en el que se reagrupa. Un personaje montado (caballería o caballería monstruosa) puede unirse a una unidad de caballería rápida, beneficiándose de todas sus reglas especiales sólo si tiene una tirada de salvación por armadura de 4+ o peor. Toda la Caballería y Caballería monstruosa con esta regla especial tiene la regla especial Vanguardia.</description>
+      <description>La caballería rápida siempre puede marchar, sin importar si hay enemigos en las cercanías. Además, durante su movimiento, puede reorganizarse tantas veces como desee sin penalizador alguno a su movimiento. Cuando dispara, la caballería rápida tiene un ángulo de disparo de 360º (es decir, puede disparar incluso contra tropas situadas en su retaguardia). La Caballería rápida puede disparar incluso si ha marchado, se ha reorganizado o se ha reagrupado ese turno. Además, la caballería rápida puede efectuar la reacción a la carga Disparar y Huir, pues están entrenados para ello. La caballería rápida puede mover y actuar en el mismo turno en el que se reagrupa. Un personaje montado (caballería o caballería monstruosa) puede unirse a una unidad de caballería rápida, beneficiándose de todas sus reglas especiales sólo si tiene una tirada de salvación por armadura de 4+ o peor. Toda la Caballería y Caballería monstruosa con esta regla especial tiene la regla especial Vanguardia.
+Las Máquinas de Guerra siempre realizan sus chequeos de Fuerza y Resistencia utilizando el valor más elevado del atributo de entre sus componentes.</description>
     </rule>
     <rule id="dbe6-c910-7f37-aeac" name="Carga devastadora" hidden="false">
       <description>Las miniaturas con Carga devastadora obtienen un bonificador de +1 a su Fuerza durante cualquier turno en el que realicen exitosamente una carga, o durante su siguiente turno si Arrasaron y esto les llevó a trabarse en combate.</description>
@@ -4357,7 +4358,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     <rule id="999c-d422-6c91-46dd" name="Hostigadores" hidden="false">
       <description>Las unidades de Hostigadores no se organizan del mismo modo que las demás unidades, sino que se colocan en formación dispersa, en la que las miniaturas no están en contacto unas con otras, sino separadas por 1/2” de distancia. Las miniaturas de la unidad deben estar encaradas en la misma dirección, y los personajes y grupos de mando se colocan en el frontal de la unidad. A efectos de determinar el ángulo de visión, las unidades de hostigadores tienen 180º desde su frontal, en lugar de los 90º habituales. Los hostigadores no tienen ni flancos ni retaguardia, y tampoco filas (puedes colocar las miniaturas en dos o más filas, pero nunca otorgarán un bonificador por filas). Se aplican, además, las siguientes reglas para las unidades hostigadoras:
 -Las unidades de hostigadores siempre pueden marchar, tratan el terreno difícil como terreno abierto, y el terreno muy difícil como terreno difícil y no necesitan superar un chequeo de Liderazgo para hacerlo si hay unidades enemigas a 8” o menos de ellos al iniciar su movimiento. Los hostigadores pueden girar y reformar de forma gratuita las veces que deseen durante su movimiento. Los hostigadores son capaces de mover y actuar en el mismo turno en el que se reagrupan.
--Los hostigadores pueden disparar sus amas de proyectiles incluso aunque realicen un movimiento de marcha, aunque aplicarán el penalizador habitual de -1 para impactar por mover y disparar.
+-Los hostigadores pueden disparar sus armas de proyectiles aunque realicen un movimiento de marcha, una reorganización o se hayan reagrupado ese turno, aunque aplicarán el penalizador habitual de -1 para impactar por mover y disparar.
 -Los enemigos que disparen a los hostigadores aplicarán un penalizador de -1 para impactar contra ellos, debido a la formación dispersa de los hostigadores. Las máquinas de guerra de Tormenta de proyectiles deberán dividir a la mitad (redondeando hacia arriba) su número de impactos causados.
 -Los Hostigadores pueden declarar la reacción especial a la carga Disparar y huir, pero sólo si son cargados por una unidad que no tenga la regla especial Veloz.
 -Si cargan o si son cargados, debes reorganizar inmediatamente a los hostigadores a una formación cerrada, con el frontal encarado hacia la unidad enemiga. Mientras se encuentren trabados en combate, los hostigadores continuarán en formación cerrada, como cualquier otra unidad. Recuerda que los hostigadores no aplican sus bonificadores por filas en combate, aunque combatan en formación cerrada. Del mismo modo, el enemigo no podrá aplicar contra ellos bonificadores por atacar por el flanco o la retaguardia. Cuando dejen de encontrarse en contacto peana con peana con un enemigo, reorganiza inmediatamente a los hostigadores para que adopten formación dispersa. </description>
@@ -4367,9 +4368,6 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     </rule>
     <rule id="8de0-8a91-edee-076e" name="Impactos por carga (1)" hidden="false">
       <description>Cuando la miniatura cargue al combate (o arrase y llegue al combate), durante su siguiente ronda de combate cuerpo a cuerpo causará los Impactos por carga indicados. Estos impactos son automáticos (no es necesario efectuar tirada alguna para impactar), y se resuelven al inicio de la fase de combate cuerpo a cuerpo, antes de que ninguna miniatura ataque, con la Fuerza básica de la miniatura que los causó (en el caso de los carruajes, utiliza la F del propio carro). En el caso de que se efectúen impactos por carga contra una unidad mixta, los impactos por carga se repartirán como si fuesen impactos por proyectiles. Las bajas causadas por los Impactos por carga se cuentan a la hora de determinar el resultado del combate de esa fase.</description>
-    </rule>
-    <rule id="c0f9-6ff4-713c-3e15" name="Impasible" hidden="false">
-      <description>Una miniatura con la regla especial Impasible no podrá aplicar en sus chequeos de Desmoralización un penalizador superior al número de heridas que haya sufrido esa fase de combate cuerpo a cuerpo. Por ejemplo, un gigante pierde un combate por 6 puntos, pero como sólo ha sufrido dos heridas esa fase de combate, el gigante realiza el chequeo con un penalizador de -2, en lugar del -6 que le correspondería. Si un personaje unido a una unidad es Impasible, entonces toda la unidad se considera Impasible.</description>
     </rule>
     <rule id="4362-3d7f-a24a-3309" name="Indesmoralizable" hidden="false">
       <description>Las unidades Indesmoralizables no deben realizar jamás chequeos de desmoralización: siempre los superan automáticamente. Además, las unidades indemoralizables son también Inmunes a la psicología. Un personaje Indesmoralizable no puede unirse a una unidad que no lo sea, y un personaje que no sea Indesmoralizable no podrá unirse a una unidad con esta regla especial.</description>
@@ -4462,7 +4460,7 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
       <description>Mínimo de 5 miniaturas para formar una fila completa. Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 1. No pueden tomar objetivos.</description>
     </rule>
     <rule id="276f-0034-6534-f691" name="Caballería" hidden="false">
-      <description>Se utiliza el atributo de Movimiento de la montura. Los ataques enemigos dirigidos contra una miniatura de caballería se resolverán contra la Habilidad de Armas más alta, ya sea la del jinete o la de la montura. Jinete y montura utilizarán la Habilidad de Armas, Fuerza e Iniciativa de cada uno para realizar sus respectivos ataques. Se utilizará el liderazgo del jinete para realizar cualquier tipo de chequeo, salvo en los casos en que se especifique lo contrario. Se utilizará el valor de Resistencia y Heridas más elevado de entre jinete y montura. Se utilizará el valor de la armadura del jinete y recibirá un bonificador de +1. Algunas monturas confieren un bonificador superior, y en dichos casos vendrá especificado en la lista de ejército apropiada. Mínimo de 5 miniaturas para formar una fila completa. Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 2.</description>
+      <description>Se utiliza el atributo de Movimiento de la montura. Los ataques enemigos dirigidos contra una miniatura de caballería se resolverán contra la Habilidad de Armas más alta, ya sea la del jinete o la de la montura. Jinete y montura utilizarán la Habilidad de Armas, Fuerza e Iniciativa de cada uno para realizar sus respectivos ataques. Se utilizará el liderazgo del jinete para realizar cualquier tipo de chequeo, salvo en los casos en que se especifique lo contrario. Se utilizará el valor de Resistencia y Heridas más elevado de entre jinete y montura. Se utilizará el valor de la armadura del jinete y recibirá un bonificador de +1. Algunas monturas confieren un bonificador superior, y en dichos casos vendrá especificado en la lista de ejército apropiada. Mínimo de 5 miniaturas para formar una fila completa. Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 2. Las miniaturas de Caballería siempre realizan sus chequeos de Fuerza y Resistencia utilizando el valor más elevado del atributo de entre el jinete y la montura. Sin embargo, siempre realizan los chequeos de Iniciativa con el valor de Iniciativa de la montura.</description>
     </rule>
     <rule id="4958-70de-0b69-9825" name="Infantería monstruosa" hidden="false">
       <description>Mínimo de 3 miniaturas para formar una fila completa. Cargan, huyen y persiguen la suma de M y el resultado más alto en 2D6. Potencia de unidad de 3.</description>
@@ -4472,7 +4470,8 @@ Dado que la lealtad de los soldados por sus mandos solamente llega hasta donde e
     </rule>
     <rule id="a7be-2cd9-f3c6-b091" name="Caballería monstruosa" hidden="false">
       <description>Se utiliza el atributo de Movimiento de la montura. Los ataques enemigos dirigidos contra una miniatura de caballería se resolverán contra la Habilidad de Armas más alta, ya sea la del jinete o la de la montura. Jinete y montura utilizarán la Habilidad de Armas, Fuerza e Iniciativa de cada uno para realizar sus respectivos ataques. Se utilizará el liderazgo del jinete para realizar cualquier tipo de chequeo, salvo en los casos en que se especifique lo contrario. Se utilizará el valor de Resistencia y Heridas más elevado de entre jinete y montura. Se utilizará el valor de la armadura del jinete y recibirá un bonificador de +1. Algunas monturas confieren un bonificador superior, y en dichos casos vendrá especificado en la lista de ejército apropiada. Mínimo de 3 miniaturas para formar una fila completa.
-Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 4.</description>
+Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 4.
+Las miniaturas de Caballería monstruosa siempre realizan sus chequeos de Fuerza y Resistencia utilizando el valor más elevado del atributo de entre el jinete y la montura. Sin embargo, siempre realizan los chequeos de Iniciativa con el valor de Iniciativa de la montura.</description>
     </rule>
     <rule id="d477-174e-9843-a1b7" name="Enjambre" hidden="false">
       <description>Sin bonificador por filas. Indesmoralizable e Inestable Inmunes a Golpe Letal y Golpe Letal Heróico. Las armas de plantilla les causan el doble de heridas. Cargan, huyen y persiguen la suma de M y el resultado más alto en 2D6. tratan todo el terreno como abierto. Cada miniatura aporta una potencia de unidad de 3. No pueden tomar objetivos.</description>
@@ -4481,7 +4480,8 @@ Cargan, huyen y persiguen con la regla Veloz. Potencia de unidad de 4.</descript
       <description>Terror y Objetivo grande. Cargan, huyen y persiguen la suma de M y el resultado más alto en 2D6. Impasible. Impactos por carga (1). No pueden unirse a unidades. Potencia de unidad igual a su número de heridas inicial.</description>
     </rule>
     <rule id="c761-ad12-6530-fab7" name="Carro" hidden="false">
-      <description>Carro, dotación y bestias de tiro comparten la Resistencia del carro y su número de heridas, así como su tirada de salvación. No pueden marchar, aunque tienen la regla especial Veloz. Tienen la regla especial Impactos por Carga (1D6), +1 si cuentan con cuchillas en las ruedas. Sufren 1D6 impactos de F5 si mueven por terreno difícil o chocan contra un edificio. Bestias y tripulación utilizarán sus respectivas Habilidad de Armas, Fuerza e Iniciativa para realizar sus ataques. Se utilizará el valor del atributo de Liderazgo de la tripulación para realizar los chequeos pertinentes, salvo que se especifique lo contrario. Si un carro causa con sus impactos por carga a una unidad durante una fase de combate tantas bajas o más que filas tiene esa unidad, la unidad quedará Apabullada el resto de ese turno de jugador.</description>
+      <description>Carro, dotación y bestias de tiro comparten la Resistencia del carro y su número de heridas, así como su tirada de salvación. No pueden marchar, aunque tienen la regla especial Veloz. Tienen la regla especial Impactos por Carga (1D6), +1 si cuentan con cuchillas en las ruedas. Sufren 1D6 impactos de F5 si mueven por terreno difícil o chocan contra un edificio. Bestias y tripulación utilizarán sus respectivas Habilidad de Armas, Fuerza e Iniciativa para realizar sus ataques. Se utilizará el valor del atributo de Liderazgo de la tripulación para realizar los chequeos pertinentes, salvo que se especifique lo contrario. Si un carro causa con sus impactos por carga a una unidad durante una fase de combate tantas bajas o más que filas tiene esa unidad, la unidad quedará Apabullada el resto de ese turno de jugador.
+Los carros siempre realizan sus chequeos de Fuerza y Resistencia utilizando el valor más elevado del atributo de entre sus componentes.</description>
     </rule>
     <rule id="e1b7-26dc-52c2-c3a7" name="Miedo" hidden="false">
       <description>Una unidad debe de superar un chequeo de Liderazgo si quiere cargar contra un objetivo que causa miedo. Una unidad contra la que sea declarada carga por parte de una unidad enemiga que cause Miedo deberá realizar un Chequeo de Miedo antes de declarar su reacción a la carga. SI supera el chequeo no ocyurre nada especial, y podéis continuar resolviendo la carga con normalidad. Sin embargo, si se falla el chequeo de Miedo, la unidad no podrá declarar ninguna reacción a la carga, y además deberán compararse las respectivas potencias de unidad (de la unidad que carga y causa Miedo y de la unidad que recibe la carga y ha fallado el chequeo)</description>
@@ -4693,6 +4693,36 @@ Si una de estas armas dispara a una unidad de hostigadores, deberá reducir el n
     </rule>
     <rule id="592b-c850-fd09-cce5" name="Impasible" hidden="false">
       <description>Una miniatura con la regla especial Impasible no podrá aplicar en sus chequeos de Desmoralización un penalizador superior al número de heridas que haya sufrido esa fase de combate cuerpo a cuerpo. Por ejemplo, un gigante pierde un combate por 6 puntos, pero como sólo ha sufrido dos heridas esa fase de combate, el gigante realiza el chequeo con un penalizador de -2, en lugar del -6 que le correspondería. Si un personaje unido a una unidad es Impasible, entonces toda la unidad se considera Impasible.</description>
+    </rule>
+    <rule id="9db2-68f9-b884-e961" name="Impactos por carga (2)" hidden="false">
+      <description>Cuando la miniatura cargue al combate (o arrase y llegue al combate), durante su siguiente ronda de combate cuerpo a cuerpo causará los Impactos por carga indicados. Estos impactos son automáticos (no es necesario efectuar tirada alguna para impactar), y se resuelven al inicio de la fase de combate cuerpo a cuerpo, antes de que ninguna miniatura ataque, con la Fuerza básica de la miniatura que los causó (en el caso de los carruajes, utiliza la F del propio carro). En el caso de que se efectúen impactos por carga contra una unidad mixta, los impactos por carga se repartirán como si fuesen impactos por proyectiles. Las bajas causadas por los Impactos por carga se cuentan a la hora de determinar el resultado del combate de esa fase.</description>
+    </rule>
+    <rule id="a3e5-67dd-b85e-964a" name="Impactos por carga (2D6+1)" hidden="false">
+      <description>Cuando la miniatura cargue al combate (o arrase y llegue al combate), durante su siguiente ronda de combate cuerpo a cuerpo causará los Impactos por carga indicados. Estos impactos son automáticos (no es necesario efectuar tirada alguna para impactar), y se resuelven al inicio de la fase de combate cuerpo a cuerpo, antes de que ninguna miniatura ataque, con la Fuerza básica de la miniatura que los causó (en el caso de los carruajes, utiliza la F del propio carro). Las bajas causadas por los Impactos por carga se cuentan a la hora de determinar el resultado del combate de esa fase.</description>
+    </rule>
+    <rule id="1bbd-f261-8966-815d" name="Aura demoníaca" hidden="false">
+      <description>Confiere una tirada de salvación especial (normalmente de 5+, aunque pueden especificarse otros valores), que no puede realizarse frente a ataques mágicos.</description>
+    </rule>
+    <rule id="c797-fa63-af63-94be" name="Esquivar" hidden="false">
+      <description>El valor indicado es la tirada de salvación especial que tendrá la miniatura. Esquivar es, a todos los efectos, una Tirada de salvación especial (recuerda que si dispones de Esquivar y de otra tirada de salvación especial, tan sólo podrás efectuar una de las dos tiradas). Sin embargo, existen tres salvedades: Una tirada de Esquivar no puede ser anulada u obligada a repetir por objetos mágicos o hechizos, ya que no se trata de una protección mágica. Una tirada de Esquivar puede efectuarse incluso contra efectos que maten autimáticamente (aunque no causen heridas). Por el mismo motivo, no se puede esquivar contra las heridas causadas por hechizos de Mladición.</description>
+    </rule>
+    <rule id="829c-caf4-a2bd-f0dc" name="Heridas múltiples" hidden="false">
+      <description>La regla especial Heridas múltiples siempre va acompañada de un multiplicador entre paréntesis, como Heridas múltiples (2) o Heridas múltiples (1D6). Tras realizar todas las tiradas de salvación por armadura o especiales pertinentes, una herida causada con la regla especial Heridas múltiples se multiplica por la cantidad indicada: por ejemplo, con Heridas múltiples (2), dos heridas se convierten en 4; con heridas múltiples (1D3), dos heridas se convierten en 2D3 heridas. Ten en cuenta que las heridas en exceso no se pasan a otras miniaturas, y que aunque se multipliquen las heridas después de las tiradas de salvación, si se dispone de la regla especial regeneración, ésta se tira después de multiplicadas las heridas. </description>
+    </rule>
+    <rule id="27ec-be87-746f-18ed" name="Impactos múltiples" hidden="false">
+      <description>Tras realizar la tirada para impactar, cada impacto se multiplica por la cantidad de impactos múltiples indicada (tira una vez por cada impacto). Los impactos multiplicados se aplican a la misma miniatura que fue impactada. Tras ello, realiza las tiradas para herir como es habitual. Ten en cuenta que las heridas en exceso no se pasan a otras miniaturas.</description>
+    </rule>
+    <rule id="a89f-5611-61e4-f924" name="Impactos por carga" hidden="false">
+      <description>Cuando la miniatura cargue al combate (o arrase y llegue al combate), durante su siguiente ronda de combate cuerpo a cuerpo causará los Impactos por carga indicados. Estos impactos son automáticos (no es necesario efectuar tirada alguna para impactar), y se resuelven al inicio de la fase de combate cuerpo a cuerpo, antes de que ninguna miniatura ataque, con la Fuerza básica de la miniatura que los causó (en el caso de los carruajes, utiliza la F del propio carro). En el caso de que se efectúen impactos por carga contra una unidad mixta, los impactos por carga se repartirán como si fuesen impactos por proyectiles. Las bajas causadas por los Impactos por carga se cuentan a la hora de determinar el resultado del combate de esa fase.</description>
+    </rule>
+    <rule id="a2d6-2e9b-fbfc-2135" name="Piel escamosa" hidden="false">
+      <description>La regla especial Piel escamosa siempre viene acompañada de un valor entre paréntesis. El valor indicado es la tirada de salvación por armadura de la miniatura con esta regla especial. La Piel escamosa puede combinarse con armaduras, escudos y monturas de la forma habitual; por ejemplo, una criatura con Piel escamosa (5+) y una Armadura pesada tendría una tirada de salvación por armadura de 3+; si le añades un escudo, la tirada de salvación por armadura sería de 2+. Recuerda que una tirada de salvación por armadura no puede ser mejor de 1+.</description>
+    </rule>
+    <rule id="8ec0-7330-af94-4d4f" name="Regeneración" hidden="false">
+      <description>Las miniaturas con la regla especial Regeneración tendrán indicada una tirada mínima entre paréntesis; por ejemplo, Regeneración (5+), o Regeneración (2+). Si no se indica nada, se considera que es Regeneración (4+). Cada vez que la miniatura sufra una o más heridas (tras realizar todas las tiradas de salvación pertinentes), tira 1D6 por cada herida: si el resultado es igual o superior al indicado por su regeneración, la herida será cancelada. Las heridas causadas con ataques con las reglas especiales Ataques flamígeros, Ataques sólo flamígeros, Golpe letal y/o Golpe letal heroico no pueden ser regeneradas, por lo que no podrás realizar tiradas de regeneración contra esas heridas.</description>
+    </rule>
+    <rule id="2326-75e1-288f-6ccd" name="Resistencia mágica" hidden="false">
+      <description>Si en una unidad hay diferentes valores de Resistencia a la magia, tan sólo se aplica el mayor de ellos, no se suman. Cuando una unidad con Resistencia mágica es designada como objetivo de un hechizo, o quede dentro del área de un hechizo que afecte a varias unidades, puedes usar su Resistencia mágica para tratar de evitar que el hechizo funcione. El valor de la Resistencia mágica se convierte en dados adicionales que sumar a la tirada de dispersión del hechizo. Puedes, incluso, efectuar un intento de dispersión sin utilizar ningún dado de tu reserva de dispersión, tan sólo con los dados proporcionados por la Resistencia a la Magia, pero en ese caso no sumarás nunca el nivel de ningún hechicero (se consideraría una dispersión con el ejército en su conjunto). Ten en cuenta que la Resistencia a la magia no protege en absoluto contra hechizos del tipo Vórtice mágico.</description>
     </rule>
   </sharedRules>
   <sharedProfiles>

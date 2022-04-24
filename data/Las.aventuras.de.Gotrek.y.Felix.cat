@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="b6bc-5ac6-8851-e26e" name="Las aventuras de Gotrek y Felix" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="410" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="b6bc-5ac6-8851-e26e" name="Las aventuras de Gotrek y Felix" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="410" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="b408-8a0a-7c1c-6c8c" name="Gotrek" hidden="false" collective="false" import="true" type="unit">
       <constraints>
@@ -14,7 +14,7 @@
           <description>No tendrán que efectuar chequeos de Liderazgo para marchar si hay enemigos a 8&quot; o menos del inicio de su movimiento: se considera que superan automáticamente el chequeo.</description>
         </rule>
         <rule id="a158-d501-e4e7-1565" name="La maldición de Gotrek" hidden="false">
-          <description>La maldición proporciona a Gotrek una tirada de salvación especial de 4+ y Resistencia mágica (2). Mientras Gotrek siga con vida, Félix será Indesmoralizable y se beneficiará de la regla Maldición de Gotrek. Nunca pueden unirse a unidades y actúan como una unidad de hostigadores. Ten en cuenta que pueden lanzar y aceptar desafíos, ya que ambos son personajes (¡pero no ambos al mismo tiempo!).</description>
+          <description>La maldición proporciona a Gotrek una tirada de salvación especial de 4+ y Resistencia mágica (2).</description>
         </rule>
         <rule id="7461-b423-4afa-9775" name="Matadores" hidden="false">
           <description>En combate cuerpo a cuerpo, la Fuerza de un matador siempre es igual a la Resistencia de la miniatura a la que está atacando, a no ser que la fuerza bñasica del matador sea mayor que la resistencia del enemigo. Ten en cuenta que esto se aplica antes de aplicar cualquier modificador a la fuerza (por ejemplo, un arma a dos manos). Un personaje con esta regla especial tan sólo podrá unirse a unidades con la misma regla especial. Además, cuando una miniatura con esta regla especial es retirada como baja durante una fase de combate cuerpo a cuerpo, podrá hacer inmediatamente un único ataque contra la unidad que acabó con él. Estos ataques se realizan inmediatamente, y cuentan para la resolución del combate.</description>
@@ -25,7 +25,6 @@
       </rules>
       <infoLinks>
         <infoLink id="752a-6f87-0b0f-ef62" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
-        <infoLink id="93dd-fe88-2c8d-a1b7" name="Hostigadores" hidden="false" targetId="999c-d422-6c91-46dd" type="rule"/>
         <infoLink id="c8ac-f599-1dd7-3538" name="Indesmoralizable" hidden="false" targetId="4362-3d7f-a24a-3309" type="rule"/>
         <infoLink id="e921-90f4-f4f0-6686" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
       </infoLinks>
@@ -91,7 +90,7 @@
               <profiles>
                 <profile id="2372-f29c-adcb-ee75" name="Hacha de Gotrek" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Gotrek siempre hiere con 2+, sin importar la resistencia del objetivo. Niega tirada de salvación por armadura. Heridas múltiples (1D3), excepto al usarse contra dragones o demonios, en cuyo caso tendrá la regla Heridas múltiples (1D6). El poder de esta Reliquia es tal que no puede ser afectada o anulada por efectos, objetos mágicos, hechizos o reglas especiales que anulen o destruyan objetos mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Gotrek siempre hiere con 2+, sin importar la resistencia del objetivo. Niega tirada de salvación por armadura. Heridas múltiples (1D3), excepto al usarse contra dragones o demonios, en cuyo caso tendrá la regla Heridas múltiples (1D6). El poder de esta Reliquia es tal que no puede ser afectada o anulada por efectos, objetos mágicos, hechizos o reglas especiales que anulen o destruyan objetos mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -109,38 +108,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="6b10-4ac9-319c-05f5" name="Opciones" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7207-d6b9-7402-8b30" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2cb9-f934-340b-2f1c" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="eef0-8f38-aabd-29a3" name="Explorador" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cdc1-108b-51f4-0eb0" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="3dba-cb33-9a8f-51b3" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="7f9d-f6a2-87c8-0f34" name="Vanguardia" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6354-5e5d-f36d-f886" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="fb5f-7e84-a802-6134" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -151,13 +118,13 @@
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="29d9-5a78-370f-d198" type="min"/>
       </constraints>
       <rules>
-        <rule id="bf1f-8dbc-0e9f-46fe" name="Gotrek y Félix" hidden="false">
-          <description>Gotrek y Félix pueden actuar por separado, no tienen que conformar una unidad (aunque Félix se seguirá viendo beneficiado de la Maldición de Gotrek (salvación especial 4+ y Resistencia mágica 2), aunque sólo será Indesmoralizable si se encuentra a 12” o menos de Gotrek. Gotrek es el general del ejército.</description>
+        <rule id="bf1f-8dbc-0e9f-46fe" name="La maldición de Gotrek (Félix)" hidden="false">
+          <description>La maldición proporciona a Félix una tirada de salvación especial de 4+ y Resistencia mágica (2). Mientras Gotrek esté a 12” o menos de Félix, éste será Indesmoralizable.</description>
         </rule>
       </rules>
       <infoLinks>
         <infoLink id="4184-900b-b65a-446b" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
-        <infoLink id="6cbc-ef43-5ceb-092a" name="Hostigadores" hidden="false" targetId="999c-d422-6c91-46dd" type="rule"/>
+        <infoLink id="f05c-6d68-2577-1236" name="Resistencia mágica (2)" hidden="false" targetId="9718-2e66-193f-7dd6" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="51be-cbe6-d232-4c9b" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="true"/>
@@ -176,12 +143,12 @@
                 <characteristic name="HP" typeId="425323232344415441232323">4</characteristic>
                 <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
                 <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">2</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
                 <characteristic name="I" typeId="4923232344415441232323">5</characteristic>
                 <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
                 <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">6</characteristic>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323">4</characteristic>
                 <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
               </characteristics>
             </profile>
@@ -204,7 +171,7 @@
               <profiles>
                 <profile id="b4be-4447-3745-c288" name="Espada ruina de dragones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Félix +2 ataques y Poder de penetración. Al utilizarse contra dragones (dragones de cualquier tipo, incluyendo Dragón del Caos y Dragón zombi) hiere automáticamente, niega la tirada de salvación por piel escamosa y causa Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Félix +2 ataques y Poder de penetración. Al utilizarse contra dragones (dragones de cualquier tipo, incluyendo Dragón del Caos y Dragón zombi) hiere automáticamente, niega la tirada de salvación por piel escamosa y causa Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -234,38 +201,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="0964-4b7e-cca8-4fa4" name="Opciones" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="45cd-4984-548f-46bb" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="e38d-eceb-d51d-250c" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="ae90-8eb2-f23f-45db" name="Explorador" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a0a-1265-629e-f5a1" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="c3ca-1ca8-faf5-d507" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="0e06-52ac-f9d1-34be" name="Vanguardia" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b250-ab10-bb2a-2739" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="a769-0ac0-1221-711f" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -294,7 +229,7 @@
         <rule id="2162-487d-1e8e-5940" name="Odio (Pieles verdes y Skaven)" hidden="false">
           <description>Una miniatura que Odie podrá repetir los resultados de 1 obtenidos en sus tiradas para impactar en combate cuerpo a cuerpo contra aquellos a quienes odie.</description>
         </rule>
-        <rule id="6f4b-88c3-ef72-fe26" name="Snorri muerdenarices, matador enano" hidden="false">
+        <rule id="5276-b10b-bf21-e6ef" name="La maldición (Snorri muerdenarices, matador enano)" hidden="false">
           <description>Mientras Snorri se encuentre a 12” o menos de Gotrek, obtendrá una tirada de salvación especial 4+ y Resistencia mágica (2)</description>
         </rule>
       </rules>
@@ -320,7 +255,7 @@
                 <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
                 <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
                 <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
                 <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
                 <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">10</characteristic>
@@ -378,38 +313,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="b689-d662-9a12-4836" name="Opciones" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c088-d956-2a4c-df71" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="ae99-f3a8-0311-2a6a" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="4397-6c15-3b65-16c6" name="Explorador" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="923f-f060-b859-0e38" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="8e60-1656-a3cb-c71c" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="c22a-0ead-513f-4ea1" name="Vanguardia" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="697e-a3a2-3383-756b" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7c3d-decf-2472-e419" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -430,7 +333,7 @@
           <description>Ulrika tiene las reglas especiales Disparo rápido y Francotirador con su arco.</description>
         </rule>
         <rule id="dfb1-a9c9-3d8d-f6d1" name="Odio (Caos)" hidden="false"/>
-        <rule id="82ec-b5c0-3c4e-fcf0" name="Ulrika Straghov" hidden="false">
+        <rule id="82ec-b5c0-3c4e-fcf0" name="La maldición (Ulrika Strabhov)" hidden="false">
           <description>Mientras Ulrika se encuentre a 12” o menos de Gotrek, obtendrá Resistencia mágica (2) e Indesmoralizable.</description>
         </rule>
       </rules>
@@ -498,7 +401,7 @@
               <profiles>
                 <profile id="6ba4-65b4-4afa-4c9d" name="Arco reliquia de los Straghov" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Los impactos del Arco Reliquia se resuelven con la F de su usuaria (4), y tienen la regla especial Poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco largo. Los impactos del Arco Reliquia se resuelven con la F de su usuaria (4), y tienen la regla especial Poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -530,38 +433,6 @@
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="39eb-d68d-edd7-cb8b" name="Opciones" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="7ea6-fde0-85af-82cc" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="89fe-9e8f-92e8-5b20" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="77c8-a111-6487-a79f" name="Explorador" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a27-ff17-a9f7-b8f7" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="7265-4b6d-3d1d-677d" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="247f-33f6-6818-3d02" name="Vanguardia" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="79e1-34ed-ebc8-f6a1" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="b962-62f9-dcaa-e3fb" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -585,7 +456,7 @@
 Sanar (Dificultad 5+: Musitando unas palabras, el hechizo restaña las heridas.
 Se trata de un hechizo de potenciación que puede lanzarse sobre una única miniatura amiga a 12” o menos del lanzador. El objetivo restaurará una de las heridas que hubiese sufrido con anterioridad en la batalla.</description>
         </rule>
-        <rule id="0e9e-e60e-d7da-8ea3" name="Maximilian Schreiber" hidden="false">
+        <rule id="0e9e-e60e-d7da-8ea3" name="La maldición (Maximilian Schreiber)" hidden="false">
           <description>Mientras Max se encuentre a 12” o menos de Gotrek, obtendrá una tirada de salvación especial de 4+, Resistencia mágica (2) e Indesmoralizable.</description>
         </rule>
       </rules>
@@ -653,7 +524,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
               <profiles>
                 <profile id="0c1c-d2dc-88c0-a7e4" name="Bastón de poder" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Max puede guardar en el bastón hasta dos dados de magia (de energía o dispersión) para utilizarlos en una fase de magia posterior.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Max puede guardar en el bastón hasta dos dados de magia (de energía o dispersión) para utilizarlos en una fase de magia posterior.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -669,7 +540,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
               <profiles>
                 <profile id="53cf-02c7-f5f1-6695" name="Talimán dorado" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Max la regla especial Piel escamosa (4+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Max la regla especial Piel escamosa (4+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -695,38 +566,6 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
           </costs>
         </selectionEntry>
       </selectionEntries>
-      <selectionEntryGroups>
-        <selectionEntryGroup id="7408-0faf-98a8-d32c" name="Opciones" hidden="false" collective="false" import="true">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="9e6b-75a0-6a33-724d" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="597c-4844-50e9-0b6c" type="min"/>
-          </constraints>
-          <selectionEntries>
-            <selectionEntry id="bbe7-f734-6b9d-8794" name="Explorador" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="712f-291f-1539-2b2a" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="5515-a237-b1d2-b6b0" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-            <selectionEntry id="ecd0-dd18-dc93-fd49" name="Vanguardia" hidden="false" collective="false" import="true" type="upgrade">
-              <constraints>
-                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="defa-cfc5-fe04-ecaa" type="max"/>
-              </constraints>
-              <infoLinks>
-                <infoLink id="1bdd-4ad1-8cf7-bf86" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
-              </infoLinks>
-              <costs>
-                <cost name="pts" typeId="points" value="0.0"/>
-              </costs>
-            </selectionEntry>
-          </selectionEntries>
-        </selectionEntryGroup>
-      </selectionEntryGroups>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -734,7 +573,8 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
   </selectionEntries>
   <rules>
     <rule id="fed6-a7bd-8589-632c" name="Las aventuras de Gotrek y Félix" hidden="false">
-      <description>Todas las bajas causadas por los cinco héroes en combate cuerpo a cuerpo cuentan el doble a efectos de calcular el resultado del combate. Además, todos los personajes podrán repetir sus tiradas de salvación especiales fallidas (eso incluye tiradas de Esquivar). Además, antes del despliegue, elige para cada uno de los personajes Explorador o Vanguardia: dicho personaje gana esa regla especial durante la batalla.</description>
+      <description>Todas las bajas causadas por los cinco héroes en combate cuerpo a cuerpo cuentan el doble a efectos de calcular el resultado del combate. Además, todos los personajes podrán repetir sus tiradas de salvación especiales fallidas (eso incluye tiradas de Esquivar). Además, antes del despliegue, elige para cada uno de los personajes Explorador o Vanguardia: dicho personaje gana esa regla especial durante la batalla.
+En el escenario “Sangre y Gloria”, cada uno de tus personajes representa 1 punto de Fortaleza.</description>
     </rule>
   </rules>
 </catalogue>

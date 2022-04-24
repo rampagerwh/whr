@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="469c-f68f-07c2-64cc" name="Enanos del caos" revision="411" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="469c-f68f-07c2-64cc" name="Enanos del caos" revision="419" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="2" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="7f15-8eb3-2094-c753" name="Guerreros enanos del caos" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -121,6 +121,37 @@
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <selectionEntryGroups>
+            <selectionEntryGroup id="454b-bd7b-fff3-d357" name="Artillería demoníaca" hidden="false" collective="false" import="true">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="98dd-0782-e4e8-c8dd" type="max"/>
+              </constraints>
+              <entryLinks>
+                <entryLink id="90b7-0d15-21b7-22cd" name="Lanzacohetes infernal" hidden="false" collective="false" import="true" targetId="e684-1881-3108-797e" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c49e-0abb-62ec-4a2a" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="a3f9-3b3b-f6e2-5f09" name="Mortero de perdición" hidden="false" collective="false" import="true" targetId="c8bb-fe78-3611-914c" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8bff-d82a-9b18-de49" type="max"/>
+                  </constraints>
+                </entryLink>
+                <entryLink id="2cd0-8735-eadc-7acf" name="Multicañón de presión infernal" hidden="false" collective="false" import="true" targetId="c5ea-bfa2-b687-28c8" type="selectionEntry">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cea7-c709-3ea9-23b7" type="max"/>
+                  </constraints>
+                </entryLink>
+              </entryLinks>
+            </selectionEntryGroup>
+          </selectionEntryGroups>
         </selectionEntryGroup>
         <selectionEntryGroup id="43dc-3a54-af50-304b" name="Grupo de mando" hidden="false" collective="false" import="true">
           <selectionEntries>
@@ -949,6 +980,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="6b7e-8213-b460-920e" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="125.0"/>
           </costs>
@@ -1171,7 +1205,7 @@
                 <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
                 <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
                 <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
                 <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">3</characteristic>
                 <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
@@ -1243,7 +1277,7 @@
                     <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
                     <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
                     <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-                    <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
                     <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
                     <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">3</characteristic>
                     <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
@@ -1487,6 +1521,9 @@ Los Cohetes de demolición no utilizan plantilla ninguna, sino que descargan tod
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="2ef2-d5a6-6606-8b9d" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <selectionEntries>
             <selectionEntry id="efaf-d3ef-dd42-f506" name="Equipo artillero enano del caos" hidden="false" collective="false" import="true" type="upgrade">
               <constraints>
@@ -1875,6 +1912,9 @@ Los Cohetes de demolición no utilizan plantilla ninguna, sino que descargan tod
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="f33b-43bc-c99f-d138" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -2010,6 +2050,9 @@ En el caso de obtener un resultado de ¡Problemas!, deberá usarse la tabla de p
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ac18-0794-cf10-1a09" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="190.0"/>
           </costs>
@@ -2240,7 +2283,6 @@ En el caso de obtener un resultado de ¡Problemas!, deberá usarse la tabla de p
       <infoLinks>
         <infoLink id="285c-3870-808a-a0a9" name="Infantería monstruosa" hidden="false" targetId="4958-70de-0b69-9825" type="rule"/>
         <infoLink id="6152-ec74-a6f6-104e" name="Desprecio" hidden="false" targetId="60f2-832e-5017-9414" type="rule"/>
-        <infoLink id="e28c-f606-53dc-9920" name="Impactos por carga (1)" hidden="false" targetId="8de0-8a91-edee-076e" type="rule"/>
         <infoLink id="8538-5910-0afe-df09" name="Piel escamosa (5+)" hidden="false" targetId="b1c5-6add-797c-2d07" type="rule"/>
         <infoLink id="fdcc-a1df-7927-9a83" name="Ataques flamígeros" hidden="false" targetId="6985-722e-1ce4-b838" type="rule"/>
         <infoLink id="54ba-c632-f9d8-9967" name="Inmune al fuego" hidden="false" targetId="c50e-4c88-061d-12b9" type="rule"/>
@@ -2777,24 +2819,9 @@ En el caso de obtener un resultado de ¡Problemas!, deberá usarse la tabla de p
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f8a8-8ce0-229a-ac07" type="min"/>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ad7c-13e9-ca20-e343" type="max"/>
           </constraints>
-          <profiles>
-            <profile id="e1b4-2f40-c373-a07b" name="Cañón infernal" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
-              <characteristics>
-                <characteristic name="M" typeId="4d23232344415441232323">6</characteristic>
-                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
-                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
-                <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
-                <characteristic name="R" typeId="5423232344415441232323">6</characteristic>
-                <characteristic name="H" typeId="5723232344415441232323">5</characteristic>
-                <characteristic name="I" typeId="4923232344415441232323">1</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">5</characteristic>
-                <characteristic name="L" typeId="4c4423232344415441232323">4</characteristic>
-                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
-                <characteristic name="TSE" typeId="576172645361766523232344415441232323">5</characteristic>
-                <characteristic name="Tipo" typeId="5479706523232344415441232323">Monstruo</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
+          <infoLinks>
+            <infoLink id="8257-4cf1-64ad-b33b" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="225.0"/>
           </costs>
@@ -5864,6 +5891,9 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="79e4-95bc-23d1-4e9e" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="155.0"/>
           </costs>
@@ -6747,7 +6777,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="8e9c-5705-327f-0f68" name="Martillo llameante de Hashut" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven con +2F y las reglas especiales Ataques flamígeros y Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven con +2F y las reglas especiales Ataques flamígeros y Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6768,7 +6798,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="da7f-ce3e-802d-61eb" name="Armadura de obsidiana de Zharr" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Proporciona a Zhatan la regla especial Resistencia mágica (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Proporciona a Zhatan la regla especial Resistencia mágica (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6800,7 +6830,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="0e50-a439-533e-c786" name="Guantaletes negro de Ghroth" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Al inicio de cada fase de combate cuerpo a cuerpo, selecciona un enemigo en contacto peana con peana con Zhatan o su montura: este pierde 1 Ataque (hasta un mínimo de 1) hasta el final del turno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Al inicio de cada fase de combate cuerpo a cuerpo, selecciona un enemigo en contacto peana con peana con Zhatan o su montura: este pierde 1 Ataque (hasta un mínimo de 1) hasta el final del turno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6816,7 +6846,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="ae08-c893-be45-50ce" name="Ojo de Zharr" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Zhatan una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Zhatan una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6964,7 +6994,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="1857-41bc-a068-c714" name="Cetro grabado de Azgorh" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. En combate cuerpo a cuerpo, proporciona a Drazhoath +1F, +1A y la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. En combate cuerpo a cuerpo, proporciona a Drazhoath +1F, +1A y la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6984,7 +7014,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="308e-4f90-b9d8-b4b2" name="Crisol demoníaco" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Suma +1 a todos los intentos de lanzamiento de hechizo de Drazhoath. Cada vez que Drazhoath o Cinderbreath maten a un personaje enemigo que sea hechicero en combate cuerpo a cuerpo, el Crisol consumirá su alma, lo que le proporcionará otro +1 adicional al lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Suma +1 a todos los intentos de lanzamiento de hechizo de Drazhoath. Cada vez que Drazhoath o Cinderbreath maten a un personaje enemigo que sea hechicero en combate cuerpo a cuerpo, el Crisol consumirá su alma, lo que le proporcionará otro +1 adicional al lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7000,7 +7030,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="2285-012b-ab39-4661" name="Amuleto de élitro infernal" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Drazhoath una tirada de salvación especial de 5+. Cada vez que Drazhoath falle su tirada de salvación especial en combate cuerpo a cuerpo, el amuleto causará un impacto automático de Fuerza 6 con la regla especial Ataques mágicos a la miniatura que le causó la herida a Drazhoath.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Drazhoath una tirada de salvación especial de 5+. Cada vez que Drazhoath falle su tirada de salvación especial en combate cuerpo a cuerpo, el amuleto causará un impacto automático de Fuerza 6 con la regla especial Ataques mágicos a la miniatura que le causó la herida a Drazhoath.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7240,7 +7270,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="430b-c0a8-a765-30f5" name="Dados de la suerte" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Talismán. Una vez por turno de juego, Gorduz puede repetir una tirada que le concierna a él. Puede tratarse de una tirada para impactar, herir, salvaciones, un chequeo de atributo (incluyendo Liderazgo) o una tirada de &quot;Bastardo afortunado&quot;.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Talismán. Una vez por turno de juego, Gorduz puede repetir una tirada que le concierna a él. Puede tratarse de una tirada para impactar, herir, salvaciones, un chequeo de atributo (incluyendo Liderazgo) o una tirada de &quot;Bastardo afortunado&quot;.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7384,7 +7414,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="d1fd-9235-bc00-9f89" name="Armadura negra de Astragoth" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. La armadura proporciona a Astragoth una tirada de salvación especial de 3+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. La armadura proporciona a Astragoth una tirada de salvación especial de 3+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7416,7 +7446,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="3a7c-a612-bcc1-c7ee" name="Ojo de Hashut" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Cada vez que Astragoth lance un hechizo del Saber de Hashut, el Ojo le proporciona un dado de energía adicional para lanzar ese hechizo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Cada vez que Astragoth lance un hechizo del Saber de Hashut, el Ojo le proporciona un dado de energía adicional para lanzar ese hechizo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7957,7 +7987,7 @@ sumarán su atributo de Fuerza. Por cada punto por el que el gigante venza, caus
               <profiles>
                 <profile id="5fa1-f9e9-7e8e-0eda" name="Talismán esmeralda de Xhotl" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Pirzazzo y a su unidad las reglas especiales Inmunes a Veneno y Regeneración (6+), que aumenta a Regeneración (5+) en el caso de Pirazzo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Pirzazzo y a su unidad las reglas especiales Inmunes a Veneno y Regeneración (6+), que aumenta a Regeneración (5+) en el caso de Pirazzo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8347,7 +8377,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="aa88-60c4-a94c-2d21" name="Skabscrath" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8418,7 +8448,7 @@ afectados por la regla especial No Muerto.</description>
                   <profiles>
                     <profile id="c97a-9f9a-7a80-6080" name="Pabellón de pesadilla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8619,7 +8649,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="4626-c74c-4fd7-133e" name="Daga del desollamiento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada por esta daga Darkhoth recuperará una de las heridas que hubiese perdido previamente durante la batalla. En combate Darkhoth combinará varios golpes de sus Daga con uno de su Mangual, efectuando un total de 3 ataques con su Daga (4 incluyendo el ataque adicional de furia asesina) y uno con su mangual.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada por esta daga Darkhoth recuperará una de las heridas que hubiese perdido previamente durante la batalla. En combate Darkhoth combinará varios golpes de sus Daga con uno de su Mangual, efectuando un total de 3 ataques con su Daga (4 incluyendo el ataque adicional de furia asesina) y uno con su mangual.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8638,7 +8668,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="32bc-934a-078d-842b" name="La fortaleza roja" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Mientras Darkhoth viva, él y los Discípulos no perderán la Furia asesina al ser derrotados en combate cuerpo a cuerpo y sus armas perderán la regla especial Agotamiento.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Mientras Darkhoth viva, él y los Discípulos no perderán la Furia asesina al ser derrotados en combate cuerpo a cuerpo y sus armas perderán la regla especial Agotamiento.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9090,6 +9120,9 @@ D6	Efecto
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ad50-13f0-d177-1bc5" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -9486,7 +9519,7 @@ D6	Efecto
                   <profiles>
                     <profile id="939c-2962-cd66-5999" name="Estandarte de Karad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9696,7 +9729,7 @@ D6	Efecto
               <profiles>
                 <profile id="bdc9-1252-40eb-9a5f" name="Máscara mortuoria" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Véspero causa Miedo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Véspero causa Miedo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9916,7 +9949,7 @@ D6	Efecto
                   <profiles>
                     <profile id="af51-ca1e-e807-95a9" name="Estandarte de la tribu del oso" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10564,7 +10597,7 @@ D6	Efecto
       <selectionEntries>
         <selectionEntry id="1f43-00b7-7049-44e6" name="Berserkers de Hashut" hidden="false" collective="false" import="true" type="model">
           <constraints>
-            <constraint field="selections" scope="parent" value="4.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2b-c7f7-d46f-22cb" type="max"/>
+            <constraint field="selections" scope="parent" value="20.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7b2b-c7f7-d46f-22cb" type="max"/>
             <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="efeb-7390-746f-fc1e" type="min"/>
           </constraints>
           <profiles>
@@ -10741,6 +10774,11 @@ D6	Efecto
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="046a-1c36-705e-1c0e" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6173-50a7-b213-fc3f" type="max"/>
@@ -10828,7 +10866,7 @@ D6	Efecto
               <profiles>
                 <profile id="aaf8-3ca6-2794-0dd5" name="Hacha marea oscura" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Una miniatura que sufra al menos una herida a causa de los ataques de Marea Oscura deberá superar con éxito un chequeo de Liderazgo usando 3D6 y descartando el mas bajo o deberá ser retirada automáticamente como baja. Este efecto no afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Una miniatura que sufra al menos una herida a causa de los ataques de Marea Oscura deberá superar con éxito un chequeo de Liderazgo usando 3D6 y descartando el mas bajo o deberá ser retirada automáticamente como baja. Este efecto no afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10859,7 +10897,7 @@ D6	Efecto
               <profiles>
                 <profile id="a1e0-8992-4b48-2e8a" name="Máscara del ejecutor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo. Otorga una tirada de salvación especial de 5+. Durante tu fase de disparo, Shar’tor puede utilizar la Máscara para realizar un ataque de disparo con un alcance de 18” (puede utilizarlo aunque marche, aunque no si está trabado en combate): coloca la plantilla redonda pequeña dentro del alcance y tira los dados de artillería y dispersión; si obtienes un resultado de flecha, desvía la plantilla la mitad de la distancia indicada en el dado de artillería, y si obtienes un resultado de Problemas, retira la plantilla y el disparo no tiene efecto. Cualquier miniatura bajo la plantilla (usa las reglas habituales de impactos parciales) sufre un impacto de F4 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Además, una vez por batalla al inicio de uno de tus turnos puedes desatar el poder de la máscara, haciendo que todas las unidades con la regla desprecio situadas a 12” o menos de Shar&apos;tor obtengan la regla especial Furia Asesina hasta el inicio de tu siguiente turno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo. Otorga una tirada de salvación especial de 5+. Durante tu fase de disparo, Shar’tor puede utilizar la Máscara para realizar un ataque de disparo con un alcance de 18” (puede utilizarlo aunque marche, aunque no si está trabado en combate): coloca la plantilla redonda pequeña dentro del alcance y tira los dados de artillería y dispersión; si obtienes un resultado de flecha, desvía la plantilla la mitad de la distancia indicada en el dado de artillería, y si obtienes un resultado de Problemas, retira la plantilla y el disparo no tiene efecto. Cualquier miniatura bajo la plantilla (usa las reglas habituales de impactos parciales) sufre un impacto de F4 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Además, una vez por batalla al inicio de uno de tus turnos puedes desatar el poder de la máscara, haciendo que todas las unidades con la regla desprecio situadas a 12” o menos de Shar&apos;tor obtengan la regla especial Furia Asesina hasta el inicio de tu siguiente turno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10921,7 +10959,7 @@ D6	Efecto
                 <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
                 <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
                 <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-                <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
                 <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
                 <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">3</characteristic>
                 <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
@@ -10993,7 +11031,7 @@ D6	Efecto
                     <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
                     <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
                     <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
-                    <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
                     <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
                     <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">3</characteristic>
                     <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
@@ -11164,6 +11202,11 @@ D6	Efecto
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="11d3-b1c6-22de-f95d" type="max"/>
@@ -11248,7 +11291,7 @@ D6	Efecto
               <profiles>
                 <profile id="b7e9-b481-b1cc-74fe" name="Hacha ígnea de Hashut" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Hacha se resuelven con +1F y la regla especial Ataques flamígeros. Cualquier miniatura que sufra al menos una herida no salvada de este arma deberá retirarse inmediatamente como baja.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por el Hacha se resuelven con +1F y la regla especial Ataques flamígeros. Cualquier miniatura que sufra al menos una herida no salvada de este arma deberá retirarse inmediatamente como baja.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11431,7 +11474,7 @@ D6	Efecto
               <profiles>
                 <profile id="65d3-49fe-87b6-7758" name="Sello de Uzkulak" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11782,7 +11825,7 @@ D6	Efecto
               <profiles>
                 <profile id="020a-db2a-d4ad-c2fb" name="Cuerno de la tempestad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene el hechizo Tormenta de Ceniza del Saber de Hashut.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene el hechizo Tormenta de Ceniza del Saber de Hashut.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11964,7 +12007,7 @@ D6	Efecto
               <profiles>
                 <profile id="a459-95ac-5558-0669" name="Mordisco del dios águila" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12231,7 +12274,7 @@ D6	Efecto
               <profiles>
                 <profile id="3b4a-896d-3ee5-a20b" name="Macana de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12313,7 +12356,7 @@ D6	Efecto
                   <profiles>
                     <profile id="c809-604e-fe3e-b292" name="Estandarte emplumado de Skeggi" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12642,7 +12685,7 @@ D6 Tabla de animosidad hobgoblin
               <profiles>
                 <profile id="58a8-e527-cced-0ce3" name="Capa del gran lobo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12804,7 +12847,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="a218-0304-2c91-780f" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12820,7 +12863,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="4c0f-ae75-53d8-066e" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12855,6 +12898,11 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -12934,7 +12982,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="b21b-6e44-f77f-1e81" name="Hacha de la desolación" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Otorga a Rykarth I10 y +1A.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Otorga a Rykarth I10 y +1A.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12953,7 +13001,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="5c1f-d217-49ae-d917" name="Armadura de Gazrakh" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Otorga a Rykarth una tirada de salvación especial de 5+. Además, cualquier ataque dirigido contra Rykarth de Fuerza superior a 5 se considerará de F5.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Otorga a Rykarth una tirada de salvación especial de 5+. Además, cualquier ataque dirigido contra Rykarth de Fuerza superior a 5 se considerará de F5.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13469,7 +13517,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="7c69-a702-caba-f7fe" name="Ketepincho de Hacka" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga a Skaben dos ataques adicionales, que se resuelven con un +1 a la Fuerza.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga a Skaben dos ataques adicionales, que se resuelven con un +1 a la Fuerza.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13512,7 +13560,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="613f-b037-197b-9a54" name="Zombrero pirata" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Skaben una tirada de salvación especial de 5+. Además, podrá repetir los resultados de 1 en sus tiradas de salvación especiales.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Skaben una tirada de salvación especial de 5+. Además, podrá repetir los resultados de 1 en sus tiradas de salvación especiales.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13554,7 +13602,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
                   <profiles>
                     <profile id="833c-92ef-6ff8-619a" name="Rata aullante" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad causará Miedo durante cualquier turno en que declaren una carga.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad causará Miedo durante cualquier turno en que declaren una carga.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -13681,7 +13729,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="481a-95e7-b9e5-648c" name="Casaca bendita de Mannan" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga a su portador Esquivar (5+). Los resultados de 6 para impactar a Van Klumf deberán repetirse.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga a su portador Esquivar (5+). Los resultados de 6 para impactar a Van Klumf deberán repetirse.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13821,6 +13869,264 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="838f-3047-d565-c361" name="La compañía maldita" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="2768-524a-abe2-197c" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="2ff5-d883-ae1c-dd23" name="Bienvenidos a la maldición" hidden="false">
+          <description>Por cada miniatura enemiga abatida a causa de las heridas de Richter u otro miembro de su unidad podrás incluir un Guerrero Maldito adicional en la unidad. Añade los guerreros en el momento que las miniaturas son retiradas como baja. Esta regla no afecta a miniaturas con la regla especial Demonio.</description>
+        </rule>
+        <rule id="a0cf-243a-a45f-8527" name="Primero entre los malditos" hidden="false">
+          <description>Mientras Richter siga con vida, Richter y su unidad de Guerreros Malditos podrán marchar como si no estuviesen afectados por la regla especial No Muerto.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="552f-7873-3406-f13b" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="d771-290d-1be2-e9d8" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
+        <infoLink id="bd12-bf8d-8837-82de" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="ce35-8363-35ee-d1e8" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a215-e1fd-b75c-b9fd" name="Guerreros condenados" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="29.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dc5f-4b3f-9f69-a15a" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="eddf-eaac-0707-5724" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="2c40-cb2d-4644-5e91" name="Guerrero condenado" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">2</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">2</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">6</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">5</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="7c33-253b-a2d3-2779" name="Equipo guerreros condenados" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="562f-f34d-8320-59ce" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="03ea-3155-9c02-6e22" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="ea11-07b7-d944-09b3" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12d2-5b02-0b98-6c6e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f901-fe0d-e292-2b66" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7cab-e5ce-6c30-2e8a" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="97de-f431-5635-b52c" name="Armadura ligera" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b8a8-1301-ee00-069b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e2cb-a860-5a46-727a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="ec22-cd22-9cc2-ac8b" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="40e3-e13d-79a1-30e9" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cc59-0d91-ac88-ccda" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86c0-4282-a8a2-3d85" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="147e-42fd-27af-ed49" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1d81-2166-bc87-9261" name="Richter Kreugar" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="086c-39e1-8562-f234" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8372-89f1-9aac-7c6b" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="5fa9-4a6e-6577-3bdb" name="Richter Kreugar" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323">4</characteristic>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="156.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5295-ccc1-2de4-b1e3" name="Equipo Richter Kreugar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ffba-d982-cb98-4709" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="789a-9b05-e199-ca02" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="1fce-8c86-b8ec-f8cc" name="Aflicción" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7306-ecb0-fb8a-c69d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cb4b-ea63-f0c6-412e" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="31a4-ab23-ae33-e8df" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="3bd2-85e2-0a11-8d22" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="b87c-60ce-2752-5a69" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="2eab-3825-ac65-9417" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9e1-fc97-2f0d-4c65" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2cc5-6414-fd17-69e5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="285b-0df6-259e-0e65" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="b7b0-b5dc-cdaa-6201" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2f7a-bd15-4e9a-471b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="713e-53f3-1262-3d30" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="19e1-2875-6230-e943" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9eb4-012b-84fa-4f23" name="La oscura gema de la condenación" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6a08-bfd6-4e01-b743" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="dbb4-41ce-1ca7-c5be" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="d288-aa61-e854-2868" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="6c49-2fcf-31f4-ffe2" name="Grupo de mando" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c9f2-4463-19de-4ab9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="60c5-4c85-ba20-ee06" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="2d8d-470c-ab5f-ccca" name="Músico" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a956-4884-030a-cb04" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c56c-3afd-75c1-b310" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4a76-6c80-bdcf-17cd" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="83b9-6ca4-2c82-5c90" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1eb3-0853-f3b1-a8f4" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="0839-b7aa-5b92-62fa" name="Estandarte de los malditos" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f562-0f90-b5db-c14b" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4851-24f1-7af2-927d" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="6935-d542-f627-a8fa" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
+                      <characteristics>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="3b1a-84e9-2bbc-adf0" name="Ni un paso atrás" hidden="false" targetId="f76e-5a01-1c6b-ef76" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="7cdf-aab5-fbfa-ecc6" name="Regimientos de renombre" hidden="false" collective="false" import="true" targetId="cbe6-b40a-eb61-0c1c" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
   </selectionEntries>
   <sharedSelectionEntries>
     <selectionEntry id="174f-a640-6760-2b5a" name="Gran tauro" hidden="false" collective="false" import="true" type="upgrade">
@@ -13836,7 +14142,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
             <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
             <characteristic name="F" typeId="5323232344415441232323">6</characteristic>
             <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-            <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">5</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">4</characteristic>
             <characteristic name="L" typeId="4c4423232344415441232323">6</characteristic>
@@ -13885,7 +14191,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
             <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
             <characteristic name="F" typeId="5323232344415441232323">5</characteristic>
             <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
-            <characteristic name="H" typeId="5723232344415441232323">4</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">5</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">1</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
             <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
@@ -14035,7 +14341,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
             <characteristic name="HP" typeId="425323232344415441232323">0</characteristic>
             <characteristic name="F" typeId="5323232344415441232323">6</characteristic>
             <characteristic name="R" typeId="5423232344415441232323">6</characteristic>
-            <characteristic name="H" typeId="5723232344415441232323">5</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">6</characteristic>
             <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
             <characteristic name="A" typeId="4123232344415441232323">5</characteristic>
             <characteristic name="L" typeId="4c4423232344415441232323">6</characteristic>
@@ -14065,6 +14371,287 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
+    <selectionEntry id="e684-1881-3108-797e" name="Lanzacohetes infernal" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="7a10-aff3-1585-6e4d" name="Lanzacohetes infernal" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+          <characteristics>
+            <characteristic name="Rango" typeId="52616e676523232344415441232323">Estimar 0-2</characteristic>
+            <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">5</characteristic>
+            <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Poder de penetración, Ataques flamígeros y Heridas múltiples (1D3).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e551-f8dd-e8ec-24fd" name="Artillero enano del caos (2)" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+          <characteristics>
+            <characteristic name="M" typeId="4d23232344415441232323">3</characteristic>
+            <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+            <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+            <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+            <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+            <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+            <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+            <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+            <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+            <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+            <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="4b03-a611-1ce1-c92d" name="Lanzacohetes infernal" hidden="false">
+          <description>El Lanzacohetes infernal dispara como un Cañón, con el perfil arriba indicado. Adicionalmente, coloca la plantilla de lágrima sobre el punto en el que se detuvo el proyectil tras el rebote y siguiendo en línea recta la trayectoria del disparo. Cualquier miniatura bajo la plantilla (utiliza las reglas habituales para impactos parciales) sufrirá un impacto de F2 con la regla especial Ataques solo flamígeros. Si en la tirada para determinar el rebote se obtiene un resultado de Problemas, el cohete estará defectuoso y no explotará (aunque en el caso de caer sobre una miniatura, seguirá causando un único impacto de F5 con la regla especial Poder de penetración). El Lanzacohetes no puede disparar Metralla.</description>
+        </rule>
+        <rule id="2fa3-b4bd-c84b-a9e0" name="Maniobrable" hidden="false">
+          <description>Puede Mover y disparar. También puede Aguantar y disparar si su unidad madre es cargada y se encuentra a 3&quot; o menos de ésta, o si es cargado. No podrá Aguantar y disparar mientras se vea afectado por el resultado 3-4 de la tabla de problemas del Cañón.</description>
+        </rule>
+        <rule id="a1bf-3b4f-7e69-b73b" name="Artillería demoníaca" hidden="false">
+          <description>La Artillería demoniaca consiste en dos Enanos del Caos de Infantería y montados en una única base de 25x50mm, por lo que se consideran una única miniatura a todos los efectos, aunque tiene un bonificador de +1 a su tirada de salvación por armadura (totalizando 4+ con su Armadura pesada;) y tienen potencia de unidad 2. El coste en puntos de la Artillería demoniaca cuenta para el total de tropas básicas de la lista de ejército.</description>
+        </rule>
+        <rule id="75e7-bc22-5427-7baa" name="Potencia de unidad 2" hidden="false"/>
+        <rule id="8db5-61c6-7f78-b141" name="Unidad de apoyo" hidden="false">
+          <description>La Artillería diabólica debe desplegarse a 3&quot; o menos de la unidad que lo ha adquirido, conocida como unidad madre. Después de ese momento, se considerará una unidad por sí misma en todos los aspectos. Mientras se mantenga a 3&quot; o menos de su unidad madre, obtendrá un bonificador de +2 a su tirada de salvación por armadura contra disparos y hechizos del tipo Proyectil Mágico). Las unidades de Artillería diabólica destruidas, huyendo o desmoralizadas nunca provocará chequeos de pánico. Además, cualquier Brujo-Sacerdote o Herrero Demoníaco podrá hacer uso de su regla especial Ingeniero Infernal sobre los grupos de Artillería demoníaca como si fuesen máquinas de guerra.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="ff3e-333e-2660-c087" name="Cañón" hidden="false" targetId="9f6a-5d0b-f0a6-dbab" type="rule"/>
+        <infoLink id="0bec-165e-4e65-d816" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="5715-c6e6-9fbe-ed4d" name="Desprecio" hidden="false" targetId="60f2-832e-5017-9414" type="rule"/>
+        <infoLink id="f9f2-f9b4-4ab0-4544" name="Avance imparable" hidden="false" targetId="a396-1f2c-9829-f368" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="0956-2cd7-847e-78dc" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="cf49-1b54-857f-b224" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="82d4-761f-bb8d-ea2e" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="b383-cb4f-f736-5663" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3808-a651-d60d-30b3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fed-8a96-6408-0f45" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="2537-50a0-ecf1-9575" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="3a12-3bb3-c265-dc0e" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="db18-02d5-31bb-31fd" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a15f-59eb-97c2-fa5b" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="7b8b-0a5a-2015-58ec" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="48b7-f1e8-1df8-cc8e" name="Opciones" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="0ba3-d6cb-a4fa-ca96" name="Vínculo demoníaco" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1f8-8055-6af4-ed93" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="6943-2d58-3e9e-23ed" name="Vínculo demoníaco" hidden="false" targetId="2483-eac8-3545-0353" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="15.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="60.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c8bb-fe78-3611-914c" name="Mortero de perdición" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="f9a0-3c02-8d65-f291" name="Mortero de perdición" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+          <characteristics>
+            <characteristic name="Rango" typeId="52616e676523232344415441232323">6-24&quot;</characteristic>
+            <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">3 (6)</characteristic>
+            <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Plantilla redonda pequeña, Ataques flamígeros, Poder de penetración.(Heridas múltiples 1D3, sólo el impacto central).</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="3227-a967-4f3c-ba22" name="Artillero enano del caos (2)" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+          <characteristics>
+            <characteristic name="M" typeId="4d23232344415441232323">3</characteristic>
+            <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+            <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+            <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+            <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+            <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+            <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+            <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+            <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+            <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+            <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="db45-b96d-063c-30da" name="Artillería demoníaca" hidden="false">
+          <description>La Artillería demoniaca consiste en dos Enanos del Caos de Infantería y montados en una única base de 25x50mm, por lo que se consideran una única miniatura a todos los efectos, aunque tiene un bonificador de +1 a su tirada de salvación por armadura (totalizando 4+ con su Armadura pesada;) y tienen potencia de unidad 2. El coste en puntos de la Artillería demoniaca cuenta para el total de tropas básicas de la lista de ejército.</description>
+        </rule>
+        <rule id="66b4-25cd-144b-739b" name="Potencia de unidad 2" hidden="false"/>
+        <rule id="bbfe-2a6f-5a08-0455" name="Unidad de apoyo" hidden="false">
+          <description>La Artillería diabólica debe desplegarse a 3&quot; o menos de la unidad que lo ha adquirido, conocida como unidad madre. Después de ese momento, se considerará una unidad por sí misma en todos los aspectos. Mientras se mantenga a 3&quot; o menos de su unidad madre, obtendrá un bonificador de +2 a su tirada de salvación por armadura contra disparos y hechizos del tipo Proyectil Mágico). Las unidades de Artillería diabólica destruidas, huyendo o desmoralizadas nunca provocará chequeos de pánico. Además, cualquier Brujo-Sacerdote o Herrero Demoníaco podrá hacer uso de su regla especial Ingeniero Infernal sobre los grupos de Artillería demoníaca como si fuesen máquinas de guerra.</description>
+        </rule>
+        <rule id="a1ef-18fe-581a-9126" name="Mortero de perdición" hidden="false">
+          <description>El Mortero de perdición dispara como una Catapulta, con el perfil arriba indicado. Puede utilizar la línea de visión de su unidad madre además de la suya propia para disparar. Utiliza la tabla de problemas del Cañón, en lugar de la de la Catapulta.</description>
+        </rule>
+        <rule id="bd0d-36da-d1fa-29f0" name="Maniobrable" hidden="false">
+          <description>Puede Mover y disparar. También puede Aguantar y disparar si su unidad madre es cargada y se encuentra a 3&quot; o menos de ésta, o si es cargado. No podrá Aguantar y disparar mientras se vea afectado por el resultado 3-4 de la tabla de problemas del Cañón.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="7b75-3aff-6442-e4f2" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="a97e-f167-8927-441f" name="Desprecio" hidden="false" targetId="60f2-832e-5017-9414" type="rule"/>
+        <infoLink id="7763-fe82-72c7-a4ba" name="Avance imparable" hidden="false" targetId="a396-1f2c-9829-f368" type="rule"/>
+        <infoLink id="110c-35de-3981-0a67" name="Catapulta" hidden="false" targetId="7168-c1ae-bc9c-15df" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="2d5f-6e7f-91be-595d" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fde1-c7ea-14b0-a2a9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e827-8f11-ccf4-5c10" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="293d-0f64-2e75-bfb6" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f47f-d166-8e34-f51f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7dc3-7370-57df-c92a" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e6ef-54dc-a657-6143" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8994-4915-7f1b-6d19" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c702-f1f8-cb7c-d25e" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f6de-3a0d-169f-eada" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="e98d-eea0-82ce-9f4f" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="55.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c5ea-bfa2-b687-28c8" name="Multicañón de presión infernal" hidden="false" collective="false" import="true" type="upgrade">
+      <profiles>
+        <profile id="315c-5090-8f15-16f7" name="Multicañón de presión infernal" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+          <characteristics>
+            <characteristic name="Rango" typeId="52616e676523232344415441232323">12&quot;</characteristic>
+            <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">4</characteristic>
+            <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Poder de penetración, Tormenta de proyectiles.</characteristic>
+          </characteristics>
+        </profile>
+        <profile id="e027-14d4-881d-0f29" name="Artillero enano del caos (2)" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+          <characteristics>
+            <characteristic name="M" typeId="4d23232344415441232323">3</characteristic>
+            <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+            <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+            <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+            <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+            <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+            <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+            <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+            <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+            <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+            <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+            <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+          </characteristics>
+        </profile>
+      </profiles>
+      <rules>
+        <rule id="fa59-ed0a-e9ce-2969" name="Artillería demoníaca" hidden="false">
+          <description>La Artillería demoniaca consiste en dos Enanos del Caos de Infantería y montados en una única base de 25x50mm, por lo que se consideran una única miniatura a todos los efectos, aunque tiene un bonificador de +1 a su tirada de salvación por armadura (totalizando 4+ con su Armadura pesada;) y tienen potencia de unidad 2. El coste en puntos de la Artillería demoniaca cuenta para el total de tropas básicas de la lista de ejército.</description>
+        </rule>
+        <rule id="8c91-925b-23d0-5a9e" name="Potencia de unidad 2" hidden="false"/>
+        <rule id="216e-b593-8083-c3bf" name="Unidad de apoyo" hidden="false">
+          <description>La Artillería diabólica debe desplegarse a 3&quot; o menos de la unidad que lo ha adquirido, conocida como unidad madre. Después de ese momento, se considerará una unidad por sí misma en todos los aspectos. Mientras se mantenga a 3&quot; o menos de su unidad madre, obtendrá un bonificador de +2 a su tirada de salvación por armadura contra disparos y hechizos del tipo Proyectil Mágico). Las unidades de Artillería diabólica destruidas, huyendo o desmoralizadas nunca provocará chequeos de pánico. Además, cualquier Brujo-Sacerdote o Herrero Demoníaco podrá hacer uso de su regla especial Ingeniero Infernal sobre los grupos de Artillería demoníaca como si fuesen máquinas de guerra.</description>
+        </rule>
+        <rule id="0bb4-4fd5-8401-b10b" name="Maniobrable" hidden="false">
+          <description>Puede Mover y disparar. También puede Aguantar y disparar si su unidad madre es cargada y se encuentra a 3&quot; o menos de ésta, o si es cargado. No podrá Aguantar y disparar mientras se vea afectado por el resultado 3-4 de la tabla de problemas del Cañón.</description>
+        </rule>
+        <rule id="e905-a3c8-fe00-185a" name="Multicañón de presión infernal" hidden="false">
+          <description>El Multicañón de presión es un arma de Tormenta de proyectiles con un alcance de 12”: tira un dado de artillería para determinar el número de impactos que causa; puedes, si lo deseas, tirar un segundo dado de artillería y sumar los impactos: estos se resuelven con F4 y la regla especial Poder de penetración. Si en cualquiera de las dos tiradas obtienes un resultado de problemas, deberás hacer una tirada en la tabla de problemas del Cañón y aplica el resultado tal como se describe en el reglamento de Warhammer Reforged; esto no anula los impactos que ya se hubiesen realizado en ese disparo, aunque si obtienes problemas en el primer dado, no podrás tirar el segundo (como es habitual).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="54b9-130e-045a-f08b" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="2118-6169-5742-2d13" name="Desprecio" hidden="false" targetId="60f2-832e-5017-9414" type="rule"/>
+        <infoLink id="b084-b2b0-513c-83de" name="Avance imparable" hidden="false" targetId="a396-1f2c-9829-f368" type="rule"/>
+        <infoLink id="65a3-3fd9-e3cc-cf8e" name="Tormenta de proyectiles" hidden="false" targetId="78ba-a8c1-e999-847c" type="rule"/>
+      </infoLinks>
+      <selectionEntries>
+        <selectionEntry id="0522-8485-ef0f-1aa8" name="Equipo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0023-81cc-d907-d450" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8283-7d66-01f0-6ee3" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9918-e92f-f721-5f22" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b79a-1074-760f-b21d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1626-81a2-b882-6fe1" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="b277-5e6f-8a9c-065e" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="4535-e576-86cf-ebfd" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ff2-63f8-3781-4336" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="33ad-4ef6-eaf8-0854" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="5e1e-9f22-216e-415b" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <costs>
+        <cost name="pts" typeId="points" value="80.0"/>
+      </costs>
+    </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
     <selectionEntryGroup id="57ec-850c-6b6e-756a" name="Armas mágicas. Enanos del caos. Armas emparejadas" hidden="false" collective="false" import="true">
@@ -14081,7 +14668,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="08a1-98c0-5c3d-92b8" name="Puñales de la malicia" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas Emparejadas. El portador obtiene la regla especial Odio (todos los enemigos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas Emparejadas. El portador obtiene la regla especial Odio (todos los enemigos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14110,7 +14697,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="d6ca-6df9-c997-16b2" name="Hacha de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Sólo miniaturas con la regla especial Desprecio. Los ataques con este arma niegan la tirada de salvación por armadura. Cualquier miniatura que porte un armadura mágica y sufra al menos una herida a causa del hacha de obsidiana verá su armadura mágica inutilizada. La armadura pasará a considerarse un armadura mundana de su mismo tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Sólo miniaturas con la regla especial Desprecio. Los ataques con este arma niegan la tirada de salvación por armadura. Cualquier miniatura que porte un armadura mágica y sufra al menos una herida a causa del hacha de obsidiana verá su armadura mágica inutilizada. La armadura pasará a considerarse un armadura mundana de su mismo tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14137,7 +14724,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="0532-7a8a-4617-5b3b" name="Armadura de Bhazrak el cruel" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. Otorga una tirada de salvación especial 5+ y la regla especial Resistencia mágica (1). Además, otorga un bonificador de +1 a sus atributos de Resistencia y Heridas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. Otorga una tirada de salvación especial 5+ y la regla especial Resistencia mágica (1). Además, otorga un bonificador de +1 a sus atributos de Resistencia y Heridas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14165,7 +14752,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="1492-ec0a-e9f3-ca19" name="Pellejo demoníaco" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura negra. Otorga al portador la Regla Especial Regeneración (5+)</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura negra. Otorga al portador la Regla Especial Regeneración (5+)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14193,7 +14780,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="3738-82b4-b9e3-86bc" name="Amuleto de piedra obsidiana" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo minaituras con la regla especial Desprecio. El portador no puede ser afectado por hechizos amigos o enemigos y obtendrá una tirada de salvación de 4+ contra ataques con la regla especial Ataques Mágicos. El portador no podrá equiparse con otros Objetos mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo minaituras con la regla especial Desprecio. El portador no puede ser afectado por hechizos amigos o enemigos y obtendrá una tirada de salvación de 4+ contra ataques con la regla especial Ataques Mágicos. El portador no podrá equiparse con otros Objetos mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14209,7 +14796,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="08d2-39cd-7515-147e" name="Corona ardiente" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la regla especial Desprecio. Otorga al portador una tirada de salvación por Aura Demoníaca (3+) y las reglas especiales Inmune a Fuego y Ataques Flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la regla especial Desprecio. Otorga al portador una tirada de salvación por Aura Demoníaca (3+) y las reglas especiales Inmune a Fuego y Ataques Flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14238,7 +14825,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6d10-489e-12b3-d468" name="Runa del dolor" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada fase de combate las miniaturas enemigas en contacto peana con peana con el portador de la Runa de Dolor deberán superar un chequeo de liderazgo o sufrirán una herida sin posibilidad de tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada fase de combate las miniaturas enemigas en contacto peana con peana con el portador de la Runa de Dolor deberán superar un chequeo de liderazgo o sufrirán una herida sin posibilidad de tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14262,7 +14849,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="3425-8436-d2ab-cb72" name="Corazón de lammasu" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada una de las fases de magia del jugador Enano del Caos deberás efectuar una tirada de 1D6 para determinar los efectos del Corazón de Lammasu. 
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada una de las fases de magia del jugador Enano del Caos deberás efectuar una tirada de 1D6 para determinar los efectos del Corazón de Lammasu. 
 1D6 Corazón de Lammasu 
 1 Descarga arcana. El portador sufre una herida automática sin posibilidad de tirada de salvación por armadura. 
 2-3 El portador obtiene 1 Dado de Energía que solamente él podrá utilizar 
@@ -14291,7 +14878,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="2b82-4b2c-35a4-e745" name="Familiar del caos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador puede repetir una tirada una vez por turno de juego. Puede ser una tirada para impactar, herir, salvaciones (incluyendo especiales), chequeos de característica (incluyendo liderazgo) o dados de energía o dispersión.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador puede repetir una tirada una vez por turno de juego. Puede ser una tirada para impactar, herir, salvaciones (incluyendo especiales), chequeos de característica (incluyendo liderazgo) o dados de energía o dispersión.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14307,7 +14894,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="5835-f55e-6549-0b87" name="Cetro de Hashut" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechicero conoce un hechizo adicional y puede guardar un dado de energía o dispersión para utilizarlo en la siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechicero conoce un hechizo adicional y puede guardar un dado de energía o dispersión para utilizarlo en la siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14323,7 +14910,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="2f5e-f725-ad02-feae" name="Cetro incandescente" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Todos los hechizos de los Saberes del Fuego, Metal, Tzeentch o Hashut lanzados por hechiceros (aliados o enemigos) situados a 18” o menos del lanzador podrán añadir +1 al total obtenido en la tirada de lanzamiento.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Todos los hechizos de los Saberes del Fuego, Metal, Tzeentch o Hashut lanzados por hechiceros (aliados o enemigos) situados a 18” o menos del lanzador podrán añadir +1 al total obtenido en la tirada de lanzamiento.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14339,7 +14926,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6fcb-8b49-13ba-e539" name="Icono del gran tauro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechicero suma +1 a sus intentos de dispersión de hechizos. (Adicionalmente, una vez por batalla podrá dispersar automáticamente un hechizo enemigo cuando sea lanzado; no puede dispersar hechizos lanzados con Fuerza irresistible (este efecto es equivalente al del Pergamino de dispersión de magia).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechicero suma +1 a sus intentos de dispersión de hechizos. (Adicionalmente, una vez por batalla podrá dispersar automáticamente un hechizo enemigo cuando sea lanzado; no puede dispersar hechizos lanzados con Fuerza irresistible (este efecto es equivalente al del Pergamino de dispersión de magia).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14355,7 +14942,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="138b-d563-0673-1add" name="Orbe de magma infernal" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechizo obtiene un bonificador de +1 en sus tiradas de lanzamiento de hechizos del Saber de Hashut. Además, se trata de un Objeto portahechizos de nivel de energía 3. Contiene un hechizo de potenciación que toma como objetivo el propio hechicero. Retira la miniatura del campo de batalla y vuelve a colocarla en cualquier punto a 24&quot; o menos de su posición original (no puedes recolocar la miniatura a menos de 1&quot; de una miniatura enemiga o edificio). </characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechizo obtiene un bonificador de +1 en sus tiradas de lanzamiento de hechizos del Saber de Hashut. Además, se trata de un Objeto portahechizos de nivel de energía 3. Contiene un hechizo de potenciación que toma como objetivo el propio hechicero. Retira la miniatura del campo de batalla y vuelve a colocarla en cualquier punto a 24&quot; o menos de su posición original (no puedes recolocar la miniatura a menos de 1&quot; de una miniatura enemiga o edificio). </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14379,7 +14966,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="16cf-2eee-aa04-5f5e" name="Orbe del marchitamiento" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todas las unidades (aliadas o enemigas) a 12” o menos del portador de este orbe no podrán realizar tiradas de Regeneración. Los hechizos del Saber de la Vida dentro de ese radio verán su dificultad de lanzamiento incrementada en 1 punto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todas las unidades (aliadas o enemigas) a 12” o menos del portador de este orbe no podrán realizar tiradas de Regeneración. Los hechizos del Saber de la Vida dentro de ese radio verán su dificultad de lanzamiento incrementada en 1 punto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14395,7 +14982,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6e32-dc75-50ab-1128" name="Piedra de hierro maldito" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Elige una unidad enemiga situada a 24” o menos del portador de la piedra al inicio de la fase de disparo y tira 1D6. Con un resultado de 2+, los disparos efectuados contra la unidad elegida podrán repetir sus tiradas para herir si las armas utilizadas disponen de la regla especial Poder de penetración o Ataques flamígeros. Sin embargo, con un resultado de 1 el portador sufrirá una Herida sin posibilidad de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Elige una unidad enemiga situada a 24” o menos del portador de la piedra al inicio de la fase de disparo y tira 1D6. Con un resultado de 2+, los disparos efectuados contra la unidad elegida podrán repetir sus tiradas para herir si las armas utilizadas disponen de la regla especial Poder de penetración o Ataques flamígeros. Sin embargo, con un resultado de 1 el portador sufrirá una Herida sin posibilidad de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14411,7 +14998,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="8c07-63c2-f3a4-aac6" name="Colgante de Gorgoth" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador aumentará su atributo de Fuerza en +1 (hasta un máximo de 10) por cada herida no salvada que sufra durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador aumentará su atributo de Fuerza en +1 (hasta un máximo de 10) por cada herida no salvada que sufra durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14435,7 +15022,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="5bdb-fc89-4358-6348" name="Pabellón de Hashut" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con la regla especial Desprecio. El portador y su unidad obtienen Resistencia Mágica (3) y Ataques Flamígeros. El radio de la regla especial “Ni un paso atrás” del Portaestandarte de Batalla se incrementará hasta 18”.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con la regla especial Desprecio. El portador y su unidad obtienen Resistencia Mágica (3) y Ataques Flamígeros. El radio de la regla especial “Ni un paso atrás” del Portaestandarte de Batalla se incrementará hasta 18”.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14455,7 +15042,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="8a3f-0a92-9352-742b" name="Estandarte del sometimiento" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con la regla especial Desprecio. Las unidades enemigas en contacto peana con peana con el portador de este estandarte o la unidad que lo acompañe tendrán un penalizador de -1 a su Liderazgo. Además, dichas unidades deberán efectuar sus chequeos de desmoralización utilizando 3 dados y descartando el que obtuvo el menor resultado. El efecto de este estandarte se anula mutuamente con la regla especial Sangre Fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con la regla especial Desprecio. Las unidades enemigas en contacto peana con peana con el portador de este estandarte o la unidad que lo acompañe tendrán un penalizador de -1 a su Liderazgo. Además, dichas unidades deberán efectuar sus chequeos de desmoralización utilizando 3 dados y descartando el que obtuvo el menor resultado. El efecto de este estandarte se anula mutuamente con la regla especial Sangre Fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14479,7 +15066,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="f5bb-9d81-6325-dc97" name="Estandarte de la esclavitud" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los Hobgoblins a 12” o menos del estandarte son Inmunes a la psicología.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los Hobgoblins a 12” o menos del estandarte son Inmunes a la psicología.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14498,7 +15085,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="fbac-eeb0-3f01-ba51" name="Estandarte del gran yermo" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Las tiradas para impactar de los disparos efectuados contra la unidad en la que se encuentre este estandarte deberán aplicar un penalizador adicional de -1. La unidad en la que se encuentre este estandarte no podrá utilizar armas a distancia de ningún tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Las tiradas para impactar de los disparos efectuados contra la unidad en la que se encuentre este estandarte deberán aplicar un penalizador adicional de -1. La unidad en la que se encuentre este estandarte no podrá utilizar armas a distancia de ningún tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14522,7 +15109,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="287b-04dc-daad-ed79" name="La máscara del horno" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 adicional a la tirada de salvación por armadura del portador). Sólo miniaturas con la regla especial Desprecio. El portador causará Miedo y obtendrá una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 adicional a la tirada de salvación por armadura del portador). Sólo miniaturas con la regla especial Desprecio. El portador causará Miedo y obtendrá una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14541,7 +15128,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="2712-708e-fd35-cdfb" name="Gran yelmo de Zharr-Naggrund" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (otorga a su portador una tirada de salvación por armadura de 6+). Sólo miniaturas con la regla especial Desprecio. La miniatura equipada con este yelmo verá su atributo de Liderazgo incrementado en un punto, hasta un máximo de 10. Una miniatura con este Yelmo no podrá beneficiarse de la regla especial “Cuidado Señor”.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (otorga a su portador una tirada de salvación por armadura de 6+). Sólo miniaturas con la regla especial Desprecio. La miniatura equipada con este yelmo verá su atributo de Liderazgo incrementado en un punto, hasta un máximo de 10. Una miniatura con este Yelmo no podrá beneficiarse de la regla especial “Cuidado Señor”.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14557,7 +15144,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6704-6742-23c2-1b0f" name="Escudo sagrado de Hashut" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Sólo miniaturas con la regla especial Desprecio. El portador puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Sólo miniaturas con la regla especial Desprecio. El portador puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14576,7 +15163,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="34b9-988f-d673-41d1" name="Coraza del tauro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. Los impactos no mágicos dirigidos contra el portador deberán aplicar un penalizador de -1 a su tirada para herir.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. Los impactos no mágicos dirigidos contra el portador deberán aplicar un penalizador de -1 a su tirada para herir.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14595,7 +15182,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="de4c-899d-50d4-7762" name="Coraza de la embestida" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. Otorga a su portador la regla especial Resistencia mágica (1). Adicionalmente, otorga al portador la regla especial Impactos por carga (1), o aumenta en +1 los Impactos por carga si ya contaba con la regla especial.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. Otorga a su portador la regla especial Resistencia mágica (1). Adicionalmente, otorga al portador la regla especial Impactos por carga (1), o aumenta en +1 los Impactos por carga si ya contaba con la regla especial.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14616,7 +15203,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="029f-4421-a2e8-255e" name="Armadura de la repesalia" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. La miniatura es inmune a Veneno y a la regla especial Golpe Letal y Golpe letal heroico. Los ataques envenenados y los golpes letales (y Heroicos) contra el portador en combate cuerpo a cuerpo deberán resolverse contra la miniatura atacante (es decir, cada vez que el enemigo obtenga un 6 para impactar con Ataques envenenados o un 6 para herir con Golpe letal, se considerará que se habrá impactado/herido a sí mismo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Negra. Sólo miniaturas con la regla especial Desprecio. La miniatura es inmune a Veneno y a la regla especial Golpe Letal y Golpe letal heroico. Los ataques envenenados y los golpes letales (y Heroicos) contra el portador en combate cuerpo a cuerpo deberán resolverse contra la miniatura atacante (es decir, cada vez que el enemigo obtenga un 6 para impactar con Ataques envenenados o un 6 para herir con Golpe letal, se considerará que se habrá impactado/herido a sí mismo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14644,7 +15231,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="2d49-1370-3a77-fd24" name="Oscura maza de muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mangual. Sólo miniaturas con la regla especial Desprecio. Los ataques cuerpo a cuerpo realizados con este arma tienen la regla especial Golpe letal. Cuando una miniatura fuese retirada como baja a causa de un golpe letal, todas las miniaturas enemigas en contacto peana con peana con la miniatura que recibió el golpe letal deberán realizar un chequeo de Resistencia inmediatamente, sufriendo una herida sin posibilidad de tirada de salvación por armadura si lo fallan.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mangual. Sólo miniaturas con la regla especial Desprecio. Los ataques cuerpo a cuerpo realizados con este arma tienen la regla especial Golpe letal. Cuando una miniatura fuese retirada como baja a causa de un golpe letal, todas las miniaturas enemigas en contacto peana con peana con la miniatura que recibió el golpe letal deberán realizar un chequeo de Resistencia inmediatamente, sufriendo una herida sin posibilidad de tirada de salvación por armadura si lo fallan.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14672,7 +15259,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="34d4-64c5-19c8-a5b9" name="Hacha del torturador" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Solo miniaturas con la regla especial Desprecio. Cualquier miniatura herida por este arma y que no muera quedará sujeta a la regla especial Estupidez durante el resto de la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Solo miniaturas con la regla especial Desprecio. Cualquier miniatura herida por este arma y que no muera quedará sujeta a la regla especial Estupidez durante el resto de la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14700,7 +15287,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="3ca9-55d3-9551-b932" name="Calcinadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Guja de Fuego. Sólo miniaturas con la regla especial Desprecio. Los ataques y disparos efectuados por la Calcinadora tienen la regla especial Heridas múltiuples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Guja de Fuego. Sólo miniaturas con la regla especial Desprecio. Los ataques y disparos efectuados por la Calcinadora tienen la regla especial Heridas múltiuples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14729,7 +15316,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="a44f-e0b1-438e-58b9" name="Hacha rúnica del caos de Grugni corazón de hierro" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Otorga al portador +1HA, +1F y +1A.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Otorga al portador +1HA, +1F y +1A.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14748,7 +15335,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="b044-6713-9b7a-66d7" name="Martillo negro de Hashut" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Sólo miniaturas con la regla especial Desprecio. Los ataques cuerpo a cuerpo del portador se resuelven con un +2 a su fuerza y la regla especial Ataques Flamígeros. Cualquier miniatura con la regla especial Inflamable que sufra al menos una herida no salvada de este arma deberá retirarse inmediatamente como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Sólo miniaturas con la regla especial Desprecio. Los ataques cuerpo a cuerpo del portador se resuelven con un +2 a su fuerza y la regla especial Ataques Flamígeros. Cualquier miniatura con la regla especial Inflamable que sufra al menos una herida no salvada de este arma deberá retirarse inmediatamente como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14768,7 +15355,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="a634-4338-b00f-333a" name="Sorbedora de vida" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Sólo miniaturas con la regla especial Desprecio. Los ataques efectuados con la Sorbedora de Vida obtendrán las reglas especiales Poder de Penetración y Golpe Letal. Por cada miniatura retirada como baja por un ataque de Golpe Letal causado por este hacha el portador recuperará una de las Heridas que hubiese perdido durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Sólo miniaturas con la regla especial Desprecio. Los ataques efectuados con la Sorbedora de Vida obtendrán las reglas especiales Poder de Penetración y Golpe Letal. Por cada miniatura retirada como baja por un ataque de Golpe Letal causado por este hacha el portador recuperará una de las Heridas que hubiese perdido durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14789,7 +15376,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="d765-b801-a81b-bf5f" name="Pico ardiente" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Los ataques efectuados con este Pico se resuelven con +1 Fuerza y contarán con la regla especial Ataques Flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Los ataques efectuados con este Pico se resuelven con +1 Fuerza y contarán con la regla especial Ataques Flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14809,7 +15396,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="7e9a-7e2e-f662-a86e" name="Látigo del sometimiento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Los ataques realizados con este arma cuentan con la regla especial Poder de penetración. Además, las Heridas causadas en combate cuerpo a cuerpo con este arma contarán el doble a efectos de resolución del combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Los ataques realizados con este arma cuentan con la regla especial Poder de penetración. Además, las Heridas causadas en combate cuerpo a cuerpo con este arma contarán el doble a efectos de resolución del combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14829,7 +15416,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="d75d-85fc-6c35-1c0f" name="Lluvia de furia flamígera" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con al regla especial Desprecio. El portador obtiene la regla especial Ataques flamígeros. Además, obtendrá +1A y un bonificador de +1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con al regla especial Desprecio. El portador obtiene la regla especial Ataques flamígeros. Además, obtendrá +1A y un bonificador de +1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14857,7 +15444,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="f08a-1442-c8d8-4545" name="Martillo de la muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Los ataques efectuados usando este martillo negarán las tiradas de salvación por armadura del enemigo. Un enemigo que sufra al menos una herida a causa de este martillo deberá retirarse como baja automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo miniaturas con la regla especial Desprecio. Los ataques efectuados usando este martillo negarán las tiradas de salvación por armadura del enemigo. Un enemigo que sufra al menos una herida a causa de este martillo deberá retirarse como baja automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14884,7 +15471,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="c5eb-fb6f-02f8-2ceb" name="Cáliz de sangre y oscuridad" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Sólo miniaturas con la regla especial Desprecio. Al inicio de cada fase de magia, tras determinar los vientos de la magia y las tiradas de canalización, el portador puede, si lo desea, reducir en 1D3 la reserva de dados de energía/dispersión de ambos jugadores (efectúa una tirada de 1D3 y reduce ambas reservas de dados en esa cantidad).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Sólo miniaturas con la regla especial Desprecio. Al inicio de cada fase de magia, tras determinar los vientos de la magia y las tiradas de canalización, el portador puede, si lo desea, reducir en 1D3 la reserva de dados de energía/dispersión de ambos jugadores (efectúa una tirada de 1D3 y reduce ambas reservas de dados en esa cantidad).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14908,7 +15495,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="e7e6-5613-e3bc-6c05" name="Icono del gran tauro" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Centauros Enanos del Caos. El portador y las miniaturas de la unidad de la que forme parte obtendrán la regla especial Carga devastadora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Centauros Enanos del Caos. El portador y las miniaturas de la unidad de la que forme parte obtendrán la regla especial Carga devastadora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14935,7 +15522,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="21c2-e336-babc-deca" name="Pabellón de la dominación" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la regla especial Desprecio. Duplica la Potencia de Unidad de la unidad que lo porte.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la regla especial Desprecio. Duplica la Potencia de Unidad de la unidad que lo porte.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14951,7 +15538,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="026d-81bf-24d6-b27d" name="Pabellón de cenizas" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con Desprecio. El portador y la unidad que lo acompañe obtendrá una tirada de salvación especial de 5+ contra proyectiles y proyectiles mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con Desprecio. El portador y la unidad que lo acompañe obtendrá una tirada de salvación especial de 5+ contra proyectiles y proyectiles mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14967,7 +15554,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="8650-1005-438a-6ea3" name="Portentos de envidia demencial" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con la regla especial Desprecio. El portador y su unidad obtienen la regla especial Vanguardia. Adicionalmente, obtendrá un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo miniaturas con la regla especial Desprecio. El portador y su unidad obtienen la regla especial Vanguardia. Adicionalmente, obtendrá un bonificador de +1 a su tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14994,7 +15581,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="73e0-2f01-e9d6-1281" name="Ojo de Hashut" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Objeto Portahechizos. Nivel de Energía 3. Contiene un hechizo de Daño Directo con un alcance de 18”. Coloca la plantilla redonda pequeña dentro del alcance. Cualquier miniatura bajo de la plantilla sufrirá un impacto de Fuerza 4 con la regla especial Ataques sólo Flamígeros. Cualquier unidad que sufra al menos una baja a causa de este hechizo deberá realizar un chequeo de pánico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Objeto Portahechizos. Nivel de Energía 3. Contiene un hechizo de Daño Directo con un alcance de 18”. Coloca la plantilla redonda pequeña dentro del alcance. Cualquier miniatura bajo de la plantilla sufrirá un impacto de Fuerza 4 con la regla especial Ataques sólo Flamígeros. Cualquier unidad que sufra al menos una baja a causa de este hechizo deberá realizar un chequeo de pánico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15013,7 +15600,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9ce2-1d4b-09e0-a69c" name="Guanteletes de Zharr" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Aumentan en +1 el atributo de fuerza del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Aumentan en +1 el atributo de fuerza del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15029,7 +15616,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="2832-cbb9-1c97-8652" name="Cuerno de tauro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Objeto Portahechizos. Nivel de energía 1D6. Un sólo uso. Las unidades del ejercito situadas a 24” o menos con la regla especial Desprecio obtendrán Odio (a todo) hasta el final del turno de jugador. Las miniaturas del ejercito a 24” o menos sin la regla especial Desprecio se reagruparán automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Objeto Portahechizos. Nivel de energía 1D6. Un sólo uso. Las unidades del ejercito situadas a 24” o menos con la regla especial Desprecio obtendrán Odio (a todo) hasta el final del turno de jugador. Las miniaturas del ejercito a 24” o menos sin la regla especial Desprecio se reagruparán automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15048,7 +15635,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="5d32-9554-389d-d295" name="Frasco demoníaco de Ashack" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Un sólo uso. Puede utilizarse al inicio de cualquiera de las fases de movimiento del portador, antes de declarar las cargas. Todas las unidades enemigas a 18” o menos del portador que no sean Inmunes a la psicología o Indesmoralizables deberán realizar inmediatamente un chequeo de pánico. Los edificios, estructuras, carros y máquinas de guerra (tanto amigas como enemigas) dentro del alcance sufrirán 1D6 Heridas automáticas. Ten en cuenta que esto no es un hechizo, y por lo tanto no puede dispersarse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Un sólo uso. Puede utilizarse al inicio de cualquiera de las fases de movimiento del portador, antes de declarar las cargas. Todas las unidades enemigas a 18” o menos del portador que no sean Inmunes a la psicología o Indesmoralizables deberán realizar inmediatamente un chequeo de pánico. Los edificios, estructuras, carros y máquinas de guerra (tanto amigas como enemigas) dentro del alcance sufrirán 1D6 Heridas automáticas. Ten en cuenta que esto no es un hechizo, y por lo tanto no puede dispersarse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15064,7 +15651,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9f27-7f9c-4c50-4deb" name="Manto del toro condenado" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Otorga a su portador las reglas especiales Impactos por carga (1) y Piel escamosa (6+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la regla especial Desprecio. Otorga a su portador las reglas especiales Impactos por carga (1) y Piel escamosa (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15092,7 +15679,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="12f0-9714-8721-c6f8" name="Manto de piedra" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniatuas con la regla especial Desprecio. Incrementa la Resistencia del portador en +1, pero reduce a 1 su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniatuas con la regla especial Desprecio. Incrementa la Resistencia del portador en +1, pero reduce a 1 su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15108,7 +15695,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9dc8-1ffd-99ca-6703" name="Emblema desafiante" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la regla especial Desprecio. El portador obiene  la regla especial Orgullo Marcial. Todas las tiradas exitosas para impactar contra el portador deberán repetirse. </characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la regla especial Desprecio. El portador obiene  la regla especial Orgullo Marcial. Todas las tiradas exitosas para impactar contra el portador deberán repetirse. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15127,7 +15714,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="8947-e8c2-1cb1-8116" name="Diamante negro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la regla especial Desprecio. Otorga al portardor las reglas especiales Aura demoníaca (5+), Inmuna a psicología y causará Miedo. Sin embargo, se vera afectado por los hehizos y habilidades que afecten a Demonios o que lo hagan de forma aumentada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la regla especial Desprecio. Otorga al portardor las reglas especiales Aura demoníaca (5+), Inmuna a psicología y causará Miedo. Sin embargo, se vera afectado por los hehizos y habilidades que afecten a Demonios o que lo hagan de forma aumentada.</characteristic>
               </characteristics>
             </profile>
           </profiles>

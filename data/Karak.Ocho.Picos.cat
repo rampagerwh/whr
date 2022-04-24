@@ -1,34 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="c337-f2a5-6412-2a91" name="Karak Ocho Picos" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="412" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="c337-f2a5-6412-2a91" name="Karak Ocho Picos" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="412" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="8f6f-a1c6-acfa-60ff" name="Objetos rúnico legendario">
       <characteristicTypes>
-        <characteristicType id="c77d-2ee1-3175-46d7" name="Propiedades mágicas"/>
+        <characteristicType id="c77d-2ee1-3175-46d7" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="6aed-7acf-6f4b-7d6d" name="Runa de armas">
       <characteristicTypes>
-        <characteristicType id="16dc-fcf0-593a-5bcd" name="Propiedades mágicas"/>
+        <characteristicType id="16dc-fcf0-593a-5bcd" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="3640-cf74-31a0-c2fa" name="Runa de defensa">
       <characteristicTypes>
-        <characteristicType id="91c4-f598-6760-4eb9" name="Propiedades mágicas"/>
+        <characteristicType id="91c4-f598-6760-4eb9" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="d7f9-5099-aead-fab1" name="Runa de ingenieros">
       <characteristicTypes>
-        <characteristicType id="070b-8a1d-bed6-ab24" name="Propiedades mágicas"/>
+        <characteristicType id="070b-8a1d-bed6-ab24" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="c8ab-45ec-ec08-f836" name="Runa de protección">
       <characteristicTypes>
-        <characteristicType id="5181-43c5-99f5-20bc" name="Propiedades mágicas"/>
+        <characteristicType id="5181-43c5-99f5-20bc" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="1d61-af19-79de-9947" name="Runa talismánica">
       <characteristicTypes>
-        <characteristicType id="833c-71ca-28b9-acfa" name="Propiedades mágicas"/>
+        <characteristicType id="833c-71ca-28b9-acfa" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -75,6 +75,9 @@
               <description>Una miniatura con esta regla especial unida a un lanzavirotes podrá utilizar su HP al disparar el lanzavirotes. Si el ingeniero está al mando de un cañón, obtiene la regla especial Artillero veterano. En cualquier otra mñaquina de guerra, se podrá repetir la tirada en la tabla de problemas. Si elingeniero usa esta habiliadd durante una fase de disparo, no podrá disparar sus propias armas de proyectiles esa fase.</description>
             </rule>
           </rules>
+          <infoLinks>
+            <infoLink id="3347-3f7c-b8e1-3f78" name="Lanzallamas" hidden="false" targetId="fff6-f080-87f2-de25" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="125.0"/>
           </costs>
@@ -312,7 +315,7 @@
               <profiles>
                 <profile id="b24b-3b8d-717f-4032" name="Martillo de Hurgar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El martillo tiene grabadas dos Runas de la Fuerza (+2F) y una runa del fuego (Ataques flamígeros).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El martillo tiene grabadas dos Runas de la Fuerza (+2F) y una runa del fuego (Ataques flamígeros).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -331,7 +334,7 @@
               <profiles>
                 <profile id="62bc-114a-f500-8584" name="Armadura obsidiana" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de gromril. Tiene grabadas la Runa magistral del Acero (los impactos de F superior a 5 se consideran de F5) y una runa de piedra (+1 a la tirada de salvación por armadura). Además, las incrustaciones de obsidiana otorgan a Hurgar la regla especial Resistencia mágica (3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de gromril. Tiene grabadas la Runa magistral del Acero (los impactos de F superior a 5 se consideran de F5) y una runa de piedra (+1 a la tirada de salvación por armadura). Además, las incrustaciones de obsidiana otorgan a Hurgar la regla especial Resistencia mágica (3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -363,7 +366,7 @@
               <profiles>
                 <profile id="2f3f-9793-581f-e60c" name="Amuleto del horno" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El Amuleto del Horno tiene grabadas la Runa rompehechizos (dispersa un hechizo, un sólo uso) y la Runa Ígnea (Inmune a fuego).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El Amuleto del Horno tiene grabadas la Runa rompehechizos (dispersa un hechizo, un sólo uso) y la Runa Ígnea (Inmune a fuego).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -693,7 +696,7 @@
               <profiles>
                 <profile id="d48d-a81f-8c27-75f4" name="Espada ruina de dragones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Félix +2 ataques y Poder de penetración. Al utilizarse contra dragones (dragones de cualquier tipo, incluyendo Dragón del Caos y Dragón zombi) hiere automáticamente, niega la tirada de salvación por piel escamosa y causa Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Félix +2 ataques y Poder de penetración. Al utilizarse contra dragones (dragones de cualquier tipo, incluyendo Dragón del Caos y Dragón zombi) hiere automáticamente, niega la tirada de salvación por piel escamosa y causa Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -781,7 +784,7 @@
               <profiles>
                 <profile id="0a94-0fc9-672f-6a52" name="Hacha de Gotrek" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Gotrek siempre hiere con 2+, sin importar la resistencia del objetivo. Niega tirada de salvación por armadura. Heridas múltiples (1D3), excepto al usarse contra dragones o demonios, en cuyo caso tendrá la regla Heridas múltiples (1D6). El poder de esta Reliquia es tal que no puede ser afectada o anulada por efectos, objetos mágicos, hechizos o reglas especiales que anulen o destruyan objetos mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Gotrek siempre hiere con 2+, sin importar la resistencia del objetivo. Niega tirada de salvación por armadura. Heridas múltiples (1D3), excepto al usarse contra dragones o demonios, en cuyo caso tendrá la regla Heridas múltiples (1D6). El poder de esta Reliquia es tal que no puede ser afectada o anulada por efectos, objetos mágicos, hechizos o reglas especiales que anulen o destruyan objetos mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1142,6 +1145,9 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="a414-27c8-13c4-5c78" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -1346,6 +1352,9 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="d5f2-e69c-904d-f729" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="110.0"/>
           </costs>
@@ -2854,6 +2863,9 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="ebf4-3619-f96c-25da" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="125.0"/>
           </costs>
@@ -3106,7 +3118,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="753c-e525-283b-f964" name="Runa de piedra" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">+1 a la tirada de salvación por armadura (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">+1 a la tirada de salvación por armadura (este bonificador se acumula con dos o más runas iguales).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3321,7 +3333,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="c01a-88b4-7774-f8be" name="Martillo ancestral de Vala-Azrilungol" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene grabada una Runa de furia (+1A) y dos Runas de fuerza (+2F, para un total de 6).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene grabada una Runa de furia (+1A) y dos Runas de fuerza (+2F, para un total de 6).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3340,7 +3352,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="4d9e-f0b8-9cd7-8266" name="Armadura del desafío" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de gromril. Tiene grabada la Runa Magistral de la Eternidad (R10) y la Runa de la salvación (Inmune a veneno, inmune a golpe letal).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de gromril. Tiene grabada la Runa Magistral de la Eternidad (R10) y la Runa de la salvación (Inmune a veneno, inmune a golpe letal).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3372,7 +3384,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="df28-8bf3-a2b4-bb1e" name="Corona de Karak Ocho Picos" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">La corona tiene grabada la Runa magistral de la realeza (Tozudez e Inmune a psicología a 8” o menos) y una Runa ígnea (inmune a fuego)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">La corona tiene grabada la Runa magistral de la realeza (Tozudez e Inmune a psicología a 8” o menos) y una Runa ígnea (inmune a fuego)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4043,7 +4055,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="e77b-d014-9b5a-3f25" name="Runa ígnea" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">El personaje obtiene la regla especial Inmune a fuego.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">El personaje obtiene la regla especial Inmune a fuego.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4271,7 +4283,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="a50e-e5af-5da1-a14a" name="Hacha negra de Ekrund" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Tiene grabadas dos Runas de furia (+2A) y una runa de la agonía (heridas múltiples 1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Tiene grabadas dos Runas de furia (+2A) y una runa de la agonía (heridas múltiples 1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4290,7 +4302,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="b61d-e437-f88f-f6e6" name="Coraza del hierro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de gromril. Tiene grabadas tres runas del Hierro (tirada de salvación especial de 4+), y una runa de piedra (+1 a la tirada de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de gromril. Tiene grabadas tres runas del Hierro (tirada de salvación especial de 4+), y una runa de piedra (+1 a la tirada de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4897,7 +4909,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
         <infoLink id="7bb7-625b-66a8-8b52" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
         <infoLink id="44c9-f998-a519-7b69" name="Odio (Pielesverdes y Skaven)" hidden="false" targetId="ad1d-12ef-ea3a-5b75" type="rule"/>
         <infoLink id="ff94-962f-cffc-1156" name="Jamás retroceder" hidden="false" targetId="fa78-ca7c-f428-727d" type="rule"/>
-        <infoLink id="a683-ebfa-eb1b-b35d" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="a683-ebfa-eb1b-b35d" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="6e9a-e1fd-ab68-8dad" name="New CategoryLink" hidden="false" targetId="436f726523232344415441232323" primary="true"/>
@@ -5013,7 +5025,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="033c-20e2-cfd4-cd4a" type="max"/>
                       </constraints>
                       <infoLinks>
-                        <infoLink id="cf7a-25cd-fdeb-4d6f" name="Ristra de pistolas" hidden="false" targetId="4bdd-2d56-6b82-91a4" type="profile"/>
+                        <infoLink id="cf7a-25cd-fdeb-4d6f" name="Ristra de pistolas enanas" hidden="false" targetId="c16b-439e-7955-8025" type="profile"/>
                       </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="4.0"/>
@@ -5162,7 +5174,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
         <infoLink id="6006-268e-2b2c-ce11" name="Odio (Pielesverdes y Skaven)" hidden="false" targetId="ad1d-12ef-ea3a-5b75" type="rule"/>
         <infoLink id="a9aa-defc-152c-3274" name="Jamás retroceder" hidden="false" targetId="fa78-ca7c-f428-727d" type="rule"/>
         <infoLink id="81cc-75a0-39ec-2a5f" name="Inmune al pánico" hidden="false" targetId="06f4-bd6a-c34d-baed" type="rule"/>
-        <infoLink id="f5cd-432e-2062-9257" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="f5cd-432e-2062-9257" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="40bd-bea5-5b94-e3c0" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -5274,6 +5286,9 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
                       <constraints>
                         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5a2b-605a-015b-290c" type="max"/>
                       </constraints>
+                      <infoLinks>
+                        <infoLink id="3188-6c03-33a9-a1ba" name="Ristra de pistolas enanas" hidden="false" targetId="c16b-439e-7955-8025" type="profile"/>
+                      </infoLinks>
                       <costs>
                         <cost name="pts" typeId="points" value="4.0"/>
                       </costs>
@@ -5338,6 +5353,9 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="300d-868a-d183-e6a6" type="max"/>
               </constraints>
+              <infoLinks>
+                <infoLink id="fbb4-1024-ce44-a146" name="Pistola enana" hidden="false" targetId="0fd6-4679-5816-03bd" type="profile"/>
+              </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -5373,7 +5391,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
         <infoLink id="a2cd-a0ae-ec1b-ebb1" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
         <infoLink id="27e3-acef-a2f0-f390" name="Odio (Pielesverdes y Skaven)" hidden="false" targetId="ad1d-12ef-ea3a-5b75" type="rule"/>
         <infoLink id="5955-757b-88a9-80bf" name="Jamás retroceder" hidden="false" targetId="fa78-ca7c-f428-727d" type="rule"/>
-        <infoLink id="2bec-0f58-9230-5632" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="2bec-0f58-9230-5632" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="19cf-ea48-643b-3349" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
@@ -5748,7 +5766,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
               <profiles>
                 <profile id="edff-6472-3ea3-ede5" name="Runa de piedra" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">+1 a la tirada de salvación por armadura (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">+1 a la tirada de salvación por armadura (este bonificador se acumula con dos o más runas iguales).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5897,7 +5915,7 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
         <infoLink id="4199-0aeb-1a88-abd5" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="d526-c1c6-2cb8-3ec8" name="Etéreo" hidden="false" targetId="34c4-9e60-1a62-eda5" type="rule"/>
         <infoLink id="8731-128d-fa13-8ea8" name="Terror" hidden="false" targetId="ca57-1f1f-8bc0-d9ab" type="rule"/>
-        <infoLink id="3d01-bff6-1f1d-3c03" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="3d01-bff6-1f1d-3c03" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="c0d9-1fd3-08e8-d2a3" name="Unidades Singulares" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
@@ -6220,6 +6238,9 @@ Lanzar bombas (designa un punto sobre el cual se ha movido el girocóptero o gir
   <rules>
     <rule id="d8d9-d79d-4bd5-a472" name="Resistentes a la magia" hidden="false">
       <description>Para representar esto, suman +2 a cualquier intento de dispersión que realicen; este bonificador aumenta a +3 si el ejército incluye al menos un Herrero rúnico, o a +4 si incluye al menos un Señor de las Runas. Si el ejército enano incluye algún hechicero aliado no podrá aplicar esta regla especial. Esta regla especial afecta al ejército enano en su conjunto.</description>
+    </rule>
+    <rule id="fa8b-00d3-a15e-a58b" name="Diseño superior" hidden="false">
+      <description>No tienen el penalizador de -1 por disparar a larga distancia.</description>
     </rule>
   </rules>
   <sharedSelectionEntries>
@@ -6717,7 +6738,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="001f-3986-7421-f96c" name="Runa de la camaradería" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo Señores de Clan. El personaje sólo puede unirse a unidades de Mineros o Montaraces. Si se une a una unidad de Montaraces, obtiene +1 Movimiento y la regla especial Montaraces. Si se une a una unidad de Mineros, el personaje y su unidad podrán repetir sus tiradas de carga fallidas durante el mismo turno en el que entraron en el campo de batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo Señores de Clan. El personaje sólo puede unirse a unidades de Mineros o Montaraces. Si se une a una unidad de Montaraces, obtiene +1 Movimiento y la regla especial Montaraces. Si se une a una unidad de Mineros, el personaje y su unidad podrán repetir sus tiradas de carga fallidas durante el mismo turno en el que entraron en el campo de batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6740,27 +6761,27 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="4a4b-69ad-8f62-0e6c" name="Martillo del destino" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">Se trata de un martillo que tiene grabada la Runa Magistral del Vuelo, la Runa Magistral de la Destrucción y dos Runas de la fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">Se trata de un martillo que tiene grabada la Runa Magistral del Vuelo, la Runa Magistral de la Destrucción y dos Runas de la fuerza.</characteristic>
               </characteristics>
             </profile>
             <profile id="0e4c-cc20-1a66-7151" name="Runa de la fuerza" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">+1 Fuerza (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">+1 Fuerza (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
             <profile id="9eb5-fb75-4e81-f539" name="Runa magistral del vuelo" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">El arma rúnica puede usarse como Arma arrojadiza que retorna a la mano de su portador tras ser usada. Tiene un alcance de 10” y las reglas especiales Disparo rápido y Arrojadiza. Impacta con la Fuerza del usuario, y tiene Ataques mágicos, así como las demás propiedades que confieran otras runas grabadas en el arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">El arma rúnica puede usarse como Arma arrojadiza que retorna a la mano de su portador tras ser usada. Tiene un alcance de 10” y las reglas especiales Disparo rápido y Arrojadiza. Impacta con la Fuerza del usuario, y tiene Ataques mágicos, así como las demás propiedades que confieran otras runas grabadas en el arma.</characteristic>
               </characteristics>
             </profile>
             <profile id="90c7-3325-f0b3-23e4" name="Runa magistral de la destrucción" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D6)</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D6)</characteristic>
               </characteristics>
             </profile>
             <profile id="2430-5092-4e0f-687f" name="Runa de la fuerza" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">+1 Fuerza (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">+1 Fuerza (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6794,7 +6815,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="4c54-8546-2aaa-ce5a" name="Anillo llameante de Thori" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">El portador puede utilizar el anillo como un arma de aliento de F4 y ataques mágicos y ataques solo flamígeros. Además, el portador es inmune al fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">El portador puede utilizar el anillo como un arma de aliento de F4 y ataques mágicos y ataques solo flamígeros. Además, el portador es inmune al fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6823,7 +6844,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="7e8f-74fb-0b6d-7919" name="Cetro dorado de Norgrim" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">Al inicio de cada turno enano, el portador puede elegir uno de los tres poderes del cetro, que le afectarán a él y a toda su unidad hasta el inicio del siguiente turno de los enanos: +2M, +1F o +1 a la tirada de salvación por armadura. No podrá escogerse el mismo poder durante dos turnos consecutivos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">Al inicio de cada turno enano, el portador puede elegir uno de los tres poderes del cetro, que le afectarán a él y a toda su unidad hasta el inicio del siguiente turno de los enanos: +2M, +1F o +1 a la tirada de salvación por armadura. No podrá escogerse el mismo poder durante dos turnos consecutivos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6844,7 +6865,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="3414-2ac0-d612-11e9" name="Cuerno plateado de la venganza" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">Un solo uso. El portador puede utilizarlo al inicio de cualquiera de sus turnos. Todas las unidades amigas a 8” o menos del portador obtendrán hasta el inicio de su siguiente turno las reglas especiales Carga devastadora y Odio (elfos). Además, el portador y toda su unidad causará Terror a los elfos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">Un solo uso. El portador puede utilizarlo al inicio de cualquiera de sus turnos. Todas las unidades amigas a 8” o menos del portador obtendrán hasta el inicio de su siguiente turno las reglas especiales Carga devastadora y Odio (elfos). Además, el portador y toda su unidad causará Terror a los elfos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6878,7 +6899,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c356-6ed5-6347-0312" name="Pan de piedra" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">Un sólo uso. El portador puede comerse su Pan de piedra al inicio de cualquiera de sus turnos. Si lo hace, restaura todas las heridas que hubiese sufrido durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">Un sólo uso. El portador puede comerse su Pan de piedra al inicio de cualquiera de sus turnos. Si lo hace, restaura todas las heridas que hubiese sufrido durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6913,7 +6934,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="4ed7-07f1-62d6-ebe1" name="La corona del Pináculo de Plata" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">Sólo Señor de los Enanos. La corona tiene grabadas la Runa magistral de la Realeza (Otorga Tozudez e Inmunidad a Psicología a todas las unidades de enanos amigas a 8” o menos del portador), la Runa magistral de la resiliencia (Tirada de salvación especial de 4+) y la Runa de la Plata (todas las tiradas para impactar contra el portador y su unidad tendrán un penalizador de -1, tanto con proyectiles como en combate cuerpo a cuerpo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">Sólo Señor de los Enanos. La corona tiene grabadas la Runa magistral de la Realeza (Otorga Tozudez e Inmunidad a Psicología a todas las unidades de enanos amigas a 8” o menos del portador), la Runa magistral de la resiliencia (Tirada de salvación especial de 4+) y la Runa de la Plata (todas las tiradas para impactar contra el portador y su unidad tendrán un penalizador de -1, tanto con proyectiles como en combate cuerpo a cuerpo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6941,17 +6962,17 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="6885-0513-85d9-fdf4" name="La corona perdida de Karak Drazh" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">La corona tiene grabada la Runa Magistral de la Realeza y la Runa Magistral del Restablecimiento, la cual es única, y restablece una de las heridas que hubiese sufrido previamente durante la batalla al comienzo de cada turno enano. Además, proporciona un bonificador de +1 a la tirada de salvación por armadura del portador (como un yelmo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">La corona tiene grabada la Runa Magistral de la Realeza y la Runa Magistral del Restablecimiento, la cual es única, y restablece una de las heridas que hubiese sufrido previamente durante la batalla al comienzo de cada turno enano. Además, proporciona un bonificador de +1 a la tirada de salvación por armadura del portador (como un yelmo).</characteristic>
               </characteristics>
             </profile>
             <profile id="6870-b976-0e06-a189" name="Runa magistral de la realeza" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo señor de los enanos. Tozudez e Inmunidad a psicología</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo señor de los enanos. Tozudez e Inmunidad a psicología</characteristic>
               </characteristics>
             </profile>
             <profile id="45ee-9db9-4274-1bd1" name="Runa magistral del restablecimiento" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Restablece al portador una de las heridas que hubiese sufrido previamente durante la batalla al comienzo de cada turno enano. Además, proporciona un bonificador de +1 a la tirada de salvación por armadura del portador (como un yelmo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Restablece al portador una de las heridas que hubiese sufrido previamente durante la batalla al comienzo de cada turno enano. Además, proporciona un bonificador de +1 a la tirada de salvación por armadura del portador (como un yelmo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6985,22 +7006,22 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="8665-1677-f783-b565" name="La corona de pináculo de plata" hidden="false" typeId="8f6f-a1c6-acfa-60ff" typeName="Objetos rúnico legendario">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c77d-2ee1-3175-46d7">Sólo Señor de los Enanos. La corona tiene grabadas la Runa magistral de la Realeza (Otorga Tozudez e Inmunidad a Psicología a todas las unidades de enanos amigas a 8” o menos del portador), la Runa magistral de la resiliencia (Tirada de salvación especial de 4+) y la Runa de la Plata (todas las tiradas para impactar contra el portador y su unidad tendrán un penalizador de -1, tanto con proyectiles como en combate cuerpo a cuerpo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c77d-2ee1-3175-46d7">Sólo Señor de los Enanos. La corona tiene grabadas la Runa magistral de la Realeza (Otorga Tozudez e Inmunidad a Psicología a todas las unidades de enanos amigas a 8” o menos del portador), la Runa magistral de la resiliencia (Tirada de salvación especial de 4+) y la Runa de la Plata (todas las tiradas para impactar contra el portador y su unidad tendrán un penalizador de -1, tanto con proyectiles como en combate cuerpo a cuerpo).</characteristic>
               </characteristics>
             </profile>
             <profile id="59f1-760c-444c-f395" name="Runa magistral de la realeza" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo señor de los enanos. Tozudez e Inmunidad a psicología</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo señor de los enanos. Tozudez e Inmunidad a psicología</characteristic>
               </characteristics>
             </profile>
             <profile id="d517-4e38-fb99-9275" name="Runa magistral de la resiliencia" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Tirada de salvación especial de 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Tirada de salvación especial de 4+.</characteristic>
               </characteristics>
             </profile>
             <profile id="99a2-57bc-ebc4-4d76" name="Runa de plata" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Todas las tiradas para impactar contra el portador y su unidad tendrán un penalizador de -1, tanto con proyectiles como en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Todas las tiradas para impactar contra el portador y su unidad tendrán un penalizador de -1, tanto con proyectiles como en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7027,7 +7048,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="a611-851a-7332-7cd5" name="Falsa runa de Kragg el Gruñón" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">El arma rúnica obtiene las reglas especiales de un Arma a dos manos (+2F, Lenta, requiere ambas manos). No puede grabarse en una ballesta ni en unas hachas de matador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">El arma rúnica obtiene las reglas especiales de un Arma a dos manos (+2F, Lenta, requiere ambas manos). No puede grabarse en una ballesta ni en unas hachas de matador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7053,7 +7074,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="8d30-c09d-9143-f51a" name="Runa de la furia" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">+1 Ataque (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">+1 Ataque (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7068,7 +7089,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="35f8-c77a-8fa6-d6ea" name="Runa del poder" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Dobla la Fuerza de los impactos contra oponentes de R5 o superior.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Dobla la Fuerza de los impactos contra oponentes de R5 o superior.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7083,7 +7104,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e1ae-7771-5248-e475" name="Runa de Snorri Spanglehelm" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">+1 para impactar en cuerpo a cuerpo (este bonificador se acumula con dos o más runas iguales, aunque nunca puede impactar con una tirada mejor de 2+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">+1 para impactar en cuerpo a cuerpo (este bonificador se acumula con dos o más runas iguales, aunque nunca puede impactar con una tirada mejor de 2+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7098,7 +7119,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="415d-f952-8bca-5cb6" name="Runa de la muerte" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7116,7 +7137,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="1b14-b021-84fc-2190" name="Runa de la agonía" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D3). Varias runas de la agonía son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D3). Varias runas de la agonía son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7134,7 +7155,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c4a1-53c3-9370-2fff" name="Runa de la fuerza" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">+1 Fuerza (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">+1 Fuerza (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7149,7 +7170,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="2f54-6859-08f4-de9e" name="Runa de los agravios" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Al inicio de la batalla, tras el despliegue, designa una miniatura del ejército enemigo. Repite para impactar contra el enemigo designado. Eliges un personaje o monstruo por cada Runa de los Agravios en el arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Al inicio de la batalla, tras el despliegue, designa una miniatura del ejército enemigo. Repite para impactar contra el enemigo designado. Eliges un personaje o monstruo por cada Runa de los Agravios en el arma.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7164,7 +7185,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="9b45-99a7-0fcb-6c81" name="Runa de ataque" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">+1 a la Habilidad de armas (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">+1 a la Habilidad de armas (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7179,7 +7200,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="0db2-d26f-d59b-0e18" name="Runa de perforación" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Poder de penetración. Varias runas de perforación son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Poder de penetración. Varias runas de perforación son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7197,7 +7218,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="8313-1efd-2f8e-7741" name="Runa de la agilidad" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">El portador obtiene +1 I en combate cuerpo a cuerpo (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">El portador obtiene +1 I en combate cuerpo a cuerpo (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7212,7 +7233,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="14d5-fa33-b664-a673" name="Runa del fuego" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Ataques flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Ataques flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7237,7 +7258,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b5e5-4d23-5853-3ba6" name="Runa de la maldición" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Si el portador causa heridas a un personaje o monstruo enemigo, si éste no muere por el ataque, debes tirar 1D6 por cada herida causada. Con un resultado de 1, no hay efectos adicionales; con un resultado de 2-3, el personaje o monstruo tendrá un -1F por el esto de la batalla; con un resultado de 4-5, el personaje o monstruo tendrá un -1R por el esto de la batalla; y con un resultado de 6, un -1F y -1R por el resto de la batalla. Si un arma tiene dos runas de la Maldición, suma +1 a esas tiradas; y si tiene 3 runas, suma +2 a esas tiradas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Si el portador causa heridas a un personaje o monstruo enemigo, si éste no muere por el ataque, debes tirar 1D6 por cada herida causada. Con un resultado de 1, no hay efectos adicionales; con un resultado de 2-3, el personaje o monstruo tendrá un -1F por el esto de la batalla; con un resultado de 4-5, el personaje o monstruo tendrá un -1R por el esto de la batalla; y con un resultado de 6, un -1F y -1R por el resto de la batalla. Si un arma tiene dos runas de la Maldición, suma +1 a esas tiradas; y si tiene 3 runas, suma +2 a esas tiradas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7259,7 +7280,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e281-2bf6-9bb7-e895" name="Runa mataskavens" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D3) contra miniaturas del libro de ejército skaven (y los libros de ejército alternativos de skaven). Varias runas mataskavens son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D3) contra miniaturas del libro de ejército skaven (y los libros de ejército alternativos de skaven). Varias runas mataskavens son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7284,7 +7305,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="5237-9945-e225-293e" name="Runa mataorcos" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Golpe letal contra pielesverdes (orcos, goblins, hobgoblins, snotlings y gnoblars, en todas sus variedades). Varias runas mataorcos son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Golpe letal contra pielesverdes (orcos, goblins, hobgoblins, snotlings y gnoblars, en todas sus variedades). Varias runas mataorcos son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7309,7 +7330,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="3c2d-fd23-7bd1-117c" name="Runa matabestias" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (2) contra miniaturas de las Bestias del Caos y de la Grey Infernal. Varias runas matabestias son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (2) contra miniaturas de las Bestias del Caos y de la Grey Infernal. Varias runas matabestias son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7334,7 +7355,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="df80-9e67-40ac-1487" name="Runa mataelfos" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Cada vez que un elfo (alto elfo, elfo oscuro o elfo silvano) sufra una herida a causa de este arma, debe efectuar un chequeo de Resistencia; si lo falla, será retirado como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Cada vez que un elfo (alto elfo, elfo oscuro o elfo silvano) sufra una herida a causa de este arma, debe efectuar un chequeo de Resistencia; si lo falla, será retirado como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7356,7 +7377,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e425-bf71-fb8f-f42a" name="Runa magistral matademonios" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico contra miniaturas con la regla especial Demonio.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico contra miniaturas con la regla especial Demonio.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7374,7 +7395,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="31ae-2312-18a2-9b27" name="Runa magistral matadragones" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico contra dragones (incluyendo dragones del Caos, Dragones zombi, etc).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico contra dragones (incluyendo dragones del Caos, Dragones zombi, etc).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7392,7 +7413,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="fed1-dbef-3fe3-49b8" name="Runa magistral exorcista" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico contra miniaturas con la regla especial No muerto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico contra miniaturas con la regla especial No muerto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7410,7 +7431,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="2896-fd5b-474a-a282" name="Runa magistral de la muerte" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico (excepto contra No muertos, Demonios o Dragones).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Golpe letal heroico (excepto contra No muertos, Demonios o Dragones).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7428,7 +7449,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="abcd-bc3e-3903-6b31" name="Runa magistral de Skalf martillonegro" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Siempre hiere con 2+, sin importar la R del objetivo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Siempre hiere con 2+, sin importar la R del objetivo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7443,7 +7464,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="22aa-8622-8ad3-72be" name="Runa magistral de la destrucción" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D6).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Heridas múltiples (1D6).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7461,7 +7482,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="d586-2ac7-0cb5-ac1d" name="Runa magistral de Alaric el loco" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Niega la tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Niega la tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7476,7 +7497,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="4102-d00f-d0fa-a8f3" name="Runa magistral de la ruina" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">Si impacta a un enemigo equipado con un arma mágica, el poder de dicho arma quedará anulado y pasará a considerarse un arma mundana de su mismo tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">Si impacta a un enemigo equipado con un arma mágica, el poder de dicho arma quedará anulado y pasará a considerarse un arma mundana de su mismo tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7491,7 +7512,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e57b-4ed0-65e8-9c5f" name="Runa magistral del vuelo" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">El arma rúnica puede usarse como Arma arrojadiza que retorna a la mano de su portador tras ser usada. Tiene un alcance de 10” y las reglas especiales Disparo rápido y Arrojadiza. Impacta con la Fuerza del usuario, y tiene Ataques mágicos, así como las demás propiedades que confieran otras runas grabadas en el arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">El arma rúnica puede usarse como Arma arrojadiza que retorna a la mano de su portador tras ser usada. Tiene un alcance de 10” y las reglas especiales Disparo rápido y Arrojadiza. Impacta con la Fuerza del usuario, y tiene Ataques mágicos, así como las demás propiedades que confieran otras runas grabadas en el arma.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7511,7 +7532,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e009-107a-cdca-ba02" name="Runa magistral de la rapidez" hidden="false" typeId="6aed-7acf-6f4b-7d6d" typeName="Runa de armas">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="16dc-fcf0-593a-5bcd">El portador verá su iniciativa aumentada hasta 10 (su iniciativa siempre será 10, y no podrá ser modificada por carga, Ataque rápido ni Lenta).</characteristic>
+                <characteristic name="Reglas especiales" typeId="16dc-fcf0-593a-5bcd">El portador verá su iniciativa aumentada hasta 10 (su iniciativa siempre será 10, y no podrá ser modificada por carga, Ataque rápido ni Lenta).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7534,7 +7555,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b148-b933-ea05-68c0" name="Runa de la pervivencia" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">El portador es inmune a la regla especial Heridas múltiples.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">El portador es inmune a la regla especial Heridas múltiples.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7549,7 +7570,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="a9d0-939f-99b1-d33e" name="Runa de la fortaleza" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">El portador tiene +1 herida (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">El portador tiene +1 herida (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7564,7 +7585,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b46d-8ff5-c340-167d" name="Runa de la resistencia" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Repite tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Repite tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7579,7 +7600,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="0dd2-2f82-4527-7cde" name="Runa de la salvación" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Inmune a veneno. También será inmune a golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Inmune a veneno. También será inmune a golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7597,7 +7618,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="7fa5-8bc7-9b5d-aadf" name="Runa del hierro" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Tirada de salvación 6+ especial (5+ con 2 runas del hierro, no pueden grabarse 3 en un mismo objeto)</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Tirada de salvación 6+ especial (5+ con 2 runas del hierro, no pueden grabarse 3 en un mismo objeto)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7612,7 +7633,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b886-e5be-2307-2ff1" name="Runa de piedra" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">+1 a la tirada de salvación por armadura (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">+1 a la tirada de salvación por armadura (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7634,7 +7655,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="ee95-9940-d796-a472" name="Runa de parada" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Todos los enemigos que ataquen al portador realizarán un Ataque menos (con un mínimo de 1 Ataque). Múltiples runas de parada son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Todos los enemigos que ataquen al portador realizarán un Ataque menos (con un mínimo de 1 Ataque). Múltiples runas de parada son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7656,7 +7677,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b8f6-b4d5-ba3b-180b" name="Runa magistral del acero" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Todas las tiradas para herir contra el portador fallarán si se obtiene un resultado de 1, 2 ó 3 en la tirada; esto no afecta a ataques sin valor de Fuerza o que hieran automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Todas las tiradas para herir contra el portador fallarán si se obtiene un resultado de 1, 2 ó 3 en la tirada; esto no afecta a ataques sin valor de Fuerza o que hieran automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7671,7 +7692,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c039-39e9-4b67-eedc" name="Karak-Rhun (Runa magistral de la eternidad)" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">R10. No puede llevar otras runas de defensa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">R10. No puede llevar otras runas de defensa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7686,7 +7707,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="77ed-18f8-f50b-6a1b" name="Runa magistral adamantina" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Incrementa en +1 la Resistencia del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Incrementa en +1 la Resistencia del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7701,7 +7722,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c8d6-8ee1-6fc7-dcbb" name="Runa magistral de Gromril" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">Proporciona al portador una Tirada de salvación por armadura de 1+</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">Proporciona al portador una Tirada de salvación por armadura de 1+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7716,7 +7737,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="d90f-063b-7adf-2263" name="Runa magistral de la entereza" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">El adversario debe repetir cualquier tirada para herir superada contra el portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">El adversario debe repetir cualquier tirada para herir superada contra el portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7738,7 +7759,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="d77a-9b87-0da5-84f1" name="Runa magistral devoradora de magia" hidden="false" typeId="3640-cf74-31a0-c2fa" typeName="Runa de defensa">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="91c4-f598-6760-4eb9">El portador no puede verse afectado por hechizos de ningún tipo; no significa que los disperse, sino que simplemente no le causan ningún efecto o daño. Ten en cuenta que esto sólo afecta al portador, no a la unidad en la que se encuentre. Además, le proporciona una tirada de salvación especial de 4+ contra Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="91c4-f598-6760-4eb9">El portador no puede verse afectado por hechizos de ningún tipo; no significa que los disperse, sino que simplemente no le causan ningún efecto o daño. Ten en cuenta que esto sólo afecta al portador, no a la unidad en la que se encuentre. Además, le proporciona una tirada de salvación especial de 4+ contra Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7761,7 +7782,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="42fa-9cdd-873d-166d" name="Runa de la firmeza" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Bonificador extraordinario de +1 al resultado del combate de los artilleros. Múltiples runas aumentan el bonificador extraordinario (hasta un máximo de +3)</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Bonificador extraordinario de +1 al resultado del combate de los artilleros. Múltiples runas aumentan el bonificador extraordinario (hasta un máximo de +3)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7776,7 +7797,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e090-2dd1-2ed5-a503" name="Runa de la defensa" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">La máquina de guerra se considera siempre tras cobertura pesada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">La máquina de guerra se considera siempre tras cobertura pesada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7791,7 +7812,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c227-3ffe-bbe7-2091" name="Runa de la inmolación" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Un solo uso. La máquina de guerra explotará cuando sea destruida, tanto en combate cuerpo a cuerpo como a distancia. Toda unidad (amiga o enemiga) a 1D6&quot; o menos de la máquina de guerra sufre 2D6 impactos de fuerza 4 que se distribuyen como disparos. Estos impactos tienen las reglas ataques flamígeros y ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Un solo uso. La máquina de guerra explotará cuando sea destruida, tanto en combate cuerpo a cuerpo como a distancia. Toda unidad (amiga o enemiga) a 1D6&quot; o menos de la máquina de guerra sufre 2D6 impactos de fuerza 4 que se distribuyen como disparos. Estos impactos tienen las reglas ataques flamígeros y ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7810,7 +7831,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="cf8e-1c8f-13ba-e783" name="Runa del valor" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">La máquina de guerra es Inmune a desmoralización</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">La máquina de guerra es Inmune a desmoralización</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7828,7 +7849,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="010c-d695-68e2-914b" name="Runa de la invisibilidad" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">La Máquina de guerra es invisible, y no puede designarse como objetivo de disparos, hechizos o cargas hasta que mueva o dispare, momento en el que se revelará, y la runa dejará de tener efecto. La máquina no se despliega en el campo, para señalar donde irá desplegada coloca un marcador hasta el momento que deba ser revelada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">La Máquina de guerra es invisible, y no puede designarse como objetivo de disparos, hechizos o cargas hasta que mueva o dispare, momento en el que se revelará, y la runa dejará de tener efecto. La máquina no se despliega en el campo, para señalar donde irá desplegada coloca un marcador hasta el momento que deba ser revelada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7843,7 +7864,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="a2cb-a7c2-8d76-6bd9" name="Runa buscadora de Flaksson" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Sólo lanzavirotes. +1 para impactar contra objetivos con la regla especial Volar o Flotar. Además, tendrá Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Sólo lanzavirotes. +1 para impactar contra objetivos con la regla especial Volar o Flotar. Además, tendrá Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7861,7 +7882,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b2d1-6f13-5f25-1d5c" name="Runa de recarga" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Un sólo uso. La máquina de guerra ignora el primer resultado de 3-4 (tabla de problemas de pólvora) ó de 2-3 (tabla de problemas de catapulta) que obtenga en la batalla, considerándolo como 5-6 ó 4-6 respectivamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Un sólo uso. La máquina de guerra ignora el primer resultado de 3-4 (tabla de problemas de pólvora) ó de 2-3 (tabla de problemas de catapulta) que obtenga en la batalla, considerándolo como 5-6 ó 4-6 respectivamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7876,7 +7897,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="fe86-9970-dcf7-8640" name="Runa de la forja" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Sólo cañones. Un sólo uso. Repite la tirada del dado de artillería si obtiene Problemas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Sólo cañones. Un sólo uso. Repite la tirada del dado de artillería si obtiene Problemas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7891,7 +7912,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="3c53-2615-b16d-00a3" name="Runa de penetración" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Incrementa la F en +1 hasta un máximo de 10, y proporciona Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Incrementa la F en +1 hasta un máximo de 10, y proporciona Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7909,7 +7930,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="08ca-90c8-da80-b13c" name="Runa de la precisión" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Sólo lanzaagravios. Puede repetir la tirada del dado de dispersión al disparar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Sólo lanzaagravios. Puede repetir la tirada del dado de dispersión al disparar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7924,7 +7945,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="8cf5-631f-975e-682b" name="Runa incendiaria" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Los proyectiles de la máquina de guerra contarán con la reglas especiales Ataques flamígeros y Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Los proyectiles de la máquina de guerra contarán con la reglas especiales Ataques flamígeros y Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7943,7 +7964,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c53b-273d-701d-327b" name="Runa de la puntería" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Un sólo uso, sólo lanzavirotes. Impacta con 2+, sin tener en cuenta otros modificadores. Además, ese disparo tendrá Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Un sólo uso, sólo lanzavirotes. Impacta con 2+, sin tener en cuenta otros modificadores. Además, ese disparo tendrá Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7968,7 +7989,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="f7a9-c1ae-7b58-0576" name="Runa del orgullo artillero" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">La máquina de guerra obtiene la regla especial Tozudez. Múltiples runas del orgullo artillero son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">La máquina de guerra obtiene la regla especial Tozudez. Múltiples runas del orgullo artillero son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8001,7 +8022,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="17f1-3ea6-0d3d-b0e4" name="Runa calibradora" hidden="false" typeId="d7f9-5099-aead-fab1" typeName="Runa de ingenieros">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="070b-8a1d-bed6-ab24">Sólo puede grabarse en un cañón enano. Cada vez que el cañón dispare, puedes repetir la tirada de uno de los dados de estimación. Múltiples runas calibradoras son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="070b-8a1d-bed6-ab24">Sólo puede grabarse en un cañón enano. Cada vez que el cañón dispare, puedes repetir la tirada de uno de los dados de estimación. Múltiples runas calibradoras son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8024,7 +8045,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="caab-ca17-a921-d9aa" name="Runa de Strollaz" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad que porte el estandarte obtiene la regla especial Vanguardia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad que porte el estandarte obtiene la regla especial Vanguardia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8042,7 +8063,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="8ea8-dd7b-20d7-e020" name="Runa del miedo" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad portadora del estandarte causa miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad portadora del estandarte causa miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8060,7 +8081,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="55f6-d929-bc6a-7b7a" name="Runa de la lentitud" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El oponente deberá elegir el dado más bajo al cargar a esta unidad, y todas las unidades que tengan la regla especial Veloces que carguen contra esta unidad la perderán mientras dure la carga.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El oponente deberá elegir el dado más bajo al cargar a esta unidad, y todas las unidades que tengan la regla especial Veloces que carguen contra esta unidad la perderán mientras dure la carga.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8075,7 +8096,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="ae40-49f2-7f9f-8df5" name="Runa adamantina" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene +1 a la tirada de salvación por armadura. Un estandarte rúnico no puede llevar más de una Runa Adamantina.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene +1 a la tirada de salvación por armadura. Un estandarte rúnico no puede llevar más de una Runa Adamantina.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8090,7 +8111,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="6ff7-cbb3-59fa-42e9" name="Runa del coraje" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad obtiene la regla especial Inmune a psicología.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad obtiene la regla especial Inmune a psicología.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8108,7 +8129,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="0cdd-ac5a-b35c-0759" name="Runa del libre paso" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad obtiene la regla especial Cruzar (todo el terreno difícil).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad obtiene la regla especial Cruzar (todo el terreno difícil).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8128,7 +8149,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="7b8f-7945-4177-4e58" name="Runa de batalla" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad que lo porte obtendrá un bonificador de +1 al resultado del combate. Múltiples runas de batalla en un mismo estandarte son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad que lo porte obtendrá un bonificador de +1 al resultado del combate. Múltiples runas de batalla en un mismo estandarte son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8143,7 +8164,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b616-fcda-4d91-3ea3" name="Runa del estoicismo" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Duplica la potencia de unidad de la unidad que porte el estandarte. Múltiples runas del estoicismo en un mismo estandarte son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Duplica la potencia de unidad de la unidad que porte el estandarte. Múltiples runas del estoicismo en un mismo estandarte son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8158,7 +8179,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="939d-030d-b045-d7d8" name="Runa de la determinación" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Un solo uso. La unidad puede chequear desmoralización en 1D6, en lugar de en 2D6 como es habitual.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Un solo uso. La unidad puede chequear desmoralización en 1D6, en lugar de en 2D6 como es habitual.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8173,7 +8194,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="ea82-2720-b8e6-af6b" name="Runa de protección arcana" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad que porte un estandarte con esta runa tendrá la regla especial Resistencia a la magia (1). Múltiples runas de protección arcana aumentan dicha Resistencia mágica (hasta un máximo de 3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad que porte un estandarte con esta runa tendrá la regla especial Resistencia a la magia (1). Múltiples runas de protección arcana aumentan dicha Resistencia mágica (hasta un máximo de 3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8191,7 +8212,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="643c-1ee1-6eb5-2811" name="Runa de los ancestros" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Un solo uso. Esta runa se utiliza antes de realizar los chequeos de desmoralización en combate cuerpo a cuerpo. Tira 1D6: con un resultado de 4+, la unidad obtiene Tozudez hasta el final del turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Un solo uso. Esta runa se utiliza antes de realizar los chequeos de desmoralización en combate cuerpo a cuerpo. Tira 1D6: con un resultado de 4+, la unidad obtiene Tozudez hasta el final del turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8209,7 +8230,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="929f-b1c3-95eb-5359" name="Runa de la templanza" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene la regla especial Sangre Fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene la regla especial Sangre Fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8227,7 +8248,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="9f8f-cb37-85d0-b82f" name="Runa de la resistencia al fuego" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene la regla especial Inmune al fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene la regla especial Inmune al fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8245,7 +8266,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="2d2c-979c-fea2-976c" name="Runa de la robustez" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtienen la regla especial Inmune a venenos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtienen la regla especial Inmune a venenos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8263,7 +8284,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="3cb5-9347-bb53-a29c" name="Runa del exorcismo" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene la regla especial Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El portador y la unidad que lo acompaña obtiene la regla especial Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8281,7 +8302,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="d44a-b8a5-36cf-39fd" name="Runa de Groth el tuerto" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad es tozuda.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad es tozuda.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8299,7 +8320,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e499-ba76-8dc9-66b4" name="Runa de Kadrin" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad obtiene un bonificador de +1 a sus tiradas para impactar en combate cuerpo a cuerpo; esto no puede mejorar la tirada para impactar por debajo de 3+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad obtiene un bonificador de +1 a sus tiradas para impactar en combate cuerpo a cuerpo; esto no puede mejorar la tirada para impactar por debajo de 3+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8314,7 +8335,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="837f-348e-ecd7-8631" name="Runa de los antiguos" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad podrá repetir sus chequeos de desmoralización fallidos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad podrá repetir sus chequeos de desmoralización fallidos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8329,7 +8350,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="2c5b-35d9-119e-82a5" name="Runa vengativa de perforación" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad que lo podte obtendrá la regla especial Poder de penetración en sus ataques cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad que lo podte obtendrá la regla especial Poder de penetración en sus ataques cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8347,7 +8368,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="1518-d62a-c37e-0cc9" name="Runa siempre ardiente" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad obtiene Ataques flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad obtiene Ataques flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8365,7 +8386,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="1dc2-e388-7a4e-84fc" name="Runa del resentimiento" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">La unidad puede repetir cualquier tirada para impactar en la que haya obtenido un 1 en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">La unidad puede repetir cualquier tirada para impactar en la que haya obtenido un 1 en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8387,7 +8408,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e60d-253e-b05d-934c" name="Runa de la élite" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Todas las miniaturas de la unidad obtienen un bonificador de +1 a su HA. Múltiples runas de la élite son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Todas las miniaturas de la unidad obtienen un bonificador de +1 a su HA. Múltiples runas de la élite son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8409,7 +8430,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="d170-54ad-e491-0dee" name="Runa de la ira" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El portador y su unidad podrán repetir sus tiradas de carga fallidas. Múltiples runas de la Ira son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El portador y su unidad podrán repetir sus tiradas de carga fallidas. Múltiples runas de la Ira son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8431,7 +8452,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c953-0411-1de8-eaf5" name="Runa del muro de acero" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Reduce a la mitad (redondeando hacia arriba) la Fuerza de todos los Impactos por carga contra el portador y su unidad. Múltiples runas de Muro de Acero son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Reduce a la mitad (redondeando hacia arriba) la Fuerza de todos los Impactos por carga contra el portador y su unidad. Múltiples runas de Muro de Acero son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8453,7 +8474,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="77c3-c41f-0822-5671" name="Runa magistral de Stromni barbarroja" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Bonificador extraordinario de +1 al resultado del combate a todas las unidades enanas a 12” o menos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Bonificador extraordinario de +1 al resultado del combate a todas las unidades enanas a 12” o menos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8468,7 +8489,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="9667-0d78-73ad-b972" name="Runa magistral de Valaya" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El jugador enano obtiene un bonificador de +2 para dispersar hechizos, dispersa hechizos activos automáticamente (esto incluye los hechizos que permanecen en juego y los que permanecen un turno) al comienzo del turno amigo a 12” o menos del estandarte. La unidad que lo porta tiene resistencia mágica (3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El jugador enano obtiene un bonificador de +2 para dispersar hechizos, dispersa hechizos activos automáticamente (esto incluye los hechizos que permanecen en juego y los que permanecen un turno) al comienzo del turno amigo a 12” o menos del estandarte. La unidad que lo porta tiene resistencia mágica (3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8483,7 +8504,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="7aa6-ef8b-d993-a0a1" name="Runa magistral de Grungni" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">El Estandarte proporciona una tirada de salvación de 5+ especial contra proyectiles a todas las unidades amigas a 8” del estandarte.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">El Estandarte proporciona una tirada de salvación de 5+ especial contra proyectiles a todas las unidades amigas a 8” del estandarte.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8513,7 +8534,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="40fd-6f21-fe69-6d10" name="Runa sagrada de Grimnir" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Solo unidades de Matadores. Aumenta en +1 el atributo de Movimiento de todos los Matadores de la unidad. Múltiples Runas sagradas de Grimnir son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Solo unidades de Matadores. Aumenta en +1 el atributo de Movimiento de todos los Matadores de la unidad. Múltiples Runas sagradas de Grimnir son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8536,7 +8557,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="e3d5-dbec-0bd5-7e89" name="Runa de la orientación" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Sólo portaestandarte de unidades de mineros. La unidad podrá repetir la tirada en la tabla de problemas por su regla especial Avance subterráneo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Sólo portaestandarte de unidades de mineros. La unidad podrá repetir la tirada en la tabla de problemas por su regla especial Avance subterráneo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8559,7 +8580,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="9a9f-56c3-ca43-dc12" name="Runa de defensa" hidden="false" typeId="c8ab-45ec-ec08-f836" typeName="Runa de protección">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="5181-43c5-99f5-20bc">Sólo portaestandarte de batalla. El portador obtiene +1 herida (este bonificador se acumula con dos o más runas iguales).</characteristic>
+                <characteristic name="Reglas especiales" typeId="5181-43c5-99f5-20bc">Sólo portaestandarte de batalla. El portador obtiene +1 herida (este bonificador se acumula con dos o más runas iguales).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8582,7 +8603,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="6180-ba81-2e17-f17c" name="Runa del escrutinio" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Al comienzo de cada turno enano todas las unidades y personajes enemigos a 18” o menos del portador deberán revelar todos sus objetos mágicos, asesinos, fanáticos, etc.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Al comienzo de cada turno enano todas las unidades y personajes enemigos a 18” o menos del portador deberán revelar todos sus objetos mágicos, asesinos, fanáticos, etc.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8597,7 +8618,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="b982-907a-a4a1-c718" name="Runa del destino" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Un solo uso. Salvación 2+ especial contra la primera herida que sufra en la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Un solo uso. Salvación 2+ especial contra la primera herida que sufra en la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8612,7 +8633,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="a741-5b5b-cd43-5db2" name="Runa de la suerte" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Un solo uso. Repite una tirada de dado que concierna a su portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Un solo uso. Repite una tirada de dado que concierna a su portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8627,7 +8648,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="2367-2ed6-89dc-002f" name="Runa ígnea" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">El personaje obtiene la regla especial Inmune a fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">El personaje obtiene la regla especial Inmune a fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8645,7 +8666,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="666c-3e33-acc1-94e2" name="Runa de la venganza" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Si el protador es seleccionado exclusivamente como objeto de un hechizo de daño directo o mediante la regla especial Francotirador, el efecto del hechizo o disparo deberá resolverse contra el hechicero o tirador que lo efectuó.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Si el protador es seleccionado exclusivamente como objeto de un hechizo de daño directo o mediante la regla especial Francotirador, el efecto del hechizo o disparo deberá resolverse contra el hechicero o tirador que lo efectuó.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8660,7 +8681,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="21b3-2835-d939-05c1" name="Runa de salvaguarda" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Resistencia a la magia (1) (este bonificador se acumula con dos o más runas iguales o con otros efectos que otorguen Resistencia mágica, hasta un máximo de 3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Resistencia a la magia (1) (este bonificador se acumula con dos o más runas iguales o con otros efectos que otorguen Resistencia mágica, hasta un máximo de 3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8685,7 +8706,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="9bdc-8f12-026a-00fc" name="Runa de la restauración" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Al inicio de cada uno de tus turnos, el portador puede restaurar una herida que hubiese sufrido previamente durante la batalla. Múltiples runas de Restauración son redundantes.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Al inicio de cada uno de tus turnos, el portador puede restaurar una herida que hubiese sufrido previamente durante la batalla. Múltiples runas de Restauración son redundantes.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8707,7 +8728,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="c36c-b7c5-05bf-a39e" name="Runa magistral de la resiliencia" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Tirada de salvación especial de 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Tirada de salvación especial de 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8722,7 +8743,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="1660-44b9-de4f-4f57" name="Runa magistral del rencor" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Tirada de salvación especial de 4+ . En cuerpo a cuerpo, por cada herida salvada con esta runa el que causó la herida sufrirá una herida sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Tirada de salvación especial de 4+ . En cuerpo a cuerpo, por cada herida salvada con esta runa el que causó la herida sufrirá una herida sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8737,7 +8758,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="9adf-a956-228f-f723" name="Runa magistral del desaliento" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Un solo uso. Puede utilizarse al inicio de cualquier fase de movimiento enemiga, contra una unidad enemiga a 12” o menos del portador. Esa unidad deberá, si puede, declarar una carga contra el portador y su unidad, o huir como si hubiese fallado un chequeo de pánico. Esto no afecta a unidades inmunes a la psicología.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Un solo uso. Puede utilizarse al inicio de cualquier fase de movimiento enemiga, contra una unidad enemiga a 12” o menos del portador. Esa unidad deberá, si puede, declarar una carga contra el portador y su unidad, o huir como si hubiese fallado un chequeo de pánico. Esto no afecta a unidades inmunes a la psicología.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8752,7 +8773,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="1fa5-ba18-afe6-9f7b" name="Runa magistral del desafío" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Si este personaje lanza un desafío, el oponente deberá aceptarlo obligatoriamente si tiene alguna miniatura capaz de aceptarlo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Si este personaje lanza un desafío, el oponente deberá aceptarlo obligatoriamente si tiene alguna miniatura capaz de aceptarlo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8767,7 +8788,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="66b4-9d7b-15b9-7ef0" name="Runa magistral eterna" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Otorga una tirada de salvación especial de 3+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Otorga una tirada de salvación especial de 3+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8789,7 +8810,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="1eab-56ac-3693-41f8" name="Runa magistral de la realeza" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo señor de los enanos. Tozudez e Inmunidad a psicología a todas las unidades amigas a 8&quot; o menos del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo señor de los enanos. Tozudez e Inmunidad a psicología a todas las unidades amigas a 8&quot; o menos del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8816,7 +8837,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="6d7b-660b-cc0a-3d35" name="Runa comehechizos" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo forjador rúnico. Un sólo uso. Dispersa automáticamente un hechizo, y lo destruye con 4+ (tira 1D6: con un resultado de 4+, el hechizo quedará borrado de la mente del hechicero, y no podrá usarlo de nuevo durante la batalla). No puede utilizarse contra hechizos lanzados con fuerza Irrresistible.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo forjador rúnico. Un sólo uso. Dispersa automáticamente un hechizo, y lo destruye con 4+ (tira 1D6: con un resultado de 4+, el hechizo quedará borrado de la mente del hechicero, y no podrá usarlo de nuevo durante la batalla). No puede utilizarse contra hechizos lanzados con fuerza Irrresistible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8831,7 +8852,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="3a8c-e372-d1b6-6fdf" name="Runa rompehechizos" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo forjador rúnico. Un sólo uso. Dispersa un hechizo automáticamente. No puede utilizarse contra hechizos lanzados con fuerza Irresistible.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo forjador rúnico. Un sólo uso. Dispersa un hechizo automáticamente. No puede utilizarse contra hechizos lanzados con fuerza Irresistible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8846,7 +8867,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="31be-de3f-1eca-7d46" name="Runa ígnea" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">El personaje obtiene la regla especial Inmune a fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">El personaje obtiene la regla especial Inmune a fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8864,7 +8885,7 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
           <profiles>
             <profile id="d5ad-0dcf-2cdb-9288" name="Runa de los vientos" hidden="false" typeId="1d61-af19-79de-9947" typeName="Runa talismánica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="833c-71ca-28b9-acfa">Sólo forjador rúnico. Obtiene un bonificador de +2 a sus tiradas para canalizar dados de dispersión.</characteristic>
+                <characteristic name="Reglas especiales" typeId="833c-71ca-28b9-acfa">Sólo forjador rúnico. Obtiene un bonificador de +2 a sus tiradas para canalizar dados de dispersión.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8986,6 +9007,20 @@ Runa de la furia y agravios (Extra reforged): Selecciona una unidad amiga a 24�
     <profile id="7070-3870-9198-dc65" name="Tatuajes protectores" hidden="false" typeId="322d-2622-d325-8e5a" typeName="Objeto">
       <characteristics>
         <characteristic name="Reglas especiales" typeId="7e0d-4aa5-85cf-f713">Proporcionan Resistencia mágica (1).</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="c16b-439e-7955-8025" name="Ristra de pistolas enanas" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+      <characteristics>
+        <characteristic name="Rango" typeId="52616e676523232344415441232323">10&quot;</characteristic>
+        <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">4</characteristic>
+        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Poder de penetración, Disparo rápido, Disparos múltiples (2), Diseño superior. Una pistola se considera un arma de mano adicional en combate cuerpo a cuerpo; además, en la primera ronda de cada combate, tira un dado de color diferente para el ataque adicional de la pistola: este se resolverá con F4 y Poder de penetración. En el caso de una ristra de pistolas, al luchar con ambas en combate cuerpo a cuerpo, puede realizar todos sus ataques en la primera ronda de cada combate con F4 y Poder de penetración.</characteristic>
+      </characteristics>
+    </profile>
+    <profile id="0fd6-4679-5816-03bd" name="Pistola enana" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
+      <characteristics>
+        <characteristic name="Rango" typeId="52616e676523232344415441232323">10&quot;</characteristic>
+        <characteristic name="Fuerza" typeId="537472656e67746823232344415441232323">4</characteristic>
+        <characteristic name="Reglas especiales" typeId="5370656369616c2052756c657323232344415441232323">Poder de penetración, Disparo rápido, Diseño superior. Una pistola se considera un arma de mano adicional en combate cuerpo a cuerpo; además, en la primera ronda de cada combate, tira un dado de color diferente para el ataque adicional de la pistola: este se resolverá con F4 y Poder de penetración. En el caso de una ristra de pistolas, al luchar con ambas en combate cuerpo a cuerpo, puede realizar todos sus ataques en la primera ronda de cada combate con F4 y Poder de penetración.</characteristic>
       </characteristics>
     </profile>
   </sharedProfiles>

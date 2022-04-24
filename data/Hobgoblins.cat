@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="51b8-d71c-a2c1-23c4" name="Hobgoblins" revision="5" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="51b8-d71c-a2c1-23c4" name="Hobgoblins" revision="7" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="28ad-1282-484d-9fca" name="Hobgoblins" hidden="false" collective="false" import="true" type="upgrade">
       <infoLinks>
@@ -791,7 +791,7 @@
                   <profiles>
                     <profile id="2920-75f1-e7b0-30c6" name="Pellejo de Wulfag" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -1351,6 +1351,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="e361-2701-c43b-580d" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="40.0"/>
           </costs>
@@ -1775,6 +1778,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="5361-bcc4-e7b3-7acf" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
           </costs>
@@ -2709,6 +2715,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="702e-d1f9-0644-e235" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="110.0"/>
           </costs>
@@ -4831,7 +4840,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="9eed-3aea-85fe-8071" name="Dados de la suerte" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Talismán. Una vez por turno de juego, Gorduz puede repetir una tirada que le concierna a él. Puede tratarse de una tirada para impactar, herir, salvaciones, un chequeo de atributo (incluyendo Liderazgo) o una tirada de &quot;Bastardo afortunado&quot;.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Talismán. Una vez por turno de juego, Gorduz puede repetir una tirada que le concierna a él. Puede tratarse de una tirada para impactar, herir, salvaciones, un chequeo de atributo (incluyendo Liderazgo) o una tirada de &quot;Bastardo afortunado&quot;.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5086,7 +5095,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="0fbf-ae34-abd3-dc37" name="Capa del gran lobo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5282,6 +5291,7 @@ D6 	Resultado (Agarrar y...)
       <infoLinks>
         <infoLink id="3fa9-12a8-5a68-86b8" name="Caballería" hidden="false" targetId="276f-0034-6534-f691" type="rule"/>
         <infoLink id="f18e-314f-3832-54b3" name="Caballería rápida" hidden="false" targetId="0b7e-2a08-2b5a-51d7" type="rule"/>
+        <infoLink id="6ced-0072-8e9f-f920" name="Animosidad hobgoblin" hidden="false" targetId="0e0c-4745-3ad9-2ad7" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="d309-28b1-0a13-7066" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
@@ -5512,7 +5522,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="d33a-7ae5-1e89-8d5a" name="Cimitarra roja" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Golpe letal. Las heridas causadas por la Cimitarra Roja no permiten tirada de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Golpe letal. Las heridas causadas por la Cimitarra Roja no permiten tirada de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5532,7 +5542,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="d04b-f098-4fdf-1472" name="Yelmo cabeza demoníaca" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona a Ghazak un bonificador de +1 a su tirada de salvación por armadura). El yelmo proporciona a Ghazak Khan una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). En cuanto Ghazak Khan o un miembro de su unidad sufra al menos una herida no salvada, los poderes mágicos del Yelmo se activarán, aumentando su salvación especial a 4+ y su Resistencia mágica a 2.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona a Ghazak un bonificador de +1 a su tirada de salvación por armadura). El yelmo proporciona a Ghazak Khan una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). En cuanto Ghazak Khan o un miembro de su unidad sufra al menos una herida no salvada, los poderes mágicos del Yelmo se activarán, aumentando su salvación especial a 4+ y su Resistencia mágica a 2.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5611,6 +5621,9 @@ D6 	Resultado (Agarrar y...)
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -6084,7 +6097,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="55bc-bad1-075c-3fbb" name="Cuerno de la tempestad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Puedes declarar que haces sonar el cuerno al inicio de cualquiera de tus turnos. Todas las unidades aliadas con la regla especial Animosidad Hobgoblin fallarán automáticamente sus chequeos, obteniendo el resultado de Asesinato sangriento. Además, durante ese turno la unidad de Ogloth Khan puede repetir sus tiradas fallidas para cargar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Puedes declarar que haces sonar el cuerno al inicio de cualquiera de tus turnos. Todas las unidades aliadas con la regla especial Animosidad Hobgoblin fallarán automáticamente sus chequeos, obteniendo el resultado de Asesinato sangriento. Además, durante ese turno la unidad de Ogloth Khan puede repetir sus tiradas fallidas para cargar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6197,7 +6210,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="e353-a809-dcfa-f7c0" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6213,7 +6226,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="f56b-8a6b-c358-b883" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6386,7 +6399,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="2897-6227-74a0-1125" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6430,7 +6443,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="c4c2-6bc2-80db-8dda" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6472,7 +6485,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                   <profiles>
                     <profile id="3f95-a7b0-44b9-5c51" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6707,7 +6720,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                   <profiles>
                     <profile id="c6f8-6241-8486-8895" name="Estandarte de la novia del mar" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6867,7 +6880,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="c405-a7a2-0b6d-9ce0" name="Skabscrath" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6938,7 +6951,7 @@ afectados por la regla especial No Muerto.</description>
                   <profiles>
                     <profile id="3b9d-2d6b-9eb5-cb43" name="Pabellón de pesadilla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7139,7 +7152,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="5abe-6fe7-14b8-8822" name="Daga del desollamiento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada por esta daga Darkhoth recuperará una de las heridas que hubiese perdido previamente durante la batalla. En combate Darkhoth combinará varios golpes de sus Daga con uno de su Mangual, efectuando un total de 3 ataques con su Daga (4 incluyendo el ataque adicional de furia asesina) y uno con su mangual.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada por esta daga Darkhoth recuperará una de las heridas que hubiese perdido previamente durante la batalla. En combate Darkhoth combinará varios golpes de sus Daga con uno de su Mangual, efectuando un total de 3 ataques con su Daga (4 incluyendo el ataque adicional de furia asesina) y uno con su mangual.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7158,7 +7171,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="a720-5be9-06f5-f216" name="La fortaleza roja" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Mientras Darkhoth viva, él y los Discípulos no perderán la Furia asesina al ser derrotados en combate cuerpo a cuerpo y sus armas perderán la regla especial Agotamiento.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Mientras Darkhoth viva, él y los Discípulos no perderán la Furia asesina al ser derrotados en combate cuerpo a cuerpo y sus armas perderán la regla especial Agotamiento.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7802,7 +7815,7 @@ D6	Efecto
                   <profiles>
                     <profile id="af19-9a95-07fd-0b6b" name="Estandarte de Karad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8012,7 +8025,7 @@ D6	Efecto
               <profiles>
                 <profile id="2d6b-1ab1-281d-bb90" name="Máscara mortuoria" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Véspero causa Miedo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Véspero causa Miedo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8232,7 +8245,7 @@ D6	Efecto
                   <profiles>
                     <profile id="b5d5-c6c1-5da0-7962" name="Estandarte de la tribu del oso" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8805,7 +8818,7 @@ D6	Efecto
               <profiles>
                 <profile id="3560-9f39-becb-fcc4" name="Sello de Uzkulak" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9062,7 +9075,7 @@ D6	Efecto
               <profiles>
                 <profile id="6674-ca85-ade0-8dda" name="Mordisco del dios águila" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9329,7 +9342,7 @@ D6	Efecto
               <profiles>
                 <profile id="b429-b9fd-7e7f-e3f0" name="Macana de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9411,7 +9424,7 @@ D6	Efecto
                   <profiles>
                     <profile id="2f01-7d09-a524-220d" name="Estandarte emplumado de Skeggi" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9948,7 +9961,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="295c-a69a-e474-7435" name="Tótem del Azyr" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Proporciona a Wrablargh un bonificador de +1 a su atributo de Liderazgo y al resultado de los combates en los que participe. El tótem puede guardar hasta dos dados de energía o dispersión de tu reserva, los cuales pueden ser utilizados por los hechiceros aliados a 12” o menos de él; adicionalmente, los hechiceros aliados dentro de ese radio podrán canalizar dados de energía y dispersión tirando un dado por cada nivel de magia que posean -en lugar de solo un dado como es habitual. Sin embargo, todos los hechiceros enemigos que obtengan un resultado de 1 en sus intentos de canalización dentro de ese radio sufrirán una herida sin posibilidad de salvación por armadura. Además, el tótem puede emplearse como un Arma a dos manos con la regla especial Ataques mágicos. El efecto de esta reliquia no puede destruirse o anularse por efectos mágicos, hechizos ni por reglas especiales.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Proporciona a Wrablargh un bonificador de +1 a su atributo de Liderazgo y al resultado de los combates en los que participe. El tótem puede guardar hasta dos dados de energía o dispersión de tu reserva, los cuales pueden ser utilizados por los hechiceros aliados a 12” o menos de él; adicionalmente, los hechiceros aliados dentro de ese radio podrán canalizar dados de energía y dispersión tirando un dado por cada nivel de magia que posean -en lugar de solo un dado como es habitual. Sin embargo, todos los hechiceros enemigos que obtengan un resultado de 1 en sus intentos de canalización dentro de ese radio sufrirán una herida sin posibilidad de salvación por armadura. Además, el tótem puede emplearse como un Arma a dos manos con la regla especial Ataques mágicos. El efecto de esta reliquia no puede destruirse o anularse por efectos mágicos, hechizos ni por reglas especiales.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9979,7 +9992,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="7375-95fa-e0d1-fbf8" name="Armadura de pellejos mágicos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador la regla especial Piel escamosa (4+). Además, las miniaturas en contacto peana con peana que quieran atacar a Wrablargh tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador la regla especial Piel escamosa (4+). Además, las miniaturas en contacto peana con peana que quieran atacar a Wrablargh tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10060,7 +10073,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="b5e8-7702-8f8b-7fdf" name="Orbe de los cielos" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Shoresh una tirada de salvación especial de 4+ y un bonificador de +1 en sus intentos de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Shoresh una tirada de salvación especial de 4+ y un bonificador de +1 en sus intentos de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10201,7 +10214,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="a807-a139-f06a-9eaf" name="Cimitarra roja" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Golpe letal. Las heridas causadas por la Cimitarra Roja no permiten tirada de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Tiene la regla especial Golpe letal. Las heridas causadas por la Cimitarra Roja no permiten tirada de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10221,7 +10234,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="27ac-a569-d88e-9d05" name="Yelmo cabeza demoníaca" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona a Ghazak un bonificador de +1 a su tirada de salvación por armadura). El yelmo proporciona a Ghazak Khan una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona a Ghazak un bonificador de +1 a su tirada de salvación por armadura). El yelmo proporciona a Ghazak Khan una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10264,7 +10277,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="ac13-fa1c-6967-ff29" name="Manto de hobgobla khan" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Proporciona a Gran Hobgobla Ghazak Khan la regla especial Piel escamosa (5+). Además, al inicio de cada uno de tus turnos, todas las unidades amigas en el radio de Presencia inspiradora de Ghazak Khan que estén huyendo se reagrupan automáticamente; podrán cargar, mover o disparar con normalidad ese turno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Proporciona a Gran Hobgobla Ghazak Khan la regla especial Piel escamosa (5+). Además, al inicio de cada uno de tus turnos, todas las unidades amigas en el radio de Presencia inspiradora de Ghazak Khan que estén huyendo se reagrupan automáticamente; podrán cargar, mover o disparar con normalidad ese turno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10324,6 +10337,9 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               </costs>
             </selectionEntry>
           </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
         </selectionEntry>
       </selectionEntries>
       <entryLinks>
@@ -11477,7 +11493,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="98e7-3b00-df93-727e" name="Bandera polvorienta" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Los disparos realizados contra Ogloth y su unidad tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Los disparos realizados contra Ogloth y su unidad tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11553,7 +11569,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="b2f4-598c-1f23-cb46" name="Cimitarra de Brakk" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos de la Cimitarra de Brakk siempre hieren con un resultado de 2+, sin importar la Resistencia del objetivo. Además, tiene las reglas especiales Poder de penetración y Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos de la Cimitarra de Brakk siempre hieren con un resultado de 2+, sin importar la Resistencia del objetivo. Además, tiene las reglas especiales Poder de penetración y Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11582,7 +11598,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="1a84-cebb-21f8-af06" name="Daga asesina" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene un bonificador de +2 a su Iniciativa. Los ataques realizados con la daga asesina son Ataques envenenados, y no permiten tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtiene un bonificador de +2 a su Iniciativa. Los ataques realizados con la daga asesina son Ataques envenenados, y no permiten tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11602,7 +11618,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="8883-0dd9-2281-7c0a" name="Espada de Ogudei" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Todos los impactos con este arma hieren automáticamente (no es necesario efectuar tirada alguna para herir); esto no afecta a miniaturas con la regla especial Demonio o No muerto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Todos los impactos con este arma hieren automáticamente (no es necesario efectuar tirada alguna para herir); esto no afecta a miniaturas con la regla especial Demonio o No muerto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11629,7 +11645,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="cc20-4106-04e8-62fc" name="Arco traicionero" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Tiene la regla especial Francotirador y sus impactos no permiten tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco largo. Tiene la regla especial Francotirador y sus impactos no permiten tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11649,7 +11665,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="5c1d-147f-da74-c28d" name="Asaeteador" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Tiene la regla especial Disparos múltiples (X), donde X es el número de Ataques del portador. Sus impactos se resuelven con F4.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco largo. Tiene la regla especial Disparos múltiples (X), donde X es el número de Ataques del portador. Sus impactos se resuelven con F4.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11668,7 +11684,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="f17c-a06f-7bb3-d850" name="Arco de cuerno negro" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Sus disparos se resuelven con F5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco largo. Sus disparos se resuelven con F5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11695,7 +11711,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="158f-e73a-c366-c76d" name="Ensartaorcos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza. Los ataques realizados con este arma tienen la regla especial Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza. Los ataques realizados con este arma tienen la regla especial Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11724,7 +11740,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="567e-83fe-9b97-7e03" name="Puñales de la malicia" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas Emparejadas. El portador obtiene la regla especial Odio (todos los enemigos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas Emparejadas. El portador obtiene la regla especial Odio (todos los enemigos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11753,7 +11769,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="fc19-948b-0837-bf0e" name="Gran colmillo" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Al atacar con este arma, los resultados de 6 en tus tiradas para impactar herirán automáticamente y se resolverán con la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Al atacar con este arma, los resultados de 6 en tus tiradas para impactar herirán automáticamente y se resolverán con la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11781,7 +11797,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="48a4-b0ef-af0e-74cd" name="Yelmo de Khengai Khan" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador de +1 a la tirada de salvación por armadura del portador. Proporciona una tirada de salvación especial de 5+, que se incrementa a 3+ cuando esté combatiendo en un desafío.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador de +1 a la tirada de salvación por armadura del portador. Proporciona una tirada de salvación especial de 5+, que se incrementa a 3+ cuando esté combatiendo en un desafío.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11805,7 +11821,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="25b9-3525-3da7-3691" name="La armadura del gran Khan" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador la regla especial Piel escamosa (4+), y además podrá repetir sus tiradas de salvación por armadura fallidas. El portador no perderá la regla especial Caballería rápida por tener una tirada de salvación por armadura mejor de 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador la regla especial Piel escamosa (4+), y además podrá repetir sus tiradas de salvación por armadura fallidas. El portador no perderá la regla especial Caballería rápida por tener una tirada de salvación por armadura mejor de 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11825,7 +11841,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="74e8-ab64-f4ac-0b5e" name="Armadura del heraldo" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga al portador la regla especial Resistencia a la magia (1). además, todas las tiradas para herir exitosas contra el portador deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga al portador la regla especial Resistencia a la magia (1). además, todas las tiradas para herir exitosas contra el portador deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11845,7 +11861,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="1639-bc8d-445b-f8d6" name="Coraza del sanador" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial Regeneración (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial Regeneración (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11865,7 +11881,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="2d2c-b969-475c-25db" name="Escudo burlón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Las tiradas para herir contra el portador tendrán un penalizador de -1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Las tiradas para herir contra el portador tendrán un penalizador de -1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11892,7 +11908,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="68b0-5fc2-2486-cadc" name="Critino de preservación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador será inmune a los efectos de las reglas especiales Ataques envenenados y Heridas múltiples.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador será inmune a los efectos de las reglas especiales Ataques envenenados y Heridas múltiples.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11908,7 +11924,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="d5b9-75f7-6101-2f49" name="Piedra de la mala suerte" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todos los ataques, disparos y hechizos que afecten al portador deberán repetir sus tiradas exitosas para impactar y para herir contra el personaje. Esto no tiene efecto alguno en ataques/disparos/hechizos que impacten y/o que hieran automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todos los ataques, disparos y hechizos que afecten al portador deberán repetir sus tiradas exitosas para impactar y para herir contra el personaje. Esto no tiene efecto alguno en ataques/disparos/hechizos que impacten y/o que hieran automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11924,7 +11940,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="de4b-bd13-3001-ed76" name="Imán de condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga al portador Resistencia a la magia (3) contra hechizos del tipo Maldición y Daño directo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga al portador Resistencia a la magia (3) contra hechizos del tipo Maldición y Daño directo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11940,7 +11956,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="f714-8aaf-52d0-f012" name="Tatuajes demoníacos" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una tirada de salvación especial de 6+, que se ve incrementada a 4+ contra ataques no mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una tirada de salvación especial de 6+, que se ve incrementada a 4+ contra ataques no mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11964,7 +11980,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="737a-f6bd-bf20-e03a" name="Vara del brujo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene un bonificador de +1 en sus tiradas de lanzamiento de hechizo; este bonificador se incrementa hasta +3 si está lanzando un hechizo de tipo Maldición. Además, el portador conoce un hechizo adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene un bonificador de +1 en sus tiradas de lanzamiento de hechizo; este bonificador se incrementa hasta +3 si está lanzando un hechizo de tipo Maldición. Además, el portador conoce un hechizo adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11980,7 +11996,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="bc67-a5da-c09c-c0e8" name="Las siete llaves" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador podrá tomar sus hechizos del saber de Magia Oscura, y obtiene la regla especial Aura demoníaca (4+). Sin embargo, se verá afectado por los hechizos y habilidades que afecten a Demonios o que lo hagan de forma aumentada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador podrá tomar sus hechizos del saber de Magia Oscura, y obtiene la regla especial Aura demoníaca (4+). Sin embargo, se verá afectado por los hechizos y habilidades que afecten a Demonios o que lo hagan de forma aumentada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -11999,7 +12015,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="74b3-d340-7597-7d89" name="Pergamino de energía" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Siempre que el portador se vea obligado a realizar una tirada en la tabla de disfunciones mágicas, podrá tirar tres dados y descartar cualquiera de ellos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Siempre que el portador se vea obligado a realizar una tirada en la tabla de disfunciones mágicas, podrá tirar tres dados y descartar cualquiera de ellos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12015,7 +12031,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="2465-03f8-3f6b-6c5e" name="Capa de los demonios del viento" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Volar. Además, al inicio de cada una de sus fases de magia, tras determinar los vientos de la magia, el portador debe tirar 1D6: si obtiene un resultado de 4+, añade un dado de energía a su reserva de dados de energía. Sin embargo, si obtiene un 1, sufre un impacto de F3.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Volar. Además, al inicio de cada una de sus fases de magia, tras determinar los vientos de la magia, el portador debe tirar 1D6: si obtiene un resultado de 4+, añade un dado de energía a su reserva de dados de energía. Sin embargo, si obtiene un 1, sufre un impacto de F3.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12034,7 +12050,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="34b7-f6bb-4bba-0c30" name="Careta sombría" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador podrá elegir sus hechizos del Saber de las Sombras, y conocerá un hechizo adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador podrá elegir sus hechizos del Saber de las Sombras, y conocerá un hechizo adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12058,7 +12074,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="7e16-3b92-9216-8010" name="Mano de mono" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo cinco usos. El portador puede repetir una tirada de dado para impactar, herir, salvaciones de armadura, chequeos de atributo, lanzar o dispersar hechizos y canalizar dados de energía o dispersión. Sin embargo, el portador sufrirá un impacto de F4 que niega la tirada de salvación por armadura por cada resultado de 1 obtenido en la repetición.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo cinco usos. El portador puede repetir una tirada de dado para impactar, herir, salvaciones de armadura, chequeos de atributo, lanzar o dispersar hechizos y canalizar dados de energía o dispersión. Sin embargo, el portador sufrirá un impacto de F4 que niega la tirada de salvación por armadura por cada resultado de 1 obtenido en la repetición.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12074,7 +12090,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="27fb-0ffb-8cfb-0d7f" name="Flauta quiebrahuesos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Maldición que afecta a todas las unidades enemigas a 12” o menos del portador. Cada unidad afectada sufrirá inmediatamente 1D6 impactos de F3 que no permiten tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Maldición que afecta a todas las unidades enemigas a 12” o menos del portador. Cada unidad afectada sufrirá inmediatamente 1D6 impactos de F3 que no permiten tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12090,7 +12106,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="aaf3-a0f4-7252-8829" name="Gorro del Khan" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador es Inmune a la psicología. Además, cualquier unidad en la que se encuentre el personaje podrá repetir sus tiradas de Animosidad hobgoblin.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador es Inmune a la psicología. Además, cualquier unidad en la que se encuentre el personaje podrá repetir sus tiradas de Animosidad hobgoblin.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12109,7 +12125,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="758c-7f5d-229d-f4db" name="Dados trucados" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse antes de realizar una tirada para impactar, herir, tirada de salvación (por armadura o especial) o chequeo de atributo (incluyendo de Liderazgo). Puedes decidir el resultado de un único dado de esa tirada en lugar de tirar el dado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse antes de realizar una tirada para impactar, herir, tirada de salvación (por armadura o especial) o chequeo de atributo (incluyendo de Liderazgo). Puedes decidir el resultado de un único dado de esa tirada en lugar de tirar el dado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12133,7 +12149,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="2e16-749f-d3d9-3e90" name="Estandarte del Khan supremo" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades amigas a 12” o menos del portador considerarán los resultados de 1 en sus tiradas de Animosidad hobgoblin como resultados de 6. Además, el portador y la unidad en la que se encuentre causarán Miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades amigas a 12” o menos del portador considerarán los resultados de 1 en sus tiradas de Animosidad hobgoblin como resultados de 6. Además, el portador y la unidad en la que se encuentre causarán Miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12160,7 +12176,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="693c-85f5-8e90-08a3" name="Pabellón de la puntería" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad obtienen la regla especial Disparo rápido.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad obtienen la regla especial Disparo rápido.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12179,7 +12195,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="5b1b-1c94-b5ea-bdf2" name="Bandera de la furia" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtienen Carga devastadora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtienen Carga devastadora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12198,7 +12214,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="e0f7-6d3a-68c2-a6af" name="Estandarte de la traición" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad del portador considerará todos sus resultados de 2 en la tabla de Animosidad hobgoblin como resultados de 1. Además, podrán repetir sus tiradas fallidas para impactar y herir en combate cuerpo a cuerpo si están atacando a una unidad enemiga por el flanco o la retaguardia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad del portador considerará todos sus resultados de 2 en la tabla de Animosidad hobgoblin como resultados de 1. Además, podrán repetir sus tiradas fallidas para impactar y herir en combate cuerpo a cuerpo si están atacando a una unidad enemiga por el flanco o la retaguardia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12214,7 +12230,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="88b7-ed06-00f5-8287" name="Bandera de la muerte" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtienen Ataques envenenados. Si ya disponían de esta regla especial, sus Ataques envenenados herirán automáticamente también con resultados de 5 en sus tiradas para impactar, además de los resultados de 6 como es habitual.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtienen Ataques envenenados. Si ya disponían de esta regla especial, sus Ataques envenenados herirán automáticamente también con resultados de 5 en sus tiradas para impactar, además de los resultados de 6 como es habitual.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12233,7 +12249,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="f4a3-c2af-9695-c765" name="Estandarte flecha mortal" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos realizados por el portador y la unidad en la que se encuentre se resolverán con un bonificador de +1 a su Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos realizados por el portador y la unidad en la que se encuentre se resolverán con un bonificador de +1 a su Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -12257,7 +12273,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="8b77-534d-1763-811a" name="Tótem del viento de las estepas" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo infantería. El portador (y la unidad en la que se encuentre) obtienen la regla especial Veloces.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo infantería. El portador (y la unidad en la que se encuentre) obtienen la regla especial Veloces.</characteristic>
               </characteristics>
             </profile>
           </profiles>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="075f-8356-32a1-bdc4" name="Amazonas" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="075f-8356-32a1-bdc4" name="Amazonas" revision="3" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <selectionEntries>
     <selectionEntry id="c58b-f8d0-8e05-5b89" name="Guerreras amazonas" hidden="false" collective="false" import="true" type="unit">
       <infoLinks>
@@ -2054,6 +2054,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="b518-5cd6-433d-1704" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="50.0"/>
           </costs>
@@ -7327,7 +7330,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="4591-3531-9a89-c010" name="Espada de las estrellas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven con +1F y la regla especial Poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma se resuelven con +1F y la regla especial Poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7347,7 +7350,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="e872-58a4-62ff-8ade" name="Hoja estelar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga a Phentesilea +2A (ya está representado en su perfil). Los ataques realizados con este arma contarán con un bonificador de +1 en las tiradas para impactar. Además, tiene la regla especial Ataques flamígeros.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Otorga a Phentesilea +2A (ya está representado en su perfil). Los ataques realizados con este arma contarán con un bonificador de +1 en las tiradas para impactar. Además, tiene la regla especial Ataques flamígeros.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7367,7 +7370,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="2f2e-72ad-1d87-8a30" name="Amuleto de la luna" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todos los proyectiles dirigidos contra Penthesilea o su unidad sufrirán una penalización de -1 al impactar. Además, proporciona a su portadora una tirada de salvación especial de 4+ frente a proyectiles y Proyectiles mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todos los proyectiles dirigidos contra Penthesilea o su unidad sufrirán una penalización de -1 al impactar. Además, proporciona a su portadora una tirada de salvación especial de 4+ frente a proyectiles y Proyectiles mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7509,7 +7512,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="63b6-33ae-2734-ee70" name="Cuchillo de sacrificio a Rigg" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma niegan la tirada de salvación por armadura. Puede almacenar hasta dos dados de energía/dispersión para utilizarlos durante la siguiente fase de magia. Además, por cada herida causada con este arma puedes añadir un dado de energía o dispersión a tu siguiente fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con este arma niegan la tirada de salvación por armadura. Puede almacenar hasta dos dados de energía/dispersión para utilizarlos durante la siguiente fase de magia. Además, por cada herida causada con este arma puedes añadir un dado de energía o dispersión a tu siguiente fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7528,7 +7531,7 @@ D6 	Resultado (Agarrar y...)
               <profiles>
                 <profile id="aab8-a65f-1c63-eba3" name="Báculo de los ancestrales" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Otorga un bonificador de +1 a las tiradas de lanzamiento y dispersión de hechizos. Además, una vez por batalla puede desatar el poder del cetro para lanzar un único hechizo con Fuerza irresistible (incluyendo una versión potenciada) sin necesidad de gastar dados de energía ni provocar disfunción. Adicionalmente, una vez por batalla podrá dispersar automáticamente un hechizo enemigo cuando sea lanzado; no puede dispersar hechizos lanzados con Fuerza irresistible (este efecto es equivalente al del Pergamino de dispersión de magia).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Otorga un bonificador de +1 a las tiradas de lanzamiento y dispersión de hechizos. Además, una vez por batalla puede desatar el poder del cetro para lanzar un único hechizo con Fuerza irresistible (incluyendo una versión potenciada) sin necesidad de gastar dados de energía ni provocar disfunción. Adicionalmente, una vez por batalla podrá dispersar automáticamente un hechizo enemigo cuando sea lanzado; no puede dispersar hechizos lanzados con Fuerza irresistible (este efecto es equivalente al del Pergamino de dispersión de magia).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7753,7 +7756,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="6cfa-64b0-2d6f-1b41" name="Zarpas ancestrales" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Armas emparejadas. Los ataques realizados con estas armas se resuelven con un bonificador de +1F y tienen las reglas especiales Poder de penetración y Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Armas emparejadas. Los ataques realizados con estas armas se resuelven con un bonificador de +1F y tienen las reglas especiales Poder de penetración y Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7783,7 +7786,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="f2f5-5ab2-af6b-4612" name="Guantalete de la ira" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Arma de mano. Duplica el atributo de Fuerza de la portadora, reduciendo a la mitad su Iniciativa. Además, tiene la regla especial Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Arma de mano. Duplica el atributo de Fuerza de la portadora, reduciendo a la mitad su Iniciativa. Además, tiene la regla especial Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7803,7 +7806,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="a68a-f924-b967-ac30" name="Filo de luz estelar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Arma de mano. Proporciona un bonificador de +1F y tiene la regla especial Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Arma de mano. Proporciona un bonificador de +1F y tiene la regla especial Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7823,7 +7826,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="1ace-187c-d839-9ad0" name="Desbrozajunglas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Arma de mano. Los ataques realizados con esta arma imponen un penalizador de -3 a las tiradas de salvación por armadura (adicional al penalizador por la Fuerza de quien la empuñe).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Solo Amazonas. Arma de mano. Los ataques realizados con esta arma imponen un penalizador de -3 a las tiradas de salvación por armadura (adicional al penalizador por la Fuerza de quien la empuñe).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7850,7 +7853,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="99e5-8241-099a-1698" name="Partefémur" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Maza de Sierra. Solo Amazonas. Tiene la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Maza de Sierra. Solo Amazonas. Tiene la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7878,7 +7881,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="393d-c622-9c31-8356" name="Armadura de los dioses" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Solo Noble Amazona. Armadura pesada. Otorga a su portadora una tirada de salvación por armadura de 2+ y un bonificador de +1F y +1R. Además, puede repetir sus tiradas de salvación por armadura fallidas. Sin embargo, no podrá elegir monturas de ningún tipo ni podrá unirse a unidades.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Solo Noble Amazona. Armadura pesada. Otorga a su portadora una tirada de salvación por armadura de 2+ y un bonificador de +1F y +1R. Además, puede repetir sus tiradas de salvación por armadura fallidas. Sin embargo, no podrá elegir monturas de ningún tipo ni podrá unirse a unidades.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7905,7 +7908,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="f3a2-08cf-9c9b-3d52" name="Penacho de plumas Coatl" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Solo hechiceras. Proporciona a su portadora la regla especial Resistencia mágica (2) y una tirada de salvación especial de 4+. Adicionalmente, conocerá el hechizo “Disipación de magia” de Alta Magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Solo hechiceras. Proporciona a su portadora la regla especial Resistencia mágica (2) y una tirada de salvación especial de 4+. Adicionalmente, conocerá el hechizo “Disipación de magia” de Alta Magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7932,7 +7935,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="08a8-af6a-1def-973b" name="Sello de luz protectora" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Solo Amazonas. Otorga a su portadora una tirada de salvación especial de 6+ contra ataques en cuerpo a cuerpo y proyectiles de F3 o inferior, que aumentará en un punto por cada punto de fuerza superior hasta un máximo de 2+ (contra ataques de F7 o más).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Solo Amazonas. Otorga a su portadora una tirada de salvación especial de 6+ contra ataques en cuerpo a cuerpo y proyectiles de F3 o inferior, que aumentará en un punto por cada punto de fuerza superior hasta un máximo de 2+ (contra ataques de F7 o más).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7956,7 +7959,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="1bb5-d845-a105-ab16" name="Proyector de conflagración ardiente" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo Amazonas. La portadora obtendrá un Arma de aliento de F4 con la regla especial Ataques solo flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo Amazonas. La portadora obtendrá un Arma de aliento de F4 con la regla especial Ataques solo flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7978,7 +7981,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="789b-119e-0b7d-5638" name="Ojo divino" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo Amazonas. Las unidades enemigas ocultas en un bosque o edificio de R7 como máximo serán visibles para la portadora y su unidad, aunque seguirán contando con cobertura pesada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo Amazonas. Las unidades enemigas ocultas en un bosque o edificio de R7 como máximo serán visibles para la portadora y su unidad, aunque seguirán contando con cobertura pesada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7994,7 +7997,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="490f-59d3-f49b-b43b" name="Frutos de la ira" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo Amazonas. Durante la fase de disparo, la portadora podrá arrojar un fruto. Éstos se lanzan como una catapulta, pero con alcance 0-12”, y desvía la mitad del resultado obtenido en el dado de artillería. Utiliza la plantilla redonda pequeña (utilizando las reglas habituales para impactos parciales). Las miniaturas afectadas recibirán un impacto de F4 con la regla especial Poder de penetración. No tiene impacto central diferenciado. Si obtienes un resultado de problemas, coloca la plantilla centrada sobre la lanzadora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo Amazonas. Durante la fase de disparo, la portadora podrá arrojar un fruto. Éstos se lanzan como una catapulta, pero con alcance 0-12”, y desvía la mitad del resultado obtenido en el dado de artillería. Utiliza la plantilla redonda pequeña (utilizando las reglas habituales para impactos parciales). Las miniaturas afectadas recibirán un impacto de F4 con la regla especial Poder de penetración. No tiene impacto central diferenciado. Si obtienes un resultado de problemas, coloca la plantilla centrada sobre la lanzadora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8018,7 +8021,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="0c3c-74a4-cdb9-4ee7" name="Imán del Aethyr" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Solo Amazonas. La portadora obtiene un bonificador de +2 en sus tiradas para canalizar dados de energía y dispersión. Durante tu fase de magia puedes utilizar el Imán del Aethyr para generar 1D3 dados de energía adicionales que solo puede utilizar la propia hechicera. Sin embargo, los resultados naturales de 1 en estos dados contarán como si fueran un 6 a efectos de provocar una disfunción mágica.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Solo Amazonas. La portadora obtiene un bonificador de +2 en sus tiradas para canalizar dados de energía y dispersión. Durante tu fase de magia puedes utilizar el Imán del Aethyr para generar 1D3 dados de energía adicionales que solo puede utilizar la propia hechicera. Sin embargo, los resultados naturales de 1 en estos dados contarán como si fueran un 6 a efectos de provocar una disfunción mágica.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8042,7 +8045,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="495c-82da-781e-81c2" name="Báculo solar" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Se trata de un Objeto portahechizos de nivel de energía 2. Contiene un hechizo de proyectil mágico con un alcance de 18”. La unidad objetivo sufrirá 2D6 impactos de F4 con la regla especial Ataques solo flamígeros. Los impactos realizados por este hechizo niegan la tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Se trata de un Objeto portahechizos de nivel de energía 2. Contiene un hechizo de proyectil mágico con un alcance de 18”. La unidad objetivo sufrirá 2D6 impactos de F4 con la regla especial Ataques solo flamígeros. Los impactos realizados por este hechizo niegan la tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8066,7 +8069,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="d366-5024-69c5-4b07" name="Pabellón del rocio rejuvenecedor" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo Amazonas. La portadora y su unidad obtendrán las reglas especiales Regeneración (5+) e Inmune al fuego. Si ya disponen de la regla Regeneración, ésta aumenta en +2 (hasta un máximo de 3+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo Amazonas. La portadora y su unidad obtendrán las reglas especiales Regeneración (5+) e Inmune al fuego. Si ya disponen de la regla Regeneración, ésta aumenta en +2 (hasta un máximo de 3+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8094,7 +8097,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="c6ff-0e45-a033-ff02" name="Estandarte de la visión de Koka-Kalim" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Solo Culto de Koka-Kalim. Puedes activar el estandarte al comienzo de cualquier ronda de combate cuerpo a cuerpo. La unidad podrá repetir todas sus tiradas fallidas para impactar y para herir.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Solo Culto de Koka-Kalim. Puedes activar el estandarte al comienzo de cualquier ronda de combate cuerpo a cuerpo. La unidad podrá repetir todas sus tiradas fallidas para impactar y para herir.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8118,7 +8121,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="b1b1-b40c-f5bd-18cc" name="Pendones de muerte certera" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo Amazonas. Los disparos con Arco efectuados por la portadora de este estandarte o su unidad adquieren la regla especial Poder de penetración.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo Amazonas. Los disparos con Arco efectuados por la portadora de este estandarte o su unidad adquieren la regla especial Poder de penetración.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8137,7 +8140,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="ee0a-7320-e912-5e61" name="Estandarte de la espesura" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Solo Amazonas. Los disparos realizados por la unidad que porte el estandarte ignorarán un rango de cobertura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Solo Amazonas. Los disparos realizados por la unidad que porte el estandarte ignorarán un rango de cobertura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8161,7 +8164,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="9c0e-75f5-5190-c7b3" name="Dagas del sacrificio" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Solo hechiceros/as o Sacerdotisa Serpiente. Los ataques realizados con estas armas tienen la regla especial Poder de penetración y contarán con un bonificador de +1 en sus tiradas para impactar. Además, quien las porte podrá tirar un dado adicional para canalizar durante la siguiente fase de magia a los que pueda tirar de manera habitual por cada herida causada en combate cuerpo a cuerpo,.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Solo hechiceros/as o Sacerdotisa Serpiente. Los ataques realizados con estas armas tienen la regla especial Poder de penetración y contarán con un bonificador de +1 en sus tiradas para impactar. Además, quien las porte podrá tirar un dado adicional para canalizar durante la siguiente fase de magia a los que pueda tirar de manera habitual por cada herida causada en combate cuerpo a cuerpo,.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8190,7 +8193,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="8ea5-c0b1-2c63-2b82" name="Fetiches de posesión" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Solo Curanderos Pigmeos. Designa una única miniatura aliada al comienzo de la batalla si quien porta los fetiches es un curandero del Saber de la Vida, o una miniatura enemiga si se trata de un curandero del Saber de la Muerte. Siendo del Saber de la Vida, la miniatura elegida no será retirada del campo de batalla cuando su atributo de Heridas quede reducido a cero, sino que permanecerá en el campo de batalla con una única Herida y el poder de los fetiches se consumirá. Siendo del Saber de la Muerte, el curandero podrá decidir realizar sus ataques en cuerpo a cuerpo sobre el fetiche -esté o no trabado en combate-, siendo la miniatura elegida quien los sufra; estos ataques se resolverán según las reglas habituales de combate cuerpo a cuerpo aunque negarán la tirada de salvación por armadura del defensor, y si la miniatura elegida es retirada del campo de batalla el poder de los fetiches se agotará. Cualquier número de Curanderos Pigmeos del ejército podrá equiparse con Fetiches de posesión.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Solo Curanderos Pigmeos. Designa una única miniatura aliada al comienzo de la batalla si quien porta los fetiches es un curandero del Saber de la Vida, o una miniatura enemiga si se trata de un curandero del Saber de la Muerte. Siendo del Saber de la Vida, la miniatura elegida no será retirada del campo de batalla cuando su atributo de Heridas quede reducido a cero, sino que permanecerá en el campo de batalla con una única Herida y el poder de los fetiches se consumirá. Siendo del Saber de la Muerte, el curandero podrá decidir realizar sus ataques en cuerpo a cuerpo sobre el fetiche -esté o no trabado en combate-, siendo la miniatura elegida quien los sufra; estos ataques se resolverán según las reglas habituales de combate cuerpo a cuerpo aunque negarán la tirada de salvación por armadura del defensor, y si la miniatura elegida es retirada del campo de batalla el poder de los fetiches se agotará. Cualquier número de Curanderos Pigmeos del ejército podrá equiparse con Fetiches de posesión.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8214,7 +8217,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="7d87-4649-bf8e-c299" name="Máscara de Brobat" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Solo Cacique Pigmeo. Yelmo (incrementa en +1 la tirada de salvación por armadura de su portador). Otorga una tirada de salvación especial de 5+ y causa Miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Solo Cacique Pigmeo. Yelmo (incrementa en +1 la tirada de salvación por armadura de su portador). Otorga una tirada de salvación especial de 5+ y causa Miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8241,7 +8244,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="b76b-b7e5-66ab-828b" name="Abalorios de Beesbok" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Solo Pigmeos. Otorga al portador las reglas especiales Regeneración (5+) e Inmune a veneno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Solo Pigmeos. Otorga al portador las reglas especiales Regeneración (5+) e Inmune a veneno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8269,7 +8272,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="f194-5fbd-23fd-56e0" name="Trancazo" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Solo Pigmeos. Arma a dos manos. No tiene penalizador por Lenta.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Solo Pigmeos. Arma a dos manos. No tiene penalizador por Lenta.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8296,7 +8299,7 @@ D6 	Resultado (Agarrar y...)
           <profiles>
             <profile id="c619-9131-e641-791f" name="Yajé-Williamsii" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo Pigmeos. Un solo uso. Al principio de la batalla, un personaje que lleve el Yajé-Williamsii podrá obligar a una única unidad de Guerreros Pigmeos a que se trague el misterioso engrudo. Los campeones recibirán sus efectos. Tira 1D6 en la tabla de Efectos del Yajé- Williamsii y aplica el resultado durante toda la batalla:
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo Pigmeos. Un solo uso. Al principio de la batalla, un personaje que lleve el Yajé-Williamsii podrá obligar a una única unidad de Guerreros Pigmeos a que se trague el misterioso engrudo. Los campeones recibirán sus efectos. Tira 1D6 en la tabla de Efectos del Yajé- Williamsii y aplica el resultado durante toda la batalla:
 D6 Efectos del Yajé-Williamsii
 1 Indigestión: La unidad sufre 1D6 impactos de F3 sin posibilidad de salvación por armadura. No tiene ningún otro efecto adicional.
 2-3 Visiones rencorosas: La unidad obtiene la regla especial Odio (todos los enemigos).

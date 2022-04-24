@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="bf04-9129-145c-09f0" name="Clan Strigoi" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="Corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="bf04-9129-145c-09f0" name="Clan Strigoi" revision="9" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="Corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="f794-894b-fc0e-c533" name="Poder vampírico">
       <characteristicTypes>
-        <characteristicType id="a9e3-1cd4-06b8-1a17" name="Propiedades mágicas"/>
+        <characteristicType id="a9e3-1cd4-06b8-1a17" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -193,6 +193,9 @@
                   </conditions>
                 </modifier>
               </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="44e5-e7cc-3d39-bb87" type="max"/>
+              </constraints>
               <profiles>
                 <profile id="53c1-f72c-5e2b-bb68" name="Pretorianos" hidden="false" typeId="322d-2622-d325-8e5a" typeName="Objeto">
                   <characteristics>
@@ -203,10 +206,11 @@
               <infoLinks>
                 <infoLink id="1058-c298-9a58-9fe8" name="Inmune al pánico" hidden="false" targetId="06f4-bd6a-c34d-baed" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
-          </selectionEntries>
-          <entryLinks>
-            <entryLink id="ed2c-f82b-174d-598b" name="Emboscada" hidden="false" collective="false" import="true" targetId="a7e7-52e9-caed-7c02" type="selectionEntry">
+            <selectionEntry id="8544-46a7-ac83-c3e6" name="Emboscada" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
                 <modifier type="increment" field="points" value="2.0">
                   <repeats>
@@ -218,9 +222,24 @@
                     <condition field="selections" scope="5508-b3f9-b3bd-8c9d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="f094-c062-3e62-e512" type="equalTo"/>
                   </conditions>
                 </modifier>
+                <modifier type="increment" field="fa54-5540-da3e-0541" value="1.0">
+                  <repeats>
+                    <repeat field="selections" scope="5508-b3f9-b3bd-8c9d" value="2.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ba51-5b02-0004-df73" repeats="1" roundUp="false"/>
+                  </repeats>
+                </modifier>
               </modifiers>
-            </entryLink>
-          </entryLinks>
+              <constraints>
+                <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="fa54-5540-da3e-0541" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec14-5746-b2d1-17b5" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="4152-ef06-fb38-21a5" name="Emboscada" hidden="false" targetId="26d5-64a4-893f-42f3" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -228,6 +247,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="024f-6b10-239c-1787" name="Esqueletos" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="76df-fe57-59a4-0ca1" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5508-b3f9-b3bd-8c9d" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76df-fe57-59a4-0ca1" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="c940-ed40-4357-3e8a" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="c1d6-c49b-2842-9b9b" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
@@ -458,13 +487,22 @@
             </modifier>
           </modifiers>
         </entryLink>
-        <entryLink id="e2da-49d2-c9ac-f385" name="Striganos, Esqueletos o Zombis" hidden="false" collective="false" import="true" targetId="9e2a-6768-c0cf-30b1" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
     <selectionEntry id="9624-a594-0fa8-5558" name="Zombis" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="12eb-4af0-75be-c898" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5508-b3f9-b3bd-8c9d" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="12eb-4af0-75be-c898" type="max"/>
+      </constraints>
       <infoLinks>
         <infoLink id="ed97-6520-84f5-74b6" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="ef2d-fc8a-6751-df5b" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
@@ -546,9 +584,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="0d00-13b9-a824-24bb" name="Striganos, Esqueletos o Zombis" hidden="false" collective="false" import="true" targetId="9e2a-6768-c0cf-30b1" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -738,9 +773,9 @@
           <selectionEntries>
             <selectionEntry id="5351-c4e4-bd3b-6b88" name="Lobos espectrales" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
-                <modifier type="increment" field="points" value="9">
+                <modifier type="increment" field="points" value="9.0">
                   <repeats>
-                    <repeat field="selections" scope="4fa2-7c8a-b4d1-9a8f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="752b-380d-26f6-3326" repeats="1" roundUp="false"/>
+                    <repeat field="selections" scope="4fa2-7c8a-b4d1-9a8f" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="c464-48c1-6dbd-ce35" repeats="1" roundUp="false"/>
                   </repeats>
                 </modifier>
                 <modifier type="set" field="hidden" value="true">
@@ -1449,7 +1484,7 @@
       <selectionEntryGroups>
         <selectionEntryGroup id="2766-3ba6-fc30-1f57" name="Opciones" hidden="false" collective="false" import="true">
           <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="541e-a871-a6b3-e107" type="max"/>
+            <constraint field="selections" scope="parent" value="2.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="541e-a871-a6b3-e107" type="max"/>
           </constraints>
           <selectionEntries>
             <selectionEntry id="83d2-8af8-ca44-1323" name="Zarpas mortales" hidden="false" collective="false" import="true" type="upgrade">
@@ -3015,7 +3050,7 @@
               <profiles>
                 <profile id="b1a4-c02f-b64d-51b3" name="Anillo de Lybaras" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Rametep la regla especial Regeneración (3+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Rametep la regla especial Regeneración (3+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3034,7 +3069,7 @@
               <profiles>
                 <profile id="dfd0-5cf3-b1ea-17a2" name="Colgante de Vorag" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de potenciación que toma como objetivo una unidad de necrófagos, striganos u horrores de la cripta a 24” o menos del lanzador y permanece un turno. Por la duración del hechizo, la unidad afectada obtendrá la regla especial Furia asesina.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de potenciación que toma como objetivo una unidad de necrófagos, striganos u horrores de la cripta a 24” o menos del lanzador y permanece un turno. Por la duración del hechizo, la unidad afectada obtendrá la regla especial Furia asesina.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3116,7 +3151,7 @@
               <profiles>
                 <profile id="2bcf-1414-d23f-c5e9" name="Músculos de acero" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">+1F, para un total de 6.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">+1F, para un total de 6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3132,7 +3167,7 @@
               <profiles>
                 <profile id="b002-d11e-799b-838f" name="Odio eterno" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Odia a todos sus enemigos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Odia a todos sus enemigos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3151,7 +3186,7 @@
               <profiles>
                 <profile id="ac3c-5519-aa4d-617e" name="Horror sobrenatural" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3170,7 +3205,7 @@
               <profiles>
                 <profile id="edac-9798-ad22-79ce" name="Señor de los necrófagos" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Todas las unidades de necrófagos de tu ejército obtienen la regla especial Vanguardia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Todas las unidades de necrófagos de tu ejército obtienen la regla especial Vanguardia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3309,7 +3344,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a74c-6784-158e-0b6b" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="ff1e-0bc0-5e16-9773" name="Poderes vampíricos del clan Strigoi" hidden="false" collective="false" import="true" targetId="b671-11fa-3897-1589" type="selectionEntryGroup"/>
+                    <entryLink id="ff1e-0bc0-5e16-9773" name="Poderes vampíricos del clan Strigoi tropa" hidden="false" collective="false" import="true" targetId="046b-86f8-f868-f464" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3338,6 +3373,9 @@
               <infoLinks>
                 <infoLink id="44ab-9198-ba63-554a" name="Carga devastadora" hidden="false" targetId="dbe6-c910-7f37-aeac" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="d49a-bde9-062d-6b7f" name="Pellejo ferreo" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3353,6 +3391,9 @@
               <infoLinks>
                 <infoLink id="6bd8-9520-4a55-fbdd" name="Piel escamosa (4+)" hidden="false" targetId="478f-4519-03d3-5004" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3383,7 +3424,7 @@
         <infoLink id="eb33-a240-1e3b-587e" name="Regeneración (5+)" hidden="false" targetId="515b-514f-7ee3-6cc3" type="rule"/>
       </infoLinks>
       <categoryLinks>
-        <categoryLink id="b673-b245-7f77-fbc3" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
+        <categoryLink id="22f7-e3a9-0d9f-29b4" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="d6ea-9cc1-8cd9-2bf0" name="Cortesano strigoi" hidden="false" collective="false" import="true" type="model">
@@ -3480,7 +3521,7 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="829f-db5e-e3ab-523c" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="a864-f157-ccee-6591" name="Poderes vampíricos del clan Strigoi" hidden="false" collective="false" import="true" targetId="b671-11fa-3897-1589" type="selectionEntryGroup"/>
+                    <entryLink id="a864-f157-ccee-6591" name="Poderes vampíricos del clan Strigoi tropa" hidden="false" collective="false" import="true" targetId="046b-86f8-f868-f464" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
               </selectionEntryGroups>
@@ -3530,6 +3571,9 @@
               <infoLinks>
                 <infoLink id="01ad-50b0-28d7-51e6" name="Vanguardia" hidden="false" targetId="1bd0-0982-01a3-ed62" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
             <selectionEntry id="ce95-9863-4d64-1717" name="Emboscada" hidden="false" collective="false" import="true" type="upgrade">
               <modifiers>
@@ -3563,6 +3607,9 @@
               <infoLinks>
                 <infoLink id="86f5-d03d-3714-65ec" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
             </selectionEntry>
           </selectionEntries>
         </selectionEntryGroup>
@@ -3617,7 +3664,7 @@
               <profiles>
                 <profile id="84db-4072-e55e-64ff" name="Cáliz negro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada uno de tus turnos, si Gashnag no se encuentra trabado en combate cuerpo a cuerpo, puede beber del Cáliz para recuperar todas las heridas que hubiese perdido durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada uno de tus turnos, si Gashnag no se encuentra trabado en combate cuerpo a cuerpo, puede beber del Cáliz para recuperar todas las heridas que hubiese perdido durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3633,7 +3680,7 @@
               <profiles>
                 <profile id="c196-3fd8-3386-d48f" name="Zwei-Händer de Gashnag" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los ataques con este arma tienen la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los ataques con este arma tienen la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3731,7 +3778,7 @@
               <profiles>
                 <profile id="1b87-3c50-d473-7004" name="La encarnación del miedo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3747,7 +3794,7 @@
               <profiles>
                 <profile id="2131-9727-0ecc-06fc" name="Odio eterno" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Odia a todos sus enemigos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Odia a todos sus enemigos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3766,7 +3813,7 @@
               <profiles>
                 <profile id="c6cb-c261-314e-52ee" name="Pellejo férreo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Piel escamosa 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Piel escamosa 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3855,7 +3902,7 @@
               <profiles>
                 <profile id="baff-3ef8-c9c6-2a99" name="Instrumentos de tortura" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Si Ushoran mata a un personaje u oficial enemigo en un desafío, todas las unidades enemigas implicadas en el combate quedan Apabulladas hasta el final del turno de jugador en curso.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Si Ushoran mata a un personaje u oficial enemigo en un desafío, todas las unidades enemigas implicadas en el combate quedan Apabulladas hasta el final del turno de jugador en curso.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3938,7 +3985,7 @@
               <profiles>
                 <profile id="dd26-335b-a1ed-99d0" name="Músculos de acero" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">+1F, para un total de 6.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">+1F, para un total de 6.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3954,7 +4001,7 @@
               <profiles>
                 <profile id="27bc-5832-0ed7-699c" name="Odio eterno" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Odia a todos sus enemigos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Odia a todos sus enemigos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3973,7 +4020,7 @@
               <profiles>
                 <profile id="ab3b-4e8c-c6a5-6f10" name="Horror sobrenatural" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3992,7 +4039,7 @@
               <profiles>
                 <profile id="4475-11cc-a48b-6cda" name="Pellejo férreo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Piel escamosa 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Piel escamosa 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4011,7 +4058,7 @@
               <profiles>
                 <profile id="2ddc-0aad-8287-d760" name="La encarnación del miedo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4027,7 +4074,7 @@
               <profiles>
                 <profile id="1d86-ac8c-6550-eb2b" name="Fuerza imparable" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Heridas múltiples 1D3.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Heridas múltiples 1D3.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4046,7 +4093,7 @@
               <profiles>
                 <profile id="ec31-2d23-47d7-a268" name="Vitalidad impía" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Regeneración 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Regeneración 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4065,7 +4112,7 @@
               <profiles>
                 <profile id="ffa9-8fbb-8dad-ccb2" name="Rostro del ser amado" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">-1 para impactarle en cuerpo a cuerpo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">-1 para impactarle en cuerpo a cuerpo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4081,7 +4128,7 @@
               <profiles>
                 <profile id="bfda-897e-bed0-28ed" name="Celeridad de ultratumba" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Esquivar 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Esquivar 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4100,7 +4147,7 @@
               <profiles>
                 <profile id="ac11-bf02-7a2b-98d2" name="Estirpe noble de Mourkhain" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El personaje y todas las unidades de necrófagos (incluyendo stríganos) a 12” o menos de él obtienen la regla especial Tozudez.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El personaje y todas las unidades de necrófagos (incluyendo stríganos) a 12” o menos de él obtienen la regla especial Tozudez.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4181,7 +4228,7 @@
               <profiles>
                 <profile id="5766-7626-ec4b-f424" name="Vitalidad impía" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Regeneración 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Regeneración 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4200,7 +4247,7 @@
               <profiles>
                 <profile id="42d4-a56f-52f6-0379" name="Garras afiladas" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4219,7 +4266,7 @@
               <profiles>
                 <profile id="12cc-1bd5-b099-bc89" name="Cazadora en la oscuridad" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Explorador.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Explorador.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4238,7 +4285,7 @@
               <profiles>
                 <profile id="b83d-03e6-41ee-8fe0" name="Odio sin límites" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Odia a todos los enemigos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Odia a todos los enemigos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4338,6 +4385,16 @@
       </costs>
     </selectionEntry>
     <selectionEntry id="acf0-e11e-34be-7dd1" name="Striganos" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="increment" field="6e4f-efd9-98f8-4ad3" value="1.0">
+          <repeats>
+            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5508-b3f9-b3bd-8c9d" repeats="1" roundUp="false"/>
+          </repeats>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e4f-efd9-98f8-4ad3" type="max"/>
+      </constraints>
       <rules>
         <rule id="0459-3c89-bf4e-b375" name="Carroñeros" hidden="false">
           <description>No pueden perseguir ni arrasar.</description>
@@ -4462,9 +4519,6 @@
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
-      <entryLinks>
-        <entryLink id="16c6-2f4d-5483-b2c7" name="Striganos, Esqueletos o Zombis" hidden="false" collective="false" import="true" targetId="9e2a-6768-c0cf-30b1" type="selectionEntry"/>
-      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -4611,7 +4665,11 @@
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="219c-532b-6e5f-6962" type="max"/>
                   </constraints>
                   <entryLinks>
-                    <entryLink id="deab-9f85-3804-33a6" name="Armas Mágicas. Arma a dos manos" hidden="false" collective="false" import="true" targetId="fce8-e8d3-eae9-d17a" type="selectionEntryGroup"/>
+                    <entryLink id="deab-9f85-3804-33a6" name="Armas mágicas. Clan Strigoi. Armas emparejadas" hidden="false" collective="false" import="true" targetId="6e11-a17a-da66-b5f0" type="selectionEntryGroup"/>
+                    <entryLink id="3856-7e07-f56f-31b9" name="Armas mágicas. Arma de mano" hidden="false" collective="false" import="true" targetId="adb2-f22c-21c8-53e7" type="selectionEntryGroup"/>
+                    <entryLink id="125e-69c5-b298-ce0e" name="Armas mágicas. Armas emparejadas" hidden="false" collective="false" import="true" targetId="5ee4-83c8-8e2f-256c" type="selectionEntryGroup"/>
+                    <entryLink id="72cc-145f-3929-6dae" name="Armas mágicas. Clan Strigoi. Maistru. Armas emparejadas" hidden="false" collective="false" import="true" targetId="1746-c3b3-1b4b-9cc5" type="selectionEntryGroup"/>
+                    <entryLink id="1080-0a87-8fb6-ee3d" name="Armas mágicas. Mayal" hidden="false" collective="false" import="true" targetId="518c-5b40-e21f-57a0" type="selectionEntryGroup"/>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="c371-d105-4b43-d3ee" name="Objetos hechizados" hidden="false" collective="false" import="true">
@@ -4687,7 +4745,7 @@
             </profile>
           </profiles>
           <costs>
-            <cost name="pts" typeId="points" value="125.0"/>
+            <cost name="pts" typeId="points" value="60.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -4877,6 +4935,130 @@
               </selectionEntries>
             </selectionEntryGroup>
           </selectionEntryGroups>
+        </selectionEntryGroup>
+      </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="c6ef-db17-5aab-06d5" name="Yaghur" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="47e2-fcb4-bf92-790d" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="e906-29b2-88bd-6f52" name="¡Están vivos!" hidden="false">
+          <description>Son seres vivos, por lo que no están sujetos a las reglas para no muertos.</description>
+        </rule>
+        <rule id="5450-2c7d-a1f0-7a08" name="Odio (Skavens)" hidden="false"/>
+        <rule id="fc02-579d-c873-5b07" name="Carroñeros Yaghur" hidden="false">
+          <description>Los Yaghur nunca pueden perseguir ni arrasar (pese a tener Furia asesina), tan sólo Reformar. Ningún personaje puede unirse a una unidad de Yaghur.</description>
+        </rule>
+        <rule id="491d-fe25-0249-b8d0" name="Emboscada" hidden="false">
+          <description>Las unidades de Yaghur no se despliegan en el campo de batalla al inicio de la partida, sino que se mantendrán como Refuerzos. Las unidades que emboscan pueden entrar al campo de batalla por cualquier borde del tablero (salvo que sea intransitable, como los bordes largos en el escenario “Batalla por el paso”).</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="3d14-88bb-e944-ce71" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="0fa7-e927-e186-4abd" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
+        <infoLink id="1940-24cc-3579-6e3b" name="Hostigadores" hidden="false" targetId="999c-d422-6c91-46dd" type="rule"/>
+        <infoLink id="5e03-9cbb-8814-5a71" name="Carga devastadora" hidden="false" targetId="dbe6-c910-7f37-aeac" type="rule"/>
+        <infoLink id="d727-22c4-7bb6-c483" name="Ataques envenenados" hidden="false" targetId="9867-a512-772e-f61c" type="rule"/>
+        <infoLink id="f241-45c5-162f-4112" name="Furia asesina" hidden="false" targetId="145c-6914-de8b-e9cc" type="rule"/>
+        <infoLink id="fa41-375e-bc1c-e61a" name="Odio" hidden="false" targetId="a187-f92e-2178-84ff" type="rule"/>
+        <infoLink id="4f64-61b4-647b-597f" name="Regeneración (6+)" hidden="false" targetId="4aee-7485-a141-cd20" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="931b-080a-53fb-b603" name="New CategoryLink" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="96c1-e801-9bea-3560" name="Yaghur" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="15.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="d077-bead-3d20-d2af" type="max"/>
+            <constraint field="selections" scope="parent" value="5.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fcb8-436e-0a3d-3d18" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="0d4f-bdd1-b838-6daa" name="Yaghur" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">5</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">1</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">2</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="14.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="83ff-eb4f-5e85-0d05" name="Equipo" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4815-c03b-83da-ebad" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1ede-6c4f-a78b-13a1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="67cc-6205-9418-3063" name="Garras" hidden="false" collective="false" import="true" type="model">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="122a-579e-2402-0d59" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f3b5-ecb1-18cb-e643" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="79db-de6f-32d9-fc44" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <selectionEntryGroups>
+        <selectionEntryGroup id="eab7-42d6-82eb-e849" name="Grupo de mando" hidden="false" collective="false" import="true">
+          <selectionEntries>
+            <selectionEntry id="1b70-d731-7822-22fe" name="Yaghur anciano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37cb-f356-2396-3087" type="max"/>
+              </constraints>
+              <profiles>
+                <profile id="46a7-88ee-995a-5b51" name="Yaghur anciano" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+                  <characteristics>
+                    <characteristic name="M" typeId="4d23232344415441232323">5</characteristic>
+                    <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                    <characteristic name="HP" typeId="425323232344415441232323">1</characteristic>
+                    <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                    <characteristic name="R" typeId="5423232344415441232323">4</characteristic>
+                    <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                    <characteristic name="I" typeId="4923232344415441232323">4</characteristic>
+                    <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                    <characteristic name="L" typeId="4c4423232344415441232323">7</characteristic>
+                    <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323"/>
+                    <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                    <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="6.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
       <costs>
@@ -5135,24 +5317,14 @@
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
     </selectionEntry>
-    <selectionEntry id="9e2a-6768-c0cf-30b1" name="Striganos, Esqueletos o Zombis" hidden="false" collective="false" import="true" type="upgrade">
-      <modifiers>
-        <modifier type="increment" field="c5e1-9b8e-0151-4aef" value="1.0">
-          <repeats>
-            <repeat field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="5508-b3f9-b3bd-8c9d" repeats="1" roundUp="false"/>
-          </repeats>
-        </modifier>
-      </modifiers>
-      <constraints>
-        <constraint field="selections" scope="roster" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="true" id="c5e1-9b8e-0151-4aef" type="max"/>
-        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9630-7fc2-9c45-db32" type="max"/>
-      </constraints>
-    </selectionEntry>
     <selectionEntry id="5294-9166-03c6-eec1" name="Pretorianos" hidden="false" collective="false" import="true" type="upgrade">
       <constraints>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5aed-320a-daf4-02c3" type="max"/>
         <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff5f-cb50-4a42-5677" type="min"/>
       </constraints>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -5170,7 +5342,7 @@
           <profiles>
             <profile id="b7a9-f4c3-cc77-3a6d" name="Cadenas de muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los impactos de las Cadenas de muerte se resolverán con la regla especial Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los impactos de las Cadenas de muerte se resolverán con la regla especial Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5199,7 +5371,7 @@
           <profiles>
             <profile id="8901-2eb9-2f05-fd58" name="Familiar necrótico" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El familiar necrótico permite repetir las tiradas de los dados de invocación de los hechizos Invocación de Nehek y Animar muertos que lance el portador. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El familiar necrótico permite repetir las tiradas de los dados de invocación de los hechizos Invocación de Nehek y Animar muertos que lance el portador. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5215,7 +5387,7 @@
           <profiles>
             <profile id="86bf-d954-7796-08ac" name="Relicario de Abn-i-khat" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del portador, éste añade a su reserva de energía 1D3 dados de energía adicionales. Estos dados sólo podrán ser usados por el portador, y debes diferenciarlos de tus otros dados de energía. No podrás guardar esos dados en ningún objeto. Cada resultado de 1 en uno de esos dados al lanzar un hechizo causará al portador una herida sin tirada de salvación por armadura; al final de cada fase de magia, el portador sufrirá una herida sin tirada de salvación por armadura por cada uno de esos dados que no haya gastado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del portador, éste añade a su reserva de energía 1D3 dados de energía adicionales. Estos dados sólo podrán ser usados por el portador, y debes diferenciarlos de tus otros dados de energía. No podrás guardar esos dados en ningún objeto. Cada resultado de 1 en uno de esos dados al lanzar un hechizo causará al portador una herida sin tirada de salvación por armadura; al final de cada fase de magia, el portador sufrirá una herida sin tirada de salvación por armadura por cada uno de esos dados que no haya gastado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5231,7 +5403,7 @@
           <profiles>
             <profile id="0e26-7adf-cf58-7a81" name="Talismán negro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Permite a su portador guardar un dado de energía o dispersión al final de cualquier fase de magia para transformarlo en un dado del tipo que corresponda en la siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Permite a su portador guardar un dado de energía o dispersión al final de cualquier fase de magia para transformarlo en un dado del tipo que corresponda en la siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5255,7 +5427,7 @@
           <profiles>
             <profile id="9ab4-b39c-66d5-2379" name="El cetro de Kadón" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 1D6+2. Contiene un hechizo de potenciación que afecta a todas las unidades amigas de necrófagos (y stríganos) en el campo de batalla y permanece un turno. Por la duración del hechizo, las unidades afectadas obtienen un bonificador de +2 a su Iniciativa, y podrán repetir sus tiradas fallidas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 1D6+2. Contiene un hechizo de potenciación que afecta a todas las unidades amigas de necrófagos (y stríganos) en el campo de batalla y permanece un turno. Por la duración del hechizo, las unidades afectadas obtienen un bonificador de +2 a su Iniciativa, y podrán repetir sus tiradas fallidas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5279,7 +5451,7 @@
           <profiles>
             <profile id="5948-9e42-94aa-e472" name="Pabellón de la realeza de strigoi" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades de necrófagos y striganos a 8” o menos del portador del estandarte podrán utilizar el bonificador por filas de la unidad que porte este estandarte en lugar del propio para calcular el resultado de los combates en los que participen.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades de necrófagos y striganos a 8” o menos del portador del estandarte podrán utilizar el bonificador por filas de la unidad que porte este estandarte en lugar del propio para calcular el resultado de los combates en los que participen.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5295,7 +5467,7 @@
           <profiles>
             <profile id="dfa2-fe9a-799b-157c" name="Estandarte de los lamentos" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 y descartando el resultado más bajo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 y descartando el resultado más bajo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5311,7 +5483,7 @@
           <profiles>
             <profile id="9ec0-0de9-d006-bc5a" name="Estandarte de la oscuridad" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra la unidad que porte el estandarte tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra la unidad que porte el estandarte tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5335,7 +5507,7 @@
           <profiles>
             <profile id="0cc6-d1af-550e-5859" name="Bandera negra de Mourkhain" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo vampiros. Todas las unidades amigas a 12” o menos del portador obtienen las reglas especiales Odio (todos los enemigos) y Carga devastadora. Además, aumenta en +1 el atributo de Resistencia del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo vampiros. Todas las unidades amigas a 12” o menos del portador obtienen las reglas especiales Odio (todos los enemigos) y Carga devastadora. Además, aumenta en +1 el atributo de Resistencia del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5363,7 +5535,7 @@
           <profiles>
             <profile id="0ae2-0871-b02d-0445" name="Corona Real de Mourkain" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puedes declarar que utilizas la Corona al inicio de cualquiera de tus turnos, antes de efectuar las tiradas de Refuerzos. Podrás repetir todas tus tiradas de Refuerzos (para determinar si entran en el campo de batalla) esa fase.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puedes declarar que utilizas la Corona al inicio de cualquiera de tus turnos, antes de efectuar las tiradas de Refuerzos. Podrás repetir todas tus tiradas de Refuerzos (para determinar si entran en el campo de batalla) esa fase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5379,7 +5551,7 @@
           <profiles>
             <profile id="aa7c-c951-66fb-e678" name="Presea de furia" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador y su unidad se verán sujetos a la regla especial Furia asesina y no la perderán aunque pierdan un combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador y su unidad se verán sujetos a la regla especial Furia asesina y no la perderán aunque pierdan un combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5398,7 +5570,7 @@
           <profiles>
             <profile id="8e01-042e-05b0-b670" name="Talismán de Lycni" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El atributo de movimiento del personaje aumenta a 10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El atributo de movimiento del personaje aumenta a 10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5414,7 +5586,7 @@
           <profiles>
             <profile id="25bd-74d8-5ff3-b2c1" name="Dedo siniestro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Danza macabra de Vanhel (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Danza macabra de Vanhel (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5430,7 +5602,7 @@
           <profiles>
             <profile id="0c3e-8bbf-a64b-703a" name="Amuleto de huesos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Invocación de Nehek (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Invocación de Nehek (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5446,7 +5618,7 @@
           <profiles>
             <profile id="8b69-4ddc-38ae-5680" name="Capa negra" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtiene +1 Movimiento y la regla especial Veloz; además, todos los disparos que se realicen contra él tendrán un penalizador de -1 en sus tiradas para impactar. Sin embargo, el portador no podrá unirse a unidades.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtiene +1 Movimiento y la regla especial Veloz; además, todos los disparos que se realicen contra él tendrán un penalizador de -1 en sus tiradas para impactar. Sin embargo, el portador no podrá unirse a unidades.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5472,7 +5644,7 @@
           <profiles>
             <profile id="cd8b-37ee-2551-8139" name="Odio eterno" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro tiene la regla especial Odio (todos los enemigos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro tiene la regla especial Odio (todos los enemigos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5490,7 +5662,7 @@
           <profiles>
             <profile id="a27a-e145-9a5f-b531" name="Furia de Strigos" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Obtiene la regla especial Furia asesina.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Obtiene la regla especial Furia asesina.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5508,7 +5680,7 @@
           <profiles>
             <profile id="a1dd-93d3-724c-e181" name="Cazador en la oscuridad" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Explorador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Explorador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5526,7 +5698,7 @@
           <profiles>
             <profile id="021c-6e70-dc5b-8adb" name="Horror sobrenatural" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5544,7 +5716,7 @@
           <profiles>
             <profile id="8bd3-597f-1a5c-cb74" name="La encarnación del miedo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5559,7 +5731,7 @@
           <profiles>
             <profile id="f077-b488-0a58-a6a4" name="Músculos de acero" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro aumenta en +1 su atributo de Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro aumenta en +1 su atributo de Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5574,7 +5746,7 @@
           <profiles>
             <profile id="2249-6a25-3b8f-38a9" name="Forma de murciélago" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Volar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Volar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5592,7 +5764,7 @@
           <profiles>
             <profile id="3b33-81b2-5c43-c1a8" name="Garras afiladas" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5610,7 +5782,7 @@
           <profiles>
             <profile id="083e-a811-dffb-fd80" name="Llamar a los necrófagos" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Un vampiro con este poder puede utilizar los hechizos Invocación de Nehek y Animar muertos para invocar necrófagos y stríganos en unidades de éstos que estén por debajo de su número original, como si fuesen no muertos a efectos del hechizo. Los necrófagos y stríganos se animan como si fuesen Tumularios (1D6-1 por dado de invocación), y no pueden aumentarse las unidades por encima de su tamaño original, ni crearse nuevas unidades.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Un vampiro con este poder puede utilizar los hechizos Invocación de Nehek y Animar muertos para invocar necrófagos y stríganos en unidades de éstos que estén por debajo de su número original, como si fuesen no muertos a efectos del hechizo. Los necrófagos y stríganos se animan como si fuesen Tumularios (1D6-1 por dado de invocación), y no pueden aumentarse las unidades por encima de su tamaño original, ni crearse nuevas unidades.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5625,7 +5797,7 @@
           <profiles>
             <profile id="8b76-045f-3364-ca3a" name="Veneno necrótico" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Los Ataques envenenados del personaje surtirán efecto con un resultado de 5 ó 6 en la tirada para impactar (en lugar de sólo con 6, como es habitual). Además, estos ataques que hieran automáticamente obtienen la regla especial Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Los Ataques envenenados del personaje surtirán efecto con un resultado de 5 ó 6 en la tirada para impactar (en lugar de sólo con 6, como es habitual). Además, estos ataques que hieran automáticamente obtienen la regla especial Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5640,7 +5812,7 @@
           <profiles>
             <profile id="44ef-543c-881b-6d3f" name="Fuerza imparable" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Los ataques del personaje en combate cuerpo a cuerpo obtienen la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Los ataques del personaje en combate cuerpo a cuerpo obtienen la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5658,7 +5830,7 @@
           <profiles>
             <profile id="7012-afce-a068-ee21" name="Pellejo férreo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El personaje obtiene la regla especial Piel escamosa (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El personaje obtiene la regla especial Piel escamosa (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5676,7 +5848,7 @@
           <profiles>
             <profile id="d4a6-8ef9-7401-2992" name="Rostro del ser amado" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Todos los ataques en combate cuerpo a cuerpo contra el vampiro deberán aplicar un penalizador de -1 en su tirada para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Todos los ataques en combate cuerpo a cuerpo contra el vampiro deberán aplicar un penalizador de -1 en su tirada para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5691,7 +5863,7 @@
           <profiles>
             <profile id="2c9f-43e9-5421-3b3e" name="Celeridad de ultratumba" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El personaje obtiene la regla especial Esquivar (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El personaje obtiene la regla especial Esquivar (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5709,7 +5881,7 @@
           <profiles>
             <profile id="7aa2-d198-66ca-2cac" name="Ferocidad imparable" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene las reglas especiales Impactos por carga (1) y Carga devastadora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene las reglas especiales Impactos por carga (1) y Carga devastadora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5728,7 +5900,7 @@
           <profiles>
             <profile id="3490-f4f5-86ef-8fca" name="Curación rápida" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Regeneración (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Regeneración (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5746,7 +5918,7 @@
           <profiles>
             <profile id="0052-cb1a-698a-0316" name="Aullido de mando" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Este poder funciona como un objeto portahechizos con nivel de energía 1D3+1. Contiene un hechizo de potenciación que puede lanarse sobre una unidad de necrófagos o striganos a 12” o menos del portador. La unidad afectada podrá mover inmediatamente 1D6+2” hacia adelante; si llega a contacto peana con peana con un enemigo, se considerará que han cargado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Este poder funciona como un objeto portahechizos con nivel de energía 1D3+1. Contiene un hechizo de potenciación que puede lanarse sobre una unidad de necrófagos o striganos a 12” o menos del portador. La unidad afectada podrá mover inmediatamente 1D6+2” hacia adelante; si llega a contacto peana con peana con un enemigo, se considerará que han cargado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5761,7 +5933,7 @@
           <profiles>
             <profile id="6219-30e5-ba18-cc94" name="Insensible" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Todas las tiradas para herir contra el vampiro se realizarán con un penalizador de -1 en la tirada; esto no afecta a impactos que no tengan un valor de Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Todas las tiradas para herir contra el vampiro se realizarán con un penalizador de -1 en la tirada; esto no afecta a impactos que no tengan un valor de Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5776,7 +5948,7 @@
           <profiles>
             <profile id="475d-da91-c455-9cac" name="Monstruo descomunal" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Cambia el tipo del vampiro a Infantería monstruosa (personaje) y su peana a 40x40mm. Obtiene un bonificador de +1 a su Fuerza y Resistencia, así como una Herida adicional. Sin embargo, tendrá un penalizador de -1 a su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Cambia el tipo del vampiro a Infantería monstruosa (personaje) y su peana a 40x40mm. Obtiene un bonificador de +1 a su Fuerza y Resistencia, así como una Herida adicional. Sin embargo, tendrá un penalizador de -1 a su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5801,7 +5973,7 @@
           <profiles>
             <profile id="4e92-4708-263c-c208" name="Señor de los necrófagos" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">Todas las unidades de necrófagos de tu ejército obtienen la regla especial Vanguardia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Todas las unidades de necrófagos de tu ejército obtienen la regla especial Vanguardia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5819,7 +5991,7 @@
           <profiles>
             <profile id="1896-fd43-08b9-1309" name="Vitalidad impía" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Regeneración (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Regeneración (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5837,7 +6009,7 @@
           <profiles>
             <profile id="35c3-3ea7-071a-63c9" name="Estirpe noble de Mourkhain" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="a9e3-1cd4-06b8-1a17">El personaje y todas las unidades de necrófagos (incluyendo stríganos) a 12” o menos de él obtienen la regla especial Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El personaje y todas las unidades de necrófagos (incluyendo stríganos) a 12” o menos de él obtienen la regla especial Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5864,7 +6036,7 @@
           <profiles>
             <profile id="4654-37e4-cf6a-bf39" name="Anillo de la noche" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todas las tiradas para impactar exitosas en cuerpo a cuerpo contra el portador deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todas las tiradas para impactar exitosas en cuerpo a cuerpo contra el portador deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5880,7 +6052,7 @@
           <profiles>
             <profile id="96d6-85d8-989f-e1a6" name="Brazales de oro negro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial contra proyectiles de 3+ (tanto mundanos como mágicos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial contra proyectiles de 3+ (tanto mundanos como mágicos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5896,7 +6068,7 @@
           <profiles>
             <profile id="b14f-6fdb-72fb-3c94" name="Corona de los condenados" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial de 5+ y la regla especial Estupidez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial de 5+ y la regla especial Estupidez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5915,7 +6087,7 @@
           <profiles>
             <profile id="d367-44f6-b213-49c8" name="Gema oscura de Mourkain" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador la regla especial Inmune a fuego; además, también proporciona la regla especial Regeneración (6+), o +1 a sus tiradas de Regeneración si ya disponía de ella (hasta un máximo de 3+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador la regla especial Inmune a fuego; además, también proporciona la regla especial Regeneración (6+), o +1 a sus tiradas de Regeneración si ya disponía de ella (hasta un máximo de 3+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5935,7 +6107,7 @@
           <profiles>
             <profile id="6471-e3b8-2be8-d17c" name="Colgante amatista" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+ y la regla especial Resistencia mágica (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5962,7 +6134,7 @@
           <profiles>
             <profile id="cfc1-cd2a-d51e-bfbc" name="Garfios de Vorag" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Maistru. Armas emparejadas. Los ataques realizados con los Garfios de Vorag tienen la regla especial Ataques envenenados. Éstos herirán automáticamente con un resultado de 5+ en sus tiradas para impactar en lugar del habitual 6+ </characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Maistru. Armas emparejadas. Los ataques realizados con los Garfios de Vorag tienen la regla especial Ataques envenenados. Éstos herirán automáticamente con un resultado de 5+ en sus tiradas para impactar en lugar del habitual 6+ </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5973,6 +6145,335 @@
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+    </selectionEntryGroup>
+    <selectionEntryGroup id="046b-86f8-f868-f464" name="Poderes vampíricos del clan Strigoi tropa" hidden="false" collective="false" import="true">
+      <constraints>
+        <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="05ef-253a-17b6-252e" type="min"/>
+      </constraints>
+      <selectionEntries>
+        <selectionEntry id="2759-cc4b-95f5-0bec" name="Furia de Strigos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="11fd-cafc-33c1-7aad" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d67e-bfe6-407b-6221" name="Furia de Strigos" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Obtiene la regla especial Furia asesina.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="045d-3f1b-9f7d-f2c9" name="Furia asesina" hidden="false" targetId="145c-6914-de8b-e9cc" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="10.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="5266-b339-52c7-17b3" name="Cazador en la oscuridad" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c072-0609-11e5-bf8f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="e2a0-f362-cd5a-e55d" name="Cazador en la oscuridad" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Explorador.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="b98d-4de3-9938-48c0" name="Exploradores" hidden="false" targetId="462e-27b4-5c07-747d" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ec9e-0b0b-41db-c3bf" name="Horror sobrenatural" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="80d3-eecd-cc7e-5cc2" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="559c-1fb4-fa8a-5284" name="Horror sobrenatural" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro causa Terror.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="049b-189d-f66b-9c3b" name="Terror" hidden="false" targetId="ca57-1f1f-8bc0-d9ab" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d6be-35d4-03c7-9570" name="La encarnación del miedo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9b95-35ee-0f05-a223" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="74f6-3c35-7a0d-9033" name="La encarnación del miedo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El enemigo debe repetir todos los chequeos de Miedo y Terror superados causados por el personaje.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="633f-508c-7973-d5d1" name="Músculos de acero" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="3c71-b01a-b6ec-bd45" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="0b9f-086e-f7b3-3bd2" name="Músculos de acero" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro aumenta en +1 su atributo de Fuerza.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d582-851e-f7ca-f718" name="Forma de murciélago" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="c45f-5bd2-0a1a-a98c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="875c-bcc6-e197-2e61" name="Forma de murciélago" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Volar.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a1a0-1412-fcde-7703" name="Volar" hidden="false" targetId="670e-1a23-b1e1-6e6f" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c319-c345-d4a8-3355" name="Garras afiladas" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="793b-a84a-3a11-2937" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="5fc4-37ec-5c5f-eb0a" name="Garras afiladas" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Golpe letal.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="eb47-cbf3-12cc-9701" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="467c-4132-2670-855c" name="Llamar a los necrófagos" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="02fb-acf9-166a-b956" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6bde-ed6c-d5c8-ab18" name="Llamar a los necrófagos" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Un vampiro con este poder puede utilizar los hechizos Invocación de Nehek y Animar muertos para invocar necrófagos y stríganos en unidades de éstos que estén por debajo de su número original, como si fuesen no muertos a efectos del hechizo. Los necrófagos y stríganos se animan como si fuesen Tumularios (1D6-1 por dado de invocación), y no pueden aumentarse las unidades por encima de su tamaño original, ni crearse nuevas unidades.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="35.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="9f69-1a0d-3b16-af61" name="Veneno necrótico" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9a4b-6a86-b578-2734" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="9d9b-670f-8f15-7dd8" name="Veneno necrótico" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Los Ataques envenenados del personaje surtirán efecto con un resultado de 5 ó 6 en la tirada para impactar (en lugar de sólo con 6, como es habitual). Además, estos ataques que hieran automáticamente obtienen la regla especial Heridas múltiples (2).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="bebd-1062-c82e-415e" name="Fuerza imparable" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="8fff-eaf5-e684-b872" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2032-52b3-f10b-db3c" name="Fuerza imparable" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Los ataques del personaje en combate cuerpo a cuerpo obtienen la regla especial Heridas múltiples (1D3).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="a946-5f81-fd6b-937b" name="Heridas múltiples (1D3)" hidden="false" targetId="efc4-703c-5d20-0686" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="27f0-b068-faf2-6501" name="Pellejo férreo" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="630f-4099-d278-d2d3" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="2729-a00d-1397-e95d" name="Pellejo férreo" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El personaje obtiene la regla especial Piel escamosa (4+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="530b-8635-92ad-aae4" name="Piel escamosa (4+)" hidden="false" targetId="478f-4519-03d3-5004" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="15.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="d4b3-49b0-e7e7-c3c5" name="Rostro del ser amado" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9374-b913-4ad3-ef4f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="13e5-982c-ef9d-0fb2" name="Rostro del ser amado" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Todos los ataques en combate cuerpo a cuerpo contra el vampiro deberán aplicar un penalizador de -1 en su tirada para impactar.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1dfb-6fbf-b794-da6d" name="Celeridad de ultratumba" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="f3d3-ccf2-9e0a-824f" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="7a92-b694-f968-4fdb" name="Celeridad de ultratumba" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El personaje obtiene la regla especial Esquivar (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="bc69-4aa4-1e70-2ba5" name="Esquivar (5+)" hidden="false" targetId="053b-3b96-b53b-6944" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="2dad-c2bb-a5e1-bba4" name="Ferocidad imparable" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4d2f-bc2b-fa7b-8f5b" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="63e6-9564-abe7-96d5" name="Ferocidad imparable" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene las reglas especiales Impactos por carga (1) y Carga devastadora.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="07b4-170f-89a7-a07a" name="Impactos por carga (1)" hidden="false" targetId="8de0-8a91-edee-076e" type="rule"/>
+            <infoLink id="731d-e1ac-c4ef-297e" name="Carga devastadora" hidden="false" targetId="dbe6-c910-7f37-aeac" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="20.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="fddd-3936-50b4-6ee4" name="Curación rápida" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="eb7c-9cf1-b955-5971" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="22a1-0b69-8860-c057" name="Curación rápida" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro obtiene la regla especial Regeneración (5+).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="1cfc-1e81-924b-3442" name="Regeneración (5+)" hidden="false" targetId="515b-514f-7ee3-6cc3" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="c9f5-232d-db12-6241" name="Aullido de mando" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="284f-98f6-f00b-6a5c" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="dadd-d7ca-093f-bcb5" name="Aullido de mando" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Este poder funciona como un objeto portahechizos con nivel de energía 1D3+1. Contiene un hechizo de potenciación que puede lanarse sobre una unidad de necrófagos o striganos a 12” o menos del portador. La unidad afectada podrá mover inmediatamente 1D6+2” hacia adelante; si llega a contacto peana con peana con un enemigo, se considerará que han cargado.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="25.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ec58-049d-1f4f-2024" name="Insensible" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="b4fc-9fae-8c93-1239" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6382-47b6-352a-518f" name="Insensible" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Todas las tiradas para herir contra el vampiro se realizarán con un penalizador de -1 en la tirada; esto no afecta a impactos que no tengan un valor de Fuerza.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="f109-5466-823a-e355" name="Monstruo descomunal" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4eae-867f-6cc4-8395" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="d1fd-ace7-1cdf-2007" name="Monstruo descomunal" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">Cambia el tipo del vampiro a Infantería monstruosa (personaje) y su peana a 40x40mm. Obtiene un bonificador de +1 a su Fuerza y Resistencia, así como una Herida adicional. Sin embargo, tendrá un penalizador de -1 a su Iniciativa.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="5d86-0a47-3ea4-a661" name="Infantería monstruosa" hidden="false" targetId="4958-70de-0b69-9825" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="40.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="72fe-d6e9-9f1f-2c95" name="Odio eterno" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5e62-1bfb-2d81-da47" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="6221-83f7-10bf-40bb" name="Odio eterno" hidden="false" typeId="f794-894b-fc0e-c533" typeName="Poder vampírico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="a9e3-1cd4-06b8-1a17">El vampiro tiene la regla especial Odio (todos los enemigos).</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="6f36-d429-e7e4-604b" name="Odio (todos los enemigos)" hidden="false" targetId="69e8-bae0-e71a-64f6" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>

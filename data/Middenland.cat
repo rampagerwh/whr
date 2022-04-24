@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="09c4-4a06-8b6c-530f" name="Middenland" revision="11" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="09c4-4a06-8b6c-530f" name="Middenland" revision="18" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="a55d-2199-82f9-73d2" name="Talismán de Ulric">
       <characteristicTypes>
-        <characteristicType id="4770-7b42-f25f-a700" name="Propiedades mágicas"/>
+        <characteristicType id="4770-7b42-f25f-a700" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="a57b-0114-ac79-45f0" name="Orden de caballería">
       <characteristicTypes>
-        <characteristicType id="4889-9bf0-02e4-d3e0" name="Propiedades mágicas"/>
+        <characteristicType id="4889-9bf0-02e4-d3e0" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -141,13 +141,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="2eae-dba8-2a08-3e21" name="Oficial" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="c9c6-c150-aadf-828d" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="dfc5-b32a-69fb-e962" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6b45-6bb0-ecbc-f490" type="max"/>
               </constraints>
@@ -238,6 +231,13 @@
               </constraints>
               <selectionEntries>
                 <selectionEntry id="dfc5-b32a-69fb-e962" name="Seguidores del culto" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="c9c6-c150-aadf-828d" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="2eae-dba8-2a08-3e21" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="06c1-97f6-9526-6387" type="max"/>
                   </constraints>
@@ -512,13 +512,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="eed0-b34b-96e4-e2d5" name="Oficial" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="7409-10ea-43b0-8bdc" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="94fe-d895-697b-4f98" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bc7f-efcd-330c-157a" type="max"/>
               </constraints>
@@ -628,6 +621,13 @@
               </constraints>
               <selectionEntries>
                 <selectionEntry id="94fe-d895-697b-4f98" name="Seguidores del culto" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="7409-10ea-43b0-8bdc" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="eed0-b34b-96e4-e2d5" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6db3-d0de-8729-c012" type="max"/>
                   </constraints>
@@ -895,13 +895,6 @@
               </costs>
             </selectionEntry>
             <selectionEntry id="ee74-f9ad-97ba-f9e6" name="Oficial" hidden="false" collective="false" import="true" type="upgrade">
-              <modifiers>
-                <modifier type="set" field="hidden" value="true">
-                  <conditions>
-                    <condition field="selections" scope="d8a4-26db-1467-e614" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="79a3-903e-a953-5e54" type="equalTo"/>
-                  </conditions>
-                </modifier>
-              </modifiers>
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1c65-5436-275a-08ef" type="max"/>
               </constraints>
@@ -991,6 +984,13 @@
               </constraints>
               <selectionEntries>
                 <selectionEntry id="79a3-903e-a953-5e54" name="Seguidores del culto" hidden="false" collective="false" import="true" type="upgrade">
+                  <modifiers>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="d8a4-26db-1467-e614" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="ee74-f9ad-97ba-f9e6" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                  </modifiers>
                   <constraints>
                     <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8786-e052-41e1-cebe" type="max"/>
                   </constraints>
@@ -3789,7 +3789,7 @@
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0f63-781c-5266-9a2a" type="max"/>
               </constraints>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="1230-559a-15e8-03ca" name="Oficial" hidden="false" collective="false" import="true" type="upgrade">
@@ -3862,7 +3862,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
             <selectionEntry id="b6b3-858f-0caf-4fa7" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
@@ -3893,7 +3893,7 @@
                 </selectionEntryGroup>
               </selectionEntryGroups>
               <costs>
-                <cost name="pts" typeId="points" value="10.0"/>
+                <cost name="pts" typeId="points" value="6.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -5285,6 +5285,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="c029-df1c-ff04-6aea" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="110.0"/>
           </costs>
@@ -5422,6 +5425,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="840c-726d-4a45-7091" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="100.0"/>
           </costs>
@@ -7806,6 +7812,24 @@
               </infoLinks>
               <costs>
                 <cost name="pts" typeId="points" value="3.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="5d5c-b653-cf53-7c84" name="Martillo del lobo blanco" hidden="false" collective="false" import="true" type="upgrade">
+              <modifiers>
+                <modifier type="set" field="hidden" value="true">
+                  <conditions>
+                    <condition field="selections" scope="f315-74a6-de17-6f17" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="fa71-3740-124d-da92" type="equalTo"/>
+                  </conditions>
+                </modifier>
+              </modifiers>
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ec17-34f5-0016-25c2" type="max"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="87dd-0db3-cd8d-e6bb" name="Martillo del lobo blanco" hidden="false" targetId="f1f4-ab1d-eb1c-b954" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="4.0"/>
               </costs>
             </selectionEntry>
           </selectionEntries>
@@ -10624,7 +10648,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="4500-6f85-0fdb-e97e" name="Colmillo rúnico de Middenland" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por un Colmillo Rúnico hieren automáticamente (no es necesario efectuar la tirada para herir) y no permiten tirada de salvación por armadura. Además, tiene la regla especial Heridas múltiples (2) contra miniaturas con la regla especial No muerto.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por un Colmillo Rúnico hieren automáticamente (no es necesario efectuar la tirada para herir) y no permiten tirada de salvación por armadura. Además, tiene la regla especial Heridas múltiples (2) contra miniaturas con la regla especial No muerto.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10667,7 +10691,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="289e-65dc-d1a1-e4a5" name="Amuleto de Ulric" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada turno Imperial, Boris Todbringer recupera una herida que hubiese sufrido previamente durante la batalla. Además, otorga al Conde la regla especial Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada turno Imperial, Boris Todbringer recupera una herida que hubiese sufrido previamente durante la batalla. Además, otorga al Conde la regla especial Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10812,7 +10836,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="9ff6-028d-ce2f-b09c" name="Martillo.hacha de Skoll" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos Manos. El portador obtiene un bonificador de +1 a su valor de ataques. Los ataques efectuados con este arma obtendrán la regla Especial Golpe Letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos Manos. El portador obtiene un bonificador de +1 a su valor de ataques. Los ataques efectuados con este arma obtendrán la regla Especial Golpe Letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10832,7 +10856,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="63cb-d307-48fe-ea90" name="Armadura del lobo" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de Placas. Otorga a su portador una tirada de salvación Especial (5+) y la Regla Especial Resistencia Mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de Placas. Otorga a su portador una tirada de salvación Especial (5+) y la Regla Especial Resistencia Mágica (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10852,7 +10876,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="b080-7849-978e-ddd9" name="Daga de hielo" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Otorga a Emil Valgeir y a la unidad en la que se encuentre la regla especial Inmunes a Fuego. Las plegarias lanzadas por Emil recibirán un bonificador igual al número de filas completas de la unidad de la que forme parte.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Otorga a Emil Valgeir y a la unidad en la que se encuentre la regla especial Inmunes a Fuego. Las plegarias lanzadas por Emil recibirán un bonificador igual al número de filas completas de la unidad de la que forme parte.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11012,7 +11036,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="4b53-7de8-4c78-5253" name="Arco ámbar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco Largo. Los disparos efectuados con este arco siempre hieren con un resultado de 4+, sin tener en cuenta la R del objetivo; además, no permite tirada de salvación por armadura y tiene la regla especial Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco Largo. Los disparos efectuados con este arco siempre hieren con un resultado de 4+, sin tener en cuenta la R del objetivo; además, no permite tirada de salvación por armadura y tiene la regla especial Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11255,7 +11279,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="f8a3-e39b-1bd6-029a" name="Armadura de hierro negro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga al portador una tirada de salvación por armadura 2+. El portador Causa Miedo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga al portador una tirada de salvación por armadura 2+. El portador Causa Miedo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11404,7 +11428,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="e236-6b8d-8585-2ef6" name="Yelmo del penacho centelleante" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, su portador obtendrá una tirada de salvación especial de 5+ contra ataques mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador. Además, su portador obtendrá una tirada de salvación especial de 5+ contra ataques mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11444,7 +11468,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="312f-e8ef-c2cb-9e93" name="Espada enjoyada" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada se resuelven con +2I y +1F.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada se resuelven con +2I y +1F.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11551,7 +11575,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="b379-95f6-5c9b-3424" name="Capa brillante de Chamón" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona una salvación de armadura de 4+ y una salvación especial de 5+ a su portador.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona una salvación de armadura de 4+ y una salvación especial de 5+ a su portador.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11567,7 +11591,7 @@ propia con Nivel de energía 3.</description>
               <profiles>
                 <profile id="c1ac-7796-7eca-3742" name="Báculo rúnico dorado" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los ataques realizados con el Báculo no aplican el penalizador habitual de reducir la iniciativa a la mitad (por la regla especial Lenta), al contrario que otras armas a dos manos. Anula salvación por armadura. Una vez por fase de magia propia el Báculo actua como un Objeto Portahechizos con las siguientes reglas.
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los ataques realizados con el Báculo no aplican el penalizador habitual de reducir la iniciativa a la mitad (por la regla especial Lenta), al contrario que otras armas a dos manos. Anula salvación por armadura. Una vez por fase de magia propia el Báculo actua como un Objeto Portahechizos con las siguientes reglas.
 Objeto Portahechizos, nivel de energía variable. Tira un hechizo al azar de la lista de hechizos del Saber del Metal. El portador puede lanzar ese hechizo sin invertir dados de energía (no es necesario gastar un dado, como con otros objetos portahechizos), con un valor de lanzamiento igual a su dificultad básica (no pueden lanzarse hechizos potenciados usando este objeto).</characteristic>
                   </characteristics>
                 </profile>
@@ -11729,12 +11753,12 @@ Objeto Portahechizos, nivel de energía variable. Tira un hechizo al azar de la 
               <profiles>
                 <profile id="2922-d985-2cd3-754b" name="Estandarte de Middenheim" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre ganan +1 al Liderazgo y obtendrán la regla Impasibles. Adicionalmente el portador y las miniaturas de la unidad de la que forme parte obtendrán las reglas especiales Carga devastadora y Ataque rápido. </characteristic>
+                    <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre ganan +1 al Liderazgo y obtendrán la regla Impasibles. Adicionalmente el portador y las miniaturas de la unidad de la que forme parte obtendrán las reglas especiales Carga devastadora y Ataque rápido. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
               <infoLinks>
-                <infoLink id="54b5-1148-dfba-0459" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+                <infoLink id="54b5-1148-dfba-0459" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
                 <infoLink id="9652-a880-5daf-2ac8" name="Carga devastadora" hidden="false" targetId="dbe6-c910-7f37-aeac" type="rule"/>
                 <infoLink id="fc9e-7733-5577-35fe" name="Ataque rápido" hidden="false" targetId="0107-ab2b-9c74-dade" type="rule"/>
               </infoLinks>
@@ -12205,7 +12229,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="ba99-3fcf-d66d-d73c" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Arúspice una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Arúspice una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12224,7 +12248,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="0ba1-0432-4516-9e8a" name="Báculo Ogham" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Proporciona al Arúspice un bonificador de +1 en todas sus tiradas de dispersión.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Proporciona al Arúspice un bonificador de +1 en todas sus tiradas de dispersión.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13168,7 +13192,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="d227-7c5b-d8d7-9bf0" name="Talismán esmeralda de Xhotl" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Pirzazzo y a su unidad las reglas especiales Inmunes a Veneno y Regeneración (6+), que aumenta a Regeneración (5+) en el caso de Pirazzo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Pirzazzo y a su unidad las reglas especiales Inmunes a Veneno y Regeneración (6+), que aumenta a Regeneración (5+) en el caso de Pirazzo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13839,7 +13863,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="0cea-6351-b154-6757" name="Cimitarra de Daksir" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por el portador en combate se realizarán con un bonificador de +1 a su atributo de Fuerza. El portador de esta arma obtiene la regla especial Carga Devastadora.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por el portador en combate se realizarán con un bonificador de +1 a su atributo de Fuerza. El portador de esta arma obtiene la regla especial Carga Devastadora.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13941,7 +13965,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="eeaa-8d33-6b10-c506" name="El estandarte negro de Muktarhin" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Las unidades enemigas en contacto por el portador del estandarte deberán repetir los resultados de 1 que obtuviesen en los chequeos de liderazgo que efectúen.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Las unidades enemigas en contacto por el portador del estandarte deberán repetir los resultados de 1 que obtuviesen en los chequeos de liderazgo que efectúen.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14287,7 +14311,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="b4f5-72e6-814a-3d10" name="Hacha Real de Karak-Ungor" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El hacha tiene grabada la Runa magistral Matadragones (Golpe letal heróico contra Dragones), Falsa runa de Kragg el Gruñón (+2F, Lenta, requiere ambas manos), runa del golpe certero de Skoggi (repite las tiradas para impactar fallidas)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El hacha tiene grabada la Runa magistral Matadragones (Golpe letal heróico contra Dragones), Falsa runa de Kragg el Gruñón (+2F, Lenta, requiere ambas manos), runa del golpe certero de Skoggi (repite las tiradas para impactar fallidas)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14323,7 +14347,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="1f43-f583-e99c-91f8" name="La joya sagrada de Valaya" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Permite a Uther repetir una de las siguientes tiradas por fase: impactar, herir o salvación por armadura. Además le otorga las reglas especiales Inmune a Veneno y Resistencia a la Magia (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Permite a Uther repetir una de las siguientes tiradas por fase: impactar, herir o salvación por armadura. Además le otorga las reglas especiales Inmune a Veneno y Resistencia a la Magia (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14360,7 +14384,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
                   <profiles>
                     <profile id="f45e-4668-cec4-5390" name="Cuerno de dragón" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El Músico de la unidad puede hacer sonar el cuerno en el momento de declarar una carga. La unidad causará Terror hasta el final de ese turno de jugador.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El Músico de la unidad puede hacer sonar el cuerno en el momento de declarar una carga. La unidad causará Terror hasta el final de ese turno de jugador.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -14499,7 +14523,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="a41a-0066-be64-bea6" name="Escudo rúnico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Otorga al portador la regla especial Inmune a fuego y un bonificador adicional de +1 a su tirada de salvación por armadura (por lo que este escudo mejorará la tirada de salvación de su portador en +2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Otorga al portador la regla especial Inmune a fuego y un bonificador adicional de +1 a su tirada de salvación por armadura (por lo que este escudo mejorará la tirada de salvación de su portador en +2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14984,7 +15008,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="bb17-4c30-cc30-e9e8" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -15028,7 +15052,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="a954-ce5e-0a09-242d" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -15070,7 +15094,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
                   <profiles>
                     <profile id="824d-ea9b-512b-f895" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -15305,7 +15329,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
                   <profiles>
                     <profile id="fb78-0932-d352-3777" name="Estandarte de la novia del mar" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -15465,7 +15489,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="9c89-d6c2-0e71-f6dd" name="Skabscrath" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -15536,7 +15560,7 @@ afectados por la regla especial No Muerto.</description>
                   <profiles>
                     <profile id="67ae-dabf-94bc-a762" name="Pabellón de pesadilla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -16029,7 +16053,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="e502-8ddd-5e28-683b" name="Báculo de Ogham" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Puede utilizarse en combate como si fuese una Lanza. Otorga a Hengus la regla especial Regeneración (5+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Puede utilizarse en combate como si fuese una Lanza. Otorga a Hengus la regla especial Regeneración (5+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -16476,7 +16500,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="9244-5641-048f-37a8" name="Máscara mortuoria" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Véspero causa Miedo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Véspero causa Miedo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17490,7 +17514,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="aa65-351d-61bc-c9e7" name="Sigilos del héroe" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Horemhai puede repetir todos los resultados de 1 en sus tiradas para impactar, herir y salvaciones.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Horemhai puede repetir todos los resultados de 1 en sus tiradas para impactar, herir y salvaciones.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17757,7 +17781,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="0177-6ba2-b072-4c26" name="Comte de Lyons" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El estandarte proporciona a Gerrard y los Arblastiers una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). Sin embargo, si los Arblastiers huyen, este estandarte pierde todas sus propiedades mágicas.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El estandarte proporciona a Gerrard y los Arblastiers una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). Sin embargo, si los Arblastiers huyen, este estandarte pierde todas sus propiedades mágicas.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -17860,7 +17884,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="f8d4-1ff6-6b9f-1721" name="Colgante de garra de lobo" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">El portador obtiene la regla especial Regeneración (5+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">El portador obtiene la regla especial Regeneración (5+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17879,7 +17903,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="b076-0103-53f0-b145" name="Coraza negra consagrada" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de Placas. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de Placas. Confiere a su portador una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17898,7 +17922,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="8a55-8499-2e50-7e38" name="Martillo rúnico de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Martillo del Lobo Blanco. Si impacta a un enemigo equipado con un arma mágica, el poder de dicho arma quedará anulado y pasará a considerarse un arma mundana de su mismo tipo. Además proporciona a Jerek +1 ataque y +1 a Iniciativa.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Martillo del Lobo Blanco. Si impacta a un enemigo equipado con un arma mágica, el poder de dicho arma quedará anulado y pasará a considerarse un arma mundana de su mismo tipo. Además proporciona a Jerek +1 ataque y +1 a Iniciativa.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -17923,7 +17947,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="2d8a-41f1-6835-cc99" name="Fragmento de Skoll" hidden="false" typeId="a55d-2199-82f9-73d2" typeName="Talismán de Ulric">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="4770-7b42-f25f-a700">-Sacerdote de Ulric , Sumo Sacerdote de Ulric y Paladines de Ulric. Un sólo uso. Debes declarar que usas el Fragmento de Skoll cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. El portador obtendrá Resistencia a la magia (3) pero solo contra ese hechizo.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="4770-7b42-f25f-a700">-Sacerdote de Ulric , Sumo Sacerdote de Ulric y Paladines de Ulric. Un sólo uso. Debes declarar que usas el Fragmento de Skoll cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. El portador obtendrá Resistencia a la magia (3) pero solo contra ese hechizo.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -18699,7 +18723,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="0b9f-c78b-06bf-9bdd" name="Colmillo rúnico de Middenhein" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por un Colmillo Rúnico hieren automáticamente (no es necesario efectuar la tirada para herir) y no permiten tirada de salvación por armadura. Además, tiene la regla especial Heridas múltiples (2) contra miniaturas con la regla especial No muerto.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por un Colmillo Rúnico hieren automáticamente (no es necesario efectuar la tirada para herir) y no permiten tirada de salvación por armadura. Además, tiene la regla especial Heridas múltiples (2) contra miniaturas con la regla especial No muerto.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18718,7 +18742,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="931f-1a87-bcba-20eb" name="Capa invernal de Ulric" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Proporciona a Lothar las reglas especiales Piel escamosa (6+) e Inmune a fuego.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Proporciona a Lothar las reglas especiales Piel escamosa (6+) e Inmune a fuego.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18750,7 +18774,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="8ad0-c984-c29e-9deb" name="Espada de Fauschlag" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. La espada de Fauschlag se utiliza en combinación con el Colmillo Rúnico, funcionando como si fuesen dos colmillos rúnicos emparejados (+1A). Además, al luchar con ambas espadas, Lothar tiene la regla especial Esquivar (5+) sólo en combate cuerpo a cuerpo, para representar su capacidad de bloquear los golpes</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. La espada de Fauschlag se utiliza en combinación con el Colmillo Rúnico, funcionando como si fuesen dos colmillos rúnicos emparejados (+1A). Además, al luchar con ambas espadas, Lothar tiene la regla especial Esquivar (5+) sólo en combate cuerpo a cuerpo, para representar su capacidad de bloquear los golpes</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18871,7 +18895,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="760d-d467-f181-a876" name="Espada ruina de dragones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Félix +2 ataques y Poder de penetración. Al utilizarse contra dragones (dragones de cualquier tipo, incluyendo Dragón del Caos y Dragón zombi) hiere automáticamente, niega la tirada de salvación por piel escamosa y causa Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Félix +2 ataques y Poder de penetración. Al utilizarse contra dragones (dragones de cualquier tipo, incluyendo Dragón del Caos y Dragón zombi) hiere automáticamente, niega la tirada de salvación por piel escamosa y causa Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -18959,7 +18983,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="4599-1bcb-d0b5-7b92" name="Hacha de Gotrek" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Gotrek siempre hiere con 2+, sin importar la resistencia del objetivo. Niega tirada de salvación por armadura. Heridas múltiples (1D3), excepto al usarse contra dragones o demonios, en cuyo caso tendrá la regla Heridas múltiples (1D6). El poder de esta Reliquia es tal que no puede ser afectada o anulada por efectos, objetos mágicos, hechizos o reglas especiales que anulen o destruyan objetos mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Gotrek siempre hiere con 2+, sin importar la resistencia del objetivo. Niega tirada de salvación por armadura. Heridas múltiples (1D3), excepto al usarse contra dragones o demonios, en cuyo caso tendrá la regla Heridas múltiples (1D6). El poder de esta Reliquia es tal que no puede ser afectada o anulada por efectos, objetos mágicos, hechizos o reglas especiales que anulen o destruyan objetos mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19077,7 +19101,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
               <profiles>
                 <profile id="86f1-1f66-04db-5b69" name="Bastón de poder" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Max puede guardar en el bastón hasta dos dados de magia (de energía o dispersión) para utilizarlos en una fase de magia posterior.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Max puede guardar en el bastón hasta dos dados de magia (de energía o dispersión) para utilizarlos en una fase de magia posterior.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19093,7 +19117,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
               <profiles>
                 <profile id="2248-d8b1-46e8-6b12" name="Talimán dorado" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Max la regla especial Piel escamosa (4+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Max la regla especial Piel escamosa (4+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19425,7 +19449,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
               <profiles>
                 <profile id="7f1b-9126-ac92-ae4f" name="Arco reliquia de los Straghov" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo. Los impactos del Arco Reliquia se resuelven con la F de su usuaria (4), y tienen la regla especial Poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco largo. Los impactos del Arco Reliquia se resuelven con la F de su usuaria (4), y tienen la regla especial Poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19720,7 +19744,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
               <profiles>
                 <profile id="2f75-224f-0f58-bd91" name="Talla del lobo blanco" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Hechizado que hace que el Altar cause Terror y tenga Carga devastadora al cargar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Hechizado que hace que el Altar cause Terror y tenga Carga devastadora al cargar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -19987,7 +20011,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
           <profiles>
             <profile id="1795-a23e-78ea-71ad" name="Fragmento de Skoll" hidden="false" typeId="a55d-2199-82f9-73d2" typeName="Talismán de Ulric">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="4770-7b42-f25f-a700">-Sacerdote de Ulric , Sumo Sacerdote de Ulric y Paladines de Ulric. Un sólo uso. Debes declarar que usas el Fragmento de Skoll cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. El portador obtendrá Resistencia a la magia (3) pero solo contra ese hechizo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="4770-7b42-f25f-a700">-Sacerdote de Ulric , Sumo Sacerdote de Ulric y Paladines de Ulric. Un sólo uso. Debes declarar que usas el Fragmento de Skoll cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. El portador obtendrá Resistencia a la magia (3) pero solo contra ese hechizo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20002,7 +20026,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una única mini
           <profiles>
             <profile id="c025-788c-3630-c625" name="Daga de los teutógenos" hidden="false" typeId="a55d-2199-82f9-73d2" typeName="Talismán de Ulric">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="4770-7b42-f25f-a700">-Los Sumos sacerdotes de Ulric o Sacerdotes de Ulric sumarán al nivel de energía de cada plegaria que lancen el bonificador por filas de la unidad a la que acompañen (hasta un máximo de +3). Este bonificador solo se puede sumar una vez, aunque lleves más Dagas de los Teutógenos en la misma unidad.
+                <characteristic name="Reglas especiales" typeId="4770-7b42-f25f-a700">-Los Sumos sacerdotes de Ulric o Sacerdotes de Ulric sumarán al nivel de energía de cada plegaria que lancen el bonificador por filas de la unidad a la que acompañen (hasta un máximo de +3). Este bonificador solo se puede sumar una vez, aunque lleves más Dagas de los Teutógenos en la misma unidad.
 -Un Sumo Sacerdote montado en Altar de Ulric podrá sumar un +1D3 al nivel de energía de cada plegaria que lance.
 -Los paladines de Ulric podrán permitir repetir el dado de energía de cada plegaria lanzada sobre o desde su unidad.
 No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobre la misma plegaria.</characteristic>
@@ -20020,7 +20044,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="0d49-64c1-48cf-913f" name="Emblema de cabeza de lobo" hidden="false" typeId="a55d-2199-82f9-73d2" typeName="Talismán de Ulric">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="4770-7b42-f25f-a700">El Emblema de cabeza del Lobo permite tratar de dispersar hechizos a los Sumo sacerdotes de Ulric y Sacerdotes de Ulric como si fuesen hechiceros. Un Sacerdote de Ulric obtendrá un +1 al dispersar hechizos y un Sumo Sacerdote obtendrá un +2 al dispersar hechizos. Además, si el Sumo sacerdote va montado en altar de Ulric obtendrá un +1 adicional obteniendo un +3 en total.
+                <characteristic name="Reglas especiales" typeId="4770-7b42-f25f-a700">El Emblema de cabeza del Lobo permite tratar de dispersar hechizos a los Sumo sacerdotes de Ulric y Sacerdotes de Ulric como si fuesen hechiceros. Un Sacerdote de Ulric obtendrá un +1 al dispersar hechizos y un Sumo Sacerdote obtendrá un +2 al dispersar hechizos. Además, si el Sumo sacerdote va montado en altar de Ulric obtendrá un +1 adicional obteniendo un +3 en total.
 -Los Paladines de Ulric podrán obtendrán Resistencia a la Magia (2).</characteristic>
               </characteristics>
             </profile>
@@ -20036,7 +20060,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="d212-0a19-ea50-5fcb" name="Colmillo de lobo invernal" hidden="false" typeId="a55d-2199-82f9-73d2" typeName="Talismán de Ulric">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="4770-7b42-f25f-a700">Un solo uso.
+                <characteristic name="Reglas especiales" typeId="4770-7b42-f25f-a700">Un solo uso.
 -Los Sumos sacerdotes de Ulric o Sacerdotes de Ulric lanzarán una plegaria como si se hubiese lanzado con fuerza irresistible. Debes de gastar un dado de energía igualmente para lanzar la plegaria.
 -Los Paladines de Ulric obtendrán un dado de energía adicional que solo podrá utilizar para añadir al lanzamiento de una plegaria lanzada sobre o desde su unidad.</characteristic>
               </characteristics>
@@ -20056,7 +20080,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="4e62-786c-c91e-d225" name="Colmillo ámbar" hidden="false" typeId="a55d-2199-82f9-73d2" typeName="Talismán de Ulric">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="4770-7b42-f25f-a700">-Los Sumos sacerdotes de Ulric o Sacerdotes de Ulric podrán lanzar una plegaria adicional por fase de magia.
+                <characteristic name="Reglas especiales" typeId="4770-7b42-f25f-a700">-Los Sumos sacerdotes de Ulric o Sacerdotes de Ulric podrán lanzar una plegaria adicional por fase de magia.
 -Los paladines de Ulric podrán canalizar como si fuesen hechiceros en su propia fase de magia.</characteristic>
               </characteristics>
             </profile>
@@ -20081,7 +20105,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="71f2-a9eb-86e8-99d2" name="Colmillo rúnico" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Comandante del Imperio. Arma de mano. Los impactos causados por un Colmillo Rúnico hieren automáticamente (no es necesario efectuar la tirada para herir) y no permiten tirada de salvación por armadura. Además, tiene la regla especial Heridas múltiples (2) contra miniaturas con la regla especial No muerto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Comandante del Imperio. Arma de mano. Los impactos causados por un Colmillo Rúnico hieren automáticamente (no es necesario efectuar la tirada para herir) y no permiten tirada de salvación por armadura. Además, tiene la regla especial Heridas múltiples (2) contra miniaturas con la regla especial No muerto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20108,7 +20132,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="02e4-b3b9-d2ac-0468" name="Furia de Ulric" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este martillo se resuelven con un bonificador de +2 a la Fuerza y tienen la regla Golpe letal. Por cada miniatura enemiga retirada como baja a causa de heridas causadas por este martillo, el portador podrá realizar de inmediato un ataque adicional, esos ataques adicionales no podrán producir a su vez nuevos ataques adicionales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este martillo se resuelven con un bonificador de +2 a la Fuerza y tienen la regla Golpe letal. Por cada miniatura enemiga retirada como baja a causa de heridas causadas por este martillo, el portador podrá realizar de inmediato un ataque adicional, esos ataques adicionales no podrán producir a su vez nuevos ataques adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20136,7 +20160,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="074e-19f2-0a8a-09f9" name="Hacha negra de la desolación" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los ataques efectuados por el portador con esta arma obtendrán la regla especial Heridas Múltiples (1D3). Además, su portador podrá repetir las tiradas para herir contra miniaturas con alguna de las marcas del Caos o perteneciente a una de las siguientes listas de ejército: (Bestias del Caos, Demonios, Guerreros del Caos, Grey Infernal). Todas las miniaturas con la regla Especial Envueltos en Niebla Odiarán al portador de esta arma mágica y obtendrán 100 puntos de victoria adicionales al final de la batalla si uno de ellos logra derrotar al portador del arma en Desafío.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los ataques efectuados por el portador con esta arma obtendrán la regla especial Heridas Múltiples (1D3). Además, su portador podrá repetir las tiradas para herir contra miniaturas con alguna de las marcas del Caos o perteneciente a una de las siguientes listas de ejército: (Bestias del Caos, Demonios, Guerreros del Caos, Grey Infernal). Todas las miniaturas con la regla Especial Envueltos en Niebla Odiarán al portador de esta arma mágica y obtendrán 100 puntos de victoria adicionales al final de la batalla si uno de ellos logra derrotar al portador del arma en Desafío.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20156,7 +20180,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="3d68-7c92-cf7a-b551" name="Martillo aullante" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador del Martillo Aullante Causa Miedo y obtiene +1 HA.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador del Martillo Aullante Causa Miedo y obtiene +1 HA.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20184,7 +20208,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="f6ac-eedd-367e-783a" name="Espada del destino" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Al inicio de la batalla designa un monstruo o un personaje enemigo. Contra ese enemigo seleccionado, la espada del destino proporcionará un bonificador de +3F y tendrá la regla especial Heridas múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Al inicio de la batalla designa un monstruo o un personaje enemigo. Contra ese enemigo seleccionado, la espada del destino proporcionará un bonificador de +3F y tendrá la regla especial Heridas múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20203,7 +20227,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="8863-9e0e-1fb7-d658" name="Espada de Segismundo" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +1F en combate cuerpo a cuerpo, y aumentará su I hasta 10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador tendrá un bonificador de +1F en combate cuerpo a cuerpo, y aumentará su I hasta 10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20222,7 +20246,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="12fb-8180-b0bd-dc05" name="Esencia de invierno" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Si obtiene un resultado de 6 al impactar, la Esencia de Invierno hiere automáticamente y anula salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Si obtiene un resultado de 6 al impactar, la Esencia de Invierno hiere automáticamente y anula salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20249,7 +20273,8 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="3a6c-2357-190f-f446" name="Martillo de la tormenta" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Martillo del Lobo blanco. El personaje o unidad que reciba una o más heridas a consecuencia de esta arma obtendrá un penalizador de -1 en el atributo de HA hasta el final del turno de jugador en curso por cada herida sufrida con este arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Martillo del Lobo blanco. El personaje o unidad que reciba una o más heridas a consecuencia de esta arma obtendrá un penalizador de -1 en el atributo de HA hasta el final del turno de jugador en curso por cada herida sufrida con este arma.
+Además el portador obtendrá un bonificador de +2 a la iniciativa +1 HA y ataque rápido en los ataques realizados con este arma.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20276,7 +20301,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="b163-d3ed-db72-b1ab" name="Lanza de la muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Maestre Templario. Lanza de caballería. Proporciona a su portador F10 al cargar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Maestre Templario. Lanza de caballería. Proporciona a su portador F10 al cargar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20303,7 +20328,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="0b4f-df52-f177-a40b" name="Ballesta de las hondonadas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Ballesta del Drakwald. El portador obtiene +1HP. Los disparos con esta ballesta ganan la regla Francotirador y tienen poder de penetración siempre (también a larga distancia)</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Ballesta del Drakwald. El portador obtiene +1HP. Los disparos con esta ballesta ganan la regla Francotirador y tienen poder de penetración siempre (también a larga distancia)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20331,7 +20356,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="4bec-f0fb-a36c-bb20" name="Armadura de la llama sagrada" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de Placas. Otorga a su portador regeneración (4+), Ataques Flamígeros e Inmune a Fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de Placas. Otorga a su portador regeneración (4+), Ataques Flamígeros e Inmune a Fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20361,7 +20386,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="5c9b-be3c-8d0d-f259" name="Yelmo mataskavens" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un bonificador de +1 a la tirada de salvación por armadura de su portador). El portador causa Terror a los skavens.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un bonificador de +1 a la tirada de salvación por armadura de su portador). El portador causa Terror a los skavens.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20377,7 +20402,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="3b6a-f064-89a7-fe4e" name="Escudo de la gorgona" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Al inicio de cada fase de combate cuerpo a cuerpo, selecciona una miniatura enemiga en contacto peana con peana con el portador. Esta miniatura realiza un ataque menos esa fase de combate cuerpo a cuerpo (con un mínimo de 1 ataque).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Al inicio de cada fase de combate cuerpo a cuerpo, selecciona una miniatura enemiga en contacto peana con peana con el portador. Esta miniatura realiza un ataque menos esa fase de combate cuerpo a cuerpo (con un mínimo de 1 ataque).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20396,7 +20421,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="0a6b-c779-5f63-d233" name="Armadura del alba" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de placas (tirada de salvación por armadura de 4+). Su portador puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de placas (tirada de salvación por armadura de 4+). Su portador puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20415,7 +20440,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="3af2-511a-96ae-8b32" name="Piel de Anraheir" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona a su portador la regla especial Piel escamosa (5+), el portador causará Miedo a las miniaturas pertenecientes a la lista de Ejercito Bestias del Caos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona a su portador la regla especial Piel escamosa (5+), el portador causará Miedo a las miniaturas pertenecientes a la lista de Ejercito Bestias del Caos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20434,7 +20459,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="0e72-a5f7-5128-eefc" name="Armadura de Skoll" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Los ataques dirigidos contra su portador en combate cuerpo a cuerpo sufren un modificador de -1 a la Fuerza. El portador es Inmune a Fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Los ataques dirigidos contra su portador en combate cuerpo a cuerpo sufren un modificador de -1 a la Fuerza. El portador es Inmune a Fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20462,7 +20487,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="5643-15f4-2a8e-eb1e" name="Yelmo lobo de los Teutógenos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Sólo miniaturas con la Regla Aplastar al Débil. Yelmo (otorga al portador una tirada de salvación por armadura de 6+) El portador obtiene un bonificador de +1 a su atributo de Fuerza y se ve afectado por la regla especial Orgullo Marcial (debe aceptar todos los desafíos que se lancen y pudiese aceptar)</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Sólo miniaturas con la Regla Aplastar al Débil. Yelmo (otorga al portador una tirada de salvación por armadura de 6+) El portador obtiene un bonificador de +1 a su atributo de Fuerza y se ve afectado por la regla especial Orgullo Marcial (debe aceptar todos los desafíos que se lancen y pudiese aceptar)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20489,7 +20514,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="1c9e-fc88-2ae6-c1bc" name="Corazón de Middenheim" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una tirada de salvación Especial de 4+ y Resistencia a la Magia (1). El portador también obtiene un bonificador de +1 a su característica de Habilidad de Armas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una tirada de salvación Especial de 4+ y Resistencia a la Magia (1). El portador también obtiene un bonificador de +1 a su característica de Habilidad de Armas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20516,7 +20541,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="cf2a-ff00-9c67-cda4" name="Amuleto carmesí" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Este talismán proporciona a su portador una tirada de salvación especial de 6+. Adicionalmente, su portador superará automáticamente todos los chequeos de atributo que deba realizar, excepto los chequeos de liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Este talismán proporciona a su portador una tirada de salvación especial de 6+. Adicionalmente, su portador superará automáticamente todos los chequeos de atributo que deba realizar, excepto los chequeos de liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20532,7 +20557,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="c2c8-b226-6a18-d7b5" name="Piedra bendecida del Ulricsberg" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Regeneración (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Regeneración (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20551,7 +20576,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="c32a-7f8c-c86d-0715" name="Amuleto de jade" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada uno de tus turnos, el portador restablece una herida sufrida con anterioridad en la batalla</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada uno de tus turnos, el portador restablece una herida sufrida con anterioridad en la batalla</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20567,7 +20592,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="6943-0c75-1698-9b05" name="Capa blanca de Ulric" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Los enemigos en contacto pena con peana con el portador sufrirán un -1 en todas sus tiradas para impactar. Además, el portador tiene una salvación especial de 5+ y es Inmune a Fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Los enemigos en contacto pena con peana con el portador sufrirán un -1 en todas sus tiradas para impactar. Además, el portador tiene una salvación especial de 5+ y es Inmune a Fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20586,7 +20611,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="030e-14c2-a587-d073" name="Talismán de la llama sagrada" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+ y Resistencia a la Magia (2)</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 5+ y Resistencia a la Magia (2)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20613,7 +20638,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="70a0-723e-4264-acd0" name="Anillo de Volans" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos; nivel de energía variable. Al inicio de cada una de tus fases de magia, escoge uno de los 8 colegios de la magia y tira un hechizo al azar de esa lista. El portador puede lanzar ese hechizo sin invertir dados de energía (no es necesario gastar un dado,como con otros objetos pòrtahechizos), con un valor de lanzamiento igual a su dificultad básica (no pueden lanzarse hechizos potenciados usando este objeto).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos; nivel de energía variable. Al inicio de cada una de tus fases de magia, escoge uno de los 8 colegios de la magia y tira un hechizo al azar de esa lista. El portador puede lanzar ese hechizo sin invertir dados de energía (no es necesario gastar un dado,como con otros objetos pòrtahechizos), con un valor de lanzamiento igual a su dificultad básica (no pueden lanzarse hechizos potenciados usando este objeto).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20629,7 +20654,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="5c84-6268-a0e3-91a1" name="Laurel de la victoria" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Cada herida causada por el portador en combate cuerpo a cuerpo (no por su montura) contará como dos heridas al determinar el resultado del combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Cada herida causada por el portador en combate cuerpo a cuerpo (no por su montura) contará como dos heridas al determinar el resultado del combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20653,7 +20678,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="acbc-e163-2841-590b" name="Azote de los cobardes" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Ni la unidad que porta el Azote de los Cobardes ni ninguna unidad contra la que cargue podrá decidir huir ni disparar y huir voluntariamente como reacción a la carga. El portador es inmune a miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Ni la unidad que porta el Azote de los Cobardes ni ninguna unidad contra la que cargue podrá decidir huir ni disparar y huir voluntariamente como reacción a la carga. El portador es inmune a miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20672,7 +20697,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="89fc-d93c-21ab-f70e" name="Talismán de la garra" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El personaje y su unidad podrán repetir la tirada de dados cuando realice un movimiento de carga, persecución o arrasamiento.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El personaje y su unidad podrán repetir la tirada de dados cuando realice un movimiento de carga, persecución o arrasamiento.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20688,7 +20713,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="04a1-0af7-81d5-e9bc" name="Pellejo de Horros" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtiene +1 en el atributo de Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtiene +1 en el atributo de Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20704,7 +20729,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="8112-1543-64a0-1dbe" name="Espejo de Van Horstmann" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El espejo sólo funciona cuando el personaje se encuentra trabado en un desafío. El portador puede intercambiar con su oponente sus atributos de HA, F, R e I hasta el final de la fase de combate cuerpo a cuerpo. Debe intercambiar todos esos atributos o no intercambiar ninguno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El espejo sólo funciona cuando el personaje se encuentra trabado en un desafío. El portador puede intercambiar con su oponente sus atributos de HA, F, R e I hasta el final de la fase de combate cuerpo a cuerpo. Debe intercambiar todos esos atributos o no intercambiar ninguno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20720,7 +20745,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="c3e3-9505-f5b9-a940" name="Bastón de mando" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. El portador puede utilizar el bastón antes de efectuar un chequeo de desmoralización: si lo hace, superará el chequeo automáticamente. No puede utilizarse el bastón en la misma fase de combate en la que el portador haya rehusado un desafío.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. El portador puede utilizar el bastón antes de efectuar un chequeo de desmoralización: si lo hace, superará el chequeo automáticamente. No puede utilizarse el bastón en la misma fase de combate en la que el portador haya rehusado un desafío.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20744,7 +20769,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="820f-748a-c238-a3cd" name="Báculo gris" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador de este báculo sumará 1D3 a todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador de este báculo sumará 1D3 a todas sus tiradas de lanzamiento de hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20768,7 +20793,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="c993-2bef-d403-13fd" name="Piedra adivinatoria" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Puede usarse para repetir todos los dados de una tirada de lanzamiento o dispersión que efectúe el hechicero. Un solo uso.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Puede usarse para repetir todos los dados de una tirada de lanzamiento o dispersión que efectúe el hechicero. Un solo uso.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20784,7 +20809,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="287b-a3d4-a730-8b18" name="Báculo del poder mágico" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador puede lanzar hasta un dado más de los permitidos normalmente por su nivel al lanzar un hechizo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador puede lanzar hasta un dado más de los permitidos normalmente por su nivel al lanzar un hechizo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20800,7 +20825,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="5bb3-d707-4c4a-a6f0" name="Bola de cristal" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, el enemigo deberá revelar todos sus objetos mágicos, asesinos, fanáticos y otros elementos ocultos a 18” o menos del portador de la Bola de Cristal. El portador podrá sumar un +1 al valor de lanzamiento total de los hechizos del Saber de los Cielos que lance.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, el enemigo deberá revelar todos sus objetos mágicos, asesinos, fanáticos y otros elementos ocultos a 18” o menos del portador de la Bola de Cristal. El portador podrá sumar un +1 al valor de lanzamiento total de los hechizos del Saber de los Cielos que lance.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20824,7 +20849,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="c6cb-7b88-5fc2-a151" name="Estandarte sagrado de Ulric" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador del estandarte y la unidad en la que se encuentre obtendrán la regla especial Indesmoralizables. El portador podrá unirse a unidades que no tuviesen la Regla Especial Indesmoralizable, obteniendo la unidad la regla mientras el personaje forme parte de ella.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador del estandarte y la unidad en la que se encuentre obtendrán la regla especial Indesmoralizables. El portador podrá unirse a unidades que no tuviesen la Regla Especial Indesmoralizable, obteniendo la unidad la regla mientras el personaje forme parte de ella.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20833,25 +20858,6 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="65.0"/>
-          </costs>
-        </selectionEntry>
-        <selectionEntry id="836a-92c9-2b83-0fe9" name="Estandarte del verdadero guerrero" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="82d9-cc9a-ef05-9506" type="max"/>
-            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="d215-5e00-8e2b-6b03" type="max"/>
-          </constraints>
-          <profiles>
-            <profile id="bf26-c57f-6e19-afd7" name="Estandarte del verdadero guerrero" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtendrán la regla especial “Tozudez”.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <infoLinks>
-            <infoLink id="a90a-d7ac-7ca0-0b15" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
-          </infoLinks>
-          <costs>
-            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -20870,7 +20876,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="cc79-923b-9bb5-6269" name="Estandarte del ojo del halcón" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo unidades de infantería. La unidad obtiene un bonificador de +1 en su tirada para impactar con proyectiles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo unidades de infantería. La unidad obtiene un bonificador de +1 en su tirada para impactar con proyectiles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20894,7 +20900,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="819a-057f-311c-5522" name="Estandarte del valor" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre serán inmunes a psicología.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre serán inmunes a psicología.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -20913,12 +20919,31 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="b410-c989-4dcf-3fa3" name="Estandarte del lobo blanco" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los proyectiles y proyectiles mágicos disparados contra el portador y su unidad sufren un modificador de -1a la Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los proyectiles y proyectiles mágicos disparados contra el portador y su unidad sufren un modificador de -1a la Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b083-0ff9-8315-a337" name="Estandarte del verdadero guerrero" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="804e-da1e-18ca-c436" type="max"/>
+            <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="3f42-3ddc-8200-2871" type="max"/>
+          </constraints>
+          <profiles>
+            <profile id="c519-f32f-1448-3753" name="Estandarte del verdadero guerrero" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
+              <characteristics>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtendrán la regla especial “Tozudez”.</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <infoLinks>
+            <infoLink id="d72d-a1cf-b014-eb5f" name="Tozudez" hidden="false" targetId="eeaa-5e56-bdf4-3ddb" type="rule"/>
+          </infoLinks>
+          <costs>
+            <cost name="pts" typeId="points" value="50.0"/>
           </costs>
         </selectionEntry>
       </selectionEntries>
@@ -20937,7 +20962,7 @@ No pueden aplicarse a la vez los efectos de varias Dagas de los Teutógenos sobr
           <profiles>
             <profile id="029c-b254-0fcf-5362" name="Estandarte del lobo invernal" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Soló miniaturas pertenecientes a la Orden del Lobo Blanco o Semigrifos pertenecientes a la Orden de los Lobos Invernales.. Objeto Portahechizos. Nivel de energía 4. Contiene el hechizo Manto Gélido de la Magia del Hielo de Kislev, que podrá lanzarse sobre la unidad del portador. Manto Gélido: (hechizo de potenciación que otorga a las miniaturas de la unidad una tirada de salvación Especial de 5+ que se ve incrementada a 3+ contra ataques y efectos con la Reglas especiales Ataques flamígeros o Ataques Sólo Flamígeros). Dura un turno completo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Soló miniaturas pertenecientes a la Orden del Lobo Blanco o Semigrifos pertenecientes a la Orden de los Lobos Invernales.. Objeto Portahechizos. Nivel de energía 4. Contiene el hechizo Manto Gélido de la Magia del Hielo de Kislev, que podrá lanzarse sobre la unidad del portador. Manto Gélido: (hechizo de potenciación que otorga a las miniaturas de la unidad una tirada de salvación Especial de 5+ que se ve incrementada a 3+ contra ataques y efectos con la Reglas especiales Ataques flamígeros o Ataques Sólo Flamígeros). Dura un turno completo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -21032,32 +21057,32 @@ La Fe en la fuerza: Las unidades de Seguidores del Culto obtendrán la regla esp
     </profile>
     <profile id="6a8f-d2b0-de0d-9a47" name="Caballeros del lobo blanco" hidden="false" typeId="a57b-0114-ac79-45f0" typeName="Orden de caballería">
       <characteristics>
-        <characteristic name="Propiedades mágicas" typeId="4889-9bf0-02e4-d3e0">Aplastar al débil (repiten los resultados de 1 en sus tiradas para herir contra enemigos con L7 o inferior). Los Caballeros y Caballeros del Círculo Interior están equipados con Martillo del Lobo Blanco y Capa de Lobo. Los Templarios a pie están equipados con Capas de Lobo. El Maestre Templario y el Senescal del Lobo Blanco están equipados Capa de lobo, y tanto ellos como la unidad en la que se encuentren pueden repetir todas sus tiradas de 1 para herir (sin tener en cuenta el L de sus enemigos).</characteristic>
+        <characteristic name="Reglas especiales" typeId="4889-9bf0-02e4-d3e0">Aplastar al débil (repiten los resultados de 1 en sus tiradas para herir contra enemigos con L7 o inferior). Los Caballeros y Caballeros del Círculo Interior están equipados con Martillo del Lobo Blanco y Capa de Lobo. Los Templarios a pie están equipados con Capas de Lobo. El Maestre Templario y el Senescal del Lobo Blanco están equipados Capa de lobo, y tanto ellos como la unidad en la que se encuentren pueden repetir todas sus tiradas de 1 para herir (sin tener en cuenta el L de sus enemigos).</characteristic>
       </characteristics>
     </profile>
     <profile id="ba2c-a342-30cd-d79f" name="Caballeros pantera" hidden="false" typeId="a57b-0114-ac79-45f0" typeName="Orden de caballería">
       <characteristics>
-        <characteristic name="Propiedades mágicas" typeId="4889-9bf0-02e4-d3e0">Odio (Caos; Bestias del Caos, Guerreros del Caos, Demonios del Caos, Kurgan y Grey Infernal); además, debido a la gran calidad de sus armas de manufactura enana, tienen Poder de penetración en sus ataques en combate cuerpo a cuerpo. Los Caballeros y Caballeros del Círculo Interior están equipados con Lanza de caballería y Escudo. El Maestre Templario y su unidad pueden repetir todas sus tiradas fallidas para impactar contra el Caos.</characteristic>
+        <characteristic name="Reglas especiales" typeId="4889-9bf0-02e4-d3e0">Odio (Caos; Bestias del Caos, Guerreros del Caos, Demonios del Caos, Kurgan y Grey Infernal); además, debido a la gran calidad de sus armas de manufactura enana, tienen Poder de penetración en sus ataques en combate cuerpo a cuerpo. Los Caballeros y Caballeros del Círculo Interior están equipados con Lanza de caballería y Escudo. El Maestre Templario y su unidad pueden repetir todas sus tiradas fallidas para impactar contra el Caos.</characteristic>
       </characteristics>
     </profile>
     <profile id="922b-093b-d0dc-d26f" name="Caballeros del sol llameante" hidden="false" typeId="a57b-0114-ac79-45f0" typeName="Orden de caballería">
       <characteristics>
-        <characteristic name="Propiedades mágicas" typeId="4889-9bf0-02e4-d3e0">Odio No muertos); además, debido a sus escudos bruñidos como espejos, los enemigos tendrán un penalizador de -1 para impactarlos en combate cuerpo a cuerpo durante cualquier turno en el que el Sol Llameante cargue. Los Caballeros y Caballeros del Círculo Interior están equipados con Lanza de caballería y Escudo. El Maestre Templario y su unidad pueden repetir todas sus tiradas fallidas para impactar contra No muertos.</characteristic>
+        <characteristic name="Reglas especiales" typeId="4889-9bf0-02e4-d3e0">Odio No muertos); además, debido a sus escudos bruñidos como espejos, los enemigos tendrán un penalizador de -1 para impactarlos en combate cuerpo a cuerpo durante cualquier turno en el que el Sol Llameante cargue. Los Caballeros y Caballeros del Círculo Interior están equipados con Lanza de caballería y Escudo. El Maestre Templario y su unidad pueden repetir todas sus tiradas fallidas para impactar contra No muertos.</characteristic>
       </characteristics>
     </profile>
     <profile id="83fd-ebc7-5437-a808" name="Caballeros de la furia de Taal" hidden="false" typeId="a57b-0114-ac79-45f0" typeName="Orden de caballería">
       <characteristics>
-        <characteristic name="Propiedades mágicas" typeId="4889-9bf0-02e4-d3e0">Amuletos (salvación especial 6+). Cruzar (bosques) Los Caballeros de Semigrifo están equipados con Alabardas y Escudos. El Maestre Templario y su unidad pueden repetir todas sus tiradas fallidas para impactar contra Bestias del Caos.</characteristic>
+        <characteristic name="Reglas especiales" typeId="4889-9bf0-02e4-d3e0">Amuletos (salvación especial 6+). Cruzar (bosques) Los Caballeros de Semigrifo están equipados con Alabardas y Escudos. El Maestre Templario y su unidad pueden repetir todas sus tiradas fallidas para impactar contra Bestias del Caos.</characteristic>
       </characteristics>
     </profile>
     <profile id="eec5-2053-8b09-e422" name="Caballeros de la orden de los jinetes de Drakwald" hidden="false" typeId="a57b-0114-ac79-45f0" typeName="Orden de caballería">
       <characteristics>
-        <characteristic name="Propiedades mágicas" typeId="4889-9bf0-02e4-d3e0">Impactos por carga (1) . Pueden repetir las tiradas de dados para determinar la distancia de las cargas que efectúen. Los Caballeros de Semigrifo están equipados con Lanzas de caballería y Escudos.</characteristic>
+        <characteristic name="Reglas especiales" typeId="4889-9bf0-02e4-d3e0">Impactos por carga (1) . Pueden repetir las tiradas de dados para determinar la distancia de las cargas que efectúen. Los Caballeros de Semigrifo están equipados con Lanzas de caballería y Escudos.</characteristic>
       </characteristics>
     </profile>
     <profile id="e806-2d6f-1d6f-5185" name="Caballeros de la orden de los lobos invernales" hidden="false" typeId="a57b-0114-ac79-45f0" typeName="Orden de caballería">
       <characteristics>
-        <characteristic name="Propiedades mágicas" typeId="4889-9bf0-02e4-d3e0">Impasibles. Carga Devastadora (afecta tanto al jinete como al semigrifo). Los Caballeros de Semigrifo están equipados con Alabardas. No llevan escudo. Manto Lobuno (Piel escamosa (6+).</characteristic>
+        <characteristic name="Reglas especiales" typeId="4889-9bf0-02e4-d3e0">Impasibles. Carga Devastadora (afecta tanto al jinete como al semigrifo). Los Caballeros de Semigrifo están equipados con Alabardas. No llevan escudo. Manto Lobuno (Piel escamosa (6+).</characteristic>
       </characteristics>
     </profile>
     <profile id="654f-097f-d90a-3a8f" name="Arcabuz de repetición" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">

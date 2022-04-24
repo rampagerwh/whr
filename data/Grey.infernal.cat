@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="d2ea-a0b8-8a9f-e3a5" name="Grey infernal" revision="409" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="d2ea-a0b8-8a9f-e3a5" name="Grey infernal" revision="413" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <publications>
     <publication id="d2ea-a0b8-pubN65537" name="Grey Infernal Reforged"/>
   </publications>
   <profileTypes>
     <profileType id="454f-9dda-874e-99b2" name="Recompensa del caos">
       <characteristicTypes>
-        <characteristicType id="c061-8049-b24d-6e12" name="Propiedades mágicas"/>
+        <characteristicType id="c061-8049-b24d-6e12" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -5501,7 +5501,7 @@ ejército de, al menos, 3000 puntos).</description>
               <profiles>
                 <profile id="962d-ea44-6870-0b41" name="Apariencia horripilante" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Causa terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Causa terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5559,7 +5559,7 @@ ejército de, al menos, 3000 puntos).</description>
               <profiles>
                 <profile id="0a03-b5e5-ef1d-5522" name="Corona invernal" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Proporciona al Rey Troll la regla especial ¡Ni un paso atrás!, que afecta a todas las unidades de Grey Infernal a 12” o menos de Throgg (incluyendo a la unidad en la que se encuentre Throgg).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Proporciona al Rey Troll la regla especial ¡Ni un paso atrás!, que afecta a todas las unidades de Grey Infernal a 12” o menos de Throgg (incluyendo a la unidad en la que se encuentre Throgg).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5614,6 +5614,11 @@ ejército de, al menos, 3000 puntos).</description>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="50a6-5c64-a278-a228" type="max"/>
@@ -5660,7 +5665,7 @@ ejército de, al menos, 3000 puntos).</description>
               <profiles>
                 <profile id="9c23-cb2f-8855-caa9" name="Cayado de la tormenta" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Al inicio de cada fase de disparo propia, tira 1D6: si el resultado obtenido es igual o inferior al número del turno en curso (es decir, con un 1 en el primer turno, con 1-2 en el segundo turno, con 1-3 en el tercero, etc), el Cayado descargará un rayo. Selecciona una unidad enemiga a 24” o menos de Urannon: esta sufrirá inmediatamente 1D6 impactos de F6 distribuidos como proyectiles que no permiten tirada de salvación por armadura (esto es un ataque de rayos).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Al inicio de cada fase de disparo propia, tira 1D6: si el resultado obtenido es igual o inferior al número del turno en curso (es decir, con un 1 en el primer turno, con 1-2 en el segundo turno, con 1-3 en el tercero, etc), el Cayado descargará un rayo. Selecciona una unidad enemiga a 24” o menos de Urannon: esta sufrirá inmediatamente 1D6 impactos de F6 distribuidos como proyectiles que no permiten tirada de salvación por armadura (esto es un ataque de rayos).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5809,7 +5814,7 @@ Vomitona. Cogiendo un fuerte impulso, Utiuja descargan su vientre sobre la criat
               <profiles>
                 <profile id="ec1b-05e0-1761-04b3" name="Cayado de madera negra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Todos los hechiceros (aliados y enemigos, incluyendo a Utiunja) situados a 12” o menos del portador de este Cayado podrán canalizar un dado adicional durante sus fases de magia. Otorga a Utiunja un dado de energía adicional durante cada una de sus fases de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Todos los hechiceros (aliados y enemigos, incluyendo a Utiunja) situados a 12” o menos del portador de este Cayado podrán canalizar un dado adicional durante sus fases de magia. Otorga a Utiunja un dado de energía adicional durante cada una de sus fases de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5951,7 +5956,7 @@ Vomitona. Cogiendo un fuerte impulso, Utiuja descargan su vientre sobre la criat
               <profiles>
                 <profile id="b4b3-8972-a4d0-9621" name="Aplastaestrellas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por Aplastaestrellas tienen la regla especial Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados por Aplastaestrellas tienen la regla especial Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5971,7 +5976,7 @@ Vomitona. Cogiendo un fuerte impulso, Utiuja descargan su vientre sobre la criat
               <profiles>
                 <profile id="1acd-35a2-e1ce-c204" name="Armadura de la tormenta" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Cualquier ataque de rayos (incluyendo hechizos y ataques de disparo, pero no ataques en combate cuerpo a cuerpo) que impacte a un objetivo a 8” o menos de Kholek impactará también al propio Kholek. Proporciona una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Cualquier ataque de rayos (incluyendo hechizos y ataques de disparo, pero no ataques en combate cuerpo a cuerpo) que impacte a un objetivo a 8” o menos de Kholek impactará también al propio Kholek. Proporciona una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6202,7 +6207,7 @@ impactadas, y retirar como baja a aquellas que fallen dicho chequeo.</descriptio
               <profiles>
                 <profile id="2c14-0b07-b4fa-04d9" name="Piel dura como el hierro" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Proporciona a Scyla una tirada de salvación por armadura de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Proporciona a Scyla una tirada de salvación por armadura de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6241,7 +6246,7 @@ impactadas, y retirar como baja a aquellas que fallen dicho chequeo.</descriptio
               <profiles>
                 <profile id="4bda-8730-9b03-e8c4" name="Collar de Khorne de Erlock" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todas las armas mágicas de los enemigos en contacto peana con peana con Scyla perderán sus propiedades y pasarán a considerarse armas mundanas del mismo tipo mientras permanezcan en contacto con Scyla. Scyla podrá usar su salvación de aura demoníaca contra ataques mágicos en combate cuerpo a cuerpo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todas las armas mágicas de los enemigos en contacto peana con peana con Scyla perderán sus propiedades y pasarán a considerarse armas mundanas del mismo tipo mientras permanezcan en contacto con Scyla. Scyla podrá usar su salvación de aura demoníaca contra ataques mágicos en combate cuerpo a cuerpo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6342,7 +6347,7 @@ impactadas, y retirar como baja a aquellas que fallen dicho chequeo.</descriptio
               <profiles>
                 <profile id="35aa-3bef-7625-92ed" name="Espada del olvido" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura que sufra heridas a causa de la Espada del Olvido deberá realizar inmediatamente un chequeo de Resistencia por cada herida sufrida (si sobrevive a las heridas). Si falla un chequeo, se transformará en un Engendro del Caos (retira la miniatura como baja y reemplázala por un engendro del Caos bajo tu control. Si la miniatura estaba unida a una unidad, abandonará la unidad inmediatamente y pasará a estar trabado en combate cuerpo a cuerpo con su antigua unidad).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Cualquier miniatura que sufra heridas a causa de la Espada del Olvido deberá realizar inmediatamente un chequeo de Resistencia por cada herida sufrida (si sobrevive a las heridas). Si falla un chequeo, se transformará en un Engendro del Caos (retira la miniatura como baja y reemplázala por un engendro del Caos bajo tu control. Si la miniatura estaba unida a una unidad, abandonará la unidad inmediatamente y pasará a estar trabado en combate cuerpo a cuerpo con su antigua unidad).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6373,7 +6378,7 @@ impactadas, y retirar como baja a aquellas que fallen dicho chequeo.</descriptio
               <profiles>
                 <profile id="9322-e2ce-7cc4-79f2" name="Escudo rúnico del caos" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Todas las armas mágicas y rúnicas de todos los enemigos en contacto peana con peana con el portador se considerarán armas mundanas de su mismo tipo mientras permanezcan en contacto peana con peana con el portador.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Todas las armas mágicas y rúnicas de todos los enemigos en contacto peana con peana con el portador se considerarán armas mundanas de su mismo tipo mientras permanezcan en contacto peana con peana con el portador.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6442,7 +6447,7 @@ impactadas, y retirar como baja a aquellas que fallen dicho chequeo.</descriptio
               <profiles>
                 <profile id="1278-63f1-bcf4-d9d0" name="Condenación eterna" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Antes del inicio de la batalla deberá generarse aleatoriamente el perfil de atributos de Mordrek (los atributos de HA, F, R e I), en presencia del oponente. Deberán efectuarse las tiradas correspondientes y modificar los atributos tal y como se indica en su perfil. Además, debe repetirse la tirada de uno de estos atributos al inicio de cada uno de tus turnos (determinada aleatoriamente). El jugador debe aceptar el resultado de la nueva tirada. No es posible repetir esta tirada. Cualquier bonificador a esos atributos obtenido por las tiradas en la tabla del Ojo de los Dioses permanecen aunque el atributo cambie. Esta recompensa del Caos no puede ser anulada, destruida o afectada por ninguna regla especial, objeto mágico o hechizo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Antes del inicio de la batalla deberá generarse aleatoriamente el perfil de atributos de Mordrek (los atributos de HA, F, R e I), en presencia del oponente. Deberán efectuarse las tiradas correspondientes y modificar los atributos tal y como se indica en su perfil. Además, debe repetirse la tirada de uno de estos atributos al inicio de cada uno de tus turnos (determinada aleatoriamente). El jugador debe aceptar el resultado de la nueva tirada. No es posible repetir esta tirada. Cualquier bonificador a esos atributos obtenido por las tiradas en la tabla del Ojo de los Dioses permanecen aunque el atributo cambie. Esta recompensa del Caos no puede ser anulada, destruida o afectada por ninguna regla especial, objeto mágico o hechizo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6726,7 +6731,7 @@ impactadas, y retirar como baja a aquellas que fallen dicho chequeo.</descriptio
                   <profiles>
                     <profile id="bee1-3138-21a2-864c" name="Estandarte de la novia del mar" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -6886,7 +6891,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="6071-071b-1888-da71" name="Skabscrath" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6957,7 +6962,7 @@ afectados por la regla especial No Muerto.</description>
                   <profiles>
                     <profile id="2332-4b61-1a6b-0f36" name="Pabellón de pesadilla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7033,6 +7038,9 @@ afectados por la regla especial No Muerto.</description>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="cd80-ce4e-2f18-cd98" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -7325,7 +7333,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="b1e1-0bab-1e72-8498" name="Mordisco del dios águila" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7504,7 +7512,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="d317-aacc-fa9a-2661" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7520,7 +7528,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="ddbd-51c6-97b5-ab03" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8529,7 +8537,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="36eb-4445-f46c-3e94" name="Filos embrujados" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los impactos causados por los Filos embrujados se resuelven con +1F.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los impactos causados por los Filos embrujados se resuelven con +1F.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8673,7 +8681,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="f375-181e-4f4d-e58e" name="Amuleto de Hag Graef" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada una de tus fases de magia, puedes elegir que el amuleto restaure a Shyishet una herida que hubiese sufrido con anterioridad durante la batalla, o que el amuleto genere un dado de energía que sólo Shyishet podrá usar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Al inicio de cada una de tus fases de magia, puedes elegir que el amuleto restaure a Shyishet una herida que hubiese sufrido con anterioridad durante la batalla, o que el amuleto genere un dado de energía que sólo Shyishet podrá usar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8778,7 +8786,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="8ce2-c8a4-b43a-8a3b" name="Florecimiento mórbido" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Frud tiene la regla especial Regeneración (4+). Los engendros de su unidad obtendrán la regla especial Regeneración (5+) mientras Frud continúe con vida.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Frud tiene la regla especial Regeneración (4+). Los engendros de su unidad obtendrán la regla especial Regeneración (5+) mientras Frud continúe con vida.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8808,7 +8816,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="835f-0769-fe4b-75fa" name="Arpones de plaga" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma arrojadiza. Los arpones de plaga tienen un alcance de 18”, impactan con F6 y tienen las reglas especiales Ataques envenenados y Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma arrojadiza. Los arpones de plaga tienen un alcance de 18”, impactan con F6 y tienen las reglas especiales Ataques envenenados y Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9068,7 +9076,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="512c-d9a1-1f6c-f3e0" name="Aguijones negros" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas (Murdaich realiza con ellas un total de 6 Ataques, más uno adicional con la cola). Por cada herida causada por el portador con las mazas, éste puede curarse una de las heridas que hubiese sufrido previamente durante la batalla, o puede añadir un dado de energía para su siguiente fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas (Murdaich realiza con ellas un total de 6 Ataques, más uno adicional con la cola). Por cada herida causada por el portador con las mazas, éste puede curarse una de las heridas que hubiese sufrido previamente durante la batalla, o puede añadir un dado de energía para su siguiente fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9088,7 +9096,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="f411-c920-f06a-5318" name="Coraza bruja" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial Aura demoníaca (4+). Esta armadura no impide a Murdaich lanzar hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador obtiene la regla especial Aura demoníaca (4+). Esta armadura no impide a Murdaich lanzar hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9314,7 +9322,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="502a-70f3-a845-4651" name="Rebanadora de Snagga" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Rebanadora. Otorga a Snagga +1A y +1F y poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Rebanadora. Otorga a Snagga +1A y +1F y poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
                 <profile id="8d5e-8f7f-2806-2776" name="Rebanadora" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
@@ -9352,7 +9360,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
               <profiles>
                 <profile id="cdeb-4974-cb62-01d1" name="Ezcudo mataliztilloz" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a Snagga una tirada de salvación especial de 4+ contra ataques mágicos. Cualquier herida salvada cuerpo a cuerpo debido a este efecto causará un impacto de F5 en el atacante.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona a Snagga una tirada de salvación especial de 4+ contra ataques mágicos. Cualquier herida salvada cuerpo a cuerpo debido a este efecto causará un impacto de F5 en el atacante.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9427,6 +9435,264 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
       </selectionEntries>
       <entryLinks>
         <entryLink id="d06f-26a1-a317-04f3" name="Regimientos de renombre" hidden="false" collective="false" import="true" targetId="cbe6-b40a-eb61-0c1c" type="selectionEntry"/>
+      </entryLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="ce5d-052f-6aad-4083" name="La compañía maldita" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="f034-4a61-eb4d-ad67" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="776e-5409-2b9c-437a" name="Bienvenidos a la maldición" hidden="false">
+          <description>Por cada miniatura enemiga abatida a causa de las heridas de Richter u otro miembro de su unidad podrás incluir un Guerrero Maldito adicional en la unidad. Añade los guerreros en el momento que las miniaturas son retiradas como baja. Esta regla no afecta a miniaturas con la regla especial Demonio.</description>
+        </rule>
+        <rule id="9389-ee67-7b29-c4b6" name="Primero entre los malditos" hidden="false">
+          <description>Mientras Richter siga con vida, Richter y su unidad de Guerreros Malditos podrán marchar como si no estuviesen afectados por la regla especial No Muerto.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="5772-e265-85ee-be40" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="3e27-16de-3c2c-8cb6" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
+        <infoLink id="875e-8888-71c1-e83f" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="da8f-bd06-55e3-87be" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="a259-8c86-2270-bd73" name="Guerreros condenados" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="29.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8a19-a1ba-6b75-e8b3" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c728-d407-f22f-1396" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="a5e4-5997-832f-71a2" name="Guerrero condenado" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">2</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">2</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">6</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">5</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="ab4c-b90e-4339-d900" name="Equipo guerreros condenados" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6e66-bb1c-82e6-e39d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="bb70-6525-3352-9480" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="35dc-2637-ef7a-183c" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5024-e0a2-1b9a-3183" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5128-cb07-4f20-d548" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="30ee-55c8-5bdd-6058" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="41e6-4bd6-273f-2b6a" name="Armadura ligera" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fb41-6206-ddeb-5672" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5bbe-d48f-100d-b8eb" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="85e8-b1a3-12a9-86d7" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9e4a-0821-c130-79db" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="04d9-8c78-e7d4-ff45" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c03-f2b4-4c16-e72f" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="84a1-6ca8-5ab1-729d" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e1b-8588-f1bf-06a4" name="Richter Kreugar" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4fc2-3269-d92c-9da4" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2438-ffe1-2334-b585" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="f3bb-0a4d-9814-9f3e" name="Richter Kreugar" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323">4</characteristic>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="156.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="b660-0e72-44ed-e894" name="Equipo Richter Kreugar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6a8-a59f-6272-1192" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3ea9-590c-becc-d3bd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="4189-f6c6-2b3b-2dd6" name="Aflicción" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e76b-ac93-bb7f-ec50" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9ec3-3dbd-d7cf-08a5" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="09ff-ed7d-bb6a-80e5" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="ef5a-d31a-4f03-011e" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="3167-855d-c873-3231" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="04f6-ca2a-d5b3-d139" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1347-0c37-a942-f066" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a1b7-351f-2709-4a03" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="f91e-84a5-ebd9-40e8" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1a68-905e-8408-aab1" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c2af-a00a-0094-786d" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fa95-9c57-2b00-adc7" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="01ee-265c-e7f8-45e1" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="a58f-b791-44f4-dbb2" name="La oscura gema de la condenación" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="aff9-cb3e-26d9-628f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a276-9cb5-5c21-6e9f" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="a1ef-7076-cdc7-7c73" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="1caf-42d6-dc2e-1768" name="Grupo de mando" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="339b-13f2-61c7-77ba" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2587-8043-f1ab-3fdd" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="9557-6df2-5dbf-f4ca" name="Músico" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="6ece-fa8e-5bee-facf" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c99b-920c-d52e-a061" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="89ad-e0ad-6979-ae96" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="a60c-bc08-79fd-339b" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3019-e649-646c-aafc" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1b19-cfe2-e89f-31f4" name="Estandarte de los malditos" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="c284-f9b1-29b0-47cf" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9c64-fa72-a6b6-639a" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="eec4-3803-82f0-dd70" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
+                      <characteristics>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="c38f-4e71-b1f5-c298" name="Ni un paso atrás" hidden="false" targetId="f76e-5a01-1c6b-ef76" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="6853-b572-2076-e533" name="Regimientos de renombre" hidden="false" collective="false" import="true" targetId="cbe6-b40a-eb61-0c1c" type="selectionEntry"/>
       </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
@@ -9624,7 +9890,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="aae3-4048-d9d1-7b2f" name="Ungido del caos " hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura gana la regla especial Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura gana la regla especial Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9643,7 +9909,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="2093-44ba-2802-408d" name="Sudor fangoso" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Todos los ataques cuerpo a cuerpo contra el portador tendrán un penalizador de -1 a impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Todos los ataques cuerpo a cuerpo contra el portador tendrán un penalizador de -1 a impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9659,7 +9925,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="8e8d-595a-1bf1-c62a" name="Corpulencia del caos" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El portador obtiene +1H y -1I.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El portador obtiene +1H y -1I.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9675,7 +9941,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="bf01-06ff-8114-aa21" name="Don de Morrslieb" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Proporciona al portador la regla especial Resistencia mágica (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Proporciona al portador la regla especial Resistencia mágica (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9694,7 +9960,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6988-6957-99eb-2925" name="Astas descomunales" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura obtiene la regla especial Impactos por carga (1). Si ya poseía esa regla especial, pasará a tener Impactos por carga (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura obtiene la regla especial Impactos por carga (1). Si ya poseía esa regla especial, pasará a tener Impactos por carga (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9713,7 +9979,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9c6c-7897-b9c8-a266" name="Apéndice adicional" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La criatura obtiene +1A. Este ataque adicional siempre se realizará con la Fuerza básica de la criatura, sin tener en cuenta elementos de equipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La criatura obtiene +1A. Este ataque adicional siempre se realizará con la Fuerza básica de la criatura, sin tener en cuenta elementos de equipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9729,7 +9995,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="3545-7439-3e64-966f" name="Mirada disforme" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Ataque a distancia de alcance 12” de F4 y la regla especial ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Ataque a distancia de alcance 12” de F4 y la regla especial ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9748,7 +10014,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="0441-f548-832a-3986" name="Garras destripadoras" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura obtiene +1F y Poder de penetración, pero no puede llevar armas mundanas ni mágicas, ni equiparse con escudos de ningún tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura obtiene +1F y Poder de penetración, pero no puede llevar armas mundanas ni mágicas, ni equiparse con escudos de ningún tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9767,7 +10033,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="f9cc-040c-e6a7-0f52" name="Sentidos amplificados" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura gana +1I.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura gana +1I.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9783,7 +10049,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9d5c-09dd-ae4e-ebc0" name="Piel de hierro" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El personaje obtiene la regla especial Piel escamosa (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El personaje obtiene la regla especial Piel escamosa (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9802,7 +10068,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="1a18-0626-a633-32c8" name="Sangre venenosa" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Cuando la miniatura sufra una herida en cuerpo a cuerpo, la miniatura que la causó sufrirá un impacto de F4.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Cuando la miniatura sufra una herida en cuerpo a cuerpo, la miniatura que la causó sufrirá un impacto de F4.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9818,7 +10084,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="fe52-5fbd-61b5-d81a" name="Apariencia horripilante" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El personaje causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El personaje causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9837,7 +10103,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="0ad3-eb71-4224-dfab" name="Exudar veneno" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura gana la regla especial Ataques envenenados.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura gana la regla especial Ataques envenenados.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9856,7 +10122,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="aefa-00e9-a851-6028" name="Mandíbula distensible" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura gana la regla especial Ataques envenenados.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura gana la regla especial Ataques envenenados.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9875,7 +10141,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="af44-9ed4-44f3-682f" name="Mente enajenada" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">La miniatura obtiene las reglas especiales Estupidez y Furia asesina.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">La miniatura obtiene las reglas especiales Estupidez y Furia asesina.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9895,7 +10161,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="36e8-72eb-5a66-4a64" name="Corona del caos" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Todas las unidades amigas a 12” o menos del personaje se considerarán Tozudas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Todas las unidades amigas a 12” o menos del personaje se considerarán Tozudas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9914,7 +10180,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="701d-3ee7-e062-a0ee" name="Muchos brazos" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El atributo de Ataques del personaje aumenta en +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El atributo de Ataques del personaje aumenta en +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9930,7 +10196,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="571d-51e3-ee8f-5160" name="Regeneración" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El personaje obtiene la regla especial Regeneración (5+). Si ya disponía de Regeneración o Regeneración mutante, ésta aumenta en un punto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El personaje obtiene la regla especial Regeneración (5+). Si ya disponía de Regeneración o Regeneración mutante, ésta aumenta en un punto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9949,7 +10215,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="418e-524e-c6e0-3586" name="Esencia demoníaca" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El personaje obtiene una tirada de salvación especial por aura demoníaca de 5+ contra ataques no mágicos, y se verá afectado por todos aquellos hechizos o efectos que afecten a demonios.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El personaje obtiene una tirada de salvación especial por aura demoníaca de 5+ contra ataques no mágicos, y se verá afectado por todos aquellos hechizos o efectos que afecten a demonios.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9965,7 +10231,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="0789-6ac1-ba53-4781" name="Manto del caos" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Todos los impactos contra el personaje de Fuerza superior a 5 se considerarán de F5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Todos los impactos contra el personaje de Fuerza superior a 5 se considerarán de F5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9981,7 +10247,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="0198-e4c6-47fb-bcff" name="Esplendor diabólico" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Todos los enemigos a 6” o menos del Personaje tendrán un penalizador de -1 a su Liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Todos los enemigos a 6” o menos del Personaje tendrán un penalizador de -1 a su Liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9997,7 +10263,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="c377-3b0c-506c-a90e" name="Aliento de fuego" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El personaje obtiene un Arma de aliento de Fuerza 3 con la regla especial Ataques sólo flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El personaje obtiene un Arma de aliento de Fuerza 3 con la regla especial Ataques sólo flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10021,7 +10287,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="4c9e-6813-3e8d-f17c" name="Cola maza" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El guerrero obtiene un ataque adicional en combate cuerpo a cuerpo, que se resolverá siempre con su propia HA e I, y F5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El guerrero obtiene un ataque adicional en combate cuerpo a cuerpo, que se resolverá siempre con su propia HA e I, y F5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10037,7 +10303,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="a789-764d-46cd-a4d4" name="Chillido infernal" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El Chillido infernal se considera un ataque de disparo que su portador puede utilizar cada fase de disparo propia. Tiene un alcance de 8”, e impacta siempre automáticamente, causando 2D6 impactos de Fuerza 1 sin tirada de salvación por armadura. El Chillido infernal puede utilizarse para Aguantar y disparar (no ha de tirarse para impactar, pero sigue el resto de reglas habituales para Aguantar y disparar), e incluso puede utilizarse si el personaje está trabado en combate cuerpo a cuerpo, aunque en este caso sólo podrá utilizarse contra una unidad trabada en combate con el personaje. </characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El Chillido infernal se considera un ataque de disparo que su portador puede utilizar cada fase de disparo propia. Tiene un alcance de 8”, e impacta siempre automáticamente, causando 2D6 impactos de Fuerza 1 sin tirada de salvación por armadura. El Chillido infernal puede utilizarse para Aguantar y disparar (no ha de tirarse para impactar, pero sigue el resto de reglas habituales para Aguantar y disparar), e incluso puede utilizarse si el personaje está trabado en combate cuerpo a cuerpo, aunque en este caso sólo podrá utilizarse contra una unidad trabada en combate con el personaje. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10053,7 +10319,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="30c4-96af-1dbb-fde3" name="Piel de hierro" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">El personaje obtiene la regla especial Piel escamosa (6+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">El personaje obtiene la regla especial Piel escamosa (6+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10080,7 +10346,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="eac2-a288-cb98-192e" name="Espada del pacto" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por la Espada del Pacto niegan la tirada de salvación por armadura y tienen la regla especial Heridas múltiples (1D6)</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por la Espada del Pacto niegan la tirada de salvación por armadura y tienen la regla especial Heridas múltiples (1D6)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10108,7 +10374,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="e9e7-fdea-75e1-5c99" name="Mazo de la ciénaga negra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. En cada ronda de combate cuerpo a cuerpo, tras realizar los correspondientes ataques del personaje, cualquier miniatura enemiga que sufra una o más heridas sin salvar del Mazo de la Ciénaga negra y no muera deberá efectuar inmediatamente un chequeo de Resistencia. Si lo falla, deberá ser retirada inmediatamente como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. En cada ronda de combate cuerpo a cuerpo, tras realizar los correspondientes ataques del personaje, cualquier miniatura enemiga que sufra una o más heridas sin salvar del Mazo de la Ciénaga negra y no muera deberá efectuar inmediatamente un chequeo de Resistencia. Si lo falla, deberá ser retirada inmediatamente como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10135,7 +10401,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="4eed-2721-af9f-f9d9" name="Coraza de azabache" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune a la regla especial Heridas múltiples.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune a la regla especial Heridas múltiples.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10162,7 +10428,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9e74-b96a-b569-9bcf" name="El corazón del caos" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una tirada de salvación especial de 4+ contra todos los proyectiles y proyectiles mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una tirada de salvación especial de 4+ contra todos los proyectiles y proyectiles mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10178,7 +10444,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="85ee-fbfe-7a03-ca27" name="Corona del norte" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene las reglas especiales Tozudez y Estupidez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene las reglas especiales Tozudez y Estupidez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10198,7 +10464,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="1a5c-d764-441d-d3fa" name="Fetiche brujo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al portador una tirada de salvación especial de 5+ y Resistencia mágica (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al portador una tirada de salvación especial de 5+ y Resistencia mágica (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10225,7 +10491,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="911c-64e8-e316-7137" name="Familiar del caos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechicero genera un dado adicional de energía y dispersión. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechicero genera un dado adicional de energía y dispersión. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10241,7 +10507,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="5c3f-0180-8494-6170" name="Bastón rúnico del caos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, puedes robar uno de los dados de dispersión de tu oponente y añadirlo a tu reserva de dados de energía.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, puedes robar uno de los dados de dispersión de tu oponente y añadirlo a tu reserva de dados de energía.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10257,7 +10523,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="896e-ced7-94e1-ce8b" name="Collar de cabezas de brujo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, determina al azar un hechizo en la siguiente tabla: el Collar actúa como un objeto portahechizos con nivel de energía 1D3+1, lanzando el hechizo indicado (no puede lanzarse la versión potenciada de ninguno de los hechizos). 
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, determina al azar un hechizo en la siguiente tabla: el Collar actúa como un objeto portahechizos con nivel de energía 1D3+1, lanzando el hechizo indicado (no puede lanzarse la versión potenciada de ninguno de los hechizos). 
 1D6: 
 1 Oscura mano de destrucción (Magia Oscura) 
 2 Portento de Phar (Saber de los Cielos) 
@@ -10288,7 +10554,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="90e8-0208-79e5-4199" name="Ojo brujo" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Potenciación que puede lanzarse sobre una unidad amiga a 12” o menos del lanzador y permanece un turno. Tira 1D6 para determinar el efecto sobre la unidad: 
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de Potenciación que puede lanzarse sobre una unidad amiga a 12” o menos del lanzador y permanece un turno. Tira 1D6 para determinar el efecto sobre la unidad: 
 1: Atrofia (-1F y R)
 2-3: +1F
 4-5: +1R
@@ -10308,7 +10574,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="ba76-0aaf-fe31-6493" name="Amuleto de piedra de disformidad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede repetir una tirada para impactar, herir, salvaciones, chequeos de atributo, canalizar, un único dado de energía o dispersión, o una tirada en la tabla de disfunciones mágicas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede repetir una tirada para impactar, herir, salvaciones, chequeos de atributo, canalizar, un único dado de energía o dispersión, o una tirada en la tabla de disfunciones mágicas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10332,7 +10598,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9395-298b-46cb-311d" name="Estandarte de la gran bestia del norte" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas amigas a 18” o menos del estandarte se benefician de la regla especial ¡Ni un paso atrás! Adicionalmente, todos los enemigos dentro de ese radio tendrán un penalizador de -1 a su Liderazgo al efectuar chequeos de Miedo y Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas amigas a 18” o menos del estandarte se benefician de la regla especial ¡Ni un paso atrás! Adicionalmente, todos los enemigos dentro de ese radio tendrán un penalizador de -1 a su Liderazgo al efectuar chequeos de Miedo y Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10356,7 +10622,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="12c2-c982-a808-a9d0" name="Tótem de la muerte" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtienen las reglas especiales Furia asesina y Carga devastadora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador (y la unidad en la que se encuentre) obtienen las reglas especiales Furia asesina y Carga devastadora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10384,7 +10650,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9914-8c71-4931-05f8" name="El yelmo embrujado" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">El portador verá su tirada de salvación por armadura incrementada en un +1. Además, tendrá la regla especial Resistencia mágica (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">El portador verá su tirada de salvación por armadura incrementada en un +1. Además, tendrá la regla especial Resistencia mágica (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10400,7 +10666,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="5665-e20b-251f-67f7" name="Armadura de las tormentas" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura del Caos. El portador puede repetir todas las tiradas de salvación por armadura fallidas que realice.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura del Caos. El portador puede repetir todas las tiradas de salvación por armadura fallidas que realice.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10426,7 +10692,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6ddd-afc2-9f53-5feb" name="Putrefacción de Nurgle" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Solo miniaturas con la marca de Nurgle. Al inicio de cada ronda de combate cuerpo a cuerpo, todas las miniaturas (amigas y enemigas) que no tengan la Marca de Nurgle (o sean demonios de Nurgle o skaven del clan Pestilens) sufrirán una herida sin tirada de salvación con armadura con un resultado de 6 en 1D6 (tira por cada miniatura en contacto).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Solo miniaturas con la marca de Nurgle. Al inicio de cada ronda de combate cuerpo a cuerpo, todas las miniaturas (amigas y enemigas) que no tengan la Marca de Nurgle (o sean demonios de Nurgle o skaven del clan Pestilens) sufrirán una herida sin tirada de salvación con armadura con un resultado de 6 en 1D6 (tira por cada miniatura en contacto).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10442,7 +10708,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="d844-de2e-1c82-97a1" name="Tamaño descomunal" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Resistencia, pero también un -1 a su Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Resistencia, pero también un -1 a su Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10458,7 +10724,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="dd78-2f2d-88de-276e" name="Vigor de Nurgle" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Herida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene +1 Herida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10474,7 +10740,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="a222-2d00-82c3-8d26" name="Vómito de corrupción" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene un Arma de aliento de F3 que no permite tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Nurgle. El Paladín obtiene un Arma de aliento de F3 que no permite tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10502,7 +10768,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="555c-dce0-ee12-b7c1" name="Voluntaz de Tzeentch" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Tzeentch. El Paladín genera un dado de energía adicional en cada fase de magia propia, que puede ser utilizado por cualquier personaje del ejército.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Tzeentch. El Paladín genera un dado de energía adicional en cada fase de magia propia, que puede ser utilizado por cualquier personaje del ejército.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10518,7 +10784,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="dd5a-f6c9-ab6d-221f" name="Fortuna de Tzeentch" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Tzeentch. Una vez por turno de jugador, el Paladín puede repetir una tirada de 1D6. Puede ser una tirada para impactar, herir, salvación (por armadura o especial) o un chequeo de atributo (excepto de Liderazgo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Tzeentch. Una vez por turno de jugador, el Paladín puede repetir una tirada de 1D6. Puede ser una tirada para impactar, herir, salvación (por armadura o especial) o un chequeo de atributo (excepto de Liderazgo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10541,7 +10807,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="6305-fd51-2162-ab4c" name="Alabanza de Khorne" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El Paladín puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El Paladín puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10557,7 +10823,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="fb54-ad10-c622-b85a" name="Collar de Khorne" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene Resistencia mágica (3) y una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El Paladín obtiene Resistencia mágica (3) y una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10576,7 +10842,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="d29d-38f1-b416-812c" name="Furia de batalla de Khorne" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El paladín obtiene +1 Ataque y la regla especial Carga devastadora (+1F al cargar).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El paladín obtiene +1 Ataque y la regla especial Carga devastadora (+1F al cargar).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10595,7 +10861,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="8052-9514-95e5-54fa" name="Hacha de Khorne" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El paladín obtiene la regla especial Golpe letal en sus ataques cuerpo a cuerpo, aunque no podrá utilizar otras armas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Khorne. El paladín obtiene la regla especial Golpe letal en sus ataques cuerpo a cuerpo, aunque no podrá utilizar otras armas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10621,7 +10887,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="dd1a-d718-30d6-d79d" name="Rapidez de Slaanesh" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. El Paladín duplicao su atributo de Iniciativa, hasta un máximo de 10.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. El Paladín duplicao su atributo de Iniciativa, hasta un máximo de 10.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10637,7 +10903,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="1fa5-6292-5184-5563" name="Mirada de Slaanesh" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. Al inicio de cada ronda de combate cuerpo a cuerpo, eliga una miniatura enemiga en contacto peana con peana con el Paladín; tendrá -1 Ataque en esa ronda de cuerpo a cuerpo (con un mínimo de 1 Ataque).</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. Al inicio de cada ronda de combate cuerpo a cuerpo, eliga una miniatura enemiga en contacto peana con peana con el Paladín; tendrá -1 Ataque en esa ronda de cuerpo a cuerpo (con un mínimo de 1 Ataque).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10653,7 +10919,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="a895-d907-e6c6-1893" name="Fascinación de Slaanesh" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. Todos los oponentes en combate contra el Paladín tendrán un penalizador de -1 para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. Todos los oponentes en combate contra el Paladín tendrán un penalizador de -1 para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10669,7 +10935,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="d86b-b18e-2c21-d8b2" name="Almizcle soporífero" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba). Esto no afecta a Demonios, No muertos o miniaturas con la marca de Slaanesh.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Sólo miniaturas con la Marca de Slaanesh. Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba). Esto no afecta a Demonios, No muertos o miniaturas con la marca de Slaanesh.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10693,7 +10959,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="9727-8609-9758-0031" name="Hacha del pánico" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por el Hacha del Pánico no pueden ser evitadas con una Tirada de salvación especial (excepto si es una tirada de Esquivar).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por el Hacha del Pánico no pueden ser evitadas con una Tirada de salvación especial (excepto si es una tirada de Esquivar).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10720,7 +10986,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="33fa-268b-cb91-a821" name="Espadas gemelas de Darhuum" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Las Espadas Gemelas tienen las reglas especiales Heridas múltiples (2) y Ataques flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Las Espadas Gemelas tienen las reglas especiales Heridas múltiples (2) y Ataques flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -10749,7 +11015,7 @@ Chequeo de animosidad: Para realizar un chequeo de animosidad, tira 1D6. Si obti
           <profiles>
             <profile id="44c1-3233-f47e-43d8" name="Tumor inteligente" hidden="false" typeId="454f-9dda-874e-99b2" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="c061-8049-b24d-6e12">Solo hechiceros. El hechicero conoce un hechizo adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="c061-8049-b24d-6e12">Solo hechiceros. El hechicero conoce un hechizo adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>

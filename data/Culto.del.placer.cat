@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a5d3-0db8-9903-f390" name="Culto del placer" revision="2" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a5d3-0db8-9903-f390" name="Culto del placer" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9846-934f-6342-2762" name="Senda">
       <characteristicTypes>
-        <characteristicType id="f401-b429-2452-4e30" name="Propiedades mágicas"/>
+        <characteristicType id="f401-b429-2452-4e30" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="4a21-6ede-290c-54cb" name="Recompensa del caos">
       <characteristicTypes>
-        <characteristicType id="ac18-bd08-5794-1799" name="Propiedades mágicas"/>
+        <characteristicType id="ac18-bd08-5794-1799" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="29a5-f327-998c-299d" name="Regalo demoníaco">
       <characteristicTypes>
-        <characteristicType id="9340-4cc0-f29c-206f" name="Propiedades mágicas"/>
+        <characteristicType id="9340-4cc0-f29c-206f" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -2560,6 +2560,9 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="2e2f-66c9-8345-b5a4" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="70.0"/>
           </costs>
@@ -5356,7 +5359,7 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               <profiles>
                 <profile id="5b68-0186-e938-c289" name="Canalizadora de magia" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Puede Canalizar con 4+, en lugar del habitual 6+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Puede Canalizar con 4+, en lugar del habitual 6+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5372,7 +5375,7 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               <profiles>
                 <profile id="82d5-0fc2-6996-e246" name="Maestría con el dhar" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Obtiene un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Obtiene un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5388,7 +5391,7 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               <profiles>
                 <profile id="4a33-bdfb-dd65-aa39" name="Poder de Ghrond" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Genera un dado de magia adicional, de energía o dispersión, en cada fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Genera un dado de magia adicional, de energía o dispersión, en cada fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5442,7 +5445,7 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               <profiles>
                 <profile id="52f3-6ef7-ec28-d6c1" name="Buscacorazones" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Los ataques efectuados con este arma tienen la regla especial Golpe letal Heróico.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Los ataques efectuados con este arma tienen la regla especial Golpe letal Heróico.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5475,7 +5478,7 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               <profiles>
                 <profile id="f672-d918-f4b5-08ba" name="Pergamino de dispersión" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puedes declarar que usas el Pergamino cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo, no es necesario que lances dados. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puedes declarar que usas el Pergamino cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo, no es necesario que lances dados. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5491,7 +5494,7 @@ Danza del Viento: los enemigos deben aplicar un penalizador de -1 en sus tiradas
               <profiles>
                 <profile id="be52-b72a-16dc-d86e" name="Pergamino de energía" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Un hechicero puede utilizar un pergamino de energía para lanzar un hechizo sin invertir dados de energía. El hechizo será lanzado con su dificultad básica, y podrá ser dispersado como es habitual. No puede usarse para lanzar un hechizo potenciado.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Un hechicero puede utilizar un pergamino de energía para lanzar un hechizo sin invertir dados de energía. El hechizo será lanzado con su dificultad básica, y podrá ser dispersado como es habitual. No puede usarse para lanzar un hechizo potenciado.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5612,7 +5615,7 @@ Baile del Acero 	Con el rápido movimiento de sus espadas, Dechala crea un muro 
               <profiles>
                 <profile id="24e6-c852-a334-7ee5" name="Cuerpo serpentino" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Dechala obtiene las reglas especiales Veloz y Esquivar (5+). Sin embargo, Dechala no puede unirse a unidades.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Dechala obtiene las reglas especiales Veloz y Esquivar (5+). Sin embargo, Dechala no puede unirse a unidades.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5911,7 +5914,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
               <profiles>
                 <profile id="974c-f3c3-3c38-fed5" name="Ladrón de esencia vital" hidden="false" typeId="29a5-f327-998c-299d" typeName="Regalo demoníaco">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="9340-4cc0-f29c-206f">Al final de cada fase de combate si el demonio causó al menos una herida, recuperará una de sus heridas perdidas previamente durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="9340-4cc0-f29c-206f">Al final de cada fase de combate si el demonio causó al menos una herida, recuperará una de sus heridas perdidas previamente durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5927,7 +5930,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
               <profiles>
                 <profile id="9701-a929-7427-93fe" name="Pinzas destripadoras" hidden="false" typeId="29a5-f327-998c-299d" typeName="Regalo demoníaco">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="9340-4cc0-f29c-206f">Los ataques realizados por N&apos;kari obtendrán la Regla especial Heridas múltiples 1D3.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="9340-4cc0-f29c-206f">Los ataques realizados por N&apos;kari obtendrán la Regla especial Heridas múltiples 1D3.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5946,7 +5949,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
               <profiles>
                 <profile id="6fb0-13ef-c572-5636" name="Irreflenable deseo de obediencia" hidden="false" typeId="29a5-f327-998c-299d" typeName="Regalo demoníaco">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="9340-4cc0-f29c-206f">Un sólo uso. Al inicio de cualquiera de las fases de movimiento de un oponente podrás elegir usar este regalo para afectar a una unidad enemiga situada a 24” o menos de N&apos;kari. Durante esa fase de movimiento es el jugador demonio quien controla el movimiento de esa unidad. Podrás hacer que la unidad mueva o marche, pero no podrás efectuar cargas ni reformar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="9340-4cc0-f29c-206f">Un sólo uso. Al inicio de cualquiera de las fases de movimiento de un oponente podrás elegir usar este regalo para afectar a una unidad enemiga situada a 24” o menos de N&apos;kari. Durante esa fase de movimiento es el jugador demonio quien controla el movimiento de esa unidad. Podrás hacer que la unidad mueva o marche, pero no podrás efectuar cargas ni reformar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6153,7 +6156,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
               <profiles>
                 <profile id="0ebc-326b-cede-a701" name="Almizcle soporífero" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba). Esto no afecta a demonios, No muertos o miniaturas con la marca de Slaanesh.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba). Esto no afecta a demonios, No muertos o miniaturas con la marca de Slaanesh.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7933,7 +7936,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="c965-5e15-d87d-9781" name="Canalizador de magia" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Solo Hechiceras. La hechicera obtiene un bonificador de +2 en todas sus tiradas de Canalizar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Solo Hechiceras. La hechicera obtiene un bonificador de +2 en todas sus tiradas de Canalizar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7949,7 +7952,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="730c-6fb0-77f4-07d7" name="Maestría con el Dhar" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Sólo hechiceras. La hechicera obtiene un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Sólo hechiceras. La hechicera obtiene un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7965,7 +7968,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="31d3-ae35-a1b5-7f9c" name="Poder de Ghrond" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Sólo hechiceras. La hechicera genera un dado de magia adicional (de energía o dispersión) en cada fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Sólo hechiceras. La hechicera genera un dado de magia adicional (de energía o dispersión) en cada fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -7981,7 +7984,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="30d3-4a4a-7ae0-a445" name="Forjadora arcana" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Sólo hechiceras. La hechicera puede elegir hasta dos artefactos arcanos, en lugar de sólo uno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Sólo hechiceras. La hechicera puede elegir hasta dos artefactos arcanos, en lugar de sólo uno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8005,7 +8008,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="9b12-8793-ed43-9500" name="Senda de la espada" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Si el personaje combate con un arma de mano, dos armas de mano o un arma a dos manos (tanto mundana como mágica) puede repetir sus tiradas fallidas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Si el personaje combate con un arma de mano, dos armas de mano o un arma a dos manos (tanto mundana como mágica) puede repetir sus tiradas fallidas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8029,7 +8032,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="ee83-f622-da9f-90f4" name="Senda de la matanza" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">Sólo Principe o Noble. El personaje está equipado con un Escudo de gladiador y un látigo desollador, y no puede llevar armadura ni montura. Su M aumenta en un punto, y tan sólo puede unirse a unidades de Hermanas de la Matanza. Al inicio de cada fase de combate cuerpo a cuerpo, el personaje puede elegir una de las siguientes reglas especiales, que obtendrá hasta el final de esa fase de combate cuerpo a cuerpo: Golpe letal, Impactos múltiples (1D3), +2 Ataques ó Negar la tirada de salvación por armadura. No puede elegirse la misma dos fases de combate consecutivas. Obtiene la regla especial Esquivar (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">Sólo Principe o Noble. El personaje está equipado con un Escudo de gladiador y un látigo desollador, y no puede llevar armadura ni montura. Su M aumenta en un punto, y tan sólo puede unirse a unidades de Hermanas de la Matanza. Al inicio de cada fase de combate cuerpo a cuerpo, el personaje puede elegir una de las siguientes reglas especiales, que obtendrá hasta el final de esa fase de combate cuerpo a cuerpo: Golpe letal, Impactos múltiples (1D3), +2 Ataques ó Negar la tirada de salvación por armadura. No puede elegirse la misma dos fases de combate consecutivas. Obtiene la regla especial Esquivar (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8060,7 +8063,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="eeb2-fb50-0153-98cf" name="Senda de la sombra" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">El personaje obtiene la regla especial Esquivar (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">El personaje obtiene la regla especial Esquivar (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8087,7 +8090,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="522a-caac-0987-8eca" name="Señor de los gélidos" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">El gélido que monte el personaje y todos los gélidos de una unidad a la que se haya unido superan automáticamente todos los chequeos de Estupidez que deban efectuar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">El gélido que monte el personaje y todos los gélidos de una unidad a la que se haya unido superan automáticamente todos los chequeos de Estupidez que deban efectuar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8111,7 +8114,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="f58a-c9fb-23e0-aa50" name="Senda del placer" hidden="false" typeId="9846-934f-6342-2762" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="f401-b429-2452-4e30">El personaje está encomendado a Slaanesh. Obtiene las reglas especiales Inmune a la psicología y Poder de penetración. Si es hechicera, puede elegir sus hechizos del Saber de Slaanesh. No puede ser elegida por Khainitas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="f401-b429-2452-4e30">El personaje está encomendado a Slaanesh. Obtiene las reglas especiales Inmune a la psicología y Poder de penetración. Si es hechicera, puede elegir sus hechizos del Saber de Slaanesh. No puede ser elegida por Khainitas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8138,7 +8141,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="5fcc-0357-751d-efda" name="Corona del caos" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Todas las unidades amigas a 12” o menos del personaje se considerarán Tozudas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Todas las unidades amigas a 12” o menos del personaje se considerarán Tozudas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8157,7 +8160,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="e6d9-a545-4e3a-95f4" name="Muchos brazos" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El atributo de Ataques del Paladín aumenta en +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El atributo de Ataques del Paladín aumenta en +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8173,7 +8176,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="1433-c2bd-3eb8-9474" name="Esplendor diabólico" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Todos los enemigos a 6” o menos del Paladín tendrán un penalizador de -1 a su Liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Todos los enemigos a 6” o menos del Paladín tendrán un penalizador de -1 a su Liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8189,7 +8192,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="f6c6-17fc-0c50-5431" name="Manto del caos" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Todos los impactos contra el personaje de Fuerza superior a 5 se considerarán de F5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Todos los impactos contra el personaje de Fuerza superior a 5 se considerarán de F5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8205,7 +8208,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="d918-6c5b-e22e-b581" name="Aliento de fuego" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El paladín obtiene un Arma de aliento de Fuerza 3 con la regla especial Ataques sólo flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El paladín obtiene un Arma de aliento de Fuerza 3 con la regla especial Ataques sólo flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8229,7 +8232,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="e2b9-1253-d1ff-4319" name="Regeneración" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El Paladín obtiene la regla especial Regeneración (5+), o +1 a su tirada de Regeneración si ya disponía de una.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El Paladín obtiene la regla especial Regeneración (5+), o +1 a su tirada de Regeneración si ya disponía de una.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8248,7 +8251,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="8c8d-2b6b-f612-fbb9" name="Apariencia horripilante" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El personaje causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El personaje causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8267,7 +8270,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="0e5c-0739-487f-4ec7" name="Cola maza" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El guerrero obtiene un ataque adicional en combate cuerpo a cuerpo, que se resolverá siempre con su propia HA e I y Fuerza 5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El guerrero obtiene un ataque adicional en combate cuerpo a cuerpo, que se resolverá siempre con su propia HA e I y Fuerza 5.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8283,7 +8286,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="7c7c-ffbe-a21b-75b0" name="Esencia demoníaca" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El Paladín obtiene una tirada de salvación especial por aura demoníaca de 5+ (o +1 a su Aura demoníaca si ya disponía de una) contra ataques no mágicos, y se verá afectado por todos aquellos hechizos o efectos que afecten a demonios.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El Paladín obtiene una tirada de salvación especial por aura demoníaca de 5+ (o +1 a su Aura demoníaca si ya disponía de una) contra ataques no mágicos, y se verá afectado por todos aquellos hechizos o efectos que afecten a demonios.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8304,7 +8307,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="b8c4-9a1a-5dba-f8b5" name="Chillido infernal" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El Chillido infernal se considera un ataque de disparo que su portador puede utilizar cada fase de disparo propia. Tiene un alcance de 8”, e impacta siempre automáticamente, causando 2D6 impactos de Fuerza 1 sin tirada de salvación por armadura. El Chillido infernal puede utilizarse para Aguantar y disparar (no ha de tirarse para impactar, pero sigue el resto de reglas habituales para Aguantar y disparar), e incluso puede utilizarse si el Paladín está trabado en combate cuerpo a cuerpo, aunque en este caso sólo podrá utilizarse contra una unidad trabada en combate con el Paladín.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El Chillido infernal se considera un ataque de disparo que su portador puede utilizar cada fase de disparo propia. Tiene un alcance de 8”, e impacta siempre automáticamente, causando 2D6 impactos de Fuerza 1 sin tirada de salvación por armadura. El Chillido infernal puede utilizarse para Aguantar y disparar (no ha de tirarse para impactar, pero sigue el resto de reglas habituales para Aguantar y disparar), e incluso puede utilizarse si el Paladín está trabado en combate cuerpo a cuerpo, aunque en este caso sólo podrá utilizarse contra una unidad trabada en combate con el Paladín.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8320,7 +8323,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="5e86-f8d3-ccc1-a7b7" name="Piel de hierro" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El Paladín obtiene la regla especial Piel escamosa (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El Paladín obtiene la regla especial Piel escamosa (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8339,7 +8342,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="8285-9104-9a36-fc73" name="Grandes cuernos" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El Paladín obtiene la regla especial Impactos por carga (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El Paladín obtiene la regla especial Impactos por carga (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8358,7 +8361,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="b3c5-de2b-a2aa-c3ab" name="Cuerpo ardiente" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El paladín obtiene las reglas especiales Ataques flamígeros e Inmune a fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El paladín obtiene las reglas especiales Ataques flamígeros e Inmune a fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8378,7 +8381,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="6e62-1638-75a0-e3af" name="Elegido del caos" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Sustituye el efecto de la Marca del Caos del personaje por la Marca del Caos de los Elegidos equivalente. El personaje tan sólo puede unirse a unidades de Elegidos (ya sean a pie o montados, de cualquier tipo si su marca se lo permite).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Sustituye el efecto de la Marca del Caos del personaje por la Marca del Caos de los Elegidos equivalente. El personaje tan sólo puede unirse a unidades de Elegidos (ya sean a pie o montados, de cualquier tipo si su marca se lo permite).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8394,7 +8397,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="c49c-a914-db45-b2ff" name="Fuerza mortífera" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Aumenta el atributo de Fuerza del paladín en +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Aumenta el atributo de Fuerza del paladín en +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8410,7 +8413,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="538a-290a-9dfd-d7a7" name="Garras afiladas" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El paladín obtiene +1F y Poder de penetración en sus ataques en combate cuerpo a cuerpo; las garras cuentan como armas emparejadas (lo que le proporciona también +1A) pero el personaje no puede llevar armas mundanas o mágicas ni escudos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El paladín obtiene +1F y Poder de penetración en sus ataques en combate cuerpo a cuerpo; las garras cuentan como armas emparejadas (lo que le proporciona también +1A) pero el personaje no puede llevar armas mundanas o mágicas ni escudos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8429,7 +8432,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="9325-9b2b-8389-380d" name="Mordisco venenoso" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El paladín obtiene un A adicional que se resolverá con su F básica, Ataques envenenados y Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El paladín obtiene un A adicional que se resolverá con su F básica, Ataques envenenados y Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8449,7 +8452,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="638c-3b8c-ef68-c00e" name="Pinchos de hierro" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Cualquier enemigo que ataque al personaje perderá todos los bonos por carga de sus armas, objetos mágicos y/o reglas especiales (incluyendo el +1I).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Cualquier enemigo que ataque al personaje perderá todos los bonos por carga de sus armas, objetos mágicos y/o reglas especiales (incluyendo el +1I).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8465,7 +8468,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="5c78-98d3-e3e3-fddb" name="Resistencia al Aetyr" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El paladín obtiene Resistencia mágica (3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El paladín obtiene Resistencia mágica (3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8484,7 +8487,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="dc2e-0430-9595-48ae" name="Almizcle soporífero" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba). Esto no afecta a demonios, No muertos o miniaturas con la marca de Slaanesh.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Todas las miniaturas enemigas en contacto peana con peana con el Paladín verán su HA e I reducidas a la mitad (redondeando fracciones hacia arriba). Esto no afecta a demonios, No muertos o miniaturas con la marca de Slaanesh.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8500,7 +8503,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="d707-0e66-494a-5339" name="Fascinación de Slaanesh" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Todos los oponentes en combate contra el Paladín tendrán un penalizador de -1 para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Todos los oponentes en combate contra el Paladín tendrán un penalizador de -1 para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8516,7 +8519,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="1e40-74fb-b421-a479" name="Mirada de Slaanesh" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Al inicio de cada ronda de combate cuerpo a cuerpo, elige una miniatura enemiga en contacto peana con peana con el Paladín; tendrá -1 Ataque en esa ronda de cuerpo a cuerpo (con un mínimo de 1 Ataque).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Al inicio de cada ronda de combate cuerpo a cuerpo, elige una miniatura enemiga en contacto peana con peana con el Paladín; tendrá -1 Ataque en esa ronda de cuerpo a cuerpo (con un mínimo de 1 Ataque).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8532,7 +8535,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="7b28-57ac-e8db-73be" name="Rapidez de Slaanesh" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Sólo miniaturas con la Marca de Slaanesh. El Paladín duplica su atributo de Iniciativa, hasta un máximo de 10 (su iniciativa siempre será 10, y no podrá ser modificada por carga, Ataque rápido ni Lenta).</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Sólo miniaturas con la Marca de Slaanesh. El Paladín duplica su atributo de Iniciativa, hasta un máximo de 10 (su iniciativa siempre será 10, y no podrá ser modificada por carga, Ataque rápido ni Lenta).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8548,7 +8551,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="6f4f-d1b3-e9c2-f82c" name="Encanto de Slaanesh" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Cualquier unidad enemiga que trate de disparar al personaje o a la unidad en la que se encuentra debe efectuar antes un chequeo de Liderazgo: si lo falla, no podrá disparar este turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Cualquier unidad enemiga que trate de disparar al personaje o a la unidad en la que se encuentra debe efectuar antes un chequeo de Liderazgo: si lo falla, no podrá disparar este turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8564,7 +8567,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="07ca-df73-f502-41c5" name="Avatar de Slaanesh" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">El personaje tiene la regla especial ¡Ni un paso atrás!, que afecta a todas las unidades con la Marca de Slaanesh a 12” o menos de él.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">El personaje tiene la regla especial ¡Ni un paso atrás!, que afecta a todas las unidades con la Marca de Slaanesh a 12” o menos de él.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8583,7 +8586,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="2c55-5dbb-872e-f7e6" name="Sangre de Slaanesh" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Al inicio de cada fase de combate cuerpo a cuerpo, tira 1D3: el personaje obtendrá ese número de Ataques adicionales durante esa fase de combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Al inicio de cada fase de combate cuerpo a cuerpo, tira 1D3: el personaje obtendrá ese número de Ataques adicionales durante esa fase de combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8606,7 +8609,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="b908-e988-72d3-2993" name="Alas" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Sólo miniaturas de infantería. La miniatura gana la regla especial volar. La miniatura no puede unirse a ninguna unidad ni elegir ninguna montura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Sólo miniaturas de infantería. La miniatura gana la regla especial volar. La miniatura no puede unirse a ninguna unidad ni elegir ninguna montura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8632,7 +8635,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="39d1-6020-4f58-3df4" name="Hemónculo" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Sólo hechiceros. Una vez por fase de magia, tras haber lanzado los dados para lanzar un hechizo, el hechicero puede declarar que utiliza al hemónculo para aumentar el valor de su tirada de lanzamiento en +1D3. Si lo hace, sufrirá Estupidez durante su siguiente turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Sólo hechiceros. Una vez por fase de magia, tras haber lanzado los dados para lanzar un hechizo, el hechicero puede declarar que utiliza al hemónculo para aumentar el valor de su tirada de lanzamiento en +1D3. Si lo hace, sufrirá Estupidez durante su siguiente turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8651,7 +8654,7 @@ Baile Del Confinamiento. Las miniaturas deberán reducir sus atributos de HA e I
           <profiles>
             <profile id="30aa-8090-bb96-83e3" name="Visión del Caos" hidden="false" typeId="4a21-6ede-290c-54cb" typeName="Recompensa del caos">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="ac18-bd08-5794-1799">Sólo hechiceros. El personaje obtiene un bonificador de +2 a todas sus tiradas para Canalizar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="ac18-bd08-5794-1799">Sólo hechiceros. El personaje obtiene un bonificador de +2 a todas sus tiradas para Canalizar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8801,7 +8804,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="96f3-ba31-9efc-6921" name="Armadura de la oscuridad" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 1+ y una tirada de salvación especial de 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a su portador una tirada de salvación por armadura de 1+ y una tirada de salvación especial de 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8820,7 +8823,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="12ae-6833-c7bd-4953" name="Armadura sangrienta" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Por cada herida que cause el portador de esta armadura, ésta aumenta en +1 el valor de su tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Por cada herida que cause el portador de esta armadura, ésta aumenta en +1 el valor de su tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8839,7 +8842,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="0955-dc12-6b15-fab2" name="Escudo de Ghrond" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. El portador obtiene la regla especial Inmune a fuego. Los ataques en cuerpo a cuerpo contra su portador se resolverán con un penalizador de -1 a su valor de F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. El portador obtiene la regla especial Inmune a fuego. Los ataques en cuerpo a cuerpo contra su portador se resolverán con un penalizador de -1 a su valor de F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8867,7 +8870,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="9bbe-0baa-f0f1-7c4b" name="Colgante de Khaeleth" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial de 5+ contra ataques de F4 ó inferior; una tirada de salvación especial de 4+ contra los ataques de F5; una tirada de salvación especial de 3+ contra los ataques de F6 ó superior.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial de 5+ contra ataques de F4 ó inferior; una tirada de salvación especial de 4+ contra los ataques de F5; una tirada de salvación especial de 3+ contra los ataques de F6 ó superior.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8883,7 +8886,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="8cc2-821a-5c78-c93f" name="Gema de la oscuridad" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Esquivar (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la regla especial Esquivar (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8910,7 +8913,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="8fe0-45a4-9261-05df" name="Perla de la infinita desolación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Las miniaturas enemigas situadas a 6” ó menos de esta gema verán reducido en 1 su atributo de L y no podrán beneficiarse de la regla Presencia Inspiradora.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Las miniaturas enemigas situadas a 6” ó menos de esta gema verán reducido en 1 su atributo de L y no podrán beneficiarse de la regla Presencia Inspiradora.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8926,7 +8929,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="1e37-2a45-7b42-e15d" name="Anillo de Hotek" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador de este anillo obtiene la regla especial Resistencia Mágica (2), que aumentará a Resistencia Mágica (3) contra hechizos de Magia Oscura y Alta Magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador de este anillo obtiene la regla especial Resistencia Mágica (2), que aumentará a Resistencia Mágica (3) contra hechizos de Magia Oscura y Alta Magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8945,7 +8948,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="79fa-54ac-86a7-7035" name="Corona de hierro negro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todas las miniaturas enemigas en contacto peana con peana con el portador de esta corona verán reducido a la mitad su valor de HA redondeando hacia abajo. Adicionalmente, si el portador de la corona no forma parte de ninguna unidad, los disparos dirigidos contra la miniatura verán reducido a la mitad su valor de HP (redondeando hacia abajo).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todas las miniaturas enemigas en contacto peana con peana con el portador de esta corona verán reducido a la mitad su valor de HA redondeando hacia abajo. Adicionalmente, si el portador de la corona no forma parte de ninguna unidad, los disparos dirigidos contra la miniatura verán reducido a la mitad su valor de HP (redondeando hacia abajo).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8969,7 +8972,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="0bea-8a55-56ca-30bb" name="Rúbrica de la dimensión oscura" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos. Nivel de energía 5. Sólo miniaturas a pie. Contiene un hechizo de Daño Directo con un alcance de 12”. Selecciona una única miniatura enemiga dentro del alcance: esta deberá realizar inmediatamente un chequeo de Fuerza. Si lo falla, deberá retirarse inmediatamente como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos. Nivel de energía 5. Sólo miniaturas a pie. Contiene un hechizo de Daño Directo con un alcance de 12”. Selecciona una única miniatura enemiga dentro del alcance: esta deberá realizar inmediatamente un chequeo de Fuerza. Si lo falla, deberá retirarse inmediatamente como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -8993,7 +8996,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="060a-9665-c4d4-166d" name="Huevo de dragón negro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo Uso. Puedes elegir utilizar el huevo de Dragón Negro al inicio de cualquier turno de jugador (tuyo o del oponente). Otorgará a quien lo bebe un bonificador de +2 a sus atributos de Fuerza y Resistencia y la Regla Especial Arma de Aliento (Fuerza 2, niega las tiradas de salvación por armadura del oponente). El efecto durará hasta el final del turno de jugador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo Uso. Puedes elegir utilizar el huevo de Dragón Negro al inicio de cualquier turno de jugador (tuyo o del oponente). Otorgará a quien lo bebe un bonificador de +2 a sus atributos de Fuerza y Resistencia y la Regla Especial Arma de Aliento (Fuerza 2, niega las tiradas de salvación por armadura del oponente). El efecto durará hasta el final del turno de jugador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9022,7 +9025,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="30c9-9910-a480-3499" name="Gema de cristal oscuro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Puedes utilizar la Gema al inicio de cualquier de tus turnos. Podrás elegir uno de los hechiceros rivales situados a 24” o menos del usuario. El objetivo perderá uno de sus hechizos determinado al azar. No podrá utilizar ese hechizo durante el resto de la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Puedes utilizar la Gema al inicio de cualquier de tus turnos. Podrás elegir uno de los hechiceros rivales situados a 24” o menos del usuario. El objetivo perderá uno de sus hechizos determinado al azar. No podrá utilizar ese hechizo durante el resto de la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9038,7 +9041,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="e545-9c75-6132-9b9f" name="Cristal de medianoche" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. El portador podrá activar el poder del objeto al inicio de cualquier fase de magia (propia o del oponente). Uno de los hechiceros situados a 12” o menos del portador verá reducido en 1 su nivel de magia y perderá uno de sus hechizos (determinado al azar). Si hay varios hechiceros dentro del radio de alcance, determina al azar qué hechicero se ve afectado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. El portador podrá activar el poder del objeto al inicio de cualquier fase de magia (propia o del oponente). Uno de los hechiceros situados a 12” o menos del portador verá reducido en 1 su nivel de magia y perderá uno de sus hechizos (determinado al azar). Si hay varios hechiceros dentro del radio de alcance, determina al azar qué hechicero se ve afectado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9054,7 +9057,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="3424-7bcf-9ba4-914b" name="Gema de las pesadillas" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo Uso. Puede utilizarse como un arma arrojadiza con 12” de alcance. Impactará automáticamente y no causará daño. En caso de impactar, la unidad objetivo del disparo deberá efectuar inmediatamente un chequeo de pánico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo Uso. Puede utilizarse como un arma arrojadiza con 12” de alcance. Impactará automáticamente y no causará daño. En caso de impactar, la unidad objetivo del disparo deberá efectuar inmediatamente un chequeo de pánico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9070,7 +9073,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="a2b7-e4ed-0ddf-7934" name="El ojo guía" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre podrán repetir los resultados naturales de 1 que obtuviesen en sus tiradas para impactar con armas de proyectiles. La unidad siempre podrá aguantar o disparar como reacción a la carga, sin importar la distancia a la que se encuentre el enemigo. Esto no implica que no deban seguir cumpliéndose el resto de condiciones para poder aguantar y disparar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre podrán repetir los resultados naturales de 1 que obtuviesen en sus tiradas para impactar con armas de proyectiles. La unidad siempre podrá aguantar o disparar como reacción a la carga, sin importar la distancia a la que se encuentre el enemigo. Esto no implica que no deban seguir cumpliéndose el resto de condiciones para poder aguantar y disparar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9086,7 +9089,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="a930-dc07-b1a5-5ff2" name="Portal a la dimensión oscura" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. El portador podrá activar el poder del objeto en cualquier momento del juego. El portador y todas las miniaturas enemigas en contacto peana con peana con éste deberán realizar un chequeo de F. Cualquier miniatura que no supere dicho chequeo sufrirá inmediatamente 1D6 heridas sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. El portador podrá activar el poder del objeto en cualquier momento del juego. El portador y todas las miniaturas enemigas en contacto peana con peana con éste deberán realizar un chequeo de F. Cualquier miniatura que no supere dicho chequeo sufrirá inmediatamente 1D6 heridas sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9102,7 +9105,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="f1c3-1138-efa5-8dc4" name="Anillo de la oscuridad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 3. Permite lanzar el hechizo Corcel de Sombras del Saber de las Sombras.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 3. Permite lanzar el hechizo Corcel de Sombras del Saber de las Sombras.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9118,7 +9121,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="21b6-0144-9aa2-7bf1" name="Manto de las almas oscuras" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El personaje (y la unidad en la que se encuentre) obtienen la regla especial Vanguardia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El personaje (y la unidad en la que se encuentre) obtienen la regla especial Vanguardia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9145,7 +9148,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="587c-25ac-ec66-d17e" name="Estandarte de Nagarythe" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Este estandarte otorga un bonificador de +1 al resultado de los combates de las unidades aliadas situadas a 12&quot; o menos. La unidad en la que se encuentre este estandarte será Indesmoralizable.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Este estandarte otorga un bonificador de +1 al resultado de los combates de las unidades aliadas situadas a 12&quot; o menos. La unidad en la que se encuentre este estandarte será Indesmoralizable.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9164,7 +9167,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="84f0-4339-f8bb-759d" name="Estandarte de la hidra" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y cualquier miniatura de la unidad de la que forme parte obtendrá un bonificador de +1 a su atributo de Ataques. Esto no afecta a las monturas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y cualquier miniatura de la unidad de la que forme parte obtendrá un bonificador de +1 a su atributo de Ataques. Esto no afecta a las monturas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9188,7 +9191,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="7de3-61d0-022e-3f7a" name="Pabellón del gélido" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Caballeros Gélidos. Los Gélidos de la unidad superarán automáticamente sus chequeos de Estupidez y obtendrán un bonificador de +1 a sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Caballeros Gélidos. Los Gélidos de la unidad superarán automáticamente sus chequeos de Estupidez y obtendrán un bonificador de +1 a sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9212,7 +9215,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="ddb4-58b1-20ff-b245" name="Estandarte de la masacre" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">En cualquier turno en el que la unidad en que se encuentra este estandarte realizase con éxito una carga obtendrá un bonificador de +1D3 al resultado del combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">En cualquier turno en el que la unidad en que se encuentra este estandarte realizase con éxito una carga obtendrá un bonificador de +1D3 al resultado del combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9228,7 +9231,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="a0be-3d3c-0f67-424c" name="Estandarte de Hag Graef" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad un bonificador de +1 a su atributo de iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad un bonificador de +1 a su atributo de iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9244,7 +9247,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="2d4b-0a81-2840-1613" name="Estandarte de la sangre fría" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un sólo uso. Puede utilizarse cuando la unidad fuese a realizar un chequeo de desmoralización. Obtendrás la regla especial Sangre fría únicamente para ese chequeo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un sólo uso. Puede utilizarse cuando la unidad fuese a realizar un chequeo de desmoralización. Obtendrás la regla especial Sangre fría únicamente para ese chequeo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9271,7 +9274,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="0283-b384-16dd-e2fa" name="Báculo del poder oscuro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">La hechicera genera 1D3 dados de energía adicionales en sus fases de magia, que sólo podrá utilizar ella. Separa estos dados y distínguelos del resto de dados de energía. Por cada resultado de 1 a la hora de utilizar los dados al lanzar un hechizo o por cada dado no utilizado al final de la fase de magia, la hechicera sufrirá una herida automática que no permite tirada de salvación por armadura. Estos dados no se pueden almacenar o perder de ningún modo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">La hechicera genera 1D3 dados de energía adicionales en sus fases de magia, que sólo podrá utilizar ella. Separa estos dados y distínguelos del resto de dados de energía. Por cada resultado de 1 a la hora de utilizar los dados al lanzar un hechizo o por cada dado no utilizado al final de la fase de magia, la hechicera sufrirá una herida automática que no permite tirada de salvación por armadura. Estos dados no se pueden almacenar o perder de ningún modo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9287,7 +9290,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="5ef5-d3a9-9e6d-3d21" name="Vara de Kharaidon" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Una vez en cada una de tus fases de magia, el portador puede realizar un chequeo de Resistencia: si lo supera, podrá lanzar uno de sus hechizos sin invertir dados de energía (el hechizo será lanzado a su dificultad básica; no puedes lanzar un hechizo potenciado con la Vara). Sin embargo, si falla el chequeo, perderá la concentración y sufrirá una herida sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Una vez en cada una de tus fases de magia, el portador puede realizar un chequeo de Resistencia: si lo supera, podrá lanzar uno de sus hechizos sin invertir dados de energía (el hechizo será lanzado a su dificultad básica; no puedes lanzar un hechizo potenciado con la Vara). Sin embargo, si falla el chequeo, perderá la concentración y sufrirá una herida sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9311,7 +9314,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="419c-37d4-c137-55f0" name="Libro de Furion" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Otorga al portador la Regla Especial Señor del Conocimiento (Magia Oscura)</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Otorga al portador la Regla Especial Señor del Conocimiento (Magia Oscura)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9332,7 +9335,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="e804-2825-a71c-0001" name="Báculo negro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador podrá utilizar cualquier número de dados de energía para lanzar sus hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador podrá utilizar cualquier número de dados de energía para lanzar sus hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9348,7 +9351,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="10e7-808b-e54c-4da5" name="Capa de estrella negra" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">La hechicera obtendrá un dado de energía adicional en cada una de sus Fases de Magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">La hechicera obtendrá un dado de energía adicional en cada una de sus Fases de Magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9364,7 +9367,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="322c-2a98-354d-c737" name="Daga del sacrificio" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">La hechicera puede utilizar esta daga tras haber realizado la tirada de lanzamiento de uno de sus hechizos. La maga podrá sacrificar a una de las miniaturas de cualquier unidad en la que se encuentre para tirar un dado de energía adicional en ese hechizo. La miniatura sacrificada deberá retirarse inmediatamente como baja. Esto deberá realizarse antes de que tenga lugar cualquier posible intento de dispersión.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">La hechicera puede utilizar esta daga tras haber realizado la tirada de lanzamiento de uno de sus hechizos. La maga podrá sacrificar a una de las miniaturas de cualquier unidad en la que se encuentre para tirar un dado de energía adicional en ese hechizo. La miniatura sacrificada deberá retirarse inmediatamente como baja. Esto deberá realizarse antes de que tenga lugar cualquier posible intento de dispersión.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9380,7 +9383,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="534c-7641-928a-1ca9" name="Piedra del alma" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puedes utilizar la Gema para ignorar los efectos de una Disfunción Mágica que sufra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puedes utilizar la Gema para ignorar los efectos de una Disfunción Mágica que sufra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9396,7 +9399,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="1a4f-616e-7a8e-b468" name="Familiar foco" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cualquiera de tus fases de magia puedes elegir colocar un marcador a una distancia de 8” o menos de la hechicera; el marcador permanece hasta el final de esa fase de magia. La hechicera podrá lanzar sus hechizos como si se encontrase en el lugar señalado por el marcador. La hechicera tendrá un ángulo de visión de 360º mientras lance sus hechizos desde el marcador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cualquiera de tus fases de magia puedes elegir colocar un marcador a una distancia de 8” o menos de la hechicera; el marcador permanece hasta el final de esa fase de magia. La hechicera podrá lanzar sus hechizos como si se encontrase en el lugar señalado por el marcador. La hechicera tendrá un ángulo de visión de 360º mientras lance sus hechizos desde el marcador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9420,7 +9423,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="981e-7d35-c08b-719e" name="Filo venenoso" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se benefician de las reglas especiales Ataques envenenados y Heridas múltiples (1D3). No podrán efectuarse tiradas de salvación por armadura contra los ataques realizados con Filo Venenoso.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se benefician de las reglas especiales Ataques envenenados y Heridas múltiples (1D3). No podrán efectuarse tiradas de salvación por armadura contra los ataques realizados con Filo Venenoso.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9449,7 +9452,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="5026-bf86-c479-e736" name="Látigo de la agonía" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Señores de las Bestias, oficial de las Hermanas de la Matanza o Personajes con la senda de la matanza. Látigo Desollador. Los ataques efectuados por este látigo negarán las tiradas de salvación por armadura del enemigo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Señores de las Bestias, oficial de las Hermanas de la Matanza o Personajes con la senda de la matanza. Látigo Desollador. Los ataques efectuados por este látigo negarán las tiradas de salvación por armadura del enemigo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9476,7 +9479,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="bfdb-2635-74e2-f93b" name="Perdición de Caledor" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza. Los ataques efectuados con esta lanza negarán las tiradas de salvación por Piel escamosa del enemigo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza. Los ataques efectuados con esta lanza negarán las tiradas de salvación por Piel escamosa del enemigo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9504,7 +9507,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="b8bc-767a-d04f-71a6" name="Tomador de vidas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Ballesta de Repetición. Los impactos causados por esta ballesta herirán con un resultado de 2 o más, sin importar la resistencia del objetivo. Esta propiedad no tendrá efecto contra miniaturas que fuesen inmunes a la Regla Especial Ataques Envenenados.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Ballesta de Repetición. Los impactos causados por esta ballesta herirán con un resultado de 2 o más, sin importar la resistencia del objetivo. Esta propiedad no tendrá efecto contra miniaturas que fuesen inmunes a la Regla Especial Ataques Envenenados.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9531,7 +9534,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="7148-efa7-1c3d-0204" name="Dagas de Hotek" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Poder de penetración. El portador ve incrementada su iniciativa a 10 durante las fases de combate (propias o del adversario).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Poder de penetración. El portador ve incrementada su iniciativa a 10 durante las fases de combate (propias o del adversario).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9559,7 +9562,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="4dea-3c13-54a0-cec4" name="Espada de la gelidez" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resuelven con +1F y la regla especial Heridas múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resuelven con +1F y la regla especial Heridas múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9579,7 +9582,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="5e8e-f521-aafe-7c59" name="Espada del odio" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos de la Espada del Odio hieren automáticamente; no es necesario efectuar la tirada para herir. No afecta a miniaturas con la regla especial Inmune a veneno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos de la Espada del Odio hieren automáticamente; no es necesario efectuar la tirada para herir. No afecta a miniaturas con la regla especial Inmune a veneno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9606,7 +9609,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="61ea-8043-43ca-4073" name="Muerte carmesí" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques efectuados con esta alabarda obtendrán un bonificador adicional de +1 a la Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques efectuados con esta alabarda obtendrán un bonificador adicional de +1 a la Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9633,7 +9636,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="0b3e-4afe-f6fd-53e2" name="Armadura de la locura inmortal" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (salvación por armadura 4+). Aumenta en 1 el valor de los atributos de R y H de su portador. Adicionalmente, el portador tendrá la regla especial Estupidez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura del Caos (salvación por armadura 4+). Aumenta en 1 el valor de los atributos de R y H de su portador. Adicionalmente, el portador tendrá la regla especial Estupidez.</characteristic>
               </characteristics>
             </profile>
             <profile id="951d-fba7-6711-e92b" name="Armadura del caos" hidden="false" typeId="41726d6f757223232344415441232323" typeName="Armadura">
@@ -9663,7 +9666,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="5378-5326-a573-e3d6" name="Filo venenoso" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Slaanesh. Arma de mano. Si causa una herida a una unidad enemiga, la unidad quedará Apabullada ese turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Slaanesh. Arma de mano. Si causa una herida a una unidad enemiga, la unidad quedará Apabullada ese turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9690,7 +9693,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="c721-9b12-dae8-6908" name="Draich de energía oscura" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El Draich de Energía Negra no tiene la regla especial Lenta de las demás armas a dos manos; además, sus impactos tienen la regla especial Golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El Draich de Energía Negra no tiene la regla especial Lenta de las demás armas a dos manos; además, sus impactos tienen la regla especial Golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9718,7 +9721,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="69d3-c8ae-997d-47aa" name="Látigo de tormento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Slaanesh. Arma de mano. Poder de penetración. El portador tendrá I10 en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo miniaturas con la Marca de Slaanesh. Arma de mano. Poder de penetración. El portador tendrá I10 en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9746,7 +9749,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="e4a8-9f0b-34ba-31e8" name="Gema de la seducción" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la Marca de Slaanesh. Todas las miniaturas que intenten atacar al portador en combate cuerpo a cuerpo deberán superar un Chequeo de Liderazgo utilizando su valor básico de Liderazgo (no puede utilizarse las reglas especiales Presencia inspiradora ni ¡Ni un paso atrás!). Si lo fallan, no podrán atacar ese turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo miniaturas con la Marca de Slaanesh. Todas las miniaturas que intenten atacar al portador en combate cuerpo a cuerpo deberán superar un Chequeo de Liderazgo utilizando su valor básico de Liderazgo (no puede utilizarse las reglas especiales Presencia inspiradora ni ¡Ni un paso atrás!). Si lo fallan, no podrán atacar ese turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9770,7 +9773,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="d11e-c280-c134-d015" name="Cetro de la dominación de Slaanesh" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Sólo miniaturas con la Marca de Slaanesh. Objeto portahechizos, Nivel de energía 8. Puede utilizarse en cada fase de magia propia contra una unidad enemiga no trabada en combate a 12” o menos del portador. Esta unidad deberá realizar un chequeo de Liderazgo tirando 3D6 y descartando el resultado menor. Si lo falla, no podrá cargar, marchar ni disparar durante su siguiente turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Sólo miniaturas con la Marca de Slaanesh. Objeto portahechizos, Nivel de energía 8. Puede utilizarse en cada fase de magia propia contra una unidad enemiga no trabada en combate a 12” o menos del portador. Esta unidad deberá realizar un chequeo de Liderazgo tirando 3D6 y descartando el resultado menor. Si lo falla, no podrá cargar, marchar ni disparar durante su siguiente turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9794,7 +9797,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="2759-59b1-05cf-3417" name="Colgante de Slaanesh" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Slaanesh. Por cada herida que sufra el portador, su atributo de ataques aumenta en un punto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo miniaturas con la Marca de Slaanesh. Por cada herida que sufra el portador, su atributo de ataques aumenta en un punto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9818,7 +9821,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="b65d-276b-9c52-1fc4" name="Estandarte de las sombras" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo unidades con la marca de Slaanesh. La unidad podrá declarar las reacciones a la carga Huír o Disparar y Huir (esta última sólo la caballería rápida), aunque sea Inmune a la psicología: si no es alcanzada por sus perseguidores, se reagrupará automáticamente al final de su huida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo unidades con la marca de Slaanesh. La unidad podrá declarar las reacciones a la carga Huír o Disparar y Huir (esta última sólo la caballería rápida), aunque sea Inmune a la psicología: si no es alcanzada por sus perseguidores, se reagrupará automáticamente al final de su huida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -9834,7 +9837,7 @@ Aunque en los nombres aparezca “Hacha” o “Espada” no deberá considerars
           <profiles>
             <profile id="7ec0-d866-876a-dc8e" name="Estandarte del éxtasis" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Slaanesh. Si el portador (y la unidad en la que se encuentre) obtiene un resultado de dobles o al menos un resultado de 1 al efectuar un chequeo de desmoralización, se considerará que ha obtenido un resultado de doble uno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo miniaturas con la Marca de Slaanesh. Si el portador (y la unidad en la que se encuentre) obtiene un resultado de dobles o al menos un resultado de 1 al efectuar un chequeo de desmoralización, se considerará que ha obtenido un resultado de doble uno.</characteristic>
               </characteristics>
             </profile>
           </profiles>

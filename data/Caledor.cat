@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="4bff-f57e-cbdd-cdbc" name="Caledor" revision="7" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="400" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="4bff-f57e-cbdd-cdbc" name="Caledor" revision="12" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="400" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="d5f3-8d72-7f36-e06c" name="Senda">
       <characteristicTypes>
-        <characteristicType id="e7e8-8fe9-e257-d69b" name="Propiedades mágicas"/>
+        <characteristicType id="e7e8-8fe9-e257-d69b" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -1176,7 +1176,7 @@
                   <profiles>
                     <profile id="4b61-eedb-7ccf-b74b" name="Estandarte de los nacidos del fuego" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad (incluido las monturas) obtienen las reglas especiales Ataques mágicos. Además al inicio de cada fase de combate cuerpo a cuerpo cada miniatura enemiga en contacto peana con peana con algún miembro de la unidad sufrirá un impacto automático de F4 con las reglas especiales Ataques solo flamígeros y Ataques mágicos.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad (incluido las monturas) obtienen las reglas especiales Ataques mágicos. Además al inicio de cada fase de combate cuerpo a cuerpo cada miniatura enemiga en contacto peana con peana con algún miembro de la unidad sufrirá un impacto automático de F4 con las reglas especiales Ataques solo flamígeros y Ataques mágicos.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -2590,6 +2590,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="8375-8d28-4391-22b2" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="70.0"/>
           </costs>
@@ -3639,6 +3642,9 @@
                   <infoLinks>
                     <infoLink id="9f69-a5c8-0c1a-aff4" name="Arma a dos manos" hidden="false" targetId="b737-28ed-1002-5531" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -4593,7 +4599,7 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
               <profiles>
                 <profile id="92fc-cbb8-daac-0e4d" name="Domador de dragones" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Si el personaje monta un Dragón, este no deberá tirar en la tabla de Reacción de Monstruos si muere el jinete.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Si el personaje monta un Dragón, este no deberá tirar en la tabla de Reacción de Monstruos si muere el jinete.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5159,6 +5165,9 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
                   <infoLinks>
                     <infoLink id="0979-3ba4-2913-c88d" name="Arma a dos manos" hidden="false" targetId="b737-28ed-1002-5531" type="profile"/>
                   </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
                 </selectionEntry>
               </selectionEntries>
             </selectionEntryGroup>
@@ -5880,7 +5889,7 @@ Se trata de un hechizo de potenciación que toma como objetivo una unidad amiga 
               <profiles>
                 <profile id="f838-3e76-3ef5-cb09" name="Vínculo del dragón" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Un mago dragón no tiene perfiles de Resistencia y Heridas: todos los impactos se resuelven siempre utilizando los valores de R, H y piel escamosa del dragón solar. Si el dragón muere, el mago se retira inmediatamente como baja. Funciona como un personaje montado en monstruo en todos los demás aspectos. Además, todos los hechizos de potenciación que el mago dragón lance sobre sí mismo afectarán
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Un mago dragón no tiene perfiles de Resistencia y Heridas: todos los impactos se resuelven siempre utilizando los valores de R, H y piel escamosa del dragón solar. Si el dragón muere, el mago se retira inmediatamente como baja. Funciona como un personaje montado en monstruo en todos los demás aspectos. Además, todos los hechizos de potenciación que el mago dragón lance sobre sí mismo afectarán
 tanto al jinete como al dragón.</characteristic>
                   </characteristics>
                 </profile>
@@ -6181,7 +6190,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="1196-0867-55b8-5989" name="Maestría dracónica" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Un Paladín dragón no tiene perfiles de Resistencia y Heridas: a la hora de resolver los ataques e impactos, jinete y montura se tratarán como una única miniatura. Se utilizará el valor de R y H del Dragón Solar, y el valor de armadura del jinete con un bonificador de +3 (incluye la piel escamosa del dragón). Si el dragón muere, el Paladín se retira inmediatamente como baja. Funciona como un personaje montado en monstruo en todos los demás aspectos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Un Paladín dragón no tiene perfiles de Resistencia y Heridas: a la hora de resolver los ataques e impactos, jinete y montura se tratarán como una única miniatura. Se utilizará el valor de R y H del Dragón Solar, y el valor de armadura del jinete con un bonificador de +3 (incluye la piel escamosa del dragón). Si el dragón muere, el Paladín se retira inmediatamente como baja. Funciona como un personaje montado en monstruo en todos los demás aspectos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6358,7 +6367,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="63e3-e58e-6f51-9a24" name="Armadura ancestral" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. La tirada de salvación especial conferida por la Armadura Dragón se ve mejorada a 4+. El portador puede repetir las tiradas de salvación por armadura y especiales fallidas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. La tirada de salvación especial conferida por la Armadura Dragón se ve mejorada a 4+. El portador puede repetir las tiradas de salvación por armadura y especiales fallidas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6401,7 +6410,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="deb6-c221-90d8-73a1" name="Bendición de Cul" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la Regla Especial Resistencia Mágica (3) contra hechizos de los siguientes saberes: Magia Oscura, Nigromancia, Saber de Tzeentch, Saber de Nurgle, Saber de Slaanesh y el Saber de Plaga (Skaven).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene la Regla Especial Resistencia Mágica (3) contra hechizos de los siguientes saberes: Magia Oscura, Nigromancia, Saber de Tzeentch, Saber de Nurgle, Saber de Slaanesh y el Saber de Plaga (Skaven).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6481,7 +6490,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="036a-e41f-f323-52c7" name="Lancero insuperable" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Aethis puede repetir las tiradas para impactar fallidas de los ataques que efectúe usando su lanza de caballería. Los impactos causados por Aethis usando su lanza de caballería obtendrán la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Aethis puede repetir las tiradas para impactar fallidas de los ataques que efectúe usando su lanza de caballería. Los impactos causados por Aethis usando su lanza de caballería obtendrán la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6579,7 +6588,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="a9e1-5985-2d24-8e0c" name="Espadas de la victoria" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas, Filo de Caledor (cada una de ellas). Estas espadas Filo de Caledor proporcionan un +2 a la fuerza en vez del +1 habitual en este tipo de arma. Proporcionan a Hallar una mejora +1 en su habilidad de golpe letal, de manera que Hallar es capaz de hacer un golpe letal con resultados de (5+) en lugar de (6+) como es habitual.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas, Filo de Caledor (cada una de ellas). Estas espadas Filo de Caledor proporcionan un +2 a la fuerza en vez del +1 habitual en este tipo de arma. Proporcionan a Hallar una mejora +1 en su habilidad de golpe letal, de manera que Hallar es capaz de hacer un golpe letal con resultados de (5+) en lugar de (6+) como es habitual.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6599,7 +6608,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="c78c-943c-e907-e921" name="Cota de escamas de dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de dragón. La salvación por armadura obtenida mejora en un +1 proporcionando una salvación por armadura de (4+)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de dragón. La salvación por armadura obtenida mejora en un +1 proporcionando una salvación por armadura de (4+)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6618,7 +6627,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="249e-4649-9267-2973" name="Diadema de guerra de Caledor" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">La diadema anula una de las heridas que Hallar sufra durante la batalla. Puedes elegir que herida anular. Esta diadema mejora en un +1 en la tirada de esquiva de Hallar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">La diadema anula una de las heridas que Hallar sufra durante la batalla. Puedes elegir que herida anular. Esta diadema mejora en un +1 en la tirada de esquiva de Hallar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6678,7 +6687,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="2253-9c38-6bbd-3066" name="Señor de la espada" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Hallar tiene la regla especial Golpe Letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Hallar tiene la regla especial Golpe Letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6697,7 +6706,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="91f2-d6b2-219c-f0ed" name="Esgrima sublime" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Hallor puede repetir las tiradas para impactar fallidas en combate cuerpo a cuerpo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Hallor puede repetir las tiradas para impactar fallidas en combate cuerpo a cuerpo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6820,7 +6829,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="5fdd-f9ca-7042-b913" name="Tabardo de Morven" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Rathien una tirada de salvación especial de 5+. Adicionalmente divide entre dos (redondeando hacia arriba) las heridas infligidas a Rathien por ataques con la regla especial Heridas múltiples; si Rathien fuera a ser retirado como baja a causa de un Golpe letal heroico exitoso, en vez de eso, ese ataque le causará tres heridas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Rathien una tirada de salvación especial de 5+. Adicionalmente divide entre dos (redondeando hacia arriba) las heridas infligidas a Rathien por ataques con la regla especial Heridas múltiples; si Rathien fuera a ser retirado como baja a causa de un Golpe letal heroico exitoso, en vez de eso, ese ataque le causará tres heridas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6836,7 +6845,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="0e76-c3ac-dfe6-4d18" name="Corona ardiente" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">En cada una de tus fases de disparo, tira 1D6 por cada edificio, carro y maquina de guerra a 12” o menos de Rathien; si obtienes un resultado de 4, 5 o 6 esa unidad o edificio sufrirá una herida sin posibilidad de salvación por armadura. armadura ni regeneración. Si la máquina de guerra utiliza la tabla de problemas del cañón o del lanzallamas, sufrirá 1D3 heridas en vez de una.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">En cada una de tus fases de disparo, tira 1D6 por cada edificio, carro y maquina de guerra a 12” o menos de Rathien; si obtienes un resultado de 4, 5 o 6 esa unidad o edificio sufrirá una herida sin posibilidad de salvación por armadura. armadura ni regeneración. Si la máquina de guerra utiliza la tabla de problemas del cañón o del lanzallamas, sufrirá 1D3 heridas en vez de una.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6933,7 +6942,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="8b25-7552-89ff-3b53" name="Comunión dracónica Rathiel, señor de Tor Morvel" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Rathien y su dragón Khalathanor forman una única miniatura con el tipo de unidad Monstruo. Cada uno atacará con su perfil de HA, F, I y A. Para todos los efectos se considera un dragón.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Rathien y su dragón Khalathanor forman una única miniatura con el tipo de unidad Monstruo. Cada uno atacará con su perfil de HA, F, I y A. Para todos los efectos se considera un dragón.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7050,7 +7059,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="b826-c8d1-7399-fb8d" name="Yelmo alado de Draugnir" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 a la tirada de salvación por armadura del portador). Los impactos contra el Thaindon de Fuerza superior a 5 se consideran de Fuerza 5.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 a la tirada de salvación por armadura del portador). Los impactos contra el Thaindon de Fuerza superior a 5 se consideran de Fuerza 5.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7066,7 +7075,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="baf7-95c0-1393-8d1a" name="Estandarte del dragón rampante" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades amigas a 12” o menos de Thaidon obtiene un bonificador extraordinario de +1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades amigas a 12” o menos de Thaidon obtiene un bonificador extraordinario de +1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7146,7 +7155,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="0e50-40bd-a0fe-8ea3" name="Comunión dracónica Thaindon" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Thaindon y su dragón Kargos forman una única miniatura con el tipo de unidad Monstruo. Cada uno atacará con su perfil de HA, F, I y A. Para todos los efectos se considera un dragón.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Thaindon y su dragón Kargos forman una única miniatura con el tipo de unidad Monstruo. Cada uno atacará con su perfil de HA, F, I y A. Para todos los efectos se considera un dragón.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7243,7 +7252,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="a963-59e6-e155-efaf" name="Hojas Keylpi" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Un resultado de 6 natural en la tirada para impactar hiere automáticamente y no permite salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Un resultado de 6 natural en la tirada para impactar hiere automáticamente y no permite salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7287,7 +7296,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="e7c5-7ee8-6cc1-cce4" name="Ojo de Isha" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todos las tiradas exitosas para impactar contra Bellaeir deberán repetirse.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todos las tiradas exitosas para impactar contra Bellaeir deberán repetirse.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7330,7 +7339,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="89d0-ce27-b6c3-d76f" name="Esgrima sublime" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">El personaje puede repetir todas sus tiradas fallidas para impactar en combate cuerpo a cuerpo. El personaje no puede tener ninguna montura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">El personaje puede repetir todas sus tiradas fallidas para impactar en combate cuerpo a cuerpo. El personaje no puede tener ninguna montura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7376,7 +7385,7 @@ tanto al jinete como al dragón.</characteristic>
         <infoLink id="7744-75a6-357b-5e70" name="Orgullo ancestral" hidden="false" targetId="76e4-de12-8e30-50cb" type="rule"/>
         <infoLink id="7ead-bb69-5892-3a61" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
         <infoLink id="c6ca-7973-7a9c-f311" name="Ataques flamígeros" hidden="false" targetId="6985-722e-1ce4-b838" type="rule"/>
-        <infoLink id="e151-7773-f341-1862" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="e151-7773-f341-1862" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="e744-2027-3d9d-4961" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
@@ -7424,7 +7433,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="d13c-713c-476a-53bd" name="Lanza filo de dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Durante las fases de combate en las que Tishriel use esta lanza de caballería, podrá cambiar todos sus ataques por un único ataque especial. Este ataque se resuelve con F10 y la regla especial Heridas múltiples (1D6).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Durante las fases de combate en las que Tishriel use esta lanza de caballería, podrá cambiar todos sus ataques por un único ataque especial. Este ataque se resuelve con F10 y la regla especial Heridas múltiples (1D6).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7479,7 +7488,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="bb23-647a-d2e9-a3c8" name="Esencia del mundo dragón" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Tishriel la regla especial Resistencia a la magia (2) y una salvación especial de 3+ contra ataques con la regla especial Ataques mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Tishriel la regla especial Resistencia a la magia (2) y una salvación especial de 3+ contra ataques con la regla especial Ataques mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7554,7 +7563,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="28b0-712a-3ce4-8ab1" name="Portadora de luz" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Tishriel puede repetir las tiradas para impactar contra miniaturas pertenecientes a ejércitos de la Destrucción</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Tishriel puede repetir las tiradas para impactar contra miniaturas pertenecientes a ejércitos de la Destrucción</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7677,7 +7686,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="628b-e10f-a73f-d3d7" name="Hirameth" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Una vez por fase de magia Dramas puede volver a tirar un dado al lanzar o dispersar un hechizo. Además, al inicio de cada fase de magia propia, puedes designar una unidad enemiga a 24” o menos del portador, el oponente deberá revelar todos sus objetos mágicos, hechizos, asesinos, fanático, etc.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Una vez por fase de magia Dramas puede volver a tirar un dado al lanzar o dispersar un hechizo. Además, al inicio de cada fase de magia propia, puedes designar una unidad enemiga a 24” o menos del portador, el oponente deberá revelar todos sus objetos mágicos, hechizos, asesinos, fanático, etc.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7693,7 +7702,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="4274-5a3e-9d3b-90cf" name="Anillo Escudo de Finreir" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona un tirada de salvación especial de 2+ frente la primera herida sufrida en cada turno de jugador (propio y del contrario).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona un tirada de salvación especial de 2+ frente la primera herida sufrida en cada turno de jugador (propio y del contrario).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7736,7 +7745,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="86c8-600c-118e-eb18" name="Maestro arcano" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Sólo hechiceros. El hechicero genera un dado de magia adicional (de energía o dispersión) cada fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Sólo hechiceros. El hechicero genera un dado de magia adicional (de energía o dispersión) cada fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7999,7 +8008,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="6e08-ea89-1615-84a8" name="Senda del domador de dragones" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Si Imrik es retirado como baja, su dragón no deberá hacer una tirada en la tabla de monstruos dominados mágicamente, sino que podrás elegir el resultado que desees en la tabla. Adicionalmente, cualquier dragón que desee atacar a Imrik en cuerpo a cuerpo deberá superar un chequeo de liderazgo sin usar la regla Presencia inspiradora ni ¡Ni un paso atras!, o no podrá atacar esa fase de combate cuerpo a cuerpo). Esta senda es única, y sólo Imrik puede seguirla. </characteristic>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Si Imrik es retirado como baja, su dragón no deberá hacer una tirada en la tabla de monstruos dominados mágicamente, sino que podrás elegir el resultado que desees en la tabla. Adicionalmente, cualquier dragón que desee atacar a Imrik en cuerpo a cuerpo deberá superar un chequeo de liderazgo sin usar la regla Presencia inspiradora ni ¡Ni un paso atras!, o no podrá atacar esa fase de combate cuerpo a cuerpo). Esta senda es única, y sólo Imrik puede seguirla. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8042,7 +8051,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="959a-3e7d-9d04-fcb9" name="Lanza del dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería (Imrik usa este arma en el turno en el que carga exitosamente al combate; en las demás fases de combate cuerpo a cuerpo utilizará la Espada Estelar). Proporciona a Imrik +1F (para un total de +3), y sus impactos no permiten tirada de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería (Imrik usa este arma en el turno en el que carga exitosamente al combate; en las demás fases de combate cuerpo a cuerpo utilizará la Espada Estelar). Proporciona a Imrik +1F (para un total de +3), y sus impactos no permiten tirada de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8061,7 +8070,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="1ad3-28de-bc8a-9b40" name="Espada estelar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Filo de Caledor. Proporciona a Imrik un bonificador de +1 en sus tiradas para impactar y herir en combate cuerpo a cuerpo cuando la blande. Además, tiene la regla especial Ataques flamígeros.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Filo de Caledor. Proporciona a Imrik un bonificador de +1 en sus tiradas para impactar y herir en combate cuerpo a cuerpo cuando la blande. Además, tiene la regla especial Ataques flamígeros.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8080,7 +8089,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="0c2f-82c8-c19b-3f2c" name="Armadura del dragón de Caledor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de Dragón. Proporciona a Imrik un a tirada de salvación por armadura de 3+, y una tirada de salvación especial de 4+. Además, Imrik no puede ser herido por Armas de aliento.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de Dragón. Proporciona a Imrik un a tirada de salvación por armadura de 3+, y una tirada de salvación especial de 4+. Además, Imrik no puede ser herido por Armas de aliento.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8099,7 +8108,7 @@ tanto al jinete como al dragón.</characteristic>
               <profiles>
                 <profile id="b9ec-fed5-845a-ecd1" name="Cuerno del dragón" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Imrik puede hacer sonar su cuerno al inicio de cualquiera de sus turnos. Hasta el inicio de su siguiente turno, todas las miniaturas del ejército de Altos elfos (incluyendo las monturas) obtienen la regla especial Carga devastadora.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Imrik puede hacer sonar su cuerno al inicio de cualquiera de sus turnos. Hasta el inicio de su siguiente turno, todas las miniaturas del ejército de Altos elfos (incluyendo las monturas) obtienen la regla especial Carga devastadora.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8396,7 +8405,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="2488-49c1-11c6-dbfa" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Arúspice una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Arúspice una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8415,7 +8424,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="292c-70bb-de92-3e91" name="Báculo Ogham" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Proporciona al Arúspice un bonificador de +1 en todas sus tiradas de dispersión.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Proporciona al Arúspice un bonificador de +1 en todas sus tiradas de dispersión.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8509,7 +8518,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="3151-b1f7-0e22-377b" name="Señor de la espada" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b"/>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8525,7 +8534,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="397a-d90e-d6eb-da55" name="Esgrima sublime" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b"/>
+                    <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b"/>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8552,7 +8561,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="6e4a-62ac-459f-ed75" name="Espadas de la victoria" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas, Filo de Caledor (cada una de ellas). Estas espadas Filo de Caledor proporcionan un +2 a la fuerza en vez del +1 habitual en este tipo de arma. Proporcionan a Hallar una mejora +1 en su habilidad de golpe letal, de manera que Hallar es capaz de hacer un golpe letal con resultados de (5+) en lugar de (6+) como es habitual.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas, Filo de Caledor (cada una de ellas). Estas espadas Filo de Caledor proporcionan un +2 a la fuerza en vez del +1 habitual en este tipo de arma. Proporcionan a Hallar una mejora +1 en su habilidad de golpe letal, de manera que Hallar es capaz de hacer un golpe letal con resultados de (5+) en lugar de (6+) como es habitual.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8572,7 +8581,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="c574-4e54-2827-dbd9" name="Cota de escamas de dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de dragón. La salvación por armadura obtenida mejora en un +1 proporcionando una salvación por armadura de (4+)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de dragón. La salvación por armadura obtenida mejora en un +1 proporcionando una salvación por armadura de (4+)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8591,7 +8600,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="6251-aa1e-b105-ae2e" name="Diadema de guerra de Caledor" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">La diadema anula una de las heridas que Hallar sufra durante la batalla. Puedes elegir que herida anular. Esta diadema mejora en un +1 en la tirada de esquiva de Hallar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">La diadema anula una de las heridas que Hallar sufra durante la batalla. Puedes elegir que herida anular. Esta diadema mejora en un +1 en la tirada de esquiva de Hallar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9168,7 +9177,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="8af3-1614-7eab-1e36" name="Talismán esmeralda de Xhotl" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Pirzazzo y a su unidad las reglas especiales Inmunes a Veneno y Regeneración (6+), que aumenta a Regeneración (5+) en el caso de Pirazzo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Pirzazzo y a su unidad las reglas especiales Inmunes a Veneno y Regeneración (6+), que aumenta a Regeneración (5+) en el caso de Pirazzo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9854,7 +9863,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="6c79-86d8-927b-76c1" name="Cimitarra de Daksir" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por el portador en combate se realizarán con un bonificador de +1 a su atributo de Fuerza. El portador de esta arma obtiene la regla especial Carga Devastadora.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por el portador en combate se realizarán con un bonificador de +1 a su atributo de Fuerza. El portador de esta arma obtiene la regla especial Carga Devastadora.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9956,7 +9965,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="8a9a-6702-5dee-8cbd" name="El estandarte negro de Muktarhin" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Las unidades enemigas en contacto por el portador del estandarte deberán repetir los resultados de 1 que obtuviesen en los chequeos de liderazgo que efectúen.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Las unidades enemigas en contacto por el portador del estandarte deberán repetir los resultados de 1 que obtuviesen en los chequeos de liderazgo que efectúen.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10199,7 +10208,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="3a22-08dc-3808-9d5d" name="Espada de la llama purificadora" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados con esta espada se resolverán con la regla especial Ataques Flamígeros. Una vez por batalla el portador podrá utilizar un arma de aliento de F4 y las reglas especiales Ataques mágicos y Ataques Sólo Flamígeros.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Los impactos causados con esta espada se resolverán con la regla especial Ataques Flamígeros. Una vez por batalla el portador podrá utilizar un arma de aliento de F4 y las reglas especiales Ataques mágicos y Ataques Sólo Flamígeros.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10257,7 +10266,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
                   <profiles>
                     <profile id="30b9-1ba6-2b74-af3a" name="Brasero sagrado" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y a todas las miniaturas de la unidad la regla especial Resistencia a la Magia (1) y una tirada de salvación especial (6+) contra las heridas causadas por miniaturas con las reglas especiales Demonio o No Muerto.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y a todas las miniaturas de la unidad la regla especial Resistencia a la Magia (1) y una tirada de salvación especial (6+) contra las heridas causadas por miniaturas con las reglas especiales Demonio o No Muerto.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10584,7 +10593,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="37b2-a624-fb1b-a9cc" name="Escudo rúnico" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Otorga al portador la regla especial Inmune a fuego y un bonificador adicional de +1 a su tirada de salvación por armadura (por lo que este escudo mejorará la tirada de salvación de su portador en +2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Otorga al portador la regla especial Inmune a fuego y un bonificador adicional de +1 a su tirada de salvación por armadura (por lo que este escudo mejorará la tirada de salvación de su portador en +2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11142,7 +11151,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
                   <profiles>
                     <profile id="5744-c587-62d2-647a" name="Estandarte de la novia del mar" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11648,7 +11657,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="7569-10b5-e1dc-08d6" name="Báculo de Ogham" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Puede utilizarse en combate como si fuese una Lanza. Otorga a Hengus la regla especial Regeneración (5+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Puede utilizarse en combate como si fuese una Lanza. Otorga a Hengus la regla especial Regeneración (5+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12215,7 +12224,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="afdc-0b7d-eea6-dd39" name="Espada rúnica de Skarloc" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por Skarloc obtendrán un bonificador de +1 a sus tiradas para impactar y se resolverán con +1 Fuerza. Los ataques enemigos dirigidos contra Skarloc deberán aplicar un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por Skarloc obtendrán un bonificador de +1 a sus tiradas para impactar y se resolverán con +1 Fuerza. Los ataques enemigos dirigidos contra Skarloc deberán aplicar un penalizador de -1 en sus tiradas para impactar.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12252,7 +12261,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="5ccc-d780-f65b-a278" name="Emblema de la reina Hada" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Skarloc una tirada de salvación Especial (5+) y la regla especial Inmune a veneno.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Skarloc una tirada de salvación Especial (5+) y la regla especial Inmune a veneno.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12411,7 +12420,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="8e3d-849f-cefd-c301" name="Estandarte de Torothal" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Estandarte mágico. Las miniaturas enemigas no podrán asignar ataques o disparos sobre Kaia mientras queden otras miniaturas de su unidad con vida. Las unidades enemigas que deseasen efectuar una carga o disparar contra la unidad en la que se encontrase este estandarte deberán antes superar con éxito un chequeo de liderazgo utilizando 3D6 y descartando el resultado menor, si lo fallan podrán declarar carga o disparar contra otras unidades de la manera habitual.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Estandarte mágico. Las miniaturas enemigas no podrán asignar ataques o disparos sobre Kaia mientras queden otras miniaturas de su unidad con vida. Las unidades enemigas que deseasen efectuar una carga o disparar contra la unidad en la que se encontrase este estandarte deberán antes superar con éxito un chequeo de liderazgo utilizando 3D6 y descartando el resultado menor, si lo fallan podrán declarar carga o disparar contra otras unidades de la manera habitual.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12652,7 +12661,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="a674-c972-e403-bbef" name="Cuerno de bronce" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Instrumento. Araflane, el músico de la unidad, puede hacer sonar este cuerno en el momento que fueses a efectuar una carga. Las miniaturas de la unidad causarán Miedo hasta el final del turno de jugador.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Instrumento. Araflane, el músico de la unidad, puede hacer sonar este cuerno en el momento que fueses a efectuar una carga. Las miniaturas de la unidad causarán Miedo hasta el final del turno de jugador.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -12876,7 +12885,7 @@ D6	Resultado (Agarrar y...)
               <profiles>
                 <profile id="d366-96f0-48de-cd30" name="Sigilos del héroe" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Horemhai puede repetir todos los resultados de 1 en sus tiradas para impactar, herir y salvaciones.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Horemhai puede repetir todos los resultados de 1 en sus tiradas para impactar, herir y salvaciones.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13148,7 +13157,7 @@ D6	Resultado (Agarrar y...)
                   <profiles>
                     <profile id="9399-5d9c-0381-89fb" name="Comte de Lyons" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El estandarte proporciona a Gerrard y los Arblastiers una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). Sin embargo, si los Arblastiers huyen, este estandarte pierde todas sus propiedades mágicas.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El estandarte proporciona a Gerrard y los Arblastiers una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). Sin embargo, si los Arblastiers huyen, este estandarte pierde todas sus propiedades mágicas.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -13352,7 +13361,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         <infoLink id="51b9-12d1-8b6c-3455" name="Orgullo ancestral" hidden="false" targetId="76e4-de12-8e30-50cb" type="rule"/>
         <infoLink id="d8b8-e27a-ba56-1cb7" name="Inmune a la psicología" hidden="false" targetId="73ad-8cdb-f1ad-010f" type="rule"/>
         <infoLink id="93d5-a33d-3bf6-036c" name="Ataques flamígeros" hidden="false" targetId="6985-722e-1ce4-b838" type="rule"/>
-        <infoLink id="ea17-c80a-c39e-3c07" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="ea17-c80a-c39e-3c07" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
         <infoLink id="1d06-7988-6f0f-ee52" name="Sangre fría" hidden="false" targetId="fae6-f2eb-1a70-1084" type="rule">
           <modifiers>
             <modifier type="set" field="hidden" value="true">
@@ -13591,6 +13600,264 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           </selectionEntries>
         </selectionEntryGroup>
       </selectionEntryGroups>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
+    </selectionEntry>
+    <selectionEntry id="020c-33f4-d14e-58b3" name="La compañía maldita" hidden="false" collective="false" import="true" type="unit">
+      <modifiers>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="89ae-f60b-80b0-8549" type="equalTo"/>
+          </conditions>
+        </modifier>
+      </modifiers>
+      <constraints>
+        <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="6b49-ac30-c2ee-a168" type="max"/>
+      </constraints>
+      <rules>
+        <rule id="aaf8-7e57-64ed-d6c6" name="Bienvenidos a la maldición" hidden="false">
+          <description>Por cada miniatura enemiga abatida a causa de las heridas de Richter u otro miembro de su unidad podrás incluir un Guerrero Maldito adicional en la unidad. Añade los guerreros en el momento que las miniaturas son retiradas como baja. Esta regla no afecta a miniaturas con la regla especial Demonio.</description>
+        </rule>
+        <rule id="3d5b-5ee5-0044-e28c" name="Primero entre los malditos" hidden="false">
+          <description>Mientras Richter siga con vida, Richter y su unidad de Guerreros Malditos podrán marchar como si no estuviesen afectados por la regla especial No Muerto.</description>
+        </rule>
+      </rules>
+      <infoLinks>
+        <infoLink id="4e08-c8cd-bda6-f34e" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
+        <infoLink id="3463-34d8-2834-0b29" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
+        <infoLink id="4b16-71f7-271c-0077" name="Ataques mágicos" hidden="false" targetId="7cc5-d3fc-a37a-3d4a" type="rule"/>
+      </infoLinks>
+      <categoryLinks>
+        <categoryLink id="8980-cbe0-b6a6-f0ae" name="Unidades Especiales" hidden="false" targetId="5370656369616c23232344415441232323" primary="true"/>
+      </categoryLinks>
+      <selectionEntries>
+        <selectionEntry id="8d4d-0927-0d5f-db99" name="Guerreros condenados" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="29.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1444-ec53-aa67-3496" type="max"/>
+            <constraint field="selections" scope="parent" value="9.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="b9fb-12f1-6edc-0044" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="ce46-3409-1c42-a3cc" name="Guerrero condenado" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">2</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">2</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">3</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">3</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">1</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">2</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">1</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">6</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">5</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323"/>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="7.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="668c-ab36-ac86-f785" name="Equipo guerreros condenados" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3952-6127-1c90-d5af" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2772-d3cc-a811-1f52" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="8cac-b9c7-aac6-b1be" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f908-5cee-815b-ae14" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f101-cff4-cfaf-af02" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="dab1-fb04-8d5e-86b4" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="9e01-ab8a-8058-14c1" name="Armadura ligera" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="73cc-4b78-5242-e9be" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5fb8-35ec-f4e0-4016" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="413a-40ae-6d67-5054" name="Armadura ligera" hidden="false" targetId="44f2-32d5-23eb-62f5" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e525-9da0-8ba9-f677" name="Arma de mano" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="1988-ab46-498a-c625" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="3caa-4a44-26a2-1946" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="cd01-5d43-7458-e7a0" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="0e3f-e370-2da7-a2ef" name="Richter Kreugar" hidden="false" collective="false" import="true" type="model">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4632-b1cc-3405-41ff" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="76a3-df76-062e-b236" type="min"/>
+          </constraints>
+          <profiles>
+            <profile id="d6b9-1a88-b6ce-32ff" name="Richter Kreugar" hidden="false" typeId="4d6f64656c23232344415441232323" typeName="Modelo">
+              <characteristics>
+                <characteristic name="M" typeId="4d23232344415441232323">4</characteristic>
+                <characteristic name="HA" typeId="575323232344415441232323">4</characteristic>
+                <characteristic name="HP" typeId="425323232344415441232323">3</characteristic>
+                <characteristic name="F" typeId="5323232344415441232323">4</characteristic>
+                <characteristic name="R" typeId="5423232344415441232323">5</characteristic>
+                <characteristic name="H" typeId="5723232344415441232323">3</characteristic>
+                <characteristic name="I" typeId="4923232344415441232323">3</characteristic>
+                <characteristic name="A" typeId="4123232344415441232323">3</characteristic>
+                <characteristic name="L" typeId="4c4423232344415441232323">8</characteristic>
+                <characteristic name="TSA" typeId="41726d6f75725361766523232344415441232323">4</characteristic>
+                <characteristic name="TSE" typeId="576172645361766523232344415441232323">4</characteristic>
+                <characteristic name="Tipo" typeId="5479706523232344415441232323">Infantería</characteristic>
+              </characteristics>
+            </profile>
+          </profiles>
+          <costs>
+            <cost name="pts" typeId="points" value="156.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="e1df-0913-ddba-8cb4" name="Equipo Richter Kreugar" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4b4b-b1e1-d773-8e4d" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e6cd-6d79-19db-edb5" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="f95d-b7a0-fb0a-3f06" name="Aflicción" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="f09c-2e5a-9d98-aad7" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="37e1-4bbd-fdc3-d3d4" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="765f-c5cc-59a2-b438" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <infoLinks>
+                <infoLink id="9bec-b141-7d7b-6476" name="Arma de mano" hidden="false" targetId="891d-c74a-2555-793e" type="profile"/>
+                <infoLink id="9c27-642f-49ab-ba07" name="Golpe letal" hidden="false" targetId="9f1c-d301-bd0e-af81" type="rule"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e149-e1a4-122c-87d9" name="Armadura pesada" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5c4b-3272-16ac-4dca" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="9e51-3f09-2da3-21f5" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="c2c6-6d5f-1310-29a7" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c17d-c22c-6d0f-a920" name="Escudo" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="57d9-80cb-2afa-6488" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5e8c-16fd-2042-2293" type="min"/>
+              </constraints>
+              <infoLinks>
+                <infoLink id="9254-83ca-b026-bdea" name="Escudo" hidden="false" targetId="c028-354e-9169-7463" type="profile"/>
+              </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="8042-b92d-abbb-7e36" name="La oscura gema de la condenación" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="0d3b-b955-9e1c-d89f" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8b07-482a-33e1-2a13" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="47a6-02f1-10af-2ff0" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+        <selectionEntry id="3bf4-f854-b0f7-adf0" name="Grupo de mando" hidden="false" collective="false" import="true" type="upgrade">
+          <constraints>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e90f-854d-2c03-cec9" type="max"/>
+            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="771b-3d65-24ae-dff1" type="min"/>
+          </constraints>
+          <selectionEntries>
+            <selectionEntry id="df6e-18ea-a28e-54ee" name="Músico" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="e708-8854-2b6c-cb43" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="2fda-8336-5ade-a25a" type="min"/>
+              </constraints>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="e6d5-3935-8ca7-b237" name="Portaestandarte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="fd8c-debd-7409-9552" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="4f4b-b3c9-bedd-ad4b" type="min"/>
+              </constraints>
+              <selectionEntries>
+                <selectionEntry id="1e77-0b47-0d13-a3c3" name="Estandarte de los malditos" hidden="false" collective="false" import="true" type="upgrade">
+                  <constraints>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="86e6-dbe0-8d1f-4906" type="max"/>
+                    <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="8fd8-791d-c0b5-bcf2" type="min"/>
+                  </constraints>
+                  <profiles>
+                    <profile id="a3c6-1cac-2d2f-2ca5" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
+                      <characteristics>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                      </characteristics>
+                    </profile>
+                  </profiles>
+                  <infoLinks>
+                    <infoLink id="4073-24b7-bc4b-cca4" name="Ni un paso atrás" hidden="false" targetId="f76e-5a01-1c6b-ef76" type="rule"/>
+                  </infoLinks>
+                  <costs>
+                    <cost name="pts" typeId="points" value="0.0"/>
+                  </costs>
+                </selectionEntry>
+              </selectionEntries>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+          </selectionEntries>
+          <costs>
+            <cost name="pts" typeId="points" value="0.0"/>
+          </costs>
+        </selectionEntry>
+      </selectionEntries>
+      <entryLinks>
+        <entryLink id="85c7-849c-1e97-43f8" name="Regimientos de renombre" hidden="false" collective="false" import="true" targetId="cbe6-b40a-eb61-0c1c" type="selectionEntry"/>
+      </entryLinks>
       <costs>
         <cost name="pts" typeId="points" value="0.0"/>
       </costs>
@@ -14108,8 +14375,11 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
         </profile>
       </profiles>
       <infoLinks>
-        <infoLink id="0e46-e7b6-3149-6daa" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="0e46-e7b6-3149-6daa" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1dbc-f2fb-ddc0-5df0" name="Gran casa de Emberfell" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -14120,6 +14390,9 @@ Carro de guerra de Caledor: obtiene una tirada de salvación especial de 6+.</ch
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="1968-474e-5ea8-bbab" name="Gran casa de Goldcrest" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -14129,6 +14402,9 @@ Carro de guerra de Caledor: obtiene una tirada de salvación especial de 6+.</ch
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
     <selectionEntry id="5d5b-2350-9194-0117" name="Gran casa de Morvean" hidden="false" collective="false" import="true" type="upgrade">
       <profiles>
@@ -14139,6 +14415,9 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           </characteristics>
         </profile>
       </profiles>
+      <costs>
+        <cost name="pts" typeId="points" value="0.0"/>
+      </costs>
     </selectionEntry>
   </sharedSelectionEntries>
   <sharedSelectionEntryGroups>
@@ -14156,7 +14435,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="d604-f132-4bcc-e363" name="Lathrain, portadora de ira" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Filo de Caledor. Los impactos causados por esta arma tienen la regla especial Ataques flamígeros y Heridas múltiples (1D6). Contra enemigos de R5 o superior dobla la fuerza del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Filo de Caledor. Los impactos causados por esta arma tienen la regla especial Ataques flamígeros y Heridas múltiples (1D6). Contra enemigos de R5 o superior dobla la fuerza del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14185,7 +14464,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="68be-c6c2-d80f-4b4e" name="Espada de las edades" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Confiere al portador +1 a la tirada para impactar, +1A y +2 a la F.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Confiere al portador +1 a la tirada para impactar, +1A y +2 a la F.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14204,7 +14483,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="d87e-1fc9-496e-1a5c" name="Colmillo de Draugnir" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Los ataques en combate cuerpo a cuerpo efectuados por el portador herirán siempre con un resultado de 2+, y dispone de las Reglas Especiales Heridas Múltiples (2) y Poder de Penetración.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Los ataques en combate cuerpo a cuerpo efectuados por el portador herirán siempre con un resultado de 2+, y dispone de las Reglas Especiales Heridas Múltiples (2) y Poder de Penetración.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14233,7 +14512,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="4238-ee59-fa2c-a34e" name="Lanza dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Durante las fases de combate en las que se use esta lanza de caballería los atributos de F y A del portador se verán incrementados hasta el valor inicial que posea su montura. Este arma mágica solamente puede utilizarse si el guerrero monta en un Dragón de algún tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Durante las fases de combate en las que se use esta lanza de caballería los atributos de F y A del portador se verán incrementados hasta el valor inicial que posea su montura. Este arma mágica solamente puede utilizarse si el guerrero monta en un Dragón de algún tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14260,7 +14539,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="1757-f8e6-ccd1-7382" name="Arco de la deflagración" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco largo élfico. Se trata de un Arco largo élfico cuyos impactos se resuelven con F5 y la regla Ataques flamígeros. Adicionalmente, la unidad impactada sufrirá 1D6 impactos de F4 con la regla Ataques sólo flamígeros distribuidos como si fueran proyectiles .</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco largo élfico. Se trata de un Arco largo élfico cuyos impactos se resuelven con F5 y la regla Ataques flamígeros. Adicionalmente, la unidad impactada sufrirá 1D6 impactos de F4 con la regla Ataques sólo flamígeros distribuidos como si fueran proyectiles .</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14280,7 +14559,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="c7c7-ab88-303c-faef" name="Arco de los héroes" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco élfico. Se trata de un Arco Élfico cuyos impactos herirán siempre con un resultado de 2+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco élfico. Se trata de un Arco Élfico cuyos impactos herirán siempre con un resultado de 2+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14307,7 +14586,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="fc79-0836-dcaf-74f6" name="Arma mercurial de Vaul" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Al inicio de cada fase de combate elige una de las opciones listadas a continuación: Dos armas de mano, Alabarda o Arma a dos manos. El portador estará equipado con la opción elegida hasta el final de la fase de combate. El arma obtendrá la regla especial Golpe Letal en adición a las propias del arma escogida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Al inicio de cada fase de combate elige una de las opciones listadas a continuación: Dos armas de mano, Alabarda o Arma a dos manos. El portador estará equipado con la opción elegida hasta el final de la fase de combate. El arma obtendrá la regla especial Golpe Letal en adición a las propias del arma escogida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14338,7 +14617,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="1721-4c13-6f5f-4e2c" name="Lanza estelar" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Los ataques efectuados por el portador de esta lanza de caballería durante un turno en el que hubiese realizado una carga obtendrán la regla especial Heridas Múltiples (1D3) y negarán las tiradas de salvación por armadura del enemigo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Los ataques efectuados por el portador de esta lanza de caballería durante un turno en el que hubiese realizado una carga obtendrán la regla especial Heridas Múltiples (1D3) y negarán las tiradas de salvación por armadura del enemigo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14358,7 +14637,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="7239-b21f-65b8-5471" name="Rompe escudos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Otorga al portador la regla especial impactos por carga (1D3) que se resuelven con +2 a la F y la regla especial Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Otorga al portador la regla especial impactos por carga (1D3) que se resuelven con +2 a la F y la regla especial Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14386,7 +14665,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="febf-ca69-b2a4-ad83" name="Fauces de dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda Dragón. Los impactos efectuados con este arma que obtuviesen un resultado natural en la tirada para herir igual o superior al valor de Resistencia del oponente se resolverán con la regla especial Heridas Múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda Dragón. Los impactos efectuados con este arma que obtuviesen un resultado natural en la tirada para herir igual o superior al valor de Resistencia del oponente se resolverán con la regla especial Heridas Múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14413,7 +14692,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="b2f1-e6a7-f82d-86cb" name="Armadura de protección" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Ligera. Otorga al portador la regla especial Regeneración (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Ligera. Otorga al portador la regla especial Regeneración (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14433,7 +14712,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="9c7c-414e-6359-7440" name="Armadura del padre dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. La tirada de Salvación Especial otorgada por esta armadura se ve incrementada a (4+). Una vez por batalla su portador podrá efectuar un Ataque de Aliento de F4 con la regla especial Ataques sólo flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. La tirada de Salvación Especial otorgada por esta armadura se ve incrementada a (4+). Una vez por batalla su portador podrá efectuar un Ataque de Aliento de F4 con la regla especial Ataques sólo flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14456,7 +14735,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="f542-13de-8bae-fafa" name="Armadura crepuscular" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. Otorga al portador una tirada de salvación por armadura (1+). El portador será inmune a los efectos de las reglas Heridas múltiples, Golpe Letal y Golpe letal heroico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. Otorga al portador una tirada de salvación por armadura (1+). El portador será inmune a los efectos de las reglas Heridas múltiples, Golpe Letal y Golpe letal heroico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14483,7 +14762,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="fda3-1d8c-20c4-2d3c" name="Cota de Anghirdil" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Proporciona a su portador la regla especial Piel escamosa (5+), el portador obtendrá la regla especial Inmune a Rayos y un bonificador de +1 a su atributo de Iniciativa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Proporciona a su portador la regla especial Piel escamosa (5+), el portador obtendrá la regla especial Inmune a Rayos y un bonificador de +1 a su atributo de Iniciativa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14504,7 +14783,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="e149-4947-066a-a2dd" name="Coraza de Radixashen" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. Al inicio de cada fase de combate cuerpo a cuerpo las miniaturas enemigas en contacto peana con peana con el portador de la Coraza de Radixashen tendrán que realizar un chequeo de Iniciativa. Las miniaturas que fallen tan sólo podrán impactar con resultados naturales de 6, sin tener en cuenta otros modificadores (no afecta miniaturas con la regla especial No muertos ni Demonios).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. Al inicio de cada fase de combate cuerpo a cuerpo las miniaturas enemigas en contacto peana con peana con el portador de la Coraza de Radixashen tendrán que realizar un chequeo de Iniciativa. Las miniaturas que fallen tan sólo podrán impactar con resultados naturales de 6, sin tener en cuenta otros modificadores (no afecta miniaturas con la regla especial No muertos ni Demonios).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14523,7 +14802,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="801a-6522-2c61-8b05" name="Armadura de Caledor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. Confiere a su portador una tirada de salvación por armadura de 1+. Los impactos dirigidos contra el portador deberán aplicar un penalizado de -1 a su Fuerza.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Dragón. Confiere a su portador una tirada de salvación por armadura de 1+. Los impactos dirigidos contra el portador deberán aplicar un penalizado de -1 a su Fuerza.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14542,7 +14821,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="5a88-49bb-a5d3-23a6" name="Yelmo de la fortuna" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 a la tirada de salvación del portador). Una vez por batalla el portador puede usar el poder del Yelmo para repetir una tirada para impactar, para herir, una tirada de salvación por armadura o especial o un chequeo de atributo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 a la tirada de salvación del portador). Una vez por batalla el portador puede usar el poder del Yelmo para repetir una tirada para impactar, para herir, una tirada de salvación por armadura o especial o un chequeo de atributo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14566,7 +14845,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="b184-0bf4-64a8-3c8d" name="Escudo de escamas de dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Solo miniaturas con Armadura de Dragón. Escudo. Proporciona al portador un bonificador adicional de +1 a la tirada de salvación por armadura, y mejora la salvación especial que proporciona la Armadura de Dragón a 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Solo miniaturas con Armadura de Dragón. Escudo. Proporciona al portador un bonificador adicional de +1 a la tirada de salvación por armadura, y mejora la salvación especial que proporciona la Armadura de Dragón a 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14593,7 +14872,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="b8d9-5a3c-4278-b947" name="Escama refulgente de Draugnir" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todos los resultados naturales de 1-3 en las tiradas para impactar y para herir contra el portador y su montura se considerarán fallos. No tiene efecto en ataques que impacten y/o hieran automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todos los resultados naturales de 1-3 en las tiradas para impactar y para herir contra el portador y su montura se considerarán fallos. No tiene efecto en ataques que impacten y/o hieran automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14609,7 +14888,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="62b6-3867-3a7c-9527" name="Corazón de Caledor" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtienen las Reglas especiales Regeneración (4+) y Resistencia a la magia (1). La montura del portador obtendrán la Regla especial Regeneración (5+)</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtienen las Reglas especiales Regeneración (4+) y Resistencia a la magia (1). La montura del portador obtendrán la Regla especial Regeneración (5+)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14637,7 +14916,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="76a3-74d5-f26b-1c47" name="Arqueta de mercuriales" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo puede ser utilizada por miniaturas a pie. Al inicio de cada turno (propio y del oponente), tira 1D3. Este será el número de marcadores que deberás colocar junto a la miniatura que lleva la arqueta. En cualquier momento puedes retirar un marcador para anular un impacto contra el portador (antes de tirar para herir). No se puede retirar marcadores para prevenir impactos generados por disfunciones.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo puede ser utilizada por miniaturas a pie. Al inicio de cada turno (propio y del oponente), tira 1D3. Este será el número de marcadores que deberás colocar junto a la miniatura que lleva la arqueta. En cualquier momento puedes retirar un marcador para anular un impacto contra el portador (antes de tirar para herir). No se puede retirar marcadores para prevenir impactos generados por disfunciones.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14661,7 +14940,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="c261-18a3-3dda-60b8" name="Zafiro de la tormenta" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador y su unidad obtienen la Regla especial la regla Inmune a rayos. Una vez por batalla el portador puede liberar la magia encerrada en la gema, se trata como un Ataque de aliento con F3 y la regla especial Ataque de rayos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador y su unidad obtienen la Regla especial la regla Inmune a rayos. Una vez por batalla el portador puede liberar la magia encerrada en la gema, se trata como un Ataque de aliento con F3 y la regla especial Ataque de rayos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14684,7 +14963,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="3f95-e3cc-58b2-948c" name="Corona de plata" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al portador una tirada de salvación especial de 5+. Todos los enemigos en contacto peana con peana con el portador o su montura tendrán un penalizador de -1 a su HA e I.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al portador una tirada de salvación especial de 5+. Todos los enemigos en contacto peana con peana con el portador o su montura tendrán un penalizador de -1 a su HA e I.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14700,7 +14979,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="ced5-bf0d-5f76-0b3f" name="Dragón de jade" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Puedes declarar que vas a utilizar el Dragón de Jade cuando el portador o su montura sufran una herida tras fallar la tirada de salvación (si corresponde). Proporciona una tirada de salvación especial de 2+ contra ese único impacto. Tras utilizarse, su poder queda agotado, y no podrá usarse de nuevo en el transcurso de la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Puedes declarar que vas a utilizar el Dragón de Jade cuando el portador o su montura sufran una herida tras fallar la tirada de salvación (si corresponde). Proporciona una tirada de salvación especial de 2+ contra ese único impacto. Tras utilizarse, su poder queda agotado, y no podrá usarse de nuevo en el transcurso de la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14724,7 +15003,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="48ec-6205-0f72-4fa3" name="Rubí crepuscular" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El lanzador obtendrá un bonificador a sus tiradas de lanzamiento de hechizos igual al turno de juego en curso (+1 en el primer turno de juego, +3 en el tercero...).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El lanzador obtendrá un bonificador a sus tiradas de lanzamiento de hechizos igual al turno de juego en curso (+1 en el primer turno de juego, +3 en el tercero...).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14748,7 +15027,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="96b1-90e9-8aad-ce13" name="Apuntes de Caledor Domadragones" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Solo Archimagos de Caledor. Un solo uso. El portador puede usarlo al inicio de la fase de magia enemiga. Aplica inmediatamente el resultado 9 (Drenaje de poder) de la tabla de disfunción mágica.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Solo Archimagos de Caledor. Un solo uso. El portador puede usarlo al inicio de la fase de magia enemiga. Aplica inmediatamente el resultado 9 (Drenaje de poder) de la tabla de disfunción mágica.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14772,7 +15051,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="527b-9928-2f68-bff9" name="Cetro de la solided" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes ignorar los efectos de la primera de las Disfunciones que sufra el portador durante la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes ignorar los efectos de la primera de las Disfunciones que sufra el portador durante la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14788,7 +15067,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="2e12-b7ec-b6c0-da98" name="Sello de Asuryan" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes utilizar el sello de Asuryan para dispersar automáticamente un hechizo enemigo, del mismo modo que un Pergamino de Dispersión de Magia. Además el lanzador del hechizo sufrirá 1D3 impactos de F5 y la regla especial Ataques Flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un sólo uso. Puedes utilizar el sello de Asuryan para dispersar automáticamente un hechizo enemigo, del mismo modo que un Pergamino de Dispersión de Magia. Además el lanzador del hechizo sufrirá 1D3 impactos de F5 y la regla especial Ataques Flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14804,7 +15083,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="9b62-40ec-bced-5668" name="Báculo del árbol estelar" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Su portador obtendrá un +1 a sus tiradas de lanzamiento y dispersión de hechizos, además podrá repetir sus tiradas para canalizar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Su portador obtendrá un +1 a sus tiradas de lanzamiento y dispersión de hechizos, además podrá repetir sus tiradas para canalizar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14820,7 +15099,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="4ffe-6c01-408d-a2c3" name="Vara de plata" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Señor del Conocimiento de uno de los 8 saberes básicos de la magia. Además los hechizos obtenidos gracias a este objeto, no pueden ser olvidados ni destruidos por ningún efecto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Señor del Conocimiento de uno de los 8 saberes básicos de la magia. Además los hechizos obtenidos gracias a este objeto, no pueden ser olvidados ni destruidos por ningún efecto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14839,7 +15118,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="2738-2998-1084-8461" name="Anillo de los Annulli" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">En cada fase de magia enemiga puedes reducir en 1 sus dados de energía y aumentar en 1 tus dados de dispersión.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">En cada fase de magia enemiga puedes reducir en 1 sus dados de energía y aumentar en 1 tus dados de dispersión.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14863,7 +15142,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="aee7-663f-d7cd-3c4b" name="Piedra de la anulación" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Ningún hechicero (aliado o enemigo) a 6” o menos del portador podrá lanzar o dispersar hechizos. Todos los objetos mágicos a una distancia de 6” o menos del lanzador perderán sus propiedades y se considerarán equipo mundano de su tipo mientras permanezcan dentro del radio de la Piedra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Ningún hechicero (aliado o enemigo) a 6” o menos del portador podrá lanzar o dispersar hechizos. Todos los objetos mágicos a una distancia de 6” o menos del lanzador perderán sus propiedades y se considerarán equipo mundano de su tipo mientras permanezcan dentro del radio de la Piedra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14879,7 +15158,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="6498-541d-58ab-fdfc" name="Manto del señor del saber de los cielos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre (de potencia de unidad máxima de 20) obtienen la regla especial Flotar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre (de potencia de unidad máxima de 20) obtienen la regla especial Flotar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14906,7 +15185,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="e65a-b5b4-e280-f394" name="Martillo de rayos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo Sacerdotes de Vaul. El Sacerdote de Vaul en vez de tirar 1D6 en la tabla Don de Vaul, puede escoger dos de los resultados (no se pueden repetir) y aplicar los dos bonificadores al arma escogida. Adicionalmente en la fase de disparo puede realizar 1D3 disparos con alcance 30”, impactarán siempre con un resultado igual a la tirada de salvación por armadura del objetivo, se resolverá con F6 y las reglas especiales Ataque de rayo y Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo Sacerdotes de Vaul. El Sacerdote de Vaul en vez de tirar 1D6 en la tabla Don de Vaul, puede escoger dos de los resultados (no se pueden repetir) y aplicar los dos bonificadores al arma escogida. Adicionalmente en la fase de disparo puede realizar 1D3 disparos con alcance 30”, impactarán siempre con un resultado igual a la tirada de salvación por armadura del objetivo, se resolverá con F6 y las reglas especiales Ataque de rayo y Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14930,7 +15209,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="969d-8fd2-dec7-d881" name="Anillo de la ira" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos, Nivel de Energía 2. El anillo puede usarse para desatar el poder del hechizo Furia de Khaine en su versión no potenciada, consulta el saber de la Alta Magia para conocer los efectos del hechizo. Como es habitual, no puedes lanzar de nuevo el hechizo mientras aún permanezca activo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos, Nivel de Energía 2. El anillo puede usarse para desatar el poder del hechizo Furia de Khaine en su versión no potenciada, consulta el saber de la Alta Magia para conocer los efectos del hechizo. Como es habitual, no puedes lanzar de nuevo el hechizo mientras aún permanezca activo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14946,12 +15225,12 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="686f-a743-9698-e821" name="Gema de la arrogancia" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre obtendrán la regla especial Impasibles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre obtendrán la regla especial Impasibles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="ed52-07eb-227f-5601" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+            <infoLink id="ed52-07eb-227f-5601" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
@@ -14965,7 +15244,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="773a-ebd5-99df-8e9f" name="Amuleto del fuego purificador" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Confiere al portador y a la unidad en la que se encuentre Resistencia a la Magia (2). Esta Resistencia se verá aumentada a (3) contra hechizos del Saber del Fuego y el Saber de Tzeentch.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Confiere al portador y a la unidad en la que se encuentre Resistencia a la Magia (2). Esta Resistencia se verá aumentada a (3) contra hechizos del Saber del Fuego y el Saber de Tzeentch.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14984,7 +15263,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="128b-82f8-b84f-3d78" name="Capa de las barbas" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todos los Enanos obtendrán la regla especial Odio contra el portador de esta Capa. El portador podrá repetir todas las tiradas para impactar contra miniaturas del libro de ejercito Enanos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todos los Enanos obtendrán la regla especial Odio contra el portador de esta Capa. El portador podrá repetir todas las tiradas para impactar contra miniaturas del libro de ejercito Enanos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15000,7 +15279,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="721c-b90e-fe70-21cb" name="El libro del valor y la gloria" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtendrá un bonificador de +1 a su L (hasta un máximo de 10).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtendrá un bonificador de +1 a su L (hasta un máximo de 10).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15016,7 +15295,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="518c-df56-b02e-c01a" name="Gema del fuego solar" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al inicio de cualquier fase de disparo o de combate cuerpo a cuerpo. Hasta el final del turno de jugador en curso, el portador y su unidad obtienen Ataques flamígeros y un bonificador de +1 en sus tiradas para herir.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al inicio de cualquier fase de disparo o de combate cuerpo a cuerpo. Hasta el final del turno de jugador en curso, el portador y su unidad obtienen Ataques flamígeros y un bonificador de +1 en sus tiradas para herir.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15043,7 +15322,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="26ec-9b60-dfee-737a" name="Esfera dracónica del conocimiento" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo personajes montados en un algún tipo de dragón. La montura del portador pasa a considerarse un hechicero de nivel 1. Puede elegir hechizos del Saber del Fuego (sólo Dragón Solar, Dragón Lunar y Dragón Estelar), del Saber de los Cielos (sólo Dragón Celestial) o del Saber de la Vida (sólo Dragón Forestal).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo personajes montados en un algún tipo de dragón. La montura del portador pasa a considerarse un hechicero de nivel 1. Puede elegir hechizos del Saber del Fuego (sólo Dragón Solar, Dragón Lunar y Dragón Estelar), del Saber de los Cielos (sólo Dragón Celestial) o del Saber de la Vida (sólo Dragón Forestal).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15067,7 +15346,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="1be4-4096-83bb-0a3e" name="Corazón de dragón" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo personaje montados en algún tipo de dragón. El portador obtiene Resistencia a la magia (1). Adicionalmente si el portador es retirado como baja no hace falta tirar en la Tabla de Reacción de Monstruos, aplica el resultado 5-6 de la tabla, si el dragón es retirado como baja antes que el jinete, el portador obtendrá Odio (todos los enemigos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo personaje montados en algún tipo de dragón. El portador obtiene Resistencia a la magia (1). Adicionalmente si el portador es retirado como baja no hace falta tirar en la Tabla de Reacción de Monstruos, aplica el resultado 5-6 de la tabla, si el dragón es retirado como baja antes que el jinete, el portador obtendrá Odio (todos los enemigos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15094,7 +15373,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="4d7a-9d62-882d-0fd6" name="Estandarte de la estirpe de Draugnir" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad unidad en la que se encuentre obtienen las reglas especiales Piel Escamosa (6+), Ataques flamígeros, Inmune a rayos y Cruzar (bosques).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad unidad en la que se encuentre obtienen las reglas especiales Piel Escamosa (6+), Ataques flamígeros, Inmune a rayos y Cruzar (bosques).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15116,7 +15395,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="61f6-8c53-4e7d-ba32" name="Estandarte real de Caledor" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta este estandarte obtendrá un bonificador extraordinario de +3 al resultado de los combates en los que participe.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta este estandarte obtendrá un bonificador extraordinario de +3 al resultado de los combates en los que participe.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15132,7 +15411,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="c4d0-e499-4e09-a36a" name="Pabellón del rey fénix" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Las miniaturas de una unidad que incluya este estandarte podrán repetir las tiradas de salvación por armadura que fallen. Adicionalmente, obtendrán la regla especial Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Las miniaturas de una unidad que incluya este estandarte podrán repetir las tiradas de salvación por armadura que fallen. Adicionalmente, obtendrán la regla especial Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15151,7 +15430,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="b65d-d55e-29eb-49b4" name="Estandarte del dragón" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad será completamente inmune a los efectos de cualquier Hechizo. El hechizo no será dispersado, simplemente la unidad no se verá afectada por él (esto afecta incluso a los efectos de Vórtice Mágico).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad será completamente inmune a los efectos de cualquier Hechizo. El hechizo no será dispersado, simplemente la unidad no se verá afectada por él (esto afecta incluso a los efectos de Vórtice Mágico).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15167,7 +15446,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="8b59-edba-6bc6-8b19" name="Estandarte de Tethlis" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Los resultados naturales de 6 en las tiradas para impactar de todas las miniaturas amigas a 12” o menos de este estandarte se resolverán con un bonificador de +1 a la Fuerza. El portador y su unidad obtendrán la Regla especial Odio (elfos oscuros).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Los resultados naturales de 6 en las tiradas para impactar de todas las miniaturas amigas a 12” o menos de este estandarte se resolverán con un bonificador de +1 a la Fuerza. El portador y su unidad obtendrán la Regla especial Odio (elfos oscuros).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15191,7 +15470,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="fcc4-94bc-3f45-6c44" name="Estandarte de la buena forja" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad seran inmunes al efecto de la Regla especial Poder de penetracion (nunca se les aplicara el penalizador adicional de -1 a su tirada de salvacion por armadura por efecto de la regla especial Poder de penetracion).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad seran inmunes al efecto de la Regla especial Poder de penetracion (nunca se les aplicara el penalizador adicional de -1 a su tirada de salvacion por armadura por efecto de la regla especial Poder de penetracion).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15207,7 +15486,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="7a26-3d24-b794-01ab" name="Estandarte de la serenidad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas en contacto con la unidad que porta este estandarte perderán sus reglas especiales de Furia Asesina y Odio mientras continúen en contacto con esa unidad. La unidad que porta este estandarte obtendrá la regla especial Sangre Fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas en contacto con la unidad que porta este estandarte perderán sus reglas especiales de Furia Asesina y Odio mientras continúen en contacto con esa unidad. La unidad que porta este estandarte obtendrá la regla especial Sangre Fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15226,7 +15505,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="242e-71b9-8dd5-e8d3" name="Guardia del dragón" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Cuando la unidad que lo porta sea objetivo de una carga enemiga que resulte exitosa sufrirá 1D6 impactos de F5 y las reglas especiales ataques mágicos y ataques sólo flamígeros. Los efectos de este estandarte mágico solamente afectarán al enemigo si hay línea de visión entre el portador del estandarte sobre ella en el momento de declarar la carga.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Cuando la unidad que lo porta sea objetivo de una carga enemiga que resulte exitosa sufrirá 1D6 impactos de F5 y las reglas especiales ataques mágicos y ataques sólo flamígeros. Los efectos de este estandarte mágico solamente afectarán al enemigo si hay línea de visión entre el portador del estandarte sobre ella en el momento de declarar la carga.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15250,7 +15529,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="41ca-2a13-a862-0b2e" name="Guerrero arrogante" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">El personaje aumenta en +1 el valor de su atributo de HA e I. Siempre deberá lanzar o aceptar los desafíos aunque haya más personajes con la regla especial Orgullo marcial y luchará a pie en ellos (no recibe ningún modificador por ir montado); la montura no podrá participar en el desafío pero si es un Monstruo podrá atacar y ser atacada por otras miniaturas que se encuentren en el combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">El personaje aumenta en +1 el valor de su atributo de HA e I. Siempre deberá lanzar o aceptar los desafíos aunque haya más personajes con la regla especial Orgullo marcial y luchará a pie en ellos (no recibe ningún modificador por ir montado); la montura no podrá participar en el desafío pero si es un Monstruo podrá atacar y ser atacada por otras miniaturas que se encuentren en el combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15266,7 +15545,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="e592-4629-2c4e-b819" name="Ojo de águila" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">El personaje obtiene la regla especial Francotirador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">El personaje obtiene la regla especial Francotirador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15293,7 +15572,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="e386-fedd-9ea5-facc" name="Acróbata aéreo" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solamente personajes montados en Dragón, Águila gigante o Pegaso. El jinete y su montura ganan la regla especial Esquivar (5+) contra proyectiles (arcos, ballestas, máquinas de guerra) y contra las heridas causadas por hechizos de tipo Proyectil Mágico mientras estén volando.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solamente personajes montados en Dragón, Águila gigante o Pegaso. El jinete y su montura ganan la regla especial Esquivar (5+) contra proyectiles (arcos, ballestas, máquinas de guerra) y contra las heridas causadas por hechizos de tipo Proyectil Mágico mientras estén volando.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15317,7 +15596,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="5af8-4d4e-a483-e687" name="Maestro arcano" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Sólo hechiceros. El hechicero genera un dado de magia adicional (de energía o dispersión) cada fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Sólo hechiceros. El hechicero genera un dado de magia adicional (de energía o dispersión) cada fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15333,7 +15612,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="2169-3b78-f436-6d57" name="Forjador arcano" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Sólo hechiceros. El hechicero puede elegir hasta dos artefactos arcanos, en lugar de sólo uno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Sólo hechiceros. El hechicero puede elegir hasta dos artefactos arcanos, en lugar de sólo uno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15349,7 +15628,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="4901-59b9-236f-e1af" name="Canalizador de magia" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solo Hechiceros. El mago puede Canalizar con 4+, en lugar del habitual 6+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solo Hechiceros. El mago puede Canalizar con 4+, en lugar del habitual 6+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15365,7 +15644,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="671f-6185-d4b8-faa0" name="Discípulo de la llama" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solo hechiceros. El mago tiene la regla especial Señor del Conocimiento (Saber del Fuego).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solo hechiceros. El mago tiene la regla especial Señor del Conocimiento (Saber del Fuego).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15387,7 +15666,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="0e58-97b1-689a-50d9" name="VIdente celeste" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solo hechiceros. El mago tiene la regla especial Señor del Conocimiento (Saber de los Cielos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solo hechiceros. El mago tiene la regla especial Señor del Conocimiento (Saber de los Cielos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15409,7 +15688,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="6942-e546-6989-e876" name="Discípulo de Vaul" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solo hechiceros. El mago tiene la regla especial Señor del Conocimiento (Saber del Metal).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solo hechiceros. El mago tiene la regla especial Señor del Conocimiento (Saber del Metal).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15439,7 +15718,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="6907-9e9e-fe22-c19a" name="Esgrima sublime" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">El personaje puede repetir todas sus tiradas fallidas para impactar en combate cuerpo a cuerpo. El personaje no puede tener ninguna montura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">El personaje puede repetir todas sus tiradas fallidas para impactar en combate cuerpo a cuerpo. El personaje no puede tener ninguna montura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15463,7 +15742,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="ba61-2331-8117-5e42" name="Gran estratega" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Tan sólo puede elegirla el general del ejército. Una vez efectuado el despliegue, pero antes de determinar quién empieza a jugar, puedes redesplegar una de tus unidades.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Tan sólo puede elegirla el general del ejército. Una vez efectuado el despliegue, pero antes de determinar quién empieza a jugar, puedes redesplegar una de tus unidades.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15487,7 +15766,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="d5df-46b6-d95c-1e0b" name="Jinete dragón" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solamente personajes montados en Dragón. El jinete puede repetir las tiradas para impactar fallidas durante aquellos turnos en los que realice una carga exitosa.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solamente personajes montados en Dragón. El jinete puede repetir las tiradas para impactar fallidas durante aquellos turnos en los que realice una carga exitosa.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15511,7 +15790,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="2255-93d1-37e0-0f01" name="Puro de corazón" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">El personaje es Inmune a la psicología y tiene Resistencia mágica (1).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">El personaje es Inmune a la psicología y tiene Resistencia mágica (1).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15531,7 +15810,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="9f84-0e1d-06f4-d081" name="Domador de dragones" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Si el personaje monta un Dragón, este no deberá tirar en la tabla de Reacción de Monstruos si muere el jinete.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Si el personaje monta un Dragón, este no deberá tirar en la tabla de Reacción de Monstruos si muere el jinete.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15547,7 +15826,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="c696-9c6f-91e9-abcb" name="Alquimista de Vaul" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">El personaje está equipado con Viales de Fuego Alquímico y Capa de Dragón.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">El personaje está equipado con Viales de Fuego Alquímico y Capa de Dragón.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15575,7 +15854,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="00a5-9806-2c99-3842" name="Antiguo explendor" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Solamente personajes montados en Dragón. El personaje otorga un bonificador de +1 en la resolución de aquellos combates en los que participe.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Solamente personajes montados en Dragón. El personaje otorga un bonificador de +1 en la resolución de aquellos combates en los que participe.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15599,7 +15878,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="1674-e29e-4d9b-53fc" name="Yelmo de la fortuna" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (porporciona +1 a la tirada de salvación por armadura del portador). El portador podrá repetir las tiradas de salvación por armadura que falle.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (porporciona +1 a la tirada de salvación por armadura del portador). El portador podrá repetir las tiradas de salvación por armadura que falle.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15615,7 +15894,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="6b5b-08ff-778a-e50e" name="Máscara del señor del mar" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 a la tirada de salvación por armadura del portador). El portador y la unidad en la que se encuentre obtendrán la Regla Especial Cruzar (elementos acuáticos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (proporciona un +1 a la tirada de salvación por armadura del portador). El portador y la unidad en la que se encuentre obtendrán la Regla Especial Cruzar (elementos acuáticos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15634,7 +15913,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="1762-9b69-b3b7-34d9" name="Escudo áureo" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona al portador un bonificador adicional de +1 a la tirada de salvación por armadura, y una salvación especial de 5+ frente ataques de F4 o superior.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Proporciona al portador un bonificador adicional de +1 a la tirada de salvación por armadura, y una salvación especial de 5+ frente ataques de F4 o superior.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15661,7 +15940,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="78cf-92da-6563-3fee" name="Armadura estelar" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Sólo puede ser utilizada por miniaturias a pie. Otorga al portador la Regla Especial Esquivar (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Sólo puede ser utilizada por miniaturias a pie. Otorga al portador la Regla Especial Esquivar (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15689,7 +15968,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="949d-47b1-d153-ca7c" name="Espada de Hoeth" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Espada de la Torre Blanca. Sólo miniaturas de Infantería. Los ataques cuerpo a cuerpo efectuados con esta espada herirán siempre con un resultado de 2+, sin importar la Resistencia del objetivo ni otros modificadores. </characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Espada de la Torre Blanca. Sólo miniaturas de Infantería. Los ataques cuerpo a cuerpo efectuados con esta espada herirán siempre con un resultado de 2+, sin importar la Resistencia del objetivo ni otros modificadores. </characteristic>
               </characteristics>
             </profile>
             <profile id="36d5-7c86-3ff4-12ec" name="Espada de la torre blanca" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
@@ -15720,7 +15999,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="5854-d88f-6065-9ed3" name="Estandarte de la serenidad" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas en contacto con la unidad que porta este estandarte perderán sus reglas especiales de Furia Asesina y Odio mientras continuen en contacto con esa unidad. La unidad que porta este estandarte obtendrá la regla especial Sangre Fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades enemigas en contacto con la unidad que porta este estandarte perderán sus reglas especiales de Furia Asesina y Odio mientras continuen en contacto con esa unidad. La unidad que porta este estandarte obtendrá la regla especial Sangre Fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15739,7 +16018,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="fb59-73ff-78c0-e05b" name="Estandarte de la Reina Eterna" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto Portahechizos. Nivel de energía 3. Contiene el hechizo Escudo de Saphery de Alta Magia. El hechizo sólamente podrá lanzarse sobre la propia unidad y nunca potenciado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto Portahechizos. Nivel de energía 3. Contiene el hechizo Escudo de Saphery de Alta Magia. El hechizo sólamente podrá lanzarse sobre la propia unidad y nunca potenciado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15755,7 +16034,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="95e4-befc-979d-046f" name="Estandarte del león" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte este estandarte obtendrá la regla especial Veloz y aumentará su M en 1 punto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte este estandarte obtendrá la regla especial Veloz y aumentará su M en 1 punto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15774,7 +16053,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="7286-db00-282f-20f1" name="Estandarte de Ellyrion" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porte este estandarte obtiene la regla especial Cruzar (todos los tipos de terreno excepto los edificios y terreno intransitable).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porte este estandarte obtiene la regla especial Cruzar (todos los tipos de terreno excepto los edificios y terreno intransitable).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15793,7 +16072,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="427d-aff9-024e-3cde" name="Estandarte de Saphery" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Este estandarte te permitirá generar un dado adidional de energía o dispersión en cada fase de magia. Además, el portador y la unidad que lo acompañe obtienen una tirada de salvación especial de 5+ que sólo puede efectuarse contra Ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Este estandarte te permitirá generar un dado adidional de energía o dispersión en cada fase de magia. Además, el portador y la unidad que lo acompañe obtienen una tirada de salvación especial de 5+ que sólo puede efectuarse contra Ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15817,7 +16096,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="0c5e-7e06-1cce-db54" name="Amuleto del fuego purificador" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Confiere al portador y a la unidad en la que se encuentre Resistencia a la Magia (2). Esta Resistencia se verá aumentada a (3) contra hechizos del Saber del Fuego y el Saber de Tzeentch.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Confiere al portador y a la unidad en la que se encuentre Resistencia a la Magia (2). Esta Resistencia se verá aumentada a (3) contra hechizos del Saber del Fuego y el Saber de Tzeentch.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15836,12 +16115,12 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="4aa8-661c-f936-874d" name="Gema de la arrogancia" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre obtendrán la Regla Especial Impasibles.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador y la unidad en la que se encuentre obtendrán la Regla Especial Impasibles.</characteristic>
               </characteristics>
             </profile>
           </profiles>
           <infoLinks>
-            <infoLink id="e324-f1df-77a3-02db" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+            <infoLink id="e324-f1df-77a3-02db" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
           </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="30.0"/>
@@ -15855,7 +16134,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="c162-a550-35da-afd3" name="Gema radiante de Hoeth" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos Nivel de Energía 4. Al inicio de cada una de tus fases de magia elige uno de los 8 vientos de la magia y efectúa una tirada de 1D6, ese será el hechizo contenido en la Gema durante ese turno. Recuerda que no podrás beneficiarte de la regla del saber ni elegir el hechizo identificativo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos Nivel de Energía 4. Al inicio de cada una de tus fases de magia elige uno de los 8 vientos de la magia y efectúa una tirada de 1D6, ese será el hechizo contenido en la Gema durante ese turno. Recuerda que no podrás beneficiarte de la regla del saber ni elegir el hechizo identificativo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15871,7 +16150,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="e74c-5a9f-0751-d529" name="Anillo de la ira" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos, Nivel de Energía 2. El anillo puede usarse para desatar el poder del Hechizo Ira de Khaine en su versión no potenciadada, consulta el saber de la Alta Magia para conocer los efectos del hechizo. Como es habitual, no puedes lanzar de nievo el hechizo mientras aún permanezca en activo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos, Nivel de Energía 2. El anillo puede usarse para desatar el poder del Hechizo Ira de Khaine en su versión no potenciadada, consulta el saber de la Alta Magia para conocer los efectos del hechizo. Como es habitual, no puedes lanzar de nievo el hechizo mientras aún permanezca en activo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15887,7 +16166,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="3afc-09fd-2cd8-1714" name="El libro del valor y la gloria" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador obtendrá un bonificador de +1 a su L (hasta un máximo de 10).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador obtendrá un bonificador de +1 a su L (hasta un máximo de 10).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15903,7 +16182,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="fc8e-236a-a5c4-6069" name="Capa de las barbas" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todos los enanos obtendrán la regla especial Odio contra el portador de esta Capa. El portador podrá repetir todas las tiradas para impactar contra miniaturas del libro de ejercito Enanos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todos los enanos obtendrán la regla especial Odio contra el portador de esta Capa. El portador podrá repetir todas las tiradas para impactar contra miniaturas del libro de ejercito Enanos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15919,7 +16198,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="6a5b-e5f3-046b-eb6f" name="Gema del fuego solar" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al incio de cualquier fase de disparo o de combate cuerpo a cuerpo. Hasta el final del turno del jugador en curso, el portador y un unidad obtienen Ataques flamígeros y un bonificador de +1 en sus tiradas para herir.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al incio de cualquier fase de disparo o de combate cuerpo a cuerpo. Hasta el final del turno del jugador en curso, el portador y un unidad obtienen Ataques flamígeros y un bonificador de +1 en sus tiradas para herir.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15943,7 +16222,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="3af5-4b1c-dbda-89c9" name="Diadema de Yvresse" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene nivel de magia 2 y se considerará un hechicero a todos los efectos. Puede elegir sus hechizos de los saberes de Alta Magia o uno de los ocho saberes básicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene nivel de magia 2 y se considerará un hechicero a todos los efectos. Puede elegir sus hechizos de los saberes de Alta Magia o uno de los ocho saberes básicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15959,7 +16238,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="aa1f-967f-3d49-e002" name="Talismán de Shapery" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga al portador las Reglas Especiales Resistencia a la Magia (2) y Esquivar (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga al portador las Reglas Especiales Resistencia a la Magia (2) y Esquivar (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15979,7 +16258,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="02be-60df-bb35-70ba" name="Incienso sagrado" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Los disparos efectuados contra el portador o la unidad en la que se encuentre tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Los disparos efectuados contra el portador o la unidad en la que se encuentre tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16003,7 +16282,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
           <profiles>
             <profile id="e15b-b7a4-4a60-7013" name="Adalid de la casa" hidden="false" typeId="d5f3-8d72-7f36-e06c" typeName="Senda">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e7e8-8fe9-e257-d69b">Debes escoger una de las Casas Nobles de la siguiente lista, el personaje pertenecerá a esa Casa y obtendrá la habilidad indicada pero solo podrá unirse a unidades de Iniciados y Príncipes Dragoneros que pertenezcan a su misma casa o ir solo.  
+                <characteristic name="Reglas especiales" typeId="e7e8-8fe9-e257-d69b">Debes escoger una de las Casas Nobles de la siguiente lista, el personaje pertenecerá a esa Casa y obtendrá la habilidad indicada pero solo podrá unirse a unidades de Iniciados y Príncipes Dragoneros que pertenezcan a su misma casa o ir solo.  
 - Caledorian: el personaje obtiene la Regla especial Impasible, adicionalmente el y su unidad considerarán que han sufrido una herida menos al realizar sus chequeos de desmoralización.  
 - Goldcrest: el personaje y su unidad pueden sumar 1D3” al movimiento de las cargas que realicen.  
 - Morvean: obtiene la Regla especial Ataques flamígeros y podrá repetir los resultados de 1 obtenidos en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
@@ -16022,7 +16301,7 @@ Carro de guerra de Caledor: la tripulación podrá repetir los resultados de 1 o
       <description>Los Altos elfos de Infantería equipados con lanza pueden atacar con una fila adicional. Además, pueden realizar Parada con la siguiente combinación de armas: Arma de mano y escudo, lanza y escudo, lanza, dos armas de mano. Ten en cuenta que sólo pueden efectuar parada las categorías de tropa Infantería e Infantería monstruosa.</description>
     </rule>
     <rule id="2882-fac9-f267-b8e7" name="Valor familiar" hidden="false">
-      <description>Cuando se enfrentan a un ejército de Elfos Oscuros, los Altos Elfos son inmunes a psicología. Las unidades de Ielthanis y Guardias del Paso pese a ser Inmunes a psicología por la regla Valor Familiar, continuarán pudiendo Huir o Disparar y Huir como reacción a la carga.</description>
+      <description>Cuando se enfrentan a un ejército de Elfos oscuros, los Altos elfos de Caledor tienen un bonificador extraordinario de +1 al resultado del combate en el que participen una o más unidades de los Altos elfos.</description>
     </rule>
     <rule id="76e4-de12-8e30-50cb" name="Orgullo ancestral" hidden="false">
       <description>Todas las unidades con esta regla serán inmunes al pánico si se encuentran a 12” o menos de un Dragón aliado. Solamente se podrán unir personajes a unidades con esta regla si también disponen de ella.</description>

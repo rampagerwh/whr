@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="73d6-1c77-a2fd-f27e" name="Clan Mors" revision="1" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="412" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="73d6-1c77-a2fd-f27e" name="Clan Mors" revision="4" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="412" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="d852-9dc5-aacb-f907" name="Recomensa demoníaca">
       <characteristicTypes>
-        <characteristicType id="57f0-5d65-aec3-ed3b" name="Propiedades mágicas"/>
+        <characteristicType id="57f0-5d65-aec3-ed3b" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -455,6 +455,15 @@
                     <entryLink id="1d97-f561-fd86-bd7b" name="Armas mágicas. Skaven. Arma de mano" hidden="false" collective="false" import="true" targetId="c4f4-27c8-d12e-b2d6" type="selectionEntryGroup"/>
                     <entryLink id="96fa-eb16-77eb-d3de" name="Armas mágicas. Skaven. Alabarda" hidden="false" collective="false" import="true" targetId="edd0-6d54-3f67-d280" type="selectionEntryGroup"/>
                     <entryLink id="b388-6dc6-adaf-3987" name="Armas mágicas. Alabarda" hidden="false" collective="false" import="true" targetId="f662-2325-23d5-cffb" type="selectionEntryGroup"/>
+                    <entryLink id="5fc2-5587-0672-bdb8" name="Armas mágicas. Skaven. Ballesta de repetición" hidden="false" collective="false" import="true" targetId="9712-8c2d-3d2f-ee71" type="selectionEntryGroup">
+                      <modifiers>
+                        <modifier type="set" field="hidden" value="true">
+                          <conditions>
+                            <condition field="selections" scope="11eb-8e94-409f-2ce5" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4165-0d00-4cc0-541c" type="equalTo"/>
+                          </conditions>
+                        </modifier>
+                      </modifiers>
+                    </entryLink>
                   </entryLinks>
                 </selectionEntryGroup>
                 <selectionEntryGroup id="a850-f45f-d2fe-6876" name="Objetos hechizados" hidden="false" collective="false" import="true">
@@ -868,7 +877,7 @@
               <profiles>
                 <profile id="55f2-3a70-ae2f-8c01" name="Degolladora de enanos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por este arma no permiten tirada de salvación por armadura. Además, otorga a Queek un bonificador de +2F cuando ataca a miniaturas del libro de ejército de Enanos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Las heridas causadas por este arma no permiten tirada de salvación por armadura. Además, otorga a Queek un bonificador de +2F cuando ataca a miniaturas del libro de ejército de Enanos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -887,7 +896,7 @@
               <profiles>
                 <profile id="b604-c7d3-7813-9e32" name="Armadura roja de disformidad" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a Queek una tirada de salvación por armadura de 2+ (en lugar del 5+ habitual de una armadura pesada) y una tirada de salvación especial de 5+. Además, cada vez que Queek realice una tirada de salvación por armadura o especial exitosa en combate cuerpo a cuerpo, la armadura causará un impacto de F5 a la miniatura que le causó la herida con las reglas especiales Ataque de rayos y Ataques mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a Queek una tirada de salvación por armadura de 2+ (en lugar del 5+ habitual de una armadura pesada) y una tirada de salvación especial de 5+. Además, cada vez que Queek realice una tirada de salvación por armadura o especial exitosa en combate cuerpo a cuerpo, la armadura causará un impacto de F5 a la miniatura que le causó la herida con las reglas especiales Ataque de rayos y Ataques mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -908,7 +917,7 @@
               <profiles>
                 <profile id="0770-bf45-b6a5-1b4b" name="Arrancaojos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano (Queek realiza en total 6 Ataques; cada vez que ataque, debes anunciar cuántos ataques realiza con cada una de sus armas, con un mínimo de 1A con cada una). Los impactos causados con Arrancaojos se resuelven con un bonificador de +1F y la regla especial Ataques envenenados.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano (Queek realiza en total 6 Ataques; cada vez que ataque, debes anunciar cuántos ataques realiza con cada una de sus armas, con un mínimo de 1A con cada una). Los impactos causados con Arrancaojos se resuelven con un bonificador de +1F y la regla especial Ataques envenenados.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -1581,6 +1590,11 @@
                     <modifier type="set" field="1b23-3f07-4f73-d064" value="0.0">
                       <conditions>
                         <condition field="selections" scope="144a-ebe7-f77f-4425" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="9900-6245-0867-5e51" type="equalTo"/>
+                      </conditions>
+                    </modifier>
+                    <modifier type="set" field="hidden" value="true">
+                      <conditions>
+                        <condition field="selections" scope="9ec4-de3c-3bb6-123f" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="4165-0d00-4cc0-541c" type="equalTo"/>
                       </conditions>
                     </modifier>
                   </modifiers>
@@ -3137,6 +3151,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="4fab-c1fe-c0cb-8903" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="35.0"/>
           </costs>
@@ -3250,6 +3267,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="9732-e699-f6c0-e9c9" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="75.0"/>
           </costs>
@@ -3638,7 +3658,7 @@ Se trata de un hechizo de Potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="839a-a3fd-31d1-0bb2" name="Guantalete armado" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Además de sus ataques con el Espadón de muerte, Basqueak realiza un único ataque adicional (ya indicado en su perfil) con su guantelete armado (utiliza un dado de un color diferente). Este ataque se resuelve con un bonificador de +2F y la regla especial Golpe letal heróico.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Además de sus ataques con el Espadón de muerte, Basqueak realiza un único ataque adicional (ya indicado en su perfil) con su guantelete armado (utiliza un dado de un color diferente). Este ataque se resuelve con un bonificador de +2F y la regla especial Golpe letal heróico.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3657,7 +3677,7 @@ Se trata de un hechizo de Potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="7c8c-5143-9037-05b7" name="Armadura roja de disformidad" hidden="false" typeId="d852-9dc5-aacb-f907" typeName="Recomensa demoníaca">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="57f0-5d65-aec3-ed3b">Proporciona a Basqueak una tirada de salvación por armadura de 1+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="57f0-5d65-aec3-ed3b">Proporciona a Basqueak una tirada de salvación por armadura de 1+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3673,7 +3693,7 @@ Se trata de un hechizo de Potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="6475-807d-3b8a-b1ae" name="Espadón de la muerte" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sus impactos se resuelven con un bonificador de +1F y la regla especial Heridas múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sus impactos se resuelven con un bonificador de +1F y la regla especial Heridas múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3693,7 +3713,7 @@ Se trata de un hechizo de Potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="f2da-f3c1-6a41-1886" name="Cornamenta descomunal" hidden="false" typeId="d852-9dc5-aacb-f907" typeName="Recomensa demoníaca">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="57f0-5d65-aec3-ed3b">Impactos por carga (1D6).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="57f0-5d65-aec3-ed3b">Impactos por carga (1D6).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3773,6 +3793,14 @@ Ratadragón: Monstruo (50x100mm). Volar, Piel escamosa (3+), Arma de aliento (F2
         <rule id="e4c7-70ca-3fbd-6810" name="Instinto rátido" hidden="false">
           <description>Si Krissernik fuese a sufrir una disfunción mágica, tira 1D6: si obtienes un resultado de 4+, puedes elegir un hechicero amigo a 18” o menos de Krissernik para que sufra la disfunción mágica en su lugar; si obtienes un resultado de 1-3, Krissernik sufrirá los efectos de la disfunción como es habitual.</description>
         </rule>
+        <rule id="b7e4-0abd-042e-f6e1" name="Halo de poder oscuro" hidden="false">
+          <description>Los Brujos Mors causan Miedo, y poseen una tirada de salvación por Aura demoníaca de 5+. Sin embargo, se verán afectados por aquellos hechizos y efectos que afecten a Demonios o lo hagan de forma aumentada.</description>
+        </rule>
+        <rule id="4cd1-b479-a8ab-3211" name="Hechicería secreta" hidden="false">
+          <description>Un Brujo Mors puede elegir como hechizo identificativo la Oscura mano de Destrucción (como es habitual) o el hechizo Espadas negras (ver a continuación); este hechizo se considera a todos los efectos como un hechizo identificativo adicional del Saber de Magia Oscura, disponible únicamente para los Brujos Mors.
+Espadas Negras (Dificultad 8+)
+Se trata de un hechizo de Potenciación que puede lanzarse sobre una unidad amiga a 18” o menos del lanzador y permanece un turno. Por la duración del hechizo, la unidad afectada podrá repetir sus tiradas fallidas para impactar, tanto en combate cuerpo a cuerpo como con proyectiles. Puedes potenciar este hechizo para que afecte a todas las unidades amigas a 12” o menos del lanzador, en cuyo caso la dificultad pasa a ser de 16+.</description>
+        </rule>
       </rules>
       <infoLinks>
         <infoLink id="fbd5-8651-29fb-0f88" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
@@ -3816,7 +3844,7 @@ Ratadragón: Monstruo (50x100mm). Volar, Piel escamosa (3+), Arma de aliento (F2
               <profiles>
                 <profile id="6b1f-3571-bd53-678d" name="Ojo de azabache" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Proporciona a Krissernik la regla especial Regeneración (4+); si se encuentra transformado en Ratadragón, su valor de Regeneración pasará a ser de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Proporciona a Krissernik la regla especial Regeneración (4+); si se encuentra transformado en Ratadragón, su valor de Regeneración pasará a ser de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -3835,7 +3863,7 @@ Ratadragón: Monstruo (50x100mm). Volar, Piel escamosa (3+), Arma de aliento (F2
               <profiles>
                 <profile id="f946-268d-0095-6611" name="Emblema del gran brujo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Basqueak una tirada de salvación por armadura de 1+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Basqueak una tirada de salvación por armadura de 1+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4398,7 +4426,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="66d8-29d0-a951-544f" name="Talismán de joyaoscura" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Solo hechiceros. El portador podrá utilizar su Aura demoníaca contra Ataques mágicos y otros efectos que la nieguen. Además, conocerá un hechizo adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Solo hechiceros. El portador podrá utilizar su Aura demoníaca contra Ataques mágicos y otros efectos que la nieguen. Además, conocerá un hechizo adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4422,7 +4450,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="aa9b-d70d-89ab-54d6" name="Armadura del fin del mundo" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Otorga a su portador una tirada de salvación por armadura de 4+ (en lugar del habitual 5+). Además, el portador tendrá una tirada de salvación especial de 5+ y Resistencia mágica (1). Sin embargo, todos los enanos tendrán la regla especial Odio contra el portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Otorga a su portador una tirada de salvación por armadura de 4+ (en lugar del habitual 5+). Además, el portador tendrá una tirada de salvación especial de 5+ y Resistencia mágica (1). Sin embargo, todos los enanos tendrán la regla especial Odio contra el portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4442,7 +4470,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="7a08-6672-c601-c12d" name="Armadura roída" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Resta 1 a la fuerza de todos los impactos contra el portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Resta 1 a la fuerza de todos los impactos contra el portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4461,7 +4489,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="12c8-8034-8034-fad3" name="Escudo de distracción" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Todas las miniaturas en contacto peana con peana con el portador sufrirán un penalizador de -1A si le quieren impactar a él, hasta un mínimo de 1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Todas las miniaturas en contacto peana con peana con el portador sufrirán un penalizador de -1A si le quieren impactar a él, hasta un mínimo de 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4480,7 +4508,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="823b-2f22-7c58-44a1" name="Coraza umbría" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Disforme. Aumenta la tirada de salvación por Aura demoníaca del portador a 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Disforme. Aumenta la tirada de salvación por Aura demoníaca del portador a 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4500,7 +4528,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="7b96-25b6-aa30-f297" name="Placas de metal disforme" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Disforme. El portador puede repetir sus tiradas de salvación por armadura y Aura demoniaca fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Disforme. El portador puede repetir sus tiradas de salvación por armadura y Aura demoniaca fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4527,7 +4555,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="b328-d7f4-39bf-cdeb" name="Espada bruja forjada" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Arma de mano. Proporciona a su portador +1F y niega las tiradas de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Arma de mano. Proporciona a su portador +1F y niega las tiradas de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4546,7 +4574,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="ae67-0fb6-715d-9348" name="Cuchilla de Gnawdwell" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Arma de mano. Los impactos causados por esta arma hieren automáticamente (no es necesario realizar la tirada para herir). Además, cualquier oponente que sufra una o más heridas por este arma deberá retirarse como baja. Al final de cada turno de jugador en el que no se haya causado al menos una baja con este arma, el portador deberá superar un chequeo de Resistencia o sufrirá una herida sin tirada de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Arma de mano. Los impactos causados por esta arma hieren automáticamente (no es necesario realizar la tirada para herir). Además, cualquier oponente que sufra una o más heridas por este arma deberá retirarse como baja. Al final de cada turno de jugador en el que no se haya causado al menos una baja con este arma, el portador deberá superar un chequeo de Resistencia o sufrirá una herida sin tirada de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4573,7 +4601,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="b949-4c61-ad18-ba80" name="Sajabarbas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los impactos causados por esta arma se resuelven con la regla especial Poder de penetración. Además, el portador podrá repetir sus tiradas fallidas para herir en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los impactos causados por esta arma se resuelven con la regla especial Poder de penetración. Además, el portador podrá repetir sus tiradas fallidas para herir en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4601,7 +4629,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="0984-ebda-4fa1-96f6" name="Espada de la furia negra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador +2A y la regla especial Estupidez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador +2A y la regla especial Estupidez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4621,7 +4649,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="0087-9bb2-953a-a1c4" name="Espada maldita del delirio" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtendrá un bonificador de +1 en sus tiradas para impactar en cuerpo a cuerpo. Además, los enemigos tendrán un penalizador de -1 en sus tiradas para impactar al portador en cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. El portador obtendrá un bonificador de +1 en sus tiradas para impactar en cuerpo a cuerpo. Además, los enemigos tendrán un penalizador de -1 en sus tiradas para impactar al portador en cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4640,7 +4668,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="31ab-7aab-e8dc-835a" name="Espada de corrupción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador +1F en todos sus ataques de combate cuerpo a cuerpo y tiene la regla especial Heridas Múltiples (2). Si el portador realiza una tirada para impactar en la que obtiene dos o más resultados de 1, el portador sufrirá inmediatamente una herida (sin posibilidad de salvación por armadura) que se multiplica por dos heridas. Resuelve el resto de ataques con normalidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador +1F en todos sus ataques de combate cuerpo a cuerpo y tiene la regla especial Heridas Múltiples (2). Si el portador realiza una tirada para impactar en la que obtiene dos o más resultados de 1, el portador sufrirá inmediatamente una herida (sin posibilidad de salvación por armadura) que se multiplica por dos heridas. Resuelve el resto de ataques con normalidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4660,7 +4688,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="7a2c-eb46-e57d-de3b" name="Maldición del enano" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador +1F en todos sus ataques de combate cuerpo a cuerpo. Si se enfrenta a Enanos, adicionalmente podrá repetir sus tiradas fallidas para impactar y herir en combate con este arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a su portador +1F en todos sus ataques de combate cuerpo a cuerpo. Si se enfrenta a Enanos, adicionalmente podrá repetir sus tiradas fallidas para impactar y herir en combate con este arma.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4679,7 +4707,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="e2bc-0e4f-659b-34ba" name="Filomortal-mortal" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos con este arma se resuelven con +1F. Además, el portador tendrá una Iniciativa de 10 que nunca podrá modificarse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos con este arma se resuelven con +1F. Además, el portador tendrá una Iniciativa de 10 que nunca podrá modificarse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4706,7 +4734,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="0d59-b7f0-8b42-117b" name="Pergamino de tormenta de disformidad" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Objeto Portahechizos. Nivel de energía 5. Todas las unidades con la regla especial Volar o Flotar sufrirán 1D6 impactos de F6 distribuidos como si fueran disparos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Objeto Portahechizos. Nivel de energía 5. Todas las unidades con la regla especial Volar o Flotar sufrirán 1D6 impactos de F6 distribuidos como si fueran disparos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4722,7 +4750,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="0d25-c62c-f059-2068" name="El ojo de la gran cornuda" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, tira 1D6: si obtienes un resultado de 2+, generas un dado adicional de energía esa fase; sin embargo, si obtienes un resultado de 1, perderás uno de los dados que te hayan concedido los vientos de la magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia propia, tira 1D6: si obtienes un resultado de 2+, generas un dado adicional de energía esa fase; sin embargo, si obtienes un resultado de 1, perderás uno de los dados que te hayan concedido los vientos de la magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4738,7 +4766,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="5a98-28d9-a01f-3614" name="Familiar rátido" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El hechicero conocerá uno de sus hechizos identificativos además de sus hechizos habituales. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El hechicero conocerá uno de sus hechizos identificativos además de sus hechizos habituales. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4754,7 +4782,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="acfa-36cd-bd82-9f54" name="Libro negro del clan Mors" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Señor del conocimiento (Magia Oscura). Esto incluye los hechizos identificativos Oscura mano de destrucción y Espadas Negras.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador obtiene la regla especial Señor del conocimiento (Magia Oscura). Esto incluye los hechizos identificativos Oscura mano de destrucción y Espadas Negras.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4776,7 +4804,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="0e37-c96e-c0cd-a10f" name="Relicario del hambre negra" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Se trata de un Objeto portahechizos con nivel de energía 3. Contiene el hechizo Locura asesina del Saber de Ruina Skaven en su versión no potenciada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Se trata de un Objeto portahechizos con nivel de energía 3. Contiene el hechizo Locura asesina del Saber de Ruina Skaven en su versión no potenciada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4800,7 +4828,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="cf2c-ecac-0184-2347" name="Estandarte sagrado de la gran cornuda" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen la regla especial Tozudez y causarán Miedo. Todas las unidades enemigas a 12&quot; o menos del portador del estandarte sufrirán un penalizador de -1 a su Liderazgo. Adicionalmente, el jugador puede obligar a todas las unidades en contacto peana con peana con el portador del estandarte a repetir todos sus chequeos de Liderazgo exitosos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentre obtienen la regla especial Tozudez y causarán Miedo. Todas las unidades enemigas a 12&quot; o menos del portador del estandarte sufrirán un penalizador de -1 a su Liderazgo. Adicionalmente, el jugador puede obligar a todas las unidades en contacto peana con peana con el portador del estandarte a repetir todos sus chequeos de Liderazgo exitosos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4820,7 +4848,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="7807-f941-1a57-7849" name="Gran estandarte de superioridad Mors" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades del Clan Mors a 12” o menos del portador obtienen la regla especial Ataques envenenados (tanto en disparos como en combate cuerpo a cuerpo); si ya disponían de dicha regla especial, también realizarán Ataques envenenados exitosos con un resultado de 5+. Además, el portador y su unidad serán Inmunes a pánico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades del Clan Mors a 12” o menos del portador obtienen la regla especial Ataques envenenados (tanto en disparos como en combate cuerpo a cuerpo); si ya disponían de dicha regla especial, también realizarán Ataques envenenados exitosos con un resultado de 5+. Además, el portador y su unidad serán Inmunes a pánico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4848,7 +4876,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="b757-cf62-767d-f3f4" name="Estandarte de la tempestad" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Puedes activar el estandarte al comienzo del turno de cualquier jugador. Las miniaturas con la regla especial Volar o Flotar no podrán hacer uso de esa regla y se verán obligadas a utilizar su atributo de movimiento. Adicionalmente, todos los ataques de disparo tendrán un penalizador de -2 en sus tiradas para impactar. Todos los ataques de disparo que no utilicen la HP deberán sacar un resultado de 4+ en 1D6 para poder disparar. Al comienzo del turno del jugador propietario del estandarte (salvo el turno en que fue activado), tira 1D6; con un resultado de 4-6, el estandarte pierde su poder y deja de tener efecto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Puedes activar el estandarte al comienzo del turno de cualquier jugador. Las miniaturas con la regla especial Volar o Flotar no podrán hacer uso de esa regla y se verán obligadas a utilizar su atributo de movimiento. Adicionalmente, todos los ataques de disparo tendrán un penalizador de -2 en sus tiradas para impactar. Todos los ataques de disparo que no utilicen la HP deberán sacar un resultado de 4+ en 1D6 para poder disparar. Al comienzo del turno del jugador propietario del estandarte (salvo el turno en que fue activado), tira 1D6; con un resultado de 4-6, el estandarte pierde su poder y deja de tener efecto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4864,7 +4892,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="5a03-fa5a-5deb-21fd" name="Gran estandarte de superioridad de clan" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Una unidad que porte el Gran Estandarte de Superioridad de Clan y que tenga más filas (de 5 o más miniaturas) que sus oponentes tirará 1D3 puntos adicionales al resultado del combate. Tira al final de cada combate</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Una unidad que porte el Gran Estandarte de Superioridad de Clan y que tenga más filas (de 5 o más miniaturas) que sus oponentes tirará 1D3 puntos adicionales al resultado del combate. Tira al final de cada combate</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4880,7 +4908,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="af59-a7ea-7359-99e8" name="Mortaja de la muerte supurante" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas enemigas en contacto peana con peana con el portador de este estandarte sufrirán al principio de cada ronda de combate un único impacto de F3 sin posibilidad de salvación por armadura. Además, si la unidad portadora de la Mortaja de la Muerte Supurante huye, cualquier unidad que la persiga sufrirá 1D6+2 impactos de F3 sin posibilidad de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las miniaturas enemigas en contacto peana con peana con el portador de este estandarte sufrirán al principio de cada ronda de combate un único impacto de F3 sin posibilidad de salvación por armadura. Además, si la unidad portadora de la Mortaja de la Muerte Supurante huye, cualquier unidad que la persiga sufrirá 1D6+2 impactos de F3 sin posibilidad de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4896,7 +4924,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="0240-b577-cb41-b67d" name="Estandarte del imperio subterráneo" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades en contacto peana con peana con el portador del estandarte o la unidad que lo acompañe sufrirán 2D6 impactos automáticos de F2 al principio de todas las rondas de combate, distribuidos como si fueran disparos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades en contacto peana con peana con el portador del estandarte o la unidad que lo acompañe sufrirán 2D6 impactos automáticos de F2 al principio de todas las rondas de combate, distribuidos como si fueran disparos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4912,7 +4940,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="842b-89cf-d05c-c484" name="Estandarte de la huida de rata" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Al inicio de cualquier turno aliado a excepción del primer puedes activar el estandarte. Si la unidad portadora puede realizar un movimiento de marcha, podrá realizarlo al triple de su velocidad. Sin embargo, después de realizar el movimiento, la unidad portadora sufrirá 2D6 impactos de F3 (sin posibilidad de salvación por armadura) distribuidos como si fueran disparos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un solo uso. Al inicio de cualquier turno aliado a excepción del primer puedes activar el estandarte. Si la unidad portadora puede realizar un movimiento de marcha, podrá realizarlo al triple de su velocidad. Sin embargo, después de realizar el movimiento, la unidad portadora sufrirá 2D6 impactos de F3 (sin posibilidad de salvación por armadura) distribuidos como si fueran disparos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4928,7 +4956,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="e8d3-544c-b24b-9742" name="Estandarte de la disciplina del clan" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un sólo uso. Puede utilizarse al inicio de cualquier fase de combate cuerpo a cuerpo. Efectúa un chequeo de Liderazgo con la unidad; si lo superas, puedes reformar inmediatamente la unidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un sólo uso. Puede utilizarse al inicio de cualquier fase de combate cuerpo a cuerpo. Efectúa un chequeo de Liderazgo con la unidad; si lo superas, puedes reformar inmediatamente la unidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4944,7 +4972,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="1156-b773-79e2-289b" name="Pendones del embrujo" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador de este estandarte causará Miedo. Además, las miniaturas de la unidad obtienen la regla especial Aura demoniaca (6+), o aumentará en +1 si ya disponían de ella, hasta un máximo de 3+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador de este estandarte causará Miedo. Además, las miniaturas de la unidad obtienen la regla especial Aura demoniaca (6+), o aumentará en +1 si ya disponían de ella, hasta un máximo de 3+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4964,7 +4992,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="21db-bd8c-1436-d8fa" name="Estandarte de la penumbra" page="" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad obtienen una tirada de salvación especial de 5+ contra proyectiles y proyectiles mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad obtienen una tirada de salvación especial de 5+ contra proyectiles y proyectiles mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -4988,7 +5016,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="756b-adf5-0943-eef4" name="Brazaletes de poder" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía (4). Contiene un hechizo de potenciación que puede lanzarse sobre el portador y permanece un turno. Mientras el hechizo permanezca en efecto, duplica el atributo de Fuerza del portador.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía (4). Contiene un hechizo de potenciación que puede lanzarse sobre el portador y permanece un turno. Mientras el hechizo permanezca en efecto, duplica el atributo de Fuerza del portador.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5004,7 +5032,7 @@ D6 Tabla de problemas del Lanzallamas de Disformidad
           <profiles>
             <profile id="6272-50dc-fc3e-a40e" name="Potaje skaven" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Al principio de la batalla, un personaje que lleve el Potaje Skaven podrá obligar a una única unidad de guerreros de clan o de alimañas a la que esté unido a que se trague el misterioso engrudo. Los campeones recibirán sus efectos, pero ningún personaje será tan tarugo como para tragarse eso. Tira 1D6 en la tabla de Efectos del Potaje Skaven y aplica el resultado durante toda la batalla: 
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Al principio de la batalla, un personaje que lleve el Potaje Skaven podrá obligar a una única unidad de guerreros de clan o de alimañas a la que esté unido a que se trague el misterioso engrudo. Los campeones recibirán sus efectos, pero ningún personaje será tan tarugo como para tragarse eso. Tira 1D6 en la tabla de Efectos del Potaje Skaven y aplica el resultado durante toda la batalla: 
 D6 Efectos del Potaje Skaven 
 1 Indigestión: la unidad sufre 1D6 impactos de F3 sin posibilidad de salvación por armadura. No tiene ningún otro efecto adicional. 
 2-3 Inspirar Odio: la unidad obtiene la regla especial Odio (todos los enemigos) 
@@ -5029,7 +5057,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="4225-e065-9d52-602c" name="Skalm" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse al inicio de cualquier fase de disparo, combate cuerpo a cuerpo o magia (propia o del enemigo). El portador restablecerá todas las heridas que hubiese sufrido previamente en la batalla.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Puede utilizarse al inicio de cualquier fase de disparo, combate cuerpo a cuerpo o magia (propia o del enemigo). El portador restablecerá todas las heridas que hubiese sufrido previamente en la batalla.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5045,7 +5073,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="0ee6-27e8-cba0-f133" name="Cañerías de Piebald" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Siempre que una unidad enemiga quiera cargar contra el portador o la unidad en la que éste se encuentre, antes debe superar un chequeo de Liderazgo; si lo falla, no podrá cargar ni mover ese turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Siempre que una unidad enemiga quiera cargar contra el portador o la unidad en la que éste se encuentre, antes debe superar un chequeo de Liderazgo; si lo falla, no podrá cargar ni mover ese turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5061,7 +5089,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="9388-d029-c630-ed92" name="Portentos del destino funesto" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Cualquier unidad enemiga en contacto peana con peana con el portador obtendrá un penalizador de -1 a su Liderazgo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Cualquier unidad enemiga en contacto peana con peana con el portador obtendrá un penalizador de -1 a su Liderazgo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5077,7 +5105,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="7e11-62ca-a290-2f77" name="Amuleto de piedra de disformidad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede repetir una tirada para impactar, herir, salvaciones, chequeos de atributo, canalizar, un único dado de energía o dispersión, o una tirada en la tabla de disfunciones mágicas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. El portador puede repetir una tirada para impactar, herir, salvaciones, chequeos de atributo, canalizar, un único dado de energía o dispersión, o una tirada en la tabla de disfunciones mágicas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5093,7 +5121,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="56fb-69c9-f3ad-f799" name="Guantes de combate" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Los ataques realizados en combate cuerpo a cuerpo contra el portador obtendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Los ataques realizados en combate cuerpo a cuerpo contra el portador obtendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5117,7 +5145,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="2c7f-d1a6-035b-827b" name="Corona de la rata cornuda" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador las reglas especiales Regeneración (4+) y Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador las reglas especiales Regeneración (4+) y Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5145,7 +5173,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="dbde-c93a-0b5f-cd3d" name="Cacharro de atracción de sombras" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Los disparos efectuados contra el portador del Cacharro de Atracción de Sombras o la unidad que lo acompañe se realizarán con un penalizador de -1 para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Los disparos efectuados contra el portador del Cacharro de Atracción de Sombras o la unidad que lo acompañe se realizarán con un penalizador de -1 para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5161,7 +5189,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="681e-0a61-0af5-08c1" name="Anillo de la oscuridad" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador Resistencia Mágica (1). Además, si un hechizo, objeto mágico o habilidad obliga al jugador Skaven a revelar objetos mágicos u otra presencia “escondida” en la unidad en la que se encuentre el portador, el jugador Skaven deberá revelar sólo la presencia de este anillo; todo lo demás permanece oculto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador Resistencia Mágica (1). Además, si un hechizo, objeto mágico o habilidad obliga al jugador Skaven a revelar objetos mágicos u otra presencia “escondida” en la unidad en la que se encuentre el portador, el jugador Skaven deberá revelar sólo la presencia de este anillo; todo lo demás permanece oculto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5180,7 +5208,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="6842-9a2a-d593-0519" name="Talismán de la piel de otro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un solo uso. El portador puede obligar a una única miniatura enemiga con la que esté en contacto peana con peana a repetir todas sus tiradas para impactar exitosas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un solo uso. El portador puede obligar a una única miniatura enemiga con la que esté en contacto peana con peana a repetir todas sus tiradas para impactar exitosas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5196,7 +5224,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="7723-f416-8d9f-3cd9" name="Talismán de disformidad" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Cualquier miniatura que dirija uno o más de sus ataques en cuerpo a cuerpo sobre el portador deberá superar un chequeo de Liderazgo con su atributo básico. Si falla el chequeo, efectuará sus ataques con un penalizador de -2 a su atributo de Fuerza y a sus tiradas para impactar hasta el final de la fase.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Cualquier miniatura que dirija uno o más de sus ataques en cuerpo a cuerpo sobre el portador deberá superar un chequeo de Liderazgo con su atributo básico. Si falla el chequeo, efectuará sus ataques con un penalizador de -2 a su atributo de Fuerza y a sus tiradas para impactar hasta el final de la fase.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5467,7 +5495,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="2def-6649-83f3-5102" name="Pincha-Mata" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Ballesta de repetición. Tiene la regla especial Disparos múltiples (1D6) en lugar de 2 como sería habitual. Además, estos disparos se resuelven con Fuerza 4.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Ballesta de repetición. Tiene la regla especial Disparos múltiples (1D6) en lugar de 2 como sería habitual. Además, estos disparos se resuelven con Fuerza 4.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5495,7 +5523,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="ac37-83c1-0ebd-850e" name="Gran coraza Mors" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Disforme. Aumenta la regla especial Aura demoníaca de esta armadura a 5+. Además, todos los impactos contra el portador deberán dividir a la mitad (redondeando hacia arriba) su valor de Fuerza; esto no tiene efecto en ataques sin valor de Fuerza o que hieran automáticamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Disforme. Aumenta la regla especial Aura demoníaca de esta armadura a 5+. Además, todos los impactos contra el portador deberán dividir a la mitad (redondeando hacia arriba) su valor de Fuerza; esto no tiene efecto en ataques sin valor de Fuerza o que hieran automáticamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -5523,7 +5551,7 @@ D6 Efectos del Potaje Skaven
           <profiles>
             <profile id="b892-2b5a-8f92-1d46" name="Corona negra Mors" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo general del ejército. Aumenta el alcance de la Presencia inspiradora del portador en 6”. Además, proporciona a su portador una tirada de salvación especial de 5+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo general del ejército. Aumenta el alcance de la Presencia inspiradora del portador en 6”. Además, proporciona a su portador una tirada de salvación especial de 5+.</characteristic>
               </characteristics>
             </profile>
           </profiles>

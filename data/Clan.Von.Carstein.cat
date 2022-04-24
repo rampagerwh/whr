@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="1408-1786-52bb-a9f8" name="Clan Von Carstein" revision="16" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="1408-1786-52bb-a9f8" name="Clan Von Carstein" revision="20" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="e483-859c-97c8-fa19" name="Poder vampírico">
       <characteristicTypes>
-        <characteristicType id="86cf-6257-bcc7-d4f6" name="Propiedades mágicas"/>
+        <characteristicType id="86cf-6257-bcc7-d4f6" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -2774,7 +2774,7 @@ Poder TABLA DEL CARRUAJE NEGRO
         <infoLink id="59c7-ecb7-d843-85c2" name="No muerto" hidden="false" targetId="3d39-5d46-7335-225c" type="rule"/>
         <infoLink id="647d-b324-75c1-db15" name="Infantería" hidden="false" targetId="5b75-bd6b-d17a-6b7d" type="rule"/>
         <infoLink id="5c8f-45a8-478b-e67d" name="Vampiro" hidden="false" targetId="5b50-ef78-5aa5-ef12" type="rule"/>
-        <infoLink id="5706-d9f6-b6ea-10bf" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="5706-d9f6-b6ea-10bf" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="ad6d-77d6-3c13-c7a6" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
@@ -3160,6 +3160,22 @@ Poder TABLA DEL CARRUAJE NEGRO
               <infoLinks>
                 <infoLink id="c301-647c-f493-e802" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="1650-9b95-3527-a2d1" name="Encarnación de la muerte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="d070-7cbb-8914-936c" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="4663-65d8-e2eb-c704" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="18f9-c354-f2a1-7deb" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Ten en cuenta que todos los Von Carstein poseen este poder, y no cuenta para el número máximo de Poderes Vampíricos que pueden adquirir.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -3720,6 +3736,22 @@ Poder TABLA DEL CARRUAJE NEGRO
               <infoLinks>
                 <infoLink id="9a84-9552-a5d0-3412" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="c060-5358-cb2b-702c" name="Encarnación de la muerte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="71a6-c430-6a75-26e3" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="5205-34d3-c7f4-4031" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="8e25-32fd-6699-a7eb" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Ten en cuenta que todos los Von Carstein poseen este poder, y no cuenta para el número máximo de Poderes Vampíricos que pueden adquirir.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -4919,7 +4951,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="6431-521b-c9c6-daf3" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4935,7 +4967,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="26b1-cf08-5e5c-5a3b" name="Pureza de sangre" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Tozudez.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Tozudez.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4954,7 +4986,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="378f-53e4-c0eb-f69a" name="Señor de la no muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 por dado de invocación al invocar esqueletos y zombis.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 por dado de invocación al invocar esqueletos y zombis.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -4970,7 +5002,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="1f51-d42d-368c-55e4" name="Férrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Las unidades amigas a 12” o menos sufren una herida menos si pierden un combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Las unidades amigas a 12” o menos sufren una herida menos si pierden un combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5036,7 +5068,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="1054-6ebf-e406-7c4f" name="Filo de energía oscura" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Mannfred +1F en combate cuerpo a cuerpo. Cada vez que Mannfred elimine a una miniatura enemiga en combate cuerpo a cuerpo con el Filo de energía oscura, obtiene un dado de energía adicional en su siguiente fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Mannfred +1F en combate cuerpo a cuerpo. Cada vez que Mannfred elimine a una miniatura enemiga en combate cuerpo a cuerpo con el Filo de energía oscura, obtiene un dado de energía adicional en su siguiente fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5055,7 +5087,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="66b7-b338-1bbf-34ce" name="Armadura de Templehof" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a Mannfred una tirada de salvación especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona a Mannfred una tirada de salvación especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5074,7 +5106,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="f9cd-a51b-67f6-fe70" name="Báculo de ébano" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Una vez por fase de magia propia, Mannfred puede lanzar un hechizo del saber de Nigromancia sin invertir dados de energía: el hechizo se lanzará a su dificultad básica, y podrá ser dispersado con normalidad. No puede lanzarse la versión potenciada de un hechizo utilizando el Báculo de ébano.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Una vez por fase de magia propia, Mannfred puede lanzar un hechizo del saber de Nigromancia sin invertir dados de energía: el hechizo se lanzará a su dificultad básica, y podrá ser dispersado con normalidad. No puede lanzarse la versión potenciada de un hechizo utilizando el Báculo de ébano.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5269,7 +5301,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="6465-4d8d-ea31-94a7" name="Férrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Los no muertos a 12” o menos sufren una herida menos si pierden un combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Los no muertos a 12” o menos sufren una herida menos si pierden un combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5285,7 +5317,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="a78b-8f0a-e86b-64b8" name="Honor o muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Orgullo marcial y repite para impactar en desafíos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Orgullo marcial y repite para impactar en desafíos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5304,7 +5336,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="79eb-83d1-e4b1-d85f" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5331,7 +5363,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="1906-6250-9a4b-a157" name="Espadas de Waldenhof" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas (incluyendo su Furia asesina, Konrad realiza 6 Ataques). Los ataques efectuados con estas espadas obtendrán la regla especial Heridas múltiples (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas (incluyendo su Furia asesina, Konrad realiza 6 Ataques). Los ataques efectuados con estas espadas obtendrán la regla especial Heridas múltiples (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5458,7 +5490,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="4ee2-7697-ff81-7f3a" name="Invocar a las criaturas de la noche" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 por dado al animar lobos, murciélagos y enjambres de murciélagos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 por dado al animar lobos, murciélagos y enjambres de murciélagos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5474,7 +5506,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="f19a-d7a7-14fb-7c6b" name="Forma lupina" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cuando Ariette sea retirada como baja, sustitúyela por una miniatura de Lobo (bestia-personaje, 25x50mm); si se encontraba dentro de una unidad o trabada en combate cuerpo a cuerpo, coloca el Lobo en cualquier punto de tu elección, a como máximo 6” de donde se encontraba Ariette, y a más de 1” de cualquier otra miniatura (si no puedes, retira al Lobo como baja). En forma de lobo, Ariette tiene las reglas especiales No muerto, Vampiro y Piel escamosa (4+). Aunque conserva sus poderes vampíricos, no dispondrá de sus elementos de equipo ni objetos mágicos (aunque sí podrá utilizar su nivel de magia y hechizo). Ten en cuenta que Ariette no otorga puntos de victoria si no es eliminada en sus dos formas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cuando Ariette sea retirada como baja, sustitúyela por una miniatura de Lobo (bestia-personaje, 25x50mm); si se encontraba dentro de una unidad o trabada en combate cuerpo a cuerpo, coloca el Lobo en cualquier punto de tu elección, a como máximo 6” de donde se encontraba Ariette, y a más de 1” de cualquier otra miniatura (si no puedes, retira al Lobo como baja). En forma de lobo, Ariette tiene las reglas especiales No muerto, Vampiro y Piel escamosa (4+). Aunque conserva sus poderes vampíricos, no dispondrá de sus elementos de equipo ni objetos mágicos (aunque sí podrá utilizar su nivel de magia y hechizo). Ten en cuenta que Ariette no otorga puntos de victoria si no es eliminada en sus dos formas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5490,7 +5522,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="a195-ff80-9b10-dcaf" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5517,7 +5549,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="ca10-de24-44d4-281c" name="Estoque y daga negra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los ataques de Ariette en combate cuerpo a cuerpo tienen las reglas especiales Ataques envenenados y Heridas múltiples (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los ataques de Ariette en combate cuerpo a cuerpo tienen las reglas especiales Ataques envenenados y Heridas múltiples (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5698,7 +5730,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="07d6-3c26-fca7-ceca" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5714,7 +5746,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="43d5-189c-41fb-94a8" name="Aura negra de majestuosidad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas a 6” o menos de Mundvard tendrán un penalizador de -1 a su atributo de Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto. Los efectos de varias Auras negras no son acumulativos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas a 6” o menos de Mundvard tendrán un penalizador de -1 a su atributo de Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto. Los efectos de varias Auras negras no son acumulativos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5730,7 +5762,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="9d71-38c9-4735-d590" name="Horror inmortal" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">si acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">si acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5784,7 +5816,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="5763-5d7a-06a2-2f01" name="Cuchillos de las sombras" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Mundvard puede repetir sus tiradas para impactar fallidas; además, tiene la regla especial Ataques envenenados.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Mundvard puede repetir sus tiradas para impactar fallidas; además, tiene la regla especial Ataques envenenados.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5817,7 +5849,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="4d5c-0148-88e1-0ebe" name="Talismán de las sombras" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todos los disparos y ataques contra Mundvard tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todos los disparos y ataques contra Mundvard tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5901,7 +5933,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="2332-186f-76f3-9b1b" name="Estirpe de Sylvania" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5917,7 +5949,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="0336-1ceb-0156-cdac" name="Erudito de lo arcano" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Selecciona libremente sus hechizos en lugar de determinarlos al azar como el resto de magos, de entre sus saberes disponibles y proporciona un bonificador de +1 a lanzar hechizos</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Selecciona libremente sus hechizos en lugar de determinarlos al azar como el resto de magos, de entre sus saberes disponibles y proporciona un bonificador de +1 a lanzar hechizos</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5933,7 +5965,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="f7f3-9faa-c40b-5968" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5984,7 +6016,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="bd38-c027-fd31-1d61" name="Pergaminos de los mil tronos" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Lydia conoce 2 hechizos adicionales (para un total de 4). Puede elegir sus hechizos de Nigromancia y/o del Saber de Nehekhara.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Lydia conoce 2 hechizos adicionales (para un total de 4). Puede elegir sus hechizos de Nigromancia y/o del Saber de Nehekhara.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6092,7 +6124,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="5492-1ee7-227a-0c5e" name="Férrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Los no muertos a 12” o menos sufren una herida menos si pierden un combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Los no muertos a 12” o menos sufren una herida menos si pierden un combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6108,7 +6140,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="b1d8-0012-f376-5b8b" name="Honor o muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Orgullo marcial y repite para impactar en desafíos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Orgullo marcial y repite para impactar en desafíos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6127,7 +6159,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="5986-3eea-9de0-5273" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6143,7 +6175,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="ee39-8cc6-b8e4-5922" name="Horror inmortal" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Si acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6159,7 +6191,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="f478-c2ec-c61b-3bf3" name="Maldición de los Von Carstein" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Tiene las reglas especiales Estupidez, Furia asesina y Tozudez.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Tiene las reglas especiales Estupidez, Furia asesina y Tozudez.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6191,7 +6223,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="a9ee-e476-19aa-21a9" name="Espadas de Waldenhof" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas (incluyendo su Furia asesina, Konrad realiza 6 Ataques). Los ataques efectuados con estas espadas obtendrán la regla especial Heridas múltiples (2).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas (incluyendo su Furia asesina, Konrad realiza 6 Ataques). Los ataques efectuados con estas espadas obtendrán la regla especial Heridas múltiples (2).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6212,7 +6244,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="358f-030b-304c-784b" name="Armadura carmesí" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona una tirada de salvación por armadura de 1+ y una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Proporciona una tirada de salvación por armadura de 1+ y una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6345,7 +6377,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="e9ba-a5f8-a32b-923e" name="Caliz de sangre de Sylvania" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Al inicio de cada uno de sus turnos, Isabella puede beber del Cáliz para obtener uno de los siguientes beneficios:  
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Al inicio de cada uno de sus turnos, Isabella puede beber del Cáliz para obtener uno de los siguientes beneficios:  
 -Restaurar una herida sufrida con anterioridad durante la batalla. 
 -Añadir un dado de energía a tu reserva en la fase de magia de ese turno. 
 -Ganar la regla especial Sangre fría hasta el inicio de tu siguiente turno. 
@@ -6441,7 +6473,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="c858-fca5-c2d7-1ad4" name="Estirpe de Sylvania" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">3+ especial contra ataques no mágicos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">3+ especial contra ataques no mágicos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6457,7 +6489,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="9e49-6b61-a271-8ae7" name="Ferrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos de Isabella sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos de Isabella sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6473,7 +6505,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="0f62-2491-f56f-b517" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6547,7 +6579,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="250a-c656-5384-d5a2" name="Espada aullante de Sylvania" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por la espada tienen la regla especial Heridas múltiples (2). Además, Vlad causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos causados por la espada tienen la regla especial Heridas múltiples (2). Además, Vlad causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6579,7 +6611,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="5623-a904-e69f-9c1f" name="Anillo de los Carstein" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El Anillo proporciona a Vlad Regeneración (4+). Además, si Vlad muere, tira 1D6: si obtienes un resultado de 2+, volverá a la vida con todas sus heridas restablecidas: colócalo en cualquier punto a 12” o menos del lugar donde murió (puedes unirlo a una unidad). Cada vez que Vlad muera y resucite, debes aplicar un penalizador acumulativo de -1 a la tirada para resucitar. Si tu ejército incluye a Vlad, el Anillo de los Carstein no estará disponible para otros personajes.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El Anillo proporciona a Vlad Regeneración (4+). Además, si Vlad muere, tira 1D6: si obtienes un resultado de 2+, volverá a la vida con todas sus heridas restablecidas: colócalo en cualquier punto a 12” o menos del lugar donde murió (puedes unirlo a una unidad). Cada vez que Vlad muera y resucite, debes aplicar un penalizador acumulativo de -1 a la tirada para resucitar. Si tu ejército incluye a Vlad, el Anillo de los Carstein no estará disponible para otros personajes.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6660,7 +6692,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="7e74-8346-8716-10c8" name="Señor de las legiones" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Puede, con los hechizos Invocación de Nehek y Animar muertos, aumentar el número de las unidades de Leva sylvana, Milicia sylvana y Leva de tiradores por encima de su tamaño inicial.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Puede, con los hechizos Invocación de Nehek y Animar muertos, aumentar el número de las unidades de Leva sylvana, Milicia sylvana y Leva de tiradores por encima de su tamaño inicial.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6676,7 +6708,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="e88e-24f8-0e53-6dc3" name="Ferrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos de Isabella sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos de Isabella sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6692,7 +6724,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="76ad-6e18-f465-b5f5" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6708,7 +6740,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="07e0-557f-2a02-e59a" name="Señor de la no muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de leva sylvana, milicia silvana y leva de tiradores, suma +1 por dado de invocación.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de leva sylvana, milicia silvana y leva de tiradores, suma +1 por dado de invocación.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6724,7 +6756,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="5aac-cb92-2618-20d4" name="Invocar a las criaturas de la noche" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros, lobos espectrales y vargheist, suma +1 por dado de invocación.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros, lobos espectrales y vargheist, suma +1 por dado de invocación.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6740,7 +6772,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="5f9b-38fa-fea1-a9c2" name="Honor o muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Obtiene la regla especial Orgullo marcial. Puede repetir todas sus tiradas para impactar no superadas en los desafíos).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Obtiene la regla especial Orgullo marcial. Puede repetir todas sus tiradas para impactar no superadas en los desafíos).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6759,7 +6791,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="233f-5809-840a-103f" name="Horror inmortal" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Si acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6775,7 +6807,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="8f06-ae8e-86d8-d2a0" name="Mirada hipnótica" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Los enemigos tendrán un penalizador de -1 en sus tiradas para impactar en combate cuerpo a cuerpo contra el vampiro. No afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Los enemigos tendrán un penalizador de -1 en sus tiradas para impactar en combate cuerpo a cuerpo contra el vampiro. No afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6791,7 +6823,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="fb10-4817-5018-118d" name="Estirpe de Sylvania" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Obtiene una tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Obtiene una tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6807,7 +6839,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="2a19-8658-576f-ff3d" name="Aura negra de majestuosidad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas a 6” o menos de Vlad tendrán un penalizador de -1 a su atributo de Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto. Los efectos de varias Auras negras no son acumulativos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas a 6” o menos de Vlad tendrán un penalizador de -1 a su atributo de Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto. Los efectos de varias Auras negras no son acumulativos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6823,7 +6855,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="28b6-0d9b-51e6-8471" name="Despertar la tempestad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Durante su fase de movimiento, si no mueve ni está trabado en combate, Vlad puede invocar un tormenta. La tormenta tiene un radio de 24&quot; centrada en Vlad. Cualquier unidad que dispare hacia o desde el interior de la tormenta sufrirá un penalizador de -2 para impactar. Las máquinas de guerra sólo podrán disparar si antes obtienen un resultado de 4+ en 1D6. No se puede volar o flotar hacia o en el interior, por lo que las criaturas voladoras o flotadoras deberán usar su atributo de movimiento; ten en cuenta que esto afecta a tus propias unidades voladoras. Si Vlad se mueve, se traba en combate o muere, la tormenta cesará inmediatamente.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Durante su fase de movimiento, si no mueve ni está trabado en combate, Vlad puede invocar un tormenta. La tormenta tiene un radio de 24&quot; centrada en Vlad. Cualquier unidad que dispare hacia o desde el interior de la tormenta sufrirá un penalizador de -2 para impactar. Las máquinas de guerra sólo podrán disparar si antes obtienen un resultado de 4+ en 1D6. No se puede volar o flotar hacia o en el interior, por lo que las criaturas voladoras o flotadoras deberán usar su atributo de movimiento; ten en cuenta que esto afecta a tus propias unidades voladoras. Si Vlad se mueve, se traba en combate o muere, la tormenta cesará inmediatamente.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6839,7 +6871,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="0562-9101-59cf-e03b" name="Señor de Drakenhof" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Vlad y todas las unidades amigas dentro de su radio de Presencia inspiradora serán Tozudos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Vlad y todas las unidades amigas dentro de su radio de Presencia inspiradora serán Tozudos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6916,7 +6948,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="8970-d18c-6ab0-6ddd" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6932,7 +6964,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="39af-6b0b-d64a-8725" name="Pureza de sangre" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Tozudez.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Tozudez.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7001,7 +7033,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="927c-9f8d-228f-5254" name="Filo de energía oscura" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Mannfred +1F en combate cuerpo a cuerpo. Cada vez que Mannfred elimine a una miniatura enemiga en combate cuerpo a cuerpo con el Filo de energía oscura, obtiene un dado de energía adicional en su siguiente fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona a Mannfred +1F en combate cuerpo a cuerpo. Cada vez que Mannfred elimine a una miniatura enemiga en combate cuerpo a cuerpo con el Filo de energía oscura, obtiene un dado de energía adicional en su siguiente fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7032,7 +7064,7 @@ Poder TABLA DEL CARRUAJE NEGRO
               <profiles>
                 <profile id="6918-6e24-186e-265f" name="Báculo de ébano" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">La Capa proporciona a Mannfred las reglas especiales Piel escamosa (4+) y Regeneración (5+). Además, todos los disparos y ataques contra Mannfred tendrán un penalizador de -1 en su tirada para impactar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">La Capa proporciona a Mannfred las reglas especiales Piel escamosa (4+) y Regeneración (5+). Además, todos los disparos y ataques contra Mannfred tendrán un penalizador de -1 en su tirada para impactar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7276,7 +7308,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="9ead-ef00-30f6-1edc" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Emisario oscuro una tirada de salvación especial de 5+. Además, al final de cada fase de magia, el Emisario puede guardar en la Espiral un dado de magia no utilizado para utilizarlo en fases de magia posteriores.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7292,7 +7324,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
               <profiles>
                 <profile id="5fcd-3863-93f1-97e7" name="Báculo de la oscuridad" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Emisario Oscuro un bonificador de +1 en todas sus tiradas de lanzamiento de hechizos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7528,7 +7560,7 @@ Se trata de un hechizo de Maldición que afecta a todas las unidades enemigas en
                   <profiles>
                     <profile id="8acb-9984-7d15-11a3" name="Estandarte de la novia del mar" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad que porta el estandarte causará Miedo y reducirá el valor de Movimiento del enemigo a la mitad durante los movimientos de huida.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -7688,7 +7720,7 @@ afectados por la regla especial No Muerto.</description>
               <profiles>
                 <profile id="c095-8d0c-c647-18d5" name="Skabscrath" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Los ataques efectuados por el portador se resuelven con la regla especial Golpe letal. Su portador causa Terror.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7759,7 +7791,7 @@ afectados por la regla especial No Muerto.</description>
                   <profiles>
                     <profile id="ce4f-b944-ae94-5585" name="Pabellón de pesadilla" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Objeto portahechizos. Nivel de energía 3. Contiene el hechizo Animar Muertos del Saber Nigromancia. La versión que se lanza es la básica (dificultad +7) y solamente podrá lanzarse sobre la propia Legión de Pesadilla.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -8385,6 +8417,9 @@ D6	Efecto
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="8658-cc2b-c876-89bd" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -8758,7 +8793,7 @@ D6	Efecto
                   <profiles>
                     <profile id="14ca-8643-d6a6-239f" name="Pellejo de Wulfag" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad en la que se encuentre este estandarte podrá sumar 1D6” al resultado de las persecuciones que debiese efectuar.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9026,7 +9061,7 @@ D6	Efecto
                   <profiles>
                     <profile id="48d9-d272-4e95-cb6a" name="Estandarte de Karad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todos los disparos contra Mengil y sus Desolladores deberán resolverse con un penalizador de -1 para impactar si la unidad que dispara se encuentra a 12&quot; o menos de estos, o con un -2 si se encuentra a una distancia mayor.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9248,7 +9283,7 @@ D6	Efecto
                   <profiles>
                     <profile id="4e0c-78d0-bdfc-dccc" name="Estandarte de la tribu del oso" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga a todas las miniaturas de la unidad la regla especial Carga devastadora.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -9821,7 +9856,7 @@ D6	Efecto
               <profiles>
                 <profile id="97ba-d703-42b8-4c8f" name="Sello de Uzkulak" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Zakar un hechizo adicional y la regla especial Aura demoníaca (tanto para él como para los otros cuidadores).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10169,7 +10204,7 @@ D6	Efecto
               <profiles>
                 <profile id="85b6-7f71-4df6-5b31" name="Cuerno de la tempestad" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene el hechizo Tormenta de Ceniza del Saber de Hashut.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene el hechizo Tormenta de Ceniza del Saber de Hashut.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10351,7 +10386,7 @@ D6	Efecto
               <profiles>
                 <profile id="78fa-a5f4-f6a5-c1d8" name="Mordisco del dios águila" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Los ataques realizados con este arma poseen la regla especial Ataques flamígeros. Además, una vez por batalla, al inicio de cualquier fase de combate cuerpo a cuerpo, Garaghull puede convocar al demonio atrapado en el interior de la alabarda para soltar un torrente de llamas; para ello, debe superar un chequeo de Liderazgo. Si lo logra, todas las miniaturas enemigas en contacto peana con peana con Garaghull sufren un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Sin embargo, si falla el chequeo de Liderazgo, será Garaghull quien sufra un impacto de F5 con las reglas especiales Ataques mágicos y Ataques sólo flamígeros. Las heridas causadas cuentan para el resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10618,7 +10653,7 @@ D6	Efecto
               <profiles>
                 <profile id="8287-aa83-5e0f-e505" name="Macana de obsidiana" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma obtendrá la regla especial poder de penetración. Adicionalmente, los impactos que obtuviesen un resultado natural de 6 al herir obtendrán la regla especial Heridas Múltiples (2)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10700,7 +10735,7 @@ D6	Efecto
                   <profiles>
                     <profile id="0714-3a32-4265-0dc3" name="Estandarte emplumado de Skeggi" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad de Incursores de Skeggi obtiene Resistencia a la mágia (2). Todas las miniaturas del ejército Hombres lagarto obtendrán la regla especial Odio contra este regimiento de renombre</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11029,7 +11064,7 @@ D6 Tabla de animosidad hobgoblin
               <profiles>
                 <profile id="77d8-8aa4-3b01-86a7" name="Capa del gran lobo" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a Throg las reglas especiales Piel escamosa (6+) y Resistencia mágica (1)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11289,7 +11324,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="51c3-010e-dd57-b054" name="Liber noctus" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Helman conoce 1D3 hechizos adicionales. Además, al inicio de cada fase de magia, tira 1D6: si obtienes un resultado de 4+, el Liber Noctus genera un dado (de energía o dispersión, según corresponda) para esa fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Helman conoce 1D3 hechizos adicionales. Además, al inicio de cada fase de magia, tira 1D6: si obtienes un resultado de 4+, el Liber Noctus genera un dado (de energía o dispersión, según corresponda) para esa fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11540,7 +11575,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="da95-d346-9c8f-d24d" name="Señor de la no muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que lance Invocación de Nehek o Animar muertos sobre unidades de esqueletos, zombis y leva sylvana, suma +1 por dado de invocación.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que lance Invocación de Nehek o Animar muertos sobre unidades de esqueletos, zombis y leva sylvana, suma +1 por dado de invocación.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11556,7 +11591,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="85ff-89e4-f6da-0a18" name="Invocar a las criaturas de la noche" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que lance Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros, lobos espectrales y vargheist, suma +1 por dado de invocación.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que lance Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros, lobos espectrales y vargheist, suma +1 por dado de invocación.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11572,7 +11607,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="eb8d-22ed-89b4-a81c" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">+1 al resultado del combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11588,7 +11623,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="d077-3169-d8b5-732a" name="Forma de murcielago" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Volar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Volar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11607,7 +11642,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="5d35-ff18-1407-d573" name="Forma espectral" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Etereo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Etereo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11637,7 +11672,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="dc24-e681-a87a-7ad0" name="Espada del lobo" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Conde +1F. Por cada herida causada por este arma, el Conde puede añadir un dado adicional de energía o dispersión (según corresponda) en la siguiente fase de magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Proporciona al Conde +1F. Por cada herida causada por este arma, el Conde puede añadir un dado adicional de energía o dispersión (según corresponda) en la siguiente fase de magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11668,7 +11703,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="49a2-88fe-98ee-1d53" name="Anillo cruel" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia, el Conde puede elegir uno de los siguientes efectos, y aplicarlo inmediatamente. Cada efecto no puede elegirse más de una vez por batalla.
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia, el Conde puede elegir uno de los siguientes efectos, y aplicarlo inmediatamente. Cada efecto no puede elegirse más de una vez por batalla.
 -El Conde causará Terror hasta el inicio de tu siguiente fase de magia; además, los chequeos de Terror se deberán realizar tirando 3D6 y descartando el resultado más bajo.
 -El Conde obtiene un Arma de aliento (F4, Ataques mágicos, Ataques sólo flamígeros) y la regla especial Ataques flamígeros con su Espada del Lobo hasta el inicio de tu siguiente fase de magia.
 -El Conde obtiene Furia asesina y Tozudez hasta el inicio de tu siguiente fase de magia. 
@@ -11689,7 +11724,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="259c-5a23-2265-7741" name="Capa de las tinieblas" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Conde la regla especial Regeneración (4+).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Conde la regla especial Regeneración (4+).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11820,6 +11855,9 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="4f16-96cf-6f9f-1c11" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="115.0"/>
           </costs>
@@ -11946,6 +11984,9 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="0076-25cb-493d-5a49" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="105.0"/>
           </costs>
@@ -12114,6 +12155,22 @@ Sombras, Magia Oscura o Nigromancia.</description>
               <infoLinks>
                 <infoLink id="78aa-082f-39ea-d328" name="Armadura pesada" hidden="false" targetId="1ee5-2441-2c69-5965" type="profile"/>
               </infoLinks>
+              <costs>
+                <cost name="pts" typeId="points" value="0.0"/>
+              </costs>
+            </selectionEntry>
+            <selectionEntry id="32f6-582d-e6a0-cd3c" name="Encarnación de la muerte" hidden="false" collective="false" import="true" type="upgrade">
+              <constraints>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="7735-b667-84e0-6b51" type="max"/>
+                <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="75ff-af6d-fcb6-f176" type="min"/>
+              </constraints>
+              <profiles>
+                <profile id="6f29-89ac-6314-39fb" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
+                  <characteristics>
+                    <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Ten en cuenta que todos los Von Carstein poseen este poder, y no cuenta para el número máximo de Poderes Vampíricos que pueden adquirir.</characteristic>
+                  </characteristics>
+                </profile>
+              </profiles>
               <costs>
                 <cost name="pts" typeId="points" value="0.0"/>
               </costs>
@@ -12481,7 +12538,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
               <profiles>
                 <profile id="698b-1922-3218-95c1" name="Espada de llamas negras" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Arma funeraria (Golpe letal). Proporciona +1F, un bonificador de +1 en las tiradas para impactar de Sven, y además tiene la regla especial Ataques flamígeros.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Arma funeraria (Golpe letal). Proporciona +1F, un bonificador de +1 en las tiradas para impactar de Sven, y además tiene la regla especial Ataques flamígeros.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12501,7 +12558,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
               <profiles>
                 <profile id="241f-b4eb-7903-164c" name="Malla siniestra" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Las tiradas exitosas para impactar contra Sven deberán repetirse.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Las tiradas exitosas para impactar contra Sven deberán repetirse.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -14592,7 +14649,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
       <profiles>
         <profile id="4315-d15c-500a-6809" name="Caballero imperial" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
           <characteristics>
-            <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Este poder tan sólo puede ser elegido por un vampiro montado en una bestia (es decir, que tenga el tipo de tropa Caballería) que se una a una unidad de caballeros tumularios o caballeros de la Orden de Drakenhof (y no podrá abandonar voluntariamente esa unidad). Tanto el personaje como la unidad a la que se una sustituyen sus armaduras pesadas por Armaduras de placas.</characteristic>
+            <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Este poder tan sólo puede ser elegido por un vampiro montado en una bestia (es decir, que tenga el tipo de tropa Caballería) que se una a una unidad de caballeros tumularios o caballeros de la Orden de Drakenhof (y no podrá abandonar voluntariamente esa unidad). Tanto el personaje como la unidad a la que se una sustituyen sus armaduras pesadas por Armaduras de placas.</characteristic>
           </characteristics>
         </profile>
       </profiles>
@@ -14801,22 +14858,6 @@ Sombras, Magia Oscura o Nigromancia.</description>
         <constraint field="selections" scope="parent" value="-1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="47b2-fd37-71a5-ff98" type="min"/>
       </constraints>
       <selectionEntries>
-        <selectionEntry id="ff4f-4532-4c27-4299" name="Encarnación de la muerte" hidden="false" collective="false" import="true" type="upgrade">
-          <constraints>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="fa52-454d-754f-2fa2" type="max"/>
-            <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="76dd-40cd-5a75-5203" type="min"/>
-          </constraints>
-          <profiles>
-            <profile id="fd4d-8ce8-d9d8-f6c6" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
-              <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Ten en cuenta que todos los Von Carstein poseen este poder, y no cuenta para el número máximo de Poderes Vampíricos que pueden adquirir.</characteristic>
-              </characteristics>
-            </profile>
-          </profiles>
-          <costs>
-            <cost name="pts" typeId="points" value="0.0"/>
-          </costs>
-        </selectionEntry>
         <selectionEntry id="96ee-420e-9d0c-31e3" name="Señor de las legiones" hidden="false" collective="false" import="true" type="upgrade">
           <constraints>
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="false" includeChildSelections="false" includeChildForces="false" id="9e7c-21b9-f023-158f" type="max"/>
@@ -14824,7 +14865,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="0b3d-69a7-6afd-c942" name="Señor de las legiones" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje puede, con los hechizos Iinvocación de Nehek y Animar muertos, aumentar el número de las unidades de Leva sylvana, Milicia sylvana y Leva de tiradores por encima de su tamaño inicial (sigue estando limitado por su máximo de unidad).</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje puede, con los hechizos Iinvocación de Nehek y Animar muertos, aumentar el número de las unidades de Leva sylvana, Milicia sylvana y Leva de tiradores por encima de su tamaño inicial (sigue estando limitado por su máximo de unidad).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14839,7 +14880,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="f935-72c9-fc1f-730f" name="Señor de la no muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de leva sylvana, milicia sylvana y leva de tiradores suma +1 por dado de invocación.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de leva sylvana, milicia sylvana y leva de tiradores suma +1 por dado de invocación.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14854,7 +14895,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="00fc-368e-73b8-784b" name="Invocar a las criaturas de la noche" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros (o lobos espectrales) y vargheist, suma +1 por dado de invocación.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros (o lobos espectrales) y vargheist, suma +1 por dado de invocación.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14869,7 +14910,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="7585-676a-5b8c-841e" name="Honor o muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Orgullo marcial. Puede repetir todas sus tiradas para impactar no superadas en los desafíos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Orgullo marcial. Puede repetir todas sus tiradas para impactar no superadas en los desafíos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14887,7 +14928,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="4372-9ff7-05fc-50e7" name="Horror inmortal" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Si el vampiro acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si el vampiro acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14902,7 +14943,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="1bff-c430-e340-478e" name="Férrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos del vampiro sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos del vampiro sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14917,7 +14958,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="f14e-2f02-7e74-3c43" name="Mirada hipnótica" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Los enemigos tendrán un penalizador de -1 en sus tiradas para impactar en combate cuerpo a cuerpo contra el vampiro. No afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Los enemigos tendrán un penalizador de -1 en sus tiradas para impactar en combate cuerpo a cuerpo contra el vampiro. No afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14932,7 +14973,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="f2bc-8438-e49a-b955" name="Maldición de los Von Carstein" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje obtiene las reglas especiales Estupidez, Furia asesina y Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje obtiene las reglas especiales Estupidez, Furia asesina y Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14952,7 +14993,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="75ac-de1c-ac54-5e43" name="Forma de murciélago" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Volar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Volar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14970,7 +15011,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="8eb2-6a36-4463-9f57" name="Erudito de lo arcano" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro selecciona libremente sus hechizos en lugar de determinarlos al azar como el resto de magos, de entre sus saberes disponibles. Además, proporciona un bonificador de +1 a todos sus intentos de lanzar hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro selecciona libremente sus hechizos en lugar de determinarlos al azar como el resto de magos, de entre sus saberes disponibles. Además, proporciona un bonificador de +1 a todos sus intentos de lanzar hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14985,7 +15026,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="dfa8-bb64-0dac-8f5d" name="Estirpe de Sylvania" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene una tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene una tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15000,7 +15041,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="1bce-50a1-7fd4-4332" name="Estudioso de la nigromancia" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje aumenta en 1 sus niveles de magia, hasta un máximo de 4.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje aumenta en 1 sus niveles de magia, hasta un máximo de 4.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15015,7 +15056,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="8479-29a0-7e2b-5fe4" name="Estirpe del conde" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Un vampiro (y su montura) con este poder nunca podrá perder más de una herida como resultado de perder un combate y fallar el chequeo de desmoralización.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Un vampiro (y su montura) con este poder nunca podrá perder más de una herida como resultado de perder un combate y fallar el chequeo de desmoralización.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15030,7 +15071,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="d2e9-8a2c-7f66-ee73" name="Forma espectral" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro es etéreo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro es etéreo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15048,7 +15089,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="d652-8968-7e69-918c" name="Nobleza antigua de Sylvania" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Tu ejército puede incluir hasta 2 unidades del libro de ejército del Imperio de entre las siguientes: Espadachines, Lanceros, Alabarderos, Arqueros, Ballesteros, Compañías libres, Fusileros. Obtienen la regla especial ¡Están vivos!, y elegirán sus estandartes mágicos de este libro de ejército. </characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Tu ejército puede incluir hasta 2 unidades del libro de ejército del Imperio de entre las siguientes: Espadachines, Lanceros, Alabarderos, Arqueros, Ballesteros, Compañías libres, Fusileros. Obtienen la regla especial ¡Están vivos!, y elegirán sus estandartes mágicos de este libro de ejército. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15063,7 +15104,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="79c7-cc6c-671d-8aeb" name="Resolución implacable" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje obtiene la regla especial Sangre fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje obtiene la regla especial Sangre fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15100,7 +15141,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="a660-bbb5-cd49-4eec" name="Caballero imperial" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Este poder tan sólo puede ser elegido por un vampiro montado en una bestia (es decir, que tenga el tipo de tropa Caballería) que se una a una unidad de caballeros tumularios o caballeros de la Orden de Drakenhof (y no podrá abandonar voluntariamente esa unidad). Tanto el personaje como la unidad a la que se una sustituyen sus armaduras pesadas por Armaduras de placas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Este poder tan sólo puede ser elegido por un vampiro montado en una bestia (es decir, que tenga el tipo de tropa Caballería) que se una a una unidad de caballeros tumularios o caballeros de la Orden de Drakenhof (y no podrá abandonar voluntariamente esa unidad). Tanto el personaje como la unidad a la que se una sustituyen sus armaduras pesadas por Armaduras de placas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15122,7 +15163,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="0870-074c-2c03-1b66" name="Transformación bestial" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cambia el tipo del personaje a Infantería monstruosa, y su peana a 40x40mm. El personaje no puede elegir Armas mágicas o Armaduras mágicas, y pierde todo su equipo mundano (armas y armaduras) salvo el Arma de mano. El vampiro obtiene un bonificador de +1 a su Fuerza, Resistencia, Heridas y Ataques, y obtiene las reglas especiales Volar y causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cambia el tipo del personaje a Infantería monstruosa, y su peana a 40x40mm. El personaje no puede elegir Armas mágicas o Armaduras mágicas, y pierde todo su equipo mundano (armas y armaduras) salvo el Arma de mano. El vampiro obtiene un bonificador de +1 a su Fuerza, Resistencia, Heridas y Ataques, y obtiene las reglas especiales Volar y causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15148,7 +15189,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="3cbd-f4d1-6f44-a3bf" name="Aura de majestad infernal" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El alcance de la regla especial Presencia inspiradora del vampiro es de 18” en lugar de las 12” habituales (o 24” si va montado en un Objetivo grande)</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El alcance de la regla especial Presencia inspiradora del vampiro es de 18” en lugar de las 12” habituales (o 24” si va montado en un Objetivo grande)</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15170,7 +15211,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="a479-4a91-017f-7b4a" name="Aura negra de majestuosidad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas a 6” o menos del vampiro tendrán un penalizador de -1 a su atributo de Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto. Los efectos de varias Auras negras no son acumulativos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas a 6” o menos del vampiro tendrán un penalizador de -1 a su atributo de Liderazgo. Esto no afecta a miniaturas con la regla especial Demonio o No muerto. Los efectos de varias Auras negras no son acumulativos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15185,7 +15226,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="3045-046f-f1e1-c445" name="Despertar la tempestad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Durante su fase de movimiento, si no mueve ni está trabado en combate, el vampiro puede invocar un tormenta. La tormenta tiene un radio de 24&quot; centrada en el vampiro. Cualquier unidad que dispare hacia o desde el interior de la tormenta sufrirá un penalizador de -2 para impactar. Las máquinas de guerra sólo podrán disparar si antes obtienen un resultado de 4+ en 1D6. No se puede volar o flotar hacia o en el interior, por lo que las criaturas voladoras o flotadoras deberán usar su atributo de movimiento (ten en cuenta que esto afecta a tus propias unidades voladoras). Si el vampiro se mueve, se traba en combate o muere, la tormenta cesará inmediatamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Durante su fase de movimiento, si no mueve ni está trabado en combate, el vampiro puede invocar un tormenta. La tormenta tiene un radio de 24&quot; centrada en el vampiro. Cualquier unidad que dispare hacia o desde el interior de la tormenta sufrirá un penalizador de -2 para impactar. Las máquinas de guerra sólo podrán disparar si antes obtienen un resultado de 4+ en 1D6. No se puede volar o flotar hacia o en el interior, por lo que las criaturas voladoras o flotadoras deberán usar su atributo de movimiento (ten en cuenta que esto afecta a tus propias unidades voladoras). Si el vampiro se mueve, se traba en combate o muere, la tormenta cesará inmediatamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15200,7 +15241,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="f92b-a3c7-70e2-4580" name="Pureza de sangre" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15225,7 +15266,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="e878-f0e2-2663-309a" name="Señor de Drakenhof" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje y todas las unidades amigas dentro de su radio de Presencia inspiradora serán Tozudos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje y todas las unidades amigas dentro de su radio de Presencia inspiradora serán Tozudos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15252,7 +15293,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="626d-c2d2-8c65-977d" name="Espada maldita de Sylvania" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo clan Von Carstein. Arma de mano. Niega la tirada de salvación por armadura. Por cada herida causada con la espada en combate cuerpo a cuerpo a un enemigo (que no tenga la regla especial No muerto o Demonio), el portador genera un dado de energía adicional en su próxima fase de magia. Tan sólo el portador podrá utilizar esos dados de energía adicionales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo clan Von Carstein. Arma de mano. Niega la tirada de salvación por armadura. Por cada herida causada con la espada en combate cuerpo a cuerpo a un enemigo (que no tenga la regla especial No muerto o Demonio), el portador genera un dado de energía adicional en su próxima fase de magia. Tan sólo el portador podrá utilizar esos dados de energía adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15279,7 +15320,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="571f-10db-725b-efff" name="La cimitarra de Khaled Al-Muntasir" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Sólo Vampiros. Arma de mano. El portador luchará con I10 y +1F en combate cuerpo a cuerpo. Además, podrá repetir sus tiradas fallidas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Sólo Vampiros. Arma de mano. El portador luchará con I10 y +1F en combate cuerpo a cuerpo. Además, podrá repetir sus tiradas fallidas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15306,7 +15347,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="d89d-3ce7-fb1a-1847" name="Estoque sangriento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Poder de penetración. Si el portador mata a un oponente en un desafío, obtiene inmediatamente un bonificador extraordinario de +1D3 al resultado del combate para esa ronda.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Poder de penetración. Si el portador mata a un oponente en un desafío, obtiene inmediatamente un bonificador extraordinario de +1D3 al resultado del combate para esa ronda.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15326,7 +15367,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="1287-ec7f-1b32-0632" name="Bastón de poder" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Puede guardar un dado de energía o dispersión para usarlo en la siguiente fase de magia. Mientras tenga un dado guardado, el portador suma +2 a su fuerza en cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Puede guardar un dado de energía o dispersión para usarlo en la siguiente fase de magia. Mientras tenga un dado guardado, el portador suma +2 a su fuerza en cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15345,7 +15386,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="e7d5-f7a6-8439-345e" name="Espada de energía maldita" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada con la espada en combate cuerpo a cuerpo a un enemigo (que no tenga la regla especial No muerto o Demonio), el portador genera un dado de energía adicional en su próxima fase de magia. Tan sólo el portador podrá utilizar esos dados de energía adicionales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada herida causada con la espada en combate cuerpo a cuerpo a un enemigo (que no tenga la regla especial No muerto o Demonio), el portador genera un dado de energía adicional en su próxima fase de magia. Tan sólo el portador podrá utilizar esos dados de energía adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15364,7 +15405,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="4026-3e0a-d430-4859" name="Dreandora de sangre" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos de la Drenadora de Sangre se resuelven con +1F. Por cada herida causada en cuerpo a cuerpo con esta espada, el portador podrá restablecer una de las heridas que hubiese sufrido con anterioridad durante la batalla. Esto sustituye a la regla habitual de recuperar heridas por la regla especial Vampiro.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los impactos de la Drenadora de Sangre se resuelven con +1F. Por cada herida causada en cuerpo a cuerpo con esta espada, el portador podrá restablecer una de las heridas que hubiese sufrido con anterioridad durante la batalla. Esto sustituye a la regla habitual de recuperar heridas por la regla especial Vampiro.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15391,7 +15432,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="ce5e-08b2-65d6-5314" name="Armadura maldita" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura de placas (salvación por armadura de 4+). Proporciona al portador +1 Resistencia, pero reduce su I a 1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura de placas (salvación por armadura de 4+). Proporciona al portador +1 Resistencia, pero reduce su I a 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15410,7 +15451,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="242c-27cf-21df-2cf7" name="Coraza de acero negro" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador puede repetir todas sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador puede repetir todas sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15429,7 +15470,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="28f3-7714-6f93-fdd2" name="Coraza cadavérica" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune al golpe letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador es inmune al golpe letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15448,7 +15489,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="2d3d-abf9-2a31-7b1f" name="Armadura de la noche" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Los disparos contra el portador y su montura tendrán un penalizador adicional de -2 para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Los disparos contra el portador y su montura tendrán un penalizador adicional de -2 para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15475,7 +15516,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="85fa-5485-7f89-aeaf" name="Coraza de Drakenhof" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Sólo Vampiros. Armadura de placas (proporciona una tirada de salvación por armadura de 4+). El portador podrá recuperar heridas con un resultado de 2+ (en lugar del habitual 5+) al causar heridas en cuerpo a cuerpo gracias a su regla especial Vampiro.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Sólo Vampiros. Armadura de placas (proporciona una tirada de salvación por armadura de 4+). El portador podrá recuperar heridas con un resultado de 2+ (en lugar del habitual 5+) al causar heridas en cuerpo a cuerpo gracias a su regla especial Vampiro.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15502,7 +15543,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="27a7-4a8b-5ef4-a2f9" name="Capa de oscuridad" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">La Capa proporciona al portador las reglas especiales Piel escamosa (4+) y Regeneración (5+). Además, todos los disparos y ataques contra el portador tendrán un penalizador de -1 en su tirada para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">La Capa proporciona al portador las reglas especiales Piel escamosa (4+) y Regeneración (5+). Además, todos los disparos y ataques contra el portador tendrán un penalizador de -1 en su tirada para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15537,7 +15578,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="0193-feae-ed26-045f" name="El anillo de los Carstein" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo vampiros del clan Von Carstein. Un sólo uso. Si el portador muere, tira 1D6: con un resultado de 2+, volverá a la vida con una sola herida en cualquier punto a 12” o menos del lugar donde murió (puedes unirlo a una unidad).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo vampiros del clan Von Carstein. Un sólo uso. Si el portador muere, tira 1D6: con un resultado de 2+, volverá a la vida con una sola herida en cualquier punto a 12” o menos del lugar donde murió (puedes unirlo a una unidad).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15561,7 +15602,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="fff1-d1ff-72da-6b22" name="Corona de los condenados" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial de 5+ y la regla especial Estupidez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial de 5+ y la regla especial Estupidez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15580,7 +15621,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="5971-d19d-b86f-2775" name="Brazales de oro negro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial contra proyectiles de 3+ (tanto mundanos como mágicos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a su portador una tirada de salvación especial contra proyectiles de 3+ (tanto mundanos como mágicos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15596,7 +15637,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="5c6f-b805-5cac-c143" name="Anillo de la noche" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Todas las tiradas para impactar exitosas en cuerpo a cuerpo contra el portador deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Todas las tiradas para impactar exitosas en cuerpo a cuerpo contra el portador deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15620,7 +15661,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="b3cb-e45b-3955-8aea" name="Liber mortis" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Cada vez que el portador lance un hechizo nigromántico, puede lanzar un dado adicional (proporcionado por el libro). Si el resultado del dado adicional es un 1, el hechizo fallará automáticamente (a menos que se obtenga también una Fuerza irresistible).</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Cada vez que el portador lance un hechizo nigromántico, puede lanzar un dado adicional (proporcionado por el libro). Si el resultado del dado adicional es un 1, el hechizo fallará automáticamente (a menos que se obtenga también una Fuerza irresistible).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15644,7 +15685,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="e2bb-9d97-a8cd-d407" name="El ojo de Khemri" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Sólo Vampiros. El Ojo proporciona a su portador un nivel de magia adicional (hasta un máximo de 4). Además, el portador y la unidad en la que se incluya obtienen la regla especial Indesmoralizables.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Sólo Vampiros. El Ojo proporciona a su portador un nivel de magia adicional (hasta un máximo de 4). Además, el portador y la unidad en la que se incluya obtienen la regla especial Indesmoralizables.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15671,7 +15712,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="384c-016e-c7b8-56bb" name="Taslimán negro" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Permite a su portador guardar un dado de energía o dispersión al final de cualquier fase de magia para transformarlo en un dado del tipo que corresponda en la siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Permite a su portador guardar un dado de energía o dispersión al final de cualquier fase de magia para transformarlo en un dado del tipo que corresponda en la siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15687,7 +15728,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="61f5-d40b-cd11-7efb" name="Báculo del cráneo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del portador, el enemigo debe revelar todos sus objetos mágicos en un radio de 12” del portador. Además, podrás repetir la tirada en la tabla de disfunciones si el portador sufre una Disfunción mágica.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del portador, el enemigo debe revelar todos sus objetos mágicos en un radio de 12” del portador. Además, podrás repetir la tirada en la tabla de disfunciones si el portador sufre una Disfunción mágica.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15703,7 +15744,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="14d0-2808-0e88-545e" name="Familar necrótico" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El familiar necrótico permite repetir las tiradas de los dados de invocación de los hechizos Invocación de Nehek y Animar muertos que lance el portador. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El familiar necrótico permite repetir las tiradas de los dados de invocación de los hechizos Invocación de Nehek y Animar muertos que lance el portador. Aunque puedes representarlo con una pequeña miniatura de familiar, no puede ser atacado, y deberá retirarse si su dueño se retira como baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15727,7 +15768,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="0134-511b-1efd-69c3" name="Yelmo de la percepción" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Si el portador no está trabado en combate, todos los no muertos a 12” o menos pueden usar su HA en lugar de la propia cuando combate en cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Si el portador no está trabado en combate, todos los no muertos a 12” o menos pueden usar su HA en lugar de la propia cuando combate en cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15754,7 +15795,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="ed84-9464-2b02-76aa" name="Dedo siniestro" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Danza macabra de Vanhel (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Danza macabra de Vanhel (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15770,7 +15811,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="37f1-c3cf-8f3c-9563" name="Amuleto de huesos" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Invocación de Nehek (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 2. Contiene el hechizo Invocación de Nehek (en su versión no potenciada) del Saber de Nigromancia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15786,7 +15827,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="fd05-9732-6b31-a196" name="Relicario de Vashanesh" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de potenciación que puede lanzarse sobre el portador y su propia unidad, y permanece un turno. Por la duración del conjuro, toda la unidad podrá repetir sus tiradas fallidas para herir cuyo resultado sea de 1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 4. Contiene un hechizo de potenciación que puede lanzarse sobre el portador y su propia unidad, y permanece un turno. Por la duración del conjuro, toda la unidad podrá repetir sus tiradas fallidas para herir cuyo resultado sea de 1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15802,7 +15843,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="77c4-bcd5-8e86-5746" name="Icono del visir" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Cada vez que el portador o su unidad obtengan un resultado de dobles al efectuar un chequeo de Liderazgo, se considerará que han obtenido un resultado de doble uno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Cada vez que el portador o su unidad obtengan un resultado de dobles al efectuar un chequeo de Liderazgo, se considerará que han obtenido un resultado de doble uno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15818,7 +15859,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="a1af-6764-fbbd-8e38" name="El libro maldito" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todas las tiradas para impactar contra el portador y la unidad en la que se encuentre aplicarán un penalizador de -1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todas las tiradas para impactar contra el portador y la unidad en la que se encuentre aplicarán un penalizador de -1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15842,7 +15883,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="e829-1b85-6bf7-1ee0" name="Estandarte de Drakenhof" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y toda su unidad, así como sus destacamentos, obtiene la regla especial Regeneración (4+). </characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y toda su unidad, así como sus destacamentos, obtiene la regla especial Regeneración (4+). </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15869,7 +15910,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="a3d8-cf9a-fc26-d8bb" name="Estandarte de las pesadillas eternas" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Permite a la unidad contar hasta +4 por filas al calcular los resultados de los combates en los que participe, en lugar del máximo de +3 habitual.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Permite a la unidad contar hasta +4 por filas al calcular los resultados de los combates en los que participe, en lugar del máximo de +3 habitual.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15885,7 +15926,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="ff9f-cff6-dd20-6ec0" name="Icono de muerte" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad ven aumentados sus atributos de Movimiento e Iniciativa en +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad ven aumentados sus atributos de Movimiento e Iniciativa en +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15901,7 +15942,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="46ae-40f2-db47-50d0" name="Estandarte de los lamentos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 y descartando el resultado más bajo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 y descartando el resultado más bajo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15917,7 +15958,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="64ef-0f23-bc6e-b2b8" name="Pabellón de Templehof" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad obtienen la regla especial Cruzar (elementos acuáticos). Además, cada vez que la unidad reciba los efectos de los hechizos Danza macabra de Vanhel e Invocación de Nehek, éstos afectarán también a los destacamentos de esa unidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad obtienen la regla especial Cruzar (elementos acuáticos). Además, cada vez que la unidad reciba los efectos de los hechizos Danza macabra de Vanhel e Invocación de Nehek, éstos afectarán también a los destacamentos de esa unidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15939,7 +15980,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="0554-3d92-fbc0-44fe" name="Bandera del conde" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad obtienen la regla especial Sangre fría; además, sufrirán una herida menos de las que les correspondiesen si pierden un combate y fallan su chequeo de Inestabilidad.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y su unidad obtienen la regla especial Sangre fría; además, sufrirán una herida menos de las que les correspondiesen si pierden un combate y fallan su chequeo de Inestabilidad.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15966,7 +16007,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="6f89-74cd-ee91-69a0" name="Estandarte de los túmulos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo tumularios, grandes espaderos tumularios y caballería tumularia. Todos los tumularios de la unidad (incluye señores tumularios) obtienen un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo tumularios, grandes espaderos tumularios y caballería tumularia. Todos los tumularios de la unidad (incluye señores tumularios) obtienen un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15988,7 +16029,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="edce-2fd3-2b53-a78a" name="Encarnación de la muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Ten en cuenta que todos los Von Carstein poseen este poder, y no cuenta para el número máximo de Poderes Vampíricos que pueden adquirir.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Ten en cuenta que todos los Von Carstein poseen este poder, y no cuenta para el número máximo de Poderes Vampíricos que pueden adquirir.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16003,7 +16044,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="d3fa-f684-3974-c71b" name="Señor de las legiones" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje puede, con los hechizos Iinvocación de Nehek y Animar muertos, aumentar el número de las unidades de Leva sylvana, Milicia sylvana y Leva de tiradores por encima de su tamaño inicial (sigue estando limitado por su máximo de unidad).</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje puede, con los hechizos Iinvocación de Nehek y Animar muertos, aumentar el número de las unidades de Leva sylvana, Milicia sylvana y Leva de tiradores por encima de su tamaño inicial (sigue estando limitado por su máximo de unidad).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16018,7 +16059,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="0264-b3bd-f5ed-b752" name="Señor de la no muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de leva sylvana, milicia sylvana y leva de tiradores suma +1 por dado de invocación.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de leva sylvana, milicia sylvana y leva de tiradores suma +1 por dado de invocación.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16033,7 +16074,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="ac85-a88d-3e92-b052" name="Invocar a las criaturas de la noche" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros (o lobos espectrales) y vargheist, suma +1 por dado de invocación.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Cada vez que el vampiro utilice los hechizos Invocación de Nehek o Animar muertos sobre unidades de murciélagos vampiro, lobos siniestros (o lobos espectrales) y vargheist, suma +1 por dado de invocación.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16048,7 +16089,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="f2e4-9cb4-42f3-7a1e" name="Honor o muerte" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Orgullo marcial. Puede repetir todas sus tiradas para impactar no superadas en los desafíos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Orgullo marcial. Puede repetir todas sus tiradas para impactar no superadas en los desafíos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16066,7 +16107,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="55d4-76c1-30ab-ac23" name="Horror inmortal" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Si el vampiro acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Si el vampiro acaba con un personaje u oficial enemigo en un desafío, podrá restaurar inmediatamente una herida que hubiese sufrido previamente durante la batalla, y la unidad en la que estuviese incluido dicho oficial o personaje quedará Apabullada hasta el final de la fase de combate en curso.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16081,7 +16122,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="76fd-bc9b-e64d-744a" name="Férrea voluntad" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos del vampiro sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Todas las miniaturas no muertas amigas a 12&quot; o menos del vampiro sufren una herida menos como resultado de perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16096,7 +16137,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="2aae-18f4-bb0b-49b1" name="Mirada hipnótica" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Los enemigos tendrán un penalizador de -1 en sus tiradas para impactar en combate cuerpo a cuerpo contra el vampiro. No afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Los enemigos tendrán un penalizador de -1 en sus tiradas para impactar en combate cuerpo a cuerpo contra el vampiro. No afecta a miniaturas con la regla especial No muerto o Demonio.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16111,7 +16152,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="3aac-d3ee-37d9-2cbd" name="Maldición de los Von Carstein" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje obtiene las reglas especiales Estupidez, Furia asesina y Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje obtiene las reglas especiales Estupidez, Furia asesina y Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16131,7 +16172,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="cc96-4ee8-003e-fce4" name="Forma de murciélago" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Volar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene la regla especial Volar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16149,7 +16190,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="ea30-e300-d40d-45cd" name="Erudito de lo arcano" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro selecciona libremente sus hechizos en lugar de determinarlos al azar como el resto de magos, de entre sus saberes disponibles. Además, proporciona un bonificador de +1 a todos sus intentos de lanzar hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro selecciona libremente sus hechizos en lugar de determinarlos al azar como el resto de magos, de entre sus saberes disponibles. Además, proporciona un bonificador de +1 a todos sus intentos de lanzar hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16164,7 +16205,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="dd0d-ff9c-d4bf-fa74" name="Estirpe de Sylvania" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene una tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro obtiene una tirada de salvación especial de 3+ que no puede efectuarse ante Ataques mágicos o hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16179,7 +16220,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="2b0d-4061-58af-4a67" name="Estudioso de la nigromancia" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El personaje aumenta en 1 sus niveles de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El personaje aumenta en 1 sus niveles de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16194,7 +16235,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="bf35-7029-c983-a785" name="Estirpe del conde" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">Un vampiro (y su montura) con este poder nunca podrá perder más de una herida como resultado de perder un combate y fallar el chequeo de desmoralización.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">Un vampiro (y su montura) con este poder nunca podrá perder más de una herida como resultado de perder un combate y fallar el chequeo de desmoralización.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16209,7 +16250,7 @@ Sombras, Magia Oscura o Nigromancia.</description>
           <profiles>
             <profile id="a628-0532-6f57-d90f" name="Forma espectral" hidden="false" typeId="e483-859c-97c8-fa19" typeName="Poder vampírico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="86cf-6257-bcc7-d4f6">El vampiro es etéreo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="86cf-6257-bcc7-d4f6">El vampiro es etéreo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -16229,9 +16270,6 @@ Sombras, Magia Oscura o Nigromancia.</description>
     </rule>
     <rule id="5b50-ef78-5aa5-ef12" name="Vampiro" hidden="false">
       <description>Los vampiros son No muertos, aunque pueden realizar movimientos de marcha como si no fuesen No muertos. Una unidad de No muertos bajo el mando de un vampiro unido a ella también podrá realizar movimientos de marcha. Además, cada vez que un personaje (eso incluye a los oficiales) con la regla especial Vampiro causa heridas a un oponente (que no tenga la regla especial No muerto o Demonio) en combate cuerpo a cuerpo, tira 1D6 por cada herida causada: con cada resultado de 5+, el vampiro podrá sanarse una de las heridas sufridas con anterioridad durante la batalla.</description>
-    </rule>
-    <rule id="0205-14a2-5fc2-e5ed" name="Clan Von Carstein" hidden="false">
-      <description>Los Von Carstein son Vampiros; además, se aplican las siguientes reglas especiales: Tienen el poder vampírico “Encarnación de la muerte” (Si hay uno o más vampiros con este poder en un combate, suma +1 al resultado del combate del bando del Von Carstein). Puede llevar armaduras y lanzar hechizos.</description>
     </rule>
     <rule id="8dcc-1716-c67b-2a37" name="Destacamentos" hidden="false">
       <description>Los regimientos de infantería de los Von Carstein tienen un método de lucha característico, heredado de la disciplina Imperial de los soldados cuando estaban vivos: el sistema de Destacamentos. Algunas unidades de ejército tienen la regla especial Destacamentos, lo cual se indica en su descripción. Este tipo de formación se compone de una Unidad Principal (Leva sylvana, Milicia Sylvana, Leva de tiradores, Tumularios y Grandes espaderos tumularios) y hasta dos destacamentos (Milicia sylvana, leva sylvana y Leva de tiradores). Se aplican las siguientes reglas especiales a los destacamentos:

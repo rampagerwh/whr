@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="a132-ff2a-7f39-4dc4" name="Bretonia" revision="411" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="a132-ff2a-7f39-4dc4" name="Bretonia" revision="417" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corocotta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="1" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="4d8f-04d7-ddc3-0402" name="Virtudes">
       <characteristicTypes>
-        <characteristicType id="6a83-733d-472a-7834" name="Propiedades"/>
+        <characteristicType id="6a83-733d-472a-7834" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
     <profileType id="c965-31a4-2ea4-4c78" name="Votos">
       <characteristicTypes>
-        <characteristicType id="3638-4665-23c3-c25d" name="Propiedades"/>
+        <characteristicType id="3638-4665-23c3-c25d" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -2291,6 +2291,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="0c48-75bd-f7ac-f74a" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="85.0"/>
           </costs>
@@ -2413,6 +2416,9 @@
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="34c5-1c73-649d-257c" name="Lanzavirotes" hidden="false" targetId="8cfc-07df-9039-5a44" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="45.0"/>
           </costs>
@@ -6536,7 +6542,7 @@
               <profiles>
                 <profile id="7ed3-a923-8504-694a" name="Flecha negra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Flecha Mágica. Un sólo uso. Puede utilizarse para efectuar un único disparo de su Arco Largo que se resolverá con F6 y la regla especial Heridas Múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Flecha Mágica. Un sólo uso. Puede utilizarse para efectuar un único disparo de su Arco Largo que se resolverá con F6 y la regla especial Heridas Múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6742,7 +6748,7 @@
               <profiles>
                 <profile id="3ad8-c3b9-2e51-f44b" name="Cáliz de pociones" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Al inicio de cada turno has de elegir uno de las opciones descritas en la tabla incluida a continuación. Morgana podrá hacer que una miniatura situada a 6“ menos de ella (puede ser ella misma) se beneficie del efecto escogido. Los efectos del Caliz duran hasta el inicio de tu siguiente turno.
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Al inicio de cada turno has de elegir uno de las opciones descritas en la tabla incluida a continuación. Morgana podrá hacer que una miniatura situada a 6“ menos de ella (puede ser ella misma) se beneficie del efecto escogido. Los efectos del Caliz duran hasta el inicio de tu siguiente turno.
 Viento     Efecto
 Fuego     La miniatura obtendrá un bonificador de +1 a su atributo de Ataques y la regla especial Ataques Flamígeros.
 Muerte     Los ataques efectuados por la miniatura obtendrá la Regla especial Golpe letal.
@@ -6767,7 +6773,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="a907-b83a-968f-3f92" name="Espejo mágico" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Al inicio de cada fase de magia enemiga puedes elegir un hechicero enemigo, los intentos de dispersión efectuados por Morgana contra hechizos lanzados por el hechicero elegido obtendrán un bonificador de +2.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Al inicio de cada fase de magia enemiga puedes elegir un hechicero enemigo, los intentos de dispersión efectuados por Morgana contra hechizos lanzados por el hechicero elegido obtendrán un bonificador de +2.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6783,7 +6789,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="6d9c-e8db-8b17-7e7e" name="Fajín de oro" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Morgana una tirada de salvación especial (4+) y la regla especial Inmune a Veneno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Morgana una tirada de salvación especial (4+) y la regla especial Inmune a Veneno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6802,7 +6808,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="256f-73b6-19cc-73e1" name="Familiar sapo" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Otorga a Morgana un dado de energía adicional en cada una de sus fases de Magia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Otorga a Morgana un dado de energía adicional en cada una de sus fases de Magia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6935,7 +6941,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="0e0f-b216-9d37-53ce" name="Virtud del estoicismo" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Otorga la regla especial Tozudez.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Otorga la regla especial Tozudez.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6981,7 +6987,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="efc9-38a4-7d42-5258" name="Espada de Couronne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. La espada tiene la regla especial Golpe Letal Heroico contra miniaturas con la regla especial No muerto. Adicionalmente, al inicio de cada fase de combate cuerpo a cuerpo, todas las miniaturas con la regla especial No muerto que se encontrasen en contacto peana con peana con el portador de la espada deberán realizar un chequeo de Resistencia, sufriendo una herida sin tirada de salvación por armadura si lo fallan. El portador de la espada y la unidad de la que forme parte será inmune a los efectos de Miedo o Terror provocados por miniaturas con la regla especial No muerto.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. La espada tiene la regla especial Golpe Letal Heroico contra miniaturas con la regla especial No muerto. Adicionalmente, al inicio de cada fase de combate cuerpo a cuerpo, todas las miniaturas con la regla especial No muerto que se encontrasen en contacto peana con peana con el portador de la espada deberán realizar un chequeo de Resistencia, sufriendo una herida sin tirada de salvación por armadura si lo fallan. El portador de la espada y la unidad de la que forme parte será inmune a los efectos de Miedo o Terror provocados por miniaturas con la regla especial No muerto.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7024,7 +7030,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="b512-5957-b0d8-e46c" name="Escudo del grial" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Sólo caballeros. Todos los impactos exitosos realizados en cuerpo a cuerpo contra el portador de este escudo por miniaturas con la regla especial No muerto deberán ser repetidos.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Sólo caballeros. Todos los impactos exitosos realizados en cuerpo a cuerpo contra el portador de este escudo por miniaturas con la regla especial No muerto deberán ser repetidos.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7043,7 +7049,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="505f-03e7-4499-205e" name="Vial sagrado" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al inicio de cualquier fase de juego. Otorgando al portador un bonificador de +1 a Fuerza y Resistencia hasta el final de dicha fase y recuperando una de las heridas que hubiese perdido anteriormente durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puede utilizarse al inicio de cualquier fase de juego. Otorgando al portador un bonificador de +1 a Fuerza y Resistencia hasta el final de dicha fase y recuperando una de las heridas que hubiese perdido anteriormente durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7146,7 +7152,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="801c-15fc-b6f1-4e61" name="Virtud del ardor caballeresco" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Por cada miniatura retirada como baja a causa de los ataques efectuados en combate por el guerrero podrá efectuarse un ataque adicional durante la siguiente fase de combate.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Por cada miniatura retirada como baja a causa de los ataques efectuados en combate por el guerrero podrá efectuarse un ataque adicional durante la siguiente fase de combate.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7189,7 +7195,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="c5e4-cfa0-ab25-a07e" name="Espada de Bourbonne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma Mágica. Otorga a Roland +1 Fuerza y +1 Ataque en combate cuerpo a cuerpo, y la regla especial Poder de penetración.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma Mágica. Otorga a Roland +1 Fuerza y +1 Ataque en combate cuerpo a cuerpo, y la regla especial Poder de penetración.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7221,7 +7227,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="9ee4-8a26-70e5-1db7" name="Barda del paso natatorio" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Barda. Roland y la unidad en la que se encuentre obtienen las reglas especiales Cruzar (elementos acuáticos) y Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Barda. Roland y la unidad en la que se encuentre obtienen las reglas especiales Cruzar (elementos acuáticos) y Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7258,7 +7264,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="f6d2-4148-18d4-6c64" name="Cuerno de guerra de Roland" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene un hechizo de maldición que toma como objetivo a todas las unidades enemigas con las reglas especiales Volar o Flotar del campo de batalla, y permanece un turno. Por la duración del hechizo, cada vez que las unidades afectadas vayan a mover deberán hacer antes un chequeo de liderazgo si lo fallan, no podrán volar o flotar y deberán utilizar su valor de movimiento por tierra.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos. Nivel de energía 4. Contiene un hechizo de maldición que toma como objetivo a todas las unidades enemigas con las reglas especiales Volar o Flotar del campo de batalla, y permanece un turno. Por la duración del hechizo, cada vez que las unidades afectadas vayan a mover deberán hacer antes un chequeo de liderazgo si lo fallan, no podrán volar o flotar y deberán utilizar su valor de movimiento por tierra.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7274,7 +7280,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="b3a1-47ff-2c07-34f1" name="Pañuelo de la princesa Helena" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga al portador y a su montura la regla especial Carga Devastadora.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga al portador y a su montura la regla especial Carga Devastadora.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7368,6 +7374,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
       <categoryLinks>
         <categoryLink id="4425-12da-33a9-f5b4" name="Comandantes" hidden="false" targetId="4c6f72647323232344415441232323" primary="true"/>
         <categoryLink id="e37d-87f4-ad8d-1e31" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+        <categoryLink id="bfca-4fb3-c63c-16e4" name="Portaestandarte de batalla" hidden="false" targetId="f277-3fe2-22c5-0650" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="c7d1-2e44-7d54-1bcd" name="Virtudes" hidden="false" collective="false" import="true" type="upgrade">
@@ -7384,7 +7391,7 @@ Luz     La miniatura obtiene la Regla Especial Resistencia Mágica 2</characteri
               <profiles>
                 <profile id="39be-f13b-66c2-10c5" name="Ador caballeresco" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Por cada miniatura retirada como baja a causa de los ataques efectuados en
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Por cada miniatura retirada como baja a causa de los ataques efectuados en
 combate por el guerrero podrá efectuarse un ataque adicional durante la siguiente fase de combate.</characteristic>
                   </characteristics>
                 </profile>
@@ -7412,7 +7419,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="3967-fd74-c95e-fe92" name="Espada de Lyonesse" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los objetos mágicos de las miniaturas enemigas en contacto peana con peana con Repanse perderán sus propiedades mágicas y deberán considerarse objetos mundanos. Los efectos de esta espada no anulará el poder de las Armas Mágicas, que conservarán sus propiedades mágicas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los objetos mágicos de las miniaturas enemigas en contacto peana con peana con Repanse perderán sus propiedades mágicas y deberán considerarse objetos mundanos. Los efectos de esta espada no anulará el poder de las Armas Mágicas, que conservarán sus propiedades mágicas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7455,7 +7462,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="717b-27ac-f1a1-cc21" name="Estandarte de Lys" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Al inicio de cada una de las fases de magia del enemigo, una vez obtenidos los Dados de energía, el enemigo deberá descartar uno de los dados de energía; a continuación efectúa una tirada de 1D6: con un resultado de 4+ todas las unidades aliadas a 12” o menos de Repanse obtendrán un bonificador de +1 a sus tiradas para impactar y un bonificador +1 a los resultados de los combates en los que participasen, estos efectos durarán hasta el inicio de la siguiente fase de magia enemiga.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Al inicio de cada una de las fases de magia del enemigo, una vez obtenidos los Dados de energía, el enemigo deberá descartar uno de los dados de energía; a continuación efectúa una tirada de 1D6: con un resultado de 4+ todas las unidades aliadas a 12” o menos de Repanse obtendrán un bonificador de +1 a sus tiradas para impactar y un bonificador +1 a los resultados de los combates en los que participasen, estos efectos durarán hasta el inicio de la siguiente fase de magia enemiga.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7591,7 +7598,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="48e2-7990-f992-5861" name="Virtud del grial" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7634,7 +7641,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="d277-0a96-cc9e-28d5" name="Bestial maza de Bastonne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma se resolverán con un bonificador adicional de +2 Fuerza y la regla especial Heridas múltiples 1D3.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con este arma se resolverán con un bonificador adicional de +2 Fuerza y la regla especial Heridas múltiples 1D3.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7666,7 +7673,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="a8a4-9824-8b89-b4ea" name="Escudo de Bohemond" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Los ataques efectuados en combate contra Bohemond por miniaturas del tipo: Bestia, Bestia Monstruosa o Monstruo deberán repetir sus tiradas exitosas al impactarle.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Los ataques efectuados en combate contra Bohemond por miniaturas del tipo: Bestia, Bestia Monstruosa o Monstruo deberán repetir sus tiradas exitosas al impactarle.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7825,7 +7832,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="a073-490f-5c01-cc59" name="La lanza virtuosa" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballeria. Los ataques efectuados usando esta lanza contra miniaturas del tipo Monstruo o Bestia Monstruosa obtendrán la Regla especial Golpe Letal Heroico.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballeria. Los ataques efectuados usando esta lanza contra miniaturas del tipo Monstruo o Bestia Monstruosa obtendrán la Regla especial Golpe Letal Heroico.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7856,7 +7863,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="e1de-3279-4057-a4bd" name="Yelmo del asesino de dragones" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (otorga una tirada de salvación por armadura de 6+). Jasperre es completamente inmune a los efectos de cualquier Arma de Aliento.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (otorga una tirada de salvación por armadura de 6+). Jasperre es completamente inmune a los efectos de cualquier Arma de Aliento.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7872,7 +7879,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="4d4e-977f-d64b-0ba8" name="Escama de Malgrimace" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Los ataques realizados contra Jasperre por miniaturas del Tipo Monstruo o Bestia Monstruosa deberán aplicar un penalizador de -1 a sus tiradas para herir.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Los ataques realizados contra Jasperre por miniaturas del Tipo Monstruo o Bestia Monstruosa deberán aplicar un penalizador de -1 a sus tiradas para herir.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -7976,7 +7983,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="c264-878a-7241-6b79" name="Virtud del grial" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8235,6 +8242,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
       <categoryLinks>
         <categoryLink id="e666-7554-3016-4848" name="Héroes" hidden="false" targetId="4865726f657323232344415441232323" primary="true"/>
         <categoryLink id="5812-94c8-b89f-200e" name="Personajes" hidden="false" targetId="e839-bd6b-7e36-e758" primary="false"/>
+        <categoryLink id="8f57-a3c8-b24f-933c" name="Portaestandarte de batalla" hidden="false" targetId="f277-3fe2-22c5-0650" primary="false"/>
       </categoryLinks>
       <selectionEntries>
         <selectionEntry id="f1e7-6001-2ccf-0cea" name="Virtudes" hidden="false" collective="false" import="true" type="upgrade">
@@ -8251,7 +8259,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="c155-a443-f5d0-9ffa" name="Virtud del grial" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8318,7 +8326,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="d1a6-fdb3-4566-cde0" name="Filo crepuscular" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los resultados naturales de 6 obtenidos a causa de los ataques efectuados con esta espada negarán la tirada de salvación por armadura del enemigo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los resultados naturales de 6 obtenidos a causa de los ataques efectuados con esta espada negarán la tirada de salvación por armadura del enemigo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8349,7 +8357,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="7ed6-4e75-782b-5f08" name="Estandarte de la dama del lago" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Este estandarte confiere la regla especial Tozudez a todas las unidades aliadas situadas a 18” o menos de su portador.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Este estandarte confiere la regla especial Tozudez a todas las unidades aliadas situadas a 18” o menos de su portador.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8486,7 +8494,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="5a03-6130-f7a1-bded" name="Báculo de la lechuza" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Los Ritos de Taal y los hechizos de los tipos Proyectil mágico, potenciación y maldición que lance Bagrian verán aumentado su alcance en 6”. Si el hechizo disponía de radio, este no se verá afectado por este efecto.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Los Ritos de Taal y los hechizos de los tipos Proyectil mágico, potenciación y maldición que lance Bagrian verán aumentado su alcance en 6”. Si el hechizo disponía de radio, este no se verá afectado por este efecto.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8505,7 +8513,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="4fed-5f47-e7e8-d1f7" name="Colgante ámbar" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Al inicio de cualquier fase (tuya o del enemigo) podrás elegir utilizar el poder del Colgante para hacer que Bagrian recupere todas las heridas sufridas durante la batalla (esto incluye la herida adicional que obtiene de la Bendición de Taal).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un sólo uso. Al inicio de cualquier fase (tuya o del enemigo) podrás elegir utilizar el poder del Colgante para hacer que Bagrian recupere todas las heridas sufridas durante la batalla (esto incluye la herida adicional que obtiene de la Bendición de Taal).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8606,7 +8614,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="a19d-df74-7e7f-023c" name="Virtud del cruzado" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Todas las miniaturas del ejercito de Nehekhara Odiarán a Odo</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Todas las miniaturas del ejercito de Nehekhara Odiarán a Odo</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8814,7 +8822,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="48dc-2b68-4920-7e68" name="Mangual de Fracasse" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mangual. Sólo caballeros. Por cada impacto exitoso causado con el mangual a un enemigo con un arma mágica, tira 1D6: si obtienes al menos un resultado de 4+, el arma mágica queda destruida y pasa a ser un arma mundana de su mismo tipo.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mangual. Sólo caballeros. Por cada impacto exitoso causado con el mangual a un enemigo con un arma mágica, tira 1D6: si obtienes al menos un resultado de 4+, el arma mágica queda destruida y pasa a ser un arma mundana de su mismo tipo.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8909,7 +8917,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="dda9-c553-e679-ac5b" name="Virtud del grial" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8977,7 +8985,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="e984-043d-8fa0-f78a" name="Filo real de Couronne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados usando esta espada obtendrán la regla especial impactos Múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados usando esta espada obtendrán la regla especial impactos Múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -8997,7 +9005,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="86b1-4a4d-bb63-46af" name="Escudo del león" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo (otorga una tirada de salvación por armadura de 6+). Los ataques enemigos dirigidos contra Louen o su montura deberán aplicar un penalizador de -1 a sus tiradas para impactar. Adicionalmente Louen y su montura son inmunes a los efectos de los hechizos del tipo Maldición.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo (otorga una tirada de salvación por armadura de 6+). Los ataques enemigos dirigidos contra Louen o su montura deberán aplicar un penalizador de -1 a sus tiradas para impactar. Adicionalmente Louen y su montura son inmunes a los efectos de los hechizos del tipo Maldición.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9016,7 +9024,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="e090-915c-db9b-9850" name="Corona real de Bretonia" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Otorga un bonificador de +1 a la resolución de todos los combates en los que participen unidades aliadas situadas a 12” o menos del portador de la Corona.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Otorga un bonificador de +1 a la resolución de todos los combates en los que participen unidades aliadas situadas a 12” o menos del portador de la Corona.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9163,7 +9171,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="b392-21a8-2b8f-57f4" name="Espada del dolor" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada obtendrán la regla especial poder de penetración. Al inicio de cada combate podrás hacer que el caballero obtenga 1D6 ataques adicionales o que los ataques efectuados con esta espada se resuelvan con un bonificador de +2 a la Fuerza.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques realizados con esta espada obtendrán la regla especial poder de penetración. Al inicio de cada combate podrás hacer que el caballero obtenga 1D6 ataques adicionales o que los ataques efectuados con esta espada se resuelvan con un bonificador de +2 a la Fuerza.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9294,7 +9302,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="d4bc-06cb-6665-c04e" name="Virtud del grial" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9943,7 +9951,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="2925-b11a-ddfc-5058" name="Aflicción" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados con esta espada se resolverán con +1F y la regla especial Golpe letal.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -9987,7 +9995,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="c78a-af01-c5b6-0d7e" name="La oscura gema de la condenación" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Richter una tirada de Salvación Especial de 4+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10029,7 +10037,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
                   <profiles>
                     <profile id="5afa-0c08-171f-791c" name="Estandarte de los malditos" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Otorga al portador y la unidad en la que se encuentre la regla especial “Ni un paso atrás”.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10357,7 +10365,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
                   <profiles>
                     <profile id="eacb-c897-4e0b-a32f" name="Espada rúnica de Skarloc" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por Skarloc obtendrán un bonificador de +1 a sus tiradas para impactar y se resolverán con +1 Fuerza. Los ataques enemigos dirigidos contra Skarloc deberán aplicar un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques efectuados por Skarloc obtendrán un bonificador de +1 a sus tiradas para impactar y se resolverán con +1 Fuerza. Los ataques enemigos dirigidos contra Skarloc deberán aplicar un penalizador de -1 en sus tiradas para impactar.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10394,7 +10402,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
                   <profiles>
                     <profile id="0e83-1032-0401-0de8" name="Emblema de la reina Hada" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Skarloc una tirada de salvación Especial (5+) y la regla especial Inmune a veneno.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Skarloc una tirada de salvación Especial (5+) y la regla especial Inmune a veneno.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10553,7 +10561,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
                   <profiles>
                     <profile id="1d1d-a49a-9c69-ed80" name="Estandarte de Torothal" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Estandarte mágico. Las miniaturas enemigas no podrán asignar ataques o disparos sobre Kaia mientras queden otras miniaturas de su unidad con vida. Las unidades enemigas que deseasen efectuar una carga o disparar contra la unidad en la que se encontrase este estandarte deberán antes superar con éxito un chequeo de liderazgo utilizando 3D6 y descartando el resultado menor, si lo fallan podrán declarar carga o disparar contra otras unidades de la manera habitual.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Estandarte mágico. Las miniaturas enemigas no podrán asignar ataques o disparos sobre Kaia mientras queden otras miniaturas de su unidad con vida. Las unidades enemigas que deseasen efectuar una carga o disparar contra la unidad en la que se encontrase este estandarte deberán antes superar con éxito un chequeo de liderazgo utilizando 3D6 y descartando el resultado menor, si lo fallan podrán declarar carga o disparar contra otras unidades de la manera habitual.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10794,7 +10802,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
                   <profiles>
                     <profile id="920a-a7f9-7100-2e20" name="Cuerno de bronce" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Instrumento. Araflane, el músico de la unidad, puede hacer sonar este cuerno en el momento que fueses a efectuar una carga. Las miniaturas de la unidad causarán Miedo hasta el final del turno de jugador.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Instrumento. Araflane, el músico de la unidad, puede hacer sonar este cuerno en el momento que fueses a efectuar una carga. Las miniaturas de la unidad causarán Miedo hasta el final del turno de jugador.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -10828,6 +10836,11 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -10864,7 +10877,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="c3cb-10d8-282e-dba4" name="Virtud de la segunda guerra" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Jules y cualquier unidad de caballeros de su mismo ejército obtienen la regla especial Odio (orcos y goblins).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Jules y cualquier unidad de caballeros de su mismo ejército obtienen la regla especial Odio (orcos y goblins).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10936,7 +10949,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="e1d1-1fe5-0dd9-d9c7" name="Espada de Fontainebleu" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques con esta espada se resuelven con +1F por cada ataque del portador después del primero que impacte exitosamente esa fase de combate (Si Jules impacta con un sólo ataque, éste se resolverá con F4; si impacta con 2 ataques, ambos se resolverán con F5; si impacta con 3, los tres se resolverán con F6, y si impacta los cuatro ataques, se resolverán con F7).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Los ataques con esta espada se resuelven con +1F por cada ataque del portador después del primero que impacte exitosamente esa fase de combate (Si Jules impacta con un sólo ataque, éste se resolverá con F4; si impacta con 2 ataques, ambos se resolverán con F5; si impacta con 3, los tres se resolverán con F6, y si impacta los cuatro ataques, se resolverán con F7).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -10979,7 +10992,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="3017-96a5-d431-c770" name="Lapislázula de la dama" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Jules puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Jules puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11025,7 +11038,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
             <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="ff3a-9b3f-0ec7-5165" type="max"/>
           </constraints>
           <entryLinks>
-            <entryLink id="decb-4781-f6fa-3a75" name="Caballo de guerra con barda" hidden="false" collective="false" import="true" targetId="fe15-8d32-fe6a-2247" type="selectionEntry">
+            <entryLink id="decb-4781-f6fa-3a75" name="Corcel bretoniano" hidden="false" collective="false" import="true" targetId="6daa-3789-c473-4603" type="selectionEntry">
               <constraints>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="5055-2914-e06d-7842" type="max"/>
                 <constraint field="selections" scope="parent" value="1.0" percentValue="false" shared="true" includeChildSelections="false" includeChildForces="false" id="7ba5-f0ee-8b97-f46f" type="min"/>
@@ -11318,6 +11331,11 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
           </conditions>
         </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
+          </conditions>
+        </modifier>
       </modifiers>
       <constraints>
         <constraint field="selections" scope="parent" value="0.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" id="c374-4562-3fe4-ed02" type="max"/>
@@ -11371,7 +11389,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="756d-2ff0-06a1-b7a1" name="Espada de la virtud" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador podrá repetir los resultados de 1 que obtuviese tanto al impactar como al herir con los ataques efectuados con esta espada. Los ataques efectuados con este arma obtienen la regla especial Heridas Múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. El portador podrá repetir los resultados de 1 que obtuviese tanto al impactar como al herir con los ataques efectuados con esta espada. Los ataques efectuados con este arma obtienen la regla especial Heridas Múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11403,7 +11421,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="bfc3-0cda-108a-b921" name="Sangredragón" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Tres usos por batalla. Puede utilizarse al inicio de cualquier fase de combate. La Sangredragón otorga al portador un bonificador de +1 a Fuerza hasta el final de dicha fase de combate, y recupera una de las heridas que hubiese sufrido el caballero anteriormente durante la batalla.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Tres usos por batalla. Puede utilizarse al inicio de cualquier fase de combate. La Sangredragón otorga al portador un bonificador de +1 a Fuerza hasta el final de dicha fase de combate, y recupera una de las heridas que hubiese sufrido el caballero anteriormente durante la batalla.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11457,7 +11475,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
               <profiles>
                 <profile id="cd90-6cce-16f0-14a0" name="Virtud del penitente" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">La miniatura que posea esta Virtud no podrá ser ni portaestandarte de Batalla del ejercito ni ser el General, aunque su liderazgo fuese el mayor. El Caballero obtiene la Regla Especial Indesmoralizable y su tirada de salvación Especial obtenida por la Bendición de la Dama mejora hasta 4+. El personaje no podrá equiparse con objetos mágicos o Reliquias de ningún tipo y no podrá unirse a unidad alguna. No podrá montar en Pegaso o Hipogrifo. </characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">La miniatura que posea esta Virtud no podrá ser ni portaestandarte de Batalla del ejercito ni ser el General, aunque su liderazgo fuese el mayor. El Caballero obtiene la Regla Especial Indesmoralizable y su tirada de salvación Especial obtenida por la Bendición de la Dama mejora hasta 4+. El personaje no podrá equiparse con objetos mágicos o Reliquias de ningún tipo y no podrá unirse a unidad alguna. No podrá montar en Pegaso o Hipogrifo. </characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11695,7 +11713,7 @@ combate por el guerrero podrá efectuarse un ataque adicional durante la siguien
                   <profiles>
                     <profile id="ba5d-d3f3-155f-30d6" name="Comte de Lyons" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
                       <characteristics>
-                        <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El estandarte proporciona a Gerrard y los Arblastiers una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). Sin embargo, si los Arblastiers huyen, este estandarte pierde todas sus propiedades mágicas.</characteristic>
+                        <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El estandarte proporciona a Gerrard y los Arblastiers una tirada de salvación especial de 6+ y la regla especial Resistencia mágica (1). Sin embargo, si los Arblastiers huyen, este estandarte pierde todas sus propiedades mágicas.</characteristic>
                       </characteristics>
                     </profile>
                   </profiles>
@@ -11816,7 +11834,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="852a-3725-8d21-16da" name="Trisquele" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona al Arúspice una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (1).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona al Arúspice una tirada de salvación especial de 4+ y la regla especial Resistencia mágica (1).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11835,7 +11853,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="24b7-d8c1-70fa-caad" name="Báculo Ogham" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Proporciona al Arúspice un bonificador de +1 en todas sus tiradas de dispersión.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Proporciona al Arúspice un bonificador de +1 en todas sus tiradas de dispersión.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11870,6 +11888,11 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
         <modifier type="set" field="hidden" value="true">
           <conditions>
             <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="a7c9-be80-08a2-aff3" type="equalTo"/>
+          </conditions>
+        </modifier>
+        <modifier type="set" field="hidden" value="true">
+          <conditions>
+            <condition field="selections" scope="roster" value="1.0" percentValue="false" shared="true" includeChildSelections="true" includeChildForces="false" childId="e01b-aa63-8a17-da7d" type="equalTo"/>
           </conditions>
         </modifier>
       </modifiers>
@@ -11913,7 +11936,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="e916-9aae-ca50-a84d" name="Virtud de la disciplina" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
                   <characteristics>
-                    <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Solo general del ejército. Una vez por batalla, al inicio de cualquiera de los turnos bretonianos, el personaje puede tratar de reorganizar la unidad en la que se encuentre (sólo si no está trabado en combate), para lo cual debe superar un chequeo de L. Si lo supera, puede realizar una reorganización gratuita inmediatamente. Sin embargo, si falla, no podrá mover ese turno.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Solo general del ejército. Una vez por batalla, al inicio de cualquiera de los turnos bretonianos, el personaje puede tratar de reorganizar la unidad en la que se encuentre (sólo si no está trabado en combate), para lo cual debe superar un chequeo de L. Si lo supera, puede realizar una reorganización gratuita inmediatamente. Sin embargo, si falla, no podrá mover ese turno.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11967,7 +11990,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="e523-befa-b265-1cb6" name="Tridente de Manann" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">El turno en que Alberic cargue, el tridente se considera una Lanza de Caballería con la regla Heridas Múltiples (1D3). En turnos posteriores (o si no carga) el Tridente da un modificador de +1F y Heridas Múltiples (1D3). Además, una vez por batalla, Alberic puede desatar el poder del Tridente. Se trata de un Arma de Aliento. Toda miniatura debajo de la plantilla sufrirá un impacto de Fuerza 3 (usa las reglas normales para impactos directos y parciales) y con la regla Ataques Mágicos. Cualquier unidad impactada por la plantilla deberá superar un chequeo de Liderazgo con 3D6 descartando el resultado más bajo. Si no lo supera, en su siguiente turno no podrá mover ni disparar (pero si reorganizarse). Si la unidad afectada estaba efectuando una carga, realiza el chequeo de Liderazgo igualmente. Si la carga es exitosa y lo supera no ocurre nada, pero si lo falla se considerará Apabullada hasta el final de esa fase de combate. En caso de Carga Fallida, o si la unidad estaba huyendo, no hay ningún efecto adicional.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">El turno en que Alberic cargue, el tridente se considera una Lanza de Caballería con la regla Heridas Múltiples (1D3). En turnos posteriores (o si no carga) el Tridente da un modificador de +1F y Heridas Múltiples (1D3). Además, una vez por batalla, Alberic puede desatar el poder del Tridente. Se trata de un Arma de Aliento. Toda miniatura debajo de la plantilla sufrirá un impacto de Fuerza 3 (usa las reglas normales para impactos directos y parciales) y con la regla Ataques Mágicos. Cualquier unidad impactada por la plantilla deberá superar un chequeo de Liderazgo con 3D6 descartando el resultado más bajo. Si no lo supera, en su siguiente turno no podrá mover ni disparar (pero si reorganizarse). Si la unidad afectada estaba efectuando una carga, realiza el chequeo de Liderazgo igualmente. Si la carga es exitosa y lo supera no ocurre nada, pero si lo falla se considerará Apabullada hasta el final de esa fase de combate. En caso de Carga Fallida, o si la unidad estaba huyendo, no hay ningún efecto adicional.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -11986,7 +12009,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="ff0f-0251-aafc-bf61" name="Armadura del señor del mar" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Esta armadura otorga a su portador la regla Regeneración (5+) e inmunidad contra la regla Poder de Penetración. Además, el portador y su unidad obtendrán la regla especial Cruzar (elementos acuáticos).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Esta armadura otorga a su portador la regla Regeneración (5+) e inmunidad contra la regla Poder de Penetración. Además, el portador y su unidad obtendrán la regla especial Cruzar (elementos acuáticos).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -12022,7 +12045,7 @@ Se trata de un hechizo de potenciación que puede lanzarse sobre una unidad amig
               <profiles>
                 <profile id="31f0-e2a8-3ef1-c2ad" name="Edicto de Bordeleaux" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Al inicio de la batalla, selecciona una única unidad con la regla Deber del Vasallo. Si obtiene un resultado de “Alegres beodos” de la regla Borrachuzos se considerará que ha obtenido “Envalentonados”. Los demás resultado se aplican con normalidad.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Al inicio de la batalla, selecciona una única unidad con la regla Deber del Vasallo. Si obtiene un resultado de “Alegres beodos” de la regla Borrachuzos se considerará que ha obtenido “Envalentonados”. Los demás resultado se aplican con normalidad.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13002,7 +13025,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="770b-6e17-017c-3dda" name="Casaca bendita de Mannan" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga a su portador Esquivar (5+). Los resultados de 6 para impactar a Van Klumf deberán repetirse.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga a su portador Esquivar (5+). Los resultados de 6 para impactar a Van Klumf deberán repetirse.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13242,7 +13265,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="30f1-7f76-4e92-dd52" name="Broche prometido" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga a Diego Regeneración (5+)</characteristic>
+                    <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga a Diego Regeneración (5+)</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13290,7 +13313,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
               <profiles>
                 <profile id="54ec-1733-bd3c-4a74" name="Las amantes caprichosas" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Ristra de Pistolas. Los disparos que realice su portador repiten las tiradas fallidas para herir (tanto a distancia como en cuerpo a cuerpo). Puedes usar todos los turnos de combate las Amantes Caprichosas.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Ristra de Pistolas. Los disparos que realice su portador repiten las tiradas fallidas para herir (tanto a distancia como en cuerpo a cuerpo). Puedes usar todos los turnos de combate las Amantes Caprichosas.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -13752,7 +13775,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="64f8-2553-c521-8887" name="Virtud del ardor caballeresco" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Por cada miniatura retirada como baja a causa de los ataques efectuados en combate por el guerrero podrá efectuarse un ataque adicional durante la siguiente fase de combate.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Por cada miniatura retirada como baja a causa de los ataques efectuados en combate por el guerrero podrá efectuarse un ataque adicional durante la siguiente fase de combate.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13768,7 +13791,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="b069-78d3-e6cf-d505" name="Virtud de la heroicidad" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Los ataques realizados por este guerrero y su montura contra miniaturas del Tipo Monstruo o Bestia Monstruosa podrán repetir las tiradas para herir fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Los ataques realizados por este guerrero y su montura contra miniaturas del Tipo Monstruo o Bestia Monstruosa podrán repetir las tiradas para herir fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13784,7 +13807,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="3abe-5e71-abd4-d325" name="Virtud del cruzado" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Una miniatura con esta Virtud podrá elegir uno de sus objetos mágicos (no Reliquias) de entre los de la Lista de Ejercito de Nehekhara. Todas las miniaturas del ejercito de Nehekhara odiarán a este guerrero.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Una miniatura con esta Virtud podrá elegir uno de sus objetos mágicos (no Reliquias) de entre los de la Lista de Ejercito de Nehekhara. Todas las miniaturas del ejercito de Nehekhara odiarán a este guerrero.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13800,7 +13823,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="9f45-30ca-7459-e67c" name="Virtud del ímpetu" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero y la unidad en la que se encuentre podrán añadir 1D3&quot; adicionales a cualquier movimiento de carga que efectúen.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero y la unidad en la que se encuentre podrán añadir 1D3&quot; adicionales a cualquier movimiento de carga que efectúen.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13816,7 +13839,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="4e1d-8726-4909-0565" name="Virtud de la justa" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El guerrero podrá repetir las tiradas para impactar que fallase mientras estuviese utilizando una Lanza de Caballería (mundana o mágica).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El guerrero podrá repetir las tiradas para impactar que fallase mientras estuviese utilizando una Lanza de Caballería (mundana o mágica).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13832,7 +13855,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="44cb-a726-f26f-4a7e" name="Virtud del noble desdén" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero obtendrá la Regla Especial Odio contra todas las miniaturas enemigas equipadas con armas de proyectiles o capaces de lanzar hechizos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero obtendrá la Regla Especial Odio contra todas las miniaturas enemigas equipadas con armas de proyectiles o capaces de lanzar hechizos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13853,7 +13876,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="a475-8823-22d2-2f17" name="Virtud de la confianza" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero obtiene la Regla Especial Orgullo Marcial y obtiene un bonificador de +1 a sus tiradas para impactar durante los desafíos en los que participe.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero obtiene la Regla Especial Orgullo Marcial y obtiene un bonificador de +1 a sus tiradas para impactar durante los desafíos en los que participe.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13872,7 +13895,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="c678-110e-6d90-764c" name="Virtud de la audacia" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El personaje cambia su voto por el Voto de la Búsqueda, y puede repetir sus tiradas para impactar con armas a dos manos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El personaje cambia su voto por el Voto de la Búsqueda, y puede repetir sus tiradas para impactar con armas a dos manos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13891,7 +13914,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="5315-ff18-3349-2b49" name="Virtud del grial" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El caballero sustituye su Voto del Caballero por el Voto del Grial. Obtiene un bonificador de +1 a sus valores de HA y L.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13910,7 +13933,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="8642-56e5-6df1-367d" name="Virtud de la pureza" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El personaje obtiene Resistencia mágica (1), que se incrementa a (3) contra todos los hechizos de los saberes de Magia Oscura, los 3 saberes del Caos, Nigromacia, saberes de Ruina y plaga Skaven y el saber Hashut.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El personaje obtiene Resistencia mágica (1), que se incrementa a (3) contra todos los hechizos de los saberes de Magia Oscura, los 3 saberes del Caos, Nigromacia, saberes de Ruina y plaga Skaven y el saber Hashut.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13929,7 +13952,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="c304-64ea-f374-6ebe" name="Virtud del ideal" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Sólo un personaje del todo el ejército podrá elegir esta virtud. El personaje obtiene un bonificador de +1 en sus perfiles de atributos de HA, F, I, A y L. Sin embargo, no puede unirse a unidades. Si muere o huye del campo de batalla el enemigo obtendrá 100 puntos de victoria adicionales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Sólo un personaje del todo el ejército podrá elegir esta virtud. El personaje obtiene un bonificador de +1 en sus perfiles de atributos de HA, F, I, A y L. Sin embargo, no puede unirse a unidades. Si muere o huye del campo de batalla el enemigo obtendrá 100 puntos de victoria adicionales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13945,7 +13968,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="0263-27ab-6b81-55d5" name="Virtud del tesón" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El personaje (y la unidad en la que se encuentre) podrá repetir sus tiradas de carga fallidas).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El personaje (y la unidad en la que se encuentre) podrá repetir sus tiradas de carga fallidas).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13961,7 +13984,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="69c4-1004-00a7-4e24" name="Virtud del valor" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Cuando el personaje ataque en combate cuerpo a cuerpo a un enemigo con un valor de Fuerza superior al suyo (en el perfil de atributos), puede repetir todas sus tiradas fallidas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Cuando el personaje ataque en combate cuerpo a cuerpo a un enemigo con un valor de Fuerza superior al suyo (en el perfil de atributos), puede repetir todas sus tiradas fallidas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -13977,7 +14000,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="5a7e-fb2b-80ac-b42d" name="Virtud del deber" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Este guerrero otorgará un bonificador de +1 en la resolución de aquellos combates en los que participe. Este efecto podrá usarse sólo mientras el General del Ejercito siga con vida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Este guerrero otorgará un bonificador de +1 en la resolución de aquellos combates en los que participe. Este efecto podrá usarse sólo mientras el General del Ejercito siga con vida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14001,7 +14024,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="5fd6-3052-3ebf-c9f6" name="Lanza de plata bendita" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Sólo Caballeros. Impacta automáticamente en el turno en el que su portador realiza exitosamente una carga. Tiene la Regla Especial Heridas Múltiples (1D3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de Caballería. Sólo Caballeros. Impacta automáticamente en el turno en el que su portador realiza exitosamente una carga. Tiene la Regla Especial Heridas Múltiples (1D3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14029,7 +14052,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="f43d-0b3e-4fb9-08d3" name="Lanza de Artois" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Sólo Caballeros. Los impactos causados por la lanza tienen la regla especial Golpe Letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Sólo Caballeros. Los impactos causados por la lanza tienen la regla especial Golpe Letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14049,7 +14072,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="ab9b-5346-3bce-0422" name="Lanza del roble" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Sólo caballeros. Los impactos con esta lanza siempre hieren con un resultado de 2+, sin importar la R del enemigo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Sólo caballeros. Los impactos con esta lanza siempre hieren con un resultado de 2+, sin importar la R del enemigo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14068,7 +14091,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="71be-7a7d-8c0e-7e8f" name="Lanza del Dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Sólo caballeros. Los impactos causados por esta lanza tienen la regla especial Ataques Flamígeros. Una vez por batalla, el portador puede desatar el poder de la lanza como si fuese un arma de aliento de F4 y ataques Sólo Flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Lanza de caballería. Sólo caballeros. Los impactos causados por esta lanza tienen la regla especial Ataques Flamígeros. Una vez por batalla, el portador puede desatar el poder de la lanza como si fuese un arma de aliento de F4 y ataques Sólo Flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14102,7 +14125,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="fde7-6f7a-ba87-8d4d" name="Coraza dorada" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo caballeros. Proporciona a su portador la regla especial Regeneración (3+), que no puede mejorarse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo caballeros. Proporciona a su portador la regla especial Regeneración (3+), que no puede mejorarse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14122,7 +14145,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="6e49-88ba-882e-4389" name="Coraza de la fortuna" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo caballeros. El portador podrá repetir todos los resultados de 1 que obtenga en sus tiradas para impactar, para herir y de salvación por armadura y especiales.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo caballeros. El portador podrá repetir todos los resultados de 1 que obtenga en sus tiradas para impactar, para herir y de salvación por armadura y especiales.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14149,7 +14172,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="090c-7abe-7ea9-bb09" name="Armadura del solsticio estival" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo caballeros. Todos los enemigos que intenten atacar al portador o a su montura en combate cuerpo a cuerpo tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo caballeros. Todos los enemigos que intenten atacar al portador o a su montura en combate cuerpo a cuerpo tendrán un penalizador de -1 en sus tiradas para impactar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14168,7 +14191,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="668c-ecbd-2641-0250" name="Armadura de Agilulf" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo Caballeros. El portador obtiene las reglas especiales Inmune a veneno. Además, será inmune a los efectos de las reglas especiales Golpe letal y Heridas múltiples.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Sólo Caballeros. El portador obtiene las reglas especiales Inmune a veneno. Además, será inmune a los efectos de las reglas especiales Golpe letal y Heridas múltiples.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14188,7 +14211,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="61fc-c7e6-b058-3261" name="Gran yelmo de Gromril" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (incrementa en +1 la tirada de salvación por armadura de su portador). Sólo caballeros. El portador puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (incrementa en +1 la tirada de salvación por armadura de su portador). Sólo caballeros. El portador puede repetir sus tiradas de salvación por armadura fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14204,7 +14227,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="1900-21d4-03d2-082e" name="Escudo del grial" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Sólo caballeros. Incrementa la tirada de salvación especial del portador por la Bendición de la Dama a 4+.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Sólo caballeros. Incrementa la tirada de salvación especial del portador por la Bendición de la Dama a 4+.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14231,7 +14254,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="636f-f4f4-6a0a-fd48" name="Guardapelo de Sirienne" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 4+ y Resistencia Mágica (3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador una tirada de salvación especial de 4+ y Resistencia Mágica (3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14258,7 +14281,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="4657-8733-9339-1510" name="Garra del dragón" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador y la unidad en que se encuentre obtiene la regla especial Inmune a Fuego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador y la unidad en que se encuentre obtiene la regla especial Inmune a Fuego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14277,7 +14300,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="d553-59d2-22a5-c864" name="Obsequio de la damisela" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un solo uso. El portador puede repetir una tirada de 1D6: puede tratarse de una tirada para impactar, para herir, tirada de salvación por armadura o especial, o un chequeo de atributo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un solo uso. El portador puede repetir una tirada de 1D6: puede tratarse de una tirada para impactar, para herir, tirada de salvación por armadura o especial, o un chequeo de atributo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14301,7 +14324,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="4b29-9bcc-9c6c-edd5" name="Mechón de Isolda" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Solo Caballeros. Elige una miniatura enemiga al principio de cada una de tus fases de Combate. Durante esa fase de combate los ataques dirigidos por el portador contra el enemigo elegido podrán repetir las tiradas para impactar y herir fallidas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Solo Caballeros. Elige una miniatura enemiga al principio de cada una de tus fases de Combate. Durante esa fase de combate los ataques dirigidos por el portador contra el enemigo elegido podrán repetir las tiradas para impactar y herir fallidas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14325,7 +14348,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="ca4c-e592-45a0-5b68" name="Cornamenta de la gran cacería" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos. Sólo Sacerdotes o Sumos Sacerdotes de Taal. Nivel de energía 3. Contiene el hechizo Forma Salvaje de Wissan del Saber de las Bwestias, que podrá lanzarse únicamente sobre el portador y la unidad de la que forme parte. Adicionalmente el portador obtendrá la Regla Especial Impactos por Carga (1D3) que contarán con la Regla Especial Ataques Mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto Portahechizos. Sólo Sacerdotes o Sumos Sacerdotes de Taal. Nivel de energía 3. Contiene el hechizo Forma Salvaje de Wissan del Saber de las Bwestias, que podrá lanzarse únicamente sobre el portador y la unidad de la que forme parte. Adicionalmente el portador obtendrá la Regla Especial Impactos por Carga (1D3) que contarán con la Regla Especial Ataques Mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14353,7 +14376,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="3fab-c712-db59-7701" name="Sacramento de la dama" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Otorga 1D3 dados de energía adicional en cada una de tus fases de magia, y 1 dado de dispersión adicional en cada fase de magia del oponente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Otorga 1D3 dados de energía adicional en cada una de tus fases de magia, y 1 dado de dispersión adicional en cada fase de magia del oponente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14369,7 +14392,7 @@ Se trata de un hechizo de potenciación que toma como objetivo a una bestia del 
           <profiles>
             <profile id="89c1-f905-a446-b37f" name="Cáliz de Malfeur" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del oponente, su portadora podrá beber de este cáliz. Para determinar los efectos que provoca haz una tirada de 1D6 en la siguiente tabla. 
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Al inicio de cada fase de magia del oponente, su portadora podrá beber de este cáliz. Para determinar los efectos que provoca haz una tirada de 1D6 en la siguiente tabla. 
 D6 Cáliz de Malfleur 
 1: La miniatura sufrirá una herida automática sin posibilidad de tirada de salvación por armadura. 
 2-4: Añade 1 dado de Dispersión a la reserva del jugador Bretoniano 
@@ -14398,7 +14421,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="75ca-2a9f-7a02-d995" name="Corazón del bosque" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador de este objeto y cualquier unidad a la que estuviese unido se verán afectados por la Regla Especial Cruzar (Bosques). El portador obtendrá un bonificador de +2 al lanzamiento de los hechizos del Saber de la Vida.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador de este objeto y cualquier unidad a la que estuviese unido se verán afectados por la Regla Especial Cruzar (Bosques). El portador obtendrá un bonificador de +2 al lanzamiento de los hechizos del Saber de la Vida.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14417,7 +14440,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="b844-02aa-51e9-0ac6" name="Espejo de plata" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puede utilizarse para dispersar automáticamente un hechizo enemigo. Tira 1D6 por cada dado de energía que se empleo para lanzar el poder, por cada resultado natural de 6 obtenido el lanzador sufrirá una herida que no podrá evitarse con tiradas de salvación por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puede utilizarse para dispersar automáticamente un hechizo enemigo. Tira 1D6 por cada dado de energía que se empleo para lanzar el poder, por cada resultado natural de 6 obtenido el lanzador sufrirá una herida que no podrá evitarse con tiradas de salvación por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14433,7 +14456,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="6169-4880-833f-dd24" name="Icono de la oración de Quenelles" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puede utilizarse para hacer que una unidad situada a 18” o menos del portador que hubiese perdido el Favor de la Dama lo recupere de inmediato.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Puede utilizarse para hacer que una unidad situada a 18” o menos del portador que hubiese perdido el Favor de la Dama lo recupere de inmediato.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14449,7 +14472,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="d55c-63d9-643f-2bd6" name="Poción sacra" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Esta pócima puede beberse después de realizar una tirada de lanzamiento o dispersión de hechizos, permitiendo a quien la bebiese repetir uno de los dados de dicha tirada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Un solo uso. Esta pócima puede beberse después de realizar una tirada de lanzamiento o dispersión de hechizos, permitiendo a quien la bebiese repetir uno de los dados de dicha tirada.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14473,7 +14496,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="d11a-c7c1-d88a-dcb1" name="Pabellón de guerra de Gilles el Bretón" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y las miniaturas de la unidad de la que forme parte Apabullarán (hasta el final del turno) a cualquier unidad a la que causen al menos una baja.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y las miniaturas de la unidad de la que forme parte Apabullarán (hasta el final del turno) a cualquier unidad a la que causen al menos una baja.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14492,7 +14515,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="2832-6d45-54aa-5086" name="Pabellón de la dama" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Confiere a la unidad la regla especial Resistencia mágica (3) y mejora la tirada de salvación especial conferida por el Favor de la Dama a (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Confiere a la unidad la regla especial Resistencia mágica (3) y mejora la tirada de salvación especial conferida por el Favor de la Dama a (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14519,7 +14542,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="859c-cb52-3526-d831" name="Estandarte de los valerosos" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Sangre fría.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtiene la regla especial Sangre fría.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14538,7 +14561,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="fc03-a0fd-7b6f-dade" name="Estandarte del crepúsculo" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Las miniaturas de la unidad obtienen la regla especial Cruzar (todo tipo de terrenos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Las miniaturas de la unidad obtienen la regla especial Cruzar (todo tipo de terrenos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14557,7 +14580,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="e357-3577-55b6-da03" name="Estandarte de Chalons" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El enemigo no podrá aguantar y disparar como reacción a una carga efectuada por una unidad que porte este estandarte.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El enemigo no podrá aguantar y disparar como reacción a una carga efectuada por una unidad que porte este estandarte.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14581,7 +14604,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="01e6-0076-c2e3-2c33" name="Espada de la búsqueda" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Sólo miniaturas con el Voto de la Búsqueda. El portador podrá repetir sus tiradas para herir fallidas en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma a dos manos. Sólo miniaturas con el Voto de la Búsqueda. El portador podrá repetir sus tiradas para herir fallidas en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14608,7 +14631,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="fcf5-f2ec-b465-7f96" name="Hoz sagrada de Taal" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo Sacerdotes y Sumos Sacerdotes de Taal. Proporciona a su portador +1F. Si causa una o más heridas en combate cuerpo a cuerpo con esta hoz, el portador podrá lanzar una plegaria adicional durante su siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo Sacerdotes y Sumos Sacerdotes de Taal. Proporciona a su portador +1F. Si causa una o más heridas en combate cuerpo a cuerpo con esta hoz, el portador podrá lanzar una plegaria adicional durante su siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14635,7 +14658,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="a4a1-dbe2-5aa1-ea28" name="Mangual de Fracasse" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mangual. Sólo caballeros. Por cada impacto exitoso causado con el mangual a un enemigo con un arma mágica, tira 1D6: si obtienes al menos un resultado de 4+, el arma mágica queda destruida y pasa a ser un arma mundana de su mismo tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mangual. Sólo caballeros. Por cada impacto exitoso causado con el mangual a un enemigo con un arma mágica, tira 1D6: si obtienes al menos un resultado de 4+, el arma mágica queda destruida y pasa a ser un arma mundana de su mismo tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14662,7 +14685,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="6b29-1214-9218-dca5" name="Espada de Carcassonne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo caballeros. Proporciona a su portador +1F. Las tiradas de salvación por armadura exitosas por heridas causadas por esta espada deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo caballeros. Proporciona a su portador +1F. Las tiradas de salvación por armadura exitosas por heridas causadas por esta espada deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14681,7 +14704,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="3398-6680-31d3-0e46" name="Espada del campeón de la dama" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo caballeros. Incrementa la F del portador hasta un valor un punto superior a la R del objetivo al que está atacando. Esta espada pierde sus propiedades mágicas y pasa a considerarse un arma de mano mundana si su portador pierde el Favor de la Dama.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo caballeros. Incrementa la F del portador hasta un valor un punto superior a la R del objetivo al que está atacando. Esta espada pierde sus propiedades mágicas y pasa a considerarse un arma de mano mundana si su portador pierde el Favor de la Dama.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14708,7 +14731,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="de3a-0f96-7462-e218" name="Espada de Couronne" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de Mano. Sólo Caballeros. La espada tiene la Regla Especial Golpe Letal Heroico contra miniaturas con la regla especial No muerto. Adicionalmente, al inicio de cada fase de combate cuerpo a cuerpo, todas las miniaturas con la regla especial No muerto que se encontrasen en contacto peana con peana con el portador de la Espada deberán realizar un chequeo de Resistencia, sufriendo una herida sin tirada de salvación por armadura si lo fallan. El portador de la Espada y la unidad de la que forme parte será inmune a los efectos de Miedo o Terror provocados por miniaturas con la regla especial No muerto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de Mano. Sólo Caballeros. La espada tiene la Regla Especial Golpe Letal Heroico contra miniaturas con la regla especial No muerto. Adicionalmente, al inicio de cada fase de combate cuerpo a cuerpo, todas las miniaturas con la regla especial No muerto que se encontrasen en contacto peana con peana con el portador de la Espada deberán realizar un chequeo de Resistencia, sufriendo una herida sin tirada de salvación por armadura si lo fallan. El portador de la Espada y la unidad de la que forme parte será inmune a los efectos de Miedo o Terror provocados por miniaturas con la regla especial No muerto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14738,7 +14761,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="6990-7a1b-e6e2-db98" name="Tapiz de los conquistadores" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Caballeros. La unidad obtiene el doble de puntos por capturar estandartes del enemigo. El enemigo obtendrá el doble de puntos si captura al portador del Tapiz de los Conquistadores.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Caballeros. La unidad obtiene el doble de puntos por capturar estandartes del enemigo. El enemigo obtendrá el doble de puntos si captura al portador del Tapiz de los Conquistadores.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14762,7 +14785,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="6fe2-60ef-f4bc-919f" name="Estandarte del reino" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo puede incluirse en unidades de Caballeros del Reino. Las miniaturas de la unidad con el Voto del Caballero obtendrán un bonificador de +1 a sus tiradas de impactar durante aquellos turnos de jugador en los que efectuasen con éxito un movimiento de carga.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo puede incluirse en unidades de Caballeros del Reino. Las miniaturas de la unidad con el Voto del Caballero obtendrán un bonificador de +1 a sus tiradas de impactar durante aquellos turnos de jugador en los que efectuasen con éxito un movimiento de carga.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14786,7 +14809,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="8e37-9a3c-5bd3-3067" name="Crin del purasangre" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Sólo Caballeros. Un solo uso. Otorga la Regla Especial Carga Devastadora a las monturas del portador y de la unidad de la que forme parte.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Sólo Caballeros. Un solo uso. Otorga la Regla Especial Carga Devastadora a las monturas del portador y de la unidad de la que forme parte.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14813,7 +14836,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="be86-81b5-ddbf-526b" name="Cuerno de halcones de Fredemundo" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un solo uso. Se puede usar el cuerno al inicio de cualquier turno del jugador. Las miniaturas enemigas no podrán utilizar las Reglas Especiales Volar o Flotar y deberán mover por tierra utilizando su atributo de Movimiento. El efecto dura un turno completo de juego.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un solo uso. Se puede usar el cuerno al inicio de cualquier turno del jugador. Las miniaturas enemigas no podrán utilizar las Reglas Especiales Volar o Flotar y deberán mover por tierra utilizando su atributo de Movimiento. El efecto dura un turno completo de juego.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14829,7 +14852,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="683e-0c19-de5e-24ef" name="Reliquia sagrada" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Otorga al portador la Regla Especial Resistencia Mágica (3).</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Otorga al portador la Regla Especial Resistencia Mágica (3).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14848,7 +14871,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="928f-7576-d242-87ff" name="Cáliz de rubíes" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Otorga al portador y a la unidad de la que forme parte la Regla Especial Regeneración (6+). El portador de este Cáliz será inmune a la Regla Especial Heridas Múltiples.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Otorga al portador y a la unidad de la que forme parte la Regla Especial Regeneración (6+). El portador de este Cáliz será inmune a la Regla Especial Heridas Múltiples.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14867,7 +14890,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="7af9-2fea-5abd-78ac" name="Incensario sagrado" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todas las miniaturas con las Reglas Especiales No Muerto o Demonio que entren en contacto peana con peana con el portador sufrirán 1 impacto de F4 con la Regla Especial Ataques Mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todas las miniaturas con las Reglas Especiales No Muerto o Demonio que entren en contacto peana con peana con el portador sufrirán 1 impacto de F4 con la Regla Especial Ataques Mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14886,7 +14909,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="90a2-1abb-30bf-c271" name="Guantelete del desafío" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Todo desafío lanzado por el portador del Guantelete tiene que ser aceptado obligatoriamente.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Todo desafío lanzado por el portador del Guantelete tiene que ser aceptado obligatoriamente.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14910,7 +14933,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="51a2-3dde-d186-55ea" name="Manto de la damisela Elena" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo caballeros. El portador podrá repetir sus tiradas de salvación especial fallidas proporcionadas por la Bendición de la Dama.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo caballeros. El portador podrá repetir sus tiradas de salvación especial fallidas proporcionadas por la Bendición de la Dama.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14926,7 +14949,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="3097-f591-0c76-9b47" name="Trenza de Bordeleaux" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo Caballeros. Un solo uso. Puede utilizarse al inicio de cualquiera de tus fases de movimiento. Durante esa fase de movimiento, el portador y su unidad obtienen la regla especial Etéreo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo Caballeros. Un solo uso. Puede utilizarse al inicio de cualquiera de tus fases de movimiento. Durante esa fase de movimiento, el portador y su unidad obtienen la regla especial Etéreo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14945,7 +14968,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="9da8-c74d-1444-57db" name="Insignia de la búsqueda" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo Caballeros. La tirada de salvación especial otorgada por la Bendición de la Dama se incrementa a 4+ contra las heridas causadas por miniaturas de los tipos Bestia Monstruosa y Monstruo. Esto afecta al portador y a cualquier unidad de caballeros de la que forme parte.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo Caballeros. La tirada de salvación especial otorgada por la Bendición de la Dama se incrementa a 4+ contra las heridas causadas por miniaturas de los tipos Bestia Monstruosa y Monstruo. Esto afecta al portador y a cualquier unidad de caballeros de la que forme parte.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14969,7 +14992,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="04a6-d5e7-69d1-2607" name="Virtud de la empatía" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">La miniatura que posea esta Virtud no podrá ser ni Portaestandarte de Batalla del ejercito ni ser el General, aunque su liderazgo fuese el mayor. La miniatura deberá ir a pié y perderá la Regla Especial Caballero, pero ganará Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">La miniatura que posea esta Virtud no podrá ser ni Portaestandarte de Batalla del ejercito ni ser el General, aunque su liderazgo fuese el mayor. La miniatura deberá ir a pié y perderá la Regla Especial Caballero, pero ganará Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -14996,7 +15019,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="9ab9-0c0a-f8e8-b72f" name="Virtud del estoicismo" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El personaje y la unidad en la que se encuentre obtienen la Regla Especial Tozudez.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El personaje y la unidad en la que se encuentre obtienen la Regla Especial Tozudez.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15023,7 +15046,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="7d4a-61ff-f694-a851" name="Virtud de la disciplina" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Solo general del ejército. Una vez por batalla, al inicio de cualquiera de los turnos bretonianos, el personaje puede tratar de reorganizar la unidad en la que se encuentre (sólo si no está trabado en combate), para lo cual debe superar un chequeo de L. Si lo supera, puede realizar una reorganización gratuita inmediatamente. Sin embargo, si falla, no podrá mover ese turno.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Solo general del ejército. Una vez por batalla, al inicio de cualquiera de los turnos bretonianos, el personaje puede tratar de reorganizar la unidad en la que se encuentre (sólo si no está trabado en combate), para lo cual debe superar un chequeo de L. Si lo supera, puede realizar una reorganización gratuita inmediatamente. Sin embargo, si falla, no podrá mover ese turno.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15047,7 +15070,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="0f8b-8b2d-89b9-3d10" name="Armadura de las eras" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador tiene una herida adicional.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador tiene una herida adicional.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15066,7 +15089,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="a1a7-a582-3862-8e7a" name="Pellejo de lagarto del trueno" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga la regla especial Piel escamosa (5+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura ligera. Otorga la regla especial Piel escamosa (5+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15086,7 +15109,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="338b-da94-dc00-c8fd" name="Armadura del escorpión" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador (o la unidad en la que se encuentre) sufren una herida menos como resultado de su regla especial Inestables al perder un combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. El portador (o la unidad en la que se encuentre) sufren una herida menos como resultado de su regla especial Inestables al perder un combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15105,7 +15128,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="2eac-f32e-e0ec-0791" name="Escudo de Ptra" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Escudo. Si el portador realiza una tirada de salvación por armadura exitosa en combate cuerpo a cuerpo, todas las miniaturas de cualquier unidad enemiga en contacto peana con peana con el personaje verán reducida su HA a 1 durante el resto de la fase de combate cuerpo a cuerpo en curso.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Escudo. Si el portador realiza una tirada de salvación por armadura exitosa en combate cuerpo a cuerpo, todas las miniaturas de cualquier unidad enemiga en contacto peana con peana con el personaje verán reducida su HA a 1 durante el resto de la fase de combate cuerpo a cuerpo en curso.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15132,7 +15155,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="25cf-0537-0bc8-e1c2" name="Espada del dolor eterno" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada baja causada con esta espada en una fase de combate cuerpo a cuerpo, el bando del portador obtiene un bonificador adicional de +1 al resultado del combate esa ronda.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Por cada baja causada con esta espada en una fase de combate cuerpo a cuerpo, el bando del portador obtiene un bonificador adicional de +1 al resultado del combate esa ronda.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15151,7 +15174,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="a660-751c-98b6-d4b8" name="Espada de Setep" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Poder de penetración. El portador tendrá un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Poder de penetración. El portador tendrá un bonificador de +1 en sus tiradas para impactar en combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15171,7 +15194,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="311f-6f1c-f64f-1881" name="Khopesh del verdugo" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Golpe letal. Cada vez que el portador elimine a un oponente en combate cuerpo a cuerpo con un golpe letal, el atributo de heridas de éste aumenta permanentemente en un +1.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Golpe letal. Cada vez que el portador elimine a un oponente en combate cuerpo a cuerpo con un golpe letal, el atributo de heridas de éste aumenta permanentemente en un +1.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15199,7 +15222,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="e906-a1c9-3b13-bf53" name="Mayal de cráneos" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Mayal. Tiene la regla especial Heridas múltiples (2). Además, su portador causará Terror cuando cargue.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Mayal. Tiene la regla especial Heridas múltiples (2). Además, su portador causará Terror cuando cargue.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15228,7 +15251,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="d266-338b-3699-4f05" name="Pabellón del ojo sagrado" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentra (incluyendo las monturas) obtienen un bonificador de +1 en sus tiradas para impactar en la primera ronda de cada combate cuerpo a cuerpo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">El portador y la unidad en la que se encuentra (incluyendo las monturas) obtienen un bonificador de +1 en sus tiradas para impactar en la primera ronda de cada combate cuerpo a cuerpo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15244,7 +15267,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="4115-cacc-4dc3-0a7a" name="Estandarte de los espejismos" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las tiradas para impactar exitosas contra la unidad durante la fase de disparo enemiga deberán repetirse.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las tiradas para impactar exitosas contra la unidad durante la fase de disparo enemiga deberán repetirse.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15260,7 +15283,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="0be7-4648-e6b7-2dce" name="Icono de Rakaph" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Un sólo uso. La unidad que porte el estandarte podrá, al inicio de cualquiera de tus turnos, reorganizarse de forma gratuita y sin efectuar ningún chequeo para ello. Ten en cuenta que esta reorganización se realiza antes de declarar cargas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Un sólo uso. La unidad que porte el estandarte podrá, al inicio de cualquiera de tus turnos, reorganizarse de forma gratuita y sin efectuar ningún chequeo para ello. Ten en cuenta que esta reorganización se realiza antes de declarar cargas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15276,7 +15299,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="4f3e-81db-7ba5-765e" name="Estandarte de las palabras malditas" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 y descartando el resultado más bajo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Los chequeos de miedo provocados por la unidad portadora se efectuarán con 3D6 y descartando el resultado más bajo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15292,7 +15315,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="893c-e4ca-8562-6632" name="Estandarte de las legiones de Nehekhara" page="0" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Cada vez que la unidad que porta el estandarte restaure miniaturas por efecto de la regla del saber “los muertos inquietos” del saber de Nehekhara, duplica el número de heridas restauradas.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Cada vez que la unidad que porta el estandarte restaure miniaturas por efecto de la regla del saber “los muertos inquietos” del saber de Nehekhara, duplica el número de heridas restauradas.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15316,7 +15339,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="912d-832f-28ff-7b84" name="Máscara mortuoria de Kharnut" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">El portador verá incrementada su salvación por armadura en +1 (como un yelmo) y causará Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">El portador verá incrementada su salvación por armadura en +1 (como un yelmo) y causará Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15335,7 +15358,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="98c7-e0ed-36b8-c01e" name="Broche del gran desierto" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puedes declarar que usas el Broche del Gran Desierto cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo, no es necesario que lances dados. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Un sólo uso. Puedes declarar que usas el Broche del Gran Desierto cuando el oponente lance exitosamente un hechizo, pero antes de efectuar la tirada para dispersar. Dispersa automáticamente el hechizo, no es necesario que lances dados. Ten en cuenta que no funciona contra hechizos lanzados con Fuerza Irresistible.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15351,7 +15374,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="590c-75e4-3b32-68dd" name="Brazaletes del sol" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Una miniatura en contacto peana con peana con el portador pierde un ataque (hasta un mínimo de 1) .</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Una miniatura en contacto peana con peana con el portador pierde un ataque (hasta un mínimo de 1) .</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15375,7 +15398,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="d8d4-ab22-07e5-449c" name="Amuleto de Pha-Stah" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Cualquier Talismán, Objeto hechizado o Artefacto arcano que porte cualquier miniatura (amiga o enemiga) en contacto peana con peana con el portador deja de funcionar y se considera un objeto mundano de su mismo tipo (tan sólo mientras permanezcan en contacto peana con peana). El portador no puede llevar ningún artefacto arcano u objeto hechizado.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Cualquier Talismán, Objeto hechizado o Artefacto arcano que porte cualquier miniatura (amiga o enemiga) en contacto peana con peana con el portador deja de funcionar y se considera un objeto mundano de su mismo tipo (tan sólo mientras permanezcan en contacto peana con peana). El portador no puede llevar ningún artefacto arcano u objeto hechizado.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15391,7 +15414,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="77b5-515a-52a5-7365" name="Pectoral de Shapesh" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Cada vez que el portador fuese a sufrir una herida (tras las tiradas de salvación y regeneración pertinentes), tira 1D6: con un resultado de 1-3, la herida se asigna al personaje de manera habitual. Con un resultado de 4+, la herida se asigna en su lugar a una miniatura amiga de tu elección a 8” o menos del portador. Ten en cuenta que una herida reasignada no puede salvarse o evitarse de ninguna manera. Si no hay otras miniaturas amigas a 8” o menos del portador, el Pectoral de Shapesh no tiene efecto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Cada vez que el portador fuese a sufrir una herida (tras las tiradas de salvación y regeneración pertinentes), tira 1D6: con un resultado de 1-3, la herida se asigna al personaje de manera habitual. Con un resultado de 4+, la herida se asigna en su lugar a una miniatura amiga de tu elección a 8” o menos del portador. Ten en cuenta que una herida reasignada no puede salvarse o evitarse de ninguna manera. Si no hay otras miniaturas amigas a 8” o menos del portador, el Pectoral de Shapesh no tiene efecto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15407,7 +15430,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="526f-3649-2109-1da3" name="Sello de invocación de Djedra" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Cada vez que el portador o su unidad restauren miniaturas con la regla del saber de Nehekhara “los muertos inquietos” o con un efecto que funcione como esta regla especial, restaura 2D6 heridas en lugar de 1D6.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Cada vez que el portador o su unidad restauren miniaturas con la regla del saber de Nehekhara “los muertos inquietos” o con un efecto que funcione como esta regla especial, restaura 2D6 heridas en lugar de 1D6.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15431,7 +15454,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="fc92-9fe4-bde0-8b6e" name="Virtud del santuario" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El personaje cambia su voto por el Voto de los Guarnianes del Santuario del Grial, y obtiene la regla especial Resistencia mágica (2). Pierde su montura, y no puede elegir ninguna montura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El personaje cambia su voto por el Voto de los Guarnianes del Santuario del Grial, y obtiene la regla especial Resistencia mágica (2). Pierde su montura, y no puede elegir ninguna montura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15459,7 +15482,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="c1da-fb9f-dadb-93d4" name="Virtud del penitente" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">La miniatura que posea esta Virtud no podrá ser ni portaestandarte de Batalla del ejercito ni ser el General, aunque su liderazgo fuese el mayor. El Caballero obtiene la Regla Especial Indesmoralizable y su tirada de salvación Especial obtenida por la Bendición de la Dama mejora hasta 4+. El personaje no podrá equiparse con objetos mágicos o Reliquias de ningún tipo y no podrá unirse a unidad alguna. No podrá montar en Pegaso o Hipogrifo. </characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">La miniatura que posea esta Virtud no podrá ser ni portaestandarte de Batalla del ejercito ni ser el General, aunque su liderazgo fuese el mayor. El Caballero obtiene la Regla Especial Indesmoralizable y su tirada de salvación Especial obtenida por la Bendición de la Dama mejora hasta 4+. El personaje no podrá equiparse con objetos mágicos o Reliquias de ningún tipo y no podrá unirse a unidad alguna. No podrá montar en Pegaso o Hipogrifo. </characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15493,7 +15516,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="dba5-c631-3dde-979f" name="Virtud del ermitaño" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">Si incluyes una unidad de Caballeros Ermitaños puedes incluir en el ejército un único Paladín con la Virtud del Ermitaño. Este guerrero sustituirá su voto por el del Ermitaño (incluido arriba) y deberá luchar a pie. Deberá unirse a la unidad de Caballeros Ermitaños y no podrá ser el portaestandarte o el general del ejército. Además, tanto el personaje como la unidad de Caballeros Ermitaños obtienen la regla especial Odio (todos los ejércitos de la Destrucción).</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">Si incluyes una unidad de Caballeros Ermitaños puedes incluir en el ejército un único Paladín con la Virtud del Ermitaño. Este guerrero sustituirá su voto por el del Ermitaño (incluido arriba) y deberá luchar a pie. Deberá unirse a la unidad de Caballeros Ermitaños y no podrá ser el portaestandarte o el general del ejército. Además, tanto el personaje como la unidad de Caballeros Ermitaños obtienen la regla especial Odio (todos los ejércitos de la Destrucción).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -15532,7 +15555,7 @@ D6 Cáliz de Malfleur
           <profiles>
             <profile id="8b91-771d-0b09-4efa" name="Virtud de la venganza" hidden="false" typeId="4d8f-04d7-ddc3-0402" typeName="Virtudes">
               <characteristics>
-                <characteristic name="Propiedades" typeId="6a83-733d-472a-7834">El personaje cambia su voto por el Voto de la Búsqueda, debe unirse a una unidad de caballeros errantes y no podrá abandonarla. Al inicio de la batalla, tras el despliegue, selcciona una unidad enemiga; tanto el personaje como la unidad de Caballeros Errantes en la que se encuentre podrán repetir sus tiradas para impactar fallidas contra la unidad selccionada.</characteristic>
+                <characteristic name="Reglas especiales" typeId="6a83-733d-472a-7834">El personaje cambia su voto por el Voto de la Búsqueda, debe unirse a una unidad de caballeros errantes y no podrá abandonarla. Al inicio de la batalla, tras el despliegue, selcciona una unidad enemiga; tanto el personaje como la unidad de Caballeros Errantes en la que se encuentre podrán repetir sus tiradas para impactar fallidas contra la unidad selccionada.</characteristic>
               </characteristics>
             </profile>
           </profiles>

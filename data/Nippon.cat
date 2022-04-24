@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<catalogue id="0e00-0d9a-c79e-fcfa" name="Nippón" revision="8" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corooctta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
+<catalogue id="0e00-0d9a-c79e-fcfa" name="Nippón" revision="11" battleScribeVersion="2.03" authorName="Corocotta Bada" authorContact="corooctta10@gmail.com" authorUrl="https://lacuevazombreroloko.blogspot.com" library="false" gameSystemId="be4eb679-97dc-4876-b582-19ff87fae0fd" gameSystemRevision="401" xmlns="http://www.battlescribe.net/schema/catalogueSchema">
   <profileTypes>
     <profileType id="9d65-8d22-8710-8cea" name="Trasfondo ronin">
       <characteristicTypes>
-        <characteristicType id="b251-a743-97cb-ffac" name="Propiedades mágicas"/>
+        <characteristicType id="b251-a743-97cb-ffac" name="Reglas especiales"/>
       </characteristicTypes>
     </profileType>
   </profileTypes>
@@ -2044,7 +2044,7 @@
               <profiles>
                 <profile id="cc2f-dccd-f748-5877" name="Traicioneros" hidden="false" typeId="9d65-8d22-8710-8cea" typeName="Trasfondo ronin">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="b251-a743-97cb-ffac">No despliegues a los Ronin de la manera normal. En su lugar, cuando acabes de desplegar, el oponente designará un punto en tu área de despliegue donde desplegarán los Ronin. Debes desplegar a los Ronin a 3’’ o menos del lugar designado. Pierden la regla Vanguardia.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="b251-a743-97cb-ffac">No despliegues a los Ronin de la manera normal. En su lugar, cuando acabes de desplegar, el oponente designará un punto en tu área de despliegue donde desplegarán los Ronin. Debes desplegar a los Ronin a 3’’ o menos del lugar designado. Pierden la regla Vanguardia.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2066,7 +2066,7 @@
               <profiles>
                 <profile id="bb97-cdd5-43f6-0759" name="Doloroso destino" hidden="false" typeId="9d65-8d22-8710-8cea" typeName="Trasfondo ronin">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="b251-a743-97cb-ffac">La unidad pierde la regla especial Inmune a Pánico.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="b251-a743-97cb-ffac">La unidad pierde la regla especial Inmune a Pánico.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2088,7 +2088,7 @@
               <profiles>
                 <profile id="2af2-0dce-0f38-c2e5" name="Desafiantes" hidden="false" typeId="9d65-8d22-8710-8cea" typeName="Trasfondo ronin">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="b251-a743-97cb-ffac">Cualquier Ronin puede lanzar o aceptar un desafío, como si se tratase de un oficial.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="b251-a743-97cb-ffac">Cualquier Ronin puede lanzar o aceptar un desafío, como si se tratase de un oficial.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2103,7 +2103,7 @@
               <profiles>
                 <profile id="8a64-c7e3-a123-219f" name="El coste de la vida" hidden="false" typeId="9d65-8d22-8710-8cea" typeName="Trasfondo ronin">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="b251-a743-97cb-ffac">La unidad obtendrá Furia Asesina si el general del ejército muere.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="b251-a743-97cb-ffac">La unidad obtendrá Furia Asesina si el general del ejército muere.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2118,7 +2118,7 @@
               <profiles>
                 <profile id="b08e-0d99-a082-aaa7" name="Recuperar el honor" hidden="false" typeId="9d65-8d22-8710-8cea" typeName="Trasfondo ronin">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="b251-a743-97cb-ffac">La unidad obtiene la regla especial Honor Ancestral siempre que esté a 6’’ de una unidad con esta regla especial.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="b251-a743-97cb-ffac">La unidad obtiene la regla especial Honor Ancestral siempre que esté a 6’’ de una unidad con esta regla especial.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -2348,6 +2348,9 @@ cañón.</description>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="3d8b-2871-8f25-ccca" name="Catapulta" hidden="false" targetId="1cd8-efcb-3e9f-eccd" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="95.0"/>
           </costs>
@@ -2573,6 +2576,9 @@ cañón.</description>
               </characteristics>
             </profile>
           </profiles>
+          <infoLinks>
+            <infoLink id="8b3a-4074-08c1-4c48" name="Cañón" hidden="false" targetId="126e-8186-1926-061e" type="profile"/>
+          </infoLinks>
           <costs>
             <cost name="pts" typeId="points" value="110.0"/>
           </costs>
@@ -2660,7 +2666,7 @@ cañón.</description>
         <infoLink id="4432-79b1-4fb4-bf27" name="Honor ancestral" hidden="false" targetId="36c9-25ab-0d4d-dc3e" type="rule"/>
         <infoLink id="6aa7-ab2f-0cbe-81b8" name="Samurai" hidden="false" targetId="3127-2ebd-247a-303f" type="rule"/>
         <infoLink id="c1d5-7513-4182-de4d" name="Miedo" hidden="false" targetId="e1b7-26dc-52c2-c3a7" type="rule"/>
-        <infoLink id="3370-8571-4a10-f511" name="Impasible" hidden="false" targetId="c0f9-6ff4-713c-3e15" type="rule"/>
+        <infoLink id="3370-8571-4a10-f511" name="Impasible" hidden="false" targetId="592b-c850-fd09-cce5" type="rule"/>
       </infoLinks>
       <categoryLinks>
         <categoryLink id="b9dd-e09e-7b37-2c54" name="New CategoryLink" hidden="false" targetId="5261726523232344415441232323" primary="true"/>
@@ -5324,7 +5330,7 @@ Sin embargo, si el general de tu ejército muere, el contrato con los shinigami 
               <profiles>
                 <profile id="4f99-41a6-84f2-80e1" name="Katanas de acero mágico" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. Yoshimune puede repetir las tiradas fallidas para herir. Los ataques cuerpo a cuerpo dirigidos a Yoshimune tienen un penalizador -1 a impactar.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. Yoshimune puede repetir las tiradas fallidas para herir. Los ataques cuerpo a cuerpo dirigidos a Yoshimune tienen un penalizador -1 a impactar.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5345,7 +5351,7 @@ Sin embargo, si el general de tu ejército muere, el contrato con los shinigami 
               <profiles>
                 <profile id="31a8-56a6-370d-d54c" name="Armadura liviana" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Permite a Yoshimune lanzar hechizos pese a llevar armadura. Otorga una tirada de salvación especial de 5+.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Permite a Yoshimune lanzar hechizos pese a llevar armadura. Otorga una tirada de salvación especial de 5+.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5475,7 +5481,7 @@ Sin embargo, si el general de tu ejército muere, el contrato con los shinigami 
               <profiles>
                 <profile id="c55c-375e-fedc-05fa" name="Espadas de sombra" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los resultados de 6 para impactar a Hahen en cuerpo a cuerpo deberán repetirse.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Armas emparejadas. Los resultados de 6 para impactar a Hahen en cuerpo a cuerpo deberán repetirse.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5606,7 +5612,7 @@ Sin embargo, si el general de tu ejército muere, el contrato con los shinigami 
               <profiles>
                 <profile id="da4e-735c-e58d-7a2b" name="Katana bendecida" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. Otorga un +1 a la F de su portador y la regla especial Heridas Múltiples (1D3).</characteristic>
+                    <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. Otorga un +1 a la F de su portador y la regla especial Heridas Múltiples (1D3).</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -5627,7 +5633,7 @@ Sin embargo, si el general de tu ejército muere, el contrato con los shinigami 
               <profiles>
                 <profile id="4762-60bf-b964-f795" name="Armadura del honor" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
                   <characteristics>
-                    <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga a su portador una Tirada de Salvación especial de 4+. Su portador puede repetir los resultados de 1 en sus tiradas de salvación por armadura.</characteristic>
+                    <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura pesada. Otorga a su portador una Tirada de Salvación especial de 4+. Su portador puede repetir los resultados de 1 en sus tiradas de salvación por armadura.</characteristic>
                   </characteristics>
                 </profile>
               </profiles>
@@ -6056,7 +6062,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="6174-f933-e717-b664" name="Katamune" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. Los ataques efectuados con esta espada tienen un bonificador de +1 para herir. No pueden realizarse tiradas de salvación por armadura contra las heridas causadas por la Katamune.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. Los ataques efectuados con esta espada tienen un bonificador de +1 para herir. No pueden realizarse tiradas de salvación por armadura contra las heridas causadas por la Katamune.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6084,7 +6090,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="f836-c00d-babd-d603" name="Naginata celestial " hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Alabarda. Otorga al portador un bonificador +1 para impactar en combate cuerpo a cuerpo, Ataques Flamígeros e Impactos Múltiples (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Alabarda. Otorga al portador un bonificador +1 para impactar en combate cuerpo a cuerpo, Ataques Flamígeros e Impactos Múltiples (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6113,7 +6119,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="9905-6e31-dbd8-5a35" name="Colmillo de dragón" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. El portador obtiene un ataque adicional en su perfil por cada punto de Liderazgo básico que el portador supera al de cualquier enemigo peana con peana.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. El portador obtiene un ataque adicional en su perfil por cada punto de Liderazgo básico que el portador supera al de cualquier enemigo peana con peana.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6133,7 +6139,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="b9c1-03a1-425c-f231" name="Filo del shinigami" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. Los ataques efectuados con esta arma obtienen la regla Golpe Letal.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. Los ataques efectuados con esta arma obtienen la regla Golpe Letal.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6154,7 +6160,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="ddc2-8238-d948-6f40" name="Hojas del viento" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. El usuario doblará su atributo de Iniciativa con los ataques efectuados por esta arma.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. El usuario doblará su atributo de Iniciativa con los ataques efectuados por esta arma.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6174,7 +6180,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="cdeb-2252-593a-7e43" name="Espadas del honor" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Katana. El portador podrá aplicar los dos modos simultáneos de la Katana, (es decir, obtendrá +1F, +1A y +1I al usar esta arma, independientemente de cómo use la katana).</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Katana. El portador podrá aplicar los dos modos simultáneos de la Katana, (es decir, obtendrá +1F, +1A y +1I al usar esta arma, independientemente de cómo use la katana).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6202,7 +6208,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="69d2-3c6e-cff8-5805" name="Espada de los espíritus" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo Hechiceros. Los ataques efectuados con esta espada obtendrán un bonificador adicional de +1 a la Fuerza. Además, por cada herida causada a un enemigo usando esta espada, el portador generará un dado de energía o dispersión adicional durante la siguiente fase de magia.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arma de mano. Sólo Hechiceros. Los ataques efectuados con esta espada obtendrán un bonificador adicional de +1 a la Fuerza. Además, por cada herida causada a un enemigo usando esta espada, el portador generará un dado de energía o dispersión adicional durante la siguiente fase de magia.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6229,7 +6235,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="f17e-70a9-4be1-692d" name="Arco de la alianza" hidden="false" typeId="ce18-64ea-b98c-dc9d" typeName="Arma mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="28f4-dde2-505a-99d6">Arco Largo Élfico (Alcance 36’’, Poder de Penetración). Los disparos efectuados con este arco se resuelven con Fuerza 5.</characteristic>
+                <characteristic name="Reglas especiales" typeId="28f4-dde2-505a-99d6">Arco Largo Élfico (Alcance 36’’, Poder de Penetración). Los disparos efectuados con este arco se resuelven con Fuerza 5.</characteristic>
               </characteristics>
             </profile>
             <profile id="e1ce-da65-44b2-7914" name="Arco largo élfico" hidden="false" typeId="576561706f6e23232344415441232323" typeName="Arma">
@@ -6260,7 +6266,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="f9bb-c1fc-c8c1-81ca" name="Armadura del emperador" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Otorga al usuario una salvación por armadura de 4+ y una Tirada de Salvación Especial (4+).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. Otorga al usuario una salvación por armadura de 4+ y una Tirada de Salvación Especial (4+).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6287,7 +6293,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="bf34-d51c-f53d-4dab" name="Armadura dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">La Armadura dragón proporciona una Tirada de salvación de 1+. El portador podrá repetir sus tiradas fallidas por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">La Armadura dragón proporciona una Tirada de salvación de 1+. El portador podrá repetir sus tiradas fallidas por armadura.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6306,12 +6312,12 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="42a5-2d0e-22b9-d6d8" name="Armadura dragón" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">La Armadura dragón proporciona una Tirada de salvación de 1+. El portador podrá repetir sus tiradas fallidas por armadura.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">La Armadura dragón proporciona una Tirada de salvación de 1+. El portador podrá repetir sus tiradas fallidas por armadura.</characteristic>
               </characteristics>
             </profile>
             <profile id="1721-147e-04fa-f416" name="Rostro de la tormenta" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador). El portador obtendrá una Tirada de Salvación Especial (4+) que sólo podrá aplicarse contra proyectiles, incluyendo máquinas de guerra y hechizos del tipo Proyectil Mágico.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador). El portador obtendrá una Tirada de Salvación Especial (4+) que sólo podrá aplicarse contra proyectiles, incluyendo máquinas de guerra y hechizos del tipo Proyectil Mágico.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6327,7 +6333,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="3fd3-9d9a-a8f3-c23f" name="Mempo demoníaco" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador). El portador causa Terror.</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador). El portador causa Terror.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6346,7 +6352,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="6ead-ddd6-925a-ca3d" name="Armadura del sol divino" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. El portador obtiene la regla Resistencia Mágica (2).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Armadura Pesada. El portador obtiene la regla Resistencia Mágica (2).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6366,7 +6372,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="2b66-c215-c37f-f640" name="Mempo del señor del mar" hidden="false" typeId="219b-aed3-c65c-d46d" typeName="Armadura mágica">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador). El portador y su unidad obtendrán la regla especial Cruzar (elementos acuáticos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="e0ed-7366-4856-8f3d">Yelmo (Proporciona un bonificador adicional de +1 a la tirada de salvación por armadura del portador). El portador y su unidad obtendrán la regla especial Cruzar (elementos acuáticos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6396,7 +6402,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="f0d3-19fd-a1ff-c9c4" name="Joya ancestral" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Otorga al personaje Regeneración (4+) e Inmune a Fuego. Si el portador pierde un combate, sufrirá una herida sin tirada de salvación de ningún tipo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Otorga al personaje Regeneración (4+) e Inmune a Fuego. Si el portador pierde un combate, sufrirá una herida sin tirada de salvación de ningún tipo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6424,7 +6430,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="d729-b94a-6aa0-df3e" name="Colgante vimto" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Sólo Sacerdote Vimtoista. Otorga al personaje Arma de Aliento (F3, ataques mágicos).</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Sólo Sacerdote Vimtoista. Otorga al personaje Arma de Aliento (F3, ataques mágicos).</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6454,7 +6460,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="3b1c-ff6c-fa3f-611a" name="Símbolo de bronce" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una salvación especial de 3+ contra ataques mágicos.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">El portador obtiene una salvación especial de 3+ contra ataques mágicos.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6470,7 +6476,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="efc7-eee3-e5d1-0176" name="Cadenas de muerte" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Un solo uso. El portador puede declarar usar las cadenas de muerte al principio de cualquier fase (propia o enemiga). Hasta el final del turno, el portador ganara la regla especial Etéreo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Un solo uso. El portador puede declarar usar las cadenas de muerte al principio de cualquier fase (propia o enemiga). Hasta el final del turno, el portador ganara la regla especial Etéreo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6486,7 +6492,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="ed17-0f09-d973-21d4" name="Broche de la oscuridad" hidden="false" typeId="2cee-fb80-f7af-6efc" typeName="Talismán mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador Resistencia Mágica (1). Además, si un hechizo, objeto mágico o habilidad obliga al jugador Nippón a revelar objetos mágicos u otra presencia “escondida” en cualquier unidad a 8’’ en la que se encuentre el portador, el jugador Nippón deberá revelar sólo la presencia de este broche; todo lo demás permanece oculto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="bb94-e12a-aef4-ebc0">Proporciona a su portador Resistencia Mágica (1). Además, si un hechizo, objeto mágico o habilidad obliga al jugador Nippón a revelar objetos mágicos u otra presencia “escondida” en cualquier unidad a 8’’ en la que se encuentre el portador, el jugador Nippón deberá revelar sólo la presencia de este broche; todo lo demás permanece oculto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6513,7 +6519,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="d6d5-7362-4f54-b00e" name="Libro oculto de Tsien-Tsin" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">El portador genera un dado de energía adicional en sus fases de magia y puede elegir hechizos del Saber de Tzeentch. No obstante, si en los vientos de la magia del turno propio se obtiene un resultado de dobles, el hechicero sufrirá un impacto de Fuerza 5 con la regla Ataques Sólo Flamígeros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">El portador genera un dado de energía adicional en sus fases de magia y puede elegir hechizos del Saber de Tzeentch. No obstante, si en los vientos de la magia del turno propio se obtiene un resultado de dobles, el hechicero sufrirá un impacto de Fuerza 5 con la regla Ataques Sólo Flamígeros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6537,7 +6543,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="2306-5951-afaa-7a7f" name="Orbe de sombras" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 2. Contiene un hechizo de Potenciación que afecta a una unidad amiga a 12’’. La unidad obtendrá la regla Esquivar (6+). Si ya disponía de dicha regla, mejorará su regla de Esquiva en un punto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 2. Contiene un hechizo de Potenciación que afecta a una unidad amiga a 12’’. La unidad obtendrá la regla Esquivar (6+). Si ya disponía de dicha regla, mejorará su regla de Esquiva en un punto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6553,7 +6559,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="2846-6a6b-f91a-7ce7" name="Broche de vacío" hidden="false" typeId="e4ac-4b4d-a272-410e" typeName="Artefacto arcano">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Maldición con un alcance de 24’’. La unidad afectada deberá realizar un chequeo de pánico inmediatamente con 3D6 y descartando el resultado más bajo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="2cab-b0ef-2a60-b01b">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Maldición con un alcance de 24’’. La unidad afectada deberá realizar un chequeo de pánico inmediatamente con 3D6 y descartando el resultado más bajo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6577,7 +6583,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="06d6-833d-2a1e-218b" name="Pergamino mortal" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Daño Directo que toma como objetivo una miniatura enemiga a 18’’ o menos. La miniatura deberá superar un chequeo de resistencia, de lo contrario sufrirá una herida sin tirada de salvación de ningún tipo. Deberá chequear resistencia sucesivamente hasta superar el chequeo, sufriendo una herida si no lo supera.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Objeto portahechizos, nivel de energía 3. Contiene un hechizo de Daño Directo que toma como objetivo una miniatura enemiga a 18’’ o menos. La miniatura deberá superar un chequeo de resistencia, de lo contrario sufrirá una herida sin tirada de salvación de ningún tipo. Deberá chequear resistencia sucesivamente hasta superar el chequeo, sufriendo una herida si no lo supera.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6601,7 +6607,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="5591-8e41-f31c-5d66" name="Perla de dragón" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Al comienzo de la fase de combate cuerpo a cuerpo, el portador puede transformar la Perla del Dragón en una réplica exacta de cualquier objeto mágico que lleve un personaje enemigo en contacto peana con peana, reteniendo todas sus habilidades mientras permanezca en contacto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Al comienzo de la fase de combate cuerpo a cuerpo, el portador puede transformar la Perla del Dragón en una réplica exacta de cualquier objeto mágico que lleve un personaje enemigo en contacto peana con peana, reteniendo todas sus habilidades mientras permanezca en contacto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6617,7 +6623,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="1315-0f1d-5c1f-8f4a" name="Abanico de mando" hidden="false" typeId="5d17-3511-0c13-e904" typeName="Objeto hechizado">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="0ef8-5055-c22e-455a">Una vez por turno, el portador y su unidad superará automáticamente una tirada fallida para reformar, marchar, redirigir cargas y evitar perseguir o arrasar.</characteristic>
+                <characteristic name="Reglas especiales" typeId="0ef8-5055-c22e-455a">Una vez por turno, el portador y su unidad superará automáticamente una tirada fallida para reformar, marchar, redirigir cargas y evitar perseguir o arrasar.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6641,7 +6647,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="b90e-514e-24b5-8cbd" name="Estandarte del emperador" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Este estandarte otorga a la unidad un bonificador de +1 a sus ataques y una Tirada de Salvación Especial de 5+</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Este estandarte otorga a la unidad un bonificador de +1 a sus ataques y una Tirada de Salvación Especial de 5+</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6657,7 +6663,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="99f9-17e5-c801-3bd7" name="Sashimono de las tinieblas" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Todas las unidades con la regla especial Honor Ancestral que estén en el alcance de ¡Ni un paso atrás! del portaestandarte causarán Miedo.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Todas las unidades con la regla especial Honor Ancestral que estén en el alcance de ¡Ni un paso atrás! del portaestandarte causarán Miedo.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6681,7 +6687,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="1c40-9359-ce71-2f27" name="Estandarte del honor" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Sólo Guerreros Samurai o Caballería Samurai. La unidad obtiene una Tirada de Salvación Especial de (5+) contra proyectiles, incluyendo los de las máquinas de guerra.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Sólo Guerreros Samurai o Caballería Samurai. La unidad obtiene una Tirada de Salvación Especial de (5+) contra proyectiles, incluyendo los de las máquinas de guerra.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6705,7 +6711,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="718d-50bb-8a61-de2a" name="Pabellón de la lealtad" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">Cualquier unidad de ashigarus a 9’’ de este estandarte verá aumentado su atributo de Liderazgo en 1 punto.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">Cualquier unidad de ashigarus a 9’’ de este estandarte verá aumentado su atributo de Liderazgo en 1 punto.</characteristic>
               </characteristics>
             </profile>
           </profiles>
@@ -6721,7 +6727,7 @@ podrá ser rechazado, y será el jugador que controla al Ninja quién decide qu�
           <profiles>
             <profile id="6e0e-3082-3d46-73c7" name="Sashimono de la Venganza" hidden="false" typeId="5441-5d99-9a3f-dce8" typeName="Estandarte mágico">
               <characteristics>
-                <characteristic name="Propiedades mágicas" typeId="eb3c-0420-d3ad-ee60">La unidad obtendrá Odio (Elfos Oscuros), y causará Miedo a las unidades de Elfos Oscuros.</characteristic>
+                <characteristic name="Reglas especiales" typeId="eb3c-0420-d3ad-ee60">La unidad obtendrá Odio (Elfos Oscuros), y causará Miedo a las unidades de Elfos Oscuros.</characteristic>
               </characteristics>
             </profile>
           </profiles>
